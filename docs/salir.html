@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+		<title>Siscos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+		integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+		    <!-- Bootstrap CSS -->
+		    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+		    <!-- Carrusel -->
+		    <link href="css/carousel.css" rel="stylesheet">
+
+		    <!-- Estilos Personalizados -->
+		    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="icon" href="imagenes/logosiscos.jpg">
+		<script type="text/javascript">
+			$( document ).ready( function () {
+			$( '.navbar a.dropdown-toggle' ).on( 'click', function ( e ) {
+					var $el = $( this );
+					var $parent = $( this ).offsetParent( ".dropdown-menu" );
+					$( this ).parent( "li" ).toggleClass( 'show' );
+
+					if ( !$parent.parent().hasClass( 'navbar-nav' ) ) {
+							$el.next().css( { "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 } );
+					}
+					$( '.navbar-nav li.show' ).not( $( this ).parents( "li" ) ).removeClass( "show" );
+					return false;
+			} );
+		} );
+		</script>
+  </head>
+  <body>
+     <div class="container-fluid">
+
+			  		<nav aria-label="breadcrumb">
+			       <ol class="breadcrumb">
+			         <li class="breadcrumb-item active" aria-current="page">MANUAL SISCOS / <b>HOME</b></li>
+			       </ol>
+						</nav>
+
+      <header class="masthead">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">SISCOS <span class="sr-only">(current)</span></a>
+              </li>
+							<!--glosario-->
+              <li class="nav-item">
+                <a class="nav-link" href="glosario.html">Glosario</a>
+              </li>
+              <!--login-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
+                  </ul>
+              </li>
+							<!--opciones-->
+							<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opciones</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="cerrar_sesion_actual.html">Cerrar Sesion Actual</a></li>
+											<li><a class="dropdown-item" href="cambio_contrasena.html">Cambio Contraseña</a></li>
+											<li><a class="dropdown-item" href="salir.html">Salir</a></li>
+                  </ul>
+              </li>
+							<!--General Configuración-->
+							<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li><a class="dropdown-item dropdown-toggle" href="#">General</a>
+												<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="gedepartamentos.html">Departamentos</a></li>
+														<li><a class="dropdown-item" href="gelocalidades.html">Localidades</a></li>
+												</ul>
+										</li>
+                    <!--Gestion Ordenes Configuración-->
+										<li><a class="dropdown-item dropdown-toggle" href="#">Gestión Ordenes</a>
+											<ul class="dropdown-menu">
+													<li><a class="dropdown-item" href="geotiporepacion.html">Tipo Reparación</a></li>
+													<li><a class="dropdown-item" href="#">Tipo Petición</a></li>
+													<li><a class="dropdown-item" href="#">Tipo De Orden OT</a></li>
+                          <div class="dropdown-divider"></div>
+													<li><a class="dropdown-item" href="#">Causales Devolución</a></li>
+													<li><a class="dropdown-item" href="#">Operación Comercial</a></li>
+													<li><a class="dropdown-item" href="#">Clases Mano Obra</a></li>
+													<li><a class="dropdown-item" href="#">Registro Actividades</a></li>
+													<li><a class="dropdown-item" href="#">Registro Producción</a></li>
+													<li><a class="dropdown-item" href="#">Plantillas Materiales</a></li>
+													<li><a class="dropdown-item" href="#">Plantillas Actividades</a></li>
+													<li><a class="dropdown-item" href="#">Bandejas De Legalización</a></li>
+													<li><a class="dropdown-item" href="#">Areas De Transferencia</a></li>
+													<li><a class="dropdown-item" href="#">Causales Reagendamiento</a></li>
+											</ul>
+										</li>
+                    <!--inventario Configuración-->
+										<li><a class="dropdown-item dropdown-toggle" href="#">Inventario</a>
+											<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="conf_estamaterial.html">Estado Material</a></li>
+											<li><a class="dropdown-item" href="#">Tipo Material</a></li>
+											<li><a class="dropdown-item" href="#">Configuración Stock Pedidos</a></li>
+											<li><a class="dropdown-item" href="#">Stock Personal</a></li>
+											<li><a class="dropdown-item" href="#">Alerta Stock</a></li>
+											<li><a class="dropdown-item" href="#">Configuración Bodegas</a></li>
+											<li><a class="dropdown-item" href="#">Configuración Departamentos</a></li>
+											<li><a class="dropdown-item" href="#">Periodos</a></li>
+											<li><a class="dropdown-item" href="#">PEP</a></li>
+											</ul>
+										</li>
+                  </ul>
+              </li>
+							<!--Inventario-->
+							<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inventario</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Utilidades</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="inv_cargamasmate.html">Carga Masiva Material</a></li>
+                          </ul>
+                      </li>
+                      <!--Registro Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Registro</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Bodegas</a></li>
+  											<li><a class="dropdown-item" href="#">Centros</a></li>
+  											<li><a class="dropdown-item" href="#">Unidades Medida</a></li>
+  											<li><a class="dropdown-item" href="#">Marcas</a></li>
+  											<li><a class="dropdown-item" href="#">Modelos</a></li>
+  											<li><a class="dropdown-item" href="#">Mercancia</a></li>
+  											<li><a class="dropdown-item" href="#">Proveedores</a></li>
+  											</ul>
+  										</li>
+                      <!--Entradas Almacen Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Entradas Almacen</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Entrada CT</a></li>
+  											<li><a class="dropdown-item" href="#">Entrada EECC</a></li>
+  											<li><a class="dropdown-item" href="#">Control Material Entrada</a></li>
+  											<li><a class="dropdown-item" href="#">Consulta Entrada</a></li>
+  											<li><a class="dropdown-item" href="#">Anular Entrada</a></li>
+  											<li><a class="dropdown-item" href="#">Actualizar Entrada</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Devolución</a></li>
+                        <li><a class="dropdown-item" href="#">Consulta Devolución</a></li>
+                        <li><a class="dropdown-item" href="#">Anular Devolución</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="#">Reintegros CT</a></li>
+                        <li><a class="dropdown-item" href="#">Consultar Reintegro</a></li>
+                        <li><a class="dropdown-item" href="#">Anular Reintegro</a></li>
+                        <li><a class="dropdown-item" href="#">Actualizar Petición Serial</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="#">Habilitar/Inhabilitar Reserva</a></li>
+                        <li><a class="dropdown-item" href="#">Cambio Ubicación Serial</a></li>
+                        <li><a class="dropdown-item" href="#">Actualizar Serial</a></li>
+  											</ul>
+  										</li>
+                      <!--Pedidos Material Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Pedidos Material</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Pedidos</a></li>
+  											<li><a class="dropdown-item" href="#">Consulta Pedido</a></li>
+  											<li><a class="dropdown-item" href="#">Consulta Pedidos Por Fecha</a></li>
+  											<li><a class="dropdown-item" href="#">Anular Pedido</a></li>
+  											<li><a class="dropdown-item" href="#">Pedidos Pend. Entregar</a></li>
+  											<li><a class="dropdown-item" href="#">Listado Pedidos Pendientes</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Generar Pedidos</a></li>
+                        <li><a class="dropdown-item" href="#">Listado Abastecimiento</a></li>
+  											</ul>
+  										</li>
+                      <!--Salidas Almacen Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Salidas Almacen</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Entregas</a></li>
+  											<li><a class="dropdown-item" href="#">Entregas Pedidos Autom.</a></li>
+  											<li><a class="dropdown-item" href="#">Entregas Con Ticket</a></li>
+  											<li><a class="dropdown-item" href="#">Entregas Con solicitud</a></li>
+  											<li><a class="dropdown-item" href="#">Consulta Entregas</a></li>
+  											<li><a class="dropdown-item" href="#">Anular Entrega</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Salidas CT</a></li>
+                        <li><a class="dropdown-item" href="#">Salidas EECC</a></li>
+                        <li><a class="dropdown-item" href="#">Consulta Salidas</a></li>
+                        <li><a class="dropdown-item" href="#">Anular Salidas</a></li>
+  											</ul>
+  										</li>
+                      <!--traslados Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Traslados</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Traslado Entre Personal</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Traslado Bodega CT</a></li>
+  											<li><a class="dropdown-item" href="#">Traslado Bodega EECC</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Ingreso Traslado CT</a></li>
+  											<li><a class="dropdown-item" href="#">Ingreso Traslado EECC</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Anular Traslado</a></li>
+  											</ul>
+  										</li>
+                      <!--Consultas Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Consultas</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Estado Material</a></li>
+  											<li><a class="dropdown-item" href="#">Estado Entregas Seriales</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Kardex Material</a></li>
+  											<li><a class="dropdown-item" href="#">Kardex Personal</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Stock Material</a></li>
+  											<li><a class="dropdown-item" href="#">Stock Personal</a></li>
+  											</ul>
+  										</li>
+                      <!--Reportes Inventario-->
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Reportes</a>
+  											<ul class="dropdown-menu">
+  											<li><a class="dropdown-item" href="inv_bodegas.html">Existencia Almacen</a></li>
+  											<li><a class="dropdown-item" href="#">Existencia Reintegros</a></li>
+  											<li><a class="dropdown-item" href="#">Existencia Por Remision</a></li>
+  											<li><a class="dropdown-item" href="#">Existencia Por Periodo</a></li>
+  											<li><a class="dropdown-item" href="#">Costo Inventario</a></li>
+  											<li><a class="dropdown-item" href="#">Costo Entradas</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="inv_bodegas.html">Entradas Almacen</a></li>
+  											<li><a class="dropdown-item" href="#">Entregas Almacen</a></li>
+  											<li><a class="dropdown-item" href="#">Devoluciones Almacen</a></li>
+  											<li><a class="dropdown-item" href="#">Reintegros Almacen</a></li>
+  											<li><a class="dropdown-item" href="#">Salidas Almacen</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Analisis De Consumo</a></li>
+                        <li><a class="dropdown-item" href="inv_bodegas.html">Listado Consumos ODS</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Stock Cables</a></li>
+  											<li><a class="dropdown-item" href="#">Stock Seriales</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Material Terreno</a></li>
+  											<li><a class="dropdown-item" href="#">Seriales Terreno</a></li>
+                        <div class="dropdown-divider"></div>
+  											<li><a class="dropdown-item" href="#">Listado Movimientos Almagran</a></li>
+                        <li><a class="dropdown-item" href="inv_bodegas.html">Listado Consumos Almagran</a></li>
+  											</ul>
+  										</li>
+                  </ul>
+              </li>
+							<!--personal-->
+							<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Personal</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item dropdown-toggle" href="utilidades_per.html">Utilidades</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Importar Personal</a></li>
+                        </ul>
+                      </li>
+											<li><a class="dropdown-item" href="personal_per.html">Personal</a></li>
+											<li><a class="dropdown-item" href="cargos_per.html">Cargos</a></li>
+											<li><a class="dropdown-item" href="tipo_cuadrillas_per.html">Tipo Cuadrillas</a></li>
+											<li><a class="dropdown-item" href="conformacion_cuadrillas_per.html">Conformación Cuadrillas</a></li>
+											<li><a class="dropdown-item" href="registro_supervisores_per.html">Registro Supervisores</a></li>
+											<li><a class="dropdown-item" href="asignacion_tecnico_per.html">Asignación Tecnicos</a></li>
+                  </ul>
+              </li>
+							<!--Utilidades-->
+							<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilidades</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="importar_archivo_util.html">Importar Archivos</a></li>
+                  </ul>
+              </li>
+							<!--vpi ODS-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ODS</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item dropdown-toggle" href="#">ODS VPI</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="inv_bodegas.html">Carga Archivo ODS</a></li>
+                <li><a class="dropdown-item" href="#">Impresion Formatos</a></li>
+                <li><a class="dropdown-item" href="#">Impresion Agenda</a></li>
+                <li><a class="dropdown-item" href="#">Asignar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Asignar ODS Masivo</a></li>
+                <li><a class="dropdown-item" href="#">Atender ODS</a></li>
+                <li><a class="dropdown-item" href="#">Atender ODS Manual</a></li>
+                <li><a class="dropdown-item" href="#">Actualizar Carga ODS</a></li>
+                <li><a class="dropdown-item" href="#">Actualizar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Cambio Familia PS</a></li>
+                <li><a class="dropdown-item" href="#">Consultar ODS</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Listado ODS Atendidas</a></li>
+                <li><a class="dropdown-item" href="#">Listado Consumo Material</a></li>
+                <li><a class="dropdown-item" href="#">Listado Retiros Material</a></li>
+                <li><a class="dropdown-item" href="#">Listado Pendientes</a></li>
+                <li><a class="dropdown-item" href="#">Listado Cambio Vias LB</a></li>
+                <li><a class="dropdown-item" href="#">Listado Quiebres</a></li>
+                <li><a class="dropdown-item" href="#">Zonificar ODS</a></li>
+                </ul>
+          </li>
+              <!--ODS SOL TEC-->
+              <li><a class="dropdown-item dropdown-toggle" href="#">ODS SOL TEC</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="inv_bodegas.html">Carga Archivo ODS</a></li>
+                <li><a class="dropdown-item" href="#">Asignar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Asignar ODS Masivo</a></li>
+                <li><a class="dropdown-item" href="#">Impresion Formatos</a></li>
+                <li><a class="dropdown-item" href="#">Atender ODS</a></li>
+                <li><a class="dropdown-item" href="#">Actualizar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Consultar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Atender ODS Manual</a></li>
+                <li><a class="dropdown-item" href="#">Actualizar Carga ODS</a></li>
+                <li><a class="dropdown-item" href="#">Legalizar ODS @tiempo</a></li>
+                <li><a class="dropdown-item" href="#">Consulta Bandeja Leg</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Listado ODS Atendidas</a></li>
+                <li><a class="dropdown-item" href="#">Listado Reiteradas</a></li>
+                <li><a class="dropdown-item" href="#">Listado Pendientes</a></li>
+                <li><a class="dropdown-item" href="#">Listado Cambio Vias LB</a></li>
+                <li><a class="dropdown-item" href="#">Codigos Legalización</a></li>
+                <li><a class="dropdown-item" href="#">Listado Consumo Material</a></li>
+                <li><a class="dropdown-item" href="#">Listado Retiros Material</a></li>
+                <li><a class="dropdown-item" href="#">Zonificar ODS ST</a></li>
+                <li><a class="dropdown-item" href="#">Consulta Bandeja Leg</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Transferir ODS</a></li>
+                <li><a class="dropdown-item" href="#">Transferencia Masiva</a></li>
+                <li><a class="dropdown-item" href="#">Reinyectar</a></li>
+                </ul>
+              </li>
+              <!--ODS OT-->
+              <li><a class="dropdown-item dropdown-toggle" href="#">ODS OT </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="inv_bodegas.html">Proyectos</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Ingresar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Actualizar ODS</a></li>
+                <li><a class="dropdown-item" href="#">Consulta ODS</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Listado ODS Atendidas</a></li>
+                <li><a class="dropdown-item" href="#">Listado Consumo Material</a></li>
+                <li><a class="dropdown-item" href="#">Listado Retiro Material</a></li>
+                <li><a class="dropdown-item" href="#">Liquidación</a></li>
+                </ul>
+              </li>
+              <!--UTILIDADES ODS-->
+              <li><a class="dropdown-item dropdown-toggle" href="#">Utilidades</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="inv_bodegas.html">Atender Masivo SOL TEC</a></li>
+                <li><a class="dropdown-item" href="#">Eliminar Masivo SOL TEC</a></li>
+                <li><a class="dropdown-item" href="#">Eliminar Masivo VPI</a></li>
+                <li><a class="dropdown-item" href="#">Atender Masivo VPI</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Carga Archivo Cierres</a></li>
+                <li><a class="dropdown-item" href="#">Carga Archivo Consumos</a></li>
+                <li><a class="dropdown-item" href="#">Carga Archivo Pendientes</a></li>
+                <li><a class="dropdown-item" href="#">Aplicar Consumos ODS</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#">Subir Pendientes TOA</a></li>
+                </ul>
+              </li>
+              <!--Estadistica ODS-->
+              <li><a class="dropdown-item dropdown-toggle" href="#">Estadistica</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="inv_bodegas.html">Analisis Reiteradas</a></li>
+                <li><a class="dropdown-item" href="#">Analisis Avarias Infancia</a></li>
+                <li><a class="dropdown-item" href="#">Informe ESTELA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+                <!--Admon-->
+							<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
+                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admon</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="perfiles.html">Perfiles</a></li>
+											<li><a class="dropdown-item" href="usuarios.html">Usuarios</a></li>
+											<li><a class="dropdown-item" href="datos_empresa.html">Datos Empresa</a></li>
+											<li><a class="dropdown-item" href="opciones_correo_web.html">Opciones Correo y Web</a></li>
+											<li><a class="dropdown-item" href="ejecutar_prog.html">Ejecutar Prog</a></li>
+											<li><a class="dropdown-item" href="aplicar_consumos.html">Aplicar Consumos</a></li>
+											<li><a class="dropdown-item dropdown-toggle" href="utilidades_sql_admon.html">Utilidades SQL</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="perfiles.html">SQL Query Editor</a></li>
+                          <li><a class="dropdown-item" href="perfiles.html">SQL Dump Export</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+		</div>
+        <main role="main">
+
+         <div class="row">
+            <div class="col-md-8">
+              <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">1</small>
+                  </div>
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="imagenes/salir.png" alt="cerrar sessión actual">
+                <div class="card-body">
+                  <p class="card-text">El usuario debe dar clic en <b>Salir</b> para salir del sistema SISCOS.</p>
+
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <div class="container">
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Ver Demostración
+          </button>
+          <!-- Modal body -->
+              <div class="modal-body">
+              <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+              <iframe width="771" height="400" src="https://www.youtube.com/embed/YtlKyv2pc_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+        <!-- Modal footer -->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+          </div>
+            </div>
+             </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+      <footer class="container mt-5">
+          <p class="float-right"><a href="#">Subir</a></p>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script>
+            Manual Web Siscos &middot; Desarrollado por <a href="http://www.are-soluciones.com/" target="_blank">Soluciones Integrales ARE</a> </p>
+      </footer>
+
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    </body>
+    </html>
