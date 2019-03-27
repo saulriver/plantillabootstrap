@@ -5670,6 +5670,7 @@ button.close {
   -webkit-transform: translate(0, -25%);
       -ms-transform: translate(0, -25%);
           transform: translate(0, -25%);
+ 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -5712,6 +5713,11 @@ button.close {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 .modal-backdrop {

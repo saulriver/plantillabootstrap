@@ -14,15 +14,18 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
   <body class="app sidebar-mini rtl">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
-      <ul class="app-nav">
-
-      </ul>
+      <!-- Sidebar toggle button-->
+      <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -313,6 +316,7 @@
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             </ul>
           </div>
+          <!--contenedores de imagenes-->
           <div class="container">
           <div class="w3-row-padding">
               <div class="col-md-12">
@@ -323,11 +327,9 @@
           <div id="Demo1" class="w3-hide w3-black">
             <div class="w3-container">
               <h5>Login</h5>
-              <div class="w3-container w3-third">
-              <img src="imagenes/registro.png" style="width:100%;cursor:pointer" 
-              onclick="onClick(this)" class="w3-hover-opacity">
+              <img src="imagenes/registro.png" style="width:30%;" class="w3-animate-zoom">
             </div>
-            </div>
+            <br>
           </div>
           <br>
           <br>
@@ -338,6 +340,7 @@
                 <h5>Ingrese Un Nombre De Usuario</h5>
                 <img src="imagenes/registro3.png" style="width:30%;" class="w3-animate-zoom">
               </div>
+              <br>
             </div>
             <br>
             <br>
@@ -348,6 +351,7 @@
                 <h5>Al Ingresar Un Nombre O Password Incorrecta</h5>
                 <img src="imagenes/registro2.png" style="width:30%;" class="w3-animate-zoom">
               </div>
+              <br>
             </div>
             <br>
             <br>
@@ -356,19 +360,38 @@
             <div id="Demo4" class="w3-hide w3-black">
               <div class="w3-container">
                 <h5>Cuando Es Correcto El Ingreso</h5>
-                <img src="imagenes/inicial.png" style="width:30%;" class="w3-animate-zoom">
+                <img src="imagenes/inicial.png" style="width:50%;" class="w3-animate-zoom">
               </div>
+              <br>
             </div>
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                  <img id="img01" style="width:100%">
-                </div>
-              </div>
           </div>
         </div>
+      <!--fin contenedores de imagen-->
+          <!-- Button to Open the Modal -->
+          <div class="container">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Ver Video
+          </button>
+          <!-- Modal body -->
+          <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <iframe width="795" height="426" src="https://www.youtube.com/embed/fwg84VP39Fs" 
+            frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal footer -->
+         <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+         </div>
       </div>
       </div>
+      </div>
+      </div>
+    </div>
      </main>
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -389,8 +412,7 @@
         x.className += " w3-show";
       } else {
         x.className = x.className.replace(" w3-show", "");
-      }
-      }
-      </script>
+      }}
+  </script>
    </body>
 </html>
