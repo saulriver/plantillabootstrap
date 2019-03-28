@@ -168,6 +168,17 @@ sub {
 sup {
   top: -.5em;
 }
+.subir {
+	display:none;
+	padding:15px;
+	background:rgb(0, 150, 136);
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:10px;
+	right:10px;
+}
 
 a {
   color: #009688;
