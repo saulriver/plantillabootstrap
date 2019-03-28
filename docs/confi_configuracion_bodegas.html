@@ -318,7 +318,7 @@
               <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
               <li class="breadcrumb-item active">Configuración</li>
-              <li class="breadcrumb-item active">Inventario</li>
+              <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
               <li class="breadcrumb-item"><a href="confi_configuracion_departamentos.html">Configuración Departamentos</a></li>
             </ul>
           </div>
@@ -332,14 +332,20 @@
           <div id="Demo1" class="w3-hide w3-black">
               <br>
             <div class="w3-container w3-center">
-               <!--mensaje de alerta-->
-               <div class="alert alert-danger">
-                  <strong>NOTA:</strong> 
-                  no se recomienda entrar a este módulo y hacer modificaciones 
-                  si se están haciendo transacciones en esa bodega,
-                  porque pueden estar cambiando los consecutivos y nos 
-                  generaría resultados diferentes a los esperados o analizados.
-                </div><!--fin mensaje de alerta-->
+              <!--mensaje de alerta-->
+              <div class="row">
+                  <div class="col-lg-8">
+                    <div class="bs-component">
+                      <div class="alert alert-dismissible alert-danger">
+                        <strong>Nota:</strong> 
+                        no se recomienda entrar a este módulo y hacer modificaciones 
+                        si se están haciendo transacciones en esa bodega,
+                        porque pueden estar cambiando los consecutivos y nos 
+                        generaría resultados diferentes a los esperados o analizados.
+                        </div>
+                        </div>
+                        </div>
+                  </div><!--fin mensaje de alerta-->
               <img src="imagenes/aplicar confi bodegas.png" style="width:70%;" class="w3-animate-zoom">
               <br>
             </div>
@@ -385,20 +391,8 @@
             </div>
              <br>
              <br>
-
-
-
-
             </div>
             </div>
-
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                  <img id="img01" style="width:100%">
-                </div>
-              </div>
-        </div>
         <!-- Button to Open the Modal -->
         <div class="container">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -410,9 +404,9 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-                <iframe width="1280" height="651" src="https://www.youtube.com/embed/PkanGUOqWn4"
-                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                 allowfullscreen></iframe>
+              <iframe width="874" height="426" src="https://www.youtube.com/embed/FTts34AYarc" 
+              frameborder="0" allow="accelerometer; autoplay; 
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <!-- Modal footer -->
            <div class="modal-footer">
@@ -424,8 +418,12 @@
         </div><!--FIN DEL MODAL DE VIDEO-->
       </div>
       </div>
-          </div>
      </main>
+      <!--boton de ir pagina arriba-->
+      <div class="container">
+          <span class="subir icon fa fa-arrow-circle-up fa-lg rounded-circle"></span>
+    </div>
+
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
@@ -447,4 +445,23 @@
         x.className = x.className.replace(" w3-show", "");
       }
       }
-      </script>
+      </script><!--boton para ir hacia arriba-->
+      <script>$(document).ready(function(){
+ 
+          $('.subir').click(function(){
+            $('body, html').animate({
+              scrollTop: '0px'
+            }, 300);
+          });
+         
+          $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+              $('.subir').slideDown(300);
+            } else {
+              $('.subir').slideUp(300);
+            }
+          });
+        });
+        </script>
+        </body>
+      </html>
