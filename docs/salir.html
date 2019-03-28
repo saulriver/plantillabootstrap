@@ -339,10 +339,11 @@
             <div class="container">
               <a href="#demo" class="btn btn-primary" data-toggle="collapse">Info</a>
                 <div id="demo" class="collapse">
-                    El usuario debe dar clic en salir para salir del sistema SISCOS.
+                  <br>
+                  <h5>
+                    <p>El usuario debe dar clic en SALIR para salir del sistema SISCOS.</p></h5>
                  </div>
              </div><!--fin boton de texto-->
-              <br>
               <br>
             </div>
               </div>
@@ -373,6 +374,14 @@
         </div>
       </div>
      </main>
+     <!--boton para ir arriba en pagina-->
+     <div class="container">
+        <div class="w3-row-padding">
+            <div class="col-sm-6">
+        <span class="subir icon fa fa-arrow-circle-up fa-lg rounded-circle"></span>
+        </div>
+        </div>
+      </div>
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
@@ -395,6 +404,24 @@
       }
       }
       </script>
+      <!--boton para ir arriba en pagina-->
+      <script>$(document).ready(function(){
+ 
+          $('.subir').click(function(){
+            $('body, html').animate({
+              scrollTop: '0px'
+            }, 300);
+          });
+         
+          $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+              $('.subir').slideDown(300);
+            } else {
+              $('.subir').slideUp(300);
+            }
+          });
+        });
+        </script>
    </body>
 </html>
 

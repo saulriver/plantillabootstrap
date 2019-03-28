@@ -462,6 +462,11 @@
           </div>
       </div>
     </main>
+    <!--boton de ir pagina arriba-->
+    <div class="container">
+        <span class="subir icon fa fa-arrow-circle-up fa-lg rounded-circle"></span>
+      </div>
+
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
     crossorigin="anonymous"></script>
@@ -479,5 +484,23 @@
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
       </script>
+      <!--boton para ir hacia arriba-->
+      <script>$(document).ready(function(){
+ 
+          $('.subir').click(function(){
+            $('body, html').animate({
+              scrollTop: '0px'
+            }, 300);
+          });
+         
+          $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+              $('.subir').slideDown(300);
+            } else {
+              $('.subir').slideUp(300);
+            }
+          });
+        });
+        </script>
       </body>
 </html>
