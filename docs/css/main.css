@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/*!
- * Vali Admin
- * Author: Pratik Borsadiya
- * ================================*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700);
 @import url(https://fonts.googleapis.com/css?family=Niconne);
 /*!
@@ -97,7 +93,12 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
