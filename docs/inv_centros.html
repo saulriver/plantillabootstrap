@@ -318,6 +318,7 @@
               <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
               <li class="breadcrumb-item active">Inventario</li>
+              <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Registro</li>
               <li class="breadcrumb-item"><a href="inv_unidades_medida.html">Unidades Medida</a></li>
             </ul>
           </div>
@@ -357,14 +358,20 @@
                 <br>
               <div class="w3-container w3-center">
                 <!--mensaje de alerta-->
-                        <div class="alert alert-danger">
-                          <strong>NOTA:</strong> 
+                <div class="row">
+                    <div class="col-lg-8">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-danger">
+                          <strong>Nota:</strong> 
                           no se puede Eliminar si ese registro (Centro) tiene movimientos 
                           y está activo, para que no lo debas utilizar debes ponerlo inactivo 
                           y cuando lo necesites lo activas. Pero no se Elimina, si intenta el 
                           usuario hacerlo le mostrará un mensaje de información que no se puede 
                           o que hay un error.
-                        </div><!--fin mensaje de alerta-->
+                          </div>
+                          </div>
+                          </div>
+                    </div><!--fin mensaje de alerta-->
                 <img src="imagenes/eliminar centros.png" style="width:50%;" class="w3-animate-zoom">
               </div>
               <br><!--boton de texto-->

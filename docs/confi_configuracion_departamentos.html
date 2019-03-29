@@ -314,9 +314,12 @@
               <h1><i class="fa fa-file-text"></i>Configuración Departamentos</h1>
               <p>Pasos Para Configurar Departamentos En SISCOS</p>
             </div>
-            <ul class="app-breadcrumb breadcrumb">
+            <ul class="breadcrumb">
               <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Configuración</li>
+              <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
+              <li class="breadcrumb-item"><a href="confi_periodos.html">Periodos</a></li>
             </ul>
           </div>
           <div class="container">
@@ -337,27 +340,56 @@
               <a href="#demo" class="btn btn-primary" data-toggle="collapse">Info</a>
                 <div id="demo" class="collapse">
                     <br>
-                    <h5>
-             <p>Está configuración es muy importante para el usuario y se debe tener en cuenta por  que puede ocasionar problemas, y es que cada vez que se 
-                 cree un Departamento debo configurarlo de la siguiente manera haciendo un control al inventario personal.
-                <br>
-                El usuario debe seleccionar las opciones necesarias como Controlar Inventario Personal, Aplicar Stock Cuadrillas Y Controlar Material Serializado.
-                Escogiendo estas tres opciones se obtiene una buena configuración al final del proceso.
-                <br>
-                <br>
-
-                Controlar Inventario Personal: con el chulito significa que va a trabajar con bodegas de terreno, sin el chulito no existe en la bodega de terreno.
-                <br>
-                <br>
-                Aplicar Stock Cuadrillas: permite al usuario consultar los Stock máximos de cuadrillas.
-                <br>
-                <br>
-                Controlar Material Serializado: permite un control de todos los materiales serializados.</p></h5>
-             <br>
-             <br>
-             <h4>Aplicar Cambios:</h4> <h5>Se encuentra ubicado en la barra horizontal inferior (lado derecho).  Para guardar los registros hechos en el módulo para garantizar su configuración. 
-                </p></h5>
+                    <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                              Está configuración es muy importante para el 
+                              usuario y se debe tener en cuenta por  que puede 
+                              ocasionar problemas, y es que cada vez que se 
+                               cree un Departamento debo configurarlo de la 
+                               siguiente manera haciendo un control al inventario personal.
+                              <br>
+                              El usuario debe seleccionar las opciones necesarias como Controlar
+                               Inventario Personal, Aplicar Stock Cuadrillas Y Controlar Material
+                               Serializado.
+                              Escogiendo estas tres opciones se obtiene una buena configuración
+                               al final del proceso.
+                               <br>
+                               <br>
+                               <div class="alert alert-dismissible alert-secondary">
+                                Controlar Inventario Personal: con el chulito significa 
+                                que va a trabajar con bodegas de terreno, sin el chulito 
+                                no existe en la bodega de terreno.
+                               </div>
+                               <br>
+                               <div class="alert alert-dismissible alert-secondary">
+                                Aplicar Stock Cuadrillas: permite al usuario consultar 
+                                los Stock máximos de cuadrillas.
+                               </div>
+                               <br>
+                               <div class="alert alert-dismissible alert-secondary">
+                                  Controlar Material Serializado: permite un control de 
+                                  todos los materiales serializados.
+                               </div>
+                               <br>
+                               <div class="alert alert-dismissible alert-success">
+                                Aplicar Cambios: Se encuentra ubicado en la barra horizontal
+                                inferior (lado derecho).
+                                Para guardar los registros hechos 
+                                en el módulo para garantizar su configuración.
+                               </div>
+                            </h5>
+                          </strong> 
+                          </div>
+                          </div>
+                          </div>
+                    </div><!--fin mensaje de alerta-->
              </div><!--fin boton de texto-->
+             <br>
              <br>
             </div>
           </div>
@@ -368,16 +400,29 @@
             <div id="Demo2" class="w3-hide w3-black">
                 <br>
               <div class="w3-container w3-center">
-                <img src="imagenes/salir confi.png" style="width:50%;" class="w3-animate-zoom">
+                <img src="imagenes/salir confi.png" style="width:70%;" class="w3-animate-zoom">
               </div>
               <br><!--boton de texto-->
             <div class="container">
               <a href="#demo" class="btn btn-primary" data-toggle="collapse">Info</a>
                 <div id="demo" class="collapse">
                     <br>
-                    <h5>
-                   <p>Se encuentra ubicado en la barra vertical superior (lado derecho), o también la opción Esc estás opciones 
-                     permiten salir del Módulo Configuración Departamentos.</p></h5>
+                    <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-8">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                              Se encuentra ubicado en la barra vertical superior (lado derecho), 
+                              o también la opción Esc estás opciones 
+                              permiten salir del Módulo Configuración Departamentos.
+                            </h5>
+                          </strong> 
+                          </div>
+                          </div>
+                          </div>
+                    </div><!--fin mensaje de alerta-->
              </div><!--fin boton de texto-->
              <br>
              <br>
@@ -385,20 +430,8 @@
             </div>
              <br>
              <br>
-
-
-
-
             </div>
             </div>
-
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                  <img id="img01" style="width:100%">
-                </div>
-              </div>
-        </div>
         <!-- Button to Open the Modal -->
         <div class="container">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -424,8 +457,12 @@
         </div><!--FIN DEL MODAL DE VIDEO-->
       </div>
       </div>
-          </div>
      </main>
+      <!--boton de ir pagina arriba-->
+      <div class="container">
+          <span class="subir icon fa fa-arrow-circle-up fa-lg rounded-circle"></span>
+    </div>
+
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
@@ -448,3 +485,23 @@
       }
       }
       </script>
+      </script><!--boton para ir hacia arriba-->
+      <script>$(document).ready(function(){
+ 
+          $('.subir').click(function(){
+            $('body, html').animate({
+              scrollTop: '0px'
+            }, 300);
+          });
+         
+          $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+              $('.subir').slideDown(300);
+            } else {
+              $('.subir').slideUp(300);
+            }
+          });
+        });
+        </script>
+        </body>
+      </html>
