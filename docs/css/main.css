@@ -121,9 +121,9 @@ left: 60px; /*position where enlarged image should offset horizontally */
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-width: 100px;
-  margin-right: 4px;
-  margin-left: 1px;
+  min-width: 180px;
+  margin-right: 1px;
+  margin-left: -13px;
   margin-bottom: 4px;
 }
 
