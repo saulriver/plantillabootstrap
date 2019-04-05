@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="description" content="web siscos manual.">
+    <title>Opciones</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--w3 school css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--imagen ico de pestaña-->
+    <link rel="icon" href="imagenes/logosiscos.jpg" class="rounded-circle">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+  <body class="app sidebar-mini rtl">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="imagenes/logosiscos3.png" alt="User Image">
+          <div>
+            <p class="app-sidebar__user-name">Siscos</p>
+            <p class="app-sidebar__user-designation">Manual Web</p>
+          </div>
+        </div><!--prueba-->
+        <ul class="app-menu">
+          <li><a class="app-menu__item active" href="glosario.html"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Glosario</span></a></li>
+  
+          <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg"></i><span class="app-menu__label">Registrarse</span></a></li>
+  
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-filter"></i><span class="app-menu__label">Opciones</span></a>
+            
+          </li>
+          <!--menu de configuracion-->
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cogs"></i><span class="app-menu__label">Configuración</span></a>
+            
+          </li><!--fin menu de configuracion-->
+          <!--menu de inventario-->
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cubes"></i><span class="app-menu__label">Inventario</span></a>
+            
+          </li><!--fin de menu de inventario-->
+          <!--menu personal-->
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Personal</span></a>
+          
+          </li><!--fin menú personal-->
+          <!--menu utilidades-->
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload"></i><span class="app-menu__label">Utilidades</span></a>
+          
+          </li><!--fin menú utilidades-->
+          <!--menu ods-->
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-clipboard"></i><span class="app-menu__label"> ODS</span></a>
+          </li><!--fin menú ods-->
+          <!--menu admom-->
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt"></i><span class="app-menu__label">Admon</span></a>
+          </li><!--fin menu admon-->
+        </ul>
+      </aside>
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+              <h1><i class="fa fa-file-text"></i> Salir En SISCOS</h1>
+          
+            </div>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Opciones</li>
+              <li class="breadcrumb-item"><a href="cerrar_sesion_actual.html">Cerrar Sesión Actual</a></li>
+            </ul>
+          </div>
+
+      <div class="container">
+        <div class="w3-row-padding">
+            <div class="col-md-12">
+              <div class="tile">
+                  <h3 class="tile-title">Imagen Salir</h3>
+                  <button onclick="myAccFunc('Demo1')"
+                  class="btn btn-primary w3-block" type="button"><b>Ver Imagen</b></button>
+          <div id="Demo1" class="w3-hide w3-black">
+            <br>
+            <div class="w3-container w3-center">
+                <img src="imagenes/salir.png." style="width:100%;" class="w3-animate-zoom rounded">
+            </div>
+            <br><!--boton de texto-->
+            <div class="container">
+              <a href="#demo" class="btn btn-primary" data-toggle="collapse">Info</a>
+                <div id="demo" class="collapse">
+                  <br>
+                  <!--mensaje de alerta-->
+                  <div class="row">
+                      <div class="col-lg-8">
+                        <div class="bs-component">
+                          <div class="alert alert-dismissible alert-info">
+                            <strong>
+                              <h5>
+                                El usuario debe dar clic en SALIR para salir del sistema SISCOS.
+                              </h5>
+                            </strong> 
+                          </div>
+                        </div>
+                      </div>
+                      </div><!--fin mensaje de alerta-->
+                 </div>
+             </div><!--fin boton de texto-->
+              <br>
+            </div>
+              </div>
+            </div>
+            <!-- Button to Open the Modal -->
+          <div class="container">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+              Ver Video
+              </button>
+              <!-- Modal body -->
+              <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/iYxahnzoj4Q" frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal footer -->
+             <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+             </div>
+          </div>
+          </div>
+          </div>
+          </div><!--FIN DEL MODAL DE VIDEO-->
+        </div>
+      </div>
+     </main>
+     <!--boton para ir arriba en pagina-->
+     <div class="container">
+        <div class="w3-row-padding">
+            <div class="col-sm-6">
+        <span class="subir icon fa fa-arrow-circle-up fa-lg rounded-circle"></span>
+        </div>
+        </div>
+      </div>
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <!--Accordions imagen-->
+  <script>function myAccFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+      }
+      </script>
+      <!--boton para ir arriba en pagina-->
+      <script>$(document).ready(function(){
+ 
+          $('.subir').click(function(){
+            $('body, html').animate({
+              scrollTop: '0px'
+            }, 300);
+          });
+         
+          $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+              $('.subir').slideDown(300);
+            } else {
+              $('.subir').slideUp(300);
+            }
+          });
+        });
+        </script>
+   </body>
+</html>
+

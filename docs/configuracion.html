@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="description" content="Web Siscos Manual.">
+    <title>Siscos Manual</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--w3 school css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--imagen ico de pestaña-->
+    <link rel="icon" href="imagenes/siscos.png">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Style SCSS-->
+    <link rel="stylesheet" type="text/scss" href="css/style.scss">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">body { cursor: crosshair}</style>
+    
+  </head>
+  <body class="app sidebar-mini rtl" data-spy="scroll" data-offset="50">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="imagenes/logosiscos3.png" alt="User Image">
+        <div>
+          <p class="app-sidebar__user-name">Siscos</p>
+          <p class="app-sidebar__user-designation">Manual Web</p>
+        </div>
+      </div>
+      <ul class="app-menu">
+            <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Glosario</span></a></li>
+    
+            <li><a class="app-menu__item"  href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg"></i><span class="app-menu__label">Registrarse</span></a></li>
+    
+            <li><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter"></i><span class="app-menu__label">Opciones</span></a>
+              
+            </li>
+            <!--menu de configuracion-->
+            <li><a class="app-menu__item active" href="configuracion.html"><i class="app-menu__icon fa fa-cogs"></i><span class="app-menu__label">Configuración</span></a>
+              
+            </li><!--fin menu de configuracion-->
+            <!--menu de inventario-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cubes"></i><span class="app-menu__label">Inventario</span></a>
+              
+            </li><!--fin de menu de inventario-->
+            <!--menu personal-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Personal</span></a>
+            
+            </li><!--fin menú personal-->
+            <!--menu utilidades-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload"></i><span class="app-menu__label">Utilidades</span></a>
+            
+            </li><!--fin menú utilidades-->
+            <!--menu ods-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-clipboard"></i><span class="app-menu__label"> ODS</span></a>
+            </li><!--fin menú ods-->
+            <!--menu admom-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt"></i><span class="app-menu__label">Admon</span></a>
+            </li><!--fin menu admon-->
+          </ul>
+          </aside>
+             
+          <div id="cerrar" class="container-fluid">
+              <div class="row flex-lg-nowrap">
+
+                
+                  <div class="d-none d-lg-block col-sm-2 bd-toc">
+                      <ul class="navbar-nav">
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cerrar" onclick="myFunction()">
+                            Cerrar session actual</a>
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cambio" onclick="myFunction()">
+                            Cambio contraseña</a></li>
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            Salir</a></li>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  <main class="app-content" role="main">
+                      <div class="app-title">
+                          <div>
+                            <h1><i class="fa fa-file-text"></i> Configuración</h1>
+                            <p>General, Gestión de ordenes e Inventario en SISCOS</p>
+                          </div>
+                          <div class="bs-component">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Configuración</li>
+                            <li class="breadcrumb-item"><a href="configuracion.html">Inventario</a></li>
+                          </ol>
+                          </div>
+                        </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div id="cerrar" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+              <a href="#cerrar"></a>
+              <h1 class="tile-title">Cerrar seccion actual</h1>
+              <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+              <!--para insertar las imagenes-->
+              <div class='container'>
+                  <ul>
+                    <li>
+                      <a class='normal' href='#'>
+                        <svg viewBox='0 0 80 76' x='0px' y='0px'>
+                          <g>
+                            <path d='M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z'></path>
+                          </g>
+                        </svg>
+                      </a>
+                      <div class='info'>
+                        <h3>Single-origin coffee whatever</h3>
+                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a class='normal' href='#'>
+                        <svg viewBox='0 0 80 76' x='0px' y='0px'>
+                          <g>
+                            <path d='M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z'></path>
+                          </g>
+                        </svg>
+                      </a>
+                      <div class='info'>
+                        <h3>Single-origin coffee whatever</h3>
+                        <p>Williamsburg tofu polaroid, 90's Bushwick irony locavore ethnic meh messenger bag Truffaut jean shorts.</p>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              
+              <!--fin de imagenes-->
+            </div>
+            </div>
+            <div class="col-md-12">
+                <div id="cambio" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+                  <a href="#cambio"></a>
+                  <h1 class="tile-title">Cambio contraseña</h1>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="salir" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+                      <a href="#salir"></a>
+                      <h1 class="tile-title">Salir</h1>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                    </div>
+                  </div>
+               </main>
+                </div>
+                </div>          
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+      </script>
+      <!--scrooll efecto smooth para el id-->
+      <script>
+          function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+          }
+          </script>
+      <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+      function disableselect(e){
+      return false
+      }
+      function reEnable(){
+      return true
+      }
+      document.onselectstart=new Function ("return false")
+      if (window.sidebar){
+      document.onmousedown=disableselect
+      document.onclick=reEnable
+      }
+      // End -->
+      </script>
+   </body>
+   <!--para inhabilitar el boton derecho en la pagina-->
+   <Script language=JavaScript>
+      function right(e) {
+      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+      alert("Esta pagina es privada.");
+      return false;
+      }
+      else if (navigator.appName == 'Microsoft Internet Explorer' &&
+      (event.button == 2 || event.button == 3)) {
+      alert("Esta pagina es privada.");
+      return false;
+      }
+      return true;
+      }
+      document.onmousedown=right;
+      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+      window.onmousedown=right;
+      </script> 
+</html>
