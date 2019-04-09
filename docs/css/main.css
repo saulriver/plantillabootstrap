@@ -4400,6 +4400,7 @@ input[type="button"].btn-block {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  border-radius: 19px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -5079,7 +5080,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: rgb(33, 37, 41);
   border-radius: 0.25rem;
 }
 
@@ -14152,6 +14153,7 @@ be a descendant of the grid when it is being dragged.
   border-left-color: #009688;
   text-decoration: none;
   color: #fff;
+  border-radius:12px;
 }
 
 .app-menu__icon {
@@ -14171,7 +14173,7 @@ be a descendant of the grid when it is being dragged.
 .treeview.is-expanded [data-toggle='treeview'] {
   border-left-color: #009688;
   background: #0d1214;
-  padding: 10%;
+  padding: 15%;
 }
 
 .treeview.is-expanded .treeview-menu {
@@ -14360,7 +14362,8 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #FFF;
+  background-color: rgb(33, 37, 41);
+  color: whitesmoke;
   margin: -30px -30px 30px;
   padding: 20px 30px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -15820,7 +15823,7 @@ be a descendant of the grid when it is being dragged.
   order: 5;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font-size: .975rem;
+  font-size: -0.025rem;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
