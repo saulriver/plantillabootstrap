@@ -313,20 +313,18 @@
       </ul>
           </aside>
              
-          <div id="confi" class="container-fluid">
+          <div id="cerrar" class="container-fluid">
               <div class="row flex-lg-nowrap">
 
                 
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#confi" onclick="myFunction()">
-                            Configurar SISCOS</a>
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#insta" onclick="myFunction()">
-                            Instalación de SISCOS</a></li>
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#conten" onclick="myFunction()">
-                            Contenido de SISCOS</a></li>
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#abrev" onclick="myFunction()">
-                            Abreviaciones en SISCOS</a></li>
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cerrar" onclick="myFunction()">
+                            Cerrar sesión actual</a>
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cambia" onclick="myFunction()">
+                            Cambiar contraseña</a></li>
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            Salir</a></li>
                         </li>
                       </ul>
                     </div>
@@ -334,174 +332,132 @@
                   <main class="app-content" role="main">
                       <div class="app-title">
                           <div>
-                            <h1><i class="fa fa-file-text"></i> Glosario</h1>
-                            <p>Configure, instale, vea contenidos y abreviaciones en SISCOS</p>
+                            <h1><i class="fa fa-file-text"></i> Opciones</h1>
+                            <p>Salir, cerrar sesión actual y cambiar contraseña en SISCOS</p>
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Glosario</li>
-                            <li class="breadcrumb-item"><a href="registrarse.html">Registrarse</a></li>
+                            <li class="breadcrumb-item active">Opciones</li>
+                            <li class="breadcrumb-item"><a href="confi_gene_departamento.html">Departamentos</a></li>
                           </ol>
                           </div>
                         </div>
       <div class="row">
-          <div class="col-md-12">
-            <div id="confi" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
-              <a href="#confi"></a>
-              <article>
-              <h3 class="tile-title">Lo que se debe tener en cuenta antes de configurar SISCOS</h3>
-                <p><b>Donde se encuentran ubicadas mis bodegas:</b> </br>Es decir  en que departamentos
-                  la voy a ubicar, y cuantas bodegas necesito administrar y controlar.
-                </p>
-                </article>
-              <!--para insertar las imagenes-->
-              
-              <!--fin de imagenes-->
-            </div>
-            </div>
-            <div class="col-md-12">
-                <div id="insta" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
-                  <a href="#insta"></a>
-                  <h3 class="tile-title">Pasos para la instalación del sistema de información SISCOS</h3>
-                  <ul>
-                      <li>Instalar archivo mysql-connector-odbc-5.1.13-win32.msi.</li>
-                      <li>Copiar la carpeta SISCOS al disco C del PC/Portátil.</li>
-                      <li>Enviar acceso directo del archivo siscos.exe al escritorio.</li>
-                      <li>Ingresar usuario y contraseña asignada por el administrador.</li>
-                  </ul>
-                  <!-- Button to Open the Modal -->
-          <div class="container">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-              Ver Video
-              </button>
-              <!-- Modal body -->
-              <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-                <iframe width="1349" height="480" src="https://www.youtube.com/embed/Nqjv8sKzvRc" frameborder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal footer -->
-             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-             </div>
-          </div>
-          </div>
-          </div>
-          </div><!--fin del modal de video-->
-                  </div>
+          <div class="col-md-12"><!--cerrar sesion actual-->
+            <div id="cerrar" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+              <a href="#cerrar"></a>
+                      <h3 class="tile-title">Cerrar sesión actual</h3>
+              <div class="thumbnail" class="w3-hide w3-black">
+                <br>
+                <div class="w3-container w3-center">
+                  <img src="imagenes/cerrar.png." style="width:80%;" class="w3-animate-zoom rounded">
                 </div>
-                <div class="col-md-12">
-                    <div id="conten" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
-                      <a href="#conten"></a>
-                      <h3 class="tile-title">Contenido De Siscos</h3>
-                        <p>
-                          El contenido es todo lo que se tiene que configurar inicialmente
-                          para que SISCOS comience arrancar para generar las transacciones
-                          solicitadas,
-                          porque si no se hacen estas configuraciones seguro no se podrán
-                          generar las transacciones.
-                        </p>
-                        <p><b>Configuraciones:</b></p>
-                        <ul>
-                          <li>Departamentos y Localidades.</li>
-                          <li>Tipos de Material.</li>
-                          <li>Estados de Material.</li>
-                          <li>Marcas y Modelos.</li>
-                          <li>Materiales (Productos, Mercancías, Herramientas).</li>
-                          <li>Centros de Costos.</li>
-                          <li>Bodegas.</li>
-                          <li>Parámetros de Departamentos.</li>
-                          <li>Parámetros de Bodega.</li>
-                          <li>PEP.</li>
-                          <li>Periodos.</li>
-                          <li>Proveedores.</li>
-                          <li>Personal.</li>
-                        </ul>
-                        <p><b>Entradas:</b></p>
-                        <ul>
-                          <li>Entradas CT.</li>
-                          <li>Entradas EECC.</li>
-                          <li>Reintegros.</li>
-                          <li>Devoluciones.</li>
-                          <li>Anular Entrada.</li>
-                          <li>Anular Reintegro.</li>
-                        </ul>
-                        <p><b>Salidas:</b></p>
-                        <ul>
-                          <li>Salida CT.</li>
-                          <li>Salida EECC.</li>
-                          <li>Pedidos.</li>
-                          <li>Entregas con Ticket.</li>
-                          <li>Entregas sin Ticket.</li>
-                          <li>Devoluciones.</li>
-                          <li>Anular Salida.</li>
-                          <li>Anular Entrega.</li>
-                        </ul>
+                <div class="container">                    
+                      <br>
+                      <!--mensaje-->
+                      <div class="row">
+                          <div class="col-lg-12" style="margin-top:-34px">
+                            <div class="bs-component">
+                              <div class="alert alert-dismissible alert-info">
+                                <strong>
+                                  <h5>
+                                    El usuario debe ubicarse  en el campo opciones
+                                    que se encuentra ubicado en la barra vertical superior 
+                                    lado izquierdo, donde muestra tres opciones para que utilice. 
+                                    Dar clic en Cerrar sesión Actual y se finaliza 
+                                    el proceso.
+                                  </h5>
+                                </strong> 
+                              </div>
+                            </div>
+                          </div>
+                          </div><!--fin mensaje-->
                       </div>
                     </div>
-                    <div class="col-md-12">
-                        <div id="abrev" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
-                          <a href="#abrev"></a>
-                          <h3 class="tile-title">Abreviaciones</h3>
-                          <!--para insertar las imagenes-->
-                    <a class="thumbnail" href="#thumb"><button class="btn btn-primary w3-block" 
-                      style="border-radius: 12px"   type="button">
-                     <span>
-                       <img src="imagenes/cerrar.png" class="w3-animate-zoom rounded">
-                      </span>
-                    </button>
-                  </a>
-                        <!--fin de imagenes-->
-                        <p><b>Bodega:</b> es el espacio fisico en donde se
-                          ejecuta la transacción, almacenamiento y movimiento
-                          de materiales etc. <br>
-                        </p>
-                        <p><b>Almacén:</b> agrupación de bodegas reunión de esas bodegas.
-                        </p>
-                        <p><b>Stock:</b>existencia actualmente de un material en la bodega
-                          o en poder del técnico, es decir cuánto tiene actualmente ese técnico
-                          o cuanto hay en bodega.
-                        </p>
-                          <p><b>CT:</b> sigla para representar el suministro de materiales
-                            del cliente todo lo que compra el cliente va en marcado con CT,
-                            inventario en custodia.
-                          </p>
-                          <p class="card-text"><b>EECC:</b> sigla para representar el
-                              suministro de materiales de la empresa contratista, el
-                              material que compra la empresa el material propio.
-                            </p>
-                            <p><b>PEP:</b> presupuesto en el que se encuentra asignado un material.
-                            </p>
-                            <p><b>Área de Operación:</b> análisis en el que se encuentra
-                              asignado un material por ejemplo: datos, fibra óptica, planta
-                              externa, masivos etc. Es como los clasifica el cliente.
-                            </p>
-                            <p><b>Consumo:</b> material que ha  gastado técnicos
-                              (cuadrillas, brigadas) van asociado a O/T Y O/S.
-                            </p>
-                            <p><b>Bodega terreno:</b> ente virtual que mantienen
-                              el stock actual de un técnico, llevar el control de material
-                              del técnico que es lo que tiene entregado que no se ha gastado.
-                            </p>
-                            <p><b>SISCOS:</b> sistema de información (Software) para el
-                              control de inventarios y gestión de órdenes de servicios.
-                              <br>Es un software adaptable para la gestión de los inventarios
-                                para contratos de Movistar, los módulos de inventarios
-                                aplican a Telecomunicaciones.
-                            </p>
-                          </div>
-                        </div>
-                  </div>
-               </main>
-                </div>
-                </div>        
+                    </div>
+                  </div><!--fin cerrarsesion actual-->
+
+                        <!--cambio contraseña-->
+                        <div class="col-md-12">
+                            <div id="cambia" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+                              <a href="#cambia"></a>
+                                      <h3 class="tile-title">Cambio de contraseña</h3>
+                              <div class="thumbnail" class="w3-hide w3-black">
+                                <br>
+                                <div class="w3-container w3-center">
+                                  <img src="imagenes/cambio2.png" style="width:60%;" class="w3-animate-zoom rounded">
+                                </div>
+                                <br><!--boton de texto-->
+                                <div class="container">                    
+                                      <br>
+                                      <!--mensaje de alerta-->
+                                      <div class="row">
+                                          <div class="col-lg-12" style="margin-top:-34px">
+                                            <div class="bs-component">
+                                              <div class="alert alert-dismissible alert-info">
+                                                <strong>
+                                                  <h5>
+                                                      También se encuentra la opción  para que el usuario 
+                                                      pueda hacer cambio de contraseña,
+                                                      dar clic en cambio de contraseña donde 
+                                                      se muestra una ventana que se solicita 
+                                                      información u obligatoria.
+                                                      <br><br>
+                                                      El usuario en la información que se le  
+                                                      solicita es que ingrese su contraseña 
+                                                      actual e ingresar la contraseña nueva y 
+                                                      su confirmación, 
+                                                      seguidamente dar clic en el botón Aceptar 
+                                                      para que el sistema SISCOS en la base datos 
+                                                      se realicen los cambios y actualice la información.
+                                                  </h5>
+                                                </strong> 
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div><!--fin mensaje-->
+                                      </div>
+                                    </div>
+                                    </div>
+                                  </div><!--fin cambio de contraseña-->
+
+                                  <!--salir-->
+                                  <div class="col-md-12">
+                                      <div id="salir" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+                                        <a href="#salir"></a>
+                                                <h3 class="tile-title">Salir</h3>
+                                        <div class="thumbnail" class="w3-hide w3-black">
+                                          <br>
+                                          <div class="w3-container w3-center">
+                                            <img src="imagenes/salir.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                          </div>
+                                          <br><!--boton de texto-->
+                                            <div class="container">                    
+                                                <br>
+                                                <!--mensaje de alerta-->
+                                                <div class="row">
+                                                    <div class="col-lg-12" style="margin-top:-34px">
+                                                      <div class="bs-component">
+                                                        <div class="alert alert-dismissible alert-info">
+                                                          <strong>
+                                                            <h5>
+                                                              El usuario debe dar clic en SALIR para salir del sistema SISCOS.
+                                                            </h5>
+                                                          </strong> 
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    </div><!--fin mensaje-->
+                                                </div>
+                                               </div>
+                                              </div>
+                                            </div><!--fin salir-->
+                                          </div>
+                                        </main>
+                                      </div>
+                                    </div>        
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
     crossorigin="anonymous"></script>
