@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta name="description" content="Web Siscos Manual.">
-    <title>Siscos Manual</title>
+    <title>SISCOS</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style type="text/css">body { cursor: crosshair}</style>
-    
+
   </head>
   <body class="app sidebar-mini rtl" data-spy="scroll" data-offset="50">
     <!-- Navbar-->
@@ -40,12 +40,12 @@
           <p class="app-sidebar__user-designation">Manual Web</p>
         </div>
       </div>
-      <ul class="navmenu">
-          <li><a class="app-menu__item active" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-fw"></i><span class="app-menu__label">Glosario</span></a></li>
-  
-          <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-fw"></i><span class="app-menu__label">Registrarse</span></a></li>
-  
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-filter fa-fw"></i><span class="app-menu__label">Opciones</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+      <ul class="app-menu">
+          <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Glosario</span></a></li>
+
+          <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user"></i><span class="app-menu__label">Registrarse</span></a></li>
+
+          <li class="treeview"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-filter"></i><span class="app-menu__label">Opciones</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
             <ul class="treeview-menu">
               <li><a class="treeview-item" href="cerrar_sesion_actual.html"><i class="icon fa fa-chevron-circle-right"></i> Cerrar Sesión Actual</a></li>
               <li><a class="treeview-item" href="cambio_contrasena.html"><i class="icon fa fa-chevron-circle-right"></i> Cambio Contraseña</a></li>
@@ -53,7 +53,7 @@
             </ul>
           </li>
           <!--menu de configuracion-->
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cogs fa-fw"></i><span class="app-menu__label">Configuración</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cogs"></i><span class="app-menu__label">Configuración</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
             <ul class="treeview-menu">
               <li><a class="treeview-item" href="#"><i class="icon fa fa-folder-open fa-lg"></i><h6> General</h6></a></li>
                   <div class="dropdown-divider"></div>
@@ -90,7 +90,7 @@
             </ul>
           </li><!--fin menu de configuracion-->
           <!--menu de inventario-->
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cubes fa-fw"></i><span class="app-menu__label">Inventario</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cubes"></i><span class="app-menu__label">Inventario</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
             <ul class="treeview-menu">
               <li><a class="treeview-item" href="#"><i class="icon fa fa-folder-open fa-lg"></i><h6> Utilidades</h6></a></li>
                   <div class="dropdown-divider"></div>
@@ -191,7 +191,7 @@
             </ul>
           </li><!--fin de menu de inventario-->
           <!--menu personal-->
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users fa-fw"></i><span class="app-menu__label">Personal</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Personal</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
           <ul class="treeview-menu">
           <li><a class="treeview-item" href="#"><i class="icon fa fa-folder-open fa-lg"></i><h6> Utilidades</h6></a></li>
           <div class="dropdown-divider"></div>
@@ -206,13 +206,13 @@
           </ul>
           </li><!--fin menú personal-->
           <!--menu utilidades-->
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-fw"></i><span class="app-menu__label">Utilidades</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload"></i><span class="app-menu__label">Utilidades</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
           <ul class="treeview-menu">
           <li><a class="treeview-item" href="utilidades_impor_archiv.html"><i class="icon fa fa-chevron-circle-right"></i> Importar Archivos</a></li>
           </ul>
           </li><!--fin menú utilidades-->
           <!--menu ods-->
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-clipboard fa-fw"></i><span class="app-menu__label"> ODS</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-clipboard"></i><span class="app-menu__label"> ODS</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
           <ul class="treeview-menu">
           <li><a class="treeview-item" href="#" data-toggle="treeview-item"><i class="icon fa fa-folder-open fa-lg"></i><h6> ODS VPI</h6></a></li>
           <div class="dropdown-divider"></div>
@@ -292,7 +292,7 @@
           </ul>
           </li><!--fin menú ods-->
           <!--menu admom-->
-          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt fa-fw"></i><span class="app-menu__label">Admon</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt"></i><span class="app-menu__label">Admon</span><i class="treeview-indicator fa fa-angle-right fa-lg"></i></a>
           <ul class="treeview-menu">
           <li><a class="treeview-item" href="perfiles.html"><i class="icon fa fa-chevron-circle-right"></i> Perfiles</a></li>
           <li><a class="treeview-item" href="usuarios.html"><i class="icon fa fa-chevron-circle-right"></i> Usuario</a></li>
@@ -309,11 +309,11 @@
           </li><!--fin menu admon-->
           </ul>
           </aside>
-             
-          <div id="cerrar" class="container-fluid">
+
+          <div class="container-fluid">
               <div class="row flex-lg-nowrap">
 
-                
+
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navmenu">
                         <li class="app-menu__label treeview"><a class="nav-link app-menu__item" href="#cerrar" onclick="myFunction()">
@@ -324,9 +324,9 @@
                             Salir</a></li>
                       </ul>
                     </div>
-                    
+
                   <main class="app-content" role="main">
-                      <div class="app-title">
+                      <div id="cerrar" class="app-title">
                           <div>
                             <h1><i class="fa fa-file-text"></i> Opciones</h1>
                             <p>Salir, cerrar sesión actual y cambiar contraseña en SISCOS</p>
@@ -340,9 +340,10 @@
                           </ol>
                           </div>
                         </div>
+    <!--<div id="cerrar " class="content" style="height: 477px; margin-right:-77px; margin-left:-53px; overflow: scroll;">-->
       <div class="row">
           <div class="col-md-12">
-            <div id="cerrar" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+            <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
               <a href="#cerrar"></a>
               <h1 class="tile-title">Cerrar sesión actual</h1>
               <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -352,26 +353,12 @@
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-    hhghguuiuiuuuuuuuuuuuuuuuuuuuuuuu</p>
               <!--para insertar las imagenes-->
   <a class="thumbnail" href="#thumb"><button class="btn btn-primary w3-block" type="button">
     <span><img src="imagenes/cerrar.png" class="w3-animate-zoom rounded"></span></button></a>
               <!--fin de imagenes-->
             </div>
-            </div>
-            <div class="col-md-12">
-                <div id="cambio" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+                <div id="cambio" class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
                   <a href="#cambio"></a>
                   <h1 class="tile-title">Cambio contraseña</h1>
                   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -381,21 +368,9 @@
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                </div>
-                </div>
-                <div class="col-md-12">
-                    <div id="salir" class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
+      </div>
+
+                    <div id="salir" class="container-fluid bg-trans" style="padding-top:70px; padding-bottom:30px">
                       <a href="#salir"></a>
                       <h1 class="tile-title">Salir</h1>
                       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -405,25 +380,15 @@
           <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
           <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
           <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-                    </div>
-                    </div>
+          </div>
                   </div>
+                </div>
+              </div>
                </main>
                 </div>
-                </div>          
+                </div>
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
     <!-- Essential javascripts for application to work-->
@@ -480,5 +445,5 @@
       document.onmousedown=right;
       if (document.layers) window.captureEvents(Event.MOUSEDOWN);
       window.onmousedown=right;
-      </script> 
+      </script>
 </html>
