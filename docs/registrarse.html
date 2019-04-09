@@ -38,9 +38,9 @@
         </div>
         <ul class="app-menu">
           <li><a class="app-menu__item active" href="glosario.html"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Glosario</span></a></li>
-  
+
           <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg"></i><span class="app-menu__label">Registrarse</span></a></li>
-  
+
           <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-filter"></i><span class="app-menu__label">Opciones</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
               <li><a class="treeview-item" href="cerrar_sesion_actual.html"><i class="icon fa fa-chevron-circle-right"></i> Cerrar Sesión Actual</a></li>
@@ -305,6 +305,7 @@
           </li><!--fin menu admon-->
         </ul>
       </aside>
+      
     <main class="app-content">
         <div class="app-title">
             <div>
@@ -317,10 +318,12 @@
               <li class="breadcrumb-item active">Registrarse</li>
             </ul>
           </div>
+
+            
           <!--contenedores de imagenes-->
           <div class="container">
           <div class="w3-row-padding">
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <div class="tile">
                   <h3 class="tile-title">Imagenes Funciones Registrarse</h3>
                   <button onclick="myAccFunc('Demo1')"
@@ -337,15 +340,15 @@
                   <br>
                   <!--mensaje de alerta-->
                   <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-md-6">
                       <div class="bs-component">
                         <div class="alert alert-dismissible alert-info">
                           <strong>
-                            <h5>Para poder ingresar al sistema de información SISCOS se requiere que el usuario 
+                            <h5>Para poder ingresar al sistema de información SISCOS se requiere que el usuario
                             se identifique con su nombre de usuario y la clave correspondiente,
-                            al ingresar el usuario y la contraseña le damos clic en aceptar para poder 
+                            al ingresar el usuario y la contraseña le damos clic en aceptar para poder
                             ingresar al sistema y si queremos cancelar el proceso se escoge la opción cancelar.</h5>
-                          </strong> 
+                          </strong>
                         </div>
                       </div>
                     </div>
@@ -375,11 +378,11 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              Ingresamos las credenciales asignadas damos 
-                              clic en aceptar validará la información y permitirá el 
+                              Ingresamos las credenciales asignadas damos
+                              clic en aceptar validará la información y permitirá el
                               ingreso al sistema.
                             </h5>
-                          </strong> 
+                          </strong>
                         </div>
                       </div>
                     </div>
@@ -409,12 +412,12 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              Si al ingresar las credenciales no estén asignadas ya 
+                              Si al ingresar las credenciales no estén asignadas ya
                               sea un usuario que no existe o una contraseña,
-                              nos mostrará un mensaje de información de usuario o 
+                              nos mostrará un mensaje de información de usuario o
                               clave errada.
                             </h5>
-                          </strong> 
+                          </strong>
                         </div>
                       </div>
                     </div>
@@ -444,10 +447,10 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              Posteriormente a la autenticación exitosa, el sistema automáticamente 
+                              Posteriormente a la autenticación exitosa, el sistema automáticamente
                               dirige al usuario a la pantalla inicial del sistema de información SISCOS.
                             </h5>
-                          </strong> 
+                          </strong>
                         </div>
                       </div>
                     </div>
@@ -461,7 +464,8 @@
       <!--fin contenedores de imagen-->
           <!-- Button to Open the Modal -->
           <div class="container">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          <button type="button" class="btn btn-primary" style="margin-left:-104px;"
+          data-toggle="modal" data-target="#myModal">
           Ver Video
           </button>
           <!-- Modal body -->
@@ -470,7 +474,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-            <iframe width="795" height="426" src="https://www.youtube.com/embed/fwg84VP39Fs" 
+            <iframe width="795" height="426" src="https://www.youtube.com/embed/fwg84VP39Fs"
             frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -514,13 +518,13 @@
   </script>
   <!--boton para ir arriba en pagina-->
   <script>$(document).ready(function(){
- 
+
       $('.subir').click(function(){
         $('body, html').animate({
           scrollTop: '0px'
         }, 300);
       });
-     
+
       $(window).scroll(function(){
         if( $(this).scrollTop() > 0 ){
           $('.subir').slideDown(300);
