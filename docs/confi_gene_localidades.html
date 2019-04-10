@@ -328,7 +328,10 @@
                         <li class="treeview"><a class="nav-link app-menu__item" href="#buscar" onclick="myFunction()">
                             Buscar</a></li> 
                         <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                            Salir</a></li>     
+                            Salir</a></li>
+                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                            style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                            Ver video</a></li>     
                         </li>
                       </ul>
                     </div>
@@ -346,14 +349,14 @@
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>General</li>
-                            <li class="breadcrumb-item"><a href="confi_gene_localidades.html">Departamentos</a></li>
+                            <li class="breadcrumb-item"><a href="confi_gene_departamento.html">Departamentos</a></li>
                           </ol>
                           </div>
                         </div>
       <div class="row">
           <!--agregar localidades-->
           <div id="agregar" class="col-md-12">
-            <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+            <div class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
                 <a href="#agregar"></a>
                       <h3 class="tile-title">Agregar</h3>
                       <br><br>
@@ -426,7 +429,7 @@
                     </div><!--fin eliminar localidades-->
                     <!--modificar localidades-->
                     <div id="modifi" class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
                             <a href="#modifi"></a>
                                   <h3 class="tile-title">Modificar</h3>
                                   <br><br>
@@ -455,7 +458,7 @@
                               </div><!--fin modificar localidades-->
                     <!--importar archivo plano-->
                       <div id="import" class="col-md-12">
-                          <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+                          <div class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:30px">
                               <a href="#import"></a>
                                     <h3 class="tile-title">Importar archivo plano</h3>
                                     <br><br>
@@ -485,7 +488,7 @@
                                 </div><!--fin importar archivo plano-->
                       <!--exportar localidades-->
                       <div id="export" class="col-md-12">
-                          <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
+                          <div class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:40px">
                               <a href="#export"></a>
                                     <h3 class="tile-title">Exportar listado de localidades</h3>
                                     <br><br>
@@ -515,7 +518,7 @@
                                 </div><!--fin exportar localidades-->
                                 <!--buscar localidades-->
                                 <div id="buscar" class="col-md-12">
-                                    <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
+                                    <div class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:40px">
                                         <a href="#buscar"></a>
                                               <h3 class="tile-title">Buscar</h3>
                                               <br><br>
@@ -553,7 +556,7 @@
                                           </div><!--fin buscar localidades-->
                                           <!--salir localidades-->
                                 <div id="salir" class="col-md-12">
-                                    <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
+                                    <div class="container-fluid bg-trans tile" style="padding-top:70px;padding-bottom:40px">
                                         <a href="#salir"></a>
                                               <h3 class="tile-title">Salir</h3>
                                               <br><br>
@@ -581,7 +584,7 @@
                                               </div>
                                           </div><!--fin salir localidades-->
                   <!-- Video Button to Open the Modal -->
-                    <div class="container">
+                    <div id="video" class="container">
                         <button type="button" class="btn btn-primary w3-block" data-toggle="modal" data-target="#myModal">
                         Ver Video
                         </button>
