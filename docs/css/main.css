@@ -74,7 +74,7 @@ body {
 }
 /*estilo para imagen */
 .thumbnail{
-position: relative;
+position: absolute;
 z-index: 0;
 }
 
@@ -84,7 +84,7 @@ z-index: 50;
 }
 
 .thumbnail span{ /*CSS for enlarged image*/
-position: absolute;
+/*position: absolute;*/
 padding: 1px;
 left: -1000px;
 visibility: hidden;
@@ -13667,7 +13667,7 @@ be a descendant of the grid when it is being dragged.
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   padding: 30px;
-  background-color: #E5E5E5;
+  background-color: white;
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
@@ -14208,9 +14208,10 @@ be a descendant of the grid when it is being dragged.
 }
 
 .treeview-item.active, .treeview-item:hover, .treeview-item:focus, .treeview-menu:hover {
-  background: #0d1214;
+  background: rgb(33, 37, 41);
   text-decoration: none;
   color: #fff;
+  border-radius: 10px;
 }
 
 .treeview-item .icon {
