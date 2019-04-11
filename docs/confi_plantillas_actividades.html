@@ -320,8 +320,10 @@
                             Guardar</a>
                         <li class="treeview"><a class="nav-link app-menu__item" href="#Modificar" onclick="myFunction()">
                             Modificar</a></li>
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#Consultar" onclick="myFunction()">
-                            Consultar</a></li>  
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#Consultar plantilla" onclick="myFunction()">
+                            Consultar plantilla</a></li>  
+                            <li class="treeview"><a class="nav-link app-menu__item" href="#Buscar material" onclick="myFunction()">
+                                Buscar material</a></li> 
                           <li class="treeview"><a class="nav-link app-menu__item" href="#Salir" onclick="myFunction()">
                             Salir</a></li>
                             <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
@@ -398,7 +400,7 @@
                                                  otros materiales o quitar materiales.
                                                  <br>
                                                  <br>
-                                                 El usuario da clic en el botón modificar luego en el botón Consultar para
+                                                 El usuario da clic en el botón modificar luego en el botón Consultar plantilla para
                                                  escoger el código de la plantilla que se desea editar.
                                           </h5>
                                           </strong> 
@@ -408,48 +410,16 @@
                                     </div><!--fin mensaje-->
                                     <div class="w3-container w3-center">
                                       <span>
-                                      <img src="imagenes/modificar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                      <img src="imagenes/modificar plantillas actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
                                       </span>
                                     </div>
                                 </div>
                             </div><!--fin Modificar-->
-          <!--eliminar -->
-          <div id="Eliminar" class="col-md-12">
-              <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#Eliminar"></a>
-                        <h3 class="tile-title">Eliminar</h3>
-                
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/eliminar material plantilla.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                  <br><br>
-                  <br>
-                      <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                <div class="alert alert-dismissible alert-info">
-                                  <strong>
-                                    <h5>
-                                  Se encuentra ubicado en la barra horizontal superior lado izquierdo, 
-                                  permite al usuario poder eliminar material del listado configurado para
-                                  la plantilla que no crea conveniente para este proceso.
-                                    </h5>
-                                  </strong> 
-                                </div>
-                              </div>
-                            </div>
-                            </div><!--fin mensaje-->
-                        </div>
-                    </div><!--fin eliminar -->
-
-                    <!--Consultar-->
-                    <div id="Consultar" class="col-md-12">
+                    <!--Consultar plantilla-->
+                    <div id="Consultar plantilla" class="col-md-12">
                       <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
-                          <a href="#Consultar"></a>
-                                <h3 class="tile-title">Consultar</h3>
+                          <a href="#Consultar plantilla"></a>
+                                <h3 class="tile-title">Consultar plantillla</h3>
                                 <br><br>
                                 <!--mensaje de alerta-->
                                 <div class="row">
@@ -458,8 +428,9 @@
                                         <div class="alert alert-dismissible alert-info">
                                           <strong>
                                             <h5>
-                                     Se encuentra ubicado en la barra horizontal superior y permite 
-                                     al usuario hacer consulta de plantillas creadas en el sistema SISCOS.
+                                        Se encuentra ubicado en la barra horizontal superior, permite al usuario dar clic sobre 
+                                        el botón y escoger la plantilla que se le van asignar los materiales previamente para 
+                                        su configuración.
                                              
                                           </h5>
                                           </strong> 
@@ -469,7 +440,7 @@
                                     </div><!--fin mensaje-->
                                     <div class="w3-container w3-center">
                                       <span>
-                                      <img src="imagenes/consultar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                      <img src="imagenes/consultar plantilla a.png" style="width:70%;" class="w3-animate-zoom rounded">
                                       </span>
                                     </div>
                                 </div>
@@ -488,9 +459,10 @@
                                           <div class="alert alert-dismissible alert-info">
                                             <strong>
                                               <h5>
-                                                Se encuentra ubicado en la barra horizontal, permite al usuario
-                                                 hacer búsqueda de  materiales para asignar a las plantillas que 
-                                                 van hacer creadas en el sistema.
+                                        Se encuentra ubicado en la barra horizontal superior, el cuadro que está
+                                        al lado del código permite hacer búsqueda por medio del criterio de búsqueda
+                                        código los materiales que estén registrados en el sistema.
+                                             
                                             </h5>
                                             </strong> 
                                           </div>
@@ -499,44 +471,11 @@
                                       </div><!--fin mensaje-->
                                       <div class="w3-container w3-center">
                                         <span>
-                                        <img src="imagenes/buscar material.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                        <img src="imagenes/consultar plantilla actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
                                         </span>
                                       </div>
                                   </div>
                               </div><!--fin Buscar -->
-
-        <!--Archivo-->
-        <div id="Archivo" class="col-md-12">
-          <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
-              <a href="#Archivo"></a>
-                    <h3 class="tile-title">Archivo</h3>
-                    <br><br>
-                    <!--mensaje de alerta-->
-                    <div class="row">
-                        <div class="col-lg-12" style="margin-top:-34px">
-                          <div class="bs-component">
-                            <div class="alert alert-dismissible alert-info">
-                              <strong>
-                                <h5>
-                                  Se encuentra ubicado en la barra horizontal, permite al usuario poder
-                                   hacer más fácil el cargue de materiales previamente  a una plantilla no
-                                    uno a uno si no todos los necesarios cumpliendo con su estructura para
-                                     el archivo de carga que es texto delimitado por tabulaciones.
-                                 
-                              </h5>
-                              </strong> 
-                            </div>
-                          </div>
-                        </div>
-                        </div><!--fin mensaje-->
-                        <div class="w3-container w3-center">
-                          <span>
-                          <img src="imagenes/archivo plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                          </span>
-                        </div>
-                    </div>
-                </div><!--fin Archivo-->
-
                       <!--salir-->
                       <div id="Salir" class="col-md-12">
                           <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
@@ -550,8 +489,8 @@
                                             <div class="alert alert-dismissible alert-info">
                                               <strong>
                                                 <h5>
-                                             En el sistema SISCOS existen 2 maneras de salir del módulo plantillas materiales, 
-                                             la 1 se enncuentra ubicado en la barra vertical superior lado derecho y la 2 se 
+                                             En el sistema SISCOS existen 2 maneras de salir del módulo plantillas actividades, 
+                                             la 1 se encuentra ubicado en la barra vertical superior lado derecho y la 2 se 
                                              encuentra en la barra horizontal permitiendo al usuario dar clic en una de las opciones.
                                                  
                                               </h5>
@@ -562,7 +501,7 @@
                                         </div><!--fin mensaje-->
                                         <div class="w3-container w3-center">
                                           <span>
-                                          <img src="imagenes/salir plantillas materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                          <img src="imagenes/salir plantilla actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
                                           </span>
                                         </div>
                                     </div>
@@ -579,9 +518,9 @@
                               <div class="modal-content">
                                 <div class="modal-header">
                                     
-                                  <iframe width="1280" height="613" src="https://www.youtube.com/embed/LrvpDGFjbNg"
-                                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                  allowfullscreen></iframe>
+                            <iframe width="1280" height="651" src="https://www.youtube.com/embed/tlslMyBiQc4" 
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
 
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                               </div>
