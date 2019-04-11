@@ -319,6 +319,7 @@ sub {
 sup {
   top: -.5em;
 }
+/*=============boton de subir en pagina==============================================================*/
 .subir {
 	display:none;
 	padding:15px;
@@ -330,7 +331,7 @@ sup {
 	bottom:10px;
 	right:10px;
 }
-
+/*===================fin boton de subir en pagina==========================================================*/
 a {
   color: #009688;
   text-decoration: none;
