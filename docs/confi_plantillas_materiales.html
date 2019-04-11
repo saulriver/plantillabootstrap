@@ -322,8 +322,14 @@
                             Modificar</a></li>
                         <li class="treeview"><a class="nav-link app-menu__item" href="#Eliminar" onclick="myFunction()">
                             Eliminar</a></li>
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#Salir" onclick="myFunction()">
-                            Salir</a></li>    
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#Consultar" onclick="myFunction()">
+                            Consultar</a></li>  
+                       <li class="treeview"><a class="nav-link app-menu__item" href="#Buscar material" onclick="myFunction()">
+                            Buscar material</a></li>      
+                      <li class="treeview"><a class="nav-link app-menu__item" href="#Archivo" onclick="myFunction()">
+                              Archivo</a></li>
+                          <li class="treeview"><a class="nav-link app-menu__item" href="#Salir" onclick="myFunction()">
+                            Salir</a></li>
                             <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                               style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                                 Ver video</a></li>
@@ -392,10 +398,10 @@
                                         <div class="alert alert-dismissible alert-info">
                                           <strong>
                                             <h5>
-                                            Esta función permite al usuario editar un registro existente ubicándose 
-                                            en el código seguidamente dar doble clic, luego escoge el campo que desea modificar
-                                            clic en el botón Grabar para que se guarden los cambios realizados 
-                                             y se actualice la base de datos.
+                                        Se encuentra ubicado en la barra  vertical lado izquierdo, esta función permite al usuario editar un registro existente ubicándose 
+                                        en el boton modificar dando clic seguidamente seleccionando el departamento luego 
+                                        dar clic en el botón consultar y escoger el registro que necesita para la modificación
+                                        en el sistema SISCOS.
                                           </h5>
                                           </strong> 
                                         </div>
@@ -404,7 +410,7 @@
                                     </div><!--fin mensaje-->
                                     <div class="w3-container w3-center">
                                       <span>
-                                      <img src="imagenes/modificar produccion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                      <img src="imagenes/modificar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
                                       </span>
                                     </div>
                                 </div>
@@ -414,21 +420,10 @@
               <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
                   <a href="#Eliminar"></a>
                         <h3 class="tile-title">Eliminar</h3>
-                        <br><br>
-                      <!--mensaje de alerta-->
-                  <div class="col-lg-8"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-danger">
-                        <strong>Nota:</strong> 
-                        no se puede eliminar si ese registro seleccionado 
-                        (Registro producción) tiene movimientos al querer hacerlo
-                         muestra mensaje de error de lo contrario si permite la funcionalidad en el sistema.
-                        </div>
-                        </div>
-                        </div><!--fin mensaje de alerta-->
+                
                       <div class="w3-container w3-center">
                       <span>
-                        <img src="imagenes/eliminar produccion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                        <img src="imagenes/eliminar material plantilla.png" style="width:70%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                   <br><br>
@@ -440,9 +435,9 @@
                                 <div class="alert alert-dismissible alert-info">
                                   <strong>
                                     <h5>
-                            Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite eliminar 
-                            un registro ubicándose en el código de del ítems  dar doble clic y se activan los botones
-                             luego clic en el botón eliminar y finaliza el proceso de eliminación.
+                                  Se encuentra ubicado en la barra horizontal superior lado izquierdo, 
+                                  permite al usuario poder eliminar material del listado configurado para
+                                  la plantilla que no crea conveniente para este proceso.
                                     </h5>
                                   </strong> 
                                 </div>
@@ -451,6 +446,99 @@
                             </div><!--fin mensaje-->
                         </div>
                     </div><!--fin eliminar -->
+
+                    <!--Consultar-->
+                    <div id="Consultar" class="col-md-12">
+                      <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
+                          <a href="#Consultar"></a>
+                                <h3 class="tile-title">Consultar</h3>
+                                <br><br>
+                                <!--mensaje de alerta-->
+                                <div class="row">
+                                    <div class="col-lg-12" style="margin-top:-34px">
+                                      <div class="bs-component">
+                                        <div class="alert alert-dismissible alert-info">
+                                          <strong>
+                                            <h5>
+                                     Se encuentra ubicado en la barra horizontal superior y permite 
+                                     al usuario hacer consulta de plantillas creadas en el sistema SISCOS.
+                                             
+                                          </h5>
+                                          </strong> 
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div><!--fin mensaje-->
+                                    <div class="w3-container w3-center">
+                                      <span>
+                                      <img src="imagenes/consultar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                      </span>
+                                    </div>
+                                </div>
+                            </div><!--fin consultar -->
+
+                            <!--Buscar material -->
+                      <div id="Buscar material" class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
+                            <a href="#Buscar material"></a>
+                                  <h3 class="tile-title">Buscar material</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                              <h5>
+                                                Se encuentra ubicado en la barra horizontal, permite al usuario
+                                                 hacer búsqueda de  materiales para asignar a las plantillas que 
+                                                 van hacer creadas en el sistema.
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/buscar material.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin Buscar -->
+
+        <!--Archivo-->
+        <div id="Archivo" class="col-md-12">
+          <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
+              <a href="#Archivo"></a>
+                    <h3 class="tile-title">Archivo</h3>
+                    <br><br>
+                    <!--mensaje de alerta-->
+                    <div class="row">
+                        <div class="col-lg-12" style="margin-top:-34px">
+                          <div class="bs-component">
+                            <div class="alert alert-dismissible alert-info">
+                              <strong>
+                                <h5>
+                                  Se encuentra ubicado en la barra horizontal, permite al usuario poder
+                                   hacer más fácil el cargue de materiales previamente  a una plantilla no
+                                    uno a uno si no todos los necesarios cumpliendo con su estructura para
+                                     el archivo de carga que es texto delimitado por tabulaciones.
+                                 
+                              </h5>
+                              </strong> 
+                            </div>
+                          </div>
+                        </div>
+                        </div><!--fin mensaje-->
+                        <div class="w3-container w3-center">
+                          <span>
+                          <img src="imagenes/archivo plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                          </span>
+                        </div>
+                    </div>
+                </div><!--fin Archivo-->
+
                       <!--salir-->
                       <div id="Salir" class="col-md-12">
                           <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
@@ -464,8 +552,9 @@
                                             <div class="alert alert-dismissible alert-info">
                                               <strong>
                                                 <h5>
-                                             Se encuentra ubicado en la barra horizontal superior lado izquierdo,
-                                             permite dar clic en el botón y salir del módulo Registro Producción.
+                                             En el sistema SISCOS existen 2 maneras de salir del módulo plantillas materiales, 
+                                             la 1 se enncuentra ubicado en la barra vertical superior lado derecho y la 2 se 
+                                             encuentra en la barra horizontal permitiendo al usuario dar clic en una de las opciones.
                                                  
                                               </h5>
                                               </strong> 
@@ -475,11 +564,11 @@
                                         </div><!--fin mensaje-->
                                         <div class="w3-container w3-center">
                                           <span>
-                                          <img src="imagenes/salir produccion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                          <img src="imagenes/salir plantillas materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
                                           </span>
                                         </div>
                                     </div>
-                                </div><!--fin salir deptos-->
+                                </div><!--fin salir -->
                   <!-- Video Button to Open the Modal -->
                     <div id="video" class="container">
                         <button type="button" class="btn btn-primary w3-block" data-toggle="modal" data-target="#myModal">
@@ -492,9 +581,9 @@
                               <div class="modal-content">
                                 <div class="modal-header">
                                     
-                                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/DK5wK9j_YpA"
-                                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                          allowfullscreen></iframe>
+                                  <iframe width="1280" height="613" src="https://www.youtube.com/embed/LrvpDGFjbNg"
+                                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                  allowfullscreen></iframe>
 
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                               </div>
