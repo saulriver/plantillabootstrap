@@ -25,7 +25,7 @@
     <style type="text/css">body { cursor: crosshair}</style>
     
   </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll" style="padding-right:0">
+  <body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
@@ -42,13 +42,13 @@
       </div>
  <ul class="app-menu">
    <!--menu glosario-->
-    <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Glosario</h5></span></a></li>
+    <li><a class="app-menu__item" href="glosario.html" data-toggle="tooltip" title="Abreviaciones y significados en SISCOS"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Glosario</h5></span></a></li>
     <!--menu registrarse-->
-      <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Registrarse</h5></span></a></li>
+      <li><a class="app-menu__item" href="registrarse.html" data-toggle="tooltip" title="Iniciar sesión en SISCOS"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Registrarse</h5></span></a></li>
       <!--menu opciones-->
-       <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Opciones</h5></span></a></li>
+       <li class="treeview"><a class="app-menu__item" href="opciones.html" data-toggle="tooltip" title="Cambiar contraseña y cerrar sesión en SISCOS"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Opciones</h5></span></a></li>
        <!--menu de configuracion-->
-      <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Configuración</h5></span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+      <li><a class="app-menu__item active" href="#" data-toggle="tooltip" title="Configuración / General / Gestión de ordenes / Inventario"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Configuración</h5></span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
            <ul class="treeview-menu">
               <li><a class="app-menu__item" href="confi_gene_departamento.html" data-toggle="tooltip" title="Configuración / General / Departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
@@ -362,13 +362,11 @@
                           &nbsp; Buscar</a></li>
                         <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                           &nbsp; Salir</a></li>
-                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                          style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
-                          &nbsp; Ir a video</a></li>    
-                        </li>
+                        </li>  
                       </ul>
                     </div>
                     <!--fin menu derecho-->
+
                     <!--main-->
                   <main class="app-content" role="main">
                       <div class="app-title">
@@ -387,6 +385,7 @@
                           </div>
                         </div>
       <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
           <!--aplicar pep-->
           <div id="aplicar" class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
@@ -612,7 +611,7 @@
                         </button>
                         <!-- Modal body -->
                             <!-- Modal -->
-                          <div class="modal fade" id="myModal" role="dialog">
+                          <div class="modal fade" id="modal-video" role="dialog">
                             <div class="modal-dialog modal-lg">
                               <div class="modal-content">
                                 <div class="modal-header">
@@ -630,11 +629,11 @@
                           </div>
                         </div>
                       </div><!--FIN DEL MODAL DE VIDEO--> 
-                    </div>                 
-                  </main>
-                </div><!--fin row flex-->
-              </div><!--fin container fluid-->
-                                    
+                            </div>                
+                          </main>
+                        </div><!--fin row flex-->
+                      </div><!--fin container fluid-->
+                      
                                     
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
@@ -655,6 +654,7 @@
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
       </script>
+       <script src="js/scripts.js"></script>
       <!--scrooll efecto smooth para el id-->
       <script>
           function myFunction() {
@@ -676,6 +676,7 @@
       }
       // End -->
       </script>
+     
    </body>
    <!--para inhabilitar el boton derecho en la pagina-->
    <Script language=JavaScript>
