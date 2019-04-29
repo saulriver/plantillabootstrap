@@ -4920,7 +4920,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: rgb(33, 37, 41);
+  background-color: rgb(198, 201, 204)04);
   border-radius: 0.25rem;
 }
 
@@ -13916,8 +13916,8 @@ be a descendant of the grid when it is being dragged.
 }
 
 .treeview.is-expanded [data-toggle='treeview'] {
-  border-left-color: #009688;
-  background: #0d1214;
+  border-left-color: white;
+  background: #009688;
   padding: 10%;
 }
 
@@ -15251,7 +15251,7 @@ be a descendant of the grid when it is being dragged.
 .bd-toc {
   -ms-flex-order: 5;
   order: 5;
-  padding-top: 1.5rem;
+  padding-top: 5.5rem;
   padding-bottom: 1.5rem;
   font-size: -0.025rem;
 }
@@ -15372,3 +15372,43 @@ be a descendant of the grid when it is being dragged.
   color: rgba(0, 0, 0, 0.85);
   background-color: transparent;
 }
+
+/*===============================================================================================0*/
+/*css para las imagenes*/
+
+.sidenav {
+  height: 100%;
+  width: 120px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgb(33, 37, 41);
+  overflow-x: auto;
+  padding-top: 218px;
+  clear: both;
+  float: right;
+  background-color: transparent !important;
+}
+
+.sidenav a {
+  padding: 6px 8px 18px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  font-size: 19px;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.main {
+  margin-left: 220px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 218px;}
+  .sidenav a {font-size: 18px;}
