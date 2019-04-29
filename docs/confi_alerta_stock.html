@@ -74,7 +74,7 @@
                 <div class="dropdown-divider"></div>
           </ul>
          </li>
-          <li class="treeview is-expanded"><a class="app-menu__item active" href="#alerta" data-toggle="treeview" onclick="myFunction()"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <li class="treeview is-expanded"><a class="app-menu__item active" href="#alerta" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="app-menu__item" href="confi_estado_material.html" data-toggle="tooltip" title="Configuración / Inventario / Estado material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
                 <li><a class="app-menu__item" href="confi_tipo_material.html" data-toggle="tooltip" title="Configuración / Inventario / Tipo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
@@ -568,12 +568,107 @@
                                           </div>
                                       </div>
                                   </div><!--fin Importar-->
+                                  <!--Exit-->
+                      <div id="exit" class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                            <a href="#exit"></a>
+                                  <h3 class="tile-title">Exit</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            Se encuentra ubicado en la barra horizontal superior, permite salir
+                                            de la configuración del material como tal del módulo no porque a un 
+                                            se requiere de más información para la configuración de alerta stock
+                                            de la plantilla.
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/salir alerta.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin exit-->
+                        <!--Eliminar plantilla-->
+                      <div id="eliminarplantilla" class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                            <a href="#eliminarplantilla"></a>
+                                  <h3 class="tile-title">Eliminar plantilla</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            Se encuentra ubicado en la barra  vertical lado izquierdo, permitiendo al 
+                                            usuario eliminar las platillas agregadas que no crea conveniente para la 
+                                            configuración en el sistema SISCOS.
+                                            <br> <br>
+                                            El usuario debe seleccionar la plantilla y luego hacer clic en el botón
+                                            eliminar plantilla y es eliminada correctamente del sistema.
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/eliminar plantilla a.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin eliminar plantilla-->
+                              <!--Agregar correo-->
+                      <div id="agregarcorreo" class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                            <a href="#agregarcorreo"></a>
+                                  <h3 class="tile-title">Agregar correo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                              Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite 
+                                              al usuario poder agregar correo seleccionando la plantilla y luego hacer clic 
+                                              en el botón agregar correo y mostrará una ventana emergente donde se requiere
+                                              de ingresar información del correo que va hacer asignado.
+                                            <br> <br>
+                                              Seguidamente haciendo clic en el botón más para que sea exitosa la agregación
+                                              del correo a la plantilla en el sistema.
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/agregar correo.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin agregar correo-->
                                 
                                 <!--salir -->
-                                <div id="exit" class="col-md-12">
+                                <div id="salir" class="col-md-12">
                                     <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                        <a href="#exit"></a>
-                                              <h3 class="tile-title">Exit</h3>
+                                        <a href="#salir"></a>
+                                              <h3 class="tile-title">Salir</h3>
                                               <br><br>
                                               <!--mensaje de alerta-->
                                               <div class="row">
@@ -582,9 +677,8 @@
                                                       <div class="alert alert-dismissible alert-info">
                                                         <strong>
                                                         <h5>
-                                                        Se encuentra ubicado en la barra horizontal superior lado izquierdo está permite salir
-                                                        del Módulo control stock material  personal.
-                
+                                                        Se encuentra ubicado en la barra horizontal superior permite al usuario
+                                                        salir de módulo Alerta Stock.
                                                         </h5>
                                                         </strong> 
                                                       </div>
@@ -593,7 +687,7 @@
                                                   </div><!--fin mensaje-->
                                                   <div class="w3-container w3-center">
                                                     <span>
-                                                    <img src="imagenes/salir stock.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                                    <img src="imagenes/salir alerta stock.png" style="width:80%;" class="w3-animate-zoom rounded">
                                                     </span>
                                                   </div>
                                               </div>
