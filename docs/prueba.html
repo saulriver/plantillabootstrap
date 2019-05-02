@@ -16,9 +16,16 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>body { cursor: crosshair}</style>    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>body { cursor: crosshair}</style>
+    
   </head>
-  <body class="app sidebar-mini rtl">
+  <body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
@@ -41,19 +48,20 @@
       <!--menu opciones-->
        <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
        <!--menu de configuracion-->
-      <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cogs fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
            <ul class="treeview-menu">
               <li><a class="treeview-item" href="confi_gene_departamento.html" data-toggle="tooltip" title="Configuración / General / Departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
               <li><a class="treeview-item" href="confi_gene_localidades.html" data-toggle="tooltip" title="Configuración / General / Localidades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Localidades</a></li>
+              <div class="dropdown-divider"></div>
            </ul>
         </li>          
-         <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
            <ul class="treeview-menu">
                 <li><a class="app-menu__item" href="confi_tipo_reparacion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo reparación"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Reparación</a></li>
                 <li><a class="app-menu__item" href="confi_tipo_peticion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo petición"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Petición</a></li>
                 <li><a class="app-menu__item" href="confi_tipo_de_orden_ot.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo de orden OT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo De Orden OT</a></li>
-                <li><a class="app-menu__item active" href="confi_causales_devolucion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Devolución</a></li>
+                <li><a class="app-menu__item" href="confi_causales_devolucion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Devolución</a></li>
                 <li><a class="app-menu__item" href="confi_operacion_comercial.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Operación comercial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Operación Comercial</a></li>
                 <li><a class="app-menu__item" href="confi_clases_mano_obra.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Clases mano obra"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Clases Mano Obra</a></li>
                 <li><a class="app-menu__item" href="confi_registro_actividades.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Registro actividades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Actividades</a></li>
@@ -63,9 +71,10 @@
                 <li><a class="app-menu__item" href="confi_bandejas_de_legalizacion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Bandejas de legalización"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Bandejas De Legalización</a></li>
                 <li><a class="app-menu__item" href="confi_areas_de_transferencias.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Areas de transferencia"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Areas De Transferencia</a></li>
                 <li><a class="app-menu__item" href="confi_causales_reagendamiento.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales reagendamiento"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Reagendamiento</a></li>
+                <div class="dropdown-divider"></div>
           </ul>
          </li>
-          <li class="treeview"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="app-menu__item" href="confi_estado_material.html" data-toggle="tooltip" title="Configuración / Inventario / Estado material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
                 <li><a class="app-menu__item" href="confi_tipo_material.html" data-toggle="tooltip" title="Configuración / Inventario / Tipo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
@@ -308,7 +317,7 @@
     </ul>
   </li>
 
-  <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span></a>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span><i class="treeview-indicator fa fa-caret-right"></i></a>
     <ul class="treeview-menu">
           <li><a class="app-menu__item" href="ods_analisis_reiteradas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Reiteradas</a></li>
           <li><a class="app-menu__item" href="ods_analisis_avarias_infancia.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Avarias Infancia</a></li>
@@ -337,70 +346,235 @@
     </ul>
     </aside>
 
-      
-    <div class="sidenav">
-        <ul class="nav nav-pills flex-column">
-        <a href="#Grabar" onclick="myFunction()">Grabar</a>
-        <a href="#Modificar" onclick="myFunction()">Modificar</a>
-        <a href="#Eliminar" onclick="myFunction()">Eliminar</a>
-        <a href="#Salir" onclick="myFunction()">Salir</a>
-        <a class="nav-link app-menu__item alert alert-dark" 
-          style="color:white; background-color:rgb(0, 112, 101);" data-toggle="modal" 
-          data-target="#myModal">
-        Ver video</a>
-        </ul>
-      </div>
-            
-                <!--main-->
-              <main class="app-content" role="main">
-                  <div class="app-title">
-                      <div>
-                        <h1><i class="fa fa-file-text"></i>Causales devolución</h1>
-                        <p>Funcionalidades del módulo causales devolución en SISCOS</p>
-                      </div>
+             <!--container fluid-->
+          <div id=" " class="container-fluid">
+            <!--row flex-->
+              <div class="row flex-lg-nowrap">
+                  <!--menu derecho-->
+                  <div class="d-none d-lg-block col-sm-2 bd-toc">
+                      <ul class="navbar-nav">
+                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                            style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                          Ver video</a></li>  
+                      </ul>
+                    </div>
+                    <!--fin menu derecho-->
+                    <!--main-->
+                  <main class="app-content" role="main">
+                      <div class="app-title">
+                          <div>
+                            <h1><i class="fa fa-file-text"></i>titulo</h1>
+                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
+                          </div>
+                          <div class="bs-component">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">titulo</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
+                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
+                          </ol>
+                          </div>
+                        </div>
+      <div class="row">
+
+  <!--comienzo-->
+  <div class="col-md-12">
+      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+          <a href="#replicarlistacontrol"></a>
+                <h3 class="tile-title">titulo</h3>
+                <br><br>
+                <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-34px">
                       <div class="bs-component">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Configuración</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
-                        <li class="breadcrumb-item"><a href="confi_operacion_comercial.html">Operación comercial </a></li>
-                      </ol>
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                              texto
+                            </h5>
+                          </strong> 
+                        </div>
                       </div>
                     </div>
-                        <!--Grabar-->
-                        <div id="Grabar">
-                          <div class="container-fluid bg-trans tile">
-                                    <h3 class="tile-title"> Grabar</h3>
-                                    <br><br>
-                                    <!--mensaje-->
-                                    <div class="row">
-                                        <div style="margin-top:-34px">
-                                          <div class="bs-component">
-                                            <div class="alert alert-dismissible alert-info">
-                                              <strong>
-                                                <h5>
-                                              Se encuentra ubicado en la barra vertical 
-                                              superior lado izquierdo, permite al usuario poder dar clic en el botón
-                                              ya cuando se tiene toda la información ingresada y hacer el registro al sistema SISCOS.
-                                              </h5>
-                                              </strong> 
-                                            </div>
+                    </div><!--fin mensaje-->
+                    <div class="w3-container w3-center">
+                      <span>
+                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
+                </div>
+            </div><!--fin-->
+
+  <!--comienzo-->
+  <div id=" " class="col-md-12">
+      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+          <a href="#importar"></a>
+                <h3 class="tile-title">titulo</h3>
+                <br><br>
+                <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-34px">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                          <h5>
+                         texto
+                          </h5>
+                          </strong> 
+                        </div>
+                      </div>
+                    </div>
+                    </div><!--fin mensaje-->
+                    <div class="w3-container w3-center">
+                      <span>
+                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
+                </div>
+            </div><!--fin-->
+
+          <!--comienzo-->
+            <div id=" " class="col-md-12">
+                <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+                          <h3 class="tile-title"> titulo</h3>
+                        <br><br>
+                      <!--mensaje de alerta-->
+                  <div class="col-lg-10"  style="margin-top:-34px">
+                    <div class="bs-component">
+                      <div class="alert alert-dismissible alert-danger">
+                        <strong>Nota:</strong> 
+                        <h5>
+                         texto
+                        </h5>
+                        </div>
+                        </div>
+                        </div><!--fin mensaje de alerta-->
+                        <br><br>
+                        <!--mensaje-->
+                        <div class="row">
+                            <div class="col-lg-12" style="margin-top:-34px">
+                              <div class="bs-component">
+                                <div class="alert alert-dismissible alert-info">
+                                  <strong>
+                                    <h5>
+                                      texto
+                                    </h5>
+                                  </strong> 
+                                </div>
+                              </div>
+                            </div>
+                            </div><!--fin mensaje-->
+                      <div class="w3-container w3-center">
+                      <span>
+                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
+                  </div>
+                </div><!--fin-->
+
+                      
+
+                                  <!--comienzo-->
+                      <div id=" " class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">titulo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            texto
+                                            </h5>
+                                            </strong> 
                                           </div>
                                         </div>
-                                        </div><!--fin mensaje-->
-                                        <div class="w3-container w3-center">
-                                            <span>
-                                            <img src="imagenes/grabar causales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
                                       </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
                                       </div>
-                                </div><!--fin Grabar-->
-              
-                                  <!--Modificar-->
-                                  <div id="Modificar" class="col-md-12">
+                                  </div>
+                              </div><!--fin-->
+
+                        <!--comienzo-->
+                      <div id=" " class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">titulo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            texto
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin-->
+
+                              <!--comienzo-->
+                      <div id=" " class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">titulo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                              texto
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin -->
+                                
+                                <!--salir -->
+                                <div id="salir" class="col-md-12">
                                     <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">Modificar</h3>
+                                              <h3 class="tile-title">titulo</h3>
                                               <br><br>
                                               <!--mensaje de alerta-->
                                               <div class="row">
@@ -408,11 +582,8 @@
                                                     <div class="bs-component">
                                                       <div class="alert alert-dismissible alert-info">
                                                         <strong>
-                                                          <h5>
-                                                      Esta funcionalidad permite al usuario ubicarse en el listado de causas sobre
-                                                      el código de un registro existente y dar doble clic, seguidamente escoger el campo que desea 
-                                                      editar y luego hacer clic en el botón Grabar para que se guarde el registro con el cambio realizado
-                                                      la actualización en la base de datos se hace correctamente.
+                                                        <h5>
+                                                        texto
                                                         </h5>
                                                         </strong> 
                                                       </div>
@@ -421,94 +592,22 @@
                                                   </div><!--fin mensaje-->
                                                   <div class="w3-container w3-center">
                                                     <span>
-                                                    <img src="imagenes/modificar causales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
                                                     </span>
                                                   </div>
                                               </div>
-                                          </div><!--fin Modificar-->
-                        <!--eliminar -->
-                        <div id="Eliminar" class="col-md-12">
-                            <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                      <h3 class="tile-title">Eliminar</h3>
-                                      <br><br>
-                                    <!--mensaje de alerta-->
-                                <div class="col-lg-8"  style="margin-top:-34px">
-                                  <div class="bs-component">
-                                    <div class="alert alert-dismissible alert-danger">
-                                      <strong>Nota:</strong> 
-                                      no se puede eliminar si ese registro seleccionado 
-                                      (Causales devolución) tiene movimientos al querer hacerlo
-                                       muestra mensaje de error.
-                                      </div>
-                                      </div>
-                                      </div><!--fin mensaje de alerta-->
-                                    <div class="w3-container w3-center">
-                                    <span>
-                                      <img src="imagenes/eliminar causales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
-                                  </div>
-                                <br><br>
-                                <br>
-                                    <!--mensaje-->
-                                      <div class="row">
-                                          <div class="col-lg-12" style="margin-top:-34px">
-                                            <div class="bs-component">
-                                              <div class="alert alert-dismissible alert-info">
-                                                <strong>
-                                                  <h5>
-                                          Se encuentra ubicado en la barra horizontal superior lado
-                                          izquierdo, para que este botón se encuentre activo el usuario debe dar doble 
-                                          clic sobre el código del registro que desea eliminar  del listado de causas devoluciones.
-                                                  </h5>
-                                                </strong> 
-                                              </div>
-                                            </div>
+                                          </div><!--fin salir localidades-->
+                                        </div>
+                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                                            <iframe class="embed-responsive-item"  
+                                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                              allowfullscreen>
+                                            </iframe>
                                           </div>
-                                          </div><!--fin mensaje-->
-                                      </div>
-                                  </div><!--fin eliminar -->
-                                    <!--salir-->
-                                    <div id="Salir" class="col-md-12">
-                                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                                  <h3 class="tile-title">Salir</h3>
-                                                  <br><br>
-                                                  <!--mensaje de alerta-->
-                                                  <div class="row">
-                                                      <div class="col-lg-12" style="margin-top:-34px">
-                                                        <div class="bs-component">
-                                                          <div class="alert alert-dismissible alert-info">
-                                                            <strong>
-                                                              <h5>
-                                                                Existen 2 maneras de salir del módulo causales devolución la primera Se 
-                                                                encuentra ubicado en la barra horizontal superior lado izquierdo y la 
-                                                                segunda se encuentra ubicado 
-                                                                en la la barra vertical superior lado derecho, estas 2 formas 
-                                                                permiten  salir del módulo.
-                                                            </h5>
-                                                            </strong> 
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      </div><!--fin mensaje-->
-                                                      <div class="w3-container w3-center">
-                                                        <span>
-                                                        <img src="imagenes/salir causales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                                        </span>
-                                                      </div>
-                                                    </div><!--fin salir deptos-->
-                                                  </div> 
-                                          </main>
-                            
-                                          <div class="main">
-                            <!-- Modal body -->
-                            <!-- Modal -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j17hCi9CdLE"
-                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                              </div>
-                        </div>
-
+                                        </div><!--fin row flex-->               
+                                      </main>
+                                  </div><!--fin container fluid-->
+                                
 <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
 crossorigin="anonymous"></script>
@@ -523,62 +622,49 @@ crossorigin="anonymous"></script>
 <!-- Page specific javascripts-->
 <script type="text/javascript" src="js/plugins/chart.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- jQuery library -->
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
 <!-- Page specific javascripts-->
 <script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-
-  <!--impedir que copien el codigo de la pagina-->
+  $('.bs-component [data-toggle="popover"]').popover();
+  $('.bs-component [data-toggle="tooltip"]').tooltip();
+</script>
+<!--scrooll efecto smooth para el id-->
+<script>
+    function myFunction() {
+      document.documentElement.style.scrollBehavior = "smooth";
+    }
+    </script>
+<!--impedir que copien el codigo de la pagina-->
 <script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
-
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+// End -->
+</script>
 </body>
-
 <!--para inhabilitar el boton derecho en la pagina-->
 <Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
-
+function right(e) {
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+alert("Esta pagina es privada.");
+return false;
+}
+else if (navigator.appName == 'Microsoft Internet Explorer' &&
+(event.button == 2 || event.button == 3)) {
+alert("Esta pagina es privada.");
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script> 
 </html>

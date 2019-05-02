@@ -384,7 +384,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.75rem;
+  font-size: 1.70rem;
 }
 
 h3, .h3 {
@@ -13880,7 +13880,7 @@ be a descendant of the grid when it is being dragged.
           align-items: center;
   padding: 12px 15px;
   font-size: 1.08em;
-  border-left: 3px solid transparent;
+  border-left: 6px solid transparent;
   -webkit-transition: border-left-color 0.3s ease,
  background-color 0.3s ease;
   -o-transition: border-left-color 0.3s ease,
@@ -15372,43 +15372,3 @@ be a descendant of the grid when it is being dragged.
   color: rgba(0, 0, 0, 0.85);
   background-color: transparent;
 }
-
-/*===============================================================================================0*/
-/*css para las imagenes*/
-
-.sidenav {
-  height: 100%;
-  width: 120px;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  background-color: rgb(33, 37, 41);
-  overflow-x: auto;
-  padding-top: 218px;
-  clear: both;
-  float: right;
-  background-color: transparent !important;
-}
-
-.sidenav a {
-  padding: 6px 8px 18px 16px;
-  text-decoration: none;
-  color: #818181;
-  display: block;
-  font-size: 19px;
-}
-
-.sidenav a:hover {
-  color: black;
-}
-
-.main {
-  margin-left: 220px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 218px;}
-  .sidenav a {font-size: 18px;}

@@ -346,24 +346,28 @@
     </ul>
     </aside>
              <!--container fluid-->
-          <div class="container-fluid">
+          <div id="aplicar" class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
+                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item active" href="#aplicar" onclick="myFunction()">
-                          Aplicar</a></li>
+                          Aplicar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
-                          Eliminar</a></li>
+                          Eliminar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#modificar" onclick="myFunction()">
-                          Modificar</a></li>
+                          Modificar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#carga" onclick="myFunction()">
-                          Carga masiva</a></li>
+                          Carga masiva</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#buscar" onclick="myFunction()">
-                          Buscar</a></li>
+                          Buscar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                          Salir</a></li>
+                          Salir</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                           style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                          Ver video</a></li>
                       </ul>
                     </div>
                     <!--fin menu derecho-->
@@ -377,7 +381,7 @@
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color: black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
@@ -387,7 +391,7 @@
                         </div>
       <div class="row">
           <!--aplicar pep-->
-          <div id="aplicar" class="col-md-12">
+          <div class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
                       <h3 class="tile-title">Aplicar</h3>
                       <br><br>
@@ -603,34 +607,16 @@
                                         </div>
                                     </div>
                                 </div><!--fin salir pep-->
-                  <!-- Video Button to Open the Modal -->
-                    <div class="container">
-                        <button type="button" class="btn btn-primary w3-block" data-toggle="modal" data-target="#myModal">
-                        <i class="fa fa-youtube-play fa-lg fa-5x"></i>
-                        </button>
-                        <!-- Modal body -->
-                            <!-- Modal -->
-                          <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <iframe width="1280" height="624" src="https://www.youtube.com/embed/DpnF4EkGA9A" 
-                                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                  allowfullscreen>
-                                </iframe>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                              <!-- Modal footer -->
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div><!--FIN DEL MODAL DE VIDEO-->
-                            </div>               
-                          </main>
-                        </div><!--fin row flex-->
+                      <!--video-->
+                      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                          <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/DpnF4EkGA9A"
+                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen>
+                        </iframe>
+                        </div><!--fin video-->
+                            </div><!--fin row-->
+                          </div><!--fin row flex-->              
+                        </main>               
                       </div><!--fin container fluid-->
                       
                                     

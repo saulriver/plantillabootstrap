@@ -1,467 +1,670 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta name="description" content="Web Siscos Manual.">
+    <title>SISCOS</title>
     <meta charset="utf-8">
-		<title>Siscos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-		integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
-		    <!-- Bootstrap CSS -->
-		    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-		    <!-- Carrusel -->
-		    <link href="css/carousel.css" rel="stylesheet">
-
-		    <!-- Estilos Personalizados -->
-		    <link href="css/estilos.css" rel="stylesheet">
-    <link rel="icon" href="imagenes/logosiscos.jpg">
-		<script type="text/javascript">
-			$( document ).ready( function () {
-			$( '.navbar a.dropdown-toggle' ).on( 'click', function ( e ) {
-					var $el = $( this );
-					var $parent = $( this ).offsetParent( ".dropdown-menu" );
-					$( this ).parent( "li" ).toggleClass( 'show' );
-
-					if ( !$parent.parent().hasClass( 'navbar-nav' ) ) {
-							$el.next().css( { "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 } );
-					}
-					$( '.navbar-nav li.show' ).not( $( this ).parents( "li" ) ).removeClass( "show" );
-					return false;
-			} );
-		} );
-		</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--w3 school css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--imagen ico de pestaña-->
+    <link rel="icon" href="imagenes/siscos.png">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>body { cursor: crosshair}</style>
+    
   </head>
-  <body>
-     <div class="container-fluid">
-
-			  		<nav aria-label="breadcrumb">
-			       <ol class="breadcrumb">
-			         <li class="breadcrumb-item active" aria-current="page">MANUAL SISCOS / <b>HOME</b></li>
-			       </ol>
-						</nav>
-
-      <header class="masthead">
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
-          <button class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav">
-
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">SISCOS <span class="sr-only">(current)</span></a>
-              </li>
-							<!--glosario-->
-              <li class="nav-item">
-                <a class="nav-link" href="glosario.html">Glosario</a>
-              </li>
-              <!--login-->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="registrarse.html">Registrarse</a></li>
-                  </ul>
-              </li>
-							<!--opciones-->
-							<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opciones</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="cerrar_sesion_actual.html">Cerrar Sesion Actual</a></li>
-											<li><a class="dropdown-item" href="cambio_contrasena.html">Cambio Contraseña</a></li>
-											<li><a class="dropdown-item" href="salir.html">Salir</a></li>
-                  </ul>
-              </li>
-							<!--General Configuración-->
-							<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-										<li><a class="dropdown-item dropdown-toggle" href="#">General</a>
-												<ul class="dropdown-menu">
-														<li><a class="dropdown-item" href="gedepartamentos.html">Departamentos</a></li>
-														<li><a class="dropdown-item" href="gelocalidades.html">Localidades</a></li>
-												</ul>
-										</li>
-                    <!--Gestion Ordenes Configuración-->
-										<li><a class="dropdown-item dropdown-toggle" href="#">Gestión Ordenes</a>
-											<ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="geotiporepacion.html">Tipo Reparación</a></li>
-													<li><a class="dropdown-item" href="#">Tipo Petición</a></li>
-													<li><a class="dropdown-item" href="#">Tipo De Orden OT</a></li>
-                          <div class="dropdown-divider"></div>
-													<li><a class="dropdown-item" href="#">Causales Devolución</a></li>
-													<li><a class="dropdown-item" href="#">Operación Comercial</a></li>
-													<li><a class="dropdown-item" href="#">Clases Mano Obra</a></li>
-													<li><a class="dropdown-item" href="#">Registro Actividades</a></li>
-													<li><a class="dropdown-item" href="#">Registro Producción</a></li>
-													<li><a class="dropdown-item" href="#">Plantillas Materiales</a></li>
-													<li><a class="dropdown-item" href="#">Plantillas Actividades</a></li>
-													<li><a class="dropdown-item" href="#">Bandejas De Legalización</a></li>
-													<li><a class="dropdown-item" href="#">Areas De Transferencia</a></li>
-													<li><a class="dropdown-item" href="#">Causales Reagendamiento</a></li>
-											</ul>
-										</li>
-                    <!--inventario Configuración-->
-										<li><a class="dropdown-item dropdown-toggle" href="#">Inventario</a>
-											<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="conf_estamaterial.html">Estado Material</a></li>
-											<li><a class="dropdown-item" href="#">Tipo Material</a></li>
-											<li><a class="dropdown-item" href="#">Configuración Stock Pedidos</a></li>
-											<li><a class="dropdown-item" href="#">Stock Personal</a></li>
-											<li><a class="dropdown-item" href="#">Alerta Stock</a></li>
-											<li><a class="dropdown-item" href="#">Configuración Bodegas</a></li>
-											<li><a class="dropdown-item" href="#">Configuración Departamentos</a></li>
-											<li><a class="dropdown-item" href="#">Periodos</a></li>
-											<li><a class="dropdown-item" href="#">PEP</a></li>
-											</ul>
-										</li>
-                  </ul>
-              </li>
-							<!--Inventario-->
-							<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inventario</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Utilidades</a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="inv_cargamasmate.html">Carga Masiva Material</a></li>
-                          </ul>
-                      </li>
-                      <!--Registro Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Registro</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Bodegas</a></li>
-  											<li><a class="dropdown-item" href="#">Centros</a></li>
-  											<li><a class="dropdown-item" href="#">Unidades Medida</a></li>
-  											<li><a class="dropdown-item" href="#">Marcas</a></li>
-  											<li><a class="dropdown-item" href="#">Modelos</a></li>
-  											<li><a class="dropdown-item" href="#">Mercancia</a></li>
-  											<li><a class="dropdown-item" href="#">Proveedores</a></li>
-  											</ul>
-  										</li>
-                      <!--Entradas Almacen Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Entradas Almacen</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Entrada CT</a></li>
-  											<li><a class="dropdown-item" href="#">Entrada EECC</a></li>
-  											<li><a class="dropdown-item" href="#">Control Material Entrada</a></li>
-  											<li><a class="dropdown-item" href="#">Consulta Entrada</a></li>
-  											<li><a class="dropdown-item" href="#">Anular Entrada</a></li>
-  											<li><a class="dropdown-item" href="#">Actualizar Entrada</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Devolución</a></li>
-                        <li><a class="dropdown-item" href="#">Consulta Devolución</a></li>
-                        <li><a class="dropdown-item" href="#">Anular Devolución</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="#">Reintegros CT</a></li>
-                        <li><a class="dropdown-item" href="#">Consultar Reintegro</a></li>
-                        <li><a class="dropdown-item" href="#">Anular Reintegro</a></li>
-                        <li><a class="dropdown-item" href="#">Actualizar Petición Serial</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="#">Habilitar/Inhabilitar Reserva</a></li>
-                        <li><a class="dropdown-item" href="#">Cambio Ubicación Serial</a></li>
-                        <li><a class="dropdown-item" href="#">Actualizar Serial</a></li>
-  											</ul>
-  										</li>
-                      <!--Pedidos Material Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Pedidos Material</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Pedidos</a></li>
-  											<li><a class="dropdown-item" href="#">Consulta Pedido</a></li>
-  											<li><a class="dropdown-item" href="#">Consulta Pedidos Por Fecha</a></li>
-  											<li><a class="dropdown-item" href="#">Anular Pedido</a></li>
-  											<li><a class="dropdown-item" href="#">Pedidos Pend. Entregar</a></li>
-  											<li><a class="dropdown-item" href="#">Listado Pedidos Pendientes</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Generar Pedidos</a></li>
-                        <li><a class="dropdown-item" href="#">Listado Abastecimiento</a></li>
-  											</ul>
-  										</li>
-                      <!--Salidas Almacen Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Salidas Almacen</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Entregas</a></li>
-  											<li><a class="dropdown-item" href="#">Entregas Pedidos Autom.</a></li>
-  											<li><a class="dropdown-item" href="#">Entregas Con Ticket</a></li>
-  											<li><a class="dropdown-item" href="#">Entregas Con solicitud</a></li>
-  											<li><a class="dropdown-item" href="#">Consulta Entregas</a></li>
-  											<li><a class="dropdown-item" href="#">Anular Entrega</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Salidas CT</a></li>
-                        <li><a class="dropdown-item" href="#">Salidas EECC</a></li>
-                        <li><a class="dropdown-item" href="#">Consulta Salidas</a></li>
-                        <li><a class="dropdown-item" href="#">Anular Salidas</a></li>
-  											</ul>
-  										</li>
-                      <!--traslados Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Traslados</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Traslado Entre Personal</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Traslado Bodega CT</a></li>
-  											<li><a class="dropdown-item" href="#">Traslado Bodega EECC</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Ingreso Traslado CT</a></li>
-  											<li><a class="dropdown-item" href="#">Ingreso Traslado EECC</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Anular Traslado</a></li>
-  											</ul>
-  										</li>
-                      <!--Consultas Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Consultas</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Estado Material</a></li>
-  											<li><a class="dropdown-item" href="#">Estado Entregas Seriales</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Kardex Material</a></li>
-  											<li><a class="dropdown-item" href="#">Kardex Personal</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Stock Material</a></li>
-  											<li><a class="dropdown-item" href="#">Stock Personal</a></li>
-  											</ul>
-  										</li>
-                      <!--Reportes Inventario-->
-                      <li><a class="dropdown-item dropdown-toggle" href="#">Reportes</a>
-  											<ul class="dropdown-menu">
-  											<li><a class="dropdown-item" href="inv_bodegas.html">Existencia Almacen</a></li>
-  											<li><a class="dropdown-item" href="#">Existencia Reintegros</a></li>
-  											<li><a class="dropdown-item" href="#">Existencia Por Remision</a></li>
-  											<li><a class="dropdown-item" href="#">Existencia Por Periodo</a></li>
-  											<li><a class="dropdown-item" href="#">Costo Inventario</a></li>
-  											<li><a class="dropdown-item" href="#">Costo Entradas</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="inv_bodegas.html">Entradas Almacen</a></li>
-  											<li><a class="dropdown-item" href="#">Entregas Almacen</a></li>
-  											<li><a class="dropdown-item" href="#">Devoluciones Almacen</a></li>
-  											<li><a class="dropdown-item" href="#">Reintegros Almacen</a></li>
-  											<li><a class="dropdown-item" href="#">Salidas Almacen</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Analisis De Consumo</a></li>
-                        <li><a class="dropdown-item" href="inv_bodegas.html">Listado Consumos ODS</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Stock Cables</a></li>
-  											<li><a class="dropdown-item" href="#">Stock Seriales</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Material Terreno</a></li>
-  											<li><a class="dropdown-item" href="#">Seriales Terreno</a></li>
-                        <div class="dropdown-divider"></div>
-  											<li><a class="dropdown-item" href="#">Listado Movimientos Almagran</a></li>
-                        <li><a class="dropdown-item" href="inv_bodegas.html">Listado Consumos Almagran</a></li>
-  											</ul>
-  										</li>
-                  </ul>
-              </li>
-							<!--personal-->
-							<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Personal</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item dropdown-toggle" href="utilidades_per.html">Utilidades</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Importar Personal</a></li>
-                        </ul>
-                      </li>
-											<li><a class="dropdown-item" href="personal_per.html">Personal</a></li>
-											<li><a class="dropdown-item" href="cargos_per.html">Cargos</a></li>
-											<li><a class="dropdown-item" href="tipo_cuadrillas_per.html">Tipo Cuadrillas</a></li>
-											<li><a class="dropdown-item" href="conformacion_cuadrillas_per.html">Conformación Cuadrillas</a></li>
-											<li><a class="dropdown-item" href="registro_supervisores_per.html">Registro Supervisores</a></li>
-											<li><a class="dropdown-item" href="asignacion_tecnico_per.html">Asignación Tecnicos</a></li>
-                  </ul>
-              </li>
-							<!--Utilidades-->
-							<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilidades</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="importar_archivo_util.html">Importar Archivos</a></li>
-                  </ul>
-              </li>
-							<!--vpi ODS-->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ODS</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item dropdown-toggle" href="#">ODS VPI</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="inv_bodegas.html">Carga Archivo ODS</a></li>
-                <li><a class="dropdown-item" href="#">Impresion Formatos</a></li>
-                <li><a class="dropdown-item" href="#">Impresion Agenda</a></li>
-                <li><a class="dropdown-item" href="#">Asignar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Asignar ODS Masivo</a></li>
-                <li><a class="dropdown-item" href="#">Atender ODS</a></li>
-                <li><a class="dropdown-item" href="#">Atender ODS Manual</a></li>
-                <li><a class="dropdown-item" href="#">Actualizar Carga ODS</a></li>
-                <li><a class="dropdown-item" href="#">Actualizar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Cambio Familia PS</a></li>
-                <li><a class="dropdown-item" href="#">Consultar ODS</a></li>
+  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="imagenes/logosiscos3.png" alt="User Image">
+        <div>
+          <p class="app-sidebar__user-name">Siscos</p>
+          <p class="app-sidebar__user-designation">Manual Web</p>
+        </div>
+      </div>
+ <ul class="app-menu">
+   <!--menu glosario-->
+    <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
+    <!--menu registrarse-->
+      <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
+      <!--menu opciones-->
+       <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
+       <!--menu de configuracion-->
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cogs fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+           <ul class="treeview-menu">
+              <li><a class="treeview-item" href="confi_gene_departamento.html" data-toggle="tooltip" title="Configuración / General / Departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
+              <li><a class="treeview-item" href="confi_gene_localidades.html" data-toggle="tooltip" title="Configuración / General / Localidades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Localidades</a></li>
+              <div class="dropdown-divider"></div>
+           </ul>
+        </li>          
+         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+           <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="confi_tipo_reparacion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo reparación"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Reparación</a></li>
+                <li><a class="app-menu__item" href="confi_tipo_peticion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo petición"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Petición</a></li>
+                <li><a class="app-menu__item" href="confi_tipo_de_orden_ot.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo de orden OT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo De Orden OT</a></li>
+                <li><a class="app-menu__item" href="confi_causales_devolucion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Devolución</a></li>
+                <li><a class="app-menu__item" href="confi_operacion_comercial.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Operación comercial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Operación Comercial</a></li>
+                <li><a class="app-menu__item" href="confi_clases_mano_obra.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Clases mano obra"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Clases Mano Obra</a></li>
+                <li><a class="app-menu__item" href="confi_registro_actividades.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Registro actividades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Actividades</a></li>
+                <li><a class="app-menu__item" href="confi_registro_produccion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Registro producción"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Producción</a></li>
+                <li><a class="app-menu__item" href="confi_plantillas_materiales.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Plantilla materiales"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Plantilla Materiales</a></li>
+                <li><a class="app-menu__item" href="confi_plantillas_actividades.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Plantilla actividades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Plantilla Actividades</a></li>
+                <li><a class="app-menu__item" href="confi_bandejas_de_legalizacion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Bandejas de legalización"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Bandejas De Legalización</a></li>
+                <li><a class="app-menu__item" href="confi_areas_de_transferencias.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Areas de transferencia"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Areas De Transferencia</a></li>
+                <li><a class="app-menu__item" href="confi_causales_reagendamiento.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales reagendamiento"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Reagendamiento</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Listado ODS Atendidas</a></li>
-                <li><a class="dropdown-item" href="#">Listado Consumo Material</a></li>
-                <li><a class="dropdown-item" href="#">Listado Retiros Material</a></li>
-                <li><a class="dropdown-item" href="#">Listado Pendientes</a></li>
-                <li><a class="dropdown-item" href="#">Listado Cambio Vias LB</a></li>
-                <li><a class="dropdown-item" href="#">Listado Quiebres</a></li>
-                <li><a class="dropdown-item" href="#">Zonificar ODS</a></li>
-                </ul>
-          </li>
-              <!--ODS SOL TEC-->
-              <li><a class="dropdown-item dropdown-toggle" href="#">ODS SOL TEC</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="inv_bodegas.html">Carga Archivo ODS</a></li>
-                <li><a class="dropdown-item" href="#">Asignar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Asignar ODS Masivo</a></li>
-                <li><a class="dropdown-item" href="#">Impresion Formatos</a></li>
-                <li><a class="dropdown-item" href="#">Atender ODS</a></li>
-                <li><a class="dropdown-item" href="#">Actualizar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Consultar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Atender ODS Manual</a></li>
-                <li><a class="dropdown-item" href="#">Actualizar Carga ODS</a></li>
-                <li><a class="dropdown-item" href="#">Legalizar ODS @tiempo</a></li>
-                <li><a class="dropdown-item" href="#">Consulta Bandeja Leg</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Listado ODS Atendidas</a></li>
-                <li><a class="dropdown-item" href="#">Listado Reiteradas</a></li>
-                <li><a class="dropdown-item" href="#">Listado Pendientes</a></li>
-                <li><a class="dropdown-item" href="#">Listado Cambio Vias LB</a></li>
-                <li><a class="dropdown-item" href="#">Codigos Legalización</a></li>
-                <li><a class="dropdown-item" href="#">Listado Consumo Material</a></li>
-                <li><a class="dropdown-item" href="#">Listado Retiros Material</a></li>
-                <li><a class="dropdown-item" href="#">Zonificar ODS ST</a></li>
-                <li><a class="dropdown-item" href="#">Consulta Bandeja Leg</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Transferir ODS</a></li>
-                <li><a class="dropdown-item" href="#">Transferencia Masiva</a></li>
-                <li><a class="dropdown-item" href="#">Reinyectar</a></li>
-                </ul>
-              </li>
-              <!--ODS OT-->
-              <li><a class="dropdown-item dropdown-toggle" href="#">ODS OT </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="inv_bodegas.html">Proyectos</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Ingresar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Actualizar ODS</a></li>
-                <li><a class="dropdown-item" href="#">Consulta ODS</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Listado ODS Atendidas</a></li>
-                <li><a class="dropdown-item" href="#">Listado Consumo Material</a></li>
-                <li><a class="dropdown-item" href="#">Listado Retiro Material</a></li>
-                <li><a class="dropdown-item" href="#">Liquidación</a></li>
-                </ul>
-              </li>
-              <!--UTILIDADES ODS-->
-              <li><a class="dropdown-item dropdown-toggle" href="#">Utilidades</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="inv_bodegas.html">Atender Masivo SOL TEC</a></li>
-                <li><a class="dropdown-item" href="#">Eliminar Masivo SOL TEC</a></li>
-                <li><a class="dropdown-item" href="#">Eliminar Masivo VPI</a></li>
-                <li><a class="dropdown-item" href="#">Atender Masivo VPI</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Carga Archivo Cierres</a></li>
-                <li><a class="dropdown-item" href="#">Carga Archivo Consumos</a></li>
-                <li><a class="dropdown-item" href="#">Carga Archivo Pendientes</a></li>
-                <li><a class="dropdown-item" href="#">Aplicar Consumos ODS</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="dropdown-item" href="#">Subir Pendientes TOA</a></li>
-                </ul>
-              </li>
-              <!--Estadistica ODS-->
-              <li><a class="dropdown-item dropdown-toggle" href="#">Estadistica</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="inv_bodegas.html">Analisis Reiteradas</a></li>
-                <li><a class="dropdown-item" href="#">Analisis Avarias Infancia</a></li>
-                <li><a class="dropdown-item" href="#">Informe ESTELA</a></li>
-              </ul>
-            </li>
+          </ul>
+         </li>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="confi_estado_material.html" data-toggle="tooltip" title="Configuración / Inventario / Estado material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
+                <li><a class="app-menu__item" href="confi_tipo_material.html" data-toggle="tooltip" title="Configuración / Inventario / Tipo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
+                <li><a class="app-menu__item" href="confi_configuracion_stock_pedidos.html" data-toggle="tooltip" title="Configuración / Inventario / Configuración stock pedidos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Stock Pedidos</a></li>
+                <li><a class="app-menu__item" href="confi_stock_personal.html" data-toggle="tooltip" title="Configuración / Inventario / Stock personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Personal</a></li>
+                <li><a class="app-menu__item" href="confi_alerta_stock.html" data-toggle="tooltip" title="Configuración / Inventario / Alerta stock"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Alerta Stock</a></li>
+                <li><a class="app-menu__item" href="confi_configuracion_bodegas.html" data-toggle="tooltip" title="Configuración / Inventario / Configuración bodegas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Bodegas</a></li>
+                <li><a class="app-menu__item" href="confi_configuracion_departamentos.html" data-toggle="tooltip" title="Configuración / Inventario / Configuración departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Departamentos</a></li>
+                <li><a class="app-menu__item" href="confi_periodos.html" data-toggle="tooltip" title="Configuración / Inventario / Periodos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Periodos</a></li>
+                <li><a class="app-menu__item" href="confi_pep.html" data-toggle="tooltip" title="Configuración / Inventario / PEP"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; PEP</a></li>
+              <div class="dropdown-divider"></div>
+            </ul>
+          </li><!--fin menu de configuracion-->
+        &nbsp;
+      <!--menu de inventario-->
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_carga_masiva_material.html" data-toggle="tooltip" title="Inventario / Utilidades / Carga masiva material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Masiva Material</a></li>
+              <div class="dropdown-divider"></div>
+          </ul>
+        </li>  
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Registro</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_bodegas.html" data-toggle="tooltip" title="Inventario / Registro / Bodegas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Bodegas</a></li>
+              <li><a class="app-menu__item" href="inv_centros.html" data-toggle="tooltip" title="Inventario / Registro / Centros"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Centros</a></li>
+              <li><a class="app-menu__item" href="inv_unidades_medida.html" data-toggle="tooltip" title="Inventario / Registro / Unidades medida"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Unidades Medida</a></li>
+              <li><a class="app-menu__item" href="inv_marcas.html" data-toggle="tooltip" title="Inventario / Registro / Marcas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Marcas</a></li>
+              <li><a class="app-menu__item" href="inv_modelos.html" data-toggle="tooltip" title="Inventario / Registro / Modelos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Modelos</a></li>
+              <li><a class="app-menu__item" href="inv_mercancia.html" data-toggle="tooltip" title="Inventario / Registro / Mercancia"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Mercancia</a></li>
+              <li><a class="app-menu__item" href="inv_proveedores.html" data-toggle="tooltip" title="Inventario / Registro / Proveedores"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Proveedores</a></li>
+              <div class="dropdown-divider"></div>
           </ul>
         </li>
-                <!--Admon-->
-							<li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co"
-                  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admon</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="perfiles.html">Perfiles</a></li>
-											<li><a class="dropdown-item" href="usuarios.html">Usuarios</a></li>
-											<li><a class="dropdown-item" href="datos_empresa.html">Datos Empresa</a></li>
-											<li><a class="dropdown-item" href="opciones_correo_web.html">Opciones Correo y Web</a></li>
-											<li><a class="dropdown-item" href="ejecutar_prog.html">Ejecutar Prog</a></li>
-											<li><a class="dropdown-item" href="aplicar_consumos.html">Aplicar Consumos</a></li>
-											<li><a class="dropdown-item dropdown-toggle" href="utilidades_sql_admon.html">Utilidades SQL</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="perfiles.html">SQL Query Editor</a></li>
-                          <li><a class="dropdown-item" href="perfiles.html">SQL Dump Export</a></li>
-                        </ul>
-                      </li>
-                  </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-		</div>
-              <main role="main">
+       <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Entradas Almacen</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_entrada_ct.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Entrada CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada CT</a></li>
+              <li><a class="app-menu__item" href="inv_entrada_eecc.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Entrada EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada EECC</a></li>
+              <li><a class="app-menu__item" href="inv_control_material_entrada.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Control material entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Control Material Entrada</a></li>
+              <li><a class="app-menu__item" href="inv_consulta_entrada.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Consulta entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrada</a></li>
+              <li><a class="app-menu__item" href="inv_anular_entrada.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Anular entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrada</a></li>
+              <li><a class="app-menu__item" href="inv_actualizar_entrada.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Actualizar entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Entrada</a></li>
+              <li><a class="app-menu__item" href="inv_devolucion.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Devolución</a></li>
+              <li><a class="app-menu__item" href="inv_consulta_devolucion.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Consulta devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Devolución</a></li>
+              <li><a class="app-menu__item" href="inv_anular_devolucion.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Anular devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Devolución</a></li>
+              <li><a class="app-menu__item" href="inv_reintegros_ct.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Reintegros CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reintegros CT</a></li>
+              <li><a class="app-menu__item" href="inv_consultar_reintegro.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Consultar reintegro"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar Reintegro</a></li>
+              <li><a class="app-menu__item" href="inv_anular_reintegro.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Anular reintegro"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Reintegro</a></li>
+              <li><a class="app-menu__item" href="inv_actualizar_peticion_serial.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Actualizar petición serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Petición Serial</a></li>
+              <li><a class="app-menu__item" href="inv_habilitar_inhabilitar_reserva.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Habilitar-inhabilitar reserva"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Habilitar/Inhabilitar Reserva</a></li>
+              <li><a class="app-menu__item" href="inv_cambio_ubicacion_serial.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Cambio ubicación serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cambio Ubicación Serial</a></li>
+              <li><a class="app-menu__item" href="inv_actualizar_serial.html" data-toggle="tooltip" title="Inventario / Entradas Almacen / Actualizar serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Serial</a></li>
+          <div class="dropdown-divider"></div>
+         </ul>
+       </li>
+     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Pedidos Material</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_pedidos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedidos</a></li>
+              <li><a class="app-menu__item" href="inv_consulta_pedido.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido</a></li>
+              <li><a class="app-menu__item" href="inv_consulta_pedidos_por_fecha.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido Por Fecha</a></li>
+              <li><a class="app-menu__item" href="inv_anular_pedido.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Pedido</a></li>
+              <li><a class="app-menu__item" href="inv_pedidos_pend_entregar.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedido Pend. Entregar</a></li>
+              <li><a class="app-menu__item" href="inv_listado_pedidos_pendiente.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Pedidos Pendientes</a></li>
+              <li><a class="app-menu__item" href="inv_generar_pedidos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Generar Pedido</a></li>
+              <li><a class="app-menu__item" href="inv_listado_abastecimiento.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Abastecimiento</a></li>
+            <div class="dropdown-divider"></div>
+          </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Salidas Almacen</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+         <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_entregas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas</a></li>
+              <li><a class="app-menu__item" href="inv_entregas_pedidos_autom.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Pedidos Autom.</a></li>
+              <li><a class="app-menu__item" href="inv_entregas_con_ticket.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Con Ticket</a></li>
+              <li><a class="app-menu__item" href="inv_entregas_con_solicitud.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Con Solicitud</a></li>
+              <li><a class="app-menu__item" href="inv_consulta_entregas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrega</a></li>
+              <li><a class="app-menu__item" href="inv_anular_entrega.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrega</a></li>
+              <li><a class="app-menu__item" href="inv_salidas_ct.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas CT</a></li>
+              <li><a class="app-menu__item" href="inv_salidas_eecc.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas EECC</a></li>
+              <li><a class="app-menu__item" href="inv_consulta_salidas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Salidas</a></li>
+              <li><a class="app-menu__item" href="inv_anular_salidas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Salidas</a></li>
+          <div class="dropdown-divider"></div>
+         </ul>
+    </li>
+   <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Traslados</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+        <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_traslado_entre_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Entre Personal</a></li>
+              <li><a class="app-menu__item" href="inv_traslado_bodega_ct.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Bodega CT</a></li>
+              <li><a class="app-menu__item" href="inv_traslado_bodega_eecc.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Bodega EECC</a></li>
+              <li><a class="app-menu__item" href="inv_ingreso_traslado_ct.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingreso Traslado CT</a></li>
+              <li><a class="app-menu__item" href="inv_ingreso_traslado_eecc.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingreso Traslado EECC</a></li>
+              <li><a class="app-menu__item" href="inv_anular_traslado.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Traslado</a></li>
+          <div class="dropdown-divider"></div>
+        </ul>
+   </li>
+   <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Consultas</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+        <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_estado_serial.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Serial</a></li>
+              <li><a class="app-menu__item" href="inv_estado_entregas_seriales.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Entrega Seriales</a></li>
+              <li><a class="app-menu__item" href="inv_kardex_material.html.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Kardex Material</a></li>
+              <li><a class="app-menu__item" href="inv_kardex_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Kardex Personal</a></li>
+              <li><a class="app-menu__item" href="inv_stock_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Material</a></li>
+              <li><a class="app-menu__item" href="inv_stock_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Personal</a></li>
+          <div class="dropdown-divider"></div>
+        </ul>
+   </li>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Reportes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+        <ul class="treeview-menu">
+              <li><a class="app-menu__item" href="inv_existencia_almacen.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Almacen</a></li>
+              <li><a class="app-menu__item" href="inv_existencia_reintegros.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Reintegros</a></li>
+              <li><a class="app-menu__item" href="inv_existencia_por_remision.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Por Remision</a></li>
+              <li><a class="app-menu__item" href="inv_existencia_por_periodo.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Por Periodo</a></li>
+              <li><a class="app-menu__item" href="inv_costo_inventario.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Costo Inventario</a></li>
+              <li><a class="app-menu__item" href="inv_costo_entradas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Costo Entrada</a></li>
+              <li><a class="app-menu__item" href="inv_entradas_almacen.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada Almacen</a></li>
+              <li><a class="app-menu__item" href="inv_entregas_almacen.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrega Almacen</a></li>
+              <li><a class="app-menu__item" href="inv_devoluciones_almacen.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Devoluciones Almacen</a></li>
+              <li><a class="app-menu__item" href="inv_reintegros_almacen.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reintegros Almacen</a></li>
+              <li><a class="app-menu__item" href="inv_salidas_almacen.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salida Almacen</a></li>
+              <li><a class="app-menu__item" href="inv_analisis_de_consumo.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Analisis De Consumo</a></li>
+              <li><a class="app-menu__item" href="inv_listado_consumos_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumos ODS</a></li>
+              <li><a class="app-menu__item" href="inv_stock_cables.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Cables</a></li>
+              <li><a class="app-menu__item" href="inv_stock_seriales.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Seriales</a></li>
+              <li><a class="app-menu__item" href="inv_material_terreno.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Material Terreno</a></li>
+              <li><a class="app-menu__item" href="inv_seriales_terreno.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Seriales Terreno</a></li>
+              <li><a class="app-menu__item" href="inv_listado_movimientos_almagran.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Movimientos Almagran</a></li>
+              <li><a class="app-menu__item" href="inv_listado_consumos_almagran.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumos Almagran</a></li>
+          <div class="dropdown-divider"></div>
+         </ul>
+    </li>
+  <!--fin de menu de inventario-->
+  &nbsp;
+    <!--menu personal-->
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Personal</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+      <ul class="treeview-menu">
+            <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
+            <li><a class="app-menu__item" href="per_util_importar_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Personal</a></li>
+            <div class="dropdown-divider"></div>
+            &nbsp;
+            <li><a class="app-menu__item" href="per_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Personal</a></li>
+            <li><a class="app-menu__item" href="per_cargos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cargos</a></li>
+            <li><a class="app-menu__item" href="per_tipo_cuadrillas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Cuadrillas</a></li>
+            <li><a class="app-menu__item" href="per_conformacion_cuadrillas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Conformación Cuadrillas</a></li>
+            <li><a class="app-menu__item" href="per_registro_supervisores.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Supervisores</a></li>
+            <li><a class="app-menu__item" href="per_asignacion_tecnico.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignación Técnicos</a></li>
+          <div class="dropdown-divider"></div>
+        </ul>
+    </li>
+  <!--fin menú personal-->
 
-               <div class="row">
-                  <div class="col-md-8">
-                    <div class="d-flex justify-content-between align-items-center">
-                          <small class="text-muted">1</small>
+      <!--menu utilidades-->
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+    <ul class="treeview-menu">
+         <li><a class="app-menu__item" href="utilidades_impor_archiv.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Archivos</a></li>
+     <div class="dropdown-divider"></div>
+    </ul>
+  </li>
+      <!--fin menú utilidades-->
+  &nbsp;
+      <!--menu ods-->
+  <li class="treeview"><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-clipboard fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; ODS</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+   <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS VPI</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+     <ul class="treeview-menu">
+          <li><a class="app-menu__item" href="ods_carga_archivo_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Archivos ODS</a></li>
+          <li><a class="app-menu__item" href="ods_impresion_formatos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Impresión Formatos</a></li>
+          <li><a class="app-menu__item" href="ods_impresion_agenda.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Impresión Agenda</a></li>
+          <li><a class="app-menu__item" href="ods_asignar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignar ODS</a></li>
+          <li><a class="app-menu__item" href="ods_asignar_ods_masivo.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignar ODS Masivo</a></li>
+          <li><a class="app-menu__item" href="ods_atender_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+          <li><a class="app-menu__item" href="ods_atender_ods_manual.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+          <li><a class="app-menu__item" href="ods_actualizar_carga_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+          <li><a class="app-menu__item" href="ods_actualizar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+          <li><a class="app-menu__item" href="ods_cambio_familia_ps.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cambio Familia PS</a></li>
+          <li><a class="app-menu__item" href="ods_consultar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+          <li><a class="app-menu__item" href="ods_listado_ods_atendidas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado ODS Atendidas</a></li>
+          <li><a class="app-menu__item" href="ods_listado_consumo_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+          <li><a class="app-menu__item" href="ods_listado_retiros_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+          <li><a class="app-menu__item" href="ods_listado_pendientes.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Pendientes</a></li>
+          <li><a class="app-menu__item" href="ods_listado_cambio_vias_lb.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Cambio Vias LB</a></li>
+          <li><a class="app-menu__item" href="ods_listado_quiebres.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Quiebres</a></li>
+          <li><a class="app-menu__item" href="ods_zonificar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Zonificar ODS</a></li>
+      <div class="dropdown-divider"></div>
+    </ul>
+  </li>
+      
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+    <ul class="treeview-menu">
+          <li><a class="app-menu__item" href="sol_tec_carga_archivo_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Archivo ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_asignar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignar ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_asignar_ods_masivo.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignar ODS Masivo</a></li>
+          <li><a class="app-menu__item" href="sol_tec_impresion_formatos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Impresión Formatos</a></li>
+          <li><a class="app-menu__item" href="sol_tec_atender_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_consultar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+          <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_legalizar_ods_@tiempo.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Legalizar ODS @Tiempo</a></li>
+          <li><a class="app-menu__item" href="sol_tec_consulta_bandeja_leg.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Bandeja Leg</a></li>
+          <li><a class="app-menu__item" href="sol_tec_listado_ods_atendidas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado ODS Atendidas</a></li>
+          <li><a class="app-menu__item" href="sol_tec_listado_reiteradas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Reiteradas</a></li>
+          <li><a class="app-menu__item" href="sol_tec_listado_pendientes.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Pendientes</a></li>
+          <li><a class="app-menu__item" href="sol_listado_cambio_vias_lb.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Cambio Vias LB</a></li>
+          <li><a class="app-menu__item" href="sol_tec_codigos_legalizacion.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Códigos Legalización</a></li>
+          <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+          <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+          <li><a class="app-menu__item" href="sol_tec_zonificar_ods_st.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Zonificar ODS ST</a></li>
+          <li><a class="app-menu__item" href="sol_tec_consulta_bandeja_leg.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Bandeja Leg</a></li>
+          <li><a class="app-menu__item" href="sol_tec_transferir_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Transferir ODS</a></li>
+          <li><a class="app-menu__item" href="sol_tec_transferencia_masiva.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Transferencia Masiva</a></li>
+          <li><a class="app-menu__item" href="sol_tec_reinyectar.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reinyectar</a></li>
+      <div class="dropdown-divider"></div>
+    </ul>
+   </li>
+
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS OT</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+     <ul class="treeview-menu">
+          <li><a class="app-menu__item" href="ot_proyectos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Proyectos</a></li>
+          <li><a class="app-menu__item" href="ot_ingresar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingresar ODS</a></li>
+          <li><a class="app-menu__item" href="ot_actualizar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+          <li><a class="app-menu__item" href="ot_consulta_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta ODS</a></li>
+          <li><a class="app-menu__item" href="ot_listado_ods_atendidas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado ODS Atendidas</a></li>
+          <li><a class="app-menu__item" href="ot_listado_consumo_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+          <li><a class="app-menu__item" href="ot_listado_retiro_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiró Material</a></li>
+          <li><a class="app-menu__item" href="ot_liquidacion.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Liquidación</a></li>
+      <div class="dropdown-divider"></div>
+    </ul>
+  </li>
+          
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+     <ul class="treeview-menu">
+          <li><a class="app-menu__item" href="ods_atender_masivo_sol_tec.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender Masivo SOL TEC</a></li>
+          <li><a class="app-menu__item" href="ods_eliminar_masivo_sol_tec.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Eliminar Masivo SOL TEC</a></li>
+          <li><a class="app-menu__item" href="ods_eliminar_masivo_vpi.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Eliminar Masivo VPI</a></li>
+          <li><a class="app-menu__item" href="ods_atender_masivo_vpi.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender Masivo VPI</a></li>
+          <li><a class="app-menu__item" href="ods_carga_archivo_cierres.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Archivos Cierre</a></li>
+          <li><a class="app-menu__item" href="ods_carga_archivo_consumos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Archivos Consumo</a></li>
+          <li><a class="app-menu__item" href="ods_carga_archivo_pendientes.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Archivos Pendientes</a></li>
+          <li><a class="app-menu__item" href="ods-aplicar_consumos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Aplicar Consumo ODS</a></li>
+          <li><a class="app-menu__item" href="ods_subir_pendientes_toa.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Subir Pendientes TOA</a></li>
+      <div class="dropdown-divider"></div>
+    </ul>
+  </li>
+
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+    <ul class="treeview-menu">
+          <li><a class="app-menu__item" href="ods_analisis_reiteradas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Reiteradas</a></li>
+          <li><a class="app-menu__item" href="ods_analisis_avarias_infancia.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Avarias Infancia</a></li>
+          <li><a class="app-menu__item" href="ods_informe_estela.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Informe ESTELA</a></li>
+     <div class="dropdown-divider"></div>   
+    </ul>
+ </li>
+ <!--fin menú ods-->
+  &nbsp;
+      <!--menu admom-->
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+        <ul class="treeview-menu">
+        <li><a class="app-menu__item" href="perfiles.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Perfiles</a></li>
+        <li><a class="app-menu__item" href="usuarios.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Usuario</a></li>
+        <li><a class="app-menu__item" href="datos_empresa.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Datos Empresa</a></li>
+        <li><a class="app-menu__item" href="opciones_correo_web.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Opciones Correo y Web</a></li>
+        <li><a class="app-menu__item" href="ejecutar_prog.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ejecutar Prog</a></li>
+        <li><a class="app-menu__item" href="aplicar_consumos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Aplicar Consumo</a></li>
+        <div class="dropdown-divider"></div>
+        <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades SQL</span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
+        <div class="dropdown-divider"></div>
+        <li><a class="app-menu__item" href="admon_sql_query_editor.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; SQL Query Editor</a></li>
+        <li><a class="app-menu__item" href="admon_sql_dump_export.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; SQL Dump Export</a></li>
+        </ul>
+        </li><!--fin menu admon-->
+    </ul>
+    </aside>
+
+             <!--container fluid-->
+          <div id=" " class="container-fluid">
+            <!--row flex-->
+              <div class="row flex-lg-nowrap">
+                  <!--menu derecho-->
+                  <div class="d-none d-lg-block col-sm-2 bd-toc">
+                      <ul class="navbar-nav">
+                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
+                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                            style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                          Ver video</a></li>  
+                      </ul>
+                    </div>
+                    <!--fin menu derecho-->
+                    <!--main-->
+                  <main class="app-content" role="main">
+                      <div class="app-title">
+                          <div>
+                            <h1><i class="fa fa-file-text"></i>titulo</h1>
+                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
+                          </div>
+                          <div class="bs-component">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">titulo</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
+                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
+                          </ol>
+                          </div>
                         </div>
-                    <div class="card mb-4 box-shadow">
-                      <img class="card-img-top" src="imagenes/" alt="Reportes Inventario">
-                      <div class="card-body">
-                        <p class="card-text">text</p>
+      <div class="row">
 
+  <!--comienzo-->
+  <div class="col-md-12">
+      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+          <a href="#replicarlistacontrol"></a>
+                <h3 class="tile-title">titulo</h3>
+                <br><br>
+                <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-34px">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                              texto
+                            </h5>
+                          </strong> 
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  </div>
-
-                <div class="container">
-                <!-- Button to Open the Modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                Ver Demostración
-                </button>
-                <!-- Modal body -->
-                    <div class="modal-body">
-                    <div class="modal fade" id="myModal">
-                    <div class="modal-dialog modal-dialog-centered">
-                    <iframe width="771" height="400" src="https://www.youtube.com/embed/YtlKyv2pc_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-              <!-- Modal footer -->
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              </div>
+                    </div><!--fin mensaje-->
+                    <div class="w3-container w3-center">
+                      <span>
+                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
                 </div>
+            </div><!--fin-->
+
+  <!--comienzo-->
+  <div id=" " class="col-md-12">
+      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+          <a href="#importar"></a>
+                <h3 class="tile-title">titulo</h3>
+                <br><br>
+                <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-34px">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                          <h5>
+                         texto
+                          </h5>
+                          </strong> 
+                        </div>
+                      </div>
+                    </div>
+                    </div><!--fin mensaje-->
+                    <div class="w3-container w3-center">
+                      <span>
+                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
+                </div>
+            </div><!--fin-->
+
+          <!--comienzo-->
+            <div id=" " class="col-md-12">
+                <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+                          <h3 class="tile-title"> titulo</h3>
+                        <br><br>
+                      <!--mensaje de alerta-->
+                  <div class="col-lg-10"  style="margin-top:-34px">
+                    <div class="bs-component">
+                      <div class="alert alert-dismissible alert-danger">
+                        <strong>Nota:</strong> 
+                        <h5>
+                         texto
+                        </h5>
+                        </div>
+                        </div>
+                        </div><!--fin mensaje de alerta-->
+                        <br><br>
+                        <!--mensaje-->
+                        <div class="row">
+                            <div class="col-lg-12" style="margin-top:-34px">
+                              <div class="bs-component">
+                                <div class="alert alert-dismissible alert-info">
+                                  <strong>
+                                    <h5>
+                                      texto
+                                    </h5>
+                                  </strong> 
+                                </div>
+                              </div>
+                            </div>
+                            </div><!--fin mensaje-->
+                      <div class="w3-container w3-center">
+                      <span>
+                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
                   </div>
-                   </div>
+                </div><!--fin-->
 
-              </main>
+                      
 
-        <!-- FOOTER -->
-      <footer class="container mt-5">
-          <p class="float-right"><a href="#">Subir</a></p>
-          <p>&copy; <script>document.write(new Date().getFullYear())</script>
-            Manual Web Siscos &middot; Desarrollado por <a href="http://www.are-soluciones.com/" target="_blank">Soluciones Integrales ARE</a> </p>
-      </footer>
+                                  <!--comienzo-->
+                      <div id=" " class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">titulo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            texto
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin-->
 
+                        <!--comienzo-->
+                      <div id=" " class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">titulo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            texto
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin-->
 
-    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    </body>
-    </html>
+                              <!--comienzo-->
+                      <div id=" " class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">titulo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                              texto
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin -->
+                                
+                                <!--salir -->
+                                <div id="salir" class="col-md-12">
+                                    <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                              <h3 class="tile-title">titulo</h3>
+                                              <br><br>
+                                              <!--mensaje de alerta-->
+                                              <div class="row">
+                                                  <div class="col-lg-12" style="margin-top:-34px">
+                                                    <div class="bs-component">
+                                                      <div class="alert alert-dismissible alert-info">
+                                                        <strong>
+                                                        <h5>
+                                                        texto
+                                                        </h5>
+                                                        </strong> 
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  </div><!--fin mensaje-->
+                                                  <div class="w3-container w3-center">
+                                                    <span>
+                                                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                                    </span>
+                                                  </div>
+                                              </div>
+                                          </div><!--fin salir localidades-->
+                                        </div>
+                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                                            <iframe class="embed-responsive-item"  
+                                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                              allowfullscreen>
+                                            </iframe>
+                                          </div>
+                                        </div><!--fin row flex-->               
+                                      </main>
+                                  </div><!--fin container fluid-->
+                                
+<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+<!-- Essential javascripts for application to work-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- The javascript plugin to display page loading on top-->
+<script src="js/plugins/pace.min.js"></script>
+<!-- Page specific javascripts-->
+<script type="text/javascript" src="js/plugins/chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Page specific javascripts-->
+<script>
+  $('.bs-component [data-toggle="popover"]').popover();
+  $('.bs-component [data-toggle="tooltip"]').tooltip();
+</script>
+<!--scrooll efecto smooth para el id-->
+<script>
+    function myFunction() {
+      document.documentElement.style.scrollBehavior = "smooth";
+    }
+    </script>
+<!--impedir que copien el codigo de la pagina-->
+<script language="Javascript">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+// End -->
+</script>
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<Script language=JavaScript>
+function right(e) {
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+alert("Esta pagina es privada.");
+return false;
+}
+else if (navigator.appName == 'Microsoft Internet Explorer' &&
+(event.button == 2 || event.button == 3)) {
+alert("Esta pagina es privada.");
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script> 
+</html>

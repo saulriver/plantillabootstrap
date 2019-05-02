@@ -22,9 +22,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
+    <style>body { cursor: crosshair}</style>    
   </head>
+
   <body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
@@ -74,7 +74,7 @@
                 <div class="dropdown-divider"></div>
           </ul>
          </li>
-          <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"style="background-color:rgb(0, 112, 101);"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="app-menu__item" href="confi_estado_material.html" data-toggle="tooltip" title="Configuración / Inventario / Estado material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
                 <li><a class="app-menu__item" href="confi_tipo_material.html" data-toggle="tooltip" title="Configuración / Inventario / Tipo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
@@ -317,7 +317,7 @@
     </ul>
   </li>
 
-  <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span></a>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span><i class="treeview-indicator fa fa-caret-right"></i></a>
     <ul class="treeview-menu">
           <li><a class="app-menu__item" href="ods_analisis_reiteradas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Reiteradas</a></li>
           <li><a class="app-menu__item" href="ods_analisis_avarias_infancia.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Avarias Infancia</a></li>
@@ -346,19 +346,22 @@
     </ul>
     </aside>
              <!--container fluid-->
-          <div class="container-fluid">
+          <div id="crearperiodo" class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
+                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item active" href="#crearperiodo" onclick="myFunction()">
-                          &nbsp; Crear periodo</a>
-                          <li class="treeview"><a class="nav-link app-menu__item" href="#cerrarperiodo" onclick="myFunction()">
-                                &nbsp;Cerrar periodo</a></li>
+                           Crear periodo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cerrarperiodo" onclick="myFunction()">
+                           Cerrar periodo</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                          &nbsp; Salir</a></li>
-                        </li>
+                           Salir</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                            style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                           Ver video</a></li>
                       </ul>
                     </div>
                     <!--fin menu derecho-->
@@ -371,7 +374,7 @@
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
@@ -381,7 +384,7 @@
                         </div>
       <div class="row">
           <!--Crear periodo-->
-          <div id="crearperiodo" class="col-md-12">
+          <div class="col-md-12">
               <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
                   <a href="#crearperiodo"></a>
                         <h3 class="tile-title">Crear periodo</h3>
@@ -491,34 +494,17 @@
                                         </div>
                                     </div>
                                 </div><!--fin salir pep-->
-                  <!-- Video Button to Open the Modal -->
-                  <div id="video" class="container">
-                        <button type="button" class="btn btn-primary w3-block" data-toggle="modal" data-target="#myModal">
-                        Ver Video
-                        </button>
-                        <!-- Modal body -->
-                            <!-- Modal -->
-                          <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                        <iframe width="1280" height="624" src="https://www.youtube.com/embed/ODaFx0FDUa0"
-                                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                         allowfullscreen></iframe>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                              <!-- Modal footer -->
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div><!--FIN DEL MODAL DE VIDEO--> 
-                    </div>                 
-                  </main>
-                </div><!--fin row flex-->
-              </div><!--fin container fluid-->                        
+                            <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                             <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/ODaFx0FDUa0"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                      </div>
+                    </div><!--fin row-->
+                  </div><!--fin row flex-->                
+                </main>
+              </div><!--fin container fluid-->
+
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
     crossorigin="anonymous"></script>

@@ -22,10 +22,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style type="text/css">body { cursor: crosshair}</style>
-    
+    <style>body { cursor: crosshair}</style>    
   </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll" style="padding-right:0">
+
+  <body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
@@ -42,20 +42,20 @@
       </div>
  <ul class="app-menu">
    <!--menu glosario-->
-    <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Glosario</h5></span></a></li>
+    <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
     <!--menu registrarse-->
-      <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Registrarse</h5></span></a></li>
+      <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
       <!--menu opciones-->
-       <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Opciones</h5></span></a></li>
+       <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
        <!--menu de configuracion-->
-      <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Configuración</h5></span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+      <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
            <ul class="treeview-menu">
               <li><a class="treeview-item" href="confi_gene_departamento.html" data-toggle="tooltip" title="Configuración / General / Departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
               <li><a class="treeview-item" href="confi_gene_localidades.html" data-toggle="tooltip" title="Configuración / General / Localidades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Localidades</a></li>
            </ul>
         </li>          
-         <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"style="background-color:rgb(0, 112, 101);"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+         <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
            <ul class="treeview-menu">
                 <li><a class="app-menu__item" href="confi_tipo_reparacion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo reparación"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Reparación</a></li>
                 <li><a class="app-menu__item active" href="confi_tipo_peticion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Tipo petición"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Petición</a></li>
@@ -72,7 +72,7 @@
                 <li><a class="app-menu__item" href="confi_causales_reagendamiento.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales reagendamiento"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Reagendamiento</a></li>
           </ul>
          </li>
-          <li class="treeview"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="app-menu__item" href="confi_estado_material.html" data-toggle="tooltip" title="Configuración / Inventario / Estado material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
                 <li><a class="app-menu__item" href="confi_tipo_material.html" data-toggle="tooltip" title="Configuración / Inventario / Tipo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
@@ -88,7 +88,7 @@
           </li><!--fin menu de configuracion-->
         &nbsp;
       <!--menu de inventario-->
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Inventario</h5></span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
           <ul class="treeview-menu">
               <li><a class="app-menu__item" href="inv_carga_masiva_material.html" data-toggle="tooltip" title="Inventario / Utilidades / Carga masiva material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Masiva Material</a></li>
@@ -205,7 +205,7 @@
   <!--fin de menu de inventario-->
   &nbsp;
     <!--menu personal-->
-  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Personal</h5></span><i class="treeview-indicator fa fa-caret-right"></i></a>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Personal</span><i class="treeview-indicator fa fa-caret-right"></i></a>
       <ul class="treeview-menu">
             <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
             <li><a class="app-menu__item" href="per_util_importar_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Personal</a></li>
@@ -223,7 +223,7 @@
   <!--fin menú personal-->
 
       <!--menu utilidades-->
-  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Utilidades</h5></span><i class="treeview-indicator fa fa-caret-right"></i></a>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
     <ul class="treeview-menu">
          <li><a class="app-menu__item" href="utilidades_impor_archiv.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Archivos</a></li>
      <div class="dropdown-divider"></div>
@@ -232,7 +232,7 @@
       <!--fin menú utilidades-->
   &nbsp;
       <!--menu ods-->
-  <li class="treeview"><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-clipboard fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; ODS</h5></span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+  <li class="treeview"><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-clipboard fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; ODS</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS VPI</span><i class="treeview-indicator fa fa-caret-right"></i></a>
      <ul class="treeview-menu">
           <li><a class="app-menu__item" href="ods_carga_archivo_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Archivos ODS</a></li>
@@ -315,7 +315,7 @@
     </ul>
   </li>
 
-  <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span></a>
+  <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Estadistica</span><i class="treeview-indicator fa fa-caret-right"></i></a>
     <ul class="treeview-menu">
           <li><a class="app-menu__item" href="ods_analisis_reiteradas.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Reiteradas</a></li>
           <li><a class="app-menu__item" href="ods_analisis_avarias_infancia.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Análisis Avarias Infancia</a></li>
@@ -326,7 +326,7 @@
  <!--fin menú ods-->
   &nbsp;
       <!--menu admom-->
-      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt fa-lg fa-fw"></i><span class="app-menu__label"><h5>&nbsp; Admon</h5></span><i class="treeview-indicator fa fa-caret-right"></i></a>
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-caret-right"></i></a>
         <ul class="treeview-menu">
         <li><a class="app-menu__item" href="perfiles.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Perfiles</a></li>
         <li><a class="app-menu__item" href="usuarios.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Usuario</a></li>
@@ -335,7 +335,7 @@
         <li><a class="app-menu__item" href="ejecutar_prog.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ejecutar Prog</a></li>
         <li><a class="app-menu__item" href="aplicar_consumos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Aplicar Consumo</a></li>
         <div class="dropdown-divider"></div>
-        <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label"><h5>&nbsp; Utilidades SQL</h5></span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
+        <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades SQL</span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
         <div class="dropdown-divider"></div>
         <li><a class="app-menu__item" href="admon_sql_query_editor.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; SQL Query Editor</a></li>
         <li><a class="app-menu__item" href="admon_sql_dump_export.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; SQL Dump Export</a></li>
@@ -345,27 +345,28 @@
     </aside>
 
              <!--container fluid-->
-          <div class="container-fluid">
+          <div id="Grabar" class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
+                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#Grabar" onclick="myFunction()">
-                            Grabar</a>
+                            Grabar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#Modificar" onclick="myFunction()">
-                            Modificar</a></li>
+                            Modificar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#Eliminar" onclick="myFunction()">
-                            Eliminar</a></li>
+                            Eliminar</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#Salir" onclick="myFunction()">
-                            Salir</a></li>   
+                            Salir</a></li>&nbsp;   
                          <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                             style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
-                             Ver video</a></li> 
-                        </li>
+                             Ver video</a></li>
                       </ul>
                     </div>
                     <!--fin menu derecho-->
+
                     <!--main-->
                   <main class="app-content" role="main">
                       <div class="app-title">
@@ -375,7 +376,7 @@
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
@@ -385,9 +386,8 @@
                         </div>
       <div class="row">
           <!--Grabar-->
-          <div id="Grabar" class="col-md-12">
+          <div class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                <a href="#Grabar"></a>
                       <h3 class="tile-title"> Grabar</h3>
                       <br><br>
                       <!--mensaje-->
@@ -417,7 +417,6 @@
                     <!--Modificar-->
                     <div id="Modificar" class="col-md-12">
                       <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                          <a href="#Modificar"></a>
                                 <h3 class="tile-title">Modificar</h3>
                                 <br><br>
                                 <!--mensaje de alerta-->
@@ -447,7 +446,6 @@
           <!--eliminar tipo petición-->
           <div id="Eliminar" class="col-md-12">
               <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#Eliminar"></a>
                         <h3 class="tile-title">Eliminar</h3>
                         <br><br>
                       <!--mensaje de alerta-->
@@ -490,7 +488,6 @@
                       <!--salir-->
                       <div id="Salir" class="col-md-12">
                           <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:40px">
-                              <a href="#Salir"></a>
                                     <h3 class="tile-title">Salir</h3>
                                     <br><br>
                                     <!--mensaje de alerta-->
@@ -518,33 +515,16 @@
                                         </div>
                                     </div>
                                 </div><!--fin salir deptos-->
-                  <!-- Video Button to Open the Modal -->
-                    <div id="video" class="container">
-                        <button type="button" class="btn btn-primary w3-block" data-toggle="modal" data-target="#myModal">
-                        Ver Video
-                        </button>
-                        <!-- Modal body -->
-                            <!-- Modal -->
-                          <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/eugXS0k-e2I" 
-                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen></iframe>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                              <!-- Modal footer -->
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div><!--FIN DEL MODAL DE VIDEO--> 
-                    </div>                 
+                      <!--video-->
+                      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                          <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/eugXS0k-e2I"
+                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen>
+                        </iframe>
+                        </div><!--fin video-->
+                    </div><!--fin row-->
+                  </div><!--fin row flex-->             
                   </main>
-                </div><!--fin row flex-->
               </div><!--fin container fluid-->
 
 <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
