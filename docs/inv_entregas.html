@@ -22,9 +22,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
+    <style>body { cursor: crosshair}</style>    
   </head>
+
   <body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
@@ -53,7 +53,6 @@
            <ul class="treeview-menu">
               <li><a class="treeview-item" href="confi_gene_departamento.html" data-toggle="tooltip" title="Configuración / General / Departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
               <li><a class="treeview-item" href="confi_gene_localidades.html" data-toggle="tooltip" title="Configuración / General / Localidades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Localidades</a></li>
-              <div class="dropdown-divider"></div>
            </ul>
         </li>          
          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
@@ -71,7 +70,6 @@
                 <li><a class="app-menu__item" href="confi_bandejas_de_legalizacion.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Bandejas de legalización"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Bandejas De Legalización</a></li>
                 <li><a class="app-menu__item" href="confi_areas_de_transferencias.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Areas de transferencia"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Areas De Transferencia</a></li>
                 <li><a class="app-menu__item" href="confi_causales_reagendamiento.html" data-toggle="tooltip" title="Configuración / Gestión Ordenes / Causales reagendamiento"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Reagendamiento</a></li>
-                <div class="dropdown-divider"></div>
           </ul>
          </li>
           <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
@@ -90,7 +88,7 @@
           </li><!--fin menu de configuracion-->
         &nbsp;
       <!--menu de inventario-->
-      <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+      <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cubes fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
           <ul class="treeview-menu">
               <li><a class="app-menu__item" href="inv_carga_masiva_material.html" data-toggle="tooltip" title="Inventario / Utilidades / Carga masiva material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Masiva Material</a></li>
@@ -130,9 +128,9 @@
           <div class="dropdown-divider"></div>
          </ul>
        </li>
-     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Pedidos Material</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+     <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Pedidos Material</span><i class="treeview-indicator fa fa-caret-right"></i></a>
           <ul class="treeview-menu">
-              <li><a class="app-menu__item" href="inv_pedidos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedidos</a></li>
+              <li><a class="app-menu__item active" href="inv_pedidos.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedidos</a></li>
               <li><a class="app-menu__item" href="inv_consulta_pedido.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido</a></li>
               <li><a class="app-menu__item" href="inv_consulta_pedidos_por_fecha.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido Por Fecha</a></li>
               <li><a class="app-menu__item" href="inv_anular_pedido.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Pedido</a></li>
@@ -346,268 +344,293 @@
     </ul>
     </aside>
 
-             <!--container fluid-->
-          <div id=" " class="container-fluid">
-            <!--row flex-->
-              <div class="row flex-lg-nowrap">
-                  <!--menu derecho-->
-                  <div class="d-none d-lg-block col-sm-2 bd-toc">
-                      <ul class="navbar-nav">
-                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item active" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                            style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
-                          Ver video</a></li>  
-                      </ul>
-                    </div>
-                    <!--fin menu derecho-->
-                    <!--main-->
-                  <main class="app-content" role="main">
-                      <div class="app-title">
-                          <div>
-                            <h1><i class="fa fa-file-text"></i>titulo</h1>
-                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
-                          </div>
-                          <div class="bs-component">
-                          <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">titulo</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
-                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
+    <!--container fluid-->
+    <div id="buscarpersonal" class="container-fluid">
+        <!--row flex-->
+          <div class="row flex-lg-nowrap">
 
-  <!--comienzo-->
-  <div class="col-md-12">
-      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#replicarlistacontrol"></a>
-                <h3 class="tile-title">titulo</h3>
-                <br><br>
-                <!--mensaje de alerta-->
-                <div class="row">
-                    <div class="col-lg-12" style="margin-top:-34px">
+              <!--menu derecho-->
+              <div class="d-none d-lg-block col-sm-2 bd-toc">
+                  <ul class="navbar-nav">
+                    <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscarpersonal" onclick="myFunction()">
+                        Buscar personal</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#stockpersonal" onclick="myFunction()">
+                        Stock personal</a></li>&nbsp;  
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
+                        Agregar material</a></li>&nbsp;  
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#eliminarmaterial" onclick="myFunction()">
+                        Eliminar material</a></li>&nbsp;   
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
+                        Cargar archivo</a></li>&nbsp;  
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#registrarentrega" onclick="myFunction()">
+                        Registrar entrega</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                        Salir</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                      style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                      Ver video</a></li>
+                  </ul>
+                </div>
+                <!--fin menu derecho-->
+
+                <!--main-->
+              <main class="app-content" role="main">
+                  <div class="app-title">
+                      <div>
+                        <h1><i class="fa fa-file-text"></i>Entregas</h1>
+                        <p>Funcionalidades del módulo entrega en SISCOS</p>
+                      </div>
                       <div class="bs-component">
-                        <div class="alert alert-dismissible alert-info">
-                          <strong>
-                            <h5>
-                              texto
-                            </h5>
-                          </strong> 
-                        </div>
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Inventario</li>
+                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
+                        <li class="breadcrumb-item"><a href="inv_entregas_pedidos_autom.html">Entregas Pedidos Autom</a></li>
+                      </ol>
                       </div>
                     </div>
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                </div>
-            </div><!--fin-->
 
-  <!--comienzo-->
-  <div id=" " class="col-md-12">
-      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#importar"></a>
-                <h3 class="tile-title">titulo</h3>
-                <br><br>
-                <!--mensaje de alerta-->
-                <div class="row">
-                    <div class="col-lg-12" style="margin-top:-34px">
-                      <div class="bs-component">
-                        <div class="alert alert-dismissible alert-info">
-                          <strong>
-                          <h5>
-                         texto
-                          </h5>
-                          </strong> 
-                        </div>
-                      </div>
-                    </div>
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                </div>
-            </div><!--fin-->
-
-          <!--comienzo-->
-            <div id=" " class="col-md-12">
-                <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> titulo</h3>
-                        <br><br>
+  <div class="row">
+       <!--Buscar personal-->
+       <div class="col-md-12">
+            <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+                <h3 class="tile-title">Buscar personal</h3>
+                  <br><br>
                       <!--mensaje de alerta-->
-                  <div class="col-lg-10"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-danger">
-                        <strong>Nota:</strong> 
-                        <h5>
-                         texto
-                        </h5>
-                        </div>
-                        </div>
-                        </div><!--fin mensaje de alerta-->
-                        <br><br>
-                        <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                <div class="alert alert-dismissible alert-info">
-                                  <strong>
-                                    <h5>
-                                      texto
-                                    </h5>
-                                  </strong> 
-                                </div>
+                      <div class="row">
+                          <div class="col-lg-12" style="margin-top:-34px">
+                            <div class="bs-component">
+                              <div class="alert alert-dismissible alert-info">
+                                <strong>
+                                  <h5>
+                                    Se encuentra ubicado en la barra horizontal superior lado derecho, permite 
+                                    al usuario buscar la persona dando clic sobre el botón, por si se le ha
+                                    olvidado con el criterio de búsqueda (%) le aparecen todas las personas
+                                    registradas en SISCOS.
+                                  </h5>
+                                </strong> 
                               </div>
                             </div>
-                            </div><!--fin mensaje-->
+                          </div>
+                          </div><!--fin mensaje-->
+                          <div class="w3-container w3-center">
+                            <span>
+                            <img src="imagenes/buscar personal entrega.png" style="width:70%;" class="w3-animate-zoom rounded">
+                            </span>
+                          </div>
+                      </div>
+                  </div><!--fin eliminar material-->
+       <!--stock personal-->
+      <div id="stockpersonal" class="col-md-12">
+        <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+            <h3 class="tile-title">Stock personal</h3>
+              <br><br>
+                  <!--mensaje de alerta-->
+                  <div class="row">
+                      <div class="col-lg-12" style="margin-top:-34px">
+                        <div class="bs-component">
+                          <div class="alert alert-dismissible alert-info">
+                            <strong>
+                              <h5>
+                          Se encuentra ubicado en la barra horizontal superior lado izquierdo,
+                          permite al usuario Consultar los Stock cargados actualmente del técnico. 
+                          <br><br>
+                          El usuario también visualizará una pestaña de materiales y seriales que se pueden mandar
+                          a Excel en el botón Generar informe en Excel que se encuentra ubicado en la barra horizontal 
+                          inferior.
+                              </h5>
+                            </strong> 
+                          </div>
+                        </div>
+                      </div>
+                      </div><!--fin mensaje-->
                       <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
+                        <span>
+                        <img src="imagenes/stock personal entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                        </span>
+                      </div>
                   </div>
-                </div><!--fin-->
+              </div><!--fin stock personal-->
+         <!--Agregar material-->
+          <div id="agregarmaterial" class="col-md-12">
+            <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                      <h3 class="tile-title">Agregar material</h3>
+                      <br><br>
+                    <!--mensaje de alerta-->
+                <div class="col-lg-8"  style="margin-top:-34px">
+                  <div class="bs-component">
+                    <div class="alert alert-dismissible alert-danger">
+                      <strong>Nota:</strong> 
+                      <h5>El usuario debe tener en cuenta que el material que va asignar debe tener la misma área si no le mostrará
+                         un mensaje de error que no pertenece a esa área.</h5>
+                      </div>
+                      </div>
+                      </div><!--fin mensaje de alerta-->
+                    <div class="w3-container w3-center">
+                    <span>
+                      <img src="imagenes/agregar entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                      <br><br>
+                    </span>
+                  </div>
+                <br><br>
+                    <!--mensaje-->
+                      <div class="row">
+                          <div class="col-lg-12" style="margin-top:-34px">
+                            <div class="bs-component">
+                              <div class="alert alert-dismissible alert-info">
+                                <strong>
+                                  <h5>
+                                    Tiene un botón buscar material por diferentes criterios de búsquedas
+                                    se asignan y luego se verán reflejados automáticamente  en la ventana 
+                                    principal de entregas es decir se van pasando a medidas que se van seleccionando
+                                    y cuando tiene el número -1 quiere decir que no tiene pedido.
+                                    <br><br>
+                                    En la tabla se puede visualizar que lo que está sombreando son los materiales
+                                    que pertenecen al área seleccionada y automáticamente los pasa a la pantalla 
+                                    principal de entrega y solo es asignar cantidades.
+                                    <br><br>
 
-                      
+                                  </h5>
+                                </strong> 
+                              </div>
+                            </div>
+                          </div>
+                          </div><!--fin mensaje-->
+                      </div>
+                  </div><!--fin agregar material-->
+       
+    <!--eliminar material-->
+      <div id="eliminarmaterial" class="col-md-12">
+        <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+            <h3 class="tile-title">Eliminar material</h3>
+              <br><br>
+                  <!--mensaje de alerta-->
+                  <div class="row">
+                      <div class="col-lg-12" style="margin-top:-34px">
+                        <div class="bs-component">
+                          <div class="alert alert-dismissible alert-info">
+                            <strong>
+                              <h5>
+                              Se encuentra ubicado en la barra horizontal superior permite al usuario poder
+                              eliminar materiales de la lista que han sido agregados que  el usuario no crea
+                              conveniente para su entrega sin ticket.
+                              </h5>
+                            </strong> 
+                          </div>
+                        </div>
+                      </div>
+                      </div><!--fin mensaje-->
+                      <div class="w3-container w3-center">
+                        <span>
+                        <img src="imagenes/eliminar entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                        </span>
+                      </div>
+                  </div>
+              </div><!--fin eliminar material-->
+    <!--Cargar archivo-->
+      <div id="cargararchivo" class="col-md-12">
+            <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+                <h3 class="tile-title">Cargar archivo</h3>
+                  <br><br>
+                      <!--mensaje de alerta-->
+                      <div class="row">
+                          <div class="col-lg-12" style="margin-top:-34px">
+                            <div class="bs-component">
+                              <div class="alert alert-dismissible alert-info">
+                                <strong>
+                                  <h5>
+                                  Se encuentra ubicado en la barra horizontal superior, permite al usuario
+                                   poder hacer entrega con un archivo en TXT con todos los seriales que se 
+                                   le van a entregar a ese técnico. Seguidamente se validan las cantidades
+                                    y clic en el botón guardar.
+                                  </h5>
+                                </strong> 
+                              </div>
+                            </div>
+                          </div>
+                          </div><!--fin mensaje-->
+                          <div class="w3-container w3-center">
+                            <span>
+                            <img src="imagenes/cargar entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                            </span>
+                          </div>
+                      </div>
+                  </div><!--fin cargar archivo-->
 
-                                  <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
+        <!--Registrar entrega-->
+      <div id="registrarentrega" class="col-md-12">
+          <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+              <h3 class="tile-title">Registrar entrega</h3>
+                <br><br>
+                    <!--mensaje de alerta-->
+                    <div class="row">
+                        <div class="col-lg-12" style="margin-top:-34px">
+                          <div class="bs-component">
+                            <div class="alert alert-dismissible alert-info">
+                              <strong>
+                                <h5>
+                                  Se encuentra ubicado en la barra vertical superior lado derecho, permite
+                                  al usuario poder hacer el registro cuando ya  tenga todo listo el sistema
+                                  SISCOS empieza a validar o preguntar cuando se quiera guardar la entrega.
                                   <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                            texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
+                                  <div class="alert alert-dismissible alert-warning">
+                                  <li>	El sistema pregunta se guarda la entrega.</li>
+                                  <li>  Imprimir con seriales SI o NO.</li>
+                                  <li>  Genera formato de entrega.</li>
+                                </div>
+                                </h5>
+                              </strong> 
+                            </div>
+                          </div>
+                        </div>
+                        </div><!--fin mensaje-->
+                        <div class="w3-container w3-center">
+                          <span>
+                          <img src="imagenes/registrar entrega.png" style="width:80%;" class="w3-animate-zoom rounded">
+                          </span>
+                        </div>
+                    </div>
+                </div><!--fin registrar entrega-->
+    <!--salir-->
+      <div id="salir" class="col-md-12">
+        <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
+            <h3 class="tile-title">Salir</h3>
+              <br><br>
+                  <!--mensaje de alerta-->
+                  <div class="row">
+                      <div class="col-lg-12" style="margin-top:-34px">
+                        <div class="bs-component">
+                          <div class="alert alert-dismissible alert-info">
+                            <strong>
+                              <h5>
+                                Permite al usuario dar clic en el botón salir del módulo entrega
+                                 si ticket para finalizar el proceso.
+                              </h5>
+                            </strong> 
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--fin mensaje-->
+                      <div class="w3-container w3-center">
+                        <span>
+                        <img src="imagenes/salir entrega.png" style="width:70%;" class="w3-animate-zoom rounded">
+                        </span>
+                      </div>
+                  </div>
+              </div><!--fin salir-->
+        <!--video-->
+          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+              <iframe width="1280" height="592" src="https://www.youtube.com/embed/tYTsacY5ZM0" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            </div><!--fin video-->
+        </div><!--fin row-->
+      </div><!--fin row flex-->                
+    </main>
+</div><!--fin container fluid-->
 
-                        <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                            texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-
-                              <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                              texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin -->
-                                
-                                <!--salir -->
-                                <div id="salir" class="col-md-12">
-                                    <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">titulo</h3>
-                                              <br><br>
-                                              <!--mensaje de alerta-->
-                                              <div class="row">
-                                                  <div class="col-lg-12" style="margin-top:-34px">
-                                                    <div class="bs-component">
-                                                      <div class="alert alert-dismissible alert-info">
-                                                        <strong>
-                                                        <h5>
-                                                        texto
-                                                        </h5>
-                                                        </strong> 
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  </div><!--fin mensaje-->
-                                                  <div class="w3-container w3-center">
-                                                    <span>
-                                                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                                    </span>
-                                                  </div>
-                                              </div>
-                                          </div><!--fin salir localidades-->
-                                        </div>
-                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                            <iframe class="embed-responsive-item"  
-                                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                              allowfullscreen>
-                                            </iframe>
-                                          </div>
-                                        </div><!--fin row flex-->               
-                                      </main>
-                                  </div><!--fin container fluid-->
-                                
 <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
 crossorigin="anonymous"></script>
@@ -624,47 +647,47 @@ crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Page specific javascripts-->
 <script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-</script>
-<!--scrooll efecto smooth para el id-->
-<script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
-    </script>
-<!--impedir que copien el codigo de la pagina-->
+    $('.bs-component [data-toggle="popover"]').popover();
+    $('.bs-component [data-toggle="tooltip"]').tooltip();
+  </script>
+  <!--scrooll efecto smooth para el id-->
+  <script>
+      function myFunction() {
+        document.documentElement.style.scrollBehavior = "smooth";
+      }
+      </script>
+  <!--impedir que copien el codigo de la pagina-->
 <script language="Javascript">
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+  function disableselect(e){
+  return false
+  }
+  function reEnable(){
+  return true
+  }
+  document.onselectstart=new Function ("return false")
+  if (window.sidebar){
+  document.onmousedown=disableselect
+  document.onclick=reEnable
+  }
+  // End -->
+  </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
 <Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Esta pagina es privada.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Esta pagina es privada.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script> 
+  function right(e) {
+  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+  alert("Esta pagina es privada.");
+  return false;
+  }
+  else if (navigator.appName == 'Microsoft Internet Explorer' &&
+  (event.button == 2 || event.button == 3)) {
+  alert("Esta pagina es privada.");
+  return false;
+  }
+  return true;
+  }
+  document.onmousedown=right;
+  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+  window.onmousedown=right;
+  </script> 
 </html>
