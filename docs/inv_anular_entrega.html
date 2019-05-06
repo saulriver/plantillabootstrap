@@ -345,27 +345,21 @@
     </aside>
 
              <!--container fluid-->
-          <div id=" " class="container-fluid">
+          <div id="buscarentrega" class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
                         <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#buscarentrega" onclick="myFunction()">
+                            Buscar entrega</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#anular" onclick="myFunction()">
+                            Anular</a></li>&nbsp;   
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#imprimir" onclick="myFunction()">
+                            Imprimir</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            salir</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                             style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                           Ver video</a></li>  
@@ -376,26 +370,24 @@
                   <main class="app-content" role="main">
                       <div class="app-title">
                           <div>
-                            <h1><i class="fa fa-file-text"></i>titulo</h1>
-                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
+                            <h1><i class="fa fa-file-text"></i>Anular Entrega</h1>
+                            <p>Funcionalidades del módulo anular entrega en SISCOS</p>
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">titulo</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
-                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
+                            <li class="breadcrumb-item"><a href="inv_salidas_ct.html">Salidas CT</a></li>
                           </ol>
                           </div>
                         </div>
       <div class="row">
-
-  <!--comienzo-->
+  <!--buscar entrega-->
   <div class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#replicarlistacontrol"></a>
-                <h3 class="tile-title">titulo</h3>
+                <h3 class="tile-title">Buscar Entrega</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -404,7 +396,12 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              texto
+                              Este módulo permite al usuario poder anular una entrega en el sistema 
+                              SISCOS, escogiendo el departamento y la bodega e ingresando el número 
+                              de la entrega.
+                              El usuario al ingresar el número de la entrega que va anular le arroja
+                              toda la información que está registrada de esa entrega como se 
+                              visualizará en la siguiente imagen.
                             </h5>
                           </strong> 
                         </div>
@@ -413,17 +410,45 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/buscar entrega.png " style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
-            </div><!--fin-->
+            </div><!--fin buscar entrega-->
 
-  <!--comienzo-->
-  <div id=" " class="col-md-12">
+  <!--anular-->
+  <div id="anular" class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#importar"></a>
-                <h3 class="tile-title">titulo</h3>
+                <h3 class="tile-title">Anular</h3>
+                <br><br>
+                <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-34px">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                            Se encuentra ubicado en la barra vertical superior lado izquierdo,
+                             permite al usuario poder dar clic sobre el botón y anular la entrega 
+                             validando la información registrada. Mostrará un mensaje SISCOS que si
+                              está seguro de anular la entrega.
+                            </h5>
+                          </strong> 
+                        </div>
+                      </div>
+                    </div>
+                    </div><!--fin mensaje-->
+                    <div class="w3-container w3-center">
+                      <span>
+                      <img src="imagenes/anular entrega.png " style="width:80%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
+                </div>
+            </div><!--fin anular-->
+  <!--imprimir-->
+  <div id="imprimir" class="col-md-12">
+      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                <h3 class="tile-title">Imprimir</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -432,7 +457,9 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                           <h5>
-                         texto
+                            Se encuentra ubicado en la barra horizontal superior lado izquierdo 
+                            y permite al usuario dar clic sobre el botón e imprimir en un archivo
+                             la entrega que tiene materiales registrados y que se va anular.
                           </h5>
                           </strong> 
                         </div>
@@ -441,138 +468,15 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/imprimir anular entrega.png " style="width:100%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
-            </div><!--fin-->
-
-          <!--comienzo-->
-            <div id=" " class="col-md-12">
-                <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> titulo</h3>
-                        <br><br>
-                      <!--mensaje de alerta-->
-                  <div class="col-lg-10"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-danger">
-                        <strong>Nota:</strong> 
-                        <h5>
-                         texto
-                        </h5>
-                        </div>
-                        </div>
-                        </div><!--fin mensaje de alerta-->
-                        <br><br>
-                        <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                <div class="alert alert-dismissible alert-info">
-                                  <strong>
-                                    <h5>
-                                      texto
-                                    </h5>
-                                  </strong> 
-                                </div>
-                              </div>
-                            </div>
-                            </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                  </div>
-                </div><!--fin-->
-
-                      
-
-                                  <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                            texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-
-                        <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                            texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-
-                              <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                              texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin -->
-                                
-                                <!--salir -->
+            </div><!--fin imprimir-->
+                      <!--salir -->
                                 <div id="salir" class="col-md-12">
                                     <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">titulo</h3>
+                                              <h3 class="tile-title">Salir</h3>
                                               <br><br>
                                               <!--mensaje de alerta-->
                                               <div class="row">
@@ -581,7 +485,8 @@
                                                       <div class="alert alert-dismissible alert-info">
                                                         <strong>
                                                         <h5>
-                                                        texto
+                                                        Permite al usuario dar clic en el botón salir del módulo anular 
+                                                        entrega para finalizar el proceso.
                                                         </h5>
                                                         </strong> 
                                                       </div>
@@ -590,14 +495,14 @@
                                                   </div><!--fin mensaje-->
                                                   <div class="w3-container w3-center">
                                                     <span>
-                                                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                                    <img src="imagenes/salir anular entrega.png" style="width:80%;" class="w3-animate-zoom rounded">
                                                     </span>
                                                   </div>
                                               </div>
-                                          </div><!--fin salir localidades-->
+                                          </div><!--fin salir-->
                                         </div>
                                           <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                            <iframe class="embed-responsive-item"  
+                                            <iframe class="embed-responsive-item" width="2134" height="1200" src="https://www.youtube.com/embed/f2yt96Zdt38"
                                               frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                               allowfullscreen>
                                             </iframe>

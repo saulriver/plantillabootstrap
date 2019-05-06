@@ -348,27 +348,25 @@
     </aside>
 
              <!--container fluid-->
-          <div id=" " class="container-fluid">
+          <div id="nuevasalida " class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
                         <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item active" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#nuevasalida" onclick="myFunction()">
+                            Nueva salida</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
+                            Agregar material</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#eliminarmaterial" onclick="myFunction()">
+                            Eliminar material</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
+                            Cargar archivo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#registrarsalida" onclick="myFunction()">
+                            Registrar salida</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            Salir</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                             style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                           Ver video</a></li>  
@@ -379,26 +377,26 @@
                   <main class="app-content" role="main">
                       <div class="app-title">
                           <div>
-                            <h1><i class="fa fa-file-text"></i>titulo</h1>
-                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
+                            <h1><i class="fa fa-file-text"></i>Salidas CT</h1>
+                            <p>Funcionalidades del módulo Salidas CT en SISCOS</p>
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">titulo</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
-                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
+                            <li class="breadcrumb-item"><a href="inv_salidas_eecc.html">Salidas EECC</a></li>
                           </ol>
                           </div>
                         </div>
       <div class="row">
 
-  <!--comienzo-->
+  <!--Nueva salida-->
   <div class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#replicarlistacontrol"></a>
-                <h3 class="tile-title">titulo</h3>
+          <a href="#nuevasalida"></a>
+                <h3 class="tile-title">Nueva salida</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -407,7 +405,25 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              texto
+                              Los requisitos previos que debe tener una salida CT es que depende de una entrada (reserva),
+                              proveedor (tercero), centro de costo (propiedad) áreas de operación y periodo activo.
+                              <br>
+                              Al momento de estar ingresando la información para registrar una salida CT en el campo periodo
+                              nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los  registros existente
+                              de tercero que en este caso son las bodegas, debido a que el usuario se le olvido la bodega que necesita
+                              entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla % que le presentará
+                              todas las bodegas registradas, para salir de esta ventana usamos la tecla esc.
+                              <br><br>
+                              <div class="alert alert-dismissible alert-warning">
+                              <li>Centro de costo y propiedad es lo mismo.</li>
+                              <li>El área con la que el usuario necesita para hacer el proceso.</li>
+                             <li>Tercero: la bodega que se necesita para hacer la salida.</li>
+                              <li>El usuario debe dar clic en el botón PROV, para hacer la búsqueda de la bodega por el criterio (%).</li>
+                            </div>
+                              Nueva salida: este botón se  encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario
+                              cuando ya tenga toda la información  requerida Para el registro de una salida CT le
+                              damos clic en el botón nueva entrada para que la guarde y se pueda agregar material 
+                              a esta salida y se puedan habilitar los demás botones y poder realizar  el proceso.   
                             </h5>
                           </strong> 
                         </div>
@@ -416,17 +432,17 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/nueva salida 2.png " style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
-            </div><!--fin-->
+            </div><!--fin nueva salida-->
 
-  <!--comienzo-->
+  <!--Agregar material-->
   <div id=" " class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#importar"></a>
-                <h3 class="tile-title">titulo</h3>
+          <a href="#agregarmaterial"></a>
+                <h3 class="tile-title">Agregar material</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -435,7 +451,19 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                           <h5>
-                         texto
+                            Se encuentra ubicado en la barra horizontal superior, esta función permite al
+                            usuario poder agregar material a una de las salidas registradas en el sistema SISCOS.
+                            El usuario debe dar clic en el botón agregar, y nos presentará una ventana que requiere
+                            de una información para poder agregar material, si al usuario se le olvido el código puede
+                            realizar una búsqueda dando clic en el botón buscar que es la lupa.
+                            <br><br>
+                            Al seleccionar el código se verá reflejado en la tablita existencia para poder guardarlo en 
+                            la salida, cunado los materiales en la tabla existencia aparecen sombreado es por qué si pertenecen
+                            a esa área y propiedad. 
+                            <br>
+                            El usuario debe asignar la cantidad por que después no se puede registrar la salida, ingresar toda 
+                            la información solicitada por que si no el sistema muestra mensaje que hace falta información por 
+                            ingresar.
                           </h5>
                           </strong> 
                         </div>
@@ -444,7 +472,7 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/agregar material salida.png " style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
