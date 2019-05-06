@@ -357,10 +357,12 @@
                         1 Forma entrega con ticket </a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#2formaentrega" onclick="myFunction()">
                         2 Forma entrega con ticket </a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscarpersonal" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
+                        Cargar archivo</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#registrarentrega" onclick="myFunction()">
                         Registrar entrega</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#stockpersonal" onclick="myFunction()">
-                        Stock personal</a></li>&nbsp;  
+                        Stock personal</a></li>&nbsp;   
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
@@ -389,10 +391,10 @@
                     </div>
 
   <div class="row">
-       <!--Formas entregas con ticket-->
+       <!--1 Forma entrega-->
        <div class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Forma entrega con ticket 1</h3>
+                <h3 class="tile-title">1 Forma entrega con ticket</h3>
                   <br><br>
                       <!--mensaje de alerta-->
                       <div class="row">
@@ -422,15 +424,15 @@
                           </div><!--fin mensaje-->
                           <div class="w3-container w3-center">
                             <span>
-                            <img src="imagenes/buscar personal entrega.png" style="width:70%;" class="w3-animate-zoom rounded">
+                            <img src="imagenes/1 forma.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
                           </div>
                       </div>
-                  </div><!--fin eliminar material-->
-       <!--stock personal-->
-      <div id="stockpersonal" class="col-md-12">
+                  </div><!--fin 1 forma entrega-->
+       <!--2 forma entrega-->
+      <div id="2formaentrega" class="col-md-12">
         <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-            <h3 class="tile-title">Stock personal</h3>
+            <h3 class="tile-title">2 Forma entrega con ticket</h3>
               <br><br>
                   <!--mensaje de alerta-->
                   <div class="row">
@@ -439,12 +441,18 @@
                           <div class="alert alert-dismissible alert-info">
                             <strong>
                               <h5>
-                          Se encuentra ubicado en la barra horizontal superior lado izquierdo,
-                          permite al usuario Consultar los Stock cargados actualmente del técnico. 
+                            <div class="alert alert-dismissible alert-warning">  
+                            2.  Se encuentra ubicado en la ruta acceso Inventario/Salidas Almacén/Entregas con Ticket. 
+                          </div> 
+                          El usuario puede utilizar una de las 2 formas que se le haga fácil para el proceso 
+                          de entregas con ticket. En esta opción hay que ingresar el número del ticket para
+                          que se activen los demás botones, los consecutivos de pedidos son por bogadas y 
+                          luego se confirman cantidades.
                           <br><br>
-                          El usuario también visualizará una pestaña de materiales y seriales que se pueden mandar
-                          a Excel en el botón Generar informe en Excel que se encuentra ubicado en la barra horizontal 
-                          inferior.
+                          Si ese pedido incluye seriales al dar clic en cantidad nos mostrará otra ventana 
+                          solicitando información acerca del serial y todo lo que está en esa reserva el 
+                          usuario escoge cuales desea pasar y si son más esta la opción de seleccionar archivo
+                          con la cantidad necesaria que desee el usuario para su cargue de seriales.  
                               </h5>
                             </strong> 
                           </div>
@@ -453,29 +461,29 @@
                       </div><!--fin mensaje-->
                       <div class="w3-container w3-center">
                         <span>
-                        <img src="imagenes/stock personal entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                        <img src="imagenes/2 forma.png" style="width:70%;" class="w3-animate-zoom rounded">
                         </span>
                       </div>
                   </div>
-              </div><!--fin stock personal-->
-         <!--Agregar material-->
-          <div id="agregarmaterial" class="col-md-12">
+              </div><!--fin 2 forma-->
+         <!--cargar archivo-->
+          <div id="cargararchivo" class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                      <h3 class="tile-title">Agregar material</h3>
+                      <h3 class="tile-title">Cargar archivo</h3>
                       <br><br>
                     <!--mensaje de alerta-->
                 <div class="col-lg-8"  style="margin-top:-34px">
                   <div class="bs-component">
                     <div class="alert alert-dismissible alert-danger">
                       <strong>Nota:</strong> 
-                      <h5>El usuario debe tener en cuenta que el material que va asignar debe tener la misma área si no le mostrará
-                         un mensaje de error que no pertenece a esa área.</h5>
+                      <h5>El usuario debe tener en cuenta que está funcionalidad es solo cuando
+                         el material sea clasifacidao como serial y da la opcion de cargar el archivo.</h5>
                       </div>
                       </div>
                       </div><!--fin mensaje de alerta-->
                     <div class="w3-container w3-center">
                     <span>
-                      <img src="imagenes/agregar entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/cargar archivo.png" style="width:70%;" class="w3-animate-zoom rounded">
                       <br><br>
                     </span>
                   </div>
@@ -487,16 +495,10 @@
                               <div class="alert alert-dismissible alert-info">
                                 <strong>
                                   <h5>
-                                    Tiene un botón buscar material por diferentes criterios de búsquedas
-                                    se asignan y luego se verán reflejados automáticamente  en la ventana 
-                                    principal de entregas es decir se van pasando a medidas que se van seleccionando
-                                    y cuando tiene el número -1 quiere decir que no tiene pedido.
-                                    <br><br>
-                                    En la tabla se puede visualizar que lo que está sombreando son los materiales
-                                    que pertenecen al área seleccionada y automáticamente los pasa a la pantalla 
-                                    principal de entrega y solo es asignar cantidades.
-                                    <br><br>
-
+                                    permite al usuario dar clic sobre el botón que se encuentra ubicado
+                                    en la barra vertical superior lado izquierdo,
+                                    Esta la opción de cargar el archivo automáticamente se adiciona 
+                                    sin necesidad de buscarlo en seleccionar seriales.
                                   </h5>
                                 </strong> 
                               </div>
@@ -504,12 +506,12 @@
                           </div>
                           </div><!--fin mensaje-->
                       </div>
-                  </div><!--fin agregar material-->
+                  </div><!--fin cargar archivo-->
        
-    <!--eliminar material-->
-      <div id="eliminarmaterial" class="col-md-12">
+    <!--Registrar entrega-->
+      <div id="registrarentrega" class="col-md-12">
         <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-            <h3 class="tile-title">Eliminar material</h3>
+            <h3 class="tile-title">Registrar entrega</h3>
               <br><br>
                   <!--mensaje de alerta-->
                   <div class="row">
@@ -518,9 +520,17 @@
                           <div class="alert alert-dismissible alert-info">
                             <strong>
                               <h5>
-                              Se encuentra ubicado en la barra horizontal superior permite al usuario poder
-                              eliminar materiales de la lista que han sido agregados que  el usuario no crea
-                              conveniente para su entrega sin ticket.
+                                  Cuando ya el usuario confirme todas las cantidades de los materiales le da en el botón guardar.
+                                  <br><br>
+                                  <div class="alert alert-dismissible alert-warning">
+                                  <li>Genera la Entrega.</li>
+                                  <li>Imprimir con seriales SI o NO.</li>
+                                  <li>Detecta si la persona tienen correo electrónico, imprime una sola vez y la otra copia se envía
+                                      al correo del técnico.</li>
+                                      <br>
+                                  El usuario ya después de hacer todo este proceso el sistema SISCOS arroja el informe de salida 
+                                  almacén que es donde va la relación de todo.
+                                </div>
                               </h5>
                             </strong> 
                           </div>
@@ -529,45 +539,15 @@
                       </div><!--fin mensaje-->
                       <div class="w3-container w3-center">
                         <span>
-                        <img src="imagenes/eliminar entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
+                        <img src="imagenes/registrar entrega con ticket.png" style="width:60%;" class="w3-animate-zoom rounded">
                         </span>
                       </div>
                   </div>
-              </div><!--fin eliminar material-->
-    <!--Cargar archivo-->
-      <div id="cargararchivo" class="col-md-12">
-            <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Cargar archivo</h3>
-                  <br><br>
-                      <!--mensaje de alerta-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                              <div class="alert alert-dismissible alert-info">
-                                <strong>
-                                  <h5>
-                                  Se encuentra ubicado en la barra horizontal superior, permite al usuario
-                                   poder hacer entrega con un archivo en TXT con todos los seriales que se 
-                                   le van a entregar a ese técnico. Seguidamente se validan las cantidades
-                                    y clic en el botón guardar.
-                                  </h5>
-                                </strong> 
-                              </div>
-                            </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/cargar entrega.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin cargar archivo-->
-
-        <!--Registrar entrega-->
-      <div id="registrarentrega" class="col-md-12">
+              </div><!--fin registrar entrega-->
+      <!--stock personal-->
+      <div id="stockpersonal" class="col-md-12">
           <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-              <h3 class="tile-title">Registrar entrega</h3>
+              <h3 class="tile-title">Stock personal</h3>
                 <br><br>
                     <!--mensaje de alerta-->
                     <div class="row">
@@ -576,15 +556,8 @@
                             <div class="alert alert-dismissible alert-info">
                               <strong>
                                 <h5>
-                                  Se encuentra ubicado en la barra vertical superior lado derecho, permite
-                                  al usuario poder hacer el registro cuando ya  tenga todo listo el sistema
-                                  SISCOS empieza a validar o preguntar cuando se quiera guardar la entrega.
-                                  <br><br>
-                                  <div class="alert alert-dismissible alert-warning">
-                                  <li>	El sistema pregunta se guarda la entrega.</li>
-                                  <li>  Imprimir con seriales SI o NO.</li>
-                                  <li>  Genera formato de entrega.</li>
-                                </div>
+                             Se encuentra ubicado en la barra vertical superior lado izquierdo consulta 
+                             los Stock cargados actualmente del técnico y se genera un archivpo  en Excel.       
                                 </h5>
                               </strong> 
                             </div>
@@ -593,11 +566,11 @@
                         </div><!--fin mensaje-->
                         <div class="w3-container w3-center">
                           <span>
-                          <img src="imagenes/registrar entrega.png" style="width:80%;" class="w3-animate-zoom rounded">
+                          <img src="imagenes/stock personal con ticket.png" style="width:60%;" class="w3-animate-zoom rounded">
                           </span>
                         </div>
                     </div>
-                </div><!--fin registrar entrega-->
+                </div><!--fin stock personal-->
     <!--salir-->
       <div id="salir" class="col-md-12">
         <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
@@ -611,7 +584,7 @@
                             <strong>
                               <h5>
                                 Permite al usuario dar clic en el botón salir del módulo entrega
-                                 si ticket para finalizar el proceso.
+                                con ticket para finalizar el proceso.
                               </h5>
                             </strong> 
                           </div>
@@ -620,7 +593,7 @@
                     </div><!--fin mensaje-->
                       <div class="w3-container w3-center">
                         <span>
-                        <img src="imagenes/salir entrega.png" style="width:70%;" class="w3-animate-zoom rounded">
+                        <img src="imagenes/salir con ticket.png" style="width:70%;" class="w3-animate-zoom rounded">
                         </span>
                       </div>
                   </div>
