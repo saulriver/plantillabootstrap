@@ -345,14 +345,18 @@
     </aside>
 
              <!--container fluid-->
-          <div id="agregar" class="container-fluid">
+          <div id="buscar1" class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
                         <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item active" href="#agregar" onclick="myFunction()">
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#buscar1" onclick="myFunction()">
+                            Buscar origen</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#buscar2" onclick="myFunction()">
+                            Buscar destino</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#agregar" onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
                             Eliminar material</a></li>&nbsp;
@@ -387,6 +391,60 @@
 
   <!--comienzo-->
   <div class="col-md-12">
+    <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+              <h3 class="tile-title">Buscar origen</h3>
+              <br><br>
+              <!--mensaje de alerta-->
+              <div class="row">
+                  <div class="col-lg-12" style="margin-top:-34px">
+                    <div class="bs-component">
+                      <div class="alert alert-dismissible alert-info">
+                        <strong>
+                        <h5>
+                       texto
+                        </h5>
+                        </strong> 
+                      </div>
+                    </div>
+                  </div>
+                  </div><!--fin mensaje-->
+                  <div class="w3-container w3-center">
+                    <span>
+                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                    </span>
+                  </div>
+              </div>
+          </div><!--fin-->
+
+          <!--comienzo-->
+  <div id="buscar2" class="col-md-12">
+    <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+              <h3 class="tile-title">Buscar destino</h3>
+              <br><br>
+              <!--mensaje de alerta-->
+              <div class="row">
+                  <div class="col-lg-12" style="margin-top:-34px">
+                    <div class="bs-component">
+                      <div class="alert alert-dismissible alert-info">
+                        <strong>
+                        <h5>
+                       texto
+                        </h5>
+                        </strong> 
+                      </div>
+                    </div>
+                  </div>
+                  </div><!--fin mensaje-->
+                  <div class="w3-container w3-center">
+                    <span>
+                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                    </span>
+                  </div>
+              </div>
+          </div><!--fin-->
+
+  <!--comienzo-->
+  <div id="agregar" class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
                 <h3 class="tile-title">Agregar material</h3>
                 <br><br>
@@ -518,7 +576,7 @@
                                   </div>
                               </div><!--fin-->
                             <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                              <iframe class="embed-responsive-item"  
+                              <iframe class="embed-responsive-item" width="866" height="426" src="https://www.youtube.com/embed/5xal581o7XE"
                                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                               </iframe>
