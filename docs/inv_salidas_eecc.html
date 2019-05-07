@@ -150,8 +150,8 @@
            <li><a class="app-menu__item" href="inv_entregas_con_solicitud.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Entregas con solicitud"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Con Solicitud</a></li>
            <li><a class="app-menu__item" href="inv_consulta_entregas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Consulta entrega"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrega</a></li>
            <li><a class="app-menu__item" href="inv_anular_entrega.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Anular entrega"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrega</a></li>
-           <li><a class="app-menu__item" href="inv_salidas_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Salidas CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas CT</a></li>
-           <li><a class="app-menu__item active" href="inv_salidas_eecc.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Salidas EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas EECC</a></li>
+           <li><a class="app-menu__item active" href="inv_salidas_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Salidas CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas CT</a></li>
+           <li><a class="app-menu__item" href="inv_salidas_eecc.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Salidas EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas EECC</a></li>
            <li><a class="app-menu__item" href="inv_consulta_salidas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Consulta salidas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Salidas</a></li>
            <li><a class="app-menu__item" href="inv_anular_salidas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Anular salidas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Salidas</a></li>
        <div class="dropdown-divider"></div>
@@ -345,27 +345,27 @@
     </aside>
 
              <!--container fluid-->
-          <div id=" " class="container-fluid">
+          <div id="nuevasalida" class="container-fluid">
             <!--row flex-->
               <div class="row flex-lg-nowrap">
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
                         <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item active" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#nuevasalida" onclick="myFunction()">
+                            Nueva salida</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
+                            Agregar material</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#eliminarmaterial" onclick="myFunction()">
+                            Eliminar material</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
+                            Cargar archivo</a></li>&nbsp;
+                          <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivomateriales" onclick="myFunction()">
+                            Cargar archivo materiales</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#registrarsalida" onclick="myFunction()">
+                            Registrar salida</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            Salir</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                             style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                           Ver video</a></li>  
@@ -376,26 +376,26 @@
                   <main class="app-content" role="main">
                       <div class="app-title">
                           <div>
-                            <h1><i class="fa fa-file-text"></i>titulo</h1>
-                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
+                            <h1><i class="fa fa-file-text"></i>Salidas EECC</h1>
+                            <p>Funcionalidades del módulo Salidas EECC en SISCOS</p>
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">titulo</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
-                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
+                            <li class="breadcrumb-item"><a href="inv_consulta_salidas.html">Consulta salidas</a></li>
                           </ol>
                           </div>
                         </div>
       <div class="row">
 
-  <!--comienzo-->
+  <!--Nueva salida-->
   <div class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#replicarlistacontrol"></a>
-                <h3 class="tile-title">titulo</h3>
+          <a href="#nuevasalida"></a>
+                <h3 class="tile-title">Nueva salida</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -404,7 +404,19 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              texto
+                              Los requisitos previos que debe tener una salida EECC tienen la misma temática que la salida 
+                              de CT y  es que depende de un proveedor (tercero), y una fecha de salida.
+                              El usuario debe tener claro que es lo que va a sacar que depende de la entrada.
+                              Requisitos previos, la salida depende de una entrada (reserva), proveedor (tercero) y un periodo
+                              activo.
+                              Para hacer salidas EECC en la entrada EECC  deben existir devoluciones a un proveedor y ajustes
+                              de inventarios.
+                              <br><br>
+                              Nueva salida: este botón se  encuentra ubicado en la barra vertical superior lado izquierdo, 
+                              permite al usuario
+                              cuando ya tenga toda la información  requerida Para el registro de una salida EECC le
+                              damos clic en el botón nueva salida para que la guarde y se pueda agregar material 
+                              a esta salida y se puedan habilitar los demás botones y poder realizar  el proceso.   
                             </h5>
                           </strong> 
                         </div>
@@ -413,17 +425,16 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/nueva salida eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
-            </div><!--fin-->
+            </div><!--fin nueva salida-->
 
-  <!--comienzo-->
-  <div id=" " class="col-md-12">
+  <!--Agregar material-->
+  <div id="agregarmaterial" class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-          <a href="#importar"></a>
-                <h3 class="tile-title">titulo</h3>
+                <h3 class="tile-title">Agregar material</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -432,7 +443,20 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                           <h5>
-                         texto
+                            Se encuentra ubicado en la barra horizontal (lado izquierdo), esta función permite
+                            al usuario agregar  material solicitando unos campos requeridos u obligatorios.
+                            Posteriormente le damos clic en el botón agregar material y visualizaremos una ventana
+                            que requiere de unos campos solicitados para agregar el registro.
+                            <br><br>
+                            Donde aparece el botón Nuevo, buscar y salir del proceso, el usuario al dar clic en buscar tiene
+                            las opciones de criterios de búsqueda con él % donde le mostrara todos los materiales registrados 
+                            y escoger el que se necesita se da clic y material agregado.
+                            Tener muy claro que el material que se va agregar debe tener existencia porque de lo contrario no 
+                            dejara hacer el registro para la salida.
+                            <br>
+                            Buscar material cuando se consulte el código en la ventana arrojará  la información de las reservas
+                            y el usuario escoger que reserva de sea sacar, toda salida depende de la entrada.
+                            seguidamente hacemos clic en el código material y automáticamente se pasa a salida mercancía EECC.
                           </h5>
                           </strong> 
                         </div>
@@ -441,138 +465,149 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/agregar material eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
-            </div><!--fin-->
+            </div><!--fin agregar material-->
+                <!--Eliminar material-->
+                      <div id="eliminarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">Eliminar material</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                              Se encuentra ubicado en la barra horizontal superior, permite al usuario
+                                              eliminar material que no se crea necesario para la carga de salida EECC en el 
+                                              sistema SISCOS.
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/eliminar material eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin eliminar material-->
 
-          <!--comienzo-->
-            <div id=" " class="col-md-12">
-                <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> titulo</h3>
-                        <br><br>
-                      <!--mensaje de alerta-->
-                  <div class="col-lg-10"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-danger">
-                        <strong>Nota:</strong> 
-                        <h5>
-                         texto
-                        </h5>
-                        </div>
-                        </div>
-                        </div><!--fin mensaje de alerta-->
-                        <br><br>
-                        <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                <div class="alert alert-dismissible alert-info">
-                                  <strong>
-                                    <h5>
-                                      texto
-                                    </h5>
-                                  </strong> 
-                                </div>
+                        <!--cargar arvhivo-->
+                      <div id="cargararchivo" class="col-md-12">
+                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                  <h3 class="tile-title">Cargar archivo</h3>
+                                  <br><br>
+                                  <!--mensaje de alerta-->
+                                  <div class="row">
+                                      <div class="col-lg-12" style="margin-top:-34px">
+                                        <div class="bs-component">
+                                          <div class="alert alert-dismissible alert-info">
+                                            <strong>
+                                            <h5>
+                                            Se encuentra ubicado en la barra horizontal superior lado izquierdo y es para agregar seriales.
+                                            Si son poco seriales, nos ubicamos en el botón Buscar serial y nos mostrará una ventana y se empiezan
+                                            a pistolear uno a uno los seriales. 
+                                            </h5>
+                                            </strong> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div><!--fin mensaje-->
+                                      <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/cargar archivo 1 seriales.png " style="width:80%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                      </div>
+                                  </div>
+                              </div><!--fin-->
+                        <!--cargar arvhivo materiales-->
+                      <div id="cargararchivomateriales" class="col-md-12">
+                          <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                    <h3 class="tile-title">Cargar archivo materiales</h3>
+                                    <br><br>
+                                    <!--mensaje de alerta-->
+                                    <div class="row">
+                                        <div class="col-lg-12" style="margin-top:-34px">
+                                          <div class="bs-component">
+                                            <div class="alert alert-dismissible alert-info">
+                                              <strong>
+                                              <h5>
+                                          Se encuentra ubicado en la barra horizontal superior  lado izquierdo 
+                                          y es para agregar materiales como otros.
+                                              </h5>
+                                              </strong> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div><!--fin mensaje-->
+                                        <div class="w3-container w3-center">
+                                          <span>
+                                          <img src="imagenes/cargar archivo materiales.png " style="width:80%;" class="w3-animate-zoom rounded">
+                                          </span>
+                                        </div>
+                                    </div>
+                                </div><!--fin-->
+
+          <!--registrar salida-->
+          <div id="registrarsalida" class="col-md-12">
+            <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                      <h3 class="tile-title">Registrar salida</h3>
+                      <br><br>
+                    <!--mensaje de alerta-->
+                <div class="col-lg-8"  style="margin-top:-34px">
+                  <div class="bs-component">
+                    <div class="alert alert-dismissible alert-danger">
+                      <strong>Nota:</strong> 
+                      <h5>El usuario debe tener claro que cuando vaya a realizar el registro de la salida EECC
+                         se encuentre la fecha en un periodo activo, por que de lo contrario mostrará mensaje
+                         de error.</h5>
+                      </div>
+                      </div>
+                      </div><!--fin mensaje de alerta-->
+                    <div class="w3-container w3-center">
+                    <span>
+                      <img src="imagenes/registrar salida eecc.png" style="width:70%;" class="w3-animate-zoom rounded">
+                      <br><br>
+                    </span>
+                  </div>
+                <br><br>
+                    <!--mensaje-->
+                      <div class="row">
+                          <div class="col-lg-12" style="margin-top:-34px">
+                            <div class="bs-component">
+                              <div class="alert alert-dismissible alert-info">
+                                <strong>
+                                  <h5>
+                                    El usuario debe ubicarse en el campo cantidad para ingresar la información necesaria
+                                    y así se pueda hacer la salida correctamente.
+                                    Se debe ingresar toda la información no se deben dejar campos en blancos como el entregado
+                                    por es obligación que se ingrese porque el sistema SISCOS enviará un mensaje de información
+                                    que no se puede hacer el registro por que hacen falta campos por ingresar.
+                                    <br><br> 
+                                    Registrar salida: se encuentra ubicado en la barra vertical superior lado izquierdo permite
+                                    al  usuario ya tenga agregados todos los materiales y visualizados en la 
+                                    tabla con sus respectivos ítems proceder a dar clic sobre  el botón y 
+                                    registrar salida en el sistema SISCOS.
+                                  </h5>
+                                </strong> 
                               </div>
                             </div>
-                            </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                  </div>
-                </div><!--fin-->
-
-                      
-
-                                  <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                            texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-
-                        <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                            texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-
-                              <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                              texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin -->
+                          </div>
+                          </div><!--fin mensaje-->
+                      </div>
+                  </div><!--fin registrar salida-->
                                 
                                 <!--salir -->
                                 <div id="salir" class="col-md-12">
                                     <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">titulo</h3>
+                                              <h3 class="tile-title">Salir</h3>
                                               <br><br>
                                               <!--mensaje de alerta-->
                                               <div class="row">
@@ -581,7 +616,8 @@
                                                       <div class="alert alert-dismissible alert-info">
                                                         <strong>
                                                         <h5>
-                                                        texto
+                                                        Se encuentra ubicado en la barra horizontal superior, está permite
+                                                        al usuario salir del Módulo Salida EECC.
                                                         </h5>
                                                         </strong> 
                                                       </div>
@@ -590,17 +626,16 @@
                                                   </div><!--fin mensaje-->
                                                   <div class="w3-container w3-center">
                                                     <span>
-                                                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                                    <img src="imagenes/salir salida eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
                                                     </span>
                                                   </div>
                                               </div>
                                           </div><!--fin salir localidades-->
                                         </div>
                                           <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                            <iframe class="embed-responsive-item"  
-                                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                              allowfullscreen>
-                                            </iframe>
+                                              <iframe class="embed-responsive-item"width="1280" height="629" src="https://www.youtube.com/embed/fLCdz3Q1Qls"
+                                           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                           allowfullscreen></iframe>
                                           </div>
                                         </div><!--fin row flex-->               
                                       </main>
