@@ -345,57 +345,62 @@
   </aside>
 
              <!--container fluid-->
-          <div id=" " class="container-fluid">
+          <div id="nueva" class="container-fluid">
+
             <!--row flex-->
               <div class="row flex-lg-nowrap">
+
                   <!--menu derecho-->
                   <div class="d-none d-lg-block col-sm-2 bd-toc">
                       <ul class="navbar-nav">
                         <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item active" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#" onclick="myFunction()">
-                            titulo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#nueva" onclick="myFunction()">
+                            Nueva salida</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#agregar" onclick="myFunction()">
+                            Agregar material</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#registrar" onclick="myFunction()">
+                            Registrar salida</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
+                            Eliminar</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#cargar" onclick="myFunction()">
+                            Cargar archivo</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            Salir</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                             style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
-                          Ver video</a></li>  
+                            Ver video</a></li>  
                       </ul>
                     </div>
                     <!--fin menu derecho-->
-                    <!--main-->
+
+                <!--main-->
                   <main class="app-content" role="main">
+
+                    <!--comienzo-->
                       <div class="app-title">
                           <div>
-                            <h1><i class="fa fa-file-text"></i>titulo</h1>
-                            <p>Funcionalidades del módulo (nombretitulo) en SISCOS</p>
+                            <h1><i class="fa fa-file-text"></i>Traslado bodega CT</h1>
+                            <p>Funcionalidades del módulo traslado bodega CT en SISCOS</p>
                           </div>
                           <div class="bs-component">
                           <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">titulo</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>carpeta</li>
-                            <li class="breadcrumb-item"><a href=".html">titulo</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Traslados</li>
+                            <li class="breadcrumb-item"><a href="inv_traslado_bodega_eecc.html">Traslado bodega EECC</a></li>
                           </ol>
                           </div>
-                        </div>
+                        </div><!--fin-->
+
+  <!--comienzo row-->
       <div class="row">
 
   <!--comienzo-->
   <div class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
           <a href="#replicarlistacontrol"></a>
-                <h3 class="tile-title">titulo</h3>
+                <h3 class="tile-title">Nueva salida</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -404,7 +409,18 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                             <h5>
-                              texto
+                              Se encuentra ubicado en la barra vertical superior
+                              lado izquierdo, permite al usuario dar clic sobre
+                              el botón nuevo
+                              <div class="alert alert-dismissible alert-warning">
+                                  Damos clic en el botón Nuevo
+                                  <button class="btn btn-info">
+                                <img src="imagenes/botonnuevo.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </button>
+                                </div>
+                              para que se activen los demás botones
+                              y se pueda seguir realizando el proceso de traslado
+                              de bodega.
                             </h5>
                           </strong> 
                         </div>
@@ -413,17 +429,17 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/invbodegact.png" style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
                 </div>
             </div><!--fin-->
 
   <!--comienzo-->
-  <div id=" " class="col-md-12">
+  <div id="agregar" class="col-md-12">
       <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
           <a href="#importar"></a>
-                <h3 class="tile-title">titulo</h3>
+                <h3 class="tile-title">Agregar material</h3>
                 <br><br>
                 <!--mensaje de alerta-->
                 <div class="row">
@@ -432,7 +448,25 @@
                         <div class="alert alert-dismissible alert-info">
                           <strong>
                           <h5>
-                         texto
+                            Se encuentra ubicado en la barra horizontal
+                            superior, permite al usuario poder agregar
+                            los materiales que se les va hacer el traslado
+                            a otra bodega.
+                            Hacemos clic en el botón agregar
+                            <div class="alert alert-dismissible alert-warning">
+                                Damos clic en el botón Agregar
+                                <button class="btn btn-info">
+                              <img src="imagenes/botonagregar.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </button>
+                              </div>
+                            y nos
+                            mostrará otra ventana el cual requiere
+                            de unos botones como buscar salir y nuevo.
+                            <div class="alert alert-dismissible alert-light">
+                            En este caso se ven todos los materiales que
+                            están registrados solo se podrán trasladar los
+                            que pertenezcan al mismo PEP, propiedad y área.
+                            </div>                               
                           </h5>
                           </strong> 
                         </div>
@@ -441,37 +475,55 @@
                     </div><!--fin mensaje-->
                     <div class="w3-container w3-center">
                       <span>
-                      <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                      <img src="imagenes/bodegactagregarmaterial.png" style="width:80%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
+                    <br>
+                    <div class="alert alert-dismissible alert-info">
+                      <strong>
+                        <h5>
+                      Clic en el código del material es decir en
+                      el campo reserva que cumpla con todo lo mencionado
+                      anteriormente.
+                      </h5>
+                      </strong>
+                    <div class="alert alert-dismissible alert-light">
+                      <strong>
+                        <h5>
+                        Ya el material ha sido agregado, seguidamente
+                        ingresamos la información solicitada u obligatoria
+                        como <a class="btn">Entregado por:</a>
+                        </h5>
+                        </strong>
+                        </div>
+                    </div> 
                 </div>
             </div><!--fin-->
 
           <!--comienzo-->
-            <div id=" " class="col-md-12">
+            <div id="registrar" class="col-md-12">
                 <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> titulo</h3>
+                          <h3 class="tile-title"> Registrar salida</h3>
                         <br><br>
-                      <!--mensaje de alerta-->
-                  <div class="col-lg-10"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-danger">
-                        <strong>Nota:</strong> 
-                        <h5>
-                         texto
-                        </h5>
-                        </div>
-                        </div>
-                        </div><!--fin mensaje de alerta-->
-                        <br><br>
-                        <!--mensaje-->
                         <div class="row">
                             <div class="col-lg-12" style="margin-top:-34px">
                               <div class="bs-component">
                                 <div class="alert alert-dismissible alert-info">
                                   <strong>
                                     <h5>
-                                      texto
+                                      Se encuentra ubicado en la barra vertical
+                                      superior lado izquierdo, permite al usuario
+                                      cuando ya tiene la información necesaria y
+                                      los campos obligatorios listos dar clic sobre
+                                      el botón
+                                      <div class="alert alert-dismissible alert-warning">
+                                          Damos clic en el botón Agregar
+                                          <button class="btn btn-info">
+                                        <img src="imagenes/botonguardar.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                        </button>
+                                        </div>
+                                          y hacer el registro de salida en el
+                                          sistema
                                     </h5>
                                   </strong> 
                                 </div>
@@ -479,19 +531,35 @@
                             </div>
                             </div><!--fin mensaje-->
                       <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
+                        <span>
+                          <img src="imagenes/invbodegactregistrar.png" style="width:80%;" class="w3-animate-zoom rounded">
+                        </span>
+                      </div>
+                        <br>
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                              El usuario debe dar clic en el botón
+                              <button class="btn btn-info">
+                                <i class="fa fa-hand-pointer-o"></i>
+                                  Si
+                                </button>
+                              . Y se hará el registro correctamente en el
+                              sistema SISCOS.
+                           <p class="alert alert-dismissible alert-warning"> 
+                            Clic en Sí, para que se imprima el recibo de
+                            traslado que se realizó en ambas bodegas.
+                          </p>
+                       </h5>
+                      </strong>
                     </div>
                   </div>
                 </div><!--fin-->
 
-                      
-
                                   <!--comienzo-->
-                      <div id=" " class="col-md-12">
+                      <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
+                                  <h3 class="tile-title">Eliminar</h3>
                                   <br><br>
                                   <!--mensaje de alerta-->
                                   <div class="row">
@@ -500,7 +568,16 @@
                                           <div class="alert alert-dismissible alert-info">
                                             <strong>
                                             <h5>
-                                            texto
+                                              Se encuentra ubicado en la barra horizontal
+                                              lado izquierdo.
+                                              <div class="alert alert-dismissible alert-warning">
+                                                  Damos clic en el botón Eliminar
+                                                  <button class="btn btn-info">
+                                                <img src="imagenes/botoneliminarmaterial.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                                </button>
+                                                </div>
+                                              Permite al usuario poder eliminar
+                                              un material que no crea necesario para su traslado.
                                             </h5>
                                             </strong> 
                                           </div>
@@ -509,16 +586,32 @@
                                       </div><!--fin mensaje-->
                                       <div class="w3-container w3-center">
                                         <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        <img src="imagenes/invbodegacteliminar.png" style="width:80%;" class="w3-animate-zoom rounded">
                                         </span>
                                       </div>
-                                  </div>
+                                      <br>
+                                      <div class="alert alert-dismissible alert-info">
+                                        <strong>
+                                          <h5>
+                                            El usuario escoge una de las 2 opciones 
+                                            <button class="btn btn-info">
+                                              <i class="fa fa-hand-pointer-o"></i>
+                                                Si
+                                              </button> desea
+                                              eliminarlo o <button class="btn btn-info">
+                                              <i class="fa fa-hand-pointer-o"></i>
+                                                   No
+                                            </button> en el proceso de traslado.
+                                          </h5>
+                                      </strong>
+                                   </div>
+                                </div>
                               </div><!--fin-->
 
                         <!--comienzo-->
-                      <div id=" " class="col-md-12">
+                      <div id="cargar" class="col-md-12">
                         <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
+                                  <h3 class="tile-title">Cargar archivo</h3>
                                   <br><br>
                                   <!--mensaje de alerta-->
                                   <div class="row">
@@ -527,8 +620,21 @@
                                           <div class="alert alert-dismissible alert-info">
                                             <strong>
                                             <h5>
-                                            texto
-                                            </h5>
+                                              Se encuentra ubicado en la barra horizontal superior,
+                                              <div class="alert alert-dismissible alert-warning">
+                                                  Damos clic en el botón Cargar archivos
+                                                  <button class="btn btn-info">
+                                                <img src="imagenes/botonseriales.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                                </button>
+                                                </div>
+                                              se puede hacer traslado con un archivo en TXT con todos
+                                              los seriales que se le van hacer traslado a la otra bodega.
+                                              Seguidamente se validan las cantidades y clic en el botón
+                                              <button class="btn btn-info">
+                                                  <i class="fa fa-hand-pointer-o"></i>
+                                                    Ok
+                                              </button>.
+                                             </h5>
                                             </strong> 
                                           </div>
                                         </div>
@@ -536,43 +642,16 @@
                                       </div><!--fin mensaje-->
                                       <div class="w3-container w3-center">
                                         <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                        <img src="imagenes/invbodegactcargar.png" style="width:80%;" class="w3-animate-zoom rounded">
                                         </span>
                                       </div>
                                   </div>
                               </div><!--fin-->
-
-                              <!--comienzo-->
-                      <div id=" " class="col-md-12">
-                        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">titulo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          <div class="alert alert-dismissible alert-info">
-                                            <strong>
-                                            <h5>
-                                              texto
-                                            </h5>
-                                            </strong> 
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin -->
                                 
                                 <!--salir -->
                                 <div id="salir" class="col-md-12">
                                     <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">titulo</h3>
+                                              <h3 class="tile-title">Salir</h3>
                                               <br><br>
                                               <!--mensaje de alerta-->
                                               <div class="row">
@@ -581,7 +660,16 @@
                                                       <div class="alert alert-dismissible alert-info">
                                                         <strong>
                                                         <h5>
-                                                        texto
+                                                          Se encuentra ubicado en la barra horizontal
+                                                          superior lado izquierdo,
+                                                          <div class="alert alert-dismissible alert-warning">
+                                                              Damos clic en el botón Salir
+                                                              <button class="btn btn-info">
+                                                            <img src="imagenes/botonsalir.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                                            </button>
+                                                            </div>
+                                                          permite al usuario dar
+                                                          clic en el botón y salir del módulo Traslado Bodega CT.
                                                         </h5>
                                                         </strong> 
                                                       </div>
@@ -590,18 +678,19 @@
                                                   </div><!--fin mensaje-->
                                                   <div class="w3-container w3-center">
                                                     <span>
-                                                    <img src="imagenes/ " style="width:80%;" class="w3-animate-zoom rounded">
+                                                    <img src="imagenes/invbodegactsalir.png" style="width:80%;" class="w3-animate-zoom rounded">
                                                     </span>
                                                   </div>
                                               </div>
-                                          </div><!--fin salir localidades-->
-                                        </div>
+                                          </div><!--fin salir-->
+                                          <!--comienzo video-->
                                           <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                            <iframe class="embed-responsive-item"  
+                                            <iframe class="embed-responsive-item" width="818" height="426" src="https://www.youtube.com/embed/b1Nv88-igT8"
                                               frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                               allowfullscreen>
                                             </iframe>
-                                          </div>
+                                          </div><!--fin video-->
+                                          </div><!--fin row-->
                                         </div><!--fin row flex-->               
                                       </main>
                                   </div><!--fin container fluid-->
