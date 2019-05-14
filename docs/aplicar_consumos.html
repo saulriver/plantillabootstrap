@@ -259,112 +259,105 @@
     </ul>
   </aside>
 
-       <!--container fluid-->
-       <div id="generar" class="container-fluid">
-          <!--row flex-->
-            <div class="row flex-lg-nowrap">
-                <!--menu derecho-->
-                <div class="d-none d-lg-block col-sm-2 bd-toc">
-                    <ul class="navbar-nav">
-                      <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                      <li class="treeview"><a class="nav-link app-menu__item active" href="#generar" onclick="myFunction()">
-                          Generar</a></li>&nbsp;
-                      <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                          Salir</a></li>&nbsp;
-                      <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                          style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
-                        Ver video</a></li>  
-                    </ul>
-                  </div>
-                  <!--fin menu derecho-->
-                  <!--main-->
-                <main class="app-content" role="main">
-                    <div class="app-title">
-                        <div>
-                          <h1><i class="fa fa-file-text"></i>Listado Retiros Material</h1>
-                          <p>Funcionalidades del módulo listado retiros material en SISCOS</p>
+        <!--container fluid-->
+        <div id="validar" class="container-fluid">
+            <!--row flex-->
+              <div class="row flex-lg-nowrap">
+                  <!--menu derecho-->
+                  <div class="d-none d-lg-block col-sm-2 bd-toc">
+                      <ul class="navbar-nav">
+                        <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item active" href="#validar" onclick="myFunction()">
+                            Validar</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                            Salir</a></li>&nbsp;
+                        <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                            style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                          Ver video</a></li>  
+                      </ul>
+                    </div>
+                    <!--fin menu derecho-->
+                    <!--main-->
+                  <main class="app-content" role="main">
+                      <div class="app-title">
+                          <div>
+                            <h1><i class="fa fa-file-text"></i>Aplicar Consumos</h1>
+                            <p>Funcionalidades del módulo aplicar consumos en SISCOS</p>
+                          </div>
+                          <div class="bs-component">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Admon</li>
+                            <li class="breadcrumb-item"><a href="aplicar_consumos.html">Aplicar Consumos</a></li>
+                          </ol>
+                          </div>
                         </div>
-                        <div class="bs-component">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                          <li class="breadcrumb-item active">Admon</li>
-                          <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>VPI</li>
-                          <li class="breadcrumb-item"><a href="ods_atender_ods.html">Atender ODS</a></li>
-                        </ol>
+      <div class="row">
+
+  <!--validar-->
+  <div class="col-md-12">
+      <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                <h3 class="tile-title">Validar</h3>
+                <br><br>
+                <!--mensaje de alerta-->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-top:-34px">
+                      <div class="bs-component">
+                        <div class="alert alert-dismissible alert-info">
+                          <strong>
+                            <h5>
+                                Se encuentra ubicado en la barra horizontal inferior, permite al usuario cuando ya
+                                tenga la información seleccionada en este caso la bodega dar clic sobre el botón validar
+                                y se haga la validación de aplicar consumos correctamente.
+                            </h5>
+                          </strong> 
                         </div>
-                      </div>
-    <div class="row">
-
-<!--generar-->
-<div class="col-md-12">
-    <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-        <a href="#generar"></a>
-              <h3 class="tile-title">Generar</h3>
-              <br><br>
-              <!--mensaje de alerta-->
-              <div class="row">
-                  <div class="col-lg-12" style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-info">
-                        <strong>
-                          <h5>
-                            Se encuentra ubicado en la barra horizontal inferior, clic sobre el botón para que se genere el listado
-                             de retiros registrados en el sistema.
-                            Para que se genere este reporte  deben existir registros a la hora de configurar las ODS es decir cuando 
-                            se configuraron en el módulo Atender ODS se debe configurar el campo llamado retiros.
-
-                          </h5>
-                        </strong> 
                       </div>
                     </div>
-                  </div>
-                  </div><!--fin mensaje-->
-                  <div class="w3-container w3-center">
-                    <span>
-                    <img src="imagenes/generar retiros.png " style="width:100%;" class="w3-animate-zoom rounded">
-                    </span>
-                  </div>
-              </div>
-          </div><!--fin generar-->
-                              <!--salir -->
-                              <div id="salir" class="col-md-12">
-                                  <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                            <h3 class="tile-title">Salir</h3>
-                                            <br><br>
-                                            <!--mensaje de alerta-->
-                                            <div class="row">
-                                                <div class="col-lg-12" style="margin-top:-34px">
-                                                  <div class="bs-component">
-                                                    <div class="alert alert-dismissible alert-info">
-                                                      <strong>
-                                                      <h5>
-                                                        Existen 2 opciones para salir del módulo listado retiros material. La primera se encuentra
-                                                         ubicado en la barra horizontal inferior y la segunda en la barra vertical superior lado 
-                                                         derecho dar clic sobre los botones y finaliza el proceso.
-                                                      </h5>
-                                                      </strong> 
+                    </div><!--fin mensaje-->
+                    <div class="w3-container w3-center">
+                      <span>
+                      <img src="imagenes/validar.png " style="width:70%;" class="w3-animate-zoom rounded">
+                      </span>
+                    </div>
+                </div>
+            </div><!--fin validar-->
+                                <!--salir -->
+                                <div id="salir" class="col-md-12">
+                                    <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                                              <h3 class="tile-title">Salir</h3>
+                                              <br><br>
+                                              <!--mensaje de alerta-->
+                                              <div class="row">
+                                                  <div class="col-lg-12" style="margin-top:-34px">
+                                                    <div class="bs-component">
+                                                      <div class="alert alert-dismissible alert-info">
+                                                        <strong>
+                                                        <h5>
+                                                            Se encuentra ubicado en la barra vertical superior lado derecho, permite 
+                                                            dar clic sobre el botón y salir del módulo Aplicar consumos.
+                                                        </h5>
+                                                        </strong> 
+                                                      </div>
                                                     </div>
                                                   </div>
-                                                </div>
-                                                </div><!--fin mensaje-->
-                                                <div class="w3-container w3-center">
-                                                  <span>
-                                                  <img src="imagenes/salir retiro.png " style="width:50%;" class="w3-animate-zoom rounded">
-                                                  </span>
-                                                </div>
-                                            </div>
-                                        </div><!--fin salir-->
-                                      </div>
-                                        <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                            <iframe class="embed-responsive-item" width="1280" height="715" src="https://www.youtube.com/embed/8TIDBGkTDNk" 
-                                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen></iframe>
+                                                  </div><!--fin mensaje-->
+                                                  <div class="w3-container w3-center">
+                                                    <span>
+                                                    <img src="imagenes/salir admon.png " style="width:50%;" class="w3-animate-zoom rounded">
+                                                    </span>
+                                                  </div>
+                                              </div>
+                                          </div><!--fin salir-->
                                         </div>
-                                      </div><!--fin row flex-->               
-                                    </main>
-                                </div><!--fin container fluid-->
-                                
+                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                                              <iframe class="embed-responsive-item" 
+                                          </div>
+                                        </div><!--fin row flex-->               
+                                      </main>
+                                  </div><!--fin container fluid-->
+                            
 <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
 crossorigin="anonymous"></script>
@@ -381,15 +374,15 @@ crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Page specific javascripts-->
 <script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
+$('.bs-component [data-toggle="popover"]').popover();
+$('.bs-component [data-toggle="tooltip"]').tooltip();
 </script>
 <!--scrooll efecto smooth para el id-->
 <script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
-    </script>
+function myFunction() {
+  document.documentElement.style.scrollBehavior = "smooth";
+}
+</script>
 <!--impedir que copien el codigo de la pagina-->
 <script language="Javascript">
 function disableselect(e){
