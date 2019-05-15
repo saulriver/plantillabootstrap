@@ -15379,7 +15379,7 @@ be a descendant of the grid when it is being dragged.
   background-color: transparent;
 }
 /*============================efecto imagen ==========================================================*/
-.w3-container{
+/*.w3-container{
   display: center block !important;
   -webkit-transition:-webkit-transform 1s ease-out;
   -moz-transition:-moz-transform 1s ease-out;
