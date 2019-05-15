@@ -15506,3 +15506,21 @@ h5{
   .text{
     font-size: 18px;
   }
+/*===================================efecto iconos=============================================================*/
+.fa:hover:before {
+	animation: spinAround 2s linear infinite;
+}
+.fa {
+	transition: background 0.2s, color 0.2s;	
+}
+.fa:hover {
+	color: #276b49;
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

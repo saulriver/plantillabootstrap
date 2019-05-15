@@ -49,7 +49,7 @@
            <!--menu opciones-->
             <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
             <!--menu de configuracion-->
-           <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+           <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cogs fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>&nbsp;
      
            <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
              <ul class="treeview-menu">
@@ -316,12 +316,16 @@
                                 <strong>
                                   <h5>
                                     Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, 
-                                    permite al usuario agregar un nuevo departamento al sistema de información SISCOS.<br><br>
+                                    permite al usuario agregar un nuevo departamento al sistema de información SISCOS.<br>
+                                    <div class="alert alert-dismissible alert-warning">
                                     Después de llenar los campos con datos del departamento se debe dar clic en el botón Agregar tener en cuenta antes de dar clic en el botón,
                                     seleccionar que el departamento se encuentre activo para que así sea mejor la configuración 
-                                    y más adelante no se presente problemas al momento de querer generar informes.<br><br>
+                                    y más adelante no se presente problemas al momento de querer generar informes.
+                                    </div>
+                                    <div class="alert alert-dismissible alert-secondary">
                                     Cuando no se selecciona que el departamento está activo el departamento aparecerá sombreado de color blanco y sin chulito, 
-                                    en el cuadro haciendo saber al usuario la diferencia de su estado si se encuentra activo o no.          
+                                    en el cuadro haciendo saber al usuario la diferencia de su estado si se encuentra activo o no.
+                                    </div>       
                                 </h5>
                                 </strong> 
                               </div>
@@ -361,7 +365,7 @@
                         <img src="imagenes/eliminar departamento.png" style="width:70%;" class="w3-animate-zoom rounded">
                       </span>
                     </div>
-                  <br><br>
+                  <br><br><br>
                       <!--mensaje-->
                         <div class="row">
                             <div class="col-lg-12" style="margin-top:-34px">
@@ -398,14 +402,7 @@
                                                 Estás funcionalidades se encuentran ubicado en la barra horizontal del lado izquierdo son funciones que le permiten habilitar todos los campo o viceversa. 
                                                 Para habilitar solo un campo (Departamento) seleccionas el campo le das clic y luego le damos clic en el botón guardar cambios   
                                                 este botón es muy importante para toda modificación que se haga, 
-                                                seguidamente dar clic sobre el para que guarde los cambios asignados.<br><br>
-                                                <div class="alert alert-dismissible alert-warning">
-                                                  El botón que contiene el signo + es el de Habilitar todos los departamentos.
-                                                  </div>
-                                                  <br>
-                                                  <div class="alert alert-dismissible alert-warning">
-                                                    El botón que contiene el signo – es el Deshabilitar todos  los departamentos.
-                                                    </div>
+                                                seguidamente dar clic sobre el para que guarde los cambios asignados.
                                             </h5>
                                             </strong> 
                                           </div>
@@ -417,6 +414,26 @@
                                         <img src="imagenes/habideshabi.png" style="width:70%;" class="w3-animate-zoom rounded">
                                         </span>
                                       </div>
+                                      <div class="alert alert-dismissible alert-info">
+                                        <strong>
+                                          <h5>
+                                        <div class="alert alert-dismissible alert-warning">
+                                           El botón que contiene el signo
+                                           <button class="btn btn-info">
+                                              +
+                                              </button>
+                                            es el de Habilitar todos los departamentos.
+                                        </div>
+                                        <div class="alert alert-dismissible alert-warning">
+                                          El botón que contiene el signo
+                                          <button class="btn btn-info">
+                                              -
+                                              </button>
+                                           es el Deshabilitar todos  los departamentos.
+                                        </div>
+                                        </h5>
+                                        </strong>
+                                        </div>
                                   </div>
                               </div><!--fin habilitar deshabilitar-->
                     <!--guardar cambios-->
