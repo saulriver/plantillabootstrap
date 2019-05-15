@@ -15396,7 +15396,7 @@ be a descendant of the grid when it is being dragged.
   transform: scale(1.2)
   } 
 /*============================efecto imagen texto ====================================================*/
-.row .alert {
+body .alert {
   top: -200px;
   opacity: 0;
   -webkit-transition: all 0.3s ease-out 0.5s;
@@ -15405,7 +15405,7 @@ be a descendant of the grid when it is being dragged.
   -ms-transition: all 0.3s ease-out 0.5s;
   transition: all 0.3s ease-out 0.5s;
 }
-.row:hover .alert {
+body:hover .alert {
   opacity: 1;
   top: 0px;
   -webkit-transition-delay: 0s;
@@ -15418,7 +15418,7 @@ be a descendant of the grid when it is being dragged.
   -ms-animation: bounceY 0.9s linear;
   animation: bounceY 0.9s linear;
 }
-.row strong {
+body strong {
   -webkit-transform: translateY(-200px);
   -moz-transform: translateY(-200px);
   -o-transform: translateY(-200px);
@@ -15430,7 +15430,7 @@ be a descendant of the grid when it is being dragged.
   -ms-transition: all 0.2s ease-in-out 0.2s;
   transition: all 0.2s ease-in-out 0.2s;
 }
-.row:hover strong {
+body:hover strong {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -o-transform: translateY(0px);
@@ -15495,7 +15495,7 @@ h5{
     background: #b95860;
   }
   .alert-warning{
-    background: #ffdf7f;
+    background: #ffee91;
   }
   .alert-secondary{
     background: #ffffffe3;
