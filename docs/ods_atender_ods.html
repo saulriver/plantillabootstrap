@@ -278,7 +278,7 @@
                     Salir</a></li>&nbsp;
                 <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
                     style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
-                  Ver video</a></li>  
+                    Ver video</a></li>  
               </ul>
             </div>
             <!--fin menu derecho-->
@@ -299,6 +299,7 @@
                   </ol>
                   </div>
                 </div>
+
   <div class="row">
   
   <!--busqueda avanzada-->
@@ -315,10 +316,12 @@
                   <strong>
                     <h5>
                         Se encuentra ubicado en la barra vertical superior lado derecho existen 2 
-                        formas de hacer búsqueda esta  es el segundo botón, permite al usuario hacer 
-                        búsqueda de todas las  peticiones registradas en el sistema y escoger la necesaria
+                        formas de hacer búsqueda esta es el segundo botón,
+                        <div class="alert alert-dismissible alert-secondary">
+                        permite al usuario hacer búsqueda de todas las  peticiones registradas en el sistema y escoger la necesaria
                         para atender órdenes de servicio, seleccionando cada cuadro que aparece en la búsqueda
                         avanzada.
+                        </div>
                     </h5>
                   </strong> 
                 </div>
@@ -330,10 +333,9 @@
               <img src="imagenes/ATENDER ODS.png " style="width:60%;" class="w3-animate-zoom rounded">
               </span>
             </div>
-            <br>
-           
-              </div>
+          </div>
         </div><!--fin busqueda-->
+
         <!--buscar peticiones-->
          <div id="buscarpeticiones" class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
@@ -348,11 +350,13 @@
                                 <h5>
                                     Se encuentra ubicado en la barra vertical superior lado derecho, permite 
                                     al usuario hacer una búsqueda con la información que se ingrese y valida 
-                                    que la información se encuentre registrada en el sistema SISCOS, para poder
-                                     arrojar automáticamente la información de las peticiones ingresadas en los
-                                      campos solicitados u obligatorios, y el usuario cuando hace clic en el botón
-                                       buscar y hace la búsqueda  se activan los demás botones necesario para hacer
-                                        los registros de atender ordenes de servicios.
+                                    que la información se encuentre registrada en el sistema SISCOS,
+                                    <div class="alert alert-dismissible alert-secondary">
+                                    para poder arrojar automáticamente la información de las peticiones ingresadas en los
+                                    campos solicitados u obligatorios, y el usuario cuando hace clic en el botón
+                                    buscar y hace la búsqueda  se activan los demás botones necesario para hacer
+                                    los registros de atender ordenes de servicios.
+                                    </div>
                                 </h5>
                                 </strong> 
                               </div>
@@ -366,6 +370,7 @@
                           </div>
                       </div>
                   </div><!--fin busqueda-->
+
           <!--atender ods-->
           <div id="atenderods" class="col-md-12">
               <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
@@ -379,10 +384,12 @@
                                   <strong>
                                   <h5>
                                     Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario Cuando
-                                     ya se tiene la información solicitada completa para hacer el registro, posteriormente el usuario
-                                      le da clic al botón Atender ordenes de servicio y la orden de servicio es atendida  es decir 
-                                      guardada correctamente.
-                                  </h5>
+                                    ya se tiene la información solicitada completa para hacer el registro,
+                                    <div class="alert alert-dismissible alert-secondary">
+                                    posteriormente el usuario le da clic al botón Atender ordenes de servicio y la orden de servicio es atendida  es decir 
+                                    guardada correctamente.
+                                    </div>
+                                   </h5>
                                   </strong> 
                                 </div>
                               </div>
@@ -395,45 +402,50 @@
                             </div>
                         </div>
                     </div><!--fin atender ods-->
-                        <!--salir -->
-                        <div id="salir" class="col-md-12">
-                            <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                                      <h3 class="tile-title">Salir</h3>
-                                      <br><br>
-                                      <!--mensaje de alerta-->
-                                      <div class="row">
-                                          <div class="col-lg-12" style="margin-top:-34px">
-                                            <div class="bs-component">
-                                              <div class="alert alert-dismissible alert-info">
-                                                <strong>
-                                                <h5>
-                                                  Existen 2 opciones para salir del módulo, la primera se encuentra ubicada
-                                                  en la barra horizontal superior y la segunda en la barra vertical superior lado 
-                                                  derecho una de estas dos el usuario púede dar clic sobre el botón para salir del 
-                                                  módulo Atender ODS.
-                                                </h5>
-                                                </strong> 
-                                              </div>
-                                            </div>
-                                          </div>
-                                          </div><!--fin mensaje-->
-                                          <div class="w3-container w3-center">
-                                            <span>
-                                            <img src="imagenes/salir vpi.png " style="width:60%;" class="w3-animate-zoom rounded">
-                                            </span>
-                                          </div>
-                                      </div>
-                                  </div><!--fin salir-->
-                                  <!--video-->
-                                  <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                      <iframe class="embed-responsive-item" width="1280" height="616" src="https://www.youtube.com/embed/HK-5r0ZVVHA" 
-                                      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                      allowfullscreen></iframe>
-                                      </div><!--fin video-->
-                                    </div><!--fin row-->
-                                  </div><!--fin row flex-->              
-                              </main>
-                          </div><!--fin container fluid-->
+
+    <!--salir -->
+    <div id="salir" class="col-md-12">
+        <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
+                  <h3 class="tile-title">Salir</h3>
+                  <br><br>
+                  <!--mensaje de alerta-->
+                  <div class="row">
+                      <div class="col-lg-12" style="margin-top:-34px">
+                        <div class="bs-component">
+                          <div class="alert alert-dismissible alert-info">
+                            <strong>
+                            <h5>
+                              Existen 2 opciones para salir del módulo, la primera se encuentra ubicada
+                              en la barra horizontal superior
+                              <div class="alert alert-dismissible alert-secondary">
+                              y la segunda en la barra vertical superior lado 
+                              derecho una de estas dos el usuario púede dar clic sobre el botón para salir del 
+                              módulo Atender ODS.
+                              </div>
+                              </h5>
+                            </strong> 
+                          </div>
+                        </div>
+                      </div>
+                      </div><!--fin mensaje-->
+                      <div class="w3-container w3-center">
+                        <span>
+                        <img src="imagenes/salir vpi.png " style="width:60%;" class="w3-animate-zoom rounded">
+                        </span>
+                      </div>
+                  </div>
+              </div><!--fin salir-->
+              
+              <!--video-->
+              <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                  <iframe class="embed-responsive-item" width="1280" height="616" src="https://www.youtube.com/embed/HK-5r0ZVVHA" 
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+                  </div><!--fin video-->
+                </div><!--fin row-->
+              </div><!--fin row flex-->              
+          </main>
+      </div><!--fin container fluid-->
                         
   <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
