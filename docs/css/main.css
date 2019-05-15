@@ -15469,10 +15469,13 @@ be a descendant of the grid when it is being dragged.
   75% { -webkit-transform: translateY(-0px);}
   100% { -webkit-transform: translateY(-100px);}
 }
-h5 {
-  color: #f2f2f2;
-  text-shadow: 4px 6px 3px rgba(0,0,0,0.3);
+h5{
+  color: #f3f3f3;
+  text-shadow: 4px 6px 2px rgba(0,0,0,0.3);
   }
   .alert-info{
     background: rgb(0, 150, 136);
+  }
+  .alert-danger{
+    background: #b95860;
   }
