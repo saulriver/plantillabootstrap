@@ -271,8 +271,6 @@
                         <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item active" href="#registroentradact" onclick="myFunction()">
                             Registro entrada CT</a></li>&nbsp;
-                        <li class="treeview"><a class="nav-link app-menu__item" href="#archivoingresoseriales" onclick="myFunction()">
-                            Archivo ingreso seriales</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
                         <li class="treeview"><a class="nav-link app-menu__item" href="#cargaarchivos" onclick="myFunction()">
@@ -350,17 +348,12 @@
                               <br><br>
                               <div class="alert alert-dismissible alert-warning">
                               PEP:se debe tener creado un PEP para poder registrar entradas CT.
-                                </div>
-                                  <br>
-                                  <div class="alert alert-dismissible alert-warning">
+                                  <br><br>
                                    Áreas de Operación: ya estás áreas están creadas.
-                                   <br>
-                                   </div> 
-                                    <div class="alert alert-dismissible alert-warning">
+                                   <br><br>
                                   Periodo de Activación: ninguna transacción en SISCOS
                                   se hace sin que este el periodo activo.
-                                    </div>  
-                                    <div class="alert alert-dismissible alert-warning">
+                                 <br><br>
                                   Remisión/orden: si esta entrega es amarrada a una orden de trabajo
                                   por ejemplo: material va a  esta orden de trabajo como tal única
                                   y exclusivamente. Cuando se generen los informes y el listado de
@@ -375,64 +368,6 @@
                             </div><!--fin mensaje-->
                         </div>
                     </div><!--fin registro entrada ct-->
-                    <!--archivo seriales-->
-          <div id="archivoingresoseriales" class="col-md-12">
-              <div class="container-fluid bg-trans tile" style="padding-top:80px;margin-top: 40px">
-                        <h3 class="tile-title">Archivo ingreso seriales</h3>
-                        <br><br>
-                      <!--mensaje de alerta-->
-                  <div class="col-lg-8"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      <div class="alert alert-dismissible alert-danger">
-                        <strong>Nota:</strong> 
-                        <h5>El usuario debe tener presente que el campo ubicación del producto es obligación
-                         ingresarlo y fecha de vencimiento si tiene y si no también puede ser la fecha de
-                          la garantía, para cuando el usuario saque el informe de existencia le diga que
-                           el material serial está próximo a que se le vence la garantía es tener un control 
-                           en los materiales.</h5>  
-                        </div>
-                        </div>
-                        </div><!--fin mensaje de alerta-->
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/archivo seriales.png" style="width:20%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                  <br><br><br>
-                      <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                <div class="alert alert-dismissible alert-info">
-                                  <strong>
-                                    <h5>
-                                      Esta ventana permite al usuario ubicarse y comenzar a pistolear cada serial 
-                                      para ir agregando uno a uno, no es muy recomendable por problemas de energía 
-                                      porque si se va la luz se llevaba pistoleado 200 seriales se pierden y hay que
-                                      hacer nuevamente el proceso, se pistolea en Excel y se guarda el archivo para
-                                      luego cargarlo en el botón de cargar archivo en la ventana que nos aparece de
-                                      Ingreso de seriales. 
-                                      <br><br>
-                                      El usuario debe tener en cuenta que antes de hacer el registro de la entrada todo 
-                                      los campos requeridos estén llenos si no les mostrará un mensaje de información que
-                                      debe ingresar el campo.
-                                      <br><br>
-                                      <div class="alert alert-dismissible alert-warning">
-                                      observaciones: En las observaciones es muy importante de colocarlas para cuando 
-                                      se generen los listados aparezcan.
-                                      </div>
-                                      <br>
-                                      <div class="alert alert-dismissible alert-warning">
-                                      Recibido Por:la cédula de la persona que este registrando, y que este registrado
-                                      en el sistema  Módulo Personal SISCOS.
-                                    </h5>
-                                  </strong> 
-                                </div>
-                              </div>
-                            </div>
-                            </div><!--fin mensaje-->
-                        </div>
-                    </div><!--fin archivo-->
           <!--Agregar material-->
           <div id="agregarmaterial" class="col-md-12">
             <div class="container-fluid bg-trans tile" style="padding-top:80px;padding-bottom:30px">
@@ -477,15 +412,11 @@
                             Clasificado como cable:
                             si es un material Cable al momento de dar clic te muestra otra ventana donde pide los  
                             tramos de ese cable para que se haga el registro.
-                            </div>
-                            <br>
-                            <div class="alert alert-dismissible alert-warning">
+                            <br><br>
                             Clasificado como serial: si el usuario al ingresar la cantidad y se encuentra que el material
                             es clasificado como serial le mostrará una ventana donde requiere de información para su 
                             configuración.
-                            </div>
-                            <br>
-                            <div class="alert alert-dismissible alert-warning">
+                            <br><br>
                             Clasificado como otros: su configuración es periviamente sencilla debido a que el usuario
                             debe tener claro asignar cantidad y ubicación al material que es obligatorio para realizar la entrada.
                             </div>
@@ -530,12 +461,22 @@
                               columnas necesarias. Se carga N seriales, valida Si existe o No
                               si No es a través de los archivos, se puede agregar con el botón +. 
                           <br><br>
-                          <b>Estructura de Archivo de Carga Entrada:</b>
+                          <b>Estructura de Archivo de Carga Entrada:</b><br><br>
                           <div class="alert alert-dismissible alert-warning">
                           Archivo 1:
-                          este archivo es para serial, se crean 4 columnas las cuales una es obligatoria
+                          Esta ventana permite al usuario ubicarse y comenzar a pistolear cada serial 
+                          para ir agregando uno a uno, no es muy recomendable por problemas de energía 
+                          porque si se va la luz se llevaba pistoleado 200 seriales se pierden y hay que
+                          hacer nuevamente el proceso, se pistolea en Excel y se guarda el archivo para
+                          luego cargarlo en el botón de cargar archivo en la ventana que nos aparece de
+                          Ingreso de seriales. 
+                          <br><br>
+                          El usuario debe tener en cuenta que antes de hacer el registro de la entrada todo 
+                          los campos requeridos estén llenos si no les mostrará un mensaje de información que
+                          debe ingresar el campo.
+                          Este archivo se deben crear 4 columnas las cuales una es obligatoria
                           como el serial y las demás si no se ingresan las pone en blanco al momento de 
-                          cargar solo que cuando se va a validar la información no va encontrase nada.
+                          cargar solo que cuando se va a validar la información no va encontrarse nada.
                           </div>
                           <br>
                           Se pueden subir materiales que no son serializados o los materiales que están
