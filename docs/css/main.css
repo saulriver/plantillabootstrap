@@ -14180,16 +14180,20 @@ be a descendant of the grid when it is being dragged.
 
 .tile {
   position: relative;
-  background: #ffffff;
+  background: #fff;
   border-radius: 3px;
   padding: 20px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 6px 2px rgba(0,0,0,0.3), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-align: justify;
+  text-shadow: 4px 6px 2px rgba(0,0,0,0.3);
+}
+li{
+  text-shadow: 7px 8px 2px rgba(0,0,0,0.3);
 }
 
 @media print {
@@ -15395,7 +15399,8 @@ be a descendant of the grid when it is being dragged.
   -ms-transform: scale(1.2);
   transform: scale(1.2)
   } 
-/*============================efecto imagen texto ====================================================*/
+*/
+/*============================efecto texto ====================================================*/
 body .alert {
   top: -200px;
   opacity: 0;
@@ -15466,24 +15471,7 @@ body:hover strong {
   92% { -webkit-transform: translateY(-12px);}
   55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
 }
-@-webkit-keyframes bounceY {
-  0% { -webkit-transform: translateY(-200px);}
-  50% { -webkit-transform: translateY(-100px);}
-  75% { -webkit-transform: translateY(-0px);}
-  100% { -webkit-transform: translateY(-100px);}
-}
-@keyframes bounceY {
-  0% { -webkit-transform: translateY(-200px);}
-  50% { -webkit-transform: translateY(-100px);}
-  75% { -webkit-transform: translateY(-0px);}
-  100% { -webkit-transform: translateY(-100px);}
-}
-@-moz-keyframes bounceY {
-  0% { -webkit-transform: translateY(-200px);}
-  50% { -webkit-transform: translateY(-100px);}
-  75% { -webkit-transform: translateY(-0px);}
-  100% { -webkit-transform: translateY(-100px);}
-}
+
 h5{
   color: #fff5f5;
   text-shadow: 4px 6px 2px rgba(0,0,0,0.3);
