@@ -15864,6 +15864,10 @@ be a descendant of the grid when it is being dragged.
     border-radius: 4px;
 }
 
+.menos {
+    font-size: 11px;
+}
+
 
 /*============================efecto texto ====================================================*/
 
