@@ -270,6 +270,178 @@
         </ul>
     </aside>
 
+
+<!--AQUI EMPIEZA LA INFORMACION-->
+<main class="app-content" role="main">
+        <div class="book-body fixed">
+            <div class="body-inner">
+                <div class="book-header fixed" role="navigation" style="background-color: rgb(255, 255, 255);">
+
+                    <div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="#"><i class="fa fa-font"></i></a>
+                        <div class="dropdown-menu dropdown-right">
+                            <div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div>
+                            <div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div>
+                            <div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div>
+                            <div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div>
+                        </div>
+                    </div><a class="btn pull-left js-toolbar-action" aria-label="PDF" href="#"><i class="fa fa-file-pdf-o"></i></a>
+                    <h1>
+                        <a href="#">Configuración</a>
+                    </h1>
+                </div>
+                <!--DESDE AQUI EMPIEZA EL CONTENIDO-->
+                <div class="page-wrapper flex-lg-nowrap" tabindex="-1" role="main">
+                    <div id="a" class="page-inner">
+                        <section class="normal">
+                            <div class="section level2">
+                                <h2><span class="header-section-number">4.1.1.1</span> Agregar</h2>
+                                <p>Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, 
+                                        permite al usuario agregar un nuevo departamento al sistema de información SISCOS.<br><br>
+                                              
+                                        Después de llenar los campos con datos del departamento se debe dar clic en el botón Agregar tener en cuenta antes de dar clic en el botón,
+                                        seleccionar que el departamento se encuentre activo para que así sea mejor la configuración 
+                                        y más adelante no se presente problemas al momento de querer generar informes.
+                                        <br><br>
+                                        Cuando no se selecciona que el departamento está activo el departamento aparecerá sombreado de color blanco y sin chulito, 
+                                        en el cuadro haciendo saber al usuario la diferencia de su estado 
+                                                </p>
+                                        <!--imagen-->
+                                        <div class="w3-container w3-center">
+                                                <span>
+                                                <img src="imagenes/Agregar D.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                                </span>
+                                              </div>
+                                              <!--fin imagen-->
+                                <h2 id="b"><span class="header-section-number">9.5.2</span> Salir</h2>
+                                <p>
+                                        Se encuentra ubicado en la barra vertical superior lado derecho, permite 
+                                        dar clic sobre el botón y salir del módulo Aplicar consumos.
+                                </p>
+                                <!--imagen-->
+                                <div class="w3-container w3-center">
+                                        <span>
+                                        <img src="imagenes/salir admon.png " style="width:50%;" class="w3-animate-zoom rounded">
+                                        </span>
+                                    </div>
+                                     <!--fin imagen-->
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <!--FIN CONTENIDO-->
+            </div>
+            <!--FIN BODY-INNER-->
+            <a href="#" class="navigation navigation-prev " aria-label="Previous page"></a>
+            <a href="registrarse.html" class="navigation navigation-next " aria-label="Next page" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        </div>
+        <!--FIN BOOK-BODY FIXED-->
+    </main>
+    <!--FIN DEL MAIN-->
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+
+    <!--sombreado active-->
+    <script>
+        $(document).ready(function() {
+            $(".nav li").on("click", function() {
+                $(".nav").find(".activa").removeClass("activa");
+                $(this).addClass("activa");
+            });
+        });
+    </script>
+
+    <!--paginate-->
+    <script>
+        function handlePagination(e) {
+            if (isModifiedEvent(e) || !isLeftClickEvent(e)) {
+                return
+            }
+            e.stopPropagation();
+            e.preventDefault();
+            var url = $(this).attr("href");
+            if (url) handleNavigation(url, true)
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
+</body>
+
+<!--para inhabilitar el boton derecho en la pagina-->
+<Script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
+</html>
+
+
+    
+
     <!--container fluid-->
     <div id="agregar" class="container-fluid">
         <!--row flex-->
@@ -313,32 +485,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!--agregar deptos-->
-                    <div class="col-md-12">
-                        <div>
-                            <a href="#agregar"></a>
-                            <h3 class="tile-title">Agregar</h3>
-                            <br><br>   
-                            Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, 
-                            permite al usuario agregar un nuevo departamento al sistema de información SISCOS.<br><br>
-                                   
-                            Después de llenar los campos con datos del departamento se debe dar clic en el botón Agregar tener en cuenta antes de dar clic en el botón,
-                            seleccionar que el departamento se encuentre activo para que así sea mejor la configuración 
-                            y más adelante no se presente problemas al momento de querer generar informes.
-                                    
-                            <br><br>
-                             Cuando no se selecciona que el departamento está activo el departamento aparecerá sombreado de color blanco y sin chulito, 
-                             en el cuadro haciendo saber al usuario la diferencia de su estado si se encuentra activo o no.
-                                         
-            
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/Agregar D.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin agregar deptos-->
+                  
                     <!--eliminar deptos-->
                     <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
