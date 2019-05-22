@@ -15,6 +15,7 @@
     <link rel="icon" href="imagenes/siscos.png">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jQuery library -->
@@ -30,17 +31,16 @@
     </style>
 </head>
 
-<body class="app sidebar-mini rtl" data-spy="scroll">
-
+<body id="main" class="app sidebar-mini rtl">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo active" href="index.html">SISCOS</a>
         <!-- Sidebar toggle button-->
-        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <a class="app-sidebar__toggle openbtn" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
 
     </header>
 
     <!-- Sidebar menu-->
-    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <div id="mySidebar" class="sidebar app-sidebar__overlay" data-toggle="sidebar"></div>
 
     <aside class="app-sidebar">
 
@@ -273,56 +273,34 @@
             <!--fin menu admon-->
         </ul>
     </aside>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 
-    <main class="app-content">
+    <div id="main">
+        <button class="openbtn" onclick="openNav()" data-toggle="sidebar">☰ Toggle Sidebar</button>
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+    </div>
 
-        <div id="carousel-example" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example" data-slide-to="1"></li>
-                <li data-target="#carousel-example" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner">
-                <div class="item active">
-                    <a href="#"><img class="d-block w-100 rounded" src="imagenes/fondo.png" alt="Manual Siscos"></a>
-                    <div class="carousel-caption">
-                        <h3>Meow</h3>
-                        <p>Just Kitten Around</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-                    <div class="carousel-caption">
-                        <h3>Meow</h3>
-                        <p>Just Kitten Around</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-                    <div class="carousel-caption">
-                        <h3>Meow</h3>
-                        <p>Just Kitten Around</p>
+    <main id="main">
+        <div id="index" class="section level2">
+            <div class="container">
+                <div class="w3-row center">
+                    <div class="col-md-12">
+                        <img class="d-block w-100 rounded" src="imagenes/fondo.png" alt="Manual Siscos">
                     </div>
                 </div>
             </div>
-
-            <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
         </div>
 
-        <div class="container">
-            <div class="w3-row center">
-                <div class="col-md-12">
+        <a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a></main>
 
-                </div>
-            </div>
-        </div>
-    </main>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -348,38 +326,6 @@
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
     <!-- Page specific javascripts-->
     <script>
@@ -391,6 +337,18 @@
     <script>
         function myFunction() {
             document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
         }
     </script>
 
