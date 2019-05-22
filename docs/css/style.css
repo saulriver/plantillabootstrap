@@ -1,0 +1,1520 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Niconne);
+.book .book-summary {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    z-index: 1;
+    width: 300px;
+    color: #364149;
+    background: #fafafa;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    -webkit-transition: left 250ms ease;
+    -moz-transition: left 250ms ease;
+    -o-transition: left 250ms ease;
+    transition: left 250ms ease
+}
+
+.book .book-summary ul.summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: top .5s ease;
+    -moz-transition: top .5s ease;
+    -o-transition: top .5s ease;
+    transition: top .5s ease
+}
+
+.book .book-summary ul.summary li {
+    list-style: none
+}
+
+.book .book-summary ul.summary li.divider {
+    height: 1px;
+    margin: 7px 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .07)
+}
+
+.book .book-summary ul.summary li i.fa-check {
+    display: none;
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    font-size: 9px;
+    color: #3c3
+}
+
+.book .book-summary ul.summary li.done>a {
+    color: #364149;
+    font-weight: 400
+}
+
+.book .book-summary ul.summary li.done>a i {
+    display: inline
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: none;
+    color: #364149;
+    background: 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative
+}
+
+.book .book-summary ul.summary li span {
+    cursor: not-allowed;
+    opacity: .3;
+    filter: alpha(opacity=30)
+}
+
+@media (max-width:600px) {
+    .book .book-summary {
+        width: calc(100% - 60px);
+        bottom: 0;
+        left: -100%
+    }
+}
+
+.book.without-animation .book-summary {
+    -webkit-transition: none!important;
+    -moz-transition: none!important;
+    -o-transition: none!important;
+    transition: none!important
+}
+
+.book {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.book .app-content,
+.book .app-content .body-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    bottom: 0;
+    right: 0
+}
+
+.book .book-body {
+    color: #000;
+    background: #fff;
+    -webkit-transition: left 250ms ease;
+    -moz-transition: left 250ms ease;
+    -o-transition: left 250ms ease;
+    transition: left 250ms ease
+}
+
+.book .book-body .page-wrapper {
+    position: relative;
+    outline: 0;
+    margin: 59px;
+}
+
+.book .book-body .page-wrapper .page-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 40px
+}
+
+.book .book-body .page-wrapper .page-inner section {
+    margin: 0;
+    padding: 5px 15px;
+    background: #fff;
+    border-radius: 2px;
+    line-height: 1.7;
+    font-size: 1.1rem
+}
+
+.book .book-body .page-wrapper .page-inner .btn-group .btn {
+    border-radius: 0;
+    background: #eee;
+    border: 0
+}
+
+@media (max-width:1240px) {
+    .book .book-body {
+        -webkit-transition: -webkit-transform 250ms ease;
+        -moz-transition: -moz-transform 250ms ease;
+        -o-transition: -o-transform 250ms ease;
+        transition: transform 250ms ease;
+        padding-bottom: 20px
+    }
+    .book .book-body .body-inner {
+        position: static;
+        min-height: calc(100% - 50px)
+    }
+}
+
+@media (min-width:600px) {
+    .book.with-summary .book-body {
+        left: 300px
+    }
+}
+
+@media (max-width:600px) {
+    .book.with-summary {
+        overflow: hidden
+    }
+    .book.with-summary .book-body {
+        -webkit-transform: translate(calc(100% - 60px), 0);
+        -moz-transform: translate(calc(100% - 60px), 0);
+        -ms-transform: translate(calc(100% - 60px), 0);
+        -o-transform: translate(calc(100% - 60px), 0);
+        transform: translate(calc(100% - 60px), 0)
+    }
+}
+
+.book.without-animation .book-body {
+    -webkit-transition: none!important;
+    -moz-transition: none!important;
+    -o-transition: none!important;
+    transition: none!important
+}
+
+.buttons:after,
+.buttons:before {
+    content: " ";
+    display: table;
+    line-height: 0
+}
+
+.button {
+    border: 0;
+    background: #eee;
+    color: #666;
+    width: 100%;
+    text-align: center;
+    float: left;
+    line-height: 1.42857143;
+    padding: 8px 4px
+}
+
+.button:hover {
+    color: #444
+}
+
+.button:focus,
+.button:hover {
+    outline: 0
+}
+
+.button.size-2 {
+    width: 50%
+}
+
+.button.size-3 {
+    width: 33%
+}
+
+.book .book-body .page-wrapper .page-inner section {
+    display: none
+}
+
+.book .book-body .page-wrapper .page-inner section.normal {
+    display: block;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: #333;
+    line-height: 1.7;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%
+}
+
+.book .book-body .page-wrapper .page-inner section.normal * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: inherit
+}
+
+.book .book-body .page-wrapper .page-inner section.normal>:first-child {
+    margin-top: 0!important
+}
+
+.book .book-body .page-wrapper .page-inner section.normal>:last-child {
+    margin-bottom: 0!important
+}
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote,
+.book .book-body .page-wrapper .page-inner section.normal code,
+.book .book-body .page-wrapper .page-inner section.normal figure,
+.book .book-body .page-wrapper .page-inner section.normal img,
+.book .book-body .page-wrapper .page-inner section.normal pre,
+.book .book-body .page-wrapper .page-inner section.normal table,
+.book .book-body .page-wrapper .page-inner section.normal tr {
+    page-break-inside: avoid
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5,
+.book .book-body .page-wrapper .page-inner section.normal p {
+    orphans: 3;
+    widows: 3
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1,
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5 {
+    page-break-after: avoid
+}
+
+.book .book-body .page-wrapper .page-inner section.normal b,
+.book .book-body .page-wrapper .page-inner section.normal strong {
+    font-weight: 700
+}
+
+.book .book-body .page-wrapper .page-inner section.normal em {
+    font-style: italic
+}
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote,
+.book .book-body .page-wrapper .page-inner section.normal dl,
+.book .book-body .page-wrapper .page-inner section.normal ol,
+.book .book-body .page-wrapper .page-inner section.normal p,
+.book .book-body .page-wrapper .page-inner section.normal table,
+.book .book-body .page-wrapper .page-inner section.normal ul {
+    margin-top: 0;
+    margin-bottom: .85em
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+    color: #4183c4;
+    text-decoration: none;
+    background: 0 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a:active,
+.book .book-body .page-wrapper .page-inner section.normal a:focus,
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+    outline: 0;
+    text-decoration: underline
+}
+
+.book .book-body .page-wrapper .page-inner section.normal img {
+    border: 0;
+    max-width: 100%
+}
+
+.book .book-body .page-wrapper .page-inner section.normal hr {
+    height: 4px;
+    padding: 0;
+    margin: 1.7em 0;
+    overflow: hidden;
+    background-color: #e7e7e7;
+    border: none
+}
+
+.book .book-body .page-wrapper .page-inner section.normal hr:after,
+.book .book-body .page-wrapper .page-inner section.normal hr:before {
+    display: table;
+    content: " "
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1,
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5,
+.book .book-body .page-wrapper .page-inner section.normal h6 {
+    margin-top: 1.275em;
+    margin-bottom: .85em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1 {
+    font-size: 2em
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+    font-size: 1.75em;
+    padding-top: 12px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3 {
+    font-size: 1.5em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h4 {
+    font-size: 1.25em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h5 {
+    font-size: 1em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h6 {
+    font-size: 1em;
+    color: #777
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code,
+.book .book-body .page-wrapper .page-inner section.normal pre {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    direction: ltr;
+    border: none;
+    color: inherit;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre {
+    overflow: auto;
+    word-wrap: normal;
+    margin: 0 0 1.275em;
+    padding: .85em 1em;
+    background: #f7f7f7
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre>code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    font-size: .85em;
+    white-space: pre;
+    background: 0 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre>code:after,
+.book .book-body .page-wrapper .page-inner section.normal pre>code:before {
+    content: normal;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code {
+    padding: .2em;
+    margin: 0;
+    font-size: .85em;
+    background-color: #f7f7f7;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code:after,
+.book .book-body .page-wrapper .page-inner section.normal code:before {
+    letter-spacing: -.2em;
+    content: "\00a0"
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: auto
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table td,
+.book .book-body .page-wrapper .page-inner section.normal table th {
+    padding: 6px 13px;
+    border: 1px solid #ddd
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+    background-color: #f8f8f8
+}
+
+.book .book-body .page-wrapper .page-inner section.normal table th {
+    font-weight: 700
+}
+
+.book .book-body .page-wrapper .page-inner section.normal ol,
+.book .book-body .page-wrapper .page-inner section.normal ul {
+    padding: 0 0 0 2em;
+    margin: 0 0 .85em
+}
+
+.book .book-body .page-wrapper .page-inner section.normal ol ol,
+.book .book-body .page-wrapper .page-inner section.normal ol ul,
+.book .book-body .page-wrapper .page-inner section.normal ul ol,
+.book .book-body .page-wrapper .page-inner section.normal ul ul {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal ol ol {
+    list-style-type: lower-roman
+}
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote {
+    margin: 0 0 .85em;
+    padding: 0 15px;
+    color: #858585;
+    border-left: 4px solid #e5e5e5
+}
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote:first-child {
+    margin-top: 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote:last-child {
+    margin-bottom: 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal dl {
+    padding: 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal dl dt {
+    padding: 0;
+    margin-top: .85em;
+    font-style: italic;
+    font-weight: 700
+}
+
+.book .book-body .page-wrapper .page-inner section.normal dl dd {
+    padding: 0 .85em;
+    margin-bottom: .85em
+}
+
+.book .book-body .page-wrapper .page-inner section.normal dd {
+    margin-left: 0
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .glossary-term {
+    cursor: help;
+    text-decoration: underline
+}
+
+.book .book-body .navigation {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    margin: 0;
+    max-width: 150px;
+    min-width: 90px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: #ccc;
+    text-align: center;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease
+}
+
+.book .book-body .navigation:hover {
+    text-decoration: none;
+    color: #444
+}
+
+.book .book-body .navigation.navigation-next {
+    right: 0
+}
+
+.book .book-body .navigation.navigation-prev {
+    left: 0
+}
+
+@media (max-width:1240px) {
+    .book .book-body .navigation {
+        position: static;
+        top: auto;
+        max-width: 50%;
+        width: 50%;
+        display: inline-block;
+        float: left
+    }
+    .book .book-body .navigation.navigation-unique {
+        max-width: 100%;
+        width: 100%
+    }
+}
+
+.book .book-body .page-wrapper .page-inner section.glossary {
+    margin-bottom: 40px
+}
+
+.book .book-body .page-wrapper .page-inner section.glossary h2 a,
+.book .book-body .page-wrapper .page-inner section.glossary h2 a:hover {
+    color: inherit;
+    text-decoration: none
+}
+
+.book .book-body .page-wrapper .page-inner section.glossary .glossary-index {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.book .book-body .page-wrapper .page-inner section.glossary .glossary-index li {
+    display: inline;
+    margin: 0 8px;
+    white-space: nowrap
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none
+}
+
+.book .book-summary ul.summary li a span {
+    display: inline;
+    padding: initial;
+    overflow: visible;
+    cursor: auto;
+    opacity: 1;
+}
+
+p.caption {
+    color: #777;
+    margin-top: 10px;
+}
+
+p code {
+    white-space: inherit;
+}
+
+pre {
+    word-break: normal;
+    word-wrap: normal;
+}
+
+pre code {
+    white-space: inherit;
+}
+
+.ej:before {
+    content: "Nota";
+    font-weight: bold;
+}
+
+.ej {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+.nota:before {
+    content: "Nota";
+    font-weight: bold;
+}
+
+.nota {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+div.sourceCode {
+    overflow-x: auto;
+}
+
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: none;
+}
+
+table.sourceCode {
+    width: 100%;
+    line-height: 100%;
+}
+
+td.lineNumbers {
+    text-align: right;
+    padding-right: 4px;
+    padding-left: 4px;
+    color: #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+}
+
+td.sourceCode {
+    padding-left: 5px;
+}
+
+code>span.kw {
+    color: #007020;
+    font-weight: bold;
+}
+
+
+/* Keyword */
+
+code>span.dt {
+    color: #902000;
+}
+
+
+/* DataType */
+
+code>span.dv {
+    color: #40a070;
+}
+
+
+/* DecVal */
+
+code>span.bn {
+    color: #40a070;
+}
+
+
+/* BaseN */
+
+code>span.fl {
+    color: #40a070;
+}
+
+
+/* Float */
+
+code>span.ch {
+    color: #4070a0;
+}
+
+
+/* Char */
+
+code>span.st {
+    color: #4070a0;
+}
+
+
+/* String */
+
+code>span.co {
+    color: #60a0b0;
+    font-style: italic;
+}
+
+
+/* Comment */
+
+code>span.ot {
+    color: #007020;
+}
+
+
+/* Other */
+
+code>span.al {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
+/* Alert */
+
+code>span.fu {
+    color: #06287e;
+}
+
+
+/* Function */
+
+code>span.er {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
+/* Error */
+
+code>span.wa {
+    color: #60a0b0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Warning */
+
+code>span.cn {
+    color: #880000;
+}
+
+
+/* Constant */
+
+code>span.sc {
+    color: #4070a0;
+}
+
+
+/* SpecialChar */
+
+code>span.vs {
+    color: #4070a0;
+}
+
+
+/* VerbatimString */
+
+code>span.ss {
+    color: #bb6688;
+}
+
+
+/* SpecialString */
+
+
+/* Import */
+
+code>span.va {
+    color: #19177c;
+}
+
+
+/* Variable */
+
+code>span.cf {
+    color: #007020;
+    font-weight: bold;
+}
+
+
+/* ControlFlow */
+
+code>span.op {
+    color: #666666;
+}
+
+
+/* Operator */
+
+code>span.bu {}
+
+
+/* BuiltIn */
+
+code>span.ex {}
+
+
+/* Extension */
+
+code>span.pp {
+    color: #bc7a00;
+}
+
+
+/* Preprocessor */
+
+code>span.at {
+    color: #7d9029;
+}
+
+
+/* Attribute */
+
+code>span.do {
+    color: #ba2121;
+    font-style: italic;
+}
+
+
+/* Documentation */
+
+code>span.an {
+    color: #60a0b0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Annotation */
+
+code>span.cv {
+    color: #60a0b0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* CommentVar */
+
+code>span.in {
+    color: #60a0b0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Information */
+
+.MathJax_Hover_Frame {
+    border-radius: .25em;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    -khtml-border-radius: .25em;
+    box-shadow: 0px 0px 15px #83A;
+    -webkit-box-shadow: 0px 0px 15px #83A;
+    -moz-box-shadow: 0px 0px 15px #83A;
+    -khtml-box-shadow: 0px 0px 15px #83A;
+    border: 1px solid #A6D ! important;
+    display: inline-block;
+    position: absolute
+}
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    font-family: 'Courier New', Courier;
+    font-size: 9px;
+    color: #F0F0F0
+}
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {
+    display: block;
+    background-color: #AAA;
+    border: 1px solid;
+    border-radius: 3px;
+    line-height: 0;
+    padding: 4px
+}
+
+.MathJax_Hover_Arrow:hover {
+    color: white!important;
+    border: 2px solid #CCC!important
+}
+
+.MathJax_Hover_Arrow:hover span {
+    background-color: #CCC!important
+}
+
+</style><style type="text/css">#MathJax_About {
+    position: fixed;
+    left: 50%;
+    width: auto;
+    text-align: center;
+    border: 3px outset;
+    padding: 1em 2em;
+    background-color: #DDDDDD;
+    color: black;
+    cursor: default;
+    font-family: message-box;
+    font-size: 120%;
+    font-style: normal;
+    text-indent: 0;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    z-index: 201;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    box-shadow: 0px 10px 20px #808080;
+    -webkit-box-shadow: 0px 10px 20px #808080;
+    -moz-box-shadow: 0px 10px 20px #808080;
+    -khtml-box-shadow: 0px 10px 20px #808080;
+    filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+}
+
+#MathJax_About.MathJax_MousePost {
+    outline: none
+}
+
+.MathJax_Menu {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: auto;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    cursor: default;
+    font: menu;
+    text-align: left;
+    text-indent: 0;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    z-index: 201;
+    box-shadow: 0px 10px 20px #808080;
+    -webkit-box-shadow: 0px 10px 20px #808080;
+    -moz-box-shadow: 0px 10px 20px #808080;
+    -khtml-box-shadow: 0px 10px 20px #808080;
+    filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+}
+
+.MathJax_MenuItem {
+    padding: 2px 2em;
+    background: transparent
+}
+
+.MathJax_MenuArrow {
+    position: absolute;
+    right: .5em;
+    padding-top: .25em;
+    color: #666666;
+    font-size: .75em
+}
+
+.MathJax_MenuActive .MathJax_MenuArrow {
+    color: white
+}
+
+.MathJax_MenuArrow.RTL {
+    left: .5em;
+    right: auto
+}
+
+.MathJax_MenuCheck {
+    position: absolute;
+    left: .7em
+}
+
+.MathJax_MenuCheck.RTL {
+    right: .7em;
+    left: auto
+}
+
+.MathJax_MenuRadioCheck {
+    position: absolute;
+    left: 1em
+}
+
+.MathJax_MenuRadioCheck.RTL {
+    right: 1em;
+    left: auto
+}
+
+.MathJax_MenuLabel {
+    padding: 2px 2em 4px 1.33em;
+    font-style: italic
+}
+
+.MathJax_MenuRule {
+    border-top: 1px solid #CCCCCC;
+    margin: 4px 1px 0px
+}
+
+.MathJax_MenuDisabled {
+    color: GrayText
+}
+
+.MathJax_MenuActive {
+    background-color: Highlight;
+    color: HighlightText
+}
+
+.MathJax_MenuDisabled:focus,
+.MathJax_MenuLabel:focus {
+    background-color: #E8E8E8
+}
+
+.MathJax_ContextMenu:focus {
+    outline: none
+}
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus {
+    outline: none
+}
+
+#MathJax_AboutClose {
+    top: .2em;
+    right: .2em
+}
+
+.MathJax_Menu .MathJax_MenuClose {
+    top: -10px;
+    left: -10px
+}
+
+.MathJax_MenuClose {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #AAA;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -khtml-border-radius: 18px;
+    font-family: 'Courier New', Courier;
+    font-size: 24px;
+    color: #F0F0F0
+}
+
+.MathJax_MenuClose span {
+    display: block;
+    background-color: #AAA;
+    border: 1.5px solid;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -khtml-border-radius: 18px;
+    line-height: 0;
+    padding: 8px 0 6px
+}
+
+.MathJax_MenuClose:hover {
+    color: white!important;
+    border: 2px solid #CCC!important
+}
+
+.MathJax_MenuClose:hover span {
+    background-color: #CCC!important
+}
+
+.MathJax_MenuClose:hover:focus {
+    outline: none
+}
+
+.MathJax_Preview .MJXf-math {
+    color: inherit!important
+}
+
+.MJX_Assistive_MathML {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 1px 0 0 0!important;
+    border: 0!important;
+    height: 1px!important;
+    width: 1px!important;
+    overflow: hidden!important;
+    display: block!important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+    width: 100%!important
+}
+
+#MathJax_Zoom {
+    position: absolute;
+    background-color: #F0F0F0;
+    overflow: auto;
+    display: block;
+    z-index: 301;
+    padding: .5em;
+    border: 1px solid black;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    text-indent: 0;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    box-shadow: 5px 5px 15px #AAAAAA;
+    -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+    -moz-box-shadow: 5px 5px 15px #AAAAAA;
+    -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+    filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+}
+
+#MathJax_ZoomOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+#MathJax_ZoomFrame {
+    position: relative;
+    display: inline-block;
+    height: 0;
+    width: 0
+}
+
+#MathJax_ZoomEventTrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 302;
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.MathJax_Preview {
+    color: #888
+}
+
+#MathJax_Message {
+    position: fixed;
+    left: 1px;
+    bottom: 2px;
+    background-color: #E6E6E6;
+    border: 1px solid #959595;
+    margin: 0px;
+    padding: 2px 8px;
+    z-index: 102;
+    color: black;
+    font-size: 80%;
+    width: auto;
+    white-space: nowrap
+}
+
+#MathJax_MSIE_Frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    z-index: 101;
+    border: 0px;
+    margin: 0px;
+    padding: 0px
+}
+
+.MathJax_Error {
+    color: #CC0000;
+    font-style: italic
+}
+
+.MJXp-script {
+    font-size: .8em
+}
+
+.MJXp-right {
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -ms-transform-origin: right;
+    -o-transform-origin: right;
+    transform-origin: right
+}
+
+.MJXp-bold {
+    font-weight: bold
+}
+
+.MJXp-italic {
+    font-style: italic
+}
+
+.MJXp-scr {
+    font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-frak {
+    font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-sf {
+    font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-cal {
+    font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-mono {
+    font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-largeop {
+    font-size: 150%
+}
+
+.MJXp-largeop.MJXp-int {
+    vertical-align: -.2em
+}
+
+.MJXp-math {
+    display: inline-block;
+    line-height: 1.2;
+    text-indent: 0;
+    font-family: 'Times New Roman', Times, STIXGeneral, serif;
+    white-space: nowrap;
+    border-collapse: collapse
+}
+
+.MJXp-display {
+    display: block;
+    text-align: center;
+    margin: 1em 0
+}
+
+.MJXp-math span {
+    display: inline-block
+}
+
+.MJXp-box {
+    display: block!important;
+    text-align: center
+}
+
+.MJXp-box:after {
+    content: " "
+}
+
+.MJXp-rule {
+    display: block!important;
+    margin-top: .1em
+}
+
+.MJXp-char {
+    display: block!important
+}
+
+.MJXp-mo {
+    margin: 0 .15em
+}
+
+.MJXp-mfrac {
+    margin: 0 .125em;
+    vertical-align: .25em
+}
+
+.MJXp-denom {
+    display: inline-table!important;
+    width: 100%
+}
+
+.MJXp-denom>* {
+    display: table-row!important
+}
+
+.MJXp-surd {
+    vertical-align: top
+}
+
+.MJXp-surd>* {
+    display: block!important
+}
+
+.MJXp-script-box>* {
+    display: table!important;
+    height: 50%
+}
+
+.MJXp-script-box>*>* {
+    display: table-cell!important;
+    vertical-align: top
+}
+
+.MJXp-script-box>*:last-child>* {
+    vertical-align: bottom
+}
+
+.MJXp-script-box>*>*>* {
+    display: block!important
+}
+
+.MJXp-mphantom {
+    visibility: hidden
+}
+
+.MJXp-munderover {
+    display: inline-table!important
+}
+
+.MJXp-over {
+    display: inline-block!important;
+    text-align: center
+}
+
+.MJXp-over>* {
+    display: block!important
+}
+
+.MJXp-munderover>* {
+    display: table-row!important
+}
+
+.MJXp-mtable {
+    vertical-align: .25em;
+    margin: 0 .125em
+}
+
+.MJXp-mtable>* {
+    display: inline-table!important;
+    vertical-align: middle
+}
+
+.MJXp-mtr {
+    display: table-row!important
+}
+
+.MJXp-mtd {
+    display: table-cell!important;
+    text-align: center;
+    padding: .5em 0 0 .5em
+}
+
+.MJXp-mtr>.MJXp-mtd:first-child {
+    padding-left: 0
+}
+
+.MJXp-mtr:first-child>.MJXp-mtd {
+    padding-top: 0
+}
+
+.MJXp-mlabeledtr {
+    display: table-row!important
+}
+
+.MJXp-mlabeledtr>.MJXp-mtd:first-child {
+    padding-left: 0
+}
+
+.MJXp-mlabeledtr:first-child>.MJXp-mtd {
+    padding-top: 0
+}
+
+.MJXp-merror {
+    background-color: #FFFF88;
+    color: #CC0000;
+    border: 1px solid #CC0000;
+    padding: 1px 3px;
+    font-style: normal;
+    font-size: 90%
+}
+
+.MJXp-scale0 {
+    -webkit-transform: scaleX(.0);
+    -moz-transform: scaleX(.0);
+    -ms-transform: scaleX(.0);
+    -o-transform: scaleX(.0);
+    transform: scaleX(.0)
+}
+
+.MJXp-scale1 {
+    -webkit-transform: scaleX(.1);
+    -moz-transform: scaleX(.1);
+    -ms-transform: scaleX(.1);
+    -o-transform: scaleX(.1);
+    transform: scaleX(.1)
+}
+
+.MJXp-scale2 {
+    -webkit-transform: scaleX(.2);
+    -moz-transform: scaleX(.2);
+    -ms-transform: scaleX(.2);
+    -o-transform: scaleX(.2);
+    transform: scaleX(.2)
+}
+
+.MJXp-scale3 {
+    -webkit-transform: scaleX(.3);
+    -moz-transform: scaleX(.3);
+    -ms-transform: scaleX(.3);
+    -o-transform: scaleX(.3);
+    transform: scaleX(.3)
+}
+
+.MJXp-scale4 {
+    -webkit-transform: scaleX(.4);
+    -moz-transform: scaleX(.4);
+    -ms-transform: scaleX(.4);
+    -o-transform: scaleX(.4);
+    transform: scaleX(.4)
+}
+
+.MJXp-scale5 {
+    -webkit-transform: scaleX(.5);
+    -moz-transform: scaleX(.5);
+    -ms-transform: scaleX(.5);
+    -o-transform: scaleX(.5);
+    transform: scaleX(.5)
+}
+
+.MJXp-scale6 {
+    -webkit-transform: scaleX(.6);
+    -moz-transform: scaleX(.6);
+    -ms-transform: scaleX(.6);
+    -o-transform: scaleX(.6);
+    transform: scaleX(.6)
+}
+
+.MJXp-scale7 {
+    -webkit-transform: scaleX(.7);
+    -moz-transform: scaleX(.7);
+    -ms-transform: scaleX(.7);
+    -o-transform: scaleX(.7);
+    transform: scaleX(.7)
+}
+
+.MJXp-scale8 {
+    -webkit-transform: scaleX(.8);
+    -moz-transform: scaleX(.8);
+    -ms-transform: scaleX(.8);
+    -o-transform: scaleX(.8);
+    transform: scaleX(.8)
+}
+
+.MJXp-scale9 {
+    -webkit-transform: scaleX(.9);
+    -moz-transform: scaleX(.9);
+    -ms-transform: scaleX(.9);
+    -o-transform: scaleX(.9);
+    transform: scaleX(.9)
+}
+
+.MathJax_PHTML .noError {
+    vertical-align: ;
+    font-size: 90%;
+    text-align: left;
+    color: black;
+    padding: 1px 3px;
+    border: 1px solid
+}
