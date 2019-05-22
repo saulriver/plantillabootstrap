@@ -34,14 +34,14 @@
 }
 
 .book .book-summary ul.summary li {
-    list-style: none
+    list-style: none;
 }
 
 .book .book-summary ul.summary li.divider {
     height: 1px;
     margin: 7px 0;
     overflow: hidden;
-    background: rgba(0, 0, 0, .07)
+    background: rgba(0, 0, 0, .07);
 }
 
 .book .book-summary ul.summary li i.fa-check {
@@ -50,7 +50,7 @@
     right: 9px;
     top: 16px;
     font-size: 9px;
-    color: #3c3
+    color: #3c3;
 }
 
 .book .book-summary ul.summary li.done>a {
@@ -59,7 +59,7 @@
 }
 
 .book .book-summary ul.summary li.done>a i {
-    display: inline
+    display: inline;
 }
 
 .book .book-summary ul.summary li a,
@@ -72,20 +72,20 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    position: relative
+    position: relative;
 }
 
 .book .book-summary ul.summary li span {
     cursor: not-allowed;
     opacity: .3;
-    filter: alpha(opacity=30)
+    filter: alpha(opacity=30);
 }
 
 @media (max-width:600px) {
     .book .book-summary {
         width: calc(100% - 60px);
         bottom: 0;
-        left: -100%
+        left: -100%;
     }
 }
 
@@ -124,7 +124,6 @@
 .book .book-body .page-wrapper {
     position: relative;
     outline: 0;
-    margin: 59px;
 }
 
 .book .book-body .page-wrapper .page-inner {
@@ -236,7 +235,7 @@
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal * {
