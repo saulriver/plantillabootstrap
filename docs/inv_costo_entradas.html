@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="description" content="Web Siscos Manual.">
+    <title>SISCOS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--w3 school css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--imagen ico de pestaña-->
+    <link rel="icon" href="imagenes/siscos.png">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>body { cursor: crosshair}</style>
+    
+  </head>
+  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="imagenes/logosiscos3.png" alt="User Image">
+        <div>
+          <p class="app-sidebar__user-name">Siscos</p>
+          <p class="app-sidebar__user-designation">Manual Web</p>
+        </div>
+      </div>
+
+      <ul class="app-menu">
+        <!--menu glosario-->
+         <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
+         <!--menu registrarse-->
+           <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
+           <!--menu opciones-->
+            <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
+            <!--menu de configuracion-->
+           <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cogs fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+     
+           <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+             <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="confi_gene_departamento.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
+                <li><a class="app-menu__item" href="confi_gene_localidades.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Localidades</a></li>
+                <div class="dropdown-divider"></div>
+             </ul>
+          </li>          
+           <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+             <ul class="treeview-menu">
+                  <li><a class="app-menu__item" href="confi_tipo_reparacion.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Reparación</a></li>
+                  <li><a class="app-menu__item" href="confi_tipo_peticion.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Petición</a></li>
+                  <li><a class="app-menu__item" href="confi_tipo_de_orden_ot.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo De Orden OT</a></li>
+                  <li><a class="app-menu__item" href="confi_causales_devolucion.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Devolución</a></li>
+                  <li><a class="app-menu__item" href="confi_operacion_comercial.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Operación Comercial</a></li>
+                  <li><a class="app-menu__item" href="confi_clases_mano_obra.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Clases Mano Obra</a></li>
+                  <li><a class="app-menu__item" href="confi_registro_actividades.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Actividades</a></li>
+                  <li><a class="app-menu__item" href="confi_registro_produccion.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Producción</a></li>
+                  <li><a class="app-menu__item" href="confi_plantillas_materiales.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Plantilla Materiales</a></li>
+                  <li><a class="app-menu__item" href="confi_plantillas_actividades.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Plantilla Actividades</a></li>
+                  <div class="dropdown-divider"></div>
+            </ul>
+           </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+              <ul class="treeview-menu">
+                  <li><a class="app-menu__item" href="confi_estado_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
+                  <li><a class="app-menu__item" href="confi_tipo_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
+                  <li><a class="app-menu__item" href="confi_configuracion_stock_pedidos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Stock Pedidos</a></li>
+                  <li><a class="app-menu__item" href="confi_stock_personal.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Personal</a></li>
+                  <li><a class="app-menu__item" href="confi_alerta_stock.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Alerta Stock</a></li>
+                  <li><a class="app-menu__item" href="confi_configuracion_bodegas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Bodegas</a></li>
+                  <li><a class="app-menu__item" href="confi_configuracion_departamentos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Departamentos</a></li>
+                  <li><a class="app-menu__item" href="confi_periodos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Periodos</a></li>
+                  <li><a class="app-menu__item" href="confi_pep.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; PEP</a></li>
+                <div class="dropdown-divider"></div>
+              </ul>
+            </li><!--fin menu de configuracion-->
+          &nbsp;
+        <!--menu de inventario-->
+        <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cubes fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+     
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_carga_masiva_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Masiva Material</a></li>
+                <div class="dropdown-divider"></div>
+            </ul>
+          </li>  
+          <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Registro</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_bodegas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Bodegas</a></li>
+                <li><a class="app-menu__item" href="inv_centros.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Centros</a></li>
+                <li><a class="app-menu__item" href="inv_unidades_medida.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Unidades Medida</a></li>
+                <li><a class="app-menu__item" href="inv_marcas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Marcas</a></li>
+                <li><a class="app-menu__item" href="inv_modelos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Modelos</a></li>
+                <li><a class="app-menu__item" href="inv_mercancia.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Mercancia</a></li>
+                <li><a class="app-menu__item" href="inv_proveedores.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Proveedores</a></li>
+                <div class="dropdown-divider"></div>
+            </ul>
+          </li>
+         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Entradas Almacen</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_entrada_ct.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada CT</a></li>
+                <li><a class="app-menu__item" href="inv_entrada_eecc.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada EECC</a></li>
+                <li><a class="app-menu__item" href="inv_control_material_entrada.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Control Material Entrada</a></li>
+                <li><a class="app-menu__item" href="inv_consulta_entrada.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrada</a></li>
+                <li><a class="app-menu__item" href="inv_anular_entrada.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrada</a></li>
+                <li><a class="app-menu__item" href="inv_actualizar_entrada.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Entrada</a></li>
+                <li><a class="app-menu__item" href="inv_devolucion.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Devolución</a></li>
+                <li><a class="app-menu__item" href="inv_consulta_devolucion.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Devolución</a></li>
+                <li><a class="app-menu__item" href="inv_anular_devolucion.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Devolución</a></li>
+                <li><a class="app-menu__item" href="inv_reintegros_ct.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reintegros CT</a></li>
+                <li><a class="app-menu__item" href="inv_consultar_reintegro.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar Reintegro</a></li>
+                <li><a class="app-menu__item" href="inv_anular_reintegro.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Reintegro</a></li>
+                <li><a class="app-menu__item" href="inv_actualizar_peticion_serial.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Petición Serial</a></li>
+                <li><a class="app-menu__item" href="inv_habilitar_inhabilitar_reserva.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Habilitar/Inhabilitar Reserva</a></li>
+                <li><a class="app-menu__item" href="inv_cambio_ubicacion_serial.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cambio Ubicación Serial</a></li>
+                <li><a class="app-menu__item" href="inv_actualizar_serial.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Serial</a></li>
+            <div class="dropdown-divider"></div>
+           </ul>
+         </li>
+       <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Pedidos Material</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_pedidos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedidos</a></li>
+                <li><a class="app-menu__item" href="inv_consulta_pedido.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido</a></li>
+                <li><a class="app-menu__item" href="inv_consulta_pedidos_por_fecha.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido Por Fecha</a></li>
+                <li><a class="app-menu__item" href="inv_anular_pedido.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Pedido</a></li>
+                <li><a class="app-menu__item" href="inv_pedidos_pend_entregar.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedido Pend. Entregar</a></li>
+                <li><a class="app-menu__item" href="inv_listado_pedidos_pendiente.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Pedidos Pendientes</a></li>
+                <li><a class="app-menu__item" href="inv_generar_pedidos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Generar Pedido</a></li>
+                <li><a class="app-menu__item" href="inv_listado_abastecimiento.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Abastecimiento</a></li>
+              <div class="dropdown-divider"></div>
+            </ul>
+      </li>
+      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Salidas Almacen</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+           <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_entregas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas</a></li>
+                <li><a class="app-menu__item" href="inv_entregas_pedidos_autom.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Pedidos Autom.</a></li>
+                <li><a class="app-menu__item" href="inv_entregas_con_ticket.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Con Ticket</a></li>
+                <li><a class="app-menu__item" href="inv_consulta_entregas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrega</a></li>
+                <li><a class="app-menu__item" href="inv_anular_entrega.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrega</a></li>
+                <li><a class="app-menu__item" href="inv_salidas_ct.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas CT</a></li>
+                <li><a class="app-menu__item" href="inv_salidas_eecc.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas EECC</a></li>
+                <li><a class="app-menu__item" href="inv_consulta_salidas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Salidas</a></li>
+                <li><a class="app-menu__item" href="inv_anular_salidas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Salidas</a></li>
+            <div class="dropdown-divider"></div>
+           </ul>
+      </li>
+     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Traslados</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_traslado_entre_personal.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Entre Personal</a></li>
+                <li><a class="app-menu__item" href="inv_traslado_bodega_ct.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Bodega CT</a></li>
+                <li><a class="app-menu__item" href="inv_traslado_bodega_eecc.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Bodega EECC</a></li>
+                <li><a class="app-menu__item" href="inv_ingreso_traslado_ct.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingreso Traslado CT</a></li>
+                <li><a class="app-menu__item" href="inv_ingreso_traslado_eecc.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingreso Traslado EECC</a></li>
+                <li><a class="app-menu__item" href="inv_anular_traslado.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Traslado</a></li>
+            <div class="dropdown-divider"></div>
+          </ul>
+     </li>
+     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Consultas</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_estado_serial.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Serial</a></li>
+                <li><a class="app-menu__item" href="inv_estado_entregas_seriales.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Entrega Seriales</a></li>
+                <li><a class="app-menu__item" href="inv_kardex_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Kardex Material</a></li>
+                <li><a class="app-menu__item" href="inv_kardex_personal.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Kardex Personal</a></li>
+                <li><a class="app-menu__item" href="inv_stock_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Material</a></li>
+                <li><a class="app-menu__item" href="inv_stock_personal.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Personal</a></li>
+            <div class="dropdown-divider"></div>
+          </ul>
+     </li>
+     <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Reportes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+                <li><a class="app-menu__item" href="inv_existencia_almacen.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Almacen</a></li>
+                <li><a class="app-menu__item" href="inv_existencia_reintegros.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Reintegros</a></li>
+                <li><a class="app-menu__item" href="inv_existencia_por_remision.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Por Remision</a></li>
+                <li><a class="app-menu__item" href="inv_existencia_por_periodo.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Por Periodo</a></li>
+                <li><a class="app-menu__item" href="inv_costo_inventario.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Costo Inventario</a></li>
+                <li><a class="app-menu__item active" href="inv_costo_entradas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Costo Entrada</a></li>
+                <li><a class="app-menu__item" href="inv_entradas_almacen.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada Almacen</a></li>
+                <li><a class="app-menu__item" href="inv_entregas_almacen.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrega Almacen</a></li>
+                <li><a class="app-menu__item" href="inv_devoluciones_almacen.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Devoluciones Almacen</a></li>
+                <li><a class="app-menu__item" href="inv_reintegros_almacen.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reintegros Almacen</a></li>
+                <li><a class="app-menu__item" href="inv_salidas_almacen.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salida Almacen</a></li>
+                <li><a class="app-menu__item" href="inv_analisis_de_consumo.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Analisis De Consumo</a></li>
+                <li><a class="app-menu__item" href="inv_listado_consumos_ods.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumos ODS</a></li>
+                <li><a class="app-menu__item" href="inv_stock_cables.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Cables</a></li>
+                <li><a class="app-menu__item" href="inv_stock_seriales.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Seriales</a></li>
+                <li><a class="app-menu__item" href="inv_material_terreno.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Material Terreno</a></li>
+                <li><a class="app-menu__item" href="inv_seriales_terreno.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Seriales Terreno</a></li>
+            <div class="dropdown-divider"></div>
+           </ul>
+        </li><!--fin de menu de inventario-->
+     &nbsp;
+      <!--menu personal-->
+     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Personal</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+        <ul class="treeview-menu">
+              <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
+              <li><a class="app-menu__item" href="per_util_importar_personal.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Personal</a></li>
+              <div class="dropdown-divider"></div>
+              &nbsp;
+              <li><a class="app-menu__item" href="per_personal.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Personal</a></li>
+              <li><a class="app-menu__item" href="per_cargos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cargos</a></li>
+              <li><a class="app-menu__item" href="per_tipo_cuadrillas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Cuadrillas</a></li>
+              <li><a class="app-menu__item" href="per_conformacion_cuadrillas.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Conformación Cuadrillas</a></li>
+              <li><a class="app-menu__item" href="per_registro_supervisores.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Supervisores</a></li>
+              <li><a class="app-menu__item" href="per_asignacion_tecnico.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignación Técnicos</a></li>
+            <div class="dropdown-divider"></div>
+          </ul>
+      </li>
+     <!--fin menú personal-->
+     
+        <!--menu utilidades-->
+     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+      <ul class="treeview-menu">
+           <li><a class="app-menu__item" href="utilidades_impor_archiv.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Archivos</a></li>
+       <div class="dropdown-divider"></div>
+      </ul>
+     </li>
+        <!--fin menú utilidades-->
+     &nbsp;
+        <!--menu ods-->
+     <li class="treeview"><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-clipboard fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; ODS</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+     
+     <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS VPI</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+       <ul class="treeview-menu">
+            <li><a class="app-menu__item" href="ods_atender_ods.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+            <li><a class="app-menu__item" href="ods_atender_ods_manual.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+            <li><a class="app-menu__item" href="ods_actualizar_carga_ods.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+            <li><a class="app-menu__item" href="ods_actualizar_ods.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+            <li><a class="app-menu__item" href="ods_consultar_ods.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+            <li><a class="app-menu__item" href="ods_listado_consumo_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+            <li><a class="app-menu__item" href="ods_listado_retiros_material.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+        <div class="dropdown-divider"></div>
+      </ul>
+     </li><!--fin menú ods-->
+     
+     &nbsp;
+        <!--menu admom-->
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+          <ul class="treeview-menu">
+          <li><a class="app-menu__item" href="perfiles.html" ></a><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Perfiles</a></li>
+          <li><a class="app-menu__item" href="usuarios.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Usuario</a></li>
+          <li><a class="app-menu__item" href="datos_empresa.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Datos Empresa</a></li>
+          <li><a class="app-menu__item" href="opciones_correo_web.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Opciones Correo y Web</a></li>
+          <li><a class="app-menu__item" href="aplicar_consumos.html" ><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Aplicar Consumo</a></li>
+          <div class="dropdown-divider"></div>
+          </ul>
+          </li><!--fin menu admon-->
+         </ul>
+    </aside>
+
+    <!--container fluid-->
+<div id="generar" class="container-fluid">
+    <!--row flex-->
+      <div class="row flex-lg-nowrap">
+          <!--menu derecho-->
+          <div class="d-none d-lg-block col-sm-2 bd-toc">
+              <ul class="navbar-nav">
+                <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+                <li class="treeview"><a class="nav-link app-menu__item active" href="#generar" onclick="myFunction()">
+                    Generar</a></li>&nbsp;
+                <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                    Salir</a></li>&nbsp;
+                <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
+                    style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                  Ver video</a></li>  
+              </ul>
+            </div>
+            <!--fin menu derecho-->
+            <!--main-->
+          <main class="app-content" role="main">
+              <div class="app-title">
+                  <div>
+                    <h1><i class="fa fa-file-text"></i>Costo Entrada</h1>
+                    <p>Funcionalidades del módulo costo entrada en SISCOS</p>
+                  </div>
+                  <div class="bs-component">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Inventario</li>
+                    <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Reportes</li>
+                    <li class="breadcrumb-item"><a href="inv_entradas_almacen.html">Entradas Almacén</a></li>
+                  </ol>
+                  </div>
+                </div>
+<div class="row">
+
+<!--generar-->
+<div class="col-md-12">
+<div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+  <a href="#generar"></a>
+        <h3 class="tile-title">Generar</h3>
+        <br><br>
+       
+                      Este módulo permite seleccionar el departamento y la bodega son requeridos u obligatorios porque
+                      si no se seleccionan estos botones mostrará mensaje de error al querer generar el informe.
+                      <br><br>
+                      Criterio de fecha ya sea del sistema o movimiento, fecha inicial y fecha final en la que aparecen
+                      registros en la bodega seleccionada. Centro y tipo de material toda la información solicitada es 
+                      obligatoria para generar informe.
+                      Seguidamente hacemos clic en el botón Generar y se descarga el informe entradas de mercancía a almacén.  
+                
+            <div class="w3-container w3-center">
+              <span>
+              <img src="imagenes/generar entradas.png " style="width:100%;" class="w3-animate-zoom rounded">
+              </span>
+            </div>
+        </div>
+    </div><!--fin generar-->
+                        <!--salir -->
+                        <div id="salir" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                                      <h3 class="tile-title">Salir</h3>
+                                      <br><br>
+                                      
+                                                  Se encuentra ubicado en la barra horizontal inferior, permite dar clic sobre el botón
+                                                   y salir del módulo costo entradas.
+                                                
+                                          <div class="w3-container w3-center">
+                                            <span>
+                                            <img src="imagenes/salir entradas.png " style="width:50%;" class="w3-animate-zoom rounded">
+                                            </span>
+                                          </div>
+                                      </div>
+                                  </div><!--fin salir-->
+                                </div>
+                                  <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                                      <iframe class="embed-responsive-item"width="1280" height="715" src="https://www.youtube.com/embed/YpxArgnqZlQ" 
+                                      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                      allowfullscreen></iframe>
+                                  </div>
+                                </div><!--fin row flex-->               
+                              </main>
+                          </div><!--fin container fluid-->
+                        
+<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+<!-- Essential javascripts for application to work-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- The javascript plugin to display page loading on top-->
+<script src="js/plugins/pace.min.js"></script>
+<!-- Page specific javascripts-->
+<script type="text/javascript" src="js/plugins/chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Page specific javascripts-->
+<script>
+$('.bs-component [data-toggle="popover"]').popover();
+$('.bs-component [data-toggle="tooltip"]').tooltip();
+</script>
+<!--scrooll efecto smooth para el id-->
+<script>
+function myFunction() {
+document.documentElement.style.scrollBehavior = "smooth";
+}
+</script>
+<!--impedir que copien el codigo de la pagina-->
+<script language="Javascript">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+// End -->
+</script>
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<Script language=JavaScript>
+function right(e) {
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+alert("Esta pagina es privada.");
+return false;
+}
+else if (navigator.appName == 'Microsoft Internet Explorer' &&
+(event.button == 2 || event.button == 3)) {
+alert("Esta pagina es privada.");
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script> 
+</html>
