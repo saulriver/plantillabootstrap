@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="description" content="Web Siscos Manual.">
+    <title>SISCOS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--w3 school css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--imagen ico de pestaña-->
+    <link rel="icon" href="imagenes/siscos.png">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
+
+<body class="app sidebar-mini rtl" data-spy="scroll">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="imagenes/logosiscos3.png" alt="User Image">
+            <div>
+                <p class="app-sidebar__user-name">Siscos</p>
+                <p class="app-sidebar__user-designation">Manual Web</p>
+            </div>
+        </div>
+
+        <ul class="app-menu">
+            <!--menu glosario-->
+            <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
+            <!--menu registrarse-->
+            <li><a class="app-menu__item" href="registrarse.html"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
+            <!--menu opciones-->
+            <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
+            <!--menu de configuracion-->
+            <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-cogs fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Configuración</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; General</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="confi_gene_departamento.html" data-toggle="tooltip" data-placement="right" title="Configuración / General / Departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Departamentos</a></li>
+                    <li><a class="app-menu__item" href="confi_gene_localidades.html" data-toggle="tooltip" data-placement="right" title="Configuración / General / Localidades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Localidades</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="confi_tipo_reparacion.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Tipo reparación"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Reparación</a></li>
+                    <li><a class="app-menu__item" href="confi_tipo_peticion.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Tipo petición"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Petición</a></li>
+                    <li><a class="app-menu__item" href="confi_tipo_de_orden_ot.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Tipo de orden OT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo De Orden OT</a></li>
+                    <li><a class="app-menu__item" href="confi_causales_devolucion.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Causales devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Causales Devolución</a></li>
+                    <li><a class="app-menu__item" href="confi_operacion_comercial.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Operación comercial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Operación Comercial</a></li>
+                    <li><a class="app-menu__item" href="confi_clases_mano_obra.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Clases mano obra"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Clases Mano Obra</a></li>
+                    <li><a class="app-menu__item" href="confi_registro_actividades.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Registro actividades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Actividades</a></li>
+                    <li><a class="app-menu__item" href="confi_registro_produccion.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Registro producción"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Producción</a></li>
+                    <li><a class="app-menu__item" href="confi_plantillas_materiales.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Plantilla materiales"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Plantilla Materiales</a></li>
+                    <li><a class="app-menu__item" href="confi_plantillas_actividades.html" data-toggle="tooltip" data-placement="right" title="Configuración / Gestión Ordenes / Plantilla actividades"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Plantilla Actividades</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="confi_estado_material.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Estado material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Material</a></li>
+                    <li><a class="app-menu__item" href="confi_tipo_material.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Tipo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Material</a></li>
+                    <li><a class="app-menu__item" href="confi_configuracion_stock_pedidos.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Configuración stock pedidos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Stock Pedidos</a></li>
+                    <li><a class="app-menu__item" href="confi_stock_personal.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Stock personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Personal</a></li>
+                    <li><a class="app-menu__item" href="confi_alerta_stock.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Alerta stock"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Alerta Stock</a></li>
+                    <li><a class="app-menu__item" href="confi_configuracion_bodegas.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Configuración bodegas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Bodegas</a></li>
+                    <li><a class="app-menu__item" href="confi_configuracion_departamentos.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Configuración departamentos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Departamentos</a></li>
+                    <li><a class="app-menu__item" href="confi_periodos.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / Periodos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Periodos</a></li>
+                    <li><a class="app-menu__item" href="confi_pep.html" data-toggle="tooltip" data-placement="right" title="Configuración / Inventario / PEP"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; PEP</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menu de configuracion-->
+            &nbsp;
+            <!--menu de inventario-->
+            <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-cubes fa-spin fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Inventario</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_carga_masiva_material.html" data-toggle="tooltip" data-placement="right" title="Inventario / Utilidades / Carga masiva material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Carga Masiva Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Registro</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_bodegas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Bodegas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Bodegas</a></li>
+                    <li><a class="app-menu__item" href="inv_centros.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Centros"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Centros</a></li>
+                    <li><a class="app-menu__item" href="inv_unidades_medida.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Unidades medida"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Unidades Medida</a></li>
+                    <li><a class="app-menu__item" href="inv_marcas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Marcas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Marcas</a></li>
+                    <li><a class="app-menu__item" href="inv_modelos.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Modelos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Modelos</a></li>
+                    <li><a class="app-menu__item" href="inv_mercancia.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Mercancia"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Mercancia</a></li>
+                    <li><a class="app-menu__item" href="inv_proveedores.html" data-toggle="tooltip" data-placement="right" title="Inventario / Registro / Proveedores"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Proveedores</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Entradas Almacen</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_entrada_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Entrada CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada CT</a></li>
+                    <li><a class="app-menu__item" href="inv_entrada_eecc.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Entrada EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada EECC</a></li>
+                    <li><a class="app-menu__item" href="inv_control_material_entrada.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Control material entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Control Material Entrada</a></li>
+                    <li><a class="app-menu__item" href="inv_consulta_entrada.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Consulta entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrada</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_entrada.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Anular entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrada</a></li>
+                    <li><a class="app-menu__item" href="inv_actualizar_entrada.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Actualizar entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Entrada</a></li>
+                    <li><a class="app-menu__item" href="inv_devolucion.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Devolución</a></li>
+                    <li><a class="app-menu__item" href="inv_consulta_devolucion.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Consulta devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Devolución</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_devolucion.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Anular devolución"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Devolución</a></li>
+                    <li><a class="app-menu__item" href="inv_reintegros_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Reintegros CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reintegros CT</a></li>
+                    <li><a class="app-menu__item" href="inv_consultar_reintegro.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Consultar reintegro"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar Reintegro</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_reintegro.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Anular reintegro"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Reintegro</a></li>
+                    <li><a class="app-menu__item" href="inv_actualizar_peticion_serial.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Actualizar petición serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Petición Serial</a></li>
+                    <li><a class="app-menu__item" href="inv_habilitar_inhabilitar_reserva.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Habilitar-inhabilitar reserva"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Habilitar/Inhabilitar Reserva</a></li>
+                    <li><a class="app-menu__item" href="inv_cambio_ubicacion_serial.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Cambio ubicación serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cambio Ubicación Serial</a></li>
+                    <li><a class="app-menu__item active" href="inv_actualizar_serial.html" data-toggle="tooltip" data-placement="right" title="Inventario / Entradas Almacen / Actualizar serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Serial</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Pedidos Material</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_pedidos.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Pedidos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedidos</a></li>
+                    <li><a class="app-menu__item" href="inv_consulta_pedido.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Consulta pedido"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido</a></li>
+                    <li><a class="app-menu__item" href="inv_consulta_pedidos_por_fecha.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Consulta pedido por fecha"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Pedido Por Fecha</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_pedido.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Anular pedido"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Pedido</a></li>
+                    <li><a class="app-menu__item" href="inv_pedidos_pend_entregar.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Pedido pendiente entregar"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedido Pend. Entregar</a></li>
+                    <li><a class="app-menu__item" href="inv_listado_pedidos_pendiente.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Listado pedidos pendientes"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Pedidos Pendientes</a></li>
+                    <li><a class="app-menu__item" href="inv_generar_pedidos.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Generar pedido"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Generar Pedido</a></li>
+                    <li><a class="app-menu__item" href="inv_listado_abastecimiento.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Listado abastecimiento"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Abastecimiento</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Salidas Almacen</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_entregas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Entregas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas</a></li>
+                    <li><a class="app-menu__item" href="inv_entregas_pedidos_autom.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Entregas pedidos autom."><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Pedidos Autom.</a></li>
+                    <li><a class="app-menu__item" href="inv_entregas_con_ticket.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Entregas con ticket"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entregas Con Ticket</a></li>
+                    <li><a class="app-menu__item" href="inv_consulta_entregas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Consulta entrega"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Entrega</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_entrega.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Anular entrega"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Entrega</a></li>
+                    <li><a class="app-menu__item" href="inv_salidas_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Salidas CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas CT</a></li>
+                    <li><a class="app-menu__item" href="inv_salidas_eecc.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Salidas EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salidas EECC</a></li>
+                    <li><a class="app-menu__item" href="inv_consulta_salidas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Consulta salidas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consulta Salidas</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_salidas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Salidas Almacén / Anular salidas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Salidas</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Traslados</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_traslado_entre_personal.html" data-toggle="tooltip" data-placement="right" title="Inventario / Traslados / Traslado entre personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Entre Personal</a></li>
+                    <li><a class="app-menu__item" href="inv_traslado_bodega_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Traslados / Traslado bodega CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Bodega CT</a></li>
+                    <li><a class="app-menu__item" href="inv_traslado_bodega_eecc.html" data-toggle="tooltip" data-placement="right" title="Inventario / Traslados / Traslado bodega EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Traslado Bodega EECC</a></li>
+                    <li><a class="app-menu__item" href="inv_ingreso_traslado_ct.html" data-toggle="tooltip" data-placement="right" title="Inventario / Traslados / Ingreso traslado CT"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingreso Traslado CT</a></li>
+                    <li><a class="app-menu__item" href="inv_ingreso_traslado_eecc.html" data-toggle="tooltip" data-placement="right" title="Inventario / Traslados / Ingreso traslado EECC"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Ingreso Traslado EECC</a></li>
+                    <li><a class="app-menu__item" href="inv_anular_traslado.html" data-toggle="tooltip" data-placement="right" title="Inventario / Traslados / Anular traslado"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Traslado</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Consultas</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_estado_serial.html" data-toggle="tooltip" data-placement="right" title="Inventario / Consultas / Estado serial"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Serial</a></li>
+                    <li><a class="app-menu__item" href="inv_estado_entregas_seriales.html" data-toggle="tooltip" data-placement="right" title="Inventario / Consultas / Estado entrega seriales"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Estado Entrega Seriales</a></li>
+                    <li><a class="app-menu__item" href="inv_kardex_material.html" data-toggle="tooltip" data-placement="right" title="Inventario / Consultas / Kardex material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Kardex Material</a></li>
+                    <li><a class="app-menu__item" href="inv_kardex_personal.html" data-toggle="tooltip" data-placement="right" title="Inventario / Consultas / Kardex personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Kardex Personal</a></li>
+                    <li><a class="app-menu__item" href="inv_stock_material.html" data-toggle="tooltip" data-placement="right" title="Inventario / Consultas / Stock material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Material</a></li>
+                    <li><a class="app-menu__item" href="inv_stock_personal.html" data-toggle="tooltip" data-placement="right" title="Inventario / Consultas / Stock personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Personal</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Reportes</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="inv_existencia_almacen.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Existencia almacén"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Almacen</a></li>
+                    <li><a class="app-menu__item" href="inv_existencia_reintegros.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Existencia reintegros"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Reintegros</a></li>
+                    <li><a class="app-menu__item" href="inv_existencia_por_remision.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Existencia por remisión"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Por Remision</a></li>
+                    <li><a class="app-menu__item" href="inv_existencia_por_periodo.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Existencia por periodo"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Existencia Por Periodo</a></li>
+                    <li><a class="app-menu__item" href="inv_costo_inventario.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Costo inventario"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Costo Inventario</a></li>
+                    <li><a class="app-menu__item" href="inv_costo_entradas.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Costo entrada"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Costo Entrada</a></li>
+                    <li><a class="app-menu__item" href="inv_entradas_almacen.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Entrada almacén"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrada Almacen</a></li>
+                    <li><a class="app-menu__item" href="inv_entregas_almacen.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Entrega almacén"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Entrega Almacen</a></li>
+                    <li><a class="app-menu__item" href="inv_devoluciones_almacen.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Devoluciones almacén"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Devoluciones Almacen</a></li>
+                    <li><a class="app-menu__item" href="inv_reintegros_almacen.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Reintegros almacén"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Reintegros Almacen</a></li>
+                    <li><a class="app-menu__item" href="inv_salidas_almacen.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Salida almacén"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Salida Almacen</a></li>
+                    <li><a class="app-menu__item" href="inv_analisis_de_consumo.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Analisis de consumo"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Analisis De Consumo</a></li>
+                    <li><a class="app-menu__item" href="inv_listado_consumos_ods.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Listado consumos ODS"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumos ODS</a></li>
+                    <li><a class="app-menu__item" href="inv_stock_cables.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Stock cables"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Cables</a></li>
+                    <li><a class="app-menu__item" href="inv_stock_seriales.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Stock seriales"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Stock Seriales</a></li>
+                    <li><a class="app-menu__item" href="inv_material_terreno.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Material terreno"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Material Terreno</a></li>
+                    <li><a class="app-menu__item" href="inv_seriales_terreno.html" data-toggle="tooltip" data-placement="right" title="Inventario / Reportes / Seriales terreno"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Seriales Terreno</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin de menu de inventario-->
+            &nbsp;
+            <!--menu personal-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Personal</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li class="treeview"><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a></li>
+                    <li><a class="app-menu__item" href="per_util_importar_personal.html" data-toggle="tooltip" data-placement="right" title="Personal / Utilidades / Importar personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Personal</a></li>
+                    <div class="dropdown-divider"></div>
+                    &nbsp;
+                    <li><a class="app-menu__item" href="per_personal.html" data-toggle="tooltip" data-placement="right" title="Personal / Personal"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Personal</a></li>
+                    <li><a class="app-menu__item" href="per_cargos.html" data-toggle="tooltip" data-placement="right" title="Personal / Personal / Cargos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Cargos</a></li>
+                    <li><a class="app-menu__item" href="per_tipo_cuadrillas.html" data-toggle="tooltip" data-placement="right" title="Personal / Personal / Tipo cuadrillas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Cuadrillas</a></li>
+                    <li><a class="app-menu__item" href="per_conformacion_cuadrillas.html" data-toggle="tooltip" data-placement="right" title="Personal / Personal / Conformación cuadrillas"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Conformación Cuadrillas</a></li>
+                    <li><a class="app-menu__item" href="per_registro_supervisores.html" data-toggle="tooltip" data-placement="right" title="Personal / Personal / Registro supervisores"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Registro Supervisores</a></li>
+                    <li><a class="app-menu__item" href="per_asignacion_tecnico.html" data-toggle="tooltip" data-placement="right" title="Personal / Personal / Asignación técnicos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Asignación Técnicos</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menú personal-->
+
+            <!--menu utilidades-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="utilidades_impor_archiv.html" data-toggle="tooltip" data-placement="right" title="Utilidades / Importar archivos"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Archivos</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menú utilidades-->
+            &nbsp;
+            <!--menu ods-->
+            <li class="treeview"><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-clipboard fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; ODS</span><i class="treeview-indicator fa fa-caret-down"></i></a></li>
+
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS VPI</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="ods_atender_ods.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Atender ODS"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="ods_atender_ods_manual.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Atender ODS manual"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="ods_actualizar_carga_ods.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Actualizar carga ODS"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="ods_actualizar_ods.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Actualizar ODS"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="ods_consultar_ods.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Consultar ODS"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="ods_listado_consumo_material.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Listado consumo material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="ods_listado_retiros_material.html" data-toggle="tooltip" data-placement="right" title="ODS / ODS VPI / Listado retiros material"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menú ods-->
+
+            &nbsp;
+            <!--menu admom-->
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-caret-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="perfiles.html" data-toggle="tooltip" data-placement="right" title="Admon / Perfiles"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Perfiles</a></li>
+                    <li><a class="app-menu__item" href="usuarios.html" data-toggle="tooltip" data-placement="right" title="Admon / Usuario"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Usuario</a></li>
+                    <li><a class="app-menu__item" href="datos_empresa.html" data-toggle="tooltip" data-placement="right" title="Admon / Datos empresa"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Datos Empresa</a></li>
+                    <li><a class="app-menu__item" href="opciones_correo_web.html" data-toggle="tooltip" data-placement="right" title="Admon / Opciones correo y web"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Opciones Correo y Web</a></li>
+                    <li><a class="app-menu__item" href="aplicar_consumos.html" data-toggle="tooltip" data-placement="right" title="Admon / Aplicar consumo"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Aplicar Consumo</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menu admon-->
+        </ul>
+    </aside>
+
+    <!--container fluid-->
+    <div id="buscarserial" class="container-fluid">
+        <!--row flex-->
+        <div class="row flex-lg-nowrap">
+            <!--menu derecho-->
+            <div class="d-none d-lg-block col-sm-2 bd-toc">
+                <ul class="navbar-nav">
+                    <li class="breadcrumb-item active">
+                        <h2>Funcionalidades</h2>
+                    </li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscarserial" onclick="myFunction()">
+                        Buscar serial</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#actualizar" onclick="myFunction()">
+                        Actualizar</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                        Salir</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                        Ver video</a></li>
+                </ul>
+            </div>
+            <!--fin menu derecho-->
+
+            <!--main-->
+            <main class="app-content" role="main">
+                <div class="app-title">
+                    <div>
+                        <h1><i class="fa fa-file-text"></i>Actualizar Serial</h1>
+                        <p>Funcionalidades del módulo actualizar serial en SISCOS</p>
+                    </div>
+                    <div class="bs-component">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
+                            <li class="breadcrumb-item"><a href="inv_entrada_ct.html">Entrada CT</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!--buscar serial-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Buscar serial</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario poder hacer una búsqueda de los seriales registrados en SISCOS y seleccionar el que se le va a realizar la actualización de la información ingresada en los campos predeterminados.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/buscar serial act.png" style="width:60%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar serial-->
+
+                    <!--actualizar-->
+                    <div id="actualizar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Actualizar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal inferior, permite al usuario que solo se actualicen los campos Nuevo serial y Nuevo Cas-ID, ingresamos la nueva información y clic en el botón actualizar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/actualizar serial.png" style="width:60%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin masivo-->
+
+                    <!--salir-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal inferior, permite al usuario poder salir del módulo actualizar serial.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/salir serial.png" style="width:60%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/sAaNhQ64sYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                         </iframe>
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_cambio_ubicacion_serial.html" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_pedidos.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js "><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js "></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript " src="js/plugins/chart.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover "]').popover();
+        $('.bs-component [data-toggle="tooltip "]').tooltip();
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth ";
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript ">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false ")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada. ");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada. ");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
+</html>
