@@ -14582,7 +14582,7 @@ be a descendant of the grid when it is being dragged.
     margin: 0;
     font-size: 24px;
     font-weight: 400;
-    margin-left: -53px;
+    margin-left: -19px;
 }
 
 .app-title p {
@@ -15936,6 +15936,16 @@ be a descendant of the grid when it is being dragged.
 
 .fa-angle-right {
     width: 100%;
+}
+
+@media (max-width:360px) {
+    .app-title h1 {
+        margin: 0;
+        margin-left: 0px;
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: -19px;
+    }
 }
 
 .navigation.navigation-next {
