@@ -169,8 +169,7 @@ dfn {
     font-style: italic;
 }
 
-b,
-strong {
+b {
     font-weight: bolder;
     font-style: italic;
     font-family: 'Montserrat';
