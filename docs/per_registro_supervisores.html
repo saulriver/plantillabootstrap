@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -263,12 +269,14 @@
     <!--container fluid-->
     <div id="agregar" class="container-fluid">
         <!--row flex-->
-          <div class="row flex-lg-nowrap">
+        <div class="row flex-lg-nowrap">
 
-              <!--menu derecho-->
-              <div class="d-none d-lg-block col-sm-2 bd-toc">
-                  <ul class="navbar-nav">
-                    <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+            <!--menu derecho-->
+            <div class="d-none d-lg-block col-sm-2 bd-toc">
+                <ul class="navbar-nav">
+                    <li class="breadcrumb-item active">
+                        <h2>Funcionalidades</h2>
+                    </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#agregar" onclick="myFunction()">
                         Agregar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
@@ -277,218 +285,187 @@
                         Actualizar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
-                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                        style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                         Ver video</a></li>
-                  </ul>
-                </div>
-                <!--fin menu derecho-->
+                </ul>
+            </div>
+            <!--fin menu derecho-->
 
-                <!--main-->
-                <main class="app-content" role="main">
+            <!--main-->
+            <main class="app-content" role="main">
 
-                    <div class="app-title">
-                        <div>
-                          <h1><i class="fa fa-file-text"></i>Registro supervisores</h1>
-                          <p>Funcionalidades del módulo registro supervisores en SISCOS</p>
-                        </div>
-                        <div class="bs-component">
+                <div class="app-title">
+                    <div>
+                        <h1><i class="fa fa-file-text"></i>Registro supervisores</h1>
+                        <p>Funcionalidades del módulo registro supervisores en SISCOS</p>
+                    </div>
+                    <div class="bs-component">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                          <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Personal</li>
-                          <li class="breadcrumb-item"><a href="per_personal.html">Personal</a></li>
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Personal</li>
+                            <li class="breadcrumb-item"><a href="per_personal.html">Personal</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
                         </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--agregar-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Agregar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, seleccionamos el departamento seguidamente hacemos clic en el botón Agregar luego muestra una ventana de consulta personal ingresamos el criterio de búsqueda ( % ) para que nos muestre
+                                todas las personas registradas.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/agregar supervisor.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <!--fin agregar-->
 
-                      <div class="row">
-                          <!--agregar-->
-                          <div class="col-md-12">
-                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                                      <h3 class="tile-title"> Agregar</h3>
-                                      <br><br>
-                                      <!--mensaje-->
-                                      <div class="row">
-                                          <div class="col-lg-12" style="margin-top:-34px">
-                                            <div class="bs-component">
-                                              
-                                                    Se encuentra ubicado en la barra vertical 
-                                                    superior lado izquierdo, seleccionamos el
-                                                    departamento
-                                                    <br>
-                                                    seguidamente hacemos clic en el botón
-                                                    Agregar luego muestra una ventana de
-                                                    consulta personal ingresamos el criterio de búsqueda
-                                                    ( % ) para que nos muestre todas las personas registradas.
-                                                   
-                                              </div>
-                                            </div>
-                                          </div>
-                                          </div><!--fin mensaje-->
-                                          <div class="w3-container w3-center">
-                                              <span>
-                                              <img src="imagenes/agregar supervisor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                            </span>
-                                        </div>
-                                        </div>
-                                  </div><!--fin agregar-->
+                    <!--eliminar supervisores-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Eliminar supervisores</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder eliminar supervisor estando chuleado el cuadrito del supervisor seleccionando y dar clic en el botón eliminar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                      <img src="imagenes/eliminar supervisor.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar supervisores-->
 
-                                  <!--eliminar supervisores-->
-                          <div id="eliminar" class="col-md-12">
-                              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                                        <h3 class="tile-title"> Eliminar supervisores</h3>
-                                        <br><br>
-                                        <!--mensaje-->
-                                        <div class="row">
-                                            <div class="col-lg-12" style="margin-top:-34px">
-                                              <div class="bs-component">
-                                                
-                                                      Se encuentra ubicado en la barra horizontal
-                                                      superior lado izquierdo, permite al usuario
-                                                      poder eliminar supervisor
-                                                      estando chuleado el  cuadrito del
-                                                      supervisor seleccionando y dar clic en el botón eliminar.
-                                                  
-                                              </div>
-                                            </div>
-                                            </div><!--fin mensaje-->
-                                            <div class="w3-container w3-center">
-                                                <span>
-                                                <img src="imagenes/eliminar supervisor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                              </span>
-                                          </div>
-                                          </div>
-                                    </div><!--fin eliminar supervisores-->
-
-                                    <!--actualizar-->
-                          <div id="actualizar" class="col-md-12">
-                              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                                        <h3 class="tile-title"> Actualizar</h3>
-                                        <br><br>
-                                        <!--mensaje-->
-                                        <div class="row">
-                                            <div class="col-lg-12" style="margin-top:-34px">
-                                              <div class="bs-component">
-                                                
-                                                      Se encuentra ubicado en la barra horizontal superior
-                                                      lado derecho, permite al usuario cuando ya ingresa toda
-                                                      la información y la registra dar clic en el 
-                                                      botón actualizar para que se actualicen los cambios
-                                                      y sean guardados en el sistema exitosamente.
-                                                   
-                                              </div>
-                                            </div>
-                                            </div><!--fin mensaje-->
-                                            <div class="w3-container w3-center">
-                                                <span>
-                                                <img src="imagenes/eliminar supervisor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                              </span>
-                                          </div>
-                                          </div>
-                                    </div><!--fin actualizar-->
+                    <!--actualizar-->
+                    <div id="actualizar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Actualizar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado derecho, permite al usuario cuando ya ingresa toda la información y la registra dar clic en el botón actualizar para que se actualicen los cambios y sean guardados en el sistema exitosamente.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                    <img src="imagenes/eliminar supervisor.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                  </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin actualizar-->
 
                     <!--salir-->
                     <div id="salir" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                            <a href="#Salir"></a>
-                                  <h3 class="tile-title">Salir</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          
-                                                Existen 2 formas en el módulo Registro Supervisores para
-                                                salir la primera se encuentra ubicado en la barra horizontal
-                                                superior lado izquierdo,
-                                                <br>
-                                                y la segunda se encuentra ubicada en la barra vertical
-                                                superior lado derecho y permiten al usuario dar clic en
-                                                ambas opciones y salir del módulo Registro Supervisores.
-                                               
-                                          </div>
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/salir supervisor1.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin salir-->
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Existen 2 formas en el módulo Registro Supervisores para salir la primera se encuentra ubicado en la barra horizontal superior lado izquierdo, y la segunda se encuentra ubicada en la barra vertical superior lado derecho y permiten al usuario dar clic
+                                en ambas opciones y salir del módulo Registro Supervisores.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/salir supervisor1.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
 
-                              <!--video-->
+                    <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="686" src="https://www.youtube.com/embed/HDPwXdD9QZA"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                        <iframe class="embed-responsive-item" width="1280" height="686" src="https://www.youtube.com/embed/HDPwXdD9QZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                       </iframe>
-                      </div><!--fin video-->
-                                   
-              </main>
-            </div><!--fin row-->
-          </div><!--fin row flex-->  
-            </div><!--fin container fluid-->
+                    </div>
+                    <!--fin video-->
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-  <!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="per_conformacion_cuadrillas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="utilidades_impor_archiv.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

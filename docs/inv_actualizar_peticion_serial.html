@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
-  </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+
+</head>
+
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -267,137 +274,161 @@
             <!--menu derecho-->
             <div class="d-none d-lg-block col-sm-2 bd-toc">
                 <ul class="navbar-nav">
-                  <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                  <li class="treeview"><a class="nav-link app-menu__item active" href="#buscar" onclick="myFunction()">
-                      Buscar</a></li>&nbsp; 
-                  <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                    <li class="breadcrumb-item active">
+                        <h2>Funcionalidades</h2>
+                    </li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscar" onclick="myFunction()">
+                      Buscar</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                       Salir</a></li>&nbsp;
-                  <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                      style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                       Ver video</a></li>
                 </ul>
-              </div>
-              <!--fin menu derecho-->
-              <!--main-->
+            </div>
+            <!--fin menu derecho-->
+
+            <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
                     <div>
-                      <h1><i class="fa fa-file-text"></i>Actualizar Petición Serial</h1>
-                      <p>Funcionalidades del módulo actualizar petición serial en SISCOS</p>
+                        <h1><i class="fa fa-file-text"></i>Actualizar Petición Serial</h1>
+                        <p>Funcionalidades del módulo actualizar petición serial en SISCOS</p>
                     </div>
                     <div class="bs-component">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active">Inventario</li>
-                      <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
-                      <li class="breadcrumb-item"><a href="inv_habilitar_inhabilitar_reserva.html">Habilitar/Deshabilitar Reserva</a></li>
-                    </ol>
-                    </div>
-                  </div>
-<div class="row">
-     <!--buscar -->
-    <div class="col-md-12">
-      <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-          <h3 class="tile-title">Buscar</h3>
-            <br><br>
-                
-                              Se encuentra ubicado en la barra vertical superior, permite al usuario poder hacer búsquedas por 
-                              los criterios predeterminados como serial o CAS-ID de los seriales registrados en el sistema,
-                              para analizar su información para dicho proceso.
-                          
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/.png" style="width:60%;" class="w3-animate-zoom rounded">
-                      </span>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
+                            <li class="breadcrumb-item"><a href="inv_habilitar_inhabilitar_reserva.html">Habilitar/Deshabilitar Reserva</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
                     </div>
                 </div>
-            </div><!--fin buscar serial-->
-        <!--salir-->
-    <div id="salir" class="col-md-12">
-      <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-          <h3 class="tile-title">Salir</h3>
-            <br><br>
-               
-                              Se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario dar 
-                              clic sobre el botón y salir del módulo Actualizar Petición Serial.
-                          
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/.png" style="width:60%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                </div>
-            </div><!--fin salir-->
-      <!--video-->
-      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-          <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/sAaNhQ64sYw"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-        </div><!--fin video-->
-    </div><!--fin row-->
-  </div><!--fin row flex-->               
-</main>
-</div><!--fin container fluid-->
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-</script>
-<!--scrooll efecto smooth para el id-->
-<script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
+                <div class="row">
+
+                    <!--buscar -->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Buscar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior, permite al usuario poder hacer búsquedas por los criterios predeterminados como serial o CAS-ID de los seriales registrados en el sistema, para analizar su información para dicho proceso.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/.png" style="width:60%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar serial-->
+
+                    <!--salir-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario dar clic sobre el botón y salir del módulo Actualizar Petición Serial.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/.png" style="width:60%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/sAaNhQ64sYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_anular_reintegro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_habilitar_inhabilitar_reserva.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
-<!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Esta pagina es privada.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Esta pagina es privada.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

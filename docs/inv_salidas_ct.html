@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
-  </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+
+</head>
+
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -300,269 +307,210 @@
                             <li class="breadcrumb-item active">Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
                             <li class="breadcrumb-item"><a href="inv_salidas_eecc.html">Salidas EECC</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-
-  <!--Nueva salida-->
-  <div class="col-md-12">
-      <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-          <a href="#nuevasalida"></a>
-                <h3 class="tile-title">Nueva salida</h3>
-                <br><br>
-                <!--mensaje de alerta-->
-                <div class="row">
-                    <div class="col-lg-12" style="margin-top:-34px">
-                      <div class="bs-component">
-                        
-                              Los requisitos previos que debe tener una salida CT es que depende de una entrada (reserva),
-                              proveedor (tercero), centro de costo (propiedad) áreas de operación y periodo activo.
-                              <br>
-                              Al momento de estar ingresando la información para registrar una salida CT en el campo periodo
-                              nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los  registros existente
-                              de tercero que en este caso son las bodegas, debido a que el usuario se le olvido la bodega que necesita
-                              entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla % que le presentará
-                              todas las bodegas registradas, para salir de esta ventana usamos la tecla esc.
-                              <br><br>
-                            
-                              <li>Centro de costo y propiedad es lo mismo.</li>
-                              <li>El área con la que el usuario necesita para hacer el proceso.</li>
-                             <li>Tercero: la bodega que se necesita para hacer la salida.</li>
-                              <li>El usuario debe dar clic en el botón PROV, para hacer la búsqueda de la bodega por el criterio (%).</li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
                             </div>
-                              Nueva salida: este botón se  encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario
-                              cuando ya tenga toda la información  requerida Para el registro de una salida CT le
-                              damos clic en el botón nueva salida para que la guarde y se pueda agregar material 
-                              a esta salida y se puedan habilitar los demás botones y poder realizar  el proceso.   
-                          
-                      </div>
-                    </div>
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/nueva salida 2.png " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
+                        </ol>
                     </div>
                 </div>
-            </div><!--fin nueva salida-->
 
-  <!--Agregar material-->
-  <div id="agregarmaterial" class="col-md-12">
-      <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Agregar material</h3>
-                <br><br>
-                <!--mensaje de alerta-->
                 <div class="row">
-                    <div class="col-lg-12" style="margin-top:-34px">
-                      <div class="bs-component">
-                       
-                            Se encuentra ubicado en la barra horizontal superior, esta función permite al
-                            usuario poder agregar material a una de las salidas registradas en el sistema SISCOS.
-                            El usuario debe dar clic en el botón agregar, y nos presentará una ventana que requiere
-                            de una información para poder agregar material, si al usuario se le olvido el código puede
-                            realizar una búsqueda dando clic en el botón buscar que es la lupa.
-                            <br><br>
-                            Al seleccionar el código se verá reflejado en la tablita existencia para poder guardarlo en 
-                            la salida, cunado los materiales en la tabla existencia aparecen sombreado es por qué si pertenecen
-                            a esa área y propiedad. 
-                            <br>
-                            El usuario debe asignar la cantidad por que después no se puede registrar la salida, ingresar toda 
-                            la información solicitada por que si no el sistema muestra mensaje que hace falta información por 
-                            ingresar.
-                         
-                      </div>
-                    </div>
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/agregar material salida.png " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                </div>
-            </div><!--fin agregar material-->
-                <!--Eliminar material-->
-                      <div id="eliminarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">Eliminar material</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          
-                                              Se encuentra ubicado en la barra horizontal superior, permite al usuario
-                                              eliminar material que no se crea necesario para la carga de salida CT en el 
-                                              sistema SISCOS.
-                                          
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/eliminar material salida.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin eliminar material-->
 
-                        <!--cargar arvhivo-->
-                      <div id="cargararchivo" class="col-md-12">
+                    <!--Nueva salida-->
+                    <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">Cargar archivo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                         
-                                           Se encuentra ubicado en la barra horizontal superior,Este archivo solo se 
-                                           utiliza si el material es clasificado como Otros.
-                                            <br>
-                                            Cuando se quiere buscar seriales hay una opción de acceso rápido que es 
-                                            el botón Buscar serial, esta función válida que los seriales esté disponible
-                                            el usuario le da clic en el botón y comienza a pistolear cada serial.
-                                            
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/cargar archivo salida.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-
-          <!--registrar salida-->
-          <div id="registrarsalida" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                      <h3 class="tile-title">Registrar salida</h3>
-                      <br><br>
-                    <!--mensaje de alerta-->
-                <div class="col-lg-8"  style="margin-top:-34px">
-                  <div class="bs-component">
-                    Nota:el usuario debe tener claro que cuando vaya a realizar el registro de la salida CT
-                         se encuentre la fecha en un periodo activo, por que de lo contrario mostrará mensaje
-                         de error.
-                        
-                      </div>
-                      </div><!--fin mensaje de alerta-->
-                    <div class="w3-container w3-center">
-                    <span>
-                      <img src="imagenes/registrar salida.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      <br><br>
-                    </span>
-                  </div>
-                <br><br>
-                    <!--mensaje-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
+                            <h3 class="tile-title">Nueva salida</h3>
                             <div class="bs-component">
-                              
-                                    Se encuentra ubicado en la barra vertical superior lado izquierdo, 
-                                    permite al usuario cuando ya tiene toda la información necesaria y
-                                    los campos solicitados u obligatorios completos dar clic sobre el botón
-                                    y hacer un nuevo registro de salida en el sistema. 
-                                
+                                Los requisitos previos que debe tener una salida CT es que depende de una entrada ( reserva ), proveedor ( tercero ), centro de costo ( propiedad ) áreas de operación y periodo activo. Al momento de estar ingresando la información para registrar una salida
+                                CT en el campo periodo nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los registros existente de tercero que en este caso son las bodegas, debido a que el usuario se le olvido la bodega que necesita
+                                entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla % que le presentará todas las bodegas registradas, para salir de esta ventana usamos la tecla esc.
+                                <ul>
+                                    <li>Centro de costo y propiedad es lo mismo.</li>
+                                    <li>El área con la que el usuario necesita para hacer el proceso.</li>
+                                    <li>Tercero: la bodega que se necesita para hacer la salida.</li>
+                                    <li>El usuario debe dar clic en el botón PROV, para hacer la búsqueda de la bodega por el criterio ( % ).</li>
+                                </ul>
+                                Nueva salida: este botón se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida Para el registro de una salida CT le damos clic en el botón nueva salida para que la guarde y
+                                se pueda agregar material a esta salida y se puedan habilitar los demás botones y poder realizar el proceso.
                             </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                      </div>
-                  </div><!--fin registrar salida-->
-                                
+                            <div class="w3-container w3-center">
+                                <span>
+                      <img src="imagenes/nueva salida 2.png " style="width:100%;" class="w3-animate-zoom rounded">
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin nueva salida-->
+
+                    <!--Agregar material-->
+                    <div id="agregarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder agregar material a una de las salidas registradas en el sistema SISCOS. El usuario debe dar clic en el botón agregar, y nos presentará una ventana que requiere
+                                de una información para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón buscar que es la lupa. Al seleccionar el código se verá reflejado en la tablita existencia
+                                para poder guardarlo en la salida, cunado los materiales en la tabla existencia aparecen sombreado es por qué si pertenecen a esa área y propiedad. El usuario debe asignar la cantidad por que después no se puede registrar
+                                la salida, ingresar toda la información solicitada por que si no el sistema muestra mensaje que hace falta información por ingresar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/agregar material salida.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin agregar material-->
+
+                    <!--Eliminar material-->
+                    <div id="eliminarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar material que no se crea necesario para la carga de salida CT en el sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/eliminar material salida.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                  </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar material-->
+
+                    <!--cargar arvhivo-->
+                    <div id="cargararchivo" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Cargar archivo</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior,Este archivo solo se utiliza si el material es clasificado como Otros. Cuando se quiere buscar seriales hay una opción de acceso rápido que es el botón Buscar serial, esta función válida que los seriales
+                                esté disponible el usuario le da clic en el botón y comienza a pistolear cada serial.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/cargar archivo salida.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--registrar salida-->
+                    <div id="registrarsalida" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Registrar salida</h3>
+                            <div class="bs-component">
+                                <b>Nota: el usuario debe tener claro que cuando vaya a realizar el registro de la salida CT se encuentre la fecha en un periodo activo, por que de lo contrario mostrará mensaje de error.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/registrar salida.png" style="width:100%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información necesaria y los campos solicitados u obligatorios completos dar clic sobre el botón y hacer un nuevo registro de salida en el sistema.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin registrar salida-->
+
                     <!--salir -->
-                                <div id="salir" class="col-md-12">
-                                    <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">Salir</h3>
-                                              <br><br>
-                                              <!--mensaje de alerta-->
-                                              <div class="row">
-                                                  <div class="col-lg-12" style="margin-top:-34px">
-                                                    <div class="bs-component">
-                                                      
-                                                          Se encuentra ubicado en la barra horizontal superior, 
-                                                          está permite al usuario salir del Módulo Salida CT.
-                                                     
-                                                    </div>
-                                                  </div>
-                                                  </div><!--fin mensaje-->
-                                                  <div class="w3-container w3-center">
-                                                    <span>
-                                                    <img src="imagenes/salir salida.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                                    </span>
-                                                  </div>
-                                              </div>
-                                          </div><!--fin salir-->
-                                        
-                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                              <iframe class="embed-responsive-item"width="1280" height="640" src="https://www.youtube.com/embed/viES78S-mSI" 
-                                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                              allowfullscreen></iframe>
-                                          </div>
-                            
-                                      </main>
-                                    </div>
-                                  </div><!--fin row flex--> 
-                                  </div><!--fin container fluid-->
-                                
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-</script>
-<!--scrooll efecto smooth para el id-->
-<script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, está permite al usuario salir del Módulo Salida CT.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/salir salida.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                  </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="640" src="https://www.youtube.com/embed/viES78S-mSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_anular_entrada.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_salidas_eecc.htmlclass=" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js "><\/script>')
     </script>
-<!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js "></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript " src="js/plugins/chart.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover "]').popover();
+        $('.bs-component [data-toggle="tooltip "]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth ";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript ">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false ")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Esta pagina es privada.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Esta pagina es privada.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada. ");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada. ");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

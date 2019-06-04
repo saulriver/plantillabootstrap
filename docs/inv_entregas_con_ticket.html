@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -263,299 +269,259 @@
     <!--container fluid-->
     <div id="1formaentrega" class="container-fluid">
         <!--row flex-->
-          <div class="row flex-lg-nowrap">
+        <div class="row flex-lg-nowrap">
 
-              <!--menu derecho-->
-              <div class="d-none d-lg-block col-sm-2 bd-toc">
-                  <ul class="navbar-nav">
-                    <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#1formaentrega" onclick="myFunction()">
-                        1 Forma entrega con ticket </a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#2formaentrega" onclick="myFunction()">
-                        2 Forma entrega con ticket </a></li>&nbsp;
+            <!--menu derecho-->
+            <div class="d-none d-lg-block col-sm-2 bd-toc">
+                <ul class="navbar-nav">
+                    <li class="breadcrumb-item active">
+                        <h2>Funcionalidades</h2>
+                    </li>&nbsp;
+                    <li class="treeview">
+                        <a class="nav-link app-menu__item active" href="#1formaentrega" onclick="myFunction()">
+                            1-Forma entrega con ticket </a></li>&nbsp;
+                    <li class="treeview">
+                        <a class="nav-link app-menu__item" href="#2formaentrega" onclick="myFunction()">
+                            2-Forma entrega con ticket </a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
                         Cargar archivo</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#registrarentrega" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#registrarentrega" onclick="myFunction()">
                         Registrar entrega</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#stockpersonal" onclick="myFunction()">
-                        Stock personal</a></li>&nbsp;   
+                        Stock personal</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                      style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                       Ver video</a></li>
-                  </ul>
-                </div>
-                <!--fin menu derecho-->
+                </ul>
+            </div>
+            <!--fin menu derecho-->
 
-                <!--main-->
-              <main class="app-content" role="main">
-                  <div class="app-title">
-                      <div>
+            <!--main-->
+            <main class="app-content" role="main">
+                <div class="app-title">
+                    <div>
                         <h1><i class="fa fa-file-text"></i>Entregas con Ticket</h1>
                         <p>Funcionalidades del módulo entrega con ticket en SISCOS</p>
-                      </div>
-                      <div class="bs-component">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Inventario</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
-                        <li class="breadcrumb-item"><a href="inv_consulta_entregas.html">Consulta Entrega</a></li>
-                      </ol>
-                      </div>
                     </div>
+                    <div class="bs-component">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
+                            <li class="breadcrumb-item"><a href="inv_consulta_entregas.html">Consulta Entrega</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
 
-  <div class="row">
-       <!--1 Forma entrega-->
-       <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">1 Forma entrega con ticket</h3>
-                  <br><br>
-                      <!--mensaje de alerta-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
+                <div class="row">
+
+                    <!--1 Forma entrega-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">1 Forma entrega con ticket</h3>
                             <div class="bs-component">
-                             
-                                  Que se haga el pedido requisitos bodegas, áreas, personal, número de ticket
-                                  y periodo activo etc. Ya se hizo el pedido ahora se va a entregar.
-                                  <br><br>
-                                  Existen 2 formas para hacer entregas con ticket.
-                                  <br><br>
-                                  
-                                  1. Se encuentra ubicado en la ruta de acceso. Inventario/Pedido Material/Pedidos
-                                  Pend.Entregar. El usuario da doble clic al pedido y de una me sale el módulo de entrega.
-                                  
-                                En el botón ticket es donde se presenta el técnico con el pedido N.1, ingresamos el número 
-                                1 el usuario escoge la bodega y le  da clic en buscar y arroja la información correspondiente
-                                de ese pedido. Los consecutivos de pedidos son por bodegas cada bodega tiene su consecutivo 
-                                de ahí el usuario se traslada a confirmar cantidades.  
-                                 
+                                Que se haga el pedido requisitos bodegas, áreas, personal, número de ticket y periodo activo etc. Ya se hizo el pedido ahora se va a entregar. Existen 2 formas para hacer entregas con ticket.
+                                <ul>
+                                    <li>1. Se encuentra ubicado en la ruta de acceso. Inventario/Pedido Material/Pedidos Pend.Entregar. El usuario da doble clic al pedido y de una me sale el módulo de entrega. En el botón ticket es donde se presenta el técnico
+                                        con el pedido N.1, ingresamos el número 1 el usuario escoge la bodega y le da clic en buscar y arroja la información correspondiente de ese pedido. Los consecutivos de pedidos son por bodegas cada bodega tiene su
+                                        consecutivo de ahí el usuario se traslada a confirmar cantidades.</li>
+                                </ul>
                             </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/1 forma.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin 1 forma entrega-->
-       <!--2 forma entrega-->
-      <div id="2formaentrega" class="col-md-12">
-        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-            <h3 class="tile-title">2 Forma entrega con ticket</h3>
-              <br><br>
-                  <!--mensaje de alerta-->
-                  <div class="row">
-                      <div class="col-lg-12" style="margin-top:-34px">
-                        <div class="bs-component">
-                          
-                              
-                            2.  Se encuentra ubicado en la ruta acceso Inventario/Salidas Almacén/Entregas con Ticket. 
-                         
-                          El usuario puede utilizar una de las 2 formas que se le haga fácil para el proceso 
-                          de entregas con ticket. En esta opción hay que ingresar el número del ticket para
-                          que se activen los demás botones, los consecutivos de pedidos son por bogadas y 
-                          luego se confirman cantidades.
-                          <br><br>
-                          Si ese pedido incluye seriales al dar clic en cantidad nos mostrará otra ventana 
-                          solicitando información acerca del serial y todo lo que está en esa reserva el 
-                          usuario escoge cuales desea pasar y si son más esta la opción de seleccionar archivo
-                          con la cantidad necesaria que desee el usuario para su cargue de seriales.  
-                             
-                        </div>
-                      </div>
-                      </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                        <span>
-                        <img src="imagenes/2 forma.png" style="width:70%;" class="w3-animate-zoom rounded">
-                        </span>
-                      </div>
-                  </div>
-              </div><!--fin 2 forma-->
-         <!--cargar archivo-->
-          <div id="cargararchivo" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                      <h3 class="tile-title">Cargar archivo</h3>
-                      <br><br>
-                    <!--mensaje de alerta-->
-                <div class="col-lg-8"  style="margin-top:-34px">
-                  <div class="bs-component">
-                    Nota: el usuario debe tener en cuenta que está funcionalidad es solo cuando
-                         el material sea clasifacidao como serial y da la opcion de cargar el archivo.
-                        
-                      </div>
-                      </div><!--fin mensaje de alerta-->
-                    <div class="w3-container w3-center">
-                    <span>
-                      <img src="imagenes/cargar archivo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      <br><br>
-                    </span>
-                  </div>
-                <br><br>
-                    <!--mensaje-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                             
-                                    permite al usuario dar clic sobre el botón que se encuentra ubicado
-                                    en la barra vertical superior lado izquierdo,
-                                    Esta la opción de cargar el archivo automáticamente se adiciona 
-                                    sin necesidad de buscarlo en seleccionar seriales.
-                                
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/1 forma.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
                             </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                      </div>
-                  </div><!--fin cargar archivo-->
-       
-    <!--Registrar entrega-->
-      <div id="registrarentrega" class="col-md-12">
-        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-            <h3 class="tile-title">Registrar entrega</h3>
-              <br><br>
-                  <!--mensaje de alerta-->
-                  <div class="row">
-                      <div class="col-lg-12" style="margin-top:-34px">
-                        <div class="bs-component">
-                          
-                                  Cuando ya el usuario confirme todas las cantidades de los materiales le da en el botón guardar.
-                                  <br><br>
-                                  
-                                  <li>Genera la Entrega.</li>
-                                  <li>Imprimir con seriales SI o NO.</li>
-                                  <li>Detecta si la persona tienen correo electrónico, imprime una sola vez y la otra copia se envía
-                                      al correo del técnico.</li>
-                                      <br>
-                                  El usuario ya después de hacer todo este proceso el sistema SISCOS arroja el informe de salida 
-                                  almacén que es donde va la relación de todo.
-                               
-                          </div>
-                        </div>
-                      </div>
-                      </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                        <span>
-                        <img src="imagenes/registrar entrega con ticket.png" style="width:60%;" class="w3-animate-zoom rounded">
-                        </span>
-                      </div>
-                  </div>
-              </div><!--fin registrar entrega-->
-      <!--stock personal-->
-      <div id="stockpersonal" class="col-md-12">
-          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-              <h3 class="tile-title">Stock personal</h3>
-                <br><br>
-                    <!--mensaje de alerta-->
-                    <div class="row">
-                        <div class="col-lg-12" style="margin-top:-34px">
-                          <div class="bs-component">
-                            
-                             Se encuentra ubicado en la barra vertical superior lado izquierdo consulta 
-                             los Stock cargados actualmente del técnico y se genera un archivpo  en Excel.       
-                             
-                          </div>
-                        </div>
-                        </div><!--fin mensaje-->
-                        <div class="w3-container w3-center">
-                          <span>
-                          <img src="imagenes/stock personal con ticket.png" style="width:60%;" class="w3-animate-zoom rounded">
-                          </span>
                         </div>
                     </div>
-                </div><!--fin stock personal-->
-    <!--salir-->
-      <div id="salir" class="col-md-12">
-        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-            <h3 class="tile-title">Salir</h3>
-              <br><br>
-                  <!--mensaje de alerta-->
-                  <div class="row">
-                      <div class="col-lg-12" style="margin-top:-34px">
-                        <div class="bs-component">
-                          
-                                Permite al usuario dar clic en el botón salir del módulo entrega
-                                con ticket para finalizar el proceso.
-                            
-                        </div>
-                      </div>
-                    </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                        <span>
-                        <img src="imagenes/salir con ticket.png" style="width:70%;" class="w3-animate-zoom rounded">
-                        </span>
-                      </div>
-                  </div>
-              </div><!--fin salir-->
-        <!--video-->
-          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-              <iframe class="embed-responsive-item" width="1280" height="632" src="https://www.youtube.com/embed/XC7Oy7FMP1U" 
-              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-               allowfullscreen></iframe>
-            </div><!--fin video-->
-        </div><!--fin row-->
-      </div><!--fin row flex-->                
-    </main>
-</div><!--fin container fluid-->
+                    <!--fin 1 forma entrega-->
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-  <!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
+                    <!--2 forma entrega-->
+                    <div id="2formaentrega" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">2 Forma entrega con ticket</h3>
+                            <div class="bs-component">
+                                <ul>
+                                    <li>2. Se encuentra ubicado en la ruta acceso Inventario/Salidas Almacén/Entregas con Ticket. El usuario puede utilizar una de las 2 formas que se le haga fácil para el proceso de entregas con ticket. En esta opción hay
+                                        que ingresar el número del ticket para que se activen los demás botones, los consecutivos de pedidos son por bogadas y luego se confirman cantidades. Si ese pedido incluye seriales al dar clic en cantidad nos mostrará
+                                        otra ventana solicitando información acerca del serial y todo lo que está en esa reserva el usuario escoge cuales desea pasar y si son más esta la opción de seleccionar archivo con la cantidad necesaria que desee
+                                        el usuario para su cargue de seriales.</li>
+                                </ul>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/2 forma.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin 2 forma-->
+
+                    <!--cargar archivo-->
+                    <div id="cargararchivo" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Cargar archivo</h3>
+                            <div class="bs-component">
+                                <b>Nota: el usuario debe tener en cuenta que está funcionalidad es solo cuando el material sea clasifacidao como serial y da la opcion de cargar el archivo.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/cargar archivo.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component">
+                                permite al usuario dar clic sobre el botón que se encuentra ubicado en la barra vertical superior lado izquierdo, Esta la opción de cargar el archivo automáticamente se adiciona sin necesidad de buscarlo en seleccionar seriales.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin cargar archivo-->
+
+                    <!--Registrar entrega-->
+                    <div id="registrarentrega" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Registrar entrega</h3>
+                            <div class="bs-component">
+                                Cuando ya el usuario confirme todas las cantidades de los materiales le da en el botón guardar.
+                                <ul>
+                                    <li>Genera la Entrega.</li>
+                                    <li>Imprimir con seriales SI o NO.</li>
+                                    <li>Detecta si la persona tienen correo electrónico, imprime una sola vez y la otra copia se envía al correo del técnico.</li>
+                                </ul>
+                                El usuario ya después de hacer todo este proceso el sistema SISCOS arroja el informe de salida almacén que es donde va la relación de todo.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/registrar entrega con ticket.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin registrar entrega-->
+
+                    <!--stock personal-->
+                    <div id="stockpersonal" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Stock personal</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo consulta los Stock cargados actualmente del técnico y se genera un archivpo en Excel.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/stock personal con ticket.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin stock personal-->
+
+                    <!--salir-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Permite al usuario dar clic en el botón salir del módulo entrega con ticket para finalizar el proceso.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/salir con ticket.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="632" src="https://www.youtube.com/embed/XC7Oy7FMP1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_entregas_pedidos_autom.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_consulta_entregas.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -302,211 +308,213 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
                             <li class="breadcrumb-item"><a href="confi_plantillas_actividades.html">Plantillas actividades </a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--Guardar-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                      <h3 class="tile-title"> Guardar</h3>
-                      <br><br>
-                      
-                                
-                            Se encuentra ubicado en la barra horizontal superior, permite dar clic al botón
-                             y  guardar todos los materiales agregados para la plantilla y hacer un nuevo registro
-                              de plantillas de materiales con sus respectivas configuraciones.
-                                
-                          <div class="w3-container w3-center">
-                              <span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--Guardar-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Guardar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite dar clic al botón y guardar todos los materiales agregados para la plantilla y hacer un nuevo registro de plantillas de materiales con sus respectivas configuraciones.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/guardar plantilla.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
+                            </div>
                         </div>
-                        </div>
-                  </div><!--fin Guardar-->
+                    </div>
+                    <!--fin Guardar-->
 
                     <!--Modificar-->
                     <div id="Modificar" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                          <a href="#Modificar"></a>
-                                <h3 class="tile-title">Modificar</h3>
-                                <br><br>
-                                
-                                        Se encuentra ubicado en la barra  vertical lado izquierdo, esta función permite al usuario editar un registro existente ubicándose 
-                                        en el boton modificar dando clic seguidamente seleccionando el departamento luego 
-                                        dar clic en el botón consultar y escoger el registro que necesita para la modificación
-                                        en el sistema SISCOS.
-                                          
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/modificar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin Modificar-->
-          <!--eliminar -->
-          <div id="Eliminar" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#Eliminar"></a>
-                        <h3 class="tile-title">Eliminar</h3>
-                        <br><br>
-                     
-                                  Se encuentra ubicado en la barra horizontal superior lado izquierdo, 
-                                  permite al usuario poder eliminar material del listado configurado para
-                                  la plantilla que no crea conveniente para este proceso.
-                               
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical lado izquierdo, esta función permite al usuario editar un registro existente ubicándose en el boton modificar dando clic seguidamente seleccionando el departamento luego dar clic en el botón consultar y escoger
+                                el registro que necesita para la modificación en el sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/modificar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin Modificar-->
+
+                    <!--eliminar -->
+                    <div id="Eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder eliminar material del listado configurado para la plantilla que no crea conveniente para este proceso.
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
                                   <img src="imagenes/eliminar material plantilla.png" style="width:70%;" class="w3-animate-zoom rounded">
                                 </span>
-                              </div>
+                            </div>
                         </div>
-                    </div><!--fin eliminar -->
+                    </div>
+                    <!--fin eliminar -->
 
                     <!--Consultar-->
                     <div id="Consultar" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                          <a href="#Consultar"></a>
-                                <h3 class="tile-title">Consultar</h3>
-                                <br><br>
-                                
-                                     Se encuentra ubicado en la barra horizontal superior y permite 
-                                     al usuario hacer consulta de plantillas creadas en el sistema SISCOS.
-                                       
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/consultar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin consultar -->
-
-                            <!--Buscar material -->
-                      <div id="Buscarmaterial" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                                  <h3 class="tile-title">Buscar material</h3>
-                                  <br><br>
-                                 
-                                                Se encuentra ubicado en la barra horizontal, permite al usuario
-                                                 hacer búsqueda de  materiales para asignar a las plantillas que 
-                                                 van hacer creadas en el sistema.
-                                           
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/buscar material.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin Buscar -->
+                            <h3 class="tile-title">Consultar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior y permite al usuario hacer consulta de plantillas creadas en el sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/consultar plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin consultar -->
 
-                        <!--Archivo-->
-                        <div id="Archivo" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                              <a href="#Archivo"></a>
-                                    <h3 class="tile-title">Archivo</h3>
-                                    <br><br>
-                                    
-                                                  Se encuentra ubicado en la barra horizontal, permite al usuario poder
-                                                  hacer más fácil el cargue de materiales previamente  a una plantilla no
-                                                    uno a uno si no todos los necesarios cumpliendo con su estructura para
-                                                    el archivo de carga que es texto delimitado por tabulaciones.
-                                          
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/archivo plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin Archivo-->
+                    <!--Buscar material -->
+                    <div id="Buscarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Buscar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal, permite al usuario hacer búsqueda de materiales para asignar a las plantillas que van hacer creadas en el sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/buscar material.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin Buscar -->
 
-                      <!--salir-->
-                      <div id="Salir" class="col-md-12">
-                          <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:40px">
-                              <a href="#Salir"></a>
-                                    <h3 class="tile-title">Salir</h3>
-                                    <br><br>
-                                    
-                                             En el sistema SISCOS existen 2 maneras de salir del módulo plantillas materiales, 
-                                             la 1 se encuentra ubicado en la barra vertical superior lado derecho y la 2 se 
-                                             encuentra en la barra horizontal permitiendo al usuario dar clic en una de las opciones.
-                                         
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/salir plantillas materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin salir -->
+                    <!--Archivo-->
+                    <div id="Archivo" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Archivo</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal, permite al usuario poder hacer más fácil el cargue de materiales previamente a una plantilla no uno a uno si no todos los necesarios cumpliendo con su estructura para el archivo de carga que es texto delimitado
+                                por tabulaciones.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/archivo plantilla materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin Archivo-->
 
-                      <!--video-->
-                      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                          <iframe class="embed-responsive-item" width="1280" height="613" src="https://www.youtube.com/embed/LrvpDGFjbNg"
-                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                          allowfullscreen>
+                    <!--salir-->
+                    <div id="Salir" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                En el sistema SISCOS existen 2 maneras de salir del módulo plantillas materiales, la 1 se encuentra ubicado en la barra vertical superior lado derecho y la 2 se encuentra en la barra horizontal permitiendo al usuario dar clic en una de las opciones.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/salir plantillas materiales.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir -->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="613" src="https://www.youtube.com/embed/LrvpDGFjbNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
-                        </div><!--fin video-->
-                    </div><!--fin row-->
-                  </div><!--fin row flex-->               
-                  </main>
-              </div><!--fin container fluid-->
+                    </div>
+                    <!--fin video-->
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="confi_registro_produccion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_plantillas_actividades.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-  <!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
 <Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

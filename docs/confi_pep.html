@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
-  </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+
+</head>
+
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -301,171 +308,149 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
                             <li class="breadcrumb-item"><a href="confi_estado_material.html">Estado material</a></li>
-                          </ol>
-                          </div>
-                        </div>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
 
-      <div class="row">
-          <!--aplicar pep-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                      <h3 class="tile-title">Aplicar</h3>
-                      <br><br>
-                      
-                                    Se encuentra ubicado en la barra 
-                                    horizontal superior lado derecho,
-                                    está función permite agregar un nuevo
-                                    PEP al sistema de información SISCOS.
-                                    <br>
-                                    Seguidamente le damos clic en el botón
-                                    <div class="btn btn-secondary">
-                                    Aplicar
-                                    </div> , y visualizaremos una ventana 
-                                    que nos muestra un mensaje de información
-                                    que si estamos seguro de aplicar cambios 
-                                    clic en Sí para que se guarde el nuevo registro.        
-                               
-                          <div class="w3-container w3-center">
-                              <span>
+                <div class="row">
+                    <!--aplicar pep-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Aplicar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado derecho, está función permite agregar un nuevo PEP al sistema de información SISCOS. Seguidamente le damos clic en el botón Aplicar, y visualizaremos una ventana que nos muestra un mensaje de información
+                                que si estamos seguro de aplicar cambios clic en Sí para que se guarde el nuevo registro.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/aplicar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
+                            </div>
                         </div>
-                        </div>
-                  </div><!--fin aplicar pep-->
-          <!--eliminar pep-->
-          <div id="eliminar" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#eliminar"></a>
-                        <h3 class="tile-title">Eliminar</h3>
-                        <br><br>
-                      
-                        Nota: no se puede eliminar un PEP si existen movimientos 
-                        de lo contrario si es exitosa la función eliminar.
-                        
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/eliminar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
                     </div>
-                  <br><br><br>
-                      
-                                      Se encuentra ubicada en la
-                                      barra horizontal  superior (lado izquierdo)
-                                      esta función en SISCOS no se puede hacer siempre y 
-                                      cuando tenga movimientos de entradas CT se mostrará
-                                      un mensaje de error como se muestra en pantalla. 
-                                      De lo contrario si permite, es decir el PEP no
-                                      existan movimientos de el en el sistema.
-                              
-                    </div><!--fin eliminar pep-->
+                    <!--fin aplicar pep-->
+
+                    <!--eliminar pep-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                <b>Nota: no se puede eliminar un PEP si existen movimientos de lo contrario si es exitosa la función eliminar.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/eliminar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicada en la barra horizontal superior (lado izquierdo) esta función en SISCOS no se puede hacer siempre y cuando tenga movimientos de entradas CT se mostrará un mensaje de error como se muestra en pantalla. De lo contrario si permite, es
+                                decir el PEP no existan movimientos de el en el sistema.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar pep-->
+
                     <!--modificar pep-->
                     <div id="modificar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <a href="#modificar"></a>
-                                  <h3 class="tile-title">Modificar</h3>
-                                  <br><br>
-                                  
-                                                El usuario debe seleccionar el
-                                                código y dar doble clic en el campo
-                                                Código para poder modificar los campos
-                                                necesarios y posteriormente dar clic
-                                                en el botón Aplicar para que se actualicen
-                                                los nuevos cambios en el sistema SISCOS.
-                                           
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/modificar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin modificar pep-->
-                              <!--carga masiva pep-->
-                      <div id="carga" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                              <a href="#carga"></a>
-                                    <h3 class="tile-title">Carga masiva</h3>
-                                    <br><br>
-                                    
-                                                    Se encuentra ubicado en la barra vertical
-                                                    lado izquierdo, está permite cargar un archivo
-                                                    a SISCOS.
-                                                    Le damos clic en Carga Masiva y se mostrará
-                                                    una ventana donde pide seleccionar el archivo
-                                                    donde se tiene guardado para poder cargarlo al
-                                                    sistema
-                                                    SISCOS y se visualice en pantalla correctamente.
-                                                    <br><br>
-                                                     Procesar Archivo: 
-                                                     está función permite al usuario después de
-                                                     cargar el archivo en SISCOS, importarlo y sea
-                                                     revelado en el listado de todos los PEP ingresados.
-                                                     Seguidamente le damos clic en Procesar Archivo y
-                                                     nos presenta un mensaje de información que si está
-                                                     seguro de importar tipos de reparación.
-                                                    
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/carga masiva pep.png" style="width:90%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin carga masiva pep-->
-                                <!--buscar pep-->
-                      <div id="buscar" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                              <a href="#buscar"></a>
-                                    <h3 class="tile-title">Buscar</h3>
-                                    <br><br>
-                                    
-                                                  Se encuentra ubicado en la barra
-                                                  horizontal lado derecho, éste permite
-                                                  al usuario realizar una búsqueda por los parámetros
-                                                  de (%), Código y Descripción se selecciona la opción
-                                                  deseada por el usuario.
-                                                
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/buscar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin buscar pep-->
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component">
+                                El usuario debe seleccionar el código y dar doble clic en el campo Código para poder modificar los campos necesarios y posteriormente dar clic en el botón Aplicar para que se actualicen los nuevos cambios en el sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/modificar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin modificar pep-->
+
+                    <!--carga masiva pep-->
+                    <div id="carga" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Carga masiva</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical lado izquierdo, está permite cargar un archivo a SISCOS. Le damos clic en Carga Masiva y se mostrará una ventana donde pide seleccionar el archivo donde se tiene guardado para poder cargarlo al sistema SISCOS
+                                y se visualice en pantalla correctamente. Procesar Archivo: está función permite al usuario después de cargar el archivo en SISCOS, importarlo y sea revelado en el listado de todos los PEP ingresados. Seguidamente le damos
+                                clic en Procesar Archivo y nos presenta un mensaje de información que si está seguro de importar tipos de reparación.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/carga masiva pep.png" style="width:90%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin carga masiva pep-->
+
+                    <!--buscar pep-->
+                    <div id="buscar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Buscar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal lado derecho, éste permite al usuario realizar una búsqueda por los parámetros de (%), Código y Descripción se selecciona la opción deseada por el usuario.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/buscar pep.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar pep-->
+
                     <!--salir pep-->
-                      <div id="salir" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                              <a href="#salir"></a>
-                                    <h3 class="tile-title">Salir</h3>
-                                    <br><br>
-                                    
-                                                  Se encuentra ubicado en la barra
-                                                  horizontal superior lado derecho, 
-                                                  o también la opción esc  estás opciones
-                                                  permiten salir del Módulo PEP.
-                                               
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/salir pep.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin salir pep-->
-                      <!--video-->
-                      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                          <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/DpnF4EkGA9A"
-                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                          allowfullscreen>
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado derecho, o también la opción esc estás opciones permiten salir del Módulo PEP.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/salir pep.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir pep-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/DpnF4EkGA9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
-                        </div><!--fin video-->
-                      </div><!--fin row-->
-                    </div><!--fin row flex-->              
-                  </main>               
-                </div><!--fin container fluid-->
-                      
-                                    
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="confi_periodos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_carga_masiva_material.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -480,47 +465,50 @@
     <script>
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
-      </script>
-       <script src="js/scripts.js"></script>
-      <!--scrooll efecto smooth para el id-->
-      <script>
-          function myFunction() {
+    </script>
+    <script src="js/scripts.js"></script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
             document.documentElement.style.scrollBehavior = "smooth";
-          }
-          </script>
-      <!--impedir que copien el codigo de la pagina-->
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
     <script language="Javascript">
-      function disableselect(e){
-      return false
-      }
-      function reEnable(){
-      return true
-      }
-      document.onselectstart=new Function ("return false")
-      if (window.sidebar){
-      document.onmousedown=disableselect
-      document.onclick=reEnable
-      }
-      // End -->
-      </script>
-     
-   </body>
-   <!--para inhabilitar el boton derecho en la pagina-->
-   <Script language=JavaScript>
-      function right(e) {
-      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      else if (navigator.appName == 'Microsoft Internet Explorer' &&
-      (event.button == 2 || event.button == 3)) {
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      return true;
-      }
-      document.onmousedown=right;
-      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-      window.onmousedown=right;
-      </script> 
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

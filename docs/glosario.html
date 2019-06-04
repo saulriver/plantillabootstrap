@@ -308,24 +308,30 @@
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">Glosario</li>
                             <li class="breadcrumb-item"><a href="registrarse.html">Registrarse</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
                         </ol>
                     </div>
                 </div>
                 <!--fin-->
-
                 <!--comienzo row-->
                 <div class="row">
-
                     <!--comienzo-->
                     <div id="confi" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
-                            <article>
-                                <h3 class="tile-title">Lo que se debe tener en cuenta antes de configurar SISCOS</h3>
-
-                                <p class="text">Donde se encuentran ubicadas mis bodegas:</p>
-                                <p>Es decir en que departamentos la voy a ubicar, y cuantas bodegas necesito administrar y controlar.</p>
-
-                            </article>
+                            <h3 class="tile-title">Lo que se debe tener en cuenta antes de configurar SISCOS</h3>
+                            <!--mensaje-->
+                            <div class="bs-component">
+                                <p class="text"><b>Donde se encuentran ubicadas mis bodegas:</b></p>
+                                <p class="text">Es decir en que departamentos la voy a ubicar, y cuantas bodegas necesito administrar y controlar.</p>
+                            </div>
                         </div>
                     </div>
                     <!--fin-->
@@ -334,12 +340,14 @@
                     <div id="insta" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
                             <h3 class="tile-title">Pasos para la instalación del sistema de información SISCOS</h3>
-                            <ul>
-                            <li>Instalar archivo mysql-connector-odbc-5.1.13-win32.msi.</li>
-                            <li>Copiar la carpeta SISCOS al disco C del PC/Portátil.</li>
-                            <li>Enviar acceso directo del archivo siscos.exe al escritorio.</li>
-                            <li>Ingresar usuario y contraseña asignada por el administrador.</li>
-                            </ul>
+                            <div class="bs-component">
+                                <ul>
+                                    <li>Instalar archivo mysql-connector-odbc-5.1.13-win32.msi.</li>
+                                    <li>Copiar la carpeta SISCOS al disco C del PC/Portátil.</li>
+                                    <li>Enviar acceso directo del archivo siscos.exe al escritorio.</li>
+                                    <li>Ingresar usuario y contraseña asignada por el administrador.</li>
+                                </ul>
+                            </div>
                             <br><br><br>
                             <!--video-->
                             <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
@@ -356,51 +364,55 @@
                         <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
                             <h3 class="tile-title">Contenido De Siscos</h3>
 
-                            <p>
+                            <p class="text">
                                 El contenido es todo lo que se tiene que configurar inicialmente para que SISCOS comience arrancar para generar las transacciones solicitadas, porque si no se hacen estas configuraciones seguro no se podrán generar las transacciones.
                             </p>
 
-                            <p class="text">Configuraciones:</p>
-                            <ul>
-                                <li>Departamentos y Localidades.</li>
-                                <li>Tipos de Material.</li>
-                                <li>Estados de Material.</li>
-                                <li>Marcas y Modelos.</li>
-                                <li>Materiales (Productos, Mercancías, Herramientas).</li>
-                                <li>Centros de Costos.</li>
-                                <li>Bodegas.</li>
-                                <li>Parámetros de Departamentos.</li>
-                                <li>Parámetros de Bodega.</li>
-                                <li>PEP.</li>
-                                <li>Periodos.</li>
-                                <li>Proveedores.</li>
-                                <li>Personal.</li>
-                            </ul>
+                            <p class="text"><b>Configuraciones:</b></p>
+                            <div class="bs-component">
+                                <ul>
+                                    <li>Departamentos y Localidades.</li>
+                                    <li>Tipos de Material.</li>
+                                    <li>Estados de Material.</li>
+                                    <li>Marcas y Modelos.</li>
+                                    <li>Materiales (Productos, Mercancías, Herramientas).</li>
+                                    <li>Centros de Costos.</li>
+                                    <li>Bodegas.</li>
+                                    <li>Parámetros de Departamentos.</li>
+                                    <li>Parámetros de Bodega.</li>
+                                    <li>PEP.</li>
+                                    <li>Periodos.</li>
+                                    <li>Proveedores.</li>
+                                    <li>Personal.</li>
+                                </ul>
+                            </div>
+
+                            <p class="text"><b>Entradas:</b></p>
+                            <div class="bs-component">
+                                <ul>
+                                    <li>Entradas CT.</li>
+                                    <li>Entradas EECC.</li>
+                                    <li>Reintegros.</li>
+                                    <li>Devoluciones.</li>
+                                    <li>Anular Entrada.</li>
+                                    <li>Anular Reintegro.</li>
+                                </ul>
+                            </div>
 
 
-                            <p class="text">Entradas:</p>
-                            <ul>
-                                <li>Entradas CT.</li>
-                                <li>Entradas EECC.</li>
-                                <li>Reintegros.</li>
-                                <li>Devoluciones.</li>
-                                <li>Anular Entrada.</li>
-                                <li>Anular Reintegro.</li>
-                            </ul>
-
-
-                            <p class="text">Salidas:</p>
-                            <ul>
-                                <li>Salida CT.</li>
-                                <li>Salida EECC.</li>
-                                <li>Pedidos.</li>
-                                <li>Entregas con Ticket.</li>
-                                <li>Entregas sin Ticket.</li>
-                                <li>Devoluciones.</li>
-                                <li>Anular Salida.</li>
-                                <li>Anular Entrega.</li>
-                            </ul>
-
+                            <p class="text"><b>Salidas:</b></p>
+                            <div class="bs-component">
+                                <ul>
+                                    <li>Salida CT.</li>
+                                    <li>Salida EECC.</li>
+                                    <li>Pedidos.</li>
+                                    <li>Entregas con Ticket.</li>
+                                    <li>Entregas sin Ticket.</li>
+                                    <li>Devoluciones.</li>
+                                    <li>Anular Salida.</li>
+                                    <li>Anular Entrega.</li>
+                                </ul>
+                            </div>
 
                         </div>
                     </div>
@@ -412,47 +424,48 @@
                             <h3 class="tile-title">Abreviaciones</h3>
 
 
-                            <p class="text">Bodega: es el espacio fisico en donde se ejecuta la transacción, almacenamiento y movimiento de materiales etc.</p>
+                            <p class="text"><b>Bodega:</b> es el espacio fisico en donde se ejecuta la transacción, almacenamiento y movimiento de materiales etc.</p>
 
 
-                            <p class="text">Almacén: agrupación de bodegas reunión de esas bodegas.</p>
-
-
-
-                            <p class="text">Stock: existencia actualmente de un material en la bodega o en poder del técnico, es decir cuánto tiene actualmente ese técnico o cuanto hay en bodega.</p>
+                            <p class="text"><b>Almacén:</b> agrupación de bodegas reunión de esas bodegas.</p>
 
 
 
-                            <p class="text">CT: sigla para representar el suministro de materiales del cliente todo lo que compra el cliente va en marcado con CT, inventario en custodia.</p>
+                            <p class="text"><b>Stock:</b> existencia actualmente de un material en la bodega o en poder del técnico, es decir cuánto tiene actualmente ese técnico o cuanto hay en bodega.</p>
 
 
 
-                            <p class="text">EECC: sigla para representar el suministro de materiales de la empresa contratista, el material que compra la empresa el material propio.</p>
+                            <p class="text"><b>CT:</b> sigla para representar el suministro de materiales del cliente todo lo que compra el cliente va en marcado con CT, inventario en custodia.</p>
 
 
 
-                            <p class="text">PEP: presupuesto en el que se encuentra asignado un material.</p>
+                            <p class="text"><b>EECC:</b>sigla para representar el suministro de materiales de la empresa contratista, el material que compra la empresa el material propio.</p>
 
 
 
-                            <p class="text">Área de Operación: análisis en el que se encuentra asignado un material por ejemplo: datos, fibra óptica, planta externa, masivos etc. Es como los clasifica el cliente.</p>
+                            <p class="text"><b>PEP:</b> presupuesto en el que se encuentra asignado un material.</p>
 
 
 
-                            <p class="text">Consumo: material que ha gastado técnicos (cuadrillas, brigadas) van asociado a O/T Y O/S.</p>
+                            <p class="text"><b>Área de Operación:</b> análisis en el que se encuentra asignado un material por ejemplo: datos, fibra óptica, planta externa, masivos etc. Es como los clasifica el cliente.</p>
 
 
 
-                            <p class="text">Bodega terreno: ente virtual que mantienen el stock actual de un técnico, llevar el control de material del técnico que es lo que tiene entregado que no se ha gastado.</p>
+                            <p class="text"><b>Consumo:</b> material que ha gastado técnicos (cuadrillas, brigadas) van asociado a O/T Y O/S.</p>
 
 
 
-                            <p class="text">SISCOS: sistema de información (Software) para el control de inventarios y gestión de órdenes de servicios.<br> Es un software adaptable para la gestión de los inventarios para contratos de Movistar, los módulos de inventarios
+                            <p class="text"><b>Bodega terreno:</b> ente virtual que mantienen el stock actual de un técnico, llevar el control de material del técnico que es lo que tiene entregado que no se ha gastado.</p>
+
+
+
+                            <p class="text"><b>SISCOS:</b> sistema de información (Software) para el control de inventarios y gestión de órdenes de servicios.<br> Es un software adaptable para la gestión de los inventarios para contratos de Movistar, los módulos de inventarios
                                 aplican a Telecomunicaciones.</p>
 
                         </div>
                     </div>
                 </div>
+                <hr>
         </div>
         <!--fin-->
     </div>
@@ -462,6 +475,8 @@
     </main>
     </div>
     <!--fin container-fluid-->
+    <a href="#" class="navigation navigation-prev " aria-label="Previous page"></a>
+    <a href="registrarse.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
@@ -476,7 +491,7 @@
     <script src="js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="js/plugins/pace.min.js"></script>
-     <!--iconos version fontawesome 5.8.1-->
+    <!--iconos version fontawesome 5.8.1-->
     <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
@@ -508,9 +523,10 @@
         }
         // End -->
     </script>
+
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
+<script language=JavaScript>
     function right(e) {
         if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
             alert("Esta pagina es privada.");

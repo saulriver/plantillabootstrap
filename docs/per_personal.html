@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -263,12 +269,14 @@
     <!--container fluid-->
     <div id="agregar" class="container-fluid">
         <!--row flex-->
-          <div class="row flex-lg-nowrap">
+        <div class="row flex-lg-nowrap">
 
-              <!--menu derecho-->
-              <div class="d-none d-lg-block col-sm-2 bd-toc">
-                  <ul class="navbar-nav">
-                    <li class="breadcrumb-item active"><h2>Funcionalidades</h2></li>&nbsp;
+            <!--menu derecho-->
+            <div class="d-none d-lg-block col-sm-2 bd-toc">
+                <ul class="navbar-nav">
+                    <li class="breadcrumb-item active">
+                        <h2>Funcionalidades</h2>
+                    </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#agregar" onclick="myFunction()">
                         Agregar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#buscarfoto" onclick="myFunction()">
@@ -283,321 +291,239 @@
                         Buscar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
-                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" 
-                        style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" style="color:white; background-color:rgb(0, 112, 101);" href="#video" onclick="myFunction()">
                         Ver video</a></li>
-                  </ul>
-                </div>
-                <!--fin menu derecho-->
+                </ul>
+            </div>
+            <!--fin menu derecho-->
 
-                <!--main-->
-                <main class="app-content" role="main">
+            <!--main-->
+            <main class="app-content" role="main">
 
-                    <div class="app-title">
-                        <div>
-                          <h1><i class="fa fa-file-text"></i>Personal</h1>
-                          <p>Funcionalidades del módulo personal en SISCOS</p>
-                        </div>
-                        <div class="bs-component">
+                <div class="app-title">
+                    <div>
+                        <h1><i class="fa fa-file-text"></i>Personal</h1>
+                        <p>Funcionalidades del módulo personal en SISCOS</p>
+                    </div>
+                    <div class="bs-component">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                          <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Personal</li>
-                          <li class="breadcrumb-item"><a href="per_cargos.html">Cargos</a></li>
+                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Personal</li>
+                            <li class="breadcrumb-item"><a href="per_cargos.html">Cargos</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
                         </ol>
-                        </div>
-                      </div>
+                    </div>
+                </div>
 
-    <div class="row">
-        <!--agregar-->
-        <div class="col-md-12">
-          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                    <h3 class="tile-title"> Agregar</h3>
-                    <br><br>
-                    <!--mensaje-->
-                    <div class="row">
-                        <div class="col-lg-12" style="margin-top:-34px">
-                          <div class="bs-component">
-                            
-                                  Se encuentra ubicado en la barra vertical
-                                  lado izquierdo, esta función permite al usuario
-                                  agregar un nuevo registro personal solicitando
-                                  unos campos requeridos u obligatorios.
-                               
-                          </div>
-                        </div>
-                        </div><!--fin mensaje-->
-                        <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/agregar personal.png" style="width:70%;" class="w3-animate-zoom rounded">
+                <div class="row">
+                    <!--agregar-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Agregar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical lado izquierdo, esta función permite al usuario agregar un nuevo registro personal solicitando unos campos requeridos u obligatorios.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                            <img src="imagenes/agregar personal.png" style="width:100%;" class="w3-animate-zoom rounded">
                           </span>
-                      </div>
-                      </div>
-                </div><!--fin agregar-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin agregar-->
 
-                  <!--buscar foto-->
-                  <div id="buscarfoto" class="col-md-12">
-                    <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                              <h3 class="tile-title">Buscar foto</h3>
-                              <br><br>
-                              <!--mensaje-->
-                              <div class="row">
-                                  <div class="col-lg-12" style="margin-top:-34px">
-                                    <div class="bs-component">
-                                      
-                                            Permite al usuario por dato personal
-                                            cualquier información para su identificación,
-                                            en este caso en el sistema SISCOS, 
-                                            se puede buscar la foto que desea poner
-                                            en su perfil como dato personal. 
-                                        
-                                    </div>
-                                  </div>
-                                  </div><!--fin mensaje-->
-                                  <div class="w3-container w3-center">
-                                    <span>
+                    <!--buscar foto-->
+                    <div id="buscarfoto" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Buscar foto</h3>
+                            <div class="bs-component">
+                                Permite al usuario por dato personal cualquier información para su identificación, en este caso en el sistema SISCOS, se puede buscar la foto que desea poner en su perfil como dato personal.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                                     <img src="imagenes/buscar foto.png" style="width:70%;" class="w3-animate-zoom rounded">
                                     </span>
-                                  </div>
-                              </div>
-                          </div><!--fin buscar foto-->
-
-                          <!--eliminar foto-->
-                  <div id="eliminarfoto" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                                <h3 class="tile-title"> Eliminar foto</h3>
-                                <br><br>
-                                <!--mensaje-->
-                                <div class="row">
-                                    <div class="col-lg-12" style="margin-top:-34px">
-                                      <div class="bs-component">
-                                        
-                                              Hacemos clic en el botón eliminar foto y
-                                              automáticamente se elimina la imagen que
-                                              se le había asignado a la persona. 
-                                          
-                                      </div>
-                                    </div>
-                                    </div><!--fin mensaje-->
-                                    <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/eliminar foto.png" style="width:70%" class="w3-animate-zoom rounded">
-                                      </span>
-                                  </div>
-                                </div>
-                            </div><!--fin eliminar foto-->
-
-                            <!--modificar-->
-            <div id="modificar" class="col-md-12">
-                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> Modificar</h3>
-                        <br><br>
-                        <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                
-                                      Se encuentra ubicado en la barra vertical
-                                      superior lado izquierdo, está permite hacer
-                                      cambios en registros existentes, para poder
-                                      utilizar este 
-                                      botón debemos dar clic en el
-                                      botón nuevo para que se habilite el modificar
-                                      damos clic  sobre él ingresamos el campo cédula
-                                      de la persona  y
-                                      nos presentara una ventana con
-                                      toda la información registrada  y
-                                      luego seleccionamos  que campo se desea
-                                      modificar. 
-                                   
-                              </div>
                             </div>
-                            </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/modificar personal.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                  </div>
-                </div><!--fin modificar-->
-
-                <!--eliminar-->
-            <div id="eliminar" class="col-md-12">
-                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> Eliminar</h3>
-                        <br><br>
-                      <!--mensaje de alerta-->
-                  <div class="col-lg-10"  style="margin-top:-34px">
-                    <div class="bs-component">
-                      Nota: en el sistema de información SISCOS
-                          no se puede Eliminar  personal  debido
-                          a que el personal va asociado con un
-                          Departamento y cargo;
-                          El personal  presenta 
-                          movimientos y está Activo 
-                          existen registros
-                          por lo tanto no se puede
-                          eliminar porque si se quiere
-                          hacer nos saldría un mensaje de error.
-                        
-                        </div><!--fin mensaje de alerta-->
-                        <br><br>
-                        <div class="w3-container w3-center">
-                          <span>
-                            <img src="imagenes/cancelar proveedor.png" style="width:80%;" class="w3-animate-zoom rounded">
-                          </span>
                         </div>
-                        <br><br><br>
-                        <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                
-                                      En el sistema de información SISCOS
-                                      no se puede Eliminar  personal  debido
-                                      a que el personal va asociado con un
-                                      Departamento y cargo;
-                                      El personal  presenta 
-                                      movimientos y está Activo 
-                                      existen registros
-                                      por lo tanto no se puede
-                                      eliminar porque si se quiere
-                                      hacer nos saldría un mensaje de error.
-                                      <br><br>
-                                          Observación: que el personal que deseen eliminar 
-                                          o que no realice movimientos esta la opción de activo/inactivo, 
-                                          Activo para que realice e Inactivo que no.
-                                      
-                                </div>
-                              </div>
-                            </div>
-                            </div><!--fin mensaje-->
-                  </div>
-                </div><!--fin eliminar-->
-
-                <!--buscar-->
-            <div id="buscar" class="col-md-12">
-                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> Buscar</h3>
-                        <br><br>
-                        <!--mensaje-->
-                        <div class="row">
-                            <div class="col-lg-12" style="margin-top:-34px">
-                              <div class="bs-component">
-                                
-                                      Se encuentra ubicado en la barra
-                                      vertical superior. Este permite
-                                      al usuario realizar una búsqueda
-                                      por el parámetro ( % )criterio de busqueda
-                                      que  muestra todo el personal registrado
-                                      en el sistema SISCOS.
-                                  
-                              </div>
-                            </div>
-                            </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/buscar personal.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
                     </div>
-                  </div>
-                </div><!--fin buscar-->
+                    <!--fin buscar foto-->
+
+                    <!--eliminar foto-->
+                    <div id="eliminarfoto" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Eliminar foto</h3>
+                            <div class="bs-component">
+                                Hacemos clic en el botón eliminar foto y automáticamente se elimina la imagen que se le había asignado a la persona.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/eliminar foto.png" style="width:100%" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar foto-->
+
+                    <!--modificar-->
+                    <div id="modificar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Modificar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, está permite hacer cambios en registros existentes, para poder utilizar este botón debemos dar clic en el botón nuevo para que se habilite el modificar damos clic sobre él ingresamos el
+                                campo cédula de la persona y nos presentara una ventana con toda la información registrada y luego seleccionamos que campo se desea modificar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                        <img src="imagenes/modificar personal.png" style="width:100%;" class="w3-animate-zoom rounded">
+                      </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin modificar-->
+
+                    <!--eliminar-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Eliminar</h3>
+                            <div class="bs-component">
+                                <b>Nota: en el sistema de información SISCOS no se puede Eliminar personal debido a que el personal va asociado con un Departamento y cargo; El personal presenta movimientos y está Activo existen registros por lo tanto no se puede eliminar porque si se quiere
+                                    hacer nos saldría un mensaje de error.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                            <img src="imagenes/cancelar proveedor.png" style="width:100%;" class="w3-animate-zoom rounded">
+                          </span>
+                            </div>
+                            <div class="bs-component">
+                                En el sistema de información SISCOS no se puede Eliminar personal debido a que el personal va asociado con un Departamento y cargo; El personal presenta movimientos y está Activo existen registros por lo tanto no se puede eliminar porque si se quiere
+                                hacer nos saldría un mensaje de error.
+                                <br>Observación: que el personal que deseen eliminar o que no realice movimientos esta la opción de activo / inactivo, Activo para que realice e Inactivo que no.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar-->
+
+                    <!--buscar-->
+                    <div id="buscar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Buscar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior. Este permite al usuario realizar una búsqueda por el parámetro ( % )criterio de busqueda que muestra todo el personal registrado en el sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/buscar personal.png" style="width:100%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar-->
 
                     <!--salir-->
                     <div id="salir" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                            <a href="#Salir"></a>
-                                  <h3 class="tile-title">Salir</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          
-                                                Se encuentra ubicado en la barra
-                                                horizontal superior, está permite salir
-                                                del Módulo Personal.
-                                           
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/salir per.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin salir deptos-->
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, está permite salir del Módulo Personal.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/salir per.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir deptos-->
+
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="875" height="405" src="https://www.youtube.com/embed/YTHbGVy0g0k"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                        <iframe class="embed-responsive-item" width="875" height="405" src="https://www.youtube.com/embed/YTHbGVy0g0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                       </iframe>
-                      </div><!--fin video-->
-                                   
-              </main>
-            </div><!--fin row-->
-          </div><!--fin row flex--> 
-            </div><!--fin container fluid-->
+                    </div>
+                    <!--fin video-->
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-  <!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="per_util_importar_personal.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="per_cargos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

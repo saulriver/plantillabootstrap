@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -303,234 +309,222 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
                             <li class="breadcrumb-item"><a href="confi_tipo_peticion.html">Tipo Petición</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--Guardar-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <a href="#Guardar"></a>
-                      <h3 class="tile-title"> Guardar</h3>
-                      <br><br>
-                      
-                                   Se encuentra ubicado en la barra vertical superior lado derecho, 
-                                   permite al usuario dar clic sobre el botón y guardar la  información
-                                   ingresada como un nuevo registro.
-                               
-                          <div class="w3-container w3-center">
-                              <span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Guardar-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Guardar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario dar clic sobre el botón y guardar la información ingresada como un nuevo registro.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/guardar tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
+                            </div>
                         </div>
-                        </div>
-                  </div><!--fin Guardar-->
+                    </div>
+                    <!--fin Guardar-->
 
                     <!--Modificar-->
                     <div id="Modificar" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                          <a href="#Modificar"></a>
-                                <h3 class="tile-title">Modificar</h3>
-                                <br><br>
-                               
-                                              El usuario primero debe ubicarse en el boton buscar e ingresar el criterio de 
-                                              búsqueda de todos los tipos de reparciÓn registrados en el sistema SISCOS, seguidamente
-                                              seleccionada el registro y escoge el campo que desea editar e ingresa la nueva información 
-                                              y luego le da clic al botón guardar y automáticamente se actualiza la información en la base
-                                              de datos del sistema SISCOS.
-                                          
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/tercera reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin modificar-->
-
-          <!--eliminar tipo reparación-->
-          <div id="Eliminar" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#Eliminar"></a>
-                        <h3 class="tile-title">Eliminar</h3>
-                        <br><br>
-                      Nota:no se puede eliminar si ese registro seleccionado 
-                        (Tipo reparación) tiene movimientos al querer hacerlo
-                         muestra mensaje de error.
-                         
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/eliminar reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component">
+                                El usuario primero debe ubicarse en el boton buscar e ingresar el criterio de búsqueda de todos los tipos de reparciÓn registrados en el sistema SISCOS, seguidamente seleccionada el registro y escoge el campo que desea editar e ingresa la nueva información
+                                y luego le da clic al botón guardar y automáticamente se actualiza la información en la base de datos del sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                            <img src="imagenes/tercera reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                        </div>
                     </div>
-                  <br>
-                      
-                                      Se encuentra ubicado en la barra horizontal superior, permite al 
-                                      usuario eliminar tipo de reparación del listado de materiales a reparar 
-                                      que el usuario no crea conveniente o que no existan movimientos porque
-                                      de lo contrario no permite eliminar un tipo de reparación.
-                                      Para que este botón se encuentre activo primero hay que hacer una 
-                                      búsqueda y seleccionar el material que se va a eliminar.
-                                 
-                      
-                    </div><!--fin eliminar tipo reparación-->
+                    <!--fin modificar-->
 
-                     <!--Importar archivo-->
-                     <div id="Importar" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                          <a href="#Importar"></a>
-                                <h3 class="tile-title">Importar</h3>
-                                <br><br>
-                                
-                                              Se encuentra ubicado en la barra horizontal superior lado izquierdo,
-                                              permite al usuario hacer el proceso más rápido de importar un archivo con las columnas
-                                              requeridas y en formato de texto delimitado por tabulaciones al sistema y no estar
-                                              ingresando de uno a uno los materiales a reparar.
-                                       
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/importar tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin Importar archivo-->
+                    <!--eliminar tipo reparación-->
+                    <div id="Eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                <b>Nota:no se puede eliminar si ese registro seleccionado (Tipo reparación) tiene movimientos al querer hacerlo muestra mensaje de error.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/eliminar reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar tipo de reparación del listado de materiales a reparar que el usuario no crea conveniente o que no existan movimientos porque de lo contrario no permite eliminar un tipo
+                                de reparación. Para que este botón se encuentre activo primero hay que hacer una búsqueda y seleccionar el material que se va a eliminar.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar tipo reparación-->
 
+                    <!--Importar archivo-->
+                    <div id="Importar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Importar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario hacer el proceso más rápido de importar un archivo con las columnas requeridas y en formato de texto delimitado por tabulaciones al sistema y no estar ingresando de
+                                uno a uno los materiales a reparar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/importar tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin Importar archivo-->
 
-                            <!--Activar desactivar masivo-->
-                     <div id="Acde" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                          <a href="#Acde"></a>
-                                <h3 class="tile-title">Activar Desactivar masivo</h3>
-                                <br><br>
-                                
-                                              Se encuentra ubicado en la barra horizontal superior lado derecho, 
-                                              permite al usuario cargar un archivo para activar o desactivar masivos luego dar clic en
-                                              <br>
-                                              el botón procesar archivo que se encuentra en la parte de abajo
-                                              hacemos clic y muestra resultados de registros cargados y las demás 
-                                              opciones requeridas durante el proceso de carga.
-                                           
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/acde.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin activar desdactivar masivo-->
-                  
-                  <!--Buscar-->
-                     <div id="Buscar" class="col-md-12">
-                      <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                          <a href="#Buscar"></a>
-                                <h3 class="tile-title">Buscar</h3>
-                                <br><br>
-                                
-                                              Se encuentra ubicado en la barra horizontal superior lado izquierdo,
-                                              permite al usuario cuando se da clic en el botón nuevo es que este botón 
-                                              se encuentra activo para hacer una búsqueda con los criterios
-                                              <br>
-                                              ya sea por código o descripción (%) es para que muestre todos los materiales
-                                              registrados a reparar y seleccionar el que se desea utilizar.
-                                          
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/buscar tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin Buscar-->
+                    <!--Activar desactivar masivo-->
+                    <div id="Acde" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Activar Desactivar masivo</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado derecho, permite al usuario cargar un archivo para activar o desactivar masivos luego dar clic en el botón procesar archivo que se encuentra en la parte de abajo hacemos clic y muestra resultados
+                                de registros cargados y las demás opciones requeridas durante el proceso de carga.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/acde.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin activar desdactivar masivo-->
 
-                      <!--salir-->
-                      <div id="Salir" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                              <a href="#Salir"></a>
-                                    <h3 class="tile-title">Salir</h3>
-                                    <br><br>
-                                    
-                                                  Existen 2 maneras de salir del módulo Tipo reparación la primera Se 
-                                                  encuentra ubicado en la barra horizontal superior lado izquierdo y la 
-                                                  segunda se encuentra ubicado
-                                                
-                                                  en la la barra vertical superior lado derecho, estas 2 formas 
-                                                  permiten  salir del Módulo Registro de Bodegas.
-                                                
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/salir tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin-->
+                    <!--Buscar-->
+                    <div id="Buscar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Buscar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario cuando se da clic en el botón nuevo es que este botón se encuentra activo para hacer una búsqueda con los criterios ya sea por código o descripción (%) es para que
+                                muestre todos los materiales registrados a reparar y seleccionar el que se desea utilizar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/buscar tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin Buscar-->
 
-                        <!--video-->
-                        <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                            <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/FK3iHEa8cj8"
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+                    <!--salir-->
+                    <div id="Salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Existen 2 maneras de salir del módulo Tipo reparación la primera Se encuentra ubicado en la barra horizontal superior lado izquierdo y la segunda se encuentra ubicado en la la barra vertical superior lado derecho, estas 2 formas permiten salir del Módulo
+                                Registro de Bodegas.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/salir tipo reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/FK3iHEa8cj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                           </iframe>
-                          </div><!--fin video-->
-                      </div><!--fin row-->
-                    </div><!--fin row flex-->               
-                  </main>
-                </div><!--fin row flex-->
-              </div><!--fin container fluid-->
+                    </div>
+                    <!--fin video-->
+                </div>
+                <!--fin row -->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="confi_gene_localidades.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_tipo_peticion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-  <!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

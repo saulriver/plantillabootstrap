@@ -309,6 +309,15 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>General</li>
                             <li class="breadcrumb-item"><a href="confi_gene_localidades.html">Localidades</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
                         </ol>
                     </div>
                 </div>
@@ -316,16 +325,13 @@
                     <!--agregar deptos-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px">
-
                             <h3 class="tile-title">Agregar</h3>
-                            <br><br> Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario agregar un nuevo departamento al sistema de información SISCOS.<br><br> Después de llenar los campos con datos
-                            del departamento se debe dar clic en el botón Agregar tener en cuenta antes de dar clic en el botón, seleccionar que el departamento se encuentre activo para que así sea mejor la configuración y más adelante no se presente
-                            problemas al momento de querer generar informes.
-
-                            <br><br> Cuando no se selecciona que el departamento está activo el departamento aparecerá sombreado de color blanco y sin chulito, en el cuadro haciendo saber al usuario la diferencia de su estado si se encuentra activo o
-                            no.
-
-
+                            <div class="bs-component">
+                                Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario agregar un nuevo departamento al sistema de información SISCOS.<br><br> Después de llenar los campos con datos del departamento
+                                se debe dar clic en el botón Agregar tener en cuenta antes de dar clic en el botón, seleccionar que el departamento se encuentre activo para que así sea mejor la configuración y más adelante no se presente problemas al
+                                momento de querer generar informes. Cuando no se selecciona que el departamento está activo el departamento aparecerá sombreado de color blanco y sin chulito, en el cuadro haciendo saber al usuario la diferencia de su estado
+                                si se encuentra activo o no.
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
                               <img src="imagenes/Agregar D.png" style="width:70%;" class="w3-animate-zoom rounded">
@@ -338,65 +344,63 @@
                     <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
-                            <br><br>
-
-                            <strong>Nota:
+                            <div class="bs-component">
+                                <strong>Nota:
                             
                         en el sistema de información SISCOS no se debe 
                         eliminar departamento debido a que localidad va asociado con departamento, 
                         la localidad pertenece a departamento. Entonces no 
                         se permite eliminar si ya se encuentran registros de localidades.
-                    
                         </strong>
-
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
                         <img src="imagenes/eliminar departamento.png" style="width:70%;" class="w3-animate-zoom rounded">
                       </span>
                             </div>
-                            <br><br><br> Se encuentra ubicado en la barra horizontal lado izquierdo, el usuario para eliminar Departamento es que no existan movimientos o registros a ese Departamento de lo contrario mostrará mensaje de informacion error
-                            que no se puede eliminar.
-
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal lado izquierdo, el usuario para eliminar Departamento es que no existan movimientos o registros a ese Departamento de lo contrario mostrará mensaje de informacion error que no se puede eliminar.
+                            </div>
                         </div>
                     </div>
                     <!--fin eliminar deptos-->
                     <!--habilitar deshabilitar-->
                     <div id="habidesa" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-
                             <h3 class="tile-title">Habilitar/Deshabilitar todos</h3>
-                            <br><br> Estás funcionalidades se encuentran ubicado en la barra horizontal del lado izquierdo son funciones que le permiten habilitar todos los campo o viceversa. Para habilitar solo un campo (Departamento) seleccionas el
-                            campo le das clic y luego le damos clic en el botón guardar cambios este botón es muy importante para toda modificación que se haga, seguidamente dar clic sobre el para que guarde los cambios asignados.
-
+                            <div class="bs-component">
+                                Estás funcionalidades se encuentran ubicado en la barra horizontal del lado izquierdo son funciones que le permiten habilitar todos los campo o viceversa. Para habilitar solo un campo (Departamento) seleccionas el campo le das clic y luego le damos clic
+                                en el botón guardar cambios este botón es muy importante para toda modificación que se haga, seguidamente dar clic sobre el para que guarde los cambios asignados.
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
-                                        <img src="imagenes/habideshabi.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
+                                <img src="imagenes/habideshabi.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
                             </div>
-
-                            El botón que contiene el signo
-                            <button class="btn btn-info">
-                                              +
-                                              </button> es el de Habilitar todos los departamentos.
-                            <br><br> El botón que contiene el signo
-                            <button class="btn btn-info">
-                                              -
-                                              </button> es el Deshabilitar todos los departamentos.
-
+                            <div class="bs-component">
+                                El botón que contiene el signo
+                                <button class="btn btn-info">
+                            +
+                            </button> es el de Habilitar todos los departamentos.
+                                <br><br> El botón que contiene el signo
+                                <button class="btn btn-info">
+                            -
+                            </button> es el Deshabilitar todos los departamentos.
+                            </div>
                         </div>
                         <!--fin habilitar deshabilitar-->
                         <!--guardar cambios-->
                         <div id="guardar" class="col-md-12">
                             <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-
                                 <h3 class="tile-title">Guardar cambios</h3>
-                                <br><br> Se encuentra ubicado en la barra horizontal lado izquierdo, este botón permite guardar todos los cambios que se deseen realizar durante el proceso. <br>Le damos clic en el botón guardar cambios después de haber
-                                hecho una modificación al registro.
-
+                                <div class="bs-component">
+                                    Se encuentra ubicado en la barra horizontal lado izquierdo, este botón permite guardar todos los cambios que se deseen realizar durante el proceso. <br>Le damos clic en el botón guardar cambios después de haber hecho
+                                    una modificación al registro.
+                                </div>
                                 <div class="w3-container w3-center">
                                     <span>
-                                          <img src="imagenes/guardar cambios D.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
+                                    <img src="imagenes/guardar cambios D.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -404,17 +408,18 @@
                         <!--salir-->
                         <div id="salir" class="col-md-12">
                             <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-
                                 <h3 class="tile-title">Salir</h3>
-                                <br><br> Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario salir del módulo Departamento, le damos clic en el botón salir.
-
+                                <div class="bs-component">
+                                    Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario salir del módulo Departamento, le damos clic en el botón salir.
+                                </div>
                                 <div class="w3-container w3-center">
                                     <span>
-                                          <img src="imagenes/Salir D1.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
+                                    <img src="imagenes/Salir D1.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                    </span>
                                 </div>
                             </div>
                         </div>
+                        <hr>
                         <!--fin salir deptos-->
                         <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
                             <iframe class="embed-responsive-item" width="1349" height="480" src="https://www.youtube.com/embed/kqDWkmDCT2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media;
@@ -422,61 +427,62 @@
                         </iframe>
                         </div>
                     </div>
-                </div>
-                <!--fin row flex-->
+                    <!--fin row flex-->
             </main>
+            </div>
         </div>
-    </div>
-    <!--fin container fluid-->
+        <!--fin container fluid-->
+        <a href="opciones.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+        <a href="confi_gene_localidades.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
 
-    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
-    </script>
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
-    <!-- Page specific javascripts-->
-    <script type="text/javascript" src="js/plugins/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script>
-        $('.bs-component [data-toggle="popover"]').popover();
-        $('.bs-component [data-toggle="tooltip"]').tooltip();
-    </script>
-    <!--scrooll efecto smooth para el id-->
-    <script>
-        function myFunction() {
-            document.documentElement.style.scrollBehavior = "smooth";
-        }
-    </script>
-    <!--impedir que copien el codigo de la pagina-->
-    <script language="Javascript">
-        function disableselect(e) {
-            return false
-        }
+        <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+        <!-- Essential javascripts for application to work-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- The javascript plugin to display page loading on top-->
+        <script src="js/plugins/pace.min.js"></script>
+        <!--iconos version fontawesome 5.8.1-->
+        <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+        <!-- Page specific javascripts-->
+        <script type="text/javascript" src="js/plugins/chart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Page specific javascripts-->
+        <script>
+            $('.bs-component [data-toggle="popover"]').popover();
+            $('.bs-component [data-toggle="tooltip"]').tooltip();
+        </script>
+        <!--scrooll efecto smooth para el id-->
+        <script>
+            function myFunction() {
+                document.documentElement.style.scrollBehavior = "smooth";
+            }
+        </script>
+        <!--impedir que copien el codigo de la pagina-->
+        <script language="Javascript">
+            function disableselect(e) {
+                return false
+            }
 
-        function reEnable() {
-            return true
-        }
-        document.onselectstart = new Function("return false")
-        if (window.sidebar) {
-            document.onmousedown = disableselect
-            document.onclick = reEnable
-        }
-        // End -->
-    </script>
+            function reEnable() {
+                return true
+            }
+            document.onselectstart = new Function("return false")
+            if (window.sidebar) {
+                document.onmousedown = disableselect
+                document.onclick = reEnable
+            }
+            // End -->
+        </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
+<script language=JavaScript>
     function right(e) {
         if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
             alert("Esta pagina es privada.");

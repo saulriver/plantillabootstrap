@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -304,242 +310,171 @@
                             <li class="breadcrumb-item active">Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Registro</li>
                             <li class="breadcrumb-item"><a href="inv_proveedores.html">Proveedores</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--agregar mercancia-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Agregar</h3>
-                  <br><br>
-                      <!--mensaje-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                              
-                                    Este se encuentra ubicado en la barra vertical superior
-                                    (lado izquierdo) permite guardar los registros nuevos.
-                                    Le damos clic en el botón Grabar para que se aplique el
-                                    nuevo registro al sistema SISCOS.                                               
-                                
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
                             </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                          <div class="w3-container w3-center">
-                              <span>
-                              <img src="imagenes/agregarmaterial.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                        </div>
-                        </div>
-                  </div><!--fin agregar mercancia-->
-
-
- <!--modificar mercancia-->
- <div id="modificar" class="col-md-12">
-  <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-      <h3 class="tile-title">Modificar</h3>
-        <br><br>
-            <!--mensaje-->
-            <div class="row">
-                <div class="col-lg-12" style="margin-top:-34px">
-                  <div class="bs-component">
-                    
-                    Se encuentra ubicado en la barra vertical superior
-                    (lado izquierdo). Está permite hacer cambios en registros
-                    existentes, para poder utilizar este botón debemos dar
-                    clic sobre él y luego ingresar el código del material para
-                    que nos arroje toda la información acerca de ese código y
-                    que campo se desea modificar.Clic en el botón  Modificar.
-                    <br><br>
-                    Seguidamente le damos clic en el botón  Guardar para que guarde los nuevos cambios a el
-                    material seleccionado.para finalizar los cambios aplicados
-                    correctamente.Damos clic en Aceptar
-                      
-                  </div>
+                        </ol>
+                    </div>
                 </div>
-                </div><!--fin mensaje-->
-                <div class="w3-container w3-center">
-                    <span>
-                    <img src="imagenes/modificarmaterial.png" style="width:70%;" class="w3-animate-zoom rounded">
-                  </span>
-              </div>
-              </div>
-        </div><!--fin modificar mercancia mercancia-->
 
-          <!--eliminar mercancia-->
-          <div id="eliminar" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-              <h3 class="tile-title">Eliminar</h3>
-                <br><br>
-                    <!--mensaje de alerta-->
-                <div class="col-lg-8"  style="margin-top:-34px">
-                  <div class="bs-component">
-                    Nota:
-                        
-                      En el sistema de información SISCOS  no se puede
-                       material debido a que el Material va asociado
-                      con un Tipo de Material, Clasificación, Marca y Modelo.
-                    
-                      </div>
-                      </div><!--fin mensaje de alerta-->
-                    <div class="w3-container w3-center">
-                    <span>
-                      <img src="imagenes/eliminarmaterial.png" style="width:70%;" class="w3-animate-zoom rounded">
-                    </span>
-                  </div>
-                <br><br>
-                    <!--mensaje-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
+                <div class="row">
+
+                    <!--agregar mercancia-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Agregar</h3>
                             <div class="bs-component">
-                              
-                                    El material presenta movimientos y está Activo  existen
-                                    registros por lo tanto no se puede eliminar porque si se
-                                    quiere hacer nos saldría un mensaje de error como se mostrará
-                                    a continuación.
-                                    
-                                        No se elimina el material, la otra opción es que el
-                                        usuario le quite el chulito y este ya  inactivo. 
-                                   
-                              </div>
+                                Este se encuentra ubicado en la barra vertical superior ( lado izquierdo ) permite guardar los registros nuevos. Le damos clic en el botón Grabar para que se aplique el nuevo registro al sistema SISCOS.
                             </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                      </div>
-                  </div><!--fin eliminar mercancia-->
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/agregarmaterial.png" style="width:100%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin agregar mercancia-->
 
-  <!--consultar mercancia-->
- <div id="consultar" class="col-md-12">
-  <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-      <h3 class="tile-title">Consultar</h3>
-        <br><br>
-            <!--mensaje-->
-            <div class="row">
-                <div class="col-lg-12" style="margin-top:-34px">
-                  <div class="bs-component">
-                    Se encuentra ubicado en la barra vertical superior.
-                    Éste permite al usuario realizar una búsqueda por los
-                    parámetros de Código, Descripción, Cod.SAP, Descripción.
-                    SAP  y Tipo Material.Le damos clic en el botón Buscar
-                    y nos mostrará una ventana donde nos solicita escoger porque parámetro de
-                    búsqueda deseas buscar y el criterio, en criterio esta la
-                    opción de ingresar para saber todos los materiales es con ( % ).
-                    <br><br>
-                    Existen otras opciones de búsqueda como:
-                    <br>
-                    <li>%  (todos los registros existentes).</li>
-                    <li>%Cable%  (Busca todos los que se llamen cable).</li>
-                    <li>Cable%  (Busca los que empiezan con cable).</li>
-                  </div>
+                    <!--modificar mercancia-->
+                    <div id="modificar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior ( lado izquierdo ). Está permite hacer cambios en registros existentes, para poder utilizar este botón debemos dar clic sobre él y luego ingresar el código del material para que nos arroje toda la información
+                                acerca de ese código y que campo se desea modificar.Clic en el botón Modificar. Seguidamente le damos clic en el botón Guardar para que guarde los nuevos cambios a el material seleccionado.para finalizar los cambios aplicados
+                                correctamente.Damos clic en Aceptar
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/modificarmaterial.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin modificar mercancia mercancia-->
+
+                    <!--eliminar mercancia-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                <b>Nota: En el sistema de información SISCOS no se puede material debido a que el Material va asociado con un Tipo de Material, Clasificación, Marca y Modelo.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/eliminarmaterial.png" style="width:100%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                            <div class="bs-component">
+                                El material presenta movimientos y está Activo existen registros por lo tanto no se puede eliminar porque si se quiere hacer nos saldría un mensaje de error como se mostrará a continuación. No se elimina el material, la otra opción es que el usuario le
+                                quite el chulito y este ya inactivo.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar mercancia-->
+
+                    <!--consultar mercancia-->
+                    <div id="consultar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Consultar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior. Éste permite al usuario realizar una búsqueda por los parámetros de Código, Descripción, Cod.SAP, Descripción. SAP y Tipo Material.Le damos clic en el botón Buscar y nos mostrará una ventana donde nos
+                                solicita escoger porque parámetro de búsqueda deseas buscar y el criterio, en criterio esta la opción de ingresar para saber todos los materiales es con ( % ). Existen otras opciones de búsqueda como:
+                                <ul>
+                                    <li> % ( todos los registros existentes ).</li>
+                                    <li> %Cable% ( Busca todos los que se llamen cable ).</li>
+                                    <li> Cable% ( Busca los que empiezan con cable).</li>
+                                </ul>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/buscar mercancia.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin consultar mercancia mercancia-->
+
+                    <!--documentos mercancia-->
+                    <div id="documentos" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Documentos</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior. Está función permite al usuario poder agregar Herramientas Documentos, Imágenes para que se le haga a el usuario más fácil tener información en tiempo real dentro de esa ventana de archivos. Documentos
+                                se encuentran las funciones como Eliminar, Abrir y Cancelar el archivo.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/documento mercancia.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin documentos mercancia-->
+
+                    <!--exportar listado mercancia-->
+                    <div id="exportar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Exportar listado de materiales</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder generar un archivo en Excel de todos los materiales registrados en el sistema de información SISCOS. Le damos clic en el botón Exportar Listados de Materiales.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                            <img src="imagenes/exportar listado.png" style="width:100%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin exportar listado mercancia-->
+
+                    <!--salir mercancia-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior, está permite del Módulo Registro Producto Le damos clic sobre el botón, para poder salir del Módulo y finalizar el proceso.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                            <img src="imagenes/salir mercancia.png" style="width:100%;" class="w3-animate-zoom rounded">
+                            </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir marcas-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/2mTQDYKV3Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                         </iframe>
+                    </div>
+                    <!--fin video-->
+
                 </div>
-                </div><!--fin mensaje-->
-                <div class="w3-container w3-center">
-                    <span>
-                    <img src="imagenes/buscar mercancia.png" style="width:70%;" class="w3-animate-zoom rounded">
-                  </span>
-              </div>
-              </div>
-        </div><!--fin consultar mercancia mercancia-->
-       
-                <!--documentos mercancia-->
-          <div id="documentos" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Documentos</h3>
-                  <br><br>
-                      <!--mensaje de alerta-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                              
-                                    Se encuentra ubicado en la barra vertical
-                                    superior. Está función permite al usuario
-                                    poder agregar Herramientas Documentos, Imágenes
-                                    para que se le haga a el usuario más fácil tener 
-                                    información en tiempo real dentro de esa ventana
-                                    de archivos.
-                                    Documentos se encuentran las funciones como Eliminar,
-                                    Abrir y Cancelar el archivo. 
-                                 
-                            </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/documento mercancia.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin documentos mercancia-->
-              <!--exportar listado mercancia-->
-          <div id="exportar" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Exportar listado de materiales</h3>
-                  <br><br>
-                      <!--mensaje de alerta-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                              
-                                    Se encuentra ubicado en la barra horizontal superior,
-                                    esta función permite al usuario poder generar un archivo
-                                    en Excel de todos los materiales registrados en el sistema
-                                    de información SISCOS.<br>
-                                    Le damos clic en el botón Exportar Listados de Materiales.                                      
-                                 
-                            </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/exportar listado.png" style="width:80%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin exportar listado mercancia-->
-              <!--salir mercancia-->
-          <div id="salir" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Salir</h3>
-                  <br><br>
-                      <!--mensaje de alerta-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                              >
-                                    Se encuentra ubicado en la barra vertical superior,
-                                    está permite
-                                    del Módulo Registro Producto
-                                    Le damos clic sobre el botón, para poder salir del Módulo y
-                                    finalizar el proceso.
-                                 
-                            </div>
-                          </div>
-                        </div><!--fin mensaje-->
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/salir mercancia.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin salir marcas-->
-            <!--video-->
-          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-              <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/2mTQDYKV3Xc"
-              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-            </div><!--fin video-->
-                        
-      </main>
-    </div><!--fin row-->
-  </div><!--fin row flex-->
-    </div><!--fin container fluid-->
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_modelos.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_proveedores.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -554,45 +489,46 @@
     <script>
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
-      </script>
-      <!--scrooll efecto smooth para el id-->
-      <script>
-          function myFunction() {
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
             document.documentElement.style.scrollBehavior = "smooth";
-          }
-          </script>
-      <!--impedir que copien el codigo de la pagina-->
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
     <script language="Javascript">
-      function disableselect(e){
-      return false
-      }
-      function reEnable(){
-      return true
-      }
-      document.onselectstart=new Function ("return false")
-      if (window.sidebar){
-      document.onmousedown=disableselect
-      document.onclick=reEnable
-      }
-      // End -->
-      </script>
-   </body>
-   <!--para inhabilitar el boton derecho en la pagina-->
-   <Script language=JavaScript>
-      function right(e) {
-      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      else if (navigator.appName == 'Microsoft Internet Explorer' &&
-      (event.button == 2 || event.button == 3)) {
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      return true;
-      }
-      document.onmousedown=right;
-      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-      window.onmousedown=right;
-      </script> 
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

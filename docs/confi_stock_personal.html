@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -297,203 +303,192 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
                             <li class="breadcrumb-item"><a href="confi_alerta_stock.html">Alerta Stock</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--agregar personal-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 40px">
-                      <h3 class="tile-title">Agregar personal</h3>
-                      <br><br>
-                     
-                                    Se encuentra ubicado en barra horizontal superior lado izquierdo, 
-                                    permite al usuario agregar el personal uno a uno.  
-                                    <br>
-                                    Dar doble clic en la persona y visualizará otra ventana para ingresar
-                                    la información solicitada.          
-                               
-                          <div class="w3-container w3-center">
-                              <span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--agregar personal-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar personal</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en barra horizontal superior lado izquierdo, permite al usuario agregar el personal uno a uno. Dar doble clic en la persona y visualizará otra ventana para ingresar la información solicitada.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/agregar personal stock.png" style="width:80%;" class="w3-animate-zoom rounded">
                             </span>
+                            </div>
                         </div>
-                        </div>
-                  </div><!--fin agregar personal-->
-          <!--archivo-->
-          <div id="archivo" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                        <h3 class="tile-title">Archivo</h3>
-                        <br><br>
-                     Nota:recordar que así se suba este archivo se tiene que validar que 
-                            este configurado el departamento para que tome los stock y este
-                            configurado la bodega para que tome los stock en pedidos o entregas,
-                            porque se puede subir los stock pero si en departamento no está chuleado
-                            no se aplica los stock.
-                            </h5>
-                            </strong>
-                        
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/archivo.png" style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
                     </div>
-                  <br><br>
-                      
-                                      Subir archivo con stock y no estar configurando uno a uno, stock se suben 
-                                      por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock,
-                                      se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica,
-                                      el stock es por bodega si se le aplica a una se le aplica a la otra.
-                                      <br>
-                                      <br>
-                                      Si el usuario va a tener bodega herramienta se deben contar stock máximo de la bodega herramienta
-                                       y por otro lado es consumible stock máximo consumible de esa bodega donde normalmente pide.
-  
-                                      El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a 
-                                      otra hay que mover el stock porque ya no le aplica el stock que tienen en otra parte.
-                                      <br>
-                                      <br>
-                                      LOG-> no es necesario subir esta columna porque esta columna informa si se subió o no el archivo repuesta del módulo. 
-                                      Con este archivo se puede subir el stock máximo de todos los técnicos en la bodega la cual el usuario quiera aplicar 
-                                      ese stock, el archivo plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la
-                                       información necesaria de las columnas.
-                                       <br>
-                                       <br>
-                                     Luego de haber subido el archivo plano se procede hacer los pedidos se ubica en la bodega luego se busca el personal 
-                                     se agrega y se visualiza en el listado.
-  
-                                   
-                        
-                    </div><!--fin archivo-->
+                    <!--fin agregar personal-->
+
+                    <!--archivo-->
+                    <div id="archivo" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Archivo</h3>
+                            <div class="bs-component">
+                                <strong>Nota:recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los stock y este configurado la bodega para que tome los stock en pedidos o entregas, porque se puede
+                                    subir los stock pero si en departamento no está chuleado no se aplica los stock.
+                            </strong>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/archivo.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                            <div class="bs-component">
+                                Subir archivo con stock y no estar configurando uno a uno, stock se suben por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock, se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica, el stock
+                                es por bodega si se le aplica a una se le aplica a la otra. Si el usuario va a tener bodega herramienta se deben contar stock máximo de la bodega herramienta y por otro lado es consumible stock máximo consumible de esa
+                                bodega donde normalmente pide. El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a otra hay que mover el stock porque ya no le aplica el stock que tienen en otra parte. no es necesario subir esta
+                                columna porque esta columna informa si se subió o no el archivo repuesta del módulo. Con este archivo se puede subir el stock máximo de todos los técnicos en la bodega la cual el usuario quiera aplicar ese stock, el archivo
+                                plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la información necesaria de las columnas. Luego de haber subido el archivo plano se procede hacer los pedidos se ubica en la bodega
+                                luego se busca el personal se agrega y se visualiza en el listado.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin archivo-->
+
                     <!--agregar material a lista -->
                     <div id="agregar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">Agregar Material</h3>
-                                  <br><br>
-                                  
-                                     Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite
-                                     al usuario dar clic en el botón agregar control material y nos muestra una ventana solicitando
-                                     la información de un código, descripción, máximo y mínimo. 
-                                     <br>
-                                     Stock máximo de esa persona, y se empiezan agregar materiales esto se aplica para pedidos 
-                                     y entrega. 
+                            <h3 class="tile-title">Agregar Material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario dar clic en el botón agregar control material y nos muestra una ventana solicitando la información de un código, descripción, máximo y mínimo. Stock máximo de esa
+                                persona, y se empiezan agregar materiales esto se aplica para pedidos y entrega.
+                            </div>
 
-                                           
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/agregar a lista.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin agregar material a lista-->
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/agregar a lista.png" style="width:80%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin agregar material a lista-->
+
                     <!--Eliminar personal-->
-                      <div id="eliminar" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                    <h3 class="tile-title">Eliminar personal</h3>
-                                    <br><br>
-                                    
-                                                  Se encuentra ubicado en la barra horizontal superior la do izquierdo
-                                                  permite al usuario eliminar un personal de la lista de control de material.  
-                                                  <br>
-                                                  Al momento de dar clic en  la persona que se desea eliminar mostrará un mensaje 
-                                                  de información que si desea eliminar a la persona seleccionada como se puede observar
-                                                  a continuación. 
-              
-                                            
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/eliminar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin eliminar personal-->
-                      
-                                <!--salir -->
-                                <div id="exit" class="col-md-12">
-                                    <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">Exit</h3>
-                                              <br><br>
-                                              
-                                                        Se encuentra ubicado en la barra horizontal superior lado izquierdo está permite salir
-                                                        del Módulo control stock material  personal.
-                
-                                                       
-                                                  <div class="w3-container w3-center">
-                                                    <span>
-                                                    <img src="imagenes/salir stock.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                                    </span>
-                                                  </div>
-                                              </div>
-                                          </div><!--fin salir-->
-                                      <!--video-->
-                                      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                          <iframe class="embed-responsive-item" width="1280" height="613" src="https://www.youtube.com/embed/Bst-CDnFlOk"
-                                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                          allowfullscreen>
-                                        </iframe>
-                                        </div><!--fin video-->
-                                    </div><!--fin row-->
-                                  </div><!--fin row flex-->               
-                                </main>
-                              </div><!--fin container fluid-->
-                                
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-</script>
-<!--scrooll efecto smooth para el id-->
-<script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar personal</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior la do izquierdo permite al usuario eliminar un personal de la lista de control de material. Al momento de dar clic en la persona que se desea eliminar mostrará un mensaje de información que si desea
+                                eliminar a la persona seleccionada como se puede observar a continuación.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/eliminar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar personal-->
+
+                    <!--salir -->
+                    <div id="exit" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Exit</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo está permite salir del Módulo control stock material personal.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/salir stock.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="613" src="https://www.youtube.com/embed/Bst-CDnFlOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>      
+                        </iframe>
+                    </div>
+                    <!--fin video-->
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="confi_configuracion_stock_pedidos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_alerta_stock.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
-<!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
 <Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Esta pagina es privada.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Esta pagina es privada.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script> 
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

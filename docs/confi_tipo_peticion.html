@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -297,158 +303,165 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
                             <li class="breadcrumb-item"><a href="confi_tipo_de_orden_ot.html">Tipo de orden O/T </a></li>
-                          </ol>
-                          </div>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Grabar-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Grabar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario dar clic sobre el botón luego de haber ingresado la información correspondiente para que se realice el nuevo registro al sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                    <img src="imagenes/grabar tipo peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                  </span>
+                            </div>
                         </div>
-      <div class="row">
-          <!--Grabar-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                      <h3 class="tile-title"> Grabar</h3>
-                      <br><br>
-                      
-                                 Se encuentra ubicado en la barra horizontal superior lado izquierdo, 
-                                 permite al usuario dar clic sobre el botón luego de haber ingresado 
-                                 la información correspondiente para que se realice el nuevo registro al sistema.
-                              
-                          <div class="w3-container w3-center">
-                              <span>
-                              <img src="imagenes/grabar tipo peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                        </div>
-                        </div>
-                  </div><!--fin Grabar-->
+                    </div>
+                    <!--fin Grabar-->
 
                     <!--Modificar-->
                     <div id="Modificar" class="col-md-12">
-                      <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-                                <h3 class="tile-title">Modificar</h3>
-                                <br><br>
-                               
-                                        Para modificar un registro existente el usuario debe ubicarse en el código del registro 
-                                        y dar doble clic y se activan los demás botones como eliminar, cancelar, 
-                                         seguidamente se escoge el campo que va hacer editado y clic en el botón grabar para
-                                        que se guarde los cambios y se actualice la base de datos. 
-                                          
-                                    <div class="w3-container w3-center">
-                                      <span>
-                                      <img src="imagenes/modificar tipo peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
-                                    </div>
-                                </div>
-                            </div><!--fin Modificar-->
-          <!--eliminar tipo petición-->
-          <div id="Eliminar" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                        <h3 class="tile-title">Eliminar</h3>
-                        <br><br>
-                      Nota:no se puede eliminar si ese registro seleccionado 
-                        (Tipo petición) tiene movimientos al querer hacerlo
-                         muestra mensaje de error.
-                         
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/eliminar tipo peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component">
+                                Para modificar un registro existente el usuario debe ubicarse en el código del registro y dar doble clic y se activan los demás botones como eliminar, cancelar, seguidamente se escoge el campo que va hacer editado y clic en el botón grabar para que se
+                                guarde los cambios y se actualice la base de datos.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/modificar tipo peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
                     </div>
-                  <br><br>
-                  <br>
-                      
-                                Se encuentra ubicado en la barra horizontal superior, para que este botón se encuentre activo
-                                se debe haber hecho doble clic  sobre el código del registro, 
-                                permite al usuario eliminar tipo petición  del listado de peticiones registradas en 
-                                 el sistema que el usuario no crea conveniente o que no le existan movimientos.
-                                  
-                        
-                    </div><!--fin eliminar tipo petición-->
-                      <!--salir-->
-                      <div id="Salir" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
-                                    <h3 class="tile-title">Salir</h3>
-                                    <br><br>
-                                    
-                                                  Existen 2 maneras de salir del módulo Tipo petición la primera Se 
-                                                  encuentra ubicado en la barra horizontal superior lado izquierdo y la 
-                                                  segunda se encuentra ubicado 
-                                                  en la la barra vertical superior lado derecho, estas 2 formas 
-                                                  permiten  salir del módulo.
-                                             
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/salir peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin salir deptos-->
-                      <!--video-->
-                      <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                          <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/eugXS0k-e2I"
-                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                          allowfullscreen>
+                    <!--fin Modificar-->
+                    <!--eliminar tipo petición-->
+                    <div id="Eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                <b>Nota:no se puede eliminar si ese registro seleccionado (Tipo petición) tiene movimientos al querer hacerlo muestra mensaje de error.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/eliminar tipo peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, para que este botón se encuentre activo se debe haber hecho doble clic sobre el código del registro, permite al usuario eliminar tipo petición del listado de peticiones registradas en el sistema que
+                                el usuario no crea conveniente o que no le existan movimientos.
+                            </div>
+                        </div>
+                        <!--fin eliminar tipo petición-->
+                        <!--salir-->
+                        <div id="Salir" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                                <h3 class="tile-title">Salir</h3>
+                                <div class="bs-component">
+                                    Existen 2 maneras de salir del módulo Tipo petición la primera Se encuentra ubicado en la barra horizontal superior lado izquierdo y la segunda se encuentra ubicado en la la barra vertical superior lado derecho, estas 2 formas permiten salir del módulo.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span>
+                                  <img src="imagenes/salir peticion.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin salir deptos-->
+                        <hr>
+                        <!--video-->
+                        <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                            <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/eugXS0k-e2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
-                        </div><!--fin video-->
-                    </div><!--fin row-->
-                  </div><!--fin row flex-->             
-                  </main>
-              </div><!--fin container fluid-->
+                        </div>
+                        <!--fin video-->
+                    </div>
+                    <!--fin row-->
+            </main>
+            </div>
+            <!--fin row flex-->
+        </div>
+        <!--fin container fluid-->
+        <a href="confi_tipo_reparacion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+        <a href="confi_tipo_de_orden_ot.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-    $('.bs-component [data-toggle="popover"]').popover();
-    $('.bs-component [data-toggle="tooltip"]').tooltip();
-  </script>
-  <!--scrooll efecto smooth para el id-->
-  <script>
-      function myFunction() {
-        document.documentElement.style.scrollBehavior = "smooth";
-      }
-      </script>
-  <!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-  function disableselect(e){
-  return false
-  }
-  function reEnable(){
-  return true
-  }
-  document.onselectstart=new Function ("return false")
-  if (window.sidebar){
-  document.onmousedown=disableselect
-  document.onclick=reEnable
-  }
-  // End -->
-  </script>
+        <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+        <!-- Essential javascripts for application to work-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- The javascript plugin to display page loading on top-->
+        <script src="js/plugins/pace.min.js"></script>
+        <!--iconos version fontawesome 5.8.1-->
+        <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+        <!-- Page specific javascripts-->
+        <script type="text/javascript" src="js/plugins/chart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Page specific javascripts-->
+        <script>
+            $('.bs-component [data-toggle="popover"]').popover();
+            $('.bs-component [data-toggle="tooltip"]').tooltip();
+        </script>
+
+        <!--scrooll efecto smooth para el id-->
+        <script>
+            function myFunction() {
+                document.documentElement.style.scrollBehavior = "smooth";
+            }
+        </script>
+
+        <!--impedir que copien el codigo de la pagina-->
+        <script language="Javascript">
+            function disableselect(e) {
+                return false
+            }
+
+            function reEnable() {
+                return true
+            }
+            document.onselectstart = new Function("return false")
+            if (window.sidebar) {
+                document.onmousedown = disableselect
+                document.onclick = reEnable
+            }
+            // End -->
+        </script>
+
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-  function right(e) {
-  if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  else if (navigator.appName == 'Microsoft Internet Explorer' &&
-  (event.button == 2 || event.button == 3)) {
-  alert("Esta pagina es privada.");
-  return false;
-  }
-  return true;
-  }
-  document.onmousedown=right;
-  if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-  window.onmousedown=right;
-  </script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

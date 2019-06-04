@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
-  </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+
+</head>
+
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -303,288 +310,222 @@
                             <li class="breadcrumb-item active">Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
                             <li class="breadcrumb-item"><a href="inv_consulta_salidas.html">Consulta salidas</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-
-  <!--Nueva salida-->
-  <div class="col-md-12">
-      <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-          <a href="#nuevasalida"></a>
-                <h3 class="tile-title">Nueva salida</h3>
-                <br><br>
-                <!--mensaje de alerta-->
-                <div class="row">
-                    <div class="col-lg-12" style="margin-top:-34px">
-                      <div class="bs-component">
-                       
-                              Los requisitos previos que debe tener una salida EECC tienen la misma temática que la salida 
-                              de CT y  es que depende de un proveedor (tercero), y una fecha de salida.
-                              El usuario debe tener claro que es lo que va a sacar que depende de la entrada.
-                              Requisitos previos, la salida depende de una entrada (reserva), proveedor (tercero) y un periodo
-                              activo.
-                              Para hacer salidas EECC en la entrada EECC  deben existir devoluciones a un proveedor y ajustes
-                              de inventarios.
-                              <br><br>
-                              Nueva salida: este botón se  encuentra ubicado en la barra vertical superior lado izquierdo, 
-                              permite al usuario
-                              cuando ya tenga toda la información  requerida Para el registro de una salida EECC le
-                              damos clic en el botón nueva salida para que la guarde y se pueda agregar material 
-                              a esta salida y se puedan habilitar los demás botones y poder realizar  el proceso.   
-                            
-                      </div>
-                    </div>
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/nueva salida eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                </div>
-            </div><!--fin nueva salida-->
-
-  <!--Agregar material-->
-  <div id="agregarmaterial" class="col-md-12">
-      <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Agregar material</h3>
-                <br><br>
-                <!--mensaje de alerta-->
-                <div class="row">
-                    <div class="col-lg-12" style="margin-top:-34px">
-                      <div class="bs-component">
-                       
-                            Se encuentra ubicado en la barra horizontal (lado izquierdo), esta función permite
-                            al usuario agregar  material solicitando unos campos requeridos u obligatorios.
-                            Posteriormente le damos clic en el botón agregar material y visualizaremos una ventana
-                            que requiere de unos campos solicitados para agregar el registro.
-                            <br><br>
-                            Donde aparece el botón Nuevo, buscar y salir del proceso, el usuario al dar clic en buscar tiene
-                            las opciones de criterios de búsqueda con él % donde le mostrara todos los materiales registrados 
-                            y escoger el que se necesita se da clic y material agregado.
-                            Tener muy claro que el material que se va agregar debe tener existencia porque de lo contrario no 
-                            dejara hacer el registro para la salida.
-                            <br>
-                            Buscar material cuando se consulte el código en la ventana arrojará  la información de las reservas
-                            y el usuario escoger que reserva de sea sacar, toda salida depende de la entrada.
-                            seguidamente hacemos clic en el código material y automáticamente se pasa a salida mercancía EECC.
-                          
-                      </div>
-                    </div>
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/agregar material eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                </div>
-            </div><!--fin agregar material-->
-                <!--Eliminar material-->
-                      <div id="eliminarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">Eliminar material</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          
-                                              Se encuentra ubicado en la barra horizontal superior, permite al usuario
-                                              eliminar material que no se crea necesario para la carga de salida EECC en el 
-                                              sistema SISCOS.
-                                            
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/eliminar material eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin eliminar material-->
-
-                        <!--cargar arvhivo-->
-                      <div id="cargararchivo" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title">Cargar archivo</h3>
-                                  <br><br>
-                                  <!--mensaje de alerta-->
-                                  <div class="row">
-                                      <div class="col-lg-12" style="margin-top:-34px">
-                                        <div class="bs-component">
-                                          
-                                            Se encuentra ubicado en la barra horizontal superior lado izquierdo y es para agregar seriales.
-                                            Si son poco seriales, nos ubicamos en el botón Buscar serial y nos mostrará una ventana y se empiezan
-                                            a pistolear uno a uno los seriales. 
-                                            
-                                        </div>
-                                      </div>
-                                      </div><!--fin mensaje-->
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/cargar archivo 1 seriales.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin-->
-                        <!--cargar arvhivo materiales-->
-                      <div id="cargararchivomateriales" class="col-md-12">
-                          <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
-                                    <h3 class="tile-title">Cargar archivo materiales</h3>
-                                    <br><br>
-                                    <!--mensaje de alerta-->
-                                    <div class="row">
-                                        <div class="col-lg-12" style="margin-top:-34px">
-                                          <div class="bs-component">
-                                            
-                                          Se encuentra ubicado en la barra horizontal superior  lado izquierdo 
-                                          y es para agregar materiales como otros.
-                                             
-                                          </div>
-                                        </div>
-                                        </div><!--fin mensaje-->
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/cargar archivo materiales.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin-->
-
-          <!--registrar salida-->
-          <div id="registrarsalida" class="col-md-12">
-            <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
-                      <h3 class="tile-title">Registrar salida</h3>
-                      <br><br>
-                    <!--mensaje de alerta-->
-                <div class="col-lg-8"  style="margin-top:-34px">
-                  <div class="bs-component">
-                    Nota:el usuario debe tener claro que cuando vaya a realizar el registro de la salida EECC
-                         se encuentre la fecha en un periodo activo, por que de lo contrario mostrará mensaje
-                         de error.
-                      
-                      </div>
-                      </div><!--fin mensaje de alerta-->
-                    <div class="w3-container w3-center">
-                    <span>
-                      <img src="imagenes/registrar salida eecc.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      <br><br>
-                    </span>
-                  </div>
-                <br><br>
-                    <!--mensaje-->
-                      <div class="row">
-                          <div class="col-lg-12" style="margin-top:-34px">
-                            <div class="bs-component">
-                             
-                                    El usuario debe ubicarse en el campo cantidad para ingresar la información necesaria
-                                    y así se pueda hacer la salida correctamente.
-                                    Se debe ingresar toda la información no se deben dejar campos en blancos como el entregado
-                                    por es obligación que se ingrese porque el sistema SISCOS enviará un mensaje de información
-                                    que no se puede hacer el registro por que hacen falta campos por ingresar.
-                                    <br><br> 
-                                    Registrar salida: se encuentra ubicado en la barra vertical superior lado izquierdo permite
-                                    al  usuario ya tenga agregados todos los materiales y visualizados en la 
-                                    tabla con sus respectivos ítems proceder a dar clic sobre  el botón y 
-                                    registrar salida en el sistema SISCOS.
-                                 >
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
                             </div>
-                          </div>
-                          </div><!--fin mensaje-->
-                      </div>
-                  </div><!--fin registrar salida-->
-                                
-                                <!--salir -->
-                                <div id="salir" class="col-md-12">
-                                    <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">Salir</h3>
-                                              <br><br>
-                                              <!--mensaje de alerta-->
-                                              <div class="row">
-                                                  <div class="col-lg-12" style="margin-top:-34px">
-                                                    <div class="bs-component">
-                                                      
-                                                        Se encuentra ubicado en la barra horizontal superior, está permite
-                                                        al usuario salir del Módulo Salida EECC.
-                                                       
-                                                    </div>
-                                                  </div>
-                                                  </div><!--fin mensaje-->
-                                                  <div class="w3-container w3-center">
-                                                    <span>
-                                                    <img src="imagenes/salir salida eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                                    </span>
-                                                  </div>
-                                              </div>
-                                          </div><!--fin salir-->
-                                        
-                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                              <iframe class="embed-responsive-item"width="1280" height="629" src="https://www.youtube.com/embed/fLCdz3Q1Qls"
-                                           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                           allowfullscreen></iframe>
-                                          </div>
-                                        </div><!--fin row flex-->               
-                                      </main>
-                                  </div><!--fin container fluid-->
-                                
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-</script>
-<!--scrooll efecto smooth para el id-->
-<script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--Nueva salida-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Nueva salida</h3>
+                            <div class="bs-component">
+                                Los requisitos previos que debe tener una salida EECC tienen la misma temática que la salida de CT y es que depende de un proveedor ( tercero ), y una fecha de salida. El usuario debe tener claro que es lo que va a sacar que depende de la entrada. Requisitos
+                                previos, la salida depende de una entrada ( reserva ), proveedor ( tercero ) y un periodo activo. Para hacer salidas EECC en la entrada EECC deben existir devoluciones a un proveedor y ajustes de inventarios.
+                                <br>Nueva salida: este botón se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida Para el registro de una salida EECC le damos clic en el botón
+                                nueva salida para que la guarde y se pueda agregar material a esta salida y se puedan habilitar los demás botones y poder realizar el proceso.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/nueva salida eecc.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin nueva salida-->
+
+                    <!--Agregar material-->
+                    <div id="agregarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal ( lado izquierdo ), esta función permite al usuario agregar material solicitando unos campos requeridos u obligatorios. Posteriormente le damos clic en el botón agregar material y visualizaremos una ventana
+                                que requiere de unos campos solicitados para agregar el registro. Donde aparece el botón Nuevo, buscar y salir del proceso, el usuario al dar clic en buscar tiene las opciones de criterios de búsqueda con él % donde le
+                                mostrara todos los materiales registrados y escoger el que se necesita se da clic y material agregado. Tener muy claro que el material que se va agregar debe tener existencia porque de lo contrario no dejara hacer el registro
+                                para la salida. Buscar material cuando se consulte el código en la ventana arrojará la información de las reservas y el usuario escoger que reserva de sea sacar, toda salida depende de la entrada. seguidamente hacemos clic
+                                en el código material y automáticamente se pasa a salida mercancía EECC.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/agregar material eecc.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin agregar material-->
+
+                    <!--Eliminar material-->
+                    <div id="eliminarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar material que no se crea necesario para la carga de salida EECC en el sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/eliminar material eecc.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar material-->
+
+                    <!--cargar arvhivo-->
+                    <div id="cargararchivo" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Cargar archivo</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo y es para agregar seriales. Si son poco seriales, nos ubicamos en el botón Buscar serial y nos mostrará una ventana y se empiezan a pistolear uno a uno los seriales.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                    <img src="imagenes/cargar archivo 1 seriales.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--cargar arvhivo materiales-->
+                    <div id="cargararchivomateriales" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Cargar archivo materiales</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo y es para agregar materiales como otros.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/cargar archivo materiales.png " style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--registrar salida-->
+                    <div id="registrarsalida" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Registrar salida</h3>
+                            <div class="bs-component">
+                                <b>Nota: el usuario debe tener claro que cuando vaya a realizar el registro de la salida EECC se encuentre la fecha en un periodo activo, por que de lo contrario mostrará mensaje de error.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                            <img src="imagenes/registrar salida eecc.png" style="width:70%;" class="w3-animate-zoom rounded">
+                          </span>
+                            </div>
+                            <div class="bs-component">
+                                El usuario debe ubicarse en el campo cantidad para ingresar la información necesaria y así se pueda hacer la salida correctamente. Se debe ingresar toda la información no se deben dejar campos en blancos como el entregado por es obligación que se ingrese
+                                porque el sistema SISCOS enviará un mensaje de información que no se puede hacer el registro por que hacen falta campos por ingresar.
+                                <br>Registrar salida: se encuentra ubicado en la barra vertical superior lado izquierdo permite al usuario ya tenga agregados todos los materiales y visualizados en la tabla con sus respectivos ítems proceder a dar clic
+                                sobre el botón y registrar salida en el sistema SISCOS.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin registrar salida-->
+
+                    <!--salir -->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, está permite al usuario salir del Módulo Salida EECC.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                    <img src="imagenes/salir salida eecc.png " style="width:80%;" class="w3-animate-zoom rounded">
+                                    </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="629" src="https://www.youtube.com/embed/fLCdz3Q1Qls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_salidas_ct.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_consulta_salidas.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js "><\/script>')
     </script>
-<!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js "></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript " src="js/plugins/chart.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover "]').popover();
+        $('.bs-component [data-toggle="tooltip "]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth ";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript ">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false ")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Esta pagina es privada.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Esta pagina es privada.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada. ");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada. ");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>
-    
-  </head>
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+
+</head>
+
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -298,189 +305,189 @@
                             <li class="breadcrumb-item active">Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Traslados</li>
                             <li class="breadcrumb-item"><a href="inv_ingreso_traslado_ct.html">Ingreso traslado CT</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-
-  <!--comienzo-->
-  <div class="col-md-12">
-      <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-          <a href="#replicarlistacontrol"></a>
-                <h3 class="tile-title">Nueva salida</h3>
-                <br><br>
-                
-                              Se encuentra ubicado en la barra vertical superior
-                              lado izquierdo, permite al usuario dar clic sobre 
-                              el botón nuevo damos clic en el botón Nuevo
-                              para que se activen los demás botones
-                              y se pueda seguir realizando el proceso de traslado de
-                              bodegas EECC.
-                          
-                    
-                    </div><!--fin mensaje-->
-                    <div class="w3-container w3-center">
-                      <span>
-                      <img src="imagenes/invbodegaeeccnueva.png" style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
+                            <a class="breadcrumb-item rounded " aria-label="PDF " href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf " target="_blank "><i class="icon fa fa-file-pdf-o fa-lg fa-fw "></i></a>
+                            <div class="dropdown ">
+                                <a class="dropbtn breadcrumb-item rounded "><i class="icon fa fa-font fa-lg fa-fw "></i></a>
+                                <div class="dropdown-content ">
+                                    <a href="# " class="aumentarFont ">A+</a>
+                                    <a href="# " class="disminuirFont ">A-</a>
+                                    <a href="# " class="resetearFont ">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
                     </div>
                 </div>
-            </div><!--fin-->
 
-  <!--comienzo-->
-  <div id="agregar" class="col-md-12">
-      <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-          <a href="#importar"></a>
-                <h3 class="tile-title">Agregar material</h3>
-                <br><br>
-                
-                            Se encuentra ubicado en la barra horizontal superior, damos clic en el botón Agregar
-                            permite al usuario poder agregar los materiales que se les va hacer el traslado a otra bodega.
-                            Hacemos clic en el botón agregar y nos mostrará otra ventana
-                              el cual requiere de unos botones como nuevos, buscar, salir etc.
-                           
-                    <div class="col-sm-12 w3-container w3-center">
-                      <span>
-                      <img src="imagenes/invbodegaeeccagregar.png" style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                    <br>
-                         Cuando el usuario ya haga la búsqueda del material
-                          que va agregar automáticamente se pasa para la pantalla
-                          principal de los materiales agregados para el traslado bodega EECC.                            
-                          Seguidamente cuando ya está agregada se ubica en el campo cantidad
-                          e ingresar la cantidad necesaria.                              
-                      
-            </div><!--fin-->
+                <div class="row">
 
-          <!--comienzo-->
-            <div id="registrar" class="col-md-12">
-                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                          <h3 class="tile-title"> Registrar salida</h3>
-                        <br><br>
-                        
-                                      Se encuentra ubicado en la barra vertical
-                                      superior lado izquierdo, damos clic en el botón Agregar
-                                      permite al usuario cuando ya tiene la información necesaria y los 
-                                      campos obligatorios listos dar clic sobre el botón
-                                      y hacer el registro de salida en el sistema
-                                    
-                            </div><!--fin mensaje-->
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/invbodegaeeccregistrar.png" style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
-                    </div>
-                    <br>
-                    
-                          Clic en el botón Si, y se registra la nueva salida en el sistema.                            
-                          El usuario Si  desea imprimir el recibo de salida le da al botón
-                               Si, si no el botón
-                               No para salir del proceso traslado bodegas EECC.                             
-                         
-                </div><!--fin-->
-
-                                  <!--comienzo-->
-                      <div id="eliminar" class="col-md-12">
+                    <!--comienzo-->
+                    <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                  <h3 class="tile-title"> Eliminar</h3>
-                                  <br><br>
-                                  
-                                              Se encuentra ubicado en la barra horizontal lado izquierdo, damos clic en el botón Eliminar
-                                              Permite al usuario poder eliminar un material que no crea necesario para su traslado.
-                                           
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/invbodegaeecceliminar.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                     
-                              </div><!--fin-->
-                                
-                                <!--salir -->
-                                <div id="salir" class="col-md-12">
-                                    <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                                              <h3 class="tile-title">Salir</h3>
-                                              <br><br>
-                                          
-                                                          Se encuentra ubicado en la barra horizontal superior
-                                                          lado izquierdo, permite al usuario dar clic en el botón, damos clic en el botón Salir
-                                                          y salir del módulo Traslado Bodega EECC.
-                                                              
-                                                  </div><!--fin mensaje-->
-                                                  <div class="w3-container w3-center">
-                                                    <span>
-                                                    <img src="imagenes/invbodegaeeccsalir.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                                    </span>
-                                                  </div>
-                                                  <br>        
-                                          </div><!--fin salir localidades-->
-                                          <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                            <iframe class="embed-responsive-item" width="852" height="426" src="https://www.youtube.com/embed/WyZkF2UbgEE"
-                                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                              allowfullscreen>
-                                            </iframe>
-                                            </div><!--fin video-->
-                                          </div><!--fin row-->
-                                        </div><!--fin row flex-->               
-                                      </main>
-                                  </div><!--fin container fluid-->
-                                
-<!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<!-- Essential javascripts for application to work-->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- The javascript plugin to display page loading on top-->
-<script src="js/plugins/pace.min.js"></script>
-<!-- Page specific javascripts-->
-<script type="text/javascript" src="js/plugins/chart.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Page specific javascripts-->
-<script>
-  $('.bs-component [data-toggle="popover"]').popover();
-  $('.bs-component [data-toggle="tooltip"]').tooltip();
-</script>
-<!--scrooll efecto smooth para el id-->
-<script>
-    function myFunction() {
-      document.documentElement.style.scrollBehavior = "smooth";
-    }
+                            <h3 class="tile-title">Nueva salida</h3>
+                            <div class="bs-component ">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario dar clic sobre el botón nuevo damos clic en el botón Nuevo para que se activen los demás botones y se pueda seguir realizando el proceso de traslado de bodegas EECC.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/invbodegaeeccnueva.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--comienzo-->
+                    <div id="agregar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar material</h3>
+                            <div class="bs-component ">
+                                Se encuentra ubicado en la barra horizontal superior, damos clic en el botón Agregar permite al usuario poder agregar los materiales que se les va hacer el traslado a otra bodega. Hacemos clic en el botón agregar y nos mostrará otra ventana el cual requiere
+                                de unos botones como nuevos, buscar, salir etc.
+                            </div>
+                            <div class="col-sm-12 w3-container w3-center">
+                                <span>
+                              <img src="imagenes/invbodegaeeccagregar.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component ">
+                                Cuando el usuario ya haga la búsqueda del material que va agregar automáticamente se pasa para la pantalla principal de los materiales agregados para el traslado bodega EECC. Seguidamente cuando ya está agregada se ubica en el campo cantidad e ingresar
+                                la cantidad necesaria.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--comienzo-->
+                    <div id="registrar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title"> Registrar salida</h3>
+                            <div class="bs-component ">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, damos clic en el botón Agregar permite al usuario cuando ya tiene la información necesaria y los campos obligatorios listos dar clic sobre el botón y hacer el registro de salida en el
+                                sistema
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/invbodegaeeccregistrar.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component ">
+                                Clic en el botón Si, y se registra la nueva salida en el sistema. El usuario Si desea imprimir el recibo de salida le da al botón Si, si no el botón No para salir del proceso traslado bodegas EECC.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--comienzo-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title"> Eliminar</h3>
+                            <div class="bs-component ">
+                                Se encuentra ubicado en la barra horizontal lado izquierdo, damos clic en el botón Eliminar Permite al usuario poder eliminar un material que no crea necesario para su traslado.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/invbodegaeecceliminar.png" style="width:100%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--salir -->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component ">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario dar clic en el botón, damos clic en el botón Salir y salir del módulo Traslado Bodega EECC.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/invbodegaeeccsalir.png" style="width:100%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir localidades-->
+
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="852" height="426" src="https://www.youtube.com/embed/WyZkF2UbgEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_traslado_bodega_ct.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_ingreso_traslado_ct.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
-<!--impedir que copien el codigo de la pagina-->
-<script language="Javascript">
-function disableselect(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-// End -->
-</script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
-function right(e) {
-if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-alert("Esta pagina es privada.");
-return false;
-}
-else if (navigator.appName == 'Microsoft Internet Explorer' &&
-(event.button == 2 || event.button == 3)) {
-alert("Esta pagina es privada.");
-return false;
-}
-return true;
-}
-document.onmousedown=right;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-window.onmousedown=right;
-</script> 
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

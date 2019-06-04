@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -296,110 +302,115 @@
                             <li class="breadcrumb-item active">Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Registro</li>
                             <li class="breadcrumb-item"><a href="inv_unidades_medida.html">Unidades medida</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--aplicar centros-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-                <a href="#aplicar"></a>
-                      <h3 class="tile-title">Aplicar</h3>
-                      <br><br>
-                      
-                                    Ingresamos los campos solicitados u obligatorios (Registro Centros) y luego le
-                                    damos clic en el boton aplicar cuando estén todos los campos llenos nos mostrará un
-                                    mensaje de información 
-                                    si estamos seguro de aplicar los cambios.
-                                   <br><br>
-                                    El usuario debe dar clic en Sí, para que agregue 
-                                    el nuevo registro al sistema SISCOS.
-                                    
-                          <div class="w3-container w3-center">
-                              <span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!--aplicar centros-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Aplicar</h3>
+                            <div class="bs-component">
+                                Ingresamos los campos solicitados u obligatorios ( Registro Centros ) y luego le damos clic en el boton aplicar cuando estén todos los campos llenos nos mostrará un mensaje de información si estamos seguro de aplicar los cambios. El usuario debe dar clic
+                                en Sí, para que agregue el nuevo registro al sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/apli centros.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
+                            </div>
                         </div>
-                        </div>
-                  </div><!--fin aplicar centros-->
-          <!--eliminar centros-->
-          <div id="eliminar" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#eliminar"></a>
-                        <h3 class="tile-title">Eliminar</h3>
-                        <br><br>
-                     Nota:no se puede Eliminar si ese registro (Centro) tiene movimientos 
-                          y está activo, para que no lo debas utilizar debes ponerlo inactivo 
-                          y cuando lo necesites lo activas. Pero no se Elimina, si intenta el 
-                          usuario hacerlo le mostrará un mensaje de información que no se puede 
-                          o que hay un error.
-                         
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/eliminar centros.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
                     </div>
-                  <br><br>
-                     
-                                      Se encuentra ubicado en la barra horizontal (lado izquierdo). Está función 
-                                      permite eliminar un registro existente es decir creado
-                                      y eliminado enseguida porque te equivocaste en algún campo 
-                                      al momento de crearlo. Para que se puedan habilitar todos los botones 
-                                      incluyendo el eliminar hay que dar doble clic en el campo código que 
-                                      se encuentra en la lista de registros de Centros creados.
-                                   
-                    </div><!--fin eliminar centros-->
+                    <!--fin aplicar centros-->
+
+                    <!--eliminar centros-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                <b>Nota:no se puede Eliminar si ese registro ( Centro ) tiene movimientos y está activo, para que no lo debas utilizar debes ponerlo inactivo y cuando lo necesites lo activas. Pero no se Elimina, si intenta el usuario hacerlo
+                            le mostrará un mensaje de información que no se puede o que hay un error.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/eliminar centros.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal ( lado izquierdo ). Está función permite eliminar un registro existente es decir creado y eliminado enseguida porque te equivocaste en algún campo al momento de crearlo. Para que se puedan habilitar todos los
+                                botones incluyendo el eliminar hay que dar doble clic en el campo código que se encuentra en la lista de registros de Centros creados.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar centros-->
+
                     <!--buscar centros-->
                     <div id="buscar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <a href="#buscar"></a>
-                                  <h3 class="tile-title">Buscar</h3>
-                                  <br><br>
-                                  
-                                                Se encuentra ubicado en la barra horizontal 
-                                                (lado derecho), éste permite al usuario realizar una búsqueda por los parámetros de Código y Descripción. 
-                                                El usuario debe dar clic en la opción Buscar.
-                                            
-                                      <div class="w3-container w3-center">
-                                        <span>
-                                        <img src="imagenes/buscar centros.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
-                                      </div>
-                                  </div>
-                              </div><!--fin buscar centros-->
+                            <h3 class="tile-title">Buscar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal ( lado derecho ), éste permite al usuario realizar una búsqueda por los parámetros de Código y Descripción. El usuario debe dar clic en la opción Buscar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                    <img src="imagenes/buscar centros.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar centros-->
+
                     <!--salir centros-->
-                      <div id="salir" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                              <a href="#salir"></a>
-                                    <h3 class="tile-title">Salir</h3>
-                                    <br><br>
-                                                  Se encuentra ubicado en la barra horizontal (lado derecho), 
-                                                  éste permite salir del Módulo Registro Centros.
-                                             
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/salir centros.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin salir centros-->
-                      <!--video-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal ( lado derecho ), éste permite salir del Módulo Registro Centros.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                    <img src="imagenes/salir centros.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                    </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir centros-->
+
+                    <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="619" src="https://www.youtube.com/embed/bwYy_Ccfffw"
-                          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                          allowfullscreen>
-                        </iframe>
-                      </div><!--fin video-->
-                    </div><!--fin row-->
-                  </div><!--fin row flex-->                 
-                </main>
-              </div><!--fin container fluid-->
-                                    
-                                    
+                        <iframe class="embed-responsive-item" width="1280" height="619" src="https://www.youtube.com/embed/bwYy_Ccfffw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                             </iframe>
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_bodegas.html" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_unidades_medida.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -414,45 +425,49 @@
     <script>
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
-      </script>
-      <!--scrooll efecto smooth para el id-->
-      <script>
-          function myFunction() {
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
             document.documentElement.style.scrollBehavior = "smooth";
-          }
-          </script>
-      <!--impedir que copien el codigo de la pagina-->
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
     <script language="Javascript">
-      function disableselect(e){
-      return false
-      }
-      function reEnable(){
-      return true
-      }
-      document.onselectstart=new Function ("return false")
-      if (window.sidebar){
-      document.onmousedown=disableselect
-      document.onclick=reEnable
-      }
-      // End -->
-      </script>
-   </body>
-   <!--para inhabilitar el boton derecho en la pagina-->
-   <Script language=JavaScript>
-      function right(e) {
-      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      else if (navigator.appName == 'Microsoft Internet Explorer' &&
-      (event.button == 2 || event.button == 3)) {
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      return true;
-      }
-      document.onmousedown=right;
-      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-      window.onmousedown=right;
-      </script> 
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

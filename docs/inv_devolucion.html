@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -306,165 +312,166 @@
                             <li class="breadcrumb-item active">Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
                             <li class="breadcrumb-item"><a href="inv_consulta_devolucion.html">Consulta Devolución</a></li>
-                          </ol>
-                          </div>
-                        </div>
-
-      <div class="row">
-           <!--Buscar personal-->
-           <div class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                        <h3 class="tile-title">Buscar personal</h3>
-                        <br><br>
-                      Nota:el personal que se busca es solo para agregar en el campo Entregado por:
-                        
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/personal devolucion.png" style="width:80%;" class="w3-animate-zoom rounded">
-                      </span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
                     </div>
-                    <br><br>
-                    
-                        Se encuentra ubicado en la barra  vertical superior lado izquierdo, permite al usuario
-                         hacer búsquedas del personal registrado en el sistema para asignar en el campo entregado 
-                         por cual es la persona responsable de la devolución que se va a registrar y configurar 
-                         sus respectivos materiales.
-                              
-                    </div><!--fin buscar personal-->
-                     <!--Buscar serial-->
-          <div id="buscarserial" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Buscar serial</h3>
-                  <br><br>
-                      
-                                    Se encuentra ubicado en la barra horizontal lado derecho,  permite al usuario si el técnico 
-                                    tiene el serial indicado con solo pistolear se va asignando en SISCOS, si no ubicarse en
-                                     Inventario/Consultas/Estado serial  pistolear y aparece a quien pertenece el técnico. Se
-                                      le hace la devolución a la persona correspondiente. A los seriales en SISCOS si se le pueden
-                                       hacer seguimientos, no se duplica la existencia se le descarga a quien tenga el serial
-                                        correspondido al técnico.
-                                        <br><br>
-                                       La devolución se puede hacer tipo Retal, Garantía, Terreno, etc.  Ya el usuario decide cómo 
-                                       leva su proceso de devolución.
-                                
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/buscar serial.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin buscar serial-->
-              <!--Agregar material-->
-          <div id="agregarmaterial" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Agregar material</h3>
-                  <br><br>
-                      
-                                    El usuario agrega material dar clic en la lupa que es para buscar, 
-                                    se selecciona el material y muestra toda la información correspondiente  
-                                    abajo  muestra el stock que actualmente tiene el técnico, clic en él 
-                                    y automáticamente se pasa para la pantalla principal.
-                              
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/agregar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin agregar material-->
-                  <!--Buscar material-->
-          <div id="buscarmaterial" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Buscar material</h3>
-                  <br><br>
-                     
-                                    Se encuentra ubicado en el botón agregar material, cuando se da clic 
-                                    muestra la ventana visualizada y aparece el respectivo botón buscar 
-                                    material para seleccionar los que van hacer agregados para el registro
-                                    devolución.
-                                    <br><br>
-                                    Buscar por medio de la lupa que es el botón buscar el material con criterios 
-                                    de búsquedas asignados se copia y pega el código o el criterio que seleccione 
-                                    y se asigna automáticamente. 
-                                    Si no aparece nada en la tabla de la parte de abajo es porque ese material no
-                                    tiene registro cargado en el stock.
-                                    Si aparece es porque si existen registro cargado en el stock y posteriormente
-                                     se da clic y automáticamente se pasa para la pantalla principal de devolución.
-                               
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/buscar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin buscar material-->
-                   <!--Eliminar-->
-          <div id="eliminar" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Eliminar</h3>
-                  <br><br>
-                      
-                                    Se encuentra ubicado en la barra horizontal lado izquierdo. Permite 
-                                    al usuario poder eliminar un material que no crea necesario para su 
-                                    devolución.
+                </div>
 
-                                
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/eliminar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin eliminar-->
-                  <!--Devolver-->
-          <div id="devolver" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Devolver</h3>
-                  <br><br>
-                      
-                                    Se encuentra ubicado en la barra horizontal superior, permite al usuario
-                                     dar clic sobre el botón cuando ya se tiene previamente toda la información 
-                                     completa para hacer el registro de devolución.
-                                  
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/devolver devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin devolver-->
-              <!--salir-->
-          <div id="salir" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Salir</h3>
-                  <br><br>
-                      
-                                    Permite al usuario dar clic sobre el botón salir del módulo pedido para
-                                     finalizar el proceso de devolución.
-                                 
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/salir devolver.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div>
-                      </div>
-                  </div><!--fin salir marcas-->
+                <div class="row">
+
+                    <!--Buscar personal-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Buscar personal</h3>
+                            <div class="bs-component">
+                                <b>Nota:el personal que se busca es solo para agregar en el campo Entregado por:</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                  <img src="imagenes/personal devolucion.png" style="width:80%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario hacer búsquedas del personal registrado en el sistema para asignar en el campo entregado por cual es la persona responsable de la devolución que se va a registrar y
+                                configurar sus respectivos materiales.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar personal-->
+
+                    <!--Buscar serial-->
+                    <div id="buscarserial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Buscar serial</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal lado derecho, permite al usuario si el técnico tiene el serial indicado con solo pistolear se va asignando en SISCOS, si no ubicarse en Inventario/Consultas/Estado serial pistolear y aparece a quien pertenece
+                                el técnico. Se le hace la devolución a la persona correspondiente. A los seriales en SISCOS si se le pueden hacer seguimientos, no se duplica la existencia se le descarga a quien tenga el serial correspondido al técnico.
+                                La devolución se puede hacer tipo Retal, Garantía, Terreno, etc. Ya el usuario decide cómo leva su proceso de devolución.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/buscar serial.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar serial-->
+
+                    <!--Agregar material-->
+                    <div id="agregarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Agregar material</h3>
+                            <div class="bs-component">
+                                El usuario agrega material dar clic en la lupa que es para buscar, se selecciona el material y muestra toda la información correspondiente abajo muestra el stock que actualmente tiene el técnico, clic en él y automáticamente se pasa para la pantalla principal.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/agregar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin agregar material-->
+
+                    <!--Buscar material-->
+                    <div id="buscarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Buscar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en el botón agregar material, cuando se da clic muestra la ventana visualizada y aparece el respectivo botón buscar material para seleccionar los que van hacer agregados para el registro devolución. Buscar por medio de la lupa que
+                                es el botón buscar el material con criterios de búsquedas asignados se copia y pega el código o el criterio que seleccione y se asigna automáticamente. Si no aparece nada en la tabla de la parte de abajo es porque ese material
+                                no tiene registro cargado en el stock. Si aparece es porque si existen registro cargado en el stock y posteriormente se da clic y automáticamente se pasa para la pantalla principal de devolución.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                              <img src="imagenes/buscar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin buscar material-->
+
+                    <!--Eliminar-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal lado izquierdo. Permite al usuario poder eliminar un material que no crea necesario para su devolución.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/eliminar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar-->
+
+                    <!--Devolver-->
+                    <div id="devolver" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Devolver</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario dar clic sobre el botón cuando ya se tiene previamente toda la información completa para hacer el registro de devolución.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/devolver devo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin devolver-->
+
+                    <!--salir-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Permite al usuario dar clic sobre el botón salir del módulo pedido para finalizar el proceso de devolución.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/salir devolver.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir marcas-->
+
                     <!--video-->
-            <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                <iframe class="embed-responsive-item" width="1280" height="597" src="https://www.youtube.com/embed/hTM6vYKmGfY"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
-              </div><!--fin video-->
-          </div><!--fin row-->
-        </div><!--fin row flex-->                 
-      </main>
-    </div><!--fin container fluid-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="597" src="https://www.youtube.com/embed/hTM6vYKmGfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                         </iframe>
+                    </div>
+                    <!--fin video-->
+
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="inv_actualizar_entrada.html" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_consulta_devolucion.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -479,45 +486,49 @@
     <script>
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
-      </script>
-      <!--scrooll efecto smooth para el id-->
-      <script>
-          function myFunction() {
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
             document.documentElement.style.scrollBehavior = "smooth";
-          }
-          </script>
-      <!--impedir que copien el codigo de la pagina-->
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
     <script language="Javascript">
-      function disableselect(e){
-      return false
-      }
-      function reEnable(){
-      return true
-      }
-      document.onselectstart=new Function ("return false")
-      if (window.sidebar){
-      document.onmousedown=disableselect
-      document.onclick=reEnable
-      }
-      // End -->
-      </script>
-   </body>
-   <!--para inhabilitar el boton derecho en la pagina-->
-   <Script language=JavaScript>
-      function right(e) {
-      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      else if (navigator.appName == 'Microsoft Internet Explorer' &&
-      (event.button == 2 || event.button == 3)) {
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      return true;
-      }
-      document.onmousedown=right;
-      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-      window.onmousedown=right;
-      </script> 
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

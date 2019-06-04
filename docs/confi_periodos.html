@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -294,141 +300,154 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
                             <li class="breadcrumb-item"><a href="confi_pep.html">PEP</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--Crear periodo-->
-          <div class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                  <a href="#crearperiodo"></a>
-                        <h3 class="tile-title">Crear periodo</h3>
-                        <br><br>
-                     
-                        Nota:aplica para las bodegas que estén asociadas al departamento,
-                        este lo debe tener como máximo una persona por departamento.
-                        Los periodos en SISCOS son mensuales se abren y cierran a petición 
-                        del usuario, los periodos son por departamentos no por bodegas  un
-                        departamento puede tener varias bodegas.
-                        
-                      <div class="w3-container w3-center">
-                      <span>
-                        <img src="imagenes/crear periodo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
                     </div>
-                  <br><br><br>
-                      
-                        En la parte de arriba se crea el periodo y la parte de abajo se cierra el periodo.
-                        Le damos clic en periodo y se presenta una ventana con unos campos requeridos u 
-                        obligatorios que el usuario debe seleccionar el departamento que va utilizar para
-                        abrir o cerrar el periodo.     
-                                  
-                    </div><!--fin crear periodo-->
-                    <!--Cerrar periodo-->
-          <div id="cerrarperiodo" class="col-md-12">
-                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                    <a href="#cerrarperiodo"></a>
-                          <h3 class="tile-title">Cerrar periodo</h3>
-                          <br><br>
-                        
-                          Nota:tener en cuenta que al cerrar un periodo, no se puede realizar
-                           movimientos una vez cerrado  no permite abrirlo nuevamente.
-                
-                        <div class="w3-container w3-center">
-                        <span>
-                          <img src="imagenes/cerrar periodo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                        </span>
-                      </div>
-                    <br><br><br>
-                       
-                        El usuario debe dar clic en el botón  Sí para que pueda cerrar el periodo 
-                        y ya no se puedan hacer  más movimientos.     
-                                    
-                      </div><!--fin cerrar periodo-->
-                    <!--salir pep-->
-                      <div id="salir" class="col-md-12">
-                          <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                              <a href="#salir"></a>
-                                    <h3 class="tile-title">Salir</h3>
-                                    <br><br>
-                                Se encuentra ubicado en la barra vertical superior lado derecho, permite,
-                                 al usuario salir del módulo periodo del sistema SISCOS.
-                                          
-                                        <div class="w3-container w3-center">
-                                          <span>
-                                          <img src="imagenes/salir periodo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                          </span>
-                                        </div>
-                                    </div>
-                                </div><!--fin salir pep-->
-                            <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                             <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/ODaFx0FDUa0"
-                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                      </div>
-                    </div><!--fin row-->
-                  </div><!--fin row flex-->                
-                </main>
-              </div><!--fin container fluid-->
+                </div>
 
-    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script type="text/javascript" src="js/plugins/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script>
-        $('.bs-component [data-toggle="popover"]').popover();
-        $('.bs-component [data-toggle="tooltip"]').tooltip();
-      </script>
-      <!--scrooll efecto smooth para el id-->
-      <script>
-          function myFunction() {
-            document.documentElement.style.scrollBehavior = "smooth";
-          }
-          </script>
-      <!--impedir que copien el codigo de la pagina-->
-    <script language="Javascript">
-      function disableselect(e){
-      return false
-      }
-      function reEnable(){
-      return true
-      }
-      document.onselectstart=new Function ("return false")
-      if (window.sidebar){
-      document.onmousedown=disableselect
-      document.onclick=reEnable
-      }
-      // End -->
-      </script>
-   </body>
-   <!--para inhabilitar el boton derecho en la pagina-->
-   <Script language=JavaScript>
-      function right(e) {
-      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      else if (navigator.appName == 'Microsoft Internet Explorer' &&
-      (event.button == 2 || event.button == 3)) {
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      return true;
-      }
-      document.onmousedown=right;
-      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-      window.onmousedown=right;
-      </script> 
+                <div class="row">
+
+                    <!--Crear periodo-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Crear periodo</h3>
+                            <div class="bs-component">
+                                <b>Nota:aplica para las bodegas que estén asociadas al departamento, este lo debe tener como máximo una persona por departamento. Los periodos en SISCOS son mensuales se abren y cierran a petición del usuario, los periodos
+                                 son por departamentos no por bodegas un departamento puede tener varias bodegas.</b>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/crear periodo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component">
+                                En la parte de arriba se crea el periodo y la parte de abajo se cierra el periodo. Le damos clic en periodo y se presenta una ventana con unos campos requeridos u obligatorios que el usuario debe seleccionar el departamento que va utilizar para abrir
+                                o cerrar el periodo.
+                            </div>
+                        </div>
+                        <!--fin crear periodo-->
+
+                        <!--Cerrar periodo-->
+                        <div id="cerrarperiodo" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                <h3 class="tile-title">Cerrar periodo</h3>
+                                <div class="bs-component">
+                                    <b>Nota:tener en cuenta que al cerrar un periodo, no se puede realizar movimientos una vez cerrado no permite abrirlo nuevamente.</b>
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span>
+                                    <img src="imagenes/cerrar periodo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                  </span>
+                                </div>
+                                <div class="bs-component">
+                                    El usuario debe dar clic en el botón Sí para que pueda cerrar el periodo y ya no se puedan hacer más movimientos.
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin cerrar periodo-->
+
+                        <!--salir pep-->
+                        <div id="salir" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                <h3 class="tile-title">Salir</h3>
+                                <div class="bs-component">
+                                    Se encuentra ubicado en la barra vertical superior lado derecho, permite, al usuario salir del módulo periodo del sistema SISCOS.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span>
+                                    <img src="imagenes/salir periodo.png" style="width:70%;" class="w3-animate-zoom rounded">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin salir pep-->
+
+                        <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                            <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/ODaFx0FDUa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                        </div>
+                    </div>
+                    <!--fin row-->
+            </main>
+            </div>
+            <!--fin row flex-->
+        </div>
+        <!--fin container fluid-->
+        <a href="confi_configuracion_departamentos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+        <a href="confi_pep.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+        <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+        <!--iconos version fontawesome 5.8.1-->
+        <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+        <!-- Essential javascripts for application to work-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- The javascript plugin to display page loading on top-->
+        <script src="js/plugins/pace.min.js"></script>
+        <!-- Page specific javascripts-->
+        <script type="text/javascript" src="js/plugins/chart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Page specific javascripts-->
+        <script>
+            $('.bs-component [data-toggle="popover"]').popover();
+            $('.bs-component [data-toggle="tooltip"]').tooltip();
+        </script>
+
+        <!--scrooll efecto smooth para el id-->
+        <script>
+            function myFunction() {
+                document.documentElement.style.scrollBehavior = "smooth";
+            }
+        </script>
+
+        <!--impedir que copien el codigo de la pagina-->
+        <script language="Javascript">
+            function disableselect(e) {
+                return false
+            }
+
+            function reEnable() {
+                return true
+            }
+            document.onselectstart = new Function("return false")
+            if (window.sidebar) {
+                document.onmousedown = disableselect
+                document.onclick = reEnable
+            }
+            // End -->
+        </script>
+
+</body>
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>

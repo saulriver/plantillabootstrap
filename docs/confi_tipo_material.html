@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta name="description" content="Web Siscos Manual.">
     <title>SISCOS</title>
     <meta charset="utf-8">
@@ -22,14 +23,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>body { cursor: crosshair}</style>    
-  </head>
+    <style>
+        body {
+            cursor: crosshair
+        }
+    </style>
+</head>
 
-  <body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
+        <!-- Sidebar toggle button-->
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
     </header>
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
@@ -295,109 +301,114 @@
                             <li class="breadcrumb-item active">Configuración</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
                             <li class="breadcrumb-item"><a href="confi_configuracion_stock_pedidos.html">Configuración stock pedidos</a></li>
-                          </ol>
-                          </div>
-                        </div>
-      <div class="row">
-          <!--grabar tipo material-->
-          <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Grabar</h3>
-                  <br><br>
-                      
-                                      Está ubicada en la barra horizontal
-                                      superior lado izquierdo, permite grabar
-                                      los ingresos en el sistema SISCOS luego
-                                      de haber ingresado la información solicitada
-                                      u obligatoria.           
-                                
-                          <div class="w3-container w3-center">
-                              <span>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--grabar tipo material-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Grabar</h3>
+                            <div class="bs-component">
+                                Está ubicada en la barra horizontal superior lado izquierdo, permite grabar los ingresos en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/grabar tipo material.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
+                            </div>
                         </div>
-                        </div>
-                  </div><!--fin grabar tipo material-->
+                    </div>
+                    <!--fin grabar tipo material-->
+
                     <!--Eliminar tipo material-->
                     <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
-                              <br><br>
-                              Nota:no se puede eliminar un registro de Tipo Material
-                                  si existen movimientos en los demás módulos,
-                                  porque a la hora de querer eliminarlo presentará 
-                                  un mensaje de información error.
-                                  
-                                  <div class="w3-container w3-center">
-                                    <span>
-                                      <img src="imagenes/eliminar tipo material.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
-                                  </div>
-                                  <br><br><br>
-                                  
-                                                Se encuentra ubicado en la barra horizontal
-                                                superior  lado izquierdo, está función permite
-                                                eliminar del listado de Tipo Material un registro
-                                                que no le existan movimientos  dentro del sistema
-                                                SISCOS.
-                                           
-                              </div><!--fin eliminar tipo material-->
-          <!--modificar tipo material-->
-          <div id="modificar" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-              <h3 class="tile-title">Modificar</h3>
-                <br><br>
-                   
-                                    Se debe seleccionar el código y dar doble
-                                    clic en el campo Código antes de dar clic
-                                    en el botón Nuevo para agregar un nuevo registro.
-                           
-                          </div><!--fin mensaje-->
-                          <!--imagen-->
-                          <div class="w3-container w3-center">
-                            <span>
-                            <img src="imagenes/modificar tipo material.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                          </div><!--fin imagen-->
-                      </div>
-                  </div><!--fin modificar estado material-->
-        <!--salir estado material-->
-          <div id="salir" class="col-md-12">
-              <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                <h3 class="tile-title">Salir</h3>
-                  <br><br>
-                        
-                                      En el sistema SISCOS en el módulo Tipo
-                                      Material existen 2 formas de salir la primera se
-                                      encuentra ubicado en la barra horizontal superior
-                                      lado izquierdo y la segunda en la barra vertical
-                                      superior lado derecho estas 2 formas permite salir
-                                      del módulo.
-                                   
+                            <div class="bs-component">
+                                <b>Nota:no se puede eliminar un registro de Tipo Material si existen movimientos en los demás módulos, porque a la hora de querer eliminarlo presentará un mensaje de información error.</b>
+                            </div>
                             <div class="w3-container w3-center">
-                              <span>
+                                <span>
+                                <img src="imagenes/eliminar tipo material.png" style="width:70%;" class="w3-animate-zoom rounded">
+                              </span>
+                            </div>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, está función permite eliminar del listado de Tipo Material un registro que no le existan movimientos dentro del sistema SISCOS.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar tipo material-->
+
+                    <!--modificar tipo material-->
+                    <div id="modificar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component">
+                                Se debe seleccionar el código y dar doble clic en el campo Código antes de dar clic en el botón Nuevo para agregar un nuevo registro.
+                            </div>
+                        </div>
+                        <!--imagen-->
+                        <div class="w3-container w3-center">
+                            <span>
+                        <img src="imagenes/modificar tipo material.png" style="width:70%;" class="w3-animate-zoom rounded">
+                        </span>
+                        </div>
+                        <!--fin imagen-->
+                    </div>
+                    <!--fin modificar estado material-->
+
+                    <!--salir estado material-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                En el sistema SISCOS en el módulo Tipo Material existen 2 formas de salir la primera se encuentra ubicado en la barra horizontal superior lado izquierdo y la segunda en la barra vertical superior lado derecho estas 2 formas permite salir del módulo.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/salir tipo material.png" style="width:70%;" class="w3-animate-zoom rounded">
                               </span>
                             </div>
                         </div>
-                    </div><!--fin salir estado material-->
-            <!--video-->
-            <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                <iframe class="embed-responsive-item" width="1280" height="645" src="https://www.youtube.com/embed/mRnpZ6HnYsw"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
-              </div><!--fin video-->
-          </div><!--fin row-->
-        </div><!--fin row flex-->        
-        </main>
-      </div><!--fin row flex-->
-    </div><!--fin container fluid-->
+                        <hr>
+                    </div>
+                    <!--fin salir estado material-->
+
+                    <!--video-->
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="645" src="https://www.youtube.com/embed/mRnpZ6HnYsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <!--fin video-->
+                </div>
+                <!--fin row-->
+            </main>
+        </div>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="confi_estado_material.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_configuracion_stock_pedidos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-    crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -412,45 +423,50 @@
     <script>
         $('.bs-component [data-toggle="popover"]').popover();
         $('.bs-component [data-toggle="tooltip"]').tooltip();
-      </script>
-      <!--scrooll efecto smooth para el id-->
-      <script>
-          function myFunction() {
+    </script>
+
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
             document.documentElement.style.scrollBehavior = "smooth";
-          }
-          </script>
-      <!--impedir que copien el codigo de la pagina-->
+        }
+    </script>
+
+    <!--impedir que copien el codigo de la pagina-->
     <script language="Javascript">
-      function disableselect(e){
-      return false
-      }
-      function reEnable(){
-      return true
-      }
-      document.onselectstart=new Function ("return false")
-      if (window.sidebar){
-      document.onmousedown=disableselect
-      document.onclick=reEnable
-      }
-      // End -->
-      </script>
-   </body>
-   <!--para inhabilitar el boton derecho en la pagina-->
-   <Script language=JavaScript>
-      function right(e) {
-      if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      else if (navigator.appName == 'Microsoft Internet Explorer' &&
-      (event.button == 2 || event.button == 3)) {
-      alert("Esta pagina es privada.");
-      return false;
-      }
-      return true;
-      }
-      document.onmousedown=right;
-      if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-      window.onmousedown=right;
-      </script> 
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
+
+</body>
+
+<!--para inhabilitar el boton derecho en la pagina-->
+<script language=JavaScript>
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
+            alert("Esta pagina es privada.");
+            return false;
+        } else if (navigator.appName == 'Microsoft Internet Explorer' &&
+            (event.button == 2 || event.button == 3)) {
+            alert("Esta pagina es privada.");
+            return false;
+        }
+        return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+</script>
+
 </html>
