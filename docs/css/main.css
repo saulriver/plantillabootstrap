@@ -169,8 +169,7 @@ dfn {
     font-style: italic;
 }
 
-b,
-strong {
+b {
     font-weight: bolder;
     font-style: italic;
     font-family: 'Montserrat';
@@ -15978,6 +15977,14 @@ be a descendant of the grid when it is being dragged.
     }
 }
 
+@media (max-width:1280px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
+        margin-left: 34px;
+        margin-right: 58px;
+        right: 211px;
+    }
+}
+
 @media (max-width:768px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         position: fixed;
@@ -16011,6 +16018,21 @@ be a descendant of the grid when it is being dragged.
     .navigation.navigation-next {
         position: fixed;
         right: 238px;
+        z-index: 1;
+        top: 0;
+        margin: auto;
+        margin-left: 27px;
+        margin-right: 44px;
+        max-width: 50%;
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width:1280px) {
+    .navigation.navigation-next {
+        position: fixed;
+        right: 224px;
         z-index: 1;
         top: 0;
         margin: auto;
