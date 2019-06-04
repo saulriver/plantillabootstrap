@@ -15966,7 +15966,7 @@ be a descendant of the grid when it is being dragged.
 @media (max-width:1920px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 55px;
-        margin-right: 55px;
+        margin-right: 35px;
     }
 }
 
@@ -16066,6 +16066,13 @@ be a descendant of the grid when it is being dragged.
 .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
     margin-left: 55px;
     margin-right: 55px;
+}
+
+@media (max-width:1920px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+        margin-left: 35px;
+        margin-right: 55px;
+    }
 }
 
 @media (max-width:1366px) {
