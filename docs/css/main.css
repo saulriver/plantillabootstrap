@@ -15950,10 +15950,10 @@ be a descendant of the grid when it is being dragged.
 
 .navigation.navigation-next {
     position: fixed;
-    right: 228px;
+    right: 410px;
     z-index: 1;
     top: 0;
-    margin-left: 309px;
+    margin-left: 27px;
     margin-right: 36px;
     max-width: 50%;
 }
