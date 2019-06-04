@@ -173,7 +173,7 @@ b,
 strong {
     font-weight: bolder;
     font-style: italic;
-    font-family: 'Code';
+    font-family: 'Montserrat';
     border-left: 15px solid red;
     background-color: #f2f2f2;
     border-radius: 12px;
@@ -648,6 +648,8 @@ pre code {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    text-align: justify;
+    line-height: 1.7rem;
 }
 
 .row {
@@ -2333,7 +2335,8 @@ select.form-control-lg:not([size]):not([multiple]),
     color: #28a745;
 }
 
-.valid-tooltip {
+
+/*.valid-tooltip {
     position: absolute;
     top: 100%;
     z-index: 5;
@@ -2557,7 +2560,7 @@ select.form-control-lg:not([size]):not([multiple]),
 .custom-file-input.is-invalid~.invalid-feedback,
 .custom-file-input.is-invalid~.invalid-tooltip {
     display: block;
-}
+}*/
 
 .was-validated .custom-file-input:invalid:focus~.custom-file-label,
 .custom-file-input.is-invalid:focus~.custom-file-label {
@@ -2840,6 +2843,7 @@ fieldset:disabled a.btn {
     color: #FFF;
     background-color: #17a2b8;
     border-color: #17a2b8;
+    border-radius: 18px;
 }
 
 .btn-info:hover {
@@ -5172,10 +5176,11 @@ input[type="button"].btn-block {
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: rgba(131, 132, 133, 0.514);
+    background-color: rgba(231, 233, 235, 0.945);
     border-radius: 0.25rem;
-    margin-left: -16px;
-    padding: 27px;
+    margin-left: -56px;
+    margin-right: -56px;
+    padding: 6px;
     text-align: justify;
 }
 
@@ -6100,7 +6105,8 @@ button.close {
     }
 }
 
-.tooltip {
+
+/*.tooltip {
     position: absolute;
     z-index: 1070;
     display: block;
@@ -6122,9 +6128,10 @@ button.close {
     font-size: 0.765625rem;
     word-wrap: break-word;
     opacity: 0;
-}
+}*/
 
-.tooltip.show {
+
+/*.tooltip.show {
     opacity: 0.9;
 }
 
@@ -6222,6 +6229,7 @@ button.close {
     background-color: #000;
     border-radius: 0.25rem;
 }
+*/
 
 .popover {
     position: absolute;
@@ -13947,12 +13955,12 @@ be a descendant of the grid when it is being dragged.
     -webkit-transition: margin-left 0.3s ease;
     -o-transition: margin-left 0.3s ease;
     transition: margin-left 0.3s ease;
-    margin-right: 86px;
 }
 
 @media (min-width: 768px) {
     .app-content {
         margin-left: 309px;
+        margin-right: 40px;
     }
 }
 
@@ -14574,11 +14582,13 @@ be a descendant of the grid when it is being dragged.
     margin: 0;
     font-size: 24px;
     font-weight: 400;
+    margin-left: -53px;
 }
 
 .app-title p {
     margin-bottom: 0;
     font-style: italic;
+    margin-left: -53px;
 }
 
 @media (max-width: 480px) {
@@ -15832,6 +15842,7 @@ be a descendant of the grid when it is being dragged.
     border-radius: 2px;
     font-size: 1.1rem;
     text-align: justify;
+    line-height: 2.1rem;
 }
 
 .text {
@@ -15846,10 +15857,11 @@ be a descendant of the grid when it is being dragged.
 
 .dropbtn {
     padding: 7px;
-    font-size: 19px;
+    font-size: 15px;
     border: none;
     padding-left: 28px;
     padding-right: 28px;
+    margin-left: 31px;
 }
 
 .dropdown {
@@ -15860,22 +15872,19 @@ be a descendant of the grid when it is being dragged.
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff transparent ! important;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 143%;
     z-index: 1;
-    margin-left: 33px;
+    margin-left: 52px;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 0px 0px;
     text-decoration: none;
     display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: rgb(255, 255, 255);
+    margin-left: -98px;
+    margin-right: 74px;
+    text-align: right;
 }
 
 .dropdown:hover .dropdown-content {
@@ -15889,24 +15898,7 @@ be a descendant of the grid when it is being dragged.
 
 /*========================================para la seleccion de clase =========================================================================*/
 
-.navigation.navigation-next {
-    right: 0;
-    position: fixed;
-    margin-right: 287px;
-}
-
-.navigation.navigation-prev {
-    left: 0;
-    position: fixed;
-}
-
-.navigation:hover {
-    text-decoration: none;
-    color: #444;
-}
-
 .navigation {
-    position: absolute;
     top: 50px;
     bottom: 0;
     margin: 0;
@@ -15917,27 +15909,157 @@ be a descendant of the grid when it is being dragged.
     align-content: center;
     flex-direction: column;
     font-size: 40px;
-    color: #ccc;
     text-align: center;
     -webkit-transition: all 350ms ease;
     -moz-transition: all 350ms ease;
     -o-transition: all 350ms ease;
-    transition: all 350ms ease
+    transition: all 350ms ease;
+    position: relative;
+    outline: 0;
+    overflow: hidden;
 }
 
 @media (max-width:1240px) {
     .navigation {
-        position: static;
+        position: fixed;
         top: auto;
         max-width: 50%;
         width: 50%;
         display: inline-block;
     }
-    .navigation.navigation-unique {
-        max-width: 100%;
-        width: 100%;
+}
+
+.navigation:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.fa-angle-right {
+    width: 100%;
+}
+
+.navigation.navigation-next {
+    position: fixed;
+    right: 228px;
+    z-index: 1;
+    top: 0;
+    margin-left: 309px;
+    margin-right: 36px;
+    max-width: 50%;
+}
+
+.sidebar-mini.sidenav-toggled .navigation.navigation-next {
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+@media (max-width:768px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
+        position: fixed;
+        margin-left: 60px;
+        margin-right: -22px;
+        height: 433px;
     }
 }
+
+@media (max-width:360px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
+
+@media (max-width:768px) {
+    .navigation.navigation-next {
+        position: fixed;
+        top: auto;
+        max-width: 50%;
+        width: 50%;
+        display: inline-block;
+        right: -301px;
+        padding-right: 344px;
+        padding-left: 4px;
+        height: 300px;
+        margin-right: -24px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width:360px) {
+    .navigation.navigation-next {
+        position: fixed;
+        top: auto;
+        display: inline-block;
+        margin: -29px;
+        padding: 57px;
+        padding-right: 38px;
+        padding-left: 16px;
+        height: 352px;
+        right: -53px;
+    }
+}
+
+.navigation.navigation-prev {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -60px;
+    margin-left: 309px;
+    margin-right: 40px;
+    max-width: 50%;
+}
+
+.sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+@media (max-width:768px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
+
+@media (max-width:360px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
+
+@media (max-width:768px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        top: auto;
+        max-width: 50%;
+        width: 50%;
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 109px;
+        height: 276px;
+        left: -441px;
+    }
+}
+
+@media (max-width:360px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        top: auto;
+        display: inline-block;
+        left: 12px;
+        z-index: 1;
+        margin: -29px;
+        padding: 57px;
+        padding-right: 38px;
+        padding-left: 16px;
+        height: 353px;
+        width: 0px;
+    }
+}
+
+
+/*================asi adapte los slides para que corrieran al cerrar el menu======================================================================================*/
 
 
 /*========================================para el aumento de la letra =========================================================================*/
@@ -15951,7 +16073,7 @@ section.normal {
     word-wrap: break-word;
     overflow: hidden;
     color: #333;
-    line-height: 1.7;
+    line-height: 1.7rem;
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
