@@ -15997,7 +15997,7 @@ be a descendant of the grid when it is being dragged.
 @media (max-width:1920px) {
     .navigation.navigation-next {
         position: fixed;
-        right: 407px;
+        right: 365px;
         z-index: 1;
         top: 0;
         margin-left: 17px;
