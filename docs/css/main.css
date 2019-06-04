@@ -15970,6 +15970,14 @@ be a descendant of the grid when it is being dragged.
     }
 }
 
+@media (max-width:1366px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
+        margin-left: 34px;
+        margin-right: 58px;
+        right: 225px;
+    }
+}
+
 @media (max-width:768px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         position: fixed;
@@ -15992,9 +16000,25 @@ be a descendant of the grid when it is being dragged.
         right: 365px;
         z-index: 1;
         top: 0;
-        margin-left: 309px;
-        margin-right: 36px;
+        margin-left: 17px;
+        margin-right: 29px;
         max-width: 50%;
+        padding: 8px;
+    }
+}
+
+@media (max-width:1366px) {
+    .navigation.navigation-next {
+        position: fixed;
+        right: 238px;
+        z-index: 1;
+        top: 0;
+        margin: auto;
+        margin-left: 27px;
+        margin-right: 44px;
+        max-width: 50%;
+        padding-right: 0px;
+        padding-left: 3px;
     }
 }
 
@@ -16033,7 +16057,7 @@ be a descendant of the grid when it is being dragged.
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -60px;
+    left: -48px;
     margin-left: 309px;
     margin-right: 40px;
     max-width: 50%;
@@ -16042,6 +16066,14 @@ be a descendant of the grid when it is being dragged.
 .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
     margin-left: 55px;
     margin-right: 55px;
+}
+
+@media (max-width:1366px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+        margin-left: 34px;
+        margin-right: 58px;
+        left: -43px;
+    }
 }
 
 @media (max-width:768px) {
