@@ -15963,6 +15963,13 @@ be a descendant of the grid when it is being dragged.
     margin-right: 55px;
 }
 
+@media (max-width:1920px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
+
 @media (max-width:768px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         position: fixed;
@@ -15976,6 +15983,18 @@ be a descendant of the grid when it is being dragged.
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 55px;
         margin-right: 55px;
+    }
+}
+
+@media (max-width:1920px) {
+    .navigation.navigation-next {
+        position: fixed;
+        right: 365px;
+        z-index: 1;
+        top: 0;
+        margin-left: 309px;
+        margin-right: 36px;
+        max-width: 50%;
     }
 }
 
@@ -16000,31 +16019,13 @@ be a descendant of the grid when it is being dragged.
         position: fixed;
         top: auto;
         display: inline-block;
-        margin: -29px;
+        margin: auto;
         padding: 57px;
         padding-right: 38px;
         padding-left: 16px;
         height: 352px;
         right: -53px;
-    }
-}
-
-@media (max-width:1920px) {
-    .navigation.navigation-next {
-        position: fixed;
-        right: 365px;
-        z-index: 1;
-        top: 0;
-        margin-left: 309px;
-        margin-right: 36px;
-        max-width: 50%;
-    }
-}
-
-@media (max-width:1920px) {
-    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
-        margin-left: 55px;
-        margin-right: 55px;
+        max-width: 500px;
     }
 }
 
