@@ -14384,7 +14384,6 @@ be a descendant of the grid when it is being dragged.
     flex: 1 1 auto;
     font-family: Arial;
     font-size: 1.09365rem;
-    color: #000000;
 }
 
 .treeview.is-expanded [data-toggle='treeview'] {
