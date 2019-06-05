@@ -14598,7 +14598,7 @@ be a descendant of the grid when it is being dragged.
     }
 }
 
-h1 {
+.app-title h1 {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
