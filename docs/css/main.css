@@ -371,6 +371,10 @@ legend {
     white-space: normal;
 }
 
+.bs-component ul li {
+    margin-left: 38px;
+}
+
 progress {
     vertical-align: baseline;
 }
@@ -4503,6 +4507,7 @@ input[type="button"].btn-block {
     padding-left: 0;
     border-radius: 19px;
     background-color: white;
+    font-size: 17px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -5589,7 +5594,6 @@ input[type="button"].btn-block {
 .alert-dark {
     color: #1b1e21;
     background-color: #d6d8d9;
-    border-color: #c6c8ca;
 }
 
 .alert-dark hr {
@@ -14309,12 +14313,13 @@ be a descendant of the grid when it is being dragged.
     color: #fff;
 }
 
-.app-sidebar__user-avatar {
+
+/*.app-sidebar__user-avatar {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     margin-right: 15px;
-}
+}*/
 
 .app-sidebar__user-name {
     font-size: 17px;
@@ -14328,6 +14333,7 @@ be a descendant of the grid when it is being dragged.
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     margin-bottom: 0;
+    color: #000000;
 }
 
 .app-menu {
@@ -14360,7 +14366,8 @@ be a descendant of the grid when it is being dragged.
     text-decoration: none;
     color: #fff;
     border-radius: 12px;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-weight: bold;
 }
 
 .app-menu__icon {
@@ -14521,6 +14528,7 @@ be a descendant of the grid when it is being dragged.
         border-left-color: #ffffff;
         text-decoration: none;
         color: #00aa9c;
+        font-weight: bold;
     }
     .sidebar-mini.sidenav-toggled .treeview-menu {
         position: absolute;
