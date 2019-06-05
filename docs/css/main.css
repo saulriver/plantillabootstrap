@@ -433,7 +433,7 @@ h6,
 
 h1,
 .h1 {
-    font-size: 2.1875rem;
+    font-size: 1.53125rem;
 }
 
 h2,
@@ -14600,7 +14600,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-title h1 {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.53125rem;
     font-weight: 400;
     margin-left: -53px;
 }
