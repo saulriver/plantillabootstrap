@@ -236,8 +236,8 @@ a:link {
     color: #0c5460;
 }
 
-i:disabled {
-    animation-delay: 0s;
+style {
+    background-color: white;
 }
 
 pre,
