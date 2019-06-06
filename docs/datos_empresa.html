@@ -232,7 +232,7 @@
             <!--menu utilidades-->
             <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-upload fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Utilidades</span><i class="treeview-indicator fa fa-caret-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="app-menu__item" href="utilidades_impor_archiv.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Archivos</a></li>
+                    <li><a class="app-menu__item" href="utilidades_impor_archiv.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Importar Archivo</a></li>
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
@@ -281,7 +281,7 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#agregar" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#agregar" onclick="myFunction()">
                           Agregar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#Modificar" onclick="myFunction()">
                           Modificar</a></li>&nbsp;
@@ -297,27 +297,44 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Datos Empresa</h1>
-                        <p>Funcionalidades del módulo datos empresa en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active"><i class="fa fa-unlock-alt"></i>&nbsp;Admon</li>
                             <li class="breadcrumb-item"><a href="opciones_correo_web.html">Opciones Correo y Web</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
                         </ol>
                     </div>
                 </div>
+
                 <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Datos empresa</h3>
+                            <div class="bs-component">
+                                Se encuentra en la ruta de acceso en. Admon / Datos Empresa.<br> Es la información solicitada con ciertas funcionalidades al momento de registrar la empresa que va a utilizar el sistema SISCOS primeramente dar clic sobre
+                                el botón Nuevo para que se habiliten los campos.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--agregar-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar</h3>
-                            <br><br> Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene todos los campos requeridos u obligatorios completos dar clic sobre el botón agregar y se realice el nuevo registro
-                            de la empresa al sistema.
-
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene todos los campos requeridos u obligatorios completos dar clic sobre el botón agregar y se realice el nuevo registro de la empresa al sistema.
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
                             <img src="imagenes/agregar empresa.png" style="width:70%;" class="w3-animate-zoom rounded">
@@ -330,11 +347,11 @@
                     <!--Modificar-->
                     <div id="Modificar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <a href="#Modificar"></a>
                             <h3 class="tile-title">Modificar</h3>
-                            <br><br> Se encuentra ubicado en la barra horizontal superior, permite al usuario dar clic sobre el botón seguidamente dar clic en el botón buscar para realizar la búsqueda de empresa que se le van actualizar los datos correspondientes.
-                            <br><br> Clic sobre el NIT de la empresa y se traslada a la pantalla principal se realizan los cambios y posteriormente clic sobre el botón Agregar y se actualiza automáticamente la base de datos del sistema.
-
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario dar clic sobre el botón seguidamente dar clic en el botón buscar para realizar la búsqueda de empresa que se le van actualizar los datos correspondientes. Clic sobre el NIT de la
+                                empresa y se traslada a la pantalla principal se realizan los cambios y posteriormente clic sobre el botón Agregar y se actualiza automáticamente la base de datos del sistema.
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
                                     <img src="imagenes/modificar empresa 1.png" style="width:70%;" class="w3-animate-zoom rounded">
@@ -343,14 +360,15 @@
                         </div>
                     </div>
                     <!--fin Modificar-->
+
                     <!--eliminar-->
                     <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-                            <a href="#eliminar"></a>
                             <h3 class="tile-title">Eliminar</h3>
-                            <br><br> Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar una empresa en el sistema SISCOS, primero haciendo clic sobre el botón modificar. Seguidamente clic en el botón Buscar, Y se visualizarán
-                            todas las empresas registradas en el sistema y seleccionando la que va hacer eliminada y luego clic sobre el botón Eliminar.
-
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar una empresa en el sistema SISCOS, primero haciendo clic sobre el botón modificar. Seguidamente clic en el botón Buscar, Y se visualizarán todas las empresas registradas
+                                en el sistema y seleccionando la que va hacer eliminada y luego clic sobre el botón Eliminar.
+                            </div>
                             <div class="w3-container w3-center">
                                 <span>
                             <img src="imagenes/eliminar empresa.png" style="width:70%;" class="w3-animate-zoom rounded">
