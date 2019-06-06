@@ -14264,7 +14264,7 @@ be a descendant of the grid when it is being dragged.
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: -19px;
     padding-top: 70px;
     overflow: auto;
     z-index: 10;
@@ -14311,6 +14311,7 @@ be a descendant of the grid when it is being dragged.
     padding: 10px;
     margin-bottom: 20px;
     color: #fff;
+    margin-left: 12px;
 }
 
 
@@ -16001,6 +16002,14 @@ i .fa-spin {
     }
 }
 
+@media (max-width:1550px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-next {
+        margin-left: 34px;
+        margin-right: 58px;
+        right: -55px;
+    }
+}
+
 @media (max-width:1366px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 34px;
@@ -16043,6 +16052,21 @@ i .fa-spin {
         margin-right: 29px;
         max-width: 50%;
         padding: 8px;
+    }
+}
+
+@media (max-width:1550px) {
+    .navigation.navigation-next {
+        position: fixed;
+        right: -38px;
+        z-index: 1;
+        top: 0;
+        margin: auto;
+        margin-left: 27px;
+        margin-right: 44px;
+        max-width: 50%;
+        padding-right: 0px;
+        padding-left: 3px;
     }
 }
 
@@ -16186,6 +16210,16 @@ i .fa-spin {
 
 .w3-animate-zoom {
     animation: animatezoom 0s;
+}
+
+.app-menu__label,
+.fa-folder-open {
+    margin-left: 12px;
+}
+
+.app-menu__item,
+.fa-chevron-circle-right {
+    margin-left: 12px;
 }
 
 

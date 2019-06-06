@@ -274,29 +274,82 @@
         </ul>
     </aside>
 
-    <main class="app-content">
-    <div class="app-title">
-                    <div>
-                        <h1><i class=""></i>Bienvenidos! </h1>
-                        <p>Al manual web de SISCOS</p>
-                    </div>
+    <!--container fluid-->
+    <div id="agregar" class="container-fluid">
+        <!--row flex-->
+        <div class="row flex-lg-nowrap">
+
+            <!--menu derecho-->
+            <div class="d-none d-lg-block col-sm-2 bd-toc">
+                <ul class="navbar-nav">
+                    <li class="treeview">
+                        <a href="#"><img class="d-block w-100 rounded" style="padding: 7px; border: rounded" src="imagenes/fondo.png" alt="Manual Siscos"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--fin menu derecho-->
+
+            <main class="app-content">
+                <div class="app-title">
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item active">Home</li>
                             <li class="breadcrumb-item"><a href="glosario.html">Glosario</a></li>
+                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
+                            <div class="dropdown">
+                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="aumentarFont">A+</a>
+                                    <a href="#" class="disminuirFont">A-</a>
+                                    <a href="#" class="resetearFont">Normal</a>
+                                </div>
+                            </div>
                         </ol>
                     </div>
                 </div>
 
-        <div class="container">
-            <div class="w3-row center">
-                <div class="col-md-12">
-                    <a href="#"><img class="d-block w-100 rounded" src="imagenes/fondo.png" alt="Manual Siscos"></a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
+                            <div class="bs-component">
+                                <div class="tile-title">
+                                    <h1>Bienvenidos!</h1>
+                                    <p>Al manual web de SISCOS</p>
+                                </div>
+                                SISCOS: sistema de información ( Software ) para el control de inventarios y gestión de órdenes de servicios. Es un software adaptable para la gestión de los inventarios para contratos de Movistar, los módulos de inventarios aplican a Telecomunicaciones.
+                            </div><br>
+                            <div class="bs-component">
+                                <div class="tile-title">
+                                    <h1>Objetivos del sistema de información SISCOS</h1>
+                                </div>
+                                El presente manual tiene como objetivo guiar al usuario a utilizar el Sistema de información para el control de inventarios y gestión de órdenes de servicios obteniendo la información sistematizada deseada por el usuario y poder despejar todas las dudas
+                                existentes, comprendiendo lo siguiente:
+                                <ul>
+                                    <li>Guía para acceder al sistema de información SISCOS.</li>
+                                    <li>Conocer cómo utilizar el sistema de información SISCOS, mediantes una descripción detallada e ilustrada de las opciones.</li>
+                                    <li>Conocer el alcance de toda la información por medio de la explicación.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="container">
+                        <div class="w3-row center">
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+                <!--fin row-->
+            </main>
         </div>
-    </main>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="glosario.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -321,39 +374,6 @@
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
     <!-- Page specific javascripts-->
     <script>
@@ -388,7 +408,7 @@
 </body>
 
 <!--para inhabilitar el boton derecho en la pagina-->
-<Script language=JavaScript>
+<script language=JavaScript>
     function right(e) {
         if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) {
             alert("Esta pagina es privada.");
