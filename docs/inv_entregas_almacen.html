@@ -294,15 +294,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Entregas Almacén</h1>
-                        <p>Funcionalidades del módulo entregas almacén en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Reportes</li>
                             <li class="breadcrumb-item"><a href="inv_devoluciones_almacen.html">Devoluciones Almacén</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -320,15 +316,25 @@
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Entregas almacén</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta acceso Inventario / Reportes / Entregas Almacén.<br> Este módulo permite generar informe de salida de mercancía a Terreno, Terreno es llevar el control de material del técnico que es lo que
+                                tiene entregado que no se ha gastado.
+                                <br> Hacemos clic en entregas almacén y nos muestra una ventana donde se requiere de información para poder generar el informe, el usuario escoge si se va a trabajar con todas las bodegas o solo la que el seleccione se
+                                escoge el departamento, bodega, suministro si desea incluir seriales o tramos a los materiales, criterio de fecha la inicial y la final, centro y el tipo de material, en el campo material el usuario debe tener claro cuál
+                                va ingresar porque este campo no tiene opción de hacer búsqueda.<br> Al ingresar el material y la persona que va asociada a dicho material se arroja la demás información correspondiente.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--generar-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Este módulo permite generar informe de salida de mercancía a Terreno, Terreno es llevar el control de material del técnico que es lo que tiene entregado que no se ha gastado. Hacemos clic en entregas almacén y nos muestra una ventana donde se requiere
-                                de información para poder generar el informe, el usuario escoge si se va a trabajar con todas las bodegas o solo la que el seleccione se escoge el departamento, bodega, suministro si desea incluir seriales o tramos a los
-                                materiales, criterio de fecha la inicial y la final, centro y el tipo de material, en el campo material el usuario debe tener claro cuál va ingresar porque este campo no tiene opción de hacer búsqueda. Al ingresar el material
-                                y la persona que va asociada a dicho material se arroja la demás información correspondiente.
+                                Hacemos clic en el botón Generar, para que exporte a Excel el informe de salida de mercancía terreno con la información establecida por el usuario en los campos requeridos u obligatorios.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>

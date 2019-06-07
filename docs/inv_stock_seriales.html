@@ -293,15 +293,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Stock Seriales</h1>
-                        <p>Funcionalidades del módulo stock seriales en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Reportes</li>
                             <li class="breadcrumb-item"><a href="inv_material_terreno.html">Material Terreno</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -319,16 +315,24 @@
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Stock seriales</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta acceso Inventario / Reportes / Stock Seriales.<br> Este módulo permite seleccionar la información necesaria para su proceso que ya está registrada en el sistema para que le arroje el informe
+                                seriales disponibles en almacén.<br> Cuando el usuario se ubica para seleccionar la información necesaria debe tener en cuenta que cuando selecciona el cuadrito de todas las bodegas, automáticamente se inhabilitan los cuadros
+                                de departamento y bodega.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--generar-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Este módulo permite seleccionar la información necesaria para su proceso que ya está registrada en el sistema para que le arroje el informe seriales disponibles en almacén. Cuando el usuario se ubica para seleccionar la información necesaria debe tener
-                                en cuenta que cuando selecciona el cuadrito de todas las bodegas, automáticamente se inhabilitan los cuadros de departamento y bodega. Si el usuario no selecciona esta opción estarán los botones de departamento y bodega
-                                habilitados para escoger el que se va utilizar para la generación del informe disponible. Como se puede observar ingresamos el departamento y bodega para el reporte que se desea generar de la información seleccionada. Con
-                                ambas opciones se puede generar el informe solo el usuario decide cual sea la más conveniente para su informe.Hacemos clic sobre el botón Generar para visualizar el informe en un archivo Excel de los seriales disponibles
-                                en almacén.
+                                Hacemos clic en el botón Generar para visualizar el informe en un archivo Excel de los seriales disponibles en almacén.<br> En este ejemplo solo se visualiza un material, porque es el único que tiene seriales disponibles
+                                en almacén y almacén es la agrupación de bodegas.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>

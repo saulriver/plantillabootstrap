@@ -293,15 +293,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Serial Terrreno</h1>
-                        <p>Funcionalidades del módulo serial terreno en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Reportes</li>
                             <li class="breadcrumb-item"><a href="inv_existencia_almacen.html">Existencia Almacén</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -319,25 +315,33 @@
 
                 <div class="row">
 
+                    <div id="generar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Seriales terreno</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta acceso Inventario/Reportes/Seriales Terreno.<br> Este módulo permite poder Generar listado material en terreno ( seriales ), cumple con la misma estructura del módulo anterior material terreno
+                                si no que en este módulo es sacar el listado de seriales.<br> Contiene 2 opciones para Generar el informe, todas las bodegas o se clasifica solo una bodega en el sistema SISCOS.
+                                <div class="bs-component">
+                                    <b>Nota:</b> la diferencia de las 2 opciones que existen en el sistema SISCOS para generar informe serial de terreno, como ya se mencionaron es que la primera que son todas las bodegas del departamento registradas en
+                                    el sistema que tienen serial de terreno.<br>La segunda opción es solo clasificar la bodega que se desea sacar el informe de serial terreno.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!--generar-->
                     <div id="generar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Este módulo permite poder Generar listado material en terreno ( seriales ), cumple con la misma estructura del módulo anterior material terreno si no que en este módulo es sacar el listado de seriales. Contiene 2 opciones para Generar el informe, todas
-                                las bodegas o se clasifica solo una bodega en el sistema SISCOS. Solicitando al usuario que donde lo desea guardar en las opciones plasmadas del pc, cuando ya se haya ingresado el nombre dar clic en el botón guardar y proceder
-                                abrir el archivo en Excel. Cuando ya se guarda muestra ventana emergente como se puede visualizar a continuación.
-                                <div class="bs-component">
-                                    <b>Nota:</b> la diferencia de las 2 opciones que existen en el sistema SISCOS para generar informe serial de terreno, como ya se mencionaron es que la primera que son todas las bodegas del departamento Valle del Cauca
-                                    registradas en el sistema que tienen serial de terreno. La segunda opción es solo clasificar la bodega que se desea sacar el informe de serial terreno.
-                                </div>
+                                Clic en el botón Generar y se presentará un cuadro que requiere para el usuario guardar el archivo.<br> Posteriormente clic en la tecla Enter o en el botón Guardar y mostrará una ventana emergente si desea abrir el archivo
+                                le damos clic en el botón Sí y automáticamente se descarga el listado de seriales de la bodega.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
                                   <img src="imagenes/seriales terreno.png" style="width:100%;" class="w3-animate-zoom rounded">
                                 </span>
                             </div>
-
                         </div>
                     </div>
                     <!--fin generar-->

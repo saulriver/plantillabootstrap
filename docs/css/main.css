@@ -15910,7 +15910,10 @@ be a descendant of the grid when it is being dragged.
     display: block;
     margin-left: -98px;
     margin-right: 74px;
-    text-align: right;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 19px;
+    padding-top: 2px;
 }
 
 .dropdown:hover .dropdown-content {

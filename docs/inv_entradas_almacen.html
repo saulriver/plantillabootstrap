@@ -293,15 +293,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Entradas Almacén</h1>
-                        <p>Funcionalidades del módulo entradas almacén en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Reportes</li>
                             <li class="breadcrumb-item"><a href="inv_entregas_almacen.html">Entregas Almacén</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -319,17 +315,24 @@
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Entrada almacén</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta acceso Inventario / Reportes / Entradas Almacén.<br> Este módulo permite seleccionar la información solicitada u obligatoria para poder generar el informe entradas de mercancía al almacén.<br>                                El usuario selecciona Departamento y Bodega, Suministro, una de las 2 opciones de Incluir Seriales o Incluir Tramos ambas opciones o una sola como crea necesario el usuario para su proceso.<br> Criterio de fecha ya sea
+                                por sistema o movimiento, Fecha Inicial y Fecha Final que concuerde con la información que ya ha seleccionado el usuario es decir estén asociadas a esa bodega.<br> Seleccionando primero el cuadro que aparece antes del nombre
+                                del campo para que se pueda habilitar y poder seleccionar el indicado, escogemos el Centro, Tipo de Material, área, material, automáticamente arroja la descripción del Material, PEP, Remisión.<br>
+                                <b>Nota:</b> en este módulo a diferencia de los demás que vienen a continuación, este no es necesario que se seleccione todas las bodegas o que solo se clasifique una ambas son el mismo proceso.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--generar-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <a href="#generar"></a>
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Este módulo permite seleccionar la información solicitada u obligatoria para poder generar el informe entradas de mercancía al almacén. El usuario selecciona Departamento y Bodega, Suministro, una de las 2 opciones de Incluir Seriales o Incluir Tramos
-                                ambas opciones o una sola como crea necesario el usuario para su proceso. Criterio de fecha ya sea por sistema o movimiento, Fecha Inicial y Fecha Final que concuerde con la información que ya ha seleccionado el usuario
-                                es decir estén asociadas a esa bodega. Seleccionando primero el cuadro que aparece antes del nombre del campo para que se pueda habilitar y poder seleccionar el indicado, escogemos el Centro, Tipo de Material, área, material,
-                                automáticamente arroja la descripción del Material, PEP, Remisión.<br><br>
-                                <b>Observación: en este módulo a diferencia de los demás que vienen a continuación, este no es necesario que se seleccione todas las bodegas o que solo se clasifique una ambas son el mismo proceso.</b>
+                                Posteriormente le damos clic en el botón Generar y se genera el listado de entradas almacén, en este caso solo se visualizará una porque es el único que tiene movimientos con la información seleccionada.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>

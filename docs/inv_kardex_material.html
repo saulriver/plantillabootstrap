@@ -292,15 +292,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Kardex Material</h1>
-                        <p>Funcionalidades del módulo kardex material en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Consultas</li>
                             <li class="breadcrumb-item"><a href="inv_kardex_personal.html">Kardex Personal</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -317,15 +313,22 @@
                 </div>
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Kardex material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta de acceso Inventario/Consultas/Kardex Material.<br> Este módulo es para consultar el movimiento del material que se ingrese, se escoge el departamento y la bodega.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--generar-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Este módulo es para consultar el movimiento del material que se ingrese, se escoge el departamento y la bodega. Posteriormente se ingresa el código de material o se puede hacer una búsqueda en el botón buscar material con el criterio (%). Para que presente
-                                todos los materiales registrados en el sistema y seleccionar con el que se va a trabajar clic con la tecla enter y se traslada al campo material. Consulta por fecha de sistema y fecha de movimiento por cualquiera de estas
-                                2 opciones se genera la consulta, después que el material tenga existencia en el sistema. Campo criterio de fecha: - Desde (que sería fecha inicial). - Hasta (fecha final). Clic en el botón Generar que se encuentra en la
-                                barra horizontal inferior y se genera el informe de movimiento material Kardex del material ingresado o seleccionado en el sistema SISCOS.
+                                Se encuentra ubicado en la barra horizontal inferior, clic sobre el botón Generar y se genera el informe de movimiento material Kardex del material ingresado o seleccionado en el sistema SISCOS.
+                                <br>Si no se genera es porque ese material no le existen movimientos en el sistema.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>

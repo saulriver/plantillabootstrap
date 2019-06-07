@@ -295,15 +295,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Material Terrreno</h1>
-                        <p>Funcionalidades del módulo material terreno en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Reportes</li>
                             <li class="breadcrumb-item"><a href="inv_seriales_terreno.html">Seriales Terreno</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -321,19 +317,23 @@
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Material terreno</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta acceso Inventario / Reportes / Material Terreno.<br> Este módulo permite seleccionar todas las bodegas que tienen material terreno, dando clic en el cuadro todas las bodegas que automáticamente
+                                inhabilita los botones departamento y bodega.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--generar-->
-                    <div id="generar" class="col-md-12">
+                    <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Este módulo permite seleccionar todas las bodegas que tienen material terreno, dando clic en el cuadro todas las bodegas que automáticamente inhabilita los botones departamento y bodega. Seleccionando el Suministro, Centro y Tipo Material etc. Seguidamente
-                                dar clic en el botón generar y se genera un archivo en Excel. otra opción de generar informe material terreno es seleccionando el departamento y la bodega que estén habilitados para el proceso. Solicitando al usuario que
-                                donde lo desea guardar en las opciones plasmadas del pc, cuando ya se haya ingresado el nombre dar clic en el botón guardar y proceder abrir el archivo en Excel. Cuando ya se guarda muestra ventana emergente como se puede
-                                visualizar a continuación.
-                                <div class="bs-component">
-                                    <b>Nota:</b> la diferencia de las 2 opciones que existen en el sistema SISCOS para generar informe material de terreno, como ya se mencionaron es que la primera que son todas las bodegas del departamento Valle del Cauca
-                                    registradas en el sistema que tienen material de terreno. La segunda opción es solo clasificar la bodega que se desea sacar el informe de material terreno.
-                                </div>
+                                Hacemos clic en el botón Generar y se descarga el informe material terreno de la bodega Cali que fue la que se seleccionó en este ejemplo. Realizando el mismo tipo de preguntas al usuario como anteriormente se mencionó con la opción de todas las bodegas
+                                para la descarga del informe.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>

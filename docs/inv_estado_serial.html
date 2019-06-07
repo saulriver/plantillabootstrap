@@ -293,15 +293,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Estado Serial</h1>
-                        <p>Funcionalidades del módulo estado serial en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Consultas</li>
                             <li class="breadcrumb-item"><a href="inv_estado_entregas_seriales.html">Estado Entregas Seriales</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -316,34 +312,45 @@
                         </ol>
                     </div>
                 </div>
+
                 <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Estado serial</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la ruta acceso Inventario / Consultas / Estado Serial.<br> Este módulo permite poder consultar el estado de serial, la búsqueda se puede realizar por serial o Cas-ID su tipo tienen varias opciones
+                                como:
+                                <ul>
+                                    <li>Comience por.</li>
+                                    <li>Termine por.</li>
+                                    <li>Contenga.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
                     <!--consultar-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Consultar</h3>
                             <div class="bs-component">
-                                Este módulo permite poder consultar el estado de serial, la búsqueda se puede realizar por serial o Cas-ID su tipo tienen varias opciones como:
-                                <ul>
-                                    <li>Comience por.</li>
-                                    <li>Termine por.</li>
-                                    <li>Contenga.</li>
-                                </ul>
                                 En el campo criterio es el criterio de búsqueda que se va a ingresar, en este caso se ingresará la letra S y el tipo que comience por esta letra y automáticamente arroja toda la información de todos los seriales registrados en SISCOS que empiezan con
-                                la letra S. Hacemos clic en el botón buscar o filtrar para que realice la búsqueda correspondiente. Se visualizará los seriales encontrados,con ciertas ventanas de información de los seriales.
+                                la letra S.<br>Hacemos clic en el botón buscar o filtrar para que realice la búsqueda correspondiente.<br> Se visualizará los seriales encontrados,con ciertas ventanas de información de los
+                                seriales.
+                                <div class="bs-component">
+                                    <ul>
+                                        <li>Información Serial: toda la información de cada uno de los seriales registrados en el sistema SISCOS.</li>
+                                        <li>Historial: información detallada y ordenada que se hace durante el desarrollo del serial.</li>
+                                        <li>Información Ingreso: cantidades de ingreso de los seriales registrados en el sistema.</li>
+                                        <li>Información Entrega: es un conjunto organizado es la información acerca del serial que fue entregado.</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
                             <img src="imagenes/estado serial.png " style="width:100%;" class="w3-animate-zoom rounded">
                             </span>
-                            </div>
-                            <div class="bs-component">
-                                <ul>
-                                    <li>Información Serial: toda la información de cada uno de los seriales registrados en el sistema SISCOS.</li>
-                                    <li>Historial: información detallada y ordenada que se hace durante el desarrollo del serial.</li>
-                                    <li>Información Ingreso: cantidades de ingreso de los seriales registrados en el sistema.</li>
-                                    <li>Información Entrega: es un conjunto organizado es la información acerca del serial que fue entregado.</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
