@@ -295,15 +295,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Pedidos Pend Entregar</h1>
-                        <p>Funcionalidades del módulo pedidos pend entregar en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Pedidos Material</li>
                             <li class="breadcrumb-item"><a href="inv_listado_pedidos_pendiente.html">Listado Pedidos Pendientes</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -320,13 +316,23 @@
                 </div>
 
                 <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Pedidos pend entregar</h3>
+                            <div class="bs-component">
+                                Este módulo lo tiene almacén donde mira los pedidos pendientes, escoge la fecha que fue ingresada en el módulo pedido.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--consultar pedidos pend-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Consultar pedidos pend</h3>
                             <div class="bs-component">
-                                Este módulo lo tiene almacén donde mira los pedidos pendientes, escoge la fecha que fue ingresada en el módulo pedido. Se encuentra ubicado en la barra vertical, permite al usuario dar clic al botón consultar y automáticamente le arroja la información
-                                correspondiente a ese pedido con la fecha seleccionada.
+                                <strong>Personal:</strong> muestra los pedidos pendientes.<br>
+                                <strong>Buscar:</strong> muestra numero en específico.<br> El cuadro de arriba hace referencia listado de pedidos y el cuadro de abajo materiales que tiene el pedido.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
