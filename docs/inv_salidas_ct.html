@@ -300,15 +300,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Salidas CT</h1>
-                        <p>Funcionalidades del módulo Salidas CT en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
                             <li class="breadcrumb-item"><a href="inv_salidas_eecc.html">Salidas EECC</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -326,14 +322,24 @@
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salidas CT</h3>
+                            <div class="bs-component">
+                                Los requisitos previos que debe tener una salida CT es que depende de una entrada ( reserva ), proveedor ( tercero ), centro de costo ( propiedad ) áreas de operación y periodo activo.<br> Crear las bodegas a la que se
+                                le va enviar el material el tercero va hacer la bodega en este caso.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--Nueva salida-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Nueva salida</h3>
                             <div class="bs-component">
-                                Los requisitos previos que debe tener una salida CT es que depende de una entrada ( reserva ), proveedor ( tercero ), centro de costo ( propiedad ) áreas de operación y periodo activo. Al momento de estar ingresando la información para registrar una salida
-                                CT en el campo periodo nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los registros existente de tercero que en este caso son las bodegas, debido a que el usuario se le olvido la bodega que necesita
-                                entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla % que le presentará todas las bodegas registradas, para salir de esta ventana usamos la tecla esc.
+                                Al momento de estar ingresando la información para registrar una salida CT en el campo periodo nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los registros existente de tercero que en este caso son las bodegas, debido a que
+                                el usuario se le olvido la bodega que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla % que le presentará todas las bodegas registradas, para salir de esta ventana usamos la tecla
+                                esc.
                                 <ul>
                                     <li>Centro de costo y propiedad es lo mismo.</li>
                                     <li>El área con la que el usuario necesita para hacer el proceso.</li>
