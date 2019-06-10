@@ -295,15 +295,11 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div>
-                        <h1><i class="fa fa-file-text"></i>Control Material Entrada</h1>
-                        <p>Funcionalidades del módulo control material entrada en SISCOS</p>
-                    </div>
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Inventario</li>
+                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i>Inventario</li>
                             <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
                             <li class="breadcrumb-item"><a href="inv_consulta_entrada.html">Consulta Entrada</a></li>
                             <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
@@ -321,14 +317,23 @@
 
                 <div class="row">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
+                            <h3 class="tile-title">Control material entrada</h3>
+                            <div class="bs-component">
+                                Este módulo permite al usuario consultar por medio del consecutivo de la entrada registrada en SISCOS hacer cambios debido a la información de los campos cantidad verifica y estado verifica de los materiales asignados a dicha entrada.
+                            </div>
+                        </div>
+                    </div>
+
                     <!--consultar consecutivo-->
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Consultar consecutivo</h3>
                             <div class="bs-component">
-                                Este módulo permite al usuario consultar por medio del consecutivo de la entrada registrada en SISCOS hacer cambios debido a la información de los campos cantidad verifica y estado verifica de los materiales asignados a dicha entrada.
-                                <br><br> Posteriormente el usuario ingresa el consecutivo en el módulo que requiere de este número para que automáticamente arroje la información de la entrada y actualizar los campos disponibles para el control de material
-                                de la entrada ingresada.
+                                Posteriormente el usuario ingresa el consecutivo en el módulo que requiere de este número para que automáticamente arroje la información de la entrada y actualizar los campos disponibles para el control de material de la entrada ingresada.
+                                <br>Hacemos clic en el botón buscar para visualizar la información de la entrada, en este caso el consecutivo 5762 presenta esta información. Seguidamente el usuario ingresa la información solicitada de los campos Cnt.verifica
+                                y Estado verif.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
