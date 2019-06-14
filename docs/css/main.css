@@ -14030,7 +14030,7 @@ be a descendant of the grid when it is being dragged.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #009688;
+    background-color: rgb(27, 65, 124);
     z-index: 1030;
     padding-right: 15px;
     min-height: 4rem;
@@ -14069,7 +14069,7 @@ be a descendant of the grid when it is being dragged.
         flex: 0 0 auto;
         display: block;
         width: 259px;
-        background-color: #007d71;
+        background-color: rgb(27, 65, 124);
     }
 }
 
@@ -14105,7 +14105,7 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle:focus,
 .app-sidebar__toggle:hover {
     color: #fff;
-    background-color: #00635a;
+    background-color: rgb(27, 65, 124);
     text-decoration: none;
 }
 
@@ -14527,7 +14527,7 @@ be a descendant of the grid when it is being dragged.
         background: #ffffff;
         border-left-color: #ffffff;
         text-decoration: none;
-        color: #00aa9c;
+        color: rgb(27, 65, 124);
         font-weight: bold;
     }
     .sidebar-mini.sidenav-toggled .treeview-menu {
