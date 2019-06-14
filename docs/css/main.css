@@ -13926,12 +13926,12 @@ be a descendant of the grid when it is being dragged.
 
 ::-moz-selection {
     color: #FFF;
-    background-color: #00635a;
+    background-color: rgb(27, 65, 124);
 }
 
 ::selection {
     color: #FFF;
-    background-color: #ffffff;
+    background-color: rgb(27, 65, 124);
 }
 
 @media (min-width: 768px) {
