@@ -32,7 +32,7 @@
 
 <body class="app sidebar-mini rtl" data-spy="scroll">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">SISCOS</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html"><span style="color: white">SISCOS</span></a>
         <!-- Sidebar toggle button-->
         <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
         <!-- Navbar Right Menu-->
@@ -296,7 +296,7 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    
+
                     <div class="bs-component">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
@@ -318,20 +318,19 @@
                 </div>
 
                 <div class="row">
-                        <div class="col-md-12">
-                                <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-        
-                                    <div class="bs-component">
-                                        <div class="tile-title">
-                                            <h1>Stock personal</h1>
-                                        </div>
-                                       
-                                        Este módulo permite al usuario configurar el stock del técnico, y la configuración de stock se realiza es por la cedula. Es la cantidad de materiales
-                                         que dispone un técnico en un determinado momento, para el cumplimento de ciertos objetivos de la organización.   
-                                    </div>
-        
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
+
+                            <div class="bs-component">
+                                <div class="tile-title">
+                                    <h1>Stock personal</h1>
                                 </div>
+
+                                Este módulo permite al usuario configurar el stock del técnico, y la configuración de stock se realiza es por la cedula. Es la cantidad de materiales que dispone un técnico en un determinado momento, para el cumplimento de ciertos objetivos de la organización.
                             </div>
+
+                        </div>
+                    </div>
 
                     <!--agregar personal-->
                     <div class="col-md-12">
@@ -354,19 +353,14 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Archivo</h3>
                             <div class="bs-component">
-                                Subir archivo con stock y no estar configurando uno a uno, stock se suben por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock
-                                se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica. El stock
-                                es por bodega si se le aplica a una se le aplica a la otra. <br> Si el usuario va a tener bodega herramienta se deben contar stock máximo de la bodega herramienta
-                                 y por otro lado es consumible stock máximo consumible de esa
-                                bodega donde normalmente pide. <br>El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a otra hay que mover el stock porque ya no le aplica
-                                 el stock que tienen en otra parte.<br> <strong>LOG-> </strong> No es necesario subir esta
-                                columna porque esta columna informa si se subió o no el archivo repuesta del módulo. Con este archivo se puede subir el stock máximo de todos los técnicos en la bodega
-                                 la cual el usuario quiera aplicar ese stock, el archivo
-                                plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la información necesaria de las columnas. Luego de haber subido el archivo 
-                                plano se procede hacer los pedidos se ubica en la bodega
-                                luego se busca el personal se agrega y se visualiza en el listado.
+                                Subir archivo con stock y no estar configurando uno a uno, stock se suben por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica. El stock
+                                es por bodega si se le aplica a una se le aplica a la otra. <br> Si el usuario va a tener bodega herramienta se deben contar stock máximo de la bodega herramienta y por otro lado es consumible
+                                stock máximo consumible de esa bodega donde normalmente pide. <br>El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a otra hay que mover el stock porque ya no le aplica el stock que tienen en otra
+                                parte.<br> <strong>LOG-> </strong> No es necesario subir esta columna porque esta columna informa si se subió o no el archivo repuesta del módulo. Con este archivo se puede subir el stock máximo de todos los técnicos en
+                                la bodega la cual el usuario quiera aplicar ese stock, el archivo plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la información necesaria de las columnas. Luego de haber subido
+                                el archivo plano se procede hacer los pedidos se ubica en la bodega luego se busca el personal se agrega y se visualiza en el listado.
                                 <div class="bs-component">
-                                    <b>Nota:</b>  recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los stock y este configurado la bodega para que tome los stock en pedidos o entregas, porque
+                                    <b>Nota:</b> recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los stock y este configurado la bodega para que tome los stock en pedidos o entregas, porque
                                     se puede subir los stock pero si en departamento no está chuleado no se aplica los stock.
 
                                 </div>
@@ -386,8 +380,8 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar Material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón agregar control material y nos muestra una ventana solicitando la información de un código, descripción, máximo y mínimo. Stock máximo de esa
-                                persona, y se empiezan agregar materiales esto se aplica para pedidos y entrega.
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón agregar control material y nos muestra una ventana solicitando la información de un código, descripción, máximo y mínimo. Stock máximo de esa persona, y se empiezan
+                                agregar materiales esto se aplica para pedidos y entrega.
                             </div>
 
                             <div class="w3-container w3-center">
