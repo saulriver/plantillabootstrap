@@ -301,24 +301,17 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div class="bs-component">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Pedidos Material</li>
-                            <li class="breadcrumb-item"><a href="inv_consulta_pedido.html">Consulta pedido</a></li>
-                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
-                            <div class="dropdown">
-                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="#" class="aumentarFont">A+</a>
-                                    <a href="#" class="disminuirFont">A-</a>
-                                    <a href="#" class="resetearFont">Normal</a>
-                                </div>
-                            </div>
-                        </ol>
-                    </div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes  fa-lg fa-fw"></i>Inventario</li>
+                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Pedidos Material</li>
+                        <li class="breadcrumb-item"><a href="inv_consulta_pedido.html">Consulta pedido</a></li>
+                        <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
+                    </ol>
                 </div>
 
                 <div class="row">
@@ -327,8 +320,7 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Pedidos</h3>
                             <div class="bs-component">
-                                En el módulo pedido se agrega material de movistar o material propio, no se tienen que hacer pedido para CT o EECC.<br>
-                                 En el mismo pedido se puede combinar todo, el pedido va amarrado al área, las áreas si no se pueden
+                                En el módulo pedido se agrega material de movistar o material propio, no se tienen que hacer pedido para CT o EECC.<br> En el mismo pedido se puede combinar todo, el pedido va amarrado al área, las áreas si no se pueden
                                 combinar.
                             </div>
                         </div>
@@ -339,8 +331,7 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder hacer la búsqueda con el criterio
-                                 (%) para que se visualice todo el personal registrado en el sistema SISCOS y seleccionar el necesario para el campo entrega
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder hacer la búsqueda con el criterio (%) para que se visualice todo el personal registrado en el sistema SISCOS y seleccionar el necesario para el campo entrega
                                 a ese pedido que se le va a realizar.
                             </div>
                             <div class="w3-container w3-center">
@@ -357,10 +348,8 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Stock personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, este botón permite al usuario ver que tiene el técnico cargado actualmente cuál 
-                                es su stock actual, dar clic en el botón y arrojará toda la información de este técnico, en este caso se puede analizar
-                                está vacío porque el técnico no tiene stock cargados. El usuario también visualizará una pestaña de materiales y seriales que se pueden 
-                                mandar a Excel en el botón Generar informe en Excel que se encuentra ubicado en la
+                                Se encuentra ubicado en la barra horizontal superior, este botón permite al usuario ver que tiene el técnico cargado actualmente cuál es su stock actual, dar clic en el botón y arrojará toda la información de este técnico, en este caso se puede analizar
+                                está vacío porque el técnico no tiene stock cargados. El usuario también visualizará una pestaña de materiales y seriales que se pueden mandar a Excel en el botón Generar informe en Excel que se encuentra ubicado en la
                                 barra horizontal inferior.
                             </div>
                             <div class="w3-container w3-center">
@@ -377,11 +366,9 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo,  permte al usuario, agregar material que se le va a entregar al 
-                                técnico le damos clic al botón y nos muestra todas las reservas que están habilitadas.
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permte al usuario, agregar material que se le va a entregar al técnico le damos clic al botón y nos muestra todas las reservas que están habilitadas.
                                 <div class="bs-component">
-                                    <b>Nota:</b> el usuario debe tener claro que materiales va agregar que pertenezcan a la misma área que fue seleccionada anteriormente
-                                     de agregar material porque de lo contrario mostrara mensaje de error al querer agregar.
+                                    <b>Nota:</b> el usuario debe tener claro que materiales va agregar que pertenezcan a la misma área que fue seleccionada anteriormente de agregar material porque de lo contrario mostrara mensaje de error al querer agregar.
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
@@ -399,8 +386,7 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, epermite al usuario eliminar un material que se haya registrado en el listado de
-                                 pedidos clic en el botón.
+                                Se encuentra ubicado en la barra horizontal superior, epermite al usuario eliminar un material que se haya registrado en el listado de pedidos clic en el botón.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
@@ -416,8 +402,7 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar entrega</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permitiendo al usuario cuando ya tiene toda la información solicitada 
-                                u obligatoria dar clic sobre el botón para guardarla y registrar la entrega, posteriormente el sistema mostrará que
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permitiendo al usuario cuando ya tiene toda la información solicitada u obligatoria dar clic sobre el botón para guardarla y registrar la entrega, posteriormente el sistema mostrará que
                                 se generó el ticket del pedido registrado.
                             </div>
                             <div class="w3-container w3-center">

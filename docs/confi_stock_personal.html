@@ -296,25 +296,17 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-
-                    <div class="bs-component">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Configuración</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
-                            <li class="breadcrumb-item"><a href="confi_alerta_stock.html">Alerta Stock</a></li>
-                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
-                            <div class="dropdown">
-                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="#" class="aumentarFont">A+</a>
-                                    <a href="#" class="disminuirFont">A-</a>
-                                    <a href="#" class="resetearFont">Normal</a>
-                                </div>
-                            </div>
-                        </ol>
-                    </div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Configuración</li>
+                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
+                        <li class="breadcrumb-item"><a href="confi_alerta_stock.html">Alerta Stock</a></li>
+                        <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
+                    </ol>
                 </div>
 
                 <div class="row">
@@ -353,25 +345,15 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Archivo</h3>
                             <div class="bs-component">
-                                Subir archivo con stock y no estar configurando uno a uno, stock se suben por cada bodega que el usuario desea utilizar 
-                                donde se quiera ejercer el stock
-                                se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica. El stock
-                                es por bodega si se le aplica a una se le aplica a la otra. <br> Si el usuario va a tener bodega herramienta se deben contar 
-                                stock máximo de la bodega herramienta
-                                 y por otro lado es consumible stock máximo consumible de esa
-                                bodega donde normalmente pide. <br>El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a otra hay que mover
-                                 el stock porque ya no le aplica
-                                 el stock que tienen en otra parte.<br> <strong>LOG-> </strong> No es necesario subir esta
-                                columna porque esta columna informa si se subió o no el archivo repuesta del módulo. Con este archivo se puede subir el stock máximo
-                                 de todos los técnicos en la bodega
-                                 la cual el usuario quiera aplicar ese stock, el archivo
-                                plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la información necesaria de las columnas.
-                                 Luego de haber subido el archivo 
-                                plano se procede hacer los pedidos se ubica en la bodega
-                                luego se busca el personal se agrega y se visualiza en el listado.
+                                Subir archivo con stock y no estar configurando uno a uno, stock se suben por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica. El stock
+                                es por bodega si se le aplica a una se le aplica a la otra. <br> Si el usuario va a tener bodega herramienta se deben contar stock máximo de la bodega herramienta y por otro lado es consumible
+                                stock máximo consumible de esa bodega donde normalmente pide. <br>El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a otra hay que mover el stock porque ya no le aplica el stock que tienen en otra
+                                parte.
+                                <br> <strong>LOG-> </strong> No es necesario subir esta columna porque esta columna informa si se subió o no el archivo repuesta del módulo. Con este archivo se puede subir el stock máximo de todos los técnicos en la bodega
+                                la cual el usuario quiera aplicar ese stock, el archivo plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la información necesaria de las columnas. Luego de haber subido el archivo
+                                plano se procede hacer los pedidos se ubica en la bodega luego se busca el personal se agrega y se visualiza en el listado.
                                 <div class="bs-component">
-                                    <b>Nota:</b>  recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los
-                                     stock y este configurado la bodega para que tome los stock en pedidos o entregas, porque
+                                    <b>Nota:</b> recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los stock y este configurado la bodega para que tome los stock en pedidos o entregas, porque
                                     se puede subir los stock pero si en departamento no está chuleado no se aplica los stock.
 
                                 </div>
@@ -391,9 +373,8 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar Material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón agregar control material y nos muestra
-                                 una ventana solicitando la información de un código, descripción, máximo y mínimo. Stock máximo de esa
-                                persona, y se empiezan agregar materiales esto se aplica para pedidos y entrega.
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón agregar control material y nos muestra una ventana solicitando la información de un código, descripción, máximo y mínimo. Stock máximo de esa persona, y se empiezan
+                                agregar materiales esto se aplica para pedidos y entrega.
                             </div>
 
                             <div class="w3-container w3-center">
@@ -410,8 +391,7 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Eliminar personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario eliminar un personal de la lista de control
-                                 de material. Al momento de dar clic en la persona que se desea eliminar mostrará un mensaje de información que si desea
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario eliminar un personal de la lista de control de material. Al momento de dar clic en la persona que se desea eliminar mostrará un mensaje de información que si desea
                                 eliminar a la persona seleccionada como se puede observar a continuación.
                             </div>
                             <div class="w3-container w3-center">
