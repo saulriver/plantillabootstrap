@@ -171,15 +171,7 @@ dfn {
     font-style: italic;
 }
 
-b {
-    font-weight: bolder;
-    font-style: italic;
-    font-family: 'Montserrat';
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    border-left: 6px solid gray;
-    background-color: lightgrey;
-}
+b {}
 
 small {
     font-size: 80%;
@@ -16309,6 +16301,18 @@ i .fa-spin {
 
 
 /*========================================para el aumento de la letra =========================================================================*/
+
+.nota {
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Montserrat';
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border-left: 6px solid gray;
+    background-color: #e9ecef;
+    margin-block: 12px;
+    border-right: 22px solid #e9ecef;
+}
 
 
 /*corregir el espaciado de los textos de la informacio ya que estan muy pegados y al darle zoom se ven feos 
