@@ -303,24 +303,17 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-                    <div class="bs-component">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i>Inventario</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
-                            <li class="breadcrumb-item"><a href="inv_control_material_entrada.html">Control Material Entrada</a></li>
-                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
-                            <div class="dropdown">
-                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="#" class="aumentarFont">A+</a>
-                                    <a href="#" class="disminuirFont">A-</a>
-                                    <a href="#" class="resetearFont">Normal</a>
-                                </div>
-                            </div>
-                        </ol>
-                    </div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active"><i class="app-menu__icon fa fa-cubes fa-lg fa-fw"></i>Inventario</li>
+                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
+                        <li class="breadcrumb-item"><a href="inv_control_material_entrada.html">Control Material Entrada</a></li>
+                        <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
+                    </ol>
                 </div>
 
                 <div class="row">
@@ -329,11 +322,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
                             <h3 class="tile-title">Entrada EECC</h3>
                             <div class="bs-component">
-                                Este módulo de transacciones de entradas EECC son todos los tipos de movimientos de inventario que pueden ser realizados
-                                 en el sistema. Los requisitos previos que debe tener un entrada EECC es una bodega, proveedor, centro de costos (propiedad) 
-                                 y periodo activo si ya hay un periodo activo se hace una sola vez ya las transacciones lo toma.<br>
-                                Transacciones entradas: son transacciones que incrementan las existencias de los materiales en el inventario.
-                                   
+                                Este módulo de transacciones de entradas EECC son todos los tipos de movimientos de inventario que pueden ser realizados en el sistema. Los requisitos previos que debe tener un entrada EECC es una bodega, proveedor, centro de costos (propiedad) y periodo
+                                activo si ya hay un periodo activo se hace una sola vez ya las transacciones lo toma.<br> Transacciones entradas: son transacciones que incrementan las existencias de los materiales en el
+                                inventario.
+
                             </div>
                         </div>
                     </div>
@@ -343,23 +335,18 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Nueva entrada EECC</h3>
                             <div class="bs-component">
-                                Al momento de estar ingresando la información para registrar una entrada EECC en el campo Periodo nos aparece un botón Prov, el
-                                 cual nos permite hacer una búsqueda de todos los registros existente de este, debido a que el usuario se le olvido el proveedor
-                                que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla ( % ) que le presentará todos los 
-                                proveedores registrados; para salir de esta ventana usamos la tecla esc. Centro de costo
+                                Al momento de estar ingresando la información para registrar una entrada EECC en el campo Periodo nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los registros existente de este, debido a que el usuario se le olvido el proveedor
+                                que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla ( % ) que le presentará todos los proveedores registrados; para salir de esta ventana usamos la tecla esc. Centro de costo
                                 y propiedad es lo mismo.<br><br>
                                 <ul>
                                     <li>Proveedor: se debe tener creado un proveedor para poder registrar entradas EECC.</li>
-                                    <li>Remisión/orden: si esta entrega es amarrada a una orden de trabajo por ejemplo: material va esta orden de trabajo como tal
-                                         única y exclusivamente. Cuando se generen los informes y el listado de existencia entonces dirá
+                                    <li>Remisión/orden: si esta entrega es amarrada a una orden de trabajo por ejemplo: material va esta orden de trabajo como tal única y exclusivamente. Cuando se generen los informes y el listado de existencia entonces dirá
                                         este material que queda aquí es de esta orden de trabajo.</li>
-                                    <li>Orden de compra: el material a que orden de trabajo pertenece Posteriormente de haber ingresado toda la información requerida
-                                         para el registro de una entrada le damos clic en el botón Nuevo para que la guarde y se puedan
+                                    <li>Orden de compra: el material a que orden de trabajo pertenece Posteriormente de haber ingresado toda la información requerida para el registro de una entrada le damos clic en el botón Nuevo para que la guarde y se puedan
                                         agregar material a esta entrada y se puedan habilitar los demás botones y poder realizar el proceso.</li>
                                 </ul>
                                 <div class="bs-component">
-                                    <b>Nota:</b> el usuario debe tener en cuenta que antes de hacer el registro de la entrada todo los campos requeridos estén llenos
-                                     si no les mostrará un mensaje de información que debe ingresar el campo.
+                                    <b>Nota:</b> el usuario debe tener en cuenta que antes de hacer el registro de la entrada todo los campos requeridos estén llenos si no les mostrará un mensaje de información que debe ingresar el campo.
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
@@ -377,29 +364,21 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder agregar material a una de las entradas registradas
-                                 en el sistema SISCOS, ya es diferente en este módulo que en CT la propiedad era para toda la entrada y en EECC
-                                puede tener varios costos para diferentes materiales y una misma entrada pueden haber varios centros de costos, el estado también. El usuario 
-                                debe dar clic en el botón agregar, y nos presentará una ventana que requiere
-                                de una información para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón. Al dar
-                                 clic en el botón mencionado visualizaremos otra ventana para agregar el material,
-                                se pueden hacer búsquedas por los criterios seleccionando las opciones como Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material; a su lado
-                                 podemos ingresar la tecla ( % ) para que me muestre todos los registros que pertenecen
+                                Se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder agregar material a una de las entradas registradas en el sistema SISCOS, ya es diferente en este módulo que en CT la propiedad era para toda la entrada y en EECC
+                                puede tener varios costos para diferentes materiales y una misma entrada pueden haber varios centros de costos, el estado también. El usuario debe dar clic en el botón agregar, y nos presentará una ventana que requiere
+                                de una información para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón. Al dar clic en el botón mencionado visualizaremos otra ventana para agregar el material,
+                                se pueden hacer búsquedas por los criterios seleccionando las opciones como Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material; a su lado podemos ingresar la tecla ( % ) para que me muestre todos los registros que pertenecen
                                 a el criterio seleccionado para salir de esta ventana usamos la tecla esc. Criterios de busquedas:<br><br>
                                 <ul>
                                     <li>( %CABLE% ) </li>
                                     <li>( % )</li>
                                     <li>CABLE%</li>
-                                    <li>Clasificado como cable: si es un material Cable al momento de dar clic te muestra otra ventana donde pide los tramos de ese cable para
-                                         que se haga el registro.</li>
-                                    <li>Clasificado como serial: si el usuario al ingresar la cantidad y se encuentra que el material es clasificado como serial le mostrará una
-                                         ventana donde requiere de información para su configuración.</li>
-                                    <li>Clasificado como otros: su configuración es periviamente sencilla debido a que el usuario debe tener claro asignar cantidad y ubicación 
-                                        al material que es obligatorio para realizar la entrada.</li>
+                                    <li>Clasificado como cable: si es un material Cable al momento de dar clic te muestra otra ventana donde pide los tramos de ese cable para que se haga el registro.</li>
+                                    <li>Clasificado como serial: si el usuario al ingresar la cantidad y se encuentra que el material es clasificado como serial le mostrará una ventana donde requiere de información para su configuración.</li>
+                                    <li>Clasificado como otros: su configuración es periviamente sencilla debido a que el usuario debe tener claro asignar cantidad y ubicación al material que es obligatorio para realizar la entrada.</li>
                                 </ul>
                                 <div class="bs-component">
-                                    <b>Nota:</b> el usuario debe tener claro la clasifacion de los materiales debido a que su configuracion es diferente ya sea como serial, 
-                                    cable y otros.
+                                    <b>Nota:</b> el usuario debe tener claro la clasifacion de los materiales debido a que su configuracion es diferente ya sea como serial, cable y otros.
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
@@ -417,21 +396,16 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Carga archivos</h3>
                             <div class="bs-component">
-                                Para cargar archivos planos se debe guardar el archivo formato de texto delimitado por tabulaciones y se crean las respectivas columnas 
-                                necesarias. Se carga N seriales, valida Si existe o No si No es a través de los archivos, se puede agregar con el botón
+                                Para cargar archivos planos se debe guardar el archivo formato de texto delimitado por tabulaciones y se crean las respectivas columnas necesarias. Se carga N seriales, valida Si existe o No si No es a través de los archivos, se puede agregar con el botón
                                 <button class="btn btn-info">+</button>.<br><br>
                                 <h5>Estructura de Archivo de Carga Entrada:</h5>
                                 <ul>
-                                    <li>Archivo 1: este archivo es para serial, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan
-                                         las pone en blanco al momento de cargar solo que cuando se va a validar la información
-                                        no va encontrase nada. Se pueden subir materiales que no son serializados o los materiales que están clasificados como otros. Al momento
-                                         de hacer inventario inicial lo necesario es que la planilla venga clasificados
+                                    <li>Archivo 1: este archivo es para serial, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar solo que cuando se va a validar la información
+                                        no va encontrase nada. Se pueden subir materiales que no son serializados o los materiales que están clasificados como otros. Al momento de hacer inventario inicial lo necesario es que la planilla venga clasificados
                                         como otros.</li>
                                     <li>Ejemplo: código estado siempre debería ir 02 bueno, 03 malo en sí que se tenga una tabla de codificación.</li>
-                                    <li>Archivo 2: se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales 
-                                        de un solo archivo, para guardar la entrada.</li>
-                                    <li>Archivo 3: es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada 
-                                        referencia, Con cualquiera de estos archivos sirve para el inventario inicial para
+                                    <li>Archivo 2: se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.</li>
+                                    <li>Archivo 3: es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia, Con cualquiera de estos archivos sirve para el inventario inicial para
                                         que salga lo más rápido posible y no estar buscando código por código.</li>
                                 </ul><br>
                                 <h5>Se deben armar 3 archivos:</h5>
@@ -459,8 +433,7 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, esta funcionalidad permite al usuario poder eliminar materiales que no crea útil para
-                                 cargarlos en entrada EECC.
+                                Se encuentra ubicado en la barra horizontal superior, esta funcionalidad permite al usuario poder eliminar materiales que no crea útil para cargarlos en entrada EECC.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
@@ -475,8 +448,7 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información correspondiente 
-                                en los campos solicitados u obligatorios dar clic sobre el botón.
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información correspondiente en los campos solicitados u obligatorios dar clic sobre el botón.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>

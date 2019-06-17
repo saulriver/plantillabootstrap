@@ -305,25 +305,17 @@
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
-
-                    <div class="bs-component">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Configuración</li>
-                            <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
-                            <li class="breadcrumb-item"><a href="confi_configuracion_bodegas.html">Configuración Bodegas</a></li>
-                            <a class="breadcrumb-item rounded" aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a>
-                            <div class="dropdown">
-                                <a class="dropbtn breadcrumb-item rounded"><i class="icon fa fa-font fa-lg fa-fw"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="#" class="aumentarFont">A+</a>
-                                    <a href="#" class="disminuirFont">A-</a>
-                                    <a href="#" class="resetearFont">Normal</a>
-                                </div>
-                            </div>
-                        </ol>
-                    </div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fa fa-home fa-lg" style="color:black"></i></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Configuración</li>
+                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
+                        <li class="breadcrumb-item"><a href="confi_configuracion_bodegas.html">Configuración Bodegas</a></li>
+                        <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
+                    </ol>
                 </div>
 
                 <div class="row">
@@ -336,19 +328,18 @@
                                 </div>
                                 Este módulo permite al usuario Crear plantillas y hacerle las respectivas configuraciones para las alertas de stock de los materiales que van hacer agregados a esa plantilla predeterminada para su configuración en el sistema SISCOS.
                             </div>
-                </div>
-        </div>
-      
-        <!--agregar plantilla-->
-        <div class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 40px">
-                <h3 class="tile-title">Agregar plantilla</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario agregar 
-                    la plantilla y hacer su configuración previamente en el sistema.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                        </div>
+                    </div>
+
+                    <!--agregar plantilla-->
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar plantilla</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario agregar la plantilla y hacer su configuración previamente en el sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/plantilla.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
                             </div>
@@ -356,21 +347,17 @@
                     </div>
                     <!--fin agregar plantilla-->
 
-        <!--agregar material-->
-        <div id="agregarmaterial" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Agregar Material</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario agregar materiales y 
-                    hacer búsquedas para seleccionar los necesarios para este proceso de alerta. Clic en el botón y se mostrará
-                    una ventana emergente donde requiere
-                    de información para la agregación de material en la plantilla seleccionada. Si el usuario tiene claro que materiales
-                    va agregar solo es ubicarse en el campo código del material e ingresarlo, si no se ubica en el botón Buscar le da
-                    clic y le muestra ventana emergente e ingresa el criterio de búsqueda para que le muestre todos los materiales registrados
-                    en la bodega Cali en este caso.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--agregar material-->
+                    <div id="agregarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar Material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario agregar materiales y hacer búsquedas para seleccionar los necesarios para este proceso de alerta. Clic en el botón y se mostrará una ventana emergente donde requiere
+                                de información para la agregación de material en la plantilla seleccionada. Si el usuario tiene claro que materiales va agregar solo es ubicarse en el campo código del material e ingresarlo, si no se ubica en el botón Buscar
+                                le da clic y le muestra ventana emergente e ingresa el criterio de búsqueda para que le muestre todos los materiales registrados en la bodega Cali en este caso.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/agregar material plantilla.png" style="width:80%;" class="w3-animate-zoom rounded">
                               </span>
                             </div>
@@ -378,18 +365,16 @@
                     </div>
                     <!--fin agregar material-->
 
-        <!--Eliminar material-->
-        <div id="eliminarmaterial" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Eliminar material</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario eliminar material que
-                     no crea necesario para la configuración de alerta stock. El usuario debe seleccionar el material y luego hacer
-                      clic en el botón Eliminar y el material
-                    es eliminado correctamente del sistema.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--Eliminar material-->
+                    <div id="eliminarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar material</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario eliminar material que no crea necesario para la configuración de alerta stock. El usuario debe seleccionar el material y luego hacer clic en el botón Eliminar y el material
+                                es eliminado correctamente del sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                                 <img src="imagenes/eliminar stock personal.png" style="width:70%;" class="w3-animate-zoom rounded">
                                 </span>
                             </div>
@@ -397,22 +382,18 @@
                     </div>
                     <!--fin eliminar material-->
 
-        <!--Replicar lista de control-->
-        <div id="replicarlistacontrol" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Replicar lista control</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra horizontal superior, permite hacer replicas por bodegas si se han configurado 
-                    anteriormente dos bodegas a ese mismo departamento se puede hacer la réplica con la siguiente bodega y debe aparecer 
-                    lo que existe en las primeras
-                    que se configuraron es decir los materiales agregados en ambas bodegas. En este caso se debería replicar lo que existe 
-                    en la bodega Cali y bodega Tuluá para la bodega EPP Cali. En esta ventana emergente se visualizan tres botones de
-                    mucha importancia porque se pueden seleccionar todas las bodegas existentes en el departamento seleccionado o quitar
-                     la selección y a la vez replicar los materiales que se desean para la bodega seleccionada. También se puede eliminar
-                    la lista de control actual es decir no aparecen registro de bodegas en la replicación de lista de control de material.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--Replicar lista de control-->
+                    <div id="replicarlistacontrol" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Replicar lista control</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite hacer replicas por bodegas si se han configurado anteriormente dos bodegas a ese mismo departamento se puede hacer la réplica con la siguiente bodega y debe aparecer lo que existe en las primeras
+                                que se configuraron es decir los materiales agregados en ambas bodegas. En este caso se debería replicar lo que existe en la bodega Cali y bodega Tuluá para la bodega EPP Cali. En esta ventana emergente se visualizan tres
+                                botones de mucha importancia porque se pueden seleccionar todas las bodegas existentes en el departamento seleccionado o quitar la selección y a la vez replicar los materiales que se desean para la bodega seleccionada.
+                                También se puede eliminar la lista de control actual es decir no aparecen registro de bodegas en la replicación de lista de control de material.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                               <img src="imagenes/replicar lista.png" style="width:70%;" class="w3-animate-zoom rounded">
                               </span>
                             </div>
@@ -420,18 +401,16 @@
                     </div>
                     <!--fin replicar lista control-->
 
-        <!--Importar-->
-        <div id="importar" class="col-md-12">
-            <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Importar</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra horizontal, permite al usuario cargar un archivo cumpliendo con la estructura plasmada 
-                    y que sea un archivo de texto delimitado por tabulaciones para que se cargue correctamente al sistema, a continuación se 
-                    puede analizar
-                    cómo se ha hecho exitosamente el cargue al sistema SISCOS. Para salir de este proceso de cargue es con la tecla Esc.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--Importar-->
+                    <div id="importar" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Importar</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal, permite al usuario cargar un archivo cumpliendo con la estructura plasmada y que sea un archivo de texto delimitado por tabulaciones para que se cargue correctamente al sistema, a continuación se puede analizar
+                                cómo se ha hecho exitosamente el cargue al sistema SISCOS. Para salir de este proceso de cargue es con la tecla Esc.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                             <img src="imagenes/importar archivo.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
                             </div>
@@ -439,16 +418,15 @@
                     </div>
                     <!--fin Importar-->
 
-        <!--Exit-->
-        <div id="exit" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Exit</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra horizontal superior, permite salir de la configuración del material como tal del módulo 
-                    no porque a un se requiere de más información para la configuración de alerta stock de la plantilla.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--Exit-->
+                    <div id="exit" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Exit</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, permite salir de la configuración del material como tal del módulo no porque a un se requiere de más información para la configuración de alerta stock de la plantilla.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                             <img src="imagenes/salir alerta.png" style="width:70%;" class="w3-animate-zoom rounded">
                             </span>
                             </div>
@@ -456,17 +434,15 @@
                     </div>
                     <!--fin exit-->
 
-        <!--Eliminar plantilla-->
-        <div id="eliminarplantilla" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Eliminar plantilla</h3>
-                <div class="bs-component"> Se encuentra ubicado en la barra vertical lado izquierdo, permitiendo al usuario eliminar 
-                    las platillas agregadas que no crea conveniente para la configuración en el sistema SISCOS. El usuario debe seleccionar
-                     la plantilla y luego hacer
-                    clic en el botón eliminar plantilla y es eliminada correctamente del sistema.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--Eliminar plantilla-->
+                    <div id="eliminarplantilla" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar plantilla</h3>
+                            <div class="bs-component"> Se encuentra ubicado en la barra vertical lado izquierdo, permitiendo al usuario eliminar las platillas agregadas que no crea conveniente para la configuración en el sistema SISCOS. El usuario debe seleccionar la plantilla
+                                y luego hacer clic en el botón eliminar plantilla y es eliminada correctamente del sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                           <img src="imagenes/eliminar plantilla a.png" style="width:70%;" class="w3-animate-zoom rounded">
                           </span>
                             </div>
@@ -474,18 +450,16 @@
                     </div>
                     <!--fin eliminar plantilla-->
 
-        <!--Agregar correo-->
-        <div id="agregarcorreo" class="col-md-12">
-            <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                <h3 class="tile-title">Agregar correo</h3>
-                <div class="bs-component">
-                    Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder agregar correo seleccionando
-                     la plantilla y luego hacer clic en el botón agregar correo y mostrará una ventana emergente donde se requiere de ingresar información
-                    del correo que va hacer asignado. Seguidamente haciendo clic en el botón más para que sea exitosa la agregación del correo a 
-                    la plantilla en el sistema.
-                </div>
-                <div class="w3-container w3-center">
-                    <span>
+                    <!--Agregar correo-->
+                    <div id="agregarcorreo" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar correo</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder agregar correo seleccionando la plantilla y luego hacer clic en el botón agregar correo y mostrará una ventana emergente donde se requiere de ingresar información
+                                del correo que va hacer asignado. Seguidamente haciendo clic en el botón más para que sea exitosa la agregación del correo a la plantilla en el sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span>
                         <img src="imagenes/agregar correo.png" style="width:70%;" class="w3-animate-zoom rounded">
                         </span>
                             </div>

@@ -115,3 +115,5 @@ function handlePagination(e) {
     var url = $(this).attr("href ");
     if (url) handleNavigation(url, true)
 }
+
+function cargar_pagina() { alert("Bienvenidos!"); }

@@ -13951,7 +13951,7 @@ be a descendant of the grid when it is being dragged.
         overflow-x: hidden;
     }
     .app .app-sidebar {
-        left: -275px;
+        left: -299px;
     }
     .app .app-sidebar__overlay {
         visibility: hidden;
@@ -14056,7 +14056,7 @@ be a descendant of the grid when it is being dragged.
     color: #fff;
     text-align: center;
     font-family: 'arial';
-    padding: 0 15px;
+    padding: 0 49px;
     font-size: 26px;
     font-weight: 400;
     line-height: 50px;
@@ -14087,6 +14087,8 @@ be a descendant of the grid when it is being dragged.
     -webkit-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
+    margin-right: 1318px;
+    margin-left: -261px;
 }
 
 @media (max-width: 767px) {
@@ -14100,6 +14102,7 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle:before {
     content: "\f0c9";
     font-size: 21px;
+    color: #fff;
 }
 
 .app-sidebar__toggle:focus,
@@ -14365,9 +14368,9 @@ be a descendant of the grid when it is being dragged.
 .app-menu__item.active,
 .app-menu__item:hover,
 .app-menu__item:focus {
-    background: #fdfdfd;
+    background: #fff;
     text-decoration: none;
-    color: #fff;
+    color: rgb(27, 65, 124);
     border-radius: 12px;
     border-bottom: 1px solid #ffffff;
     font-weight: bold;
@@ -16009,7 +16012,6 @@ i .fa-spin {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 34px;
         margin-right: 58px;
-        right: -55px;
     }
 }
 
@@ -16025,7 +16027,7 @@ i .fa-spin {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 34px;
         margin-right: 58px;
-        right: 211px;
+        top: 200px;
     }
 }
 
@@ -16050,7 +16052,7 @@ i .fa-spin {
         position: fixed;
         right: 365px;
         z-index: 1;
-        top: 0;
+        top: 200px;
         margin-left: 17px;
         margin-right: 29px;
         max-width: 50%;
@@ -16061,9 +16063,9 @@ i .fa-spin {
 @media (max-width:1550px) {
     .navigation.navigation-next {
         position: fixed;
-        right: -38px;
+        right: 250px;
         z-index: 1;
-        top: 0;
+        top: 200px;
         margin: auto;
         margin-left: 27px;
         margin-right: 44px;
@@ -16078,7 +16080,7 @@ i .fa-spin {
         position: fixed;
         right: 238px;
         z-index: 1;
-        top: 0;
+        top: 200px;
         margin: auto;
         margin-left: 27px;
         margin-right: 44px;
@@ -16093,7 +16095,7 @@ i .fa-spin {
         position: fixed;
         right: 224px;
         z-index: 1;
-        top: 0;
+        top: 200px;
         margin: auto;
         margin-left: 27px;
         margin-right: 44px;
@@ -16128,8 +16130,8 @@ i .fa-spin {
         padding: 57px;
         padding-right: 38px;
         padding-left: 16px;
-        height: 352px;
-        right: -53px;
+        height: 570px;
+        right: -86px;
         max-width: 500px;
     }
 }
@@ -16137,7 +16139,7 @@ i .fa-spin {
 .navigation.navigation-prev {
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 200px;
     left: -48px;
     margin-left: 309px;
     margin-right: 40px;
@@ -16151,8 +16153,15 @@ i .fa-spin {
 
 @media (max-width:1920px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
-        margin-left: 35px;
-        margin-right: 55px;
+        margin-left: -251px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:1550px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+        margin-left: -251px;
+        margin-right: 0;
     }
 }
 
@@ -16161,6 +16170,14 @@ i .fa-spin {
         margin-left: 34px;
         margin-right: 58px;
         left: -43px;
+    }
+}
+
+@media (max-width:1280px) {
+    .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
+        margin-left: 34px;
+        margin-right: 58px;
+        top: 200px;
     }
 }
 
@@ -16178,10 +16195,68 @@ i .fa-spin {
     }
 }
 
+@media (max-width:1920px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        left: 250px;
+        z-index: 1;
+        top: 200px;
+        margin-left: 17px;
+        margin-right: 29px;
+        max-width: 50%;
+        padding: 8px;
+    }
+}
+
+@media (max-width:1550px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        left: 239px;
+        z-index: 1;
+        top: 200px;
+        margin: auto;
+        margin-left: 27px;
+        margin-right: 44px;
+        max-width: 50%;
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width:1366px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        left: 247px;
+        z-index: 1;
+        top: 200px;
+        margin: auto;
+        margin-left: 27px;
+        margin-right: 44px;
+        max-width: 50%;
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+}
+
+@media (max-width:1280px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        left: 224px;
+        z-index: 1;
+        top: 200px;
+        margin: auto;
+        margin-left: 27px;
+        margin-right: 44px;
+        max-width: 50%;
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+}
+
 @media (max-width:768px) {
     .navigation.navigation-prev {
         position: fixed;
-        top: auto;
+        top: 200px;
         max-width: 50%;
         width: 50%;
         display: inline-block;
@@ -16195,7 +16270,7 @@ i .fa-spin {
 @media (max-width:360px) {
     .navigation.navigation-prev {
         position: fixed;
-        top: auto;
+        top: 200px;
         display: inline-block;
         left: 12px;
         z-index: 1;
@@ -16205,6 +16280,13 @@ i .fa-spin {
         padding-left: 16px;
         height: 353px;
         width: 0px;
+    }
+}
+
+@media (max-width:360px) {
+    .breadcrumb {
+        margin-left: 12px;
+        margin-right: 12px;
     }
 }
 
