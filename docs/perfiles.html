@@ -31,7 +31,15 @@
 
 </head>
 
-<body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl pace-done" data-spy="scroll">
+
+    <div class="pace pace-inactive">
+        <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="100%">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html"><span style="color: white">SISCOS</span></a>
         <!-- Sidebar toggle button-->
@@ -258,7 +266,7 @@
             <!--menu admom-->
             <li class="treeview is-expanded"><a class="app-menu__item active" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-unlock-alt  fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-caret-right"></i></a>
                 <ul class="treeview-menu">&nbsp;
-                    <li><a class="app-menu__item active" href="perfiles.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Perfiles</a></li>
+                    <li id="110"><a class="app-menu__item active" href="perfiles.html#110"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Perfiles</a></li>
                     <li><a class="app-menu__item" href="usuarios.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Usuario</a></li>
                     <li><a class="app-menu__item" href="datos_empresa.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Datos Empresa</a></li>
                     <li><a class="app-menu__item" href="opciones_correo_web.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Opciones Correo y Web</a></li>
@@ -362,8 +370,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="ods_listado_retiros_material.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-    <a href="usuarios.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    <a href="ods_listado_retiros_material.html#101" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="usuarios.html#112" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

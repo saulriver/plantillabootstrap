@@ -31,7 +31,15 @@
 
 </head>
 
-<body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl pace-done" data-spy="scroll">
+
+    <div class="pace pace-inactive">
+        <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="100%">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html"><span style="color: white">SISCOS</span></a>
         <!-- Sidebar toggle button-->
@@ -246,7 +254,7 @@
                     <li><a class="app-menu__item" href="ods_atender_ods_manual.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
                     <li><a class="app-menu__item" href="ods_actualizar_carga_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
                     <li><a class="app-menu__item" href="ods_actualizar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
-                    <li><a class="app-menu__item active" href="ods_consultar_ods.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li id="99"><a class="app-menu__item active" href="ods_consultar_ods.html#99"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
                     <li><a class="app-menu__item" href="ods_listado_consumo_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
                     <li><a class="app-menu__item" href="ods_listado_retiros_material.html"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
                     <div class="dropdown-divider"></div>
@@ -390,8 +398,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="ods_actualizar_ods.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="ods_listado_consumo_material.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="ods_actualizar_ods.html#96" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="ods_listado_consumo_material.html#100" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

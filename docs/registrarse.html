@@ -30,7 +30,15 @@
     </style>
 </head>
 
-<body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl pace-done" data-spy="scroll">
+
+    <div class="pace pace-inactive">
+        <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="100%">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html"><span style="color: white">SISCOS</span></a>
         <!-- Sidebar toggle button-->
@@ -51,7 +59,7 @@
             <!--menu glosario-->
             <li><a class="app-menu__item" href="glosario.html"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
             <!--menu registrarse-->
-            <li><a class="app-menu__item active" href="registrarse.html"><i class="app-menu__icon fa fa-user  fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
+            <li id="111"><a class="app-menu__item active" href="registrarse.html#111"><i class="app-menu__icon fa fa-user  fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
             <!--menu opciones-->
             <li class="treeview"><a class="app-menu__item" href="opciones.html"><i class="app-menu__icon fa fa-filter fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Opciones</span></a></li>
             <!--menu de configuracion-->
@@ -396,8 +404,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="glosario.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-    <a href="opciones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    <a href="glosario.html#24" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="opciones.html#103" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

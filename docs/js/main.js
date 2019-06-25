@@ -117,3 +117,31 @@ function handlePagination(e) {
 }
 
 function cargar_pagina() { alert("Bienvenidos!"); }
+
+(function(a) {
+    r.event.simulate(b, a.target, r.event.fix(a))
+});
+(function(b) {
+    return "undefined" != typeof r && r.event.triggered !== b.type ? r.event.dispatch.apply(a, arguments) : void 0
+});
+(function(a) {
+    r.event.simulate(b, a.target, r.event.fix(a))
+});
+(function(b) {
+    return "undefined" != typeof r && r.event.triggered !== b.type ? r.event.dispatch.apply(a, arguments) : void 0
+});
+(function() {
+    return null != c.states[document.readyState] && (c.progress = c.states[document.readyState]), "function" == typeof a ? a.apply(null, arguments) : void 0
+});
+(function() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+        each(Chart.instances, function(instance) {
+            // If the responsive flag is set in the chart instance config
+            // Cascade the resize event down to the chart.
+            if (instance.options.responsive) {
+                instance.resize(instance.render, true);
+            }
+        });
+    }, 50);
+});

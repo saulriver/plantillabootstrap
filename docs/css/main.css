@@ -226,7 +226,7 @@ a:visited {
 }
 
 a:link {
-    color: #0c5460;
+    color: rgb(85, 100, 94);
 }
 
 style {
@@ -494,7 +494,7 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
     border: 0;
-    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 small,
@@ -3650,7 +3650,7 @@ input[type="button"].btn-block {
 .dropdown-item:active {
     color: #FFF;
     text-decoration: none;
-    background-color: #009688;
+    background-color: rgb(27, 65, 124);
 }
 
 .dropdown-item.disabled,
@@ -5189,9 +5189,8 @@ input[type="button"].btn-block {
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: rgba(231, 233, 235, 0.384);
     border-radius: 0.25rem;
-    margin-left: -56px;
+    margin-left: -32px;
     margin-right: -56px;
     padding: 6px;
     text-align: justify;
@@ -14259,10 +14258,10 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar {
     position: fixed;
-    top: 0;
+    top: 60px;
     bottom: 0;
     left: -19px;
-    padding-top: 70px;
+    padding-top: 0;
     overflow: auto;
     z-index: 10;
     background-color: #ffffff;
@@ -14337,6 +14336,7 @@ be a descendant of the grid when it is being dragged.
 .app-menu {
     margin-bottom: 0;
     padding-bottom: 40px;
+    margin-left: -29px;
 }
 
 .app-menu__item {
@@ -14384,29 +14384,31 @@ be a descendant of the grid when it is being dragged.
     font-size: 1.09365rem;
 }
 
-.treeview.is-expanded [data-toggle='treeview'] {
+
+/*.treeview.is-expanded [data-toggle='treeview'] {
     border-left-color: rgb(255, 255, 255);
     background: #ffffff;
     padding: 4%;
-}
+}*/
 
 .treeview.is-expanded .treeview-menu {
     max-height: 2000vh;
     background-color: white;
 }
 
-.treeview.is-expanded .treeview-indicator {
+
+/*.treeview.is-expanded .treeview-indicator {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-}
+}*/
 
 .treeview-menu {
-    max-height: 0;
+    /*max-height: 0;
     overflow: hidden;
     -webkit-transition: max-height 0.3s ease;
     -o-transition: max-height 0.3s ease;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease;*/
     background: #ffffff;
 }
 
@@ -14426,7 +14428,7 @@ be a descendant of the grid when it is being dragged.
 .treeview-item:hover,
 .treeview-item:focus,
 .treeview-menu:hover {
-    background: rgb(0, 125, 113);
+    background: rgb(255, 255, 255);
     text-decoration: none;
     color: #fff;
     border-radius: 10px;
@@ -15943,6 +15945,8 @@ be a descendant of the grid when it is being dragged.
     position: relative;
     outline: 0;
     overflow: hidden;
+    height: 403px;
+    margin-top: -185px;
 }
 
 @media (max-width:1240px) {
@@ -15961,7 +15965,8 @@ be a descendant of the grid when it is being dragged.
 }
 
 .fa-angle-right {
-    width: 100%;
+    width: 70%;
+    margin-left: 33px;
 }
 
 i .fa-spin {
@@ -15996,14 +16001,14 @@ i .fa-spin {
 @media (max-width:1920px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 55px;
-        margin-right: 35px;
+        margin-right: 50px;
     }
 }
 
 @media (max-width:1550px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
         margin-left: 34px;
-        margin-right: 58px;
+        margin-right: 80px;
     }
 }
 
@@ -16025,10 +16030,14 @@ i .fa-spin {
 
 @media (max-width:768px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-next {
-        position: fixed;
-        margin-left: 60px;
-        margin-right: -22px;
-        height: 433px;
+        width: 11%;
+        margin: inherit;
+        padding: 5px;
+        margin: -18px;
+        top: 342px;
+        height: 366px;
+        right: 42px;
+        margin-right: -39px;
     }
 }
 
@@ -16046,7 +16055,7 @@ i .fa-spin {
         z-index: 1;
         top: 200px;
         margin-left: 17px;
-        margin-right: 29px;
+        margin-right: 36px;
         max-width: 50%;
         padding: 8px;
     }
@@ -16060,7 +16069,7 @@ i .fa-spin {
         top: 200px;
         margin: auto;
         margin-left: 27px;
-        margin-right: 44px;
+        margin-right: 72px;
         max-width: 50%;
         padding-right: 0px;
         padding-left: 3px;
@@ -16100,15 +16109,15 @@ i .fa-spin {
 @media (max-width:768px) {
     .navigation.navigation-next {
         position: fixed;
-        top: auto;
+        top: 666px;
         max-width: 50%;
         width: 50%;
         display: inline-block;
-        right: -301px;
+        right: -294px;
         padding-right: 344px;
         padding-left: 4px;
         height: 300px;
-        margin-right: -24px;
+        margin-right: 10px;
         margin-left: 12px;
     }
 }
@@ -16116,14 +16125,14 @@ i .fa-spin {
 @media (max-width:360px) {
     .navigation.navigation-next {
         position: fixed;
-        top: auto;
+        top: 173px;
         display: inline-block;
         margin: auto;
-        padding: 57px;
-        padding-right: 38px;
-        padding-left: 16px;
+        padding: 56px;
+        padding-right: 51px;
+        padding-left: 0;
         height: 570px;
-        right: -86px;
+        right: -85px;
         max-width: 500px;
     }
 }
@@ -16175,8 +16184,14 @@ i .fa-spin {
 
 @media (max-width:768px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
-        margin-left: 55px;
-        margin-right: 55px;
+        width: 11%;
+        margin: inherit;
+        padding: 5px;
+        margin: -18px;
+        top: 342px;
+        height: 366px;
+        left: 44px;
+        margin-left: -39px;
     }
 }
 
@@ -16222,10 +16237,10 @@ i .fa-spin {
         z-index: 1;
         top: 200px;
         margin: auto;
-        margin-left: 27px;
+        margin-left: 35px;
         margin-right: 44px;
         max-width: 50%;
-        padding-right: 0px;
+        padding-right: 42px;
         padding-left: 3px;
     }
 }
@@ -16248,14 +16263,14 @@ i .fa-spin {
 @media (max-width:768px) {
     .navigation.navigation-prev {
         position: fixed;
-        top: 200px;
+        top: 761px;
         max-width: 50%;
-        width: 50%;
+        width: 7%;
         display: inline-block;
-        padding-right: 5px;
-        padding-left: 109px;
-        height: 276px;
-        left: -441px;
+        padding-right: 17px;
+        padding-left: 0px;
+        height: 398px;
+        left: 255px;
     }
 }
 
@@ -16296,7 +16311,12 @@ i .fa-spin {
 
 .app-menu__item,
 .fa-chevron-circle-right {
-    margin-left: 12px;
+    margin-left: 29px;
+}
+
+.activa {
+    color: rgb(27, 65, 124);
+    font-weight: bolder;
 }
 
 
@@ -16329,3 +16349,66 @@ section.normal {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
 }
+
+@media (max-width:360px) {
+    .app-sidebar__toggle {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+        margin: auto;
+        margin-left: auto;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width:360px) {
+    .app-header__logo {
+        color: #fff;
+        text-align: center;
+        font-family: 'arial';
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 50px;
+        margin-left: 3px;
+        margin-right: 29px;
+    }
+}
+
+.pace {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pace .pace-progress {
+    background: #2089cf;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+}
+
+.pace .pace-progress-inner {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    -webkit-box-shadow: 0 0 10px #2fc3e7, 0 0 10px #03ebf3;
+    box-shadow: 0 0 10px #1ae4ff, 0 0 10px #34d6ff;
+    opacity: 1;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+.pace-inactive {
+    display: none;
+}
+
+
+/*=============================css nuuevo========================================================================*/

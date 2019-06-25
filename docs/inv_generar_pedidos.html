@@ -30,7 +30,15 @@
     </style>
 </head>
 
-<body class="app sidebar-mini rtl" data-spy="scroll">
+<body class="app sidebar-mini rtl pace-done" data-spy="scroll">
+
+    <div class="pace pace-inactive">
+        <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="100%">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html"><span style="color: white">SISCOS</span></a>
         <!-- Sidebar toggle button-->
@@ -145,7 +153,7 @@
                     <li><a class="app-menu__item" href="inv_anular_pedido.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Anular pedido"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Anular Pedido</a></li>
                     <li><a class="app-menu__item" href="inv_pedidos_pend_entregar.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Pedido pendiente entregar"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Pedido Pend. Entregar</a></li>
                     <li><a class="app-menu__item" href="inv_listado_pedidos_pendiente.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Listado pedidos pendientes"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Pedidos Pendientes</a></li>
-                    <li><a class="app-menu__item active" href="inv_generar_pedidos.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Generar pedido"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Generar Pedido</a></li>
+                    <li id="65"><a class="app-menu__item active" href="inv_generar_pedidos.html#65" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Generar pedido"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Generar Pedido</a></li>
                     <li><a class="app-menu__item" href="inv_listado_abastecimiento.html" data-toggle="tooltip" data-placement="right" title="Inventario / Pedidos Material / Listado abastecimiento"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Abastecimiento</a></li>
                     <div class="dropdown-divider"></div>
                 </ul>
@@ -366,8 +374,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_listado_pedidos_pendiente.html" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_listado_abastecimiento.html" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_listado_pedidos_pendiente.html#73" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_listado_abastecimiento.html#71" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
