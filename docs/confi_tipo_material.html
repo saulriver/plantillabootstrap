@@ -278,7 +278,7 @@
 
     </aside>
     <!--container fluid-->
-    <div id="grabar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -316,39 +316,31 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                            <h3 class="tile-title">Tipo material</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Tipo material</h1>
-                                </div>
-
-                                Este módulo permite crear la clasificación del tipo de material, ya sea como el usuario lo desea por ejemplo:<br>
-                                <ul>
-                                    <li>Consumible</li>
-                                    <li>Tipo de oficina</li>
-                                    <li>Herramienta</li>
-                                    <li>Dotación</li>
-                                </ul>
-                                Es muy importante este parámetro debido a que el usuario por medio de la clasificación que haga le sirve para generar informes y poder hacer filtros y obtener información de la cantidad del tipo de material que necesite. <br>                                Le damos clic en tipo material posteriormente en el botón Nuevo que se encuentra ubicado en la barra vertical superior lado izquierdo, para ingresar un nuevo registro y se puedan habilitar los demás campos.
-
-
+                                Este módulo permite crear la clasificación del tipo de material, ya sea como el usuario lo desea por ejemplo <strong><i>Consumible</i></strong>, <strong><i>Tipo de oficina</i></strong>, <strong><i>Herramienta</i></strong>                                y <strong><i>Dotación</i></strong> etc.
+                                <br>Es muy importante este parámetro debido a que el usuario por medio de la clasificación que haga le sirve para generar informes, poder hacer filtros y obtener información de la cantidad del tipo de material que necesite.
+                                <br> Seguidamente dar clic en <strong><i>Tipo material</i></strong>, se visualizará la siguiente ventana que requiere de información para hacer el registro nuevo de tipo material. clic en el botón <strong><i>Nuevo</i></strong>                                que se encuentra ubicado en la barra vertical superior lado izquierdo, para ingresar un nuevo registro y se puedan habilitar los demás campos.
                             </div>
-
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/tipomaterial.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
                         </div>
                     </div>
+
                     <!--grabar tipo material-->
-                    <div class="col-md-12">
+                    <div id="grabar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Grabar</h3>
                             <div class="bs-component">
-                                Se encunetra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón y graba en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, dar clic en el botón y graba en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
+                                <br>Asimismo dar clic en el icono <strong><i>Aceptar</i></strong>, y se verá reflejado en el listado de tipo Material en el sistema SISCOS.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tm1.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/tm1.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -359,17 +351,18 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, está función permite eliminar del listado de Tipo Material un registro que no le existan movimientos dentro del sistema SISCOS.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: no se puede eliminar un registro de Tipo Material si existen movimientos en los demás módulos, porque a la hora de querer eliminarlo presentará un mensaje de información error.</div>
-                                </div>
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, para poder eliminar del listado de Tipo material un registro, es que no esté asociado a otros registros en el sistema.
+                                <br>Seguidamente, dar clic en el icono <strong><i>Eliminar</i></strong>. El Sistema mostrará el siguiente mensaje al usuario, al cual dará clic en Sí para efectuar la eliminación:
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/tm2.png" style="width:60%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/tm2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
-
+                            <div class="bs-component">
+                                <div class="nota">Nota: no se puede eliminar un registro de tipo material si existen movimientos en los demás módulos, porque a la hora de querer eliminarlo presentará un mensaje de información error como se visualizará a continuación.</div>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/tm2.1.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
                         </div>
                     </div>
                     <!--fin eliminar tipo material-->
@@ -379,14 +372,13 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Se debe seleccionar el código y dar doble clic en el campo Código seguidamente mostrará la informacion del registro y escoger el campo que se va a modificar, clic en el botón grabar para que se realicen los cambios correctamente al sistema.
+                                Para modificar un registro se debe seleccionar el código y dar doble clic en el campo Código, seguidamente mostrará la información del registro, dar clic en el botón <strong><i>Grabar</i></strong> y se actualiza la información
+                                en el sistema.
                             </div>
                         </div>
                         <!--imagen-->
                         <div class="w3-container w3-center">
-                            <span>
-                        <img src="imagenes/tm3.png" style="width:60%;" class="w3-animate-zoom rounded">
-                        </span>
+                            <span><img src="imagenes/tm3.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                         </div>
                         <!--fin imagen-->
                     </div>
@@ -397,12 +389,9 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                En el sistema SISCOS en el módulo Tipo Material existen 2 formas de salir la primera se encuentra ubicado en la barra horizontal superior lado izquierdo y la segunda en la barra vertical superior lado derecho estas 2 formas permite salir del módulo.
-                            </div>
+                                Para salir del módulo existen 2 opciones, a través de cerrar ventana y la del botón salir dar clic, para salir del módulo Tipo material y finalizar el proceso. </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tm4.png" style="width:60%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/tm4.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
@@ -415,6 +404,7 @@
                         </iframe>
                     </div>
                     <!--fin video-->
+
                 </div>
                 <!--fin row-->
             </main>

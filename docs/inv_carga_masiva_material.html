@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="carga" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -313,18 +313,23 @@
                 <div class="row">
 
                     <!--Carga masiva-->
-                    <div class="col-md-12">
+                    <div id="carga" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Carga masiva material</h3>
                             <div class="bs-component">
                                 Este módulo permite al usuario previamente la carga masiva de materiales que se realiza a través de un archivo de texto delimitado por tabulaciones, de acuerdo con la estructura definida y a la lista de materiales del archivo. El archivo de texto a cargar
-                                debe contener solo datos a ingresar sin considerar el encabezado de la estructura indicada, posteriormente el sistema valida la información. El usuario debe dar clic en el botón Buscar archivo y selecciona el archivo el
-                                cual desea para su carga al sistema y la información de los materiales ha sido cargada correctamente se encuentran otras funciones como importar personal y exportar LOG.
+                                debe contener solo datos a ingresar sin considerar el encabezado de la estructura indicada.
+                                <br>Posteriormente el sistema valida la información. El usuario debe dar clic en el botón <strong><i>Buscar archivo</i></strong> y selecciona el archivo el cual desea para su carga al sistema.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/cargar carga.png" style="width:100%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/cargar carga.png" style="width:100%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                El usuario visualizará la información de los materiales ha sido cargada correctamente se encuentran otras funciones como <strong><i>Importar personal</i></strong> y <strong><i>Exportar LOG</i></strong>.
+                                <br>Se encuentran ubicados en la barra horizontal superior permitiendo al usuario poder dar clic sobre los botones y generar más información acerca de los materiales cargados al sistema SISCOS.
+                                <div class="btn btn-trans">
+                                    <span><img src="imagenes/cargabotones.png" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>

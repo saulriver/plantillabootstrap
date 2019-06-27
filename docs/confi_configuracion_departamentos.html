@@ -277,7 +277,7 @@
         </ul>
     </aside>
     <!--container fluid-->
-    <div id="aplicar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -301,7 +301,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Inventario</li>
                         <li class="breadcrumb-item"><a href="confi_periodos.html">Periodos</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -311,41 +311,46 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
-                            <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Configuración departamentos</h1>
-
-                                </div>
-
+                            <h3 class="tile-title ">Configuración departamentos</h3>
+                            <div class="bs-component ">
                                 Este módulo permite su configuración que es muy importante para el usuario y se debe tener en cuenta por que puede ocasionar problemas, y es que cada vez que se cree un Departamento debo configurarlo de la siguiente manera haciendo un control al inventario
-                                personal. Le damos clic en Configuración Departamento y nos mostrará una ventana, que de su lado izquierdo visualizaremos un listado de departamentos el usuario debe escoger el departamento que va a utilizar y realizarle
-                                la configuración.<br> El usuario debe seleccionar las opciones necesarias como Controlar Inventario Personal, Aplicar Stock Cuadrillas Y Controlar Material Serializado. Escogiendo estas tres
-                                opciones se obtiene una buena configuración al final del proceso.<br>
-                                <strong>Controlar Inventario Personal:</strong> con el chulito significa que va a trabajar con bodegas de terreno, sin el chulito no existe en la bodega de terreno.<br>
-                                <strong>Aplicar Stock Cuadrillas:</strong> permite al usuario consultar los Stock máximos de cuadrillas.<br>
-                                <strong>Controlar Material Serializado:</strong> permite un control de todos los materiales serializados.
-
+                                personal.
+                                <br>El usuario debe dar clic en <strong><i>Configuración Departamento</i></strong> y se visualizará una ventana, que de su lado izquierdo contiene un listado de departamentos. El usuario escoge el departamento que va a
+                                utilizar y realizarle la configuración.
                             </div>
-
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/configuracion departamentos.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component ">
+                                Seguidamente seleccionar las opciones necesarias como: <strong><i>Controlar Inventario Personal, Aplicar Stock Cuadrillas Y Controlar Material Serializado</i></strong> etc. Escogiendo estas tres opciones se obtiene una
+                                buena configuración al final del proceso.
+                                <br><strong>Controlar Inventario Personal:</strong> con el chulito significa que va a trabajar con bodegas de terreno, sin el chulito no existe en la bodega de terreno.
+                                <br><strong>Aplicar Stock Cuadrillas:</strong> permite al usuario consultar los Stock máximos de cuadrillas.
+                                <br><strong>Controlar Material Serializado:</strong> permite un control de todos los materiales serializados.
+                            </div>
                         </div>
                     </div>
 
 
                     <!--aplicar confi bodegas-->
-                    <div class="col-md-12">
+                    <div id="aplicar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Aplicar cambios</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior lado derecho, Para guardar los registros hechos en el módulo para garantizar su configuración.
-
+                                Esta funcionalidad se encuentra ubicado en la barra horizontal inferior lado derecho, se debe dar clic en la función <strong><i>Aplicar cambios</i></strong> para guardar los registros hechos en el módulo para garantizar
+                                su configuración.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/configuracion departamentos.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/configuracion departamentos2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Finalmente dar clic en el icono Sí, para que se guarde los cambios realizados correctamente y seguidamente clic en el botón Aceptar para confirmar y agregue el registro al sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/configuracion departamentos3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -356,12 +361,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior (lado derecho), o también la opción Esc estás opciones permiten salir del Módulo Configuración Departamentos.
+                                Para salir del módulo es a través de cerrar ventana que se encuentra ubicado en la barra vertical superior lado derecho, dar clic.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/salir confi d.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/salir confi d.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
@@ -369,9 +372,9 @@
                     <!--fin salir marcas-->
 
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="651" src="https://www.youtube.com/embed/PkanGUOqWn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                         </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="651" src="https://www.youtube.com/embed/PkanGUOqWn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+
                 </div>
             </main>
         </div>

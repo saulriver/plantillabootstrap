@@ -278,7 +278,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="agregar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -322,132 +322,148 @@
                     </ol>
                 </div>
                 <div class="row">
+
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                            <h3 class="tile-title">Localidades</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Localidades</h1>
-                                </div>
-                                Un departamento puede tener varias localidades, localidades hace referencia a ciudades, no se puede crear localidades si previamente no se ha creado departamento que pertenezca a localidad que deseo crear. <br> Le damos
-                                clic en localidades, y seguidamente se le da clic en la lista departamento que se puede ver en la parte izquierda de la ventana visualizada, todos los departamentos registrados al sistema, escoger el que se va asociar con
-                                la nueva localidad.
+                                Este módulo permite al usuario configurar localidades, para crear localidades previamente se debe haber creado departamento que pertenezca a la localidad que se desea agregar al sistema.
+                                <br><strong>Localidades&nbsp;<i class="icon fa fa-hand-o-right"></i> </strong> hace referencia a ciudades.
+                                <br>Seguidamente dar clic en <strong><i>Localidades</i></strong>, y se visualizará la siguiente ventana que se debe ingresar la información requerida u obligatoria. Dar clic en la lista departamento que se puede ver en
+                                la parte izquierda de la ventana visualizada de todos los departamentos registrados en el sistema, escoger el que se va asociar con la nueva localidad.
                             </div>
-
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/localidades.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
                         </div>
                     </div>
+
                     <!--agregar localidades-->
-                    <div class="col-md-12">
+                    <div id="agregar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px">
                             <h3 class="tile-title">Agregar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, le damos clic en el botón agregar localidad y nos mostrará una ventana que se debe ingresar la información requerida u obligatoria. permitiendo al usuario poder asignar localidad a departamento.
+                                Está funcionalidad se encuentra ubicada en la barra vertical superior lado derecho, es posible registrar una nueva localidad en el sistema. Se debe ingresar la información solicitada u obligatoria de la localidad y con esto queda adicionado el nuevo registro.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/agregar lacali.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/agregar lacali.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Posteriormente se debe dar clic en <strong><i>Aceptar</i></strong>, para que agregue la localidad y la asocie a ese departamento asignado. Le damos clic en el botón <strong><i>Cancelar</i></strong> para salir de ese proceso,
+                                como se puede observar muestra el listado de localidades que están asociada al departamento del <strong><i>Atlántico</i></strong> en este ejemplo, donde se cuenta con un código, descripción y tipo.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/agregarlocalidad.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin agregar localidades-->
+
                     <!--eliminar localidades-->
                     <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical lado izquierdo, el usuario para eliminar localidad es que no existan movimientos o registros a Departamento de lo contrario mostrará mensaje de informacion error que no se puede eliminar.
+                                Esta funcionalidad se encuentra ubicada en la barra vertical lado izquierdo, se debe dar clic en <strong><i>Eliminar</i></strong>. Para poder eliminar una localidad no debe tener registros asociados, porque de lo contrario
+                                mostrará error.
                                 <div class="bs-component">
-                                    <div class="nota">Nota: en el sistema de información SISCOS no se debe Eliminar localidad debido a que localidad va asociado con departamento, la localidad pertenece a departamento. Entonces no se permite eliminar localidad si ya se
-                                        encuentran registros.</div>
+                                    <div class="nota">Nota: en el sistema de información SISCOS no se debe eliminar una localidad debido a que una localidad va asociado a otros módulos que le existen movimientos.</div>
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/eli locali.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/eli locali.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
-
                         </div>
                     </div>
                     <!--fin eliminar localidades-->
+
                     <!--modificar localidades-->
                     <div id="modifi" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Se debe seleccionar el código y dar doble clic en el campo Código para poder realizar la modificación y se guarde en la base de datos los cambios realizados por el usuario.
+                                Para modificar se debe seleccionar el código y dar doble clic en el campo <strong><i>Código</i></strong> para poder realizar la modificación y se guarde en la base de datos los cambios realizados del registro seleccionado
+                                por el usuario.
+                                <br>Finalmente dar clic en el icono Aceptar, para finalizar el proceso de modificación.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/actualizar localidad.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/actualizar localidad.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin modificar localidades-->
+
                     <!--importar archivo plano-->
                     <div id="import" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Importar archivo plano</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario poder cargar un archivo de texto delimitado por tabulaciones cumpliendo con los campos necesarios.
+                                Este comando se encuentra ubicado en la barra vertical superior lado izquierdo, permite importar datos desde una Planilla Excel, la planilla que se desea Importar debe tener formato de texto delimitado por tabulaciones cumpliendo con los campos necesarios.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/Importar Archivo Plano.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                <span><img src="imagenes/Importar Archivo Plano.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin importar archivo plano-->
+
                     <!--exportar localidades-->
                     <div id="export" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Exportar listado de localidades</h3>
                             <div class="bs-component">
-                                Está funcionalidad se encuentra ubicado en la barra vertical superior lado izquierdo permite exportar un listado de todas las localidades registradas en el sistema SISCOS en un archivo Excel.
+                                Este comando se encuentra ubicado en la barra vertical superior lado izquierdo, permite exportar un listado de todas las localidades registradas en el sistema SISCOS en un archivo Excel. Seguidamente dar clic en el botón <strong><i>Exportar listados de localidades</i></strong>,
+                                se descarga el listado de todos los registros existentes de localidades en el sistema SISCOS.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/exportar localidades.png" style="width:80%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/exportar localidades.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                <strong>Departamento Valle del Cauca</strong>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/exportarlocalidades2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin exportar localidades-->
+
                     <!--buscar localidades-->
                     <div id="buscar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Buscar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal lado derecho, éste permite al usuario realizar una búsqueda en el listado de localidades por los parámetros de Código, Nombre y (%). Muestra todas las localidades registradas. El usuario debe ubicarse en el
-                                campo Buscar, seguidamente debe ingresar un criterio de búsqueda parámetros Código, Nombre y % dar clic en Buscar.
+                                Esta opción se encuentra ubicada en la barra horizontal lado derecho, esta permite al usuario realizar una búsqueda en el listado de localidades por los parámetros de Código, Descripción, etc. Utilizando los comodines.
+                                <br>
+                                <ul>
+                                    <li><strong>( % )</strong> Todos</li>
+                                    <li><strong>( %Bolívar )</strong> Los que terminan</li>
+                                    <li><strong>( Bolívar% )</strong> Los que comiencen</li>
+                                </ul>
+                                <br>Finalmente el usuario debe ubicarse en el campo <strong><i>Buscar</i></strong>, ingresar un criterio de búsqueda parámetros o su respectivo comodín, dar clic en <strong><i>Buscar</i></strong>.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/buscar.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/buscar.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin buscar localidades-->
+
                     <!--salir localidades-->
                     <div id="salir" class="col-md-12">
                         <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Está funcionalidad se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario salir del módulo localidades.
+                                Para salir del módulo existen 2 opciones, a través de cerrar ventana y la del botón salir ambas se encuentran ubicadas en la barra vertical superior lado derecho, dar clic.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/salir localidad.png" style="width:60%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/salir localidad.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
                     </div>
                     <!--fin salir localidades-->
+
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
                         <iframe class="embed-responsive-item" width="850" height="480" src="https://www.youtube.com/embed/wIopyArJBpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>

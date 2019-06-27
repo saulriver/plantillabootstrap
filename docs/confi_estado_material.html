@@ -277,7 +277,7 @@
         </ul>
     </aside>
     <!--container fluid-->
-    <div id="grabar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -315,30 +315,29 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                            <h3 class="tile-title">Estado material</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Estado material</h1>
-
-                                </div>
-
-                                Este módulo permite configurar los estados, este parámetro es global como el módulo anteriormente mencionado, tiene dos opciones E y D. si tiene el chulito en E, los estoy habilitando para que se entreguen y si el chulito está en D lo estoy habilitando
-                                para que se devuelva. Estas opciones aparecen al momento de crear un nuevo Estado. <br> Si no se chulean las opciones mencionadas el registro lo hace el sistema SISCOS, pero no se pueden
-                                hacer entregas ni devoluciones. Tener presente como saber organizar los estados para que el almacenista sepa cómo querer operar esto.<br> Le damos clic en el botón Nuevo que se encuentra ubicado en la barra vertical superior
-                                lado derecho, para que se puedan habilitar los demás botones.
+                                Este módulo permite configurar los estados, es global como el módulo anteriormente mencionado, tiene dos opciones <strong><i>E</i></strong> y <strong><i>D</i></strong>. si tiene el chulito en E, los estoy habilitando para
+                                que se entreguen y si el chulito está en D lo estoy habilitando para que se devuelva. Estas opciones aparecen al momento de crear un nuevo estado. Si no se chulean las opciones mencionadas el registro lo hace el sistema
+                                SISCOS, pero no se pueden hacer entregas ni devoluciones. Tener presente como saber organizar los estados para que el almacenista sepa cómo querer operar esto. Seguidamente dar clic en el botón <strong><i>Nuevo</i></strong>                                que se encuentra ubicado en la barra vertical superior lado izquierdo, se visualizará la siguiente ventana.
+                                <br>Posteriormente ingresar la información necesaria para el nuevo registro, al dar clic en esta opción se habilitan los demás botones para continuar el proceso.
                             </div>
-
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/estadomaterial.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
                         </div>
                     </div>
 
                     <!--grabar estado material-->
-                    <div class="col-md-12">
+                    <div id="grabar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Grabar</h3>
                             <div class="bs-component">
-                                Esta funcionalidad se encuentra ubicado en la barra vertical superior lado izquierdo, permite guardar los registros nuevos en el sistema.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, dar clic en el botón y graba en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
+                                <br>Asimismo dar clic en el icono <strong><i>Aceptar</i></strong> para que sea agregado el nuevo registro a la base de datos y visualizado en el listado de Estado material en el sistema SISCOS.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
@@ -354,19 +353,29 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Esta funcionalidad se encuentra ubicado en la barra vertical superior lado izquierdo, el usuario puede eliminar un registro de Estado Material que no le exista movimientos en los demas módulos de lo contarrio mostrará mensaje de error.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: no se puede Eliminar si ese registro ( Estado Material ) tiene movimientos si intenta el usuario hacerlo le mostrará un mensaje de información que no se puede o que hay un error.</div>
-                                </div>
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, para poder eliminar del listado de tipo material un registro, es que no esté asociado a otros registros en el sistema. Seguidamente, clic en el icono <strong><i>Eliminar</i></strong>,
+                                al cual dará clic en Sí para efectuar la eliminación.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/eliminar estado material.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/eliminar estado material.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
-
+                            <div class="bs-component">
+                                El registro se elimina correctamente y si se escoge la opción No, automáticamente se sale del proceso eliminar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/eliminar estado material1.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Finalmente dar clic en el icono <strong><i>Aceptar</i></strong>, y ya no debe aparecer en el listado de Estado material.
+                                <br>Cabe señalar que si el registro que se va a eliminar le existen movimientos presentará mensaje de error como se puede observar a continuación.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/eliminar estado material2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                <div class="nota">Nota: en el sistema de información SISCOS no se debe eliminar un Estado material debido a que un estado va asociado a otros módulos.</div>
+                            </div>
                         </div>
-                        <!--fin mensaje alerta-->
                     </div>
                     <!--fin eliminar estado material-->
 
@@ -375,14 +384,12 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Se debe seleccionar el código y dar doble clic en el campo Código antes de dar clic en el botón Nuevo para agregar un nuevo registro.
+                                Para modificar un registro se debe seleccionar el código y dar doble clic en el campo Código, seguidamente mostrará la información del registro, dar clic en el botón <strong><i>Grabar</i></strong> y se actualiza la información
+                                en el sistema.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/modificar estado material.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/modificar estado material.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
-                            <!--fin imagen-->
                         </div>
                     </div>
                     <!--fin modificar estado material-->
@@ -392,12 +399,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Esta funcionalidad Se encuentra ubicado en la barra horizontal superior, permite salir del módulo Estado Material.
+                                Para salir del módulo existen 2 opciones, a través de cerrar ventana y la del botón salir dar clic, para salir del módulo Estado material y finalizar el proceso.
+                                <br>Finalmente dar clic en el botón Sí, para poder salir del módulo.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                          <img src="imagenes/salir estado material.png" style="width:60%;" class="w3-animate-zoom rounded">
-                          </span>
+                                <span><img src="imagenes/salir estado material.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>

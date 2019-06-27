@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="agregar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -330,23 +330,52 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Mercancía</h3>
                             <div class="bs-component">
-                                En SISCOS Materiales, Productos, Herramientas y Mercancías es lo mismos, el material varía con proveedores. Si se configura el material mal más adelante se obtendrán problemas. Clic en módulo material y nos muestra una ventana de campos solicitados u
-                                obligatorios.
+                                En SISCOS Materiales, Productos, Herramientas y Mercancías es lo mismos, el material varía con proveedores. Si se configura mal el material más adelante se obtendrán problemas. Se debe dar clic en el módulo material y se visualizará ventana de campos
+                                solicitados u obligatorios. Seguidamente dar clic en el botón <strong><i>Nuevo</i></strong>, que se encuentra ubicado en la barra vertical superior lado izquierdo, para que se puedan habilitar
+                                los demás botones.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/mercancia.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Posteriormente ingresamos la información correspondiente del nuevo registro producto.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/mercancia1.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                <strong>Se maneja una clasificación sea por Producto o Servicio.</strong><br>
+                                <strong>Producto:</strong> que sea físicamente los suministros por bodega.<br>
+                                <strong>Servicio:</strong> administrar alquiler de grúa.
+                                <br>Tipos de servicios también se pueden agregar para llevar un control en los servicios que se han ingresado.
+                                <br><strong>Código Material:</strong> son máximo 10 caracteres y es un código interno único que no se puede repetir.
+                                <br><strong>Descripción:</strong> 180 caracteres. Código del cliente Código SAP y Código SIL, si se pueden repetir se puede tener el mismo código del cliente pero varios productos de SISCOS.
+                                <br><strong>También tiene 3 clasificaciones del material como:</strong>
+                                <ul>
+                                    <li>Cable.</li>
+                                    <li>Serial.</li>
+                                    <li>Otros.</li>
+                                </ul>
+                                Ejemplo: material, modem y seleccionamos en la clasificación <strong><i>Otros</i></strong> no me va a pedir Serial, si no cantidades y va hacer problema para el inventario. El material se puede clasificar en <strong><i>Serial</i></strong>,
+                                <strong><i>Cable</i></strong> u <strong><i>Otros</i></strong> etc. Pero no se puede cambiar de clasificación, si el material tiene stock en cualquier bodega en SISCOS.
+                                <br><strong>Material Propio:</strong> permite ingresar el IVA para tener un control.
+                                <br><strong>Precio Producto:</strong> es el que aparece en el informe de entrega lo que se le cobra al técnico si lo Vota, Daña o Roba etc.
+                                <br><strong>Producto Aplica para Consumo:</strong> si no se selecciona en SISCOS una de todas estas opciones mencionadas que son de mucha importancia, SISCOS permite hacer movimiento la transacción ya sea la entrega o la
+                                devolución. Pero si no tiene el chulito esto no se lo pasa a la bodega terreno. Es mejor que tengan el chulito y se mueva a la bodega terreno y evitar ciertos problemas.
+                                <br><strong>Producto Descargable:</strong> seleccionar el chulo, hace referencia que si el producto está en bodega de terreno puede llevarlo a la bodega consumo a través de una O/S no se recomienda para dotación y herramienta.
                             </div>
                         </div>
                     </div>
 
                     <!--agregar mercancia-->
-                    <div class="col-md-12">
+                    <div id="agregar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar</h3>
                             <div class="bs-component">
-                                Este se encuentra ubicado en la barra vertical superior lado izquierdo, permite guardar los registros nuevos. Le damos clic en el botón Grabar para que se aplique el nuevo registro al sistema SISCOS.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, dar clic en el botón y agrega un nuevo registro en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/agregarmaterial.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/agregarmaterial.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -357,14 +386,42 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite hacer cambios en registros existentes, para poder utilizar este botón debemos dar clic sobre él y luego ingresar el código del material para que nos arroje toda la información
-                                acerca de ese código y que campo se desea modificar.Clic en el botón Modificar. Seguidamente le damos clic en el botón Guardar para que guarde los nuevos cambios a el material seleccionado.para finalizar los cambios aplicados
-                                correctamente.Damos clic en Aceptar
+                                Esta funcionalidad se encuentra ubicada en la barra vertical superior lado izquierdo, permite hacer actualizaciones en registros existentes, para poder utilizar este botón debemos dar clic en el botón <strong><i>Modificar</i></strong>                                y luego ingresar el código del material. Seguidamente se debe dar en la tecla enter para que arroje toda la información acerca de ese código y seleccionar que campo se desea modificar.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/modificar mercancia 2.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/modificar mercancia 2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Asimismo dar clic en el la opción <strong><i>Guardar</i></strong>, para que se apliquen los cambios al registro seleccionado en el sistema y se actualice la información en la base de datos.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar mercancia 3.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Otra forma de poder modificar un producto es dar clic en la opción <strong><i>Modificar</i></strong>, luego en la opción <strong><i>Buscar</i></strong> y realizar la búsqueda de los productos registrados en el sistema por
+                                medio de los parámetros establecidos como se puede observar a continuación.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar mercancia 4.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                En el campo criterio se ingresa uno de los tipos de comodines como:
+                                <ul>
+                                    <li>( <strong>%</strong> ) Todos</li>
+                                    <li>( <strong>%AEROSOL</strong> ) Los que terminan</li>
+                                    <li>(<strong>AEROSOL%</strong> ) Los que comiencen</li>
+                                </ul>
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar mercancia 5.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Finalmente cuando ya se tiene el registro, el usuario se ubica en el campo código y le da clic en la tecla enter y automáticamente se traslada la información a la ventana principal del producto. Analizamos que campo se le van aplicar los cambios, seguidamente
+                                se debe dar clic en la opción <strong><i>Guardar</i></strong>.
+                                <br>El usuario debe dar clic en el icono <strong><i>Aceptar</i></strong> para que finalice el proceso de actualizar el registro en el sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar mercancia 6.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -375,18 +432,16 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                El material presenta movimientos y está Activo existen registros por lo tanto no se puede eliminar porque si se quiere hacer nos saldría un mensaje de error como se mostrará a continuación. No se elimina el material, la otra opción es que el usuario le
-                                quite el chulito y este ya inactivo.
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, para poder eliminar del listado de productos un registro, es que no esté asociado a otros registros en el sistema de lo contrario mostrará mensaje de error. Seguidamente,
+                                dar clic en el icono <strong><i>Eliminar</i></strong>. El Sistema mostrará el siguiente mensaje al usuario, al cual dará clic en el icono Aceptar para efectuar la eliminación o para cancelar.
+                                <br>Si no se elimina el material, la otra opción es que el usuario le quite el chulito y este ya inactivo.
                                 <div class="bs-component">
                                     <div class="nota">Nota: En el sistema de información SISCOS no se puede eliminar material debido a que el material va asociado con un tipo de material, clasificación, marca y modelo.</div>
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/eliminar producto.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/eliminar producto.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
-
                         </div>
                     </div>
                     <!--fin eliminar mercancia-->
@@ -396,18 +451,18 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Consultar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior, permite al usuario realizar una búsqueda por los parámetros de Código, Descripción, Cod.SAP, Descripción. SAP y Tipo Material.Le damos clic en el botón Buscar y nos mostrará una ventana donde nos solicita
-                                escoger porque parámetro de búsqueda deseas buscar y el criterio, en criterio esta la opción de ingresar para saber todos los materiales es con ( % ). Existen otras opciones de búsqueda como:
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior, para realizar una consulta de todos los materiales registrados en el sistema, el usuario deberá seleccionar el tipo de parámetro de búsqueda como: Código, Descripción, Cod.SAP, Descripción
+                                .SAP y Tipo material etc. Ingresando en el campo <strong><i>Buscar</i></strong> el comodín que desea para realizar la consulta y le arroje la información correspondiente.
+                                <br>Comodines:
                                 <ul>
-                                    <li> % ( todos los registros existentes ).</li>
-                                    <li> %Cable% ( Busca todos los que se llamen cable ).</li>
-                                    <li> Cable% ( Busca los que empiezan con cable).</li>
+                                    <li>( <strong>%</strong> ).</li>
+                                    <li>( <strong>%AEROSOL</strong> ).</li>
+                                    <li>( <strong>AEROSOL%</strong> ).</li>
                                 </ul>
+                                Para salir de la consulta de materiales con la tecla <strong>esc</strong>.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/buscar mercancia.png" style="width:60%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/buscar mercancia.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -418,13 +473,19 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Documentos</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior, esta función permite al usuario poder agregar Herramientas Documentos, Imágenes para que se le haga a el usuario más fácil tener información en tiempo real dentro de esa ventana de archivos. Documentos
-                                se encuentran las funciones como Eliminar, Abrir y Cancelar el archivo.
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Documento</i></strong>, esta función permite al usuario poder agregar Herramientas Documentos, Imágenes etc.
+                                Para que se le haga al usuario más fácil tener información en tiempo real, dentro de esa ventana de archivos se encuentran las funciones como Eliminar, Abrir y Cancelar. En el archivo que se deban realizar durante el proceso.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/documento mercancia.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/documento mercancia.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Al seleccionar la opción de <strong><i>Archivo</i></strong>, el Sistema mostrará la ventana estándar de Windows denominada “Open”, donde se seleccionará la ruta donde se exportará el archivo. Dando clic en el botón <strong><i>OK</i></strong>                                de la ventana de búsqueda, se inicia el proceso de exportación. Al finalizar, el sistema carga el archivo y se verá reflejado la ruta, luego se debe dar clic en el botón <strong><i>Agregar</i></strong> para que se agregue
+                                el archivo al sistema SISCOS.
+                                <br>Finalmente se agrega el archivo correctamente a SISCOS, de todos los productos.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/documento mercancia2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -435,12 +496,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Exportar listado de materiales</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder generar un archivo en Excel de todos los materiales registrados en el sistema de información SISCOS. Le damos clic en el botón Exportar Listados de Materiales.
+                                Se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Exportar</i></strong> esta función permite al usuario poder generar un archivo en Excel de todos los materiales registrados
+                                en el sistema de información SISCOS.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/exportar listado.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/exportar listado.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -451,12 +511,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior, Le damos clic sobre el botón y salir del Módulo y finalizar el proceso.
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <br>Finalmente dar clic en el botón Sí. Y se finaliza el proceso de Mercancía.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/salir producto.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/salir producto.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>

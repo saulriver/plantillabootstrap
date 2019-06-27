@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="Grabar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -291,10 +291,10 @@
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#Grabar" onclick="myFunction()">
                             Grabar</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#Modificar" onclick="myFunction()">
-                            Modificar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#Eliminar" onclick="myFunction()">
                             Eliminar</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#Modificar" onclick="myFunction()">
+                            Modificar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#Salir" onclick="myFunction()">
                             Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -326,76 +326,84 @@
                             <h3 class="tile-title ">Unidades medida</h3>
                             <div class="bs-component ">
                                 Este módulo facilita y simplifica las indicaciones de las unidades de medida, que son instrumentos para cuantificar diferentes materiales que se recurre a unidades derivadas de cierto número fundamentales en el ámbito de un determinado sistema de medida.
-                                <br> El principal objetivo es la determinación y comparación de cantidades para modelos antiguos o simplemente previstos con valores exactos.
+                                El principal objetivo es la determinación y comparación de cantidades para modelos antiguos o simplemente previstos con valores exactos.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/unidadesmedida.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
 
                     <!--Grabar-->
-                    <div class="col-md-12">
+                    <div id="Grabar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Grabar</h3>
                             <div class="bs-component ">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite guardar un registro de unidades de medida al sistema SISCOS. Para realizar esta función el usuario debe primero haber dado clic en el botón nuevo e ingresar la información solicitada
-                                u obligatoria en los campos correspondientes.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, dar clic en el botón y graba en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
+                                <br>Asimismo dar clic en el icono Aceptar para que sea agregado el nuevo registro al a base de datos y visualizado en el listado de Estado material en el sistema SISCOS
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/unidades1.png" style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/unidades1.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin Grabar-->
-
-                    <!--Modificar-->
-                    <div id="Modificar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Modificar</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario modificar un registro seleccionado este proceso para llevar acabo es primero haber dado clic en el botón nuevo y seguidamente dar en el campo código del registro doble
-                                clic y muestra automáticamente la información correspondiente del registro que va hacer editada. Otra forma es dar clic en el botón modificar y seleccionar el registro.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/modificar unidades.png" style="width:60%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin Modificar-->
 
                     <!--eliminar -->
                     <div id="Eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar registros existentes de unidades de medidas que no le existan movimientos de lo contrario mostrará mensaje de error.
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, para poder eliminar del listado de unidades de medidas un registro, es que no esté asociado a otros registros en el sistema de lo contrario mostrará mensaje de error.
+                                <br>Seguidamente se debe dar doble clic sobre el registro seleccionado para que se habilite la función, dar clic en la opción <strong><i>Eliminar</i></strong>.
                                 <div class="bs-component">
-                                    <div class="nota">Nota: no se puede eliminar si ese registro seleccionado ( Unidades medida ) tiene movimientos al querer hacerlo muestra mensaje de error.</div>
+                                    <div class="nota">Nota: en el sistema de información SISCOS no se debe eliminar una unidad de medida debido a que una unidad va asociado a otros módulos.</div>
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                      <img src="imagenes/eliminar unidad.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                <span><img src="imagenes/eliminar unidad.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
-
                         </div>
                     </div>
                     <!--fin eliminar-->
+
+                    <!--Modificar-->
+                    <div id="Modificar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Modificar</h3>
+                            <div class="bs-component ">
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado izquierdo, permite hacer actualizaciones en registros existentes, para poder utilizar este botón debemos dar clic en el botón <strong><i>Modificar</i></strong>                                y luego ingresar el código del material.
+                                <br>Seguidamente se debe dar en la tecla enter para que arroje toda la información acerca de ese código y seleccionar que campo se desea modificar.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar unidades.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Asimismo dar clic en el la opción <strong><i>Guardar</i></strong>, para que se apliquen los cambios al registro seleccionado en el sistema y se actualice la información en la base de datos.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar unidades2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Otra forma de poder modificar una unidad de medida es dar doble clic en el código del registro arroje la información correspondiente y escoger el campo que se va a editar. Seguidamente se debe dar clic en la opción <strong><i>Guardar</i></strong>                                y actualice la información.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar unidades3.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin Modificar-->
 
                     <!--salir-->
                     <div id="Salir" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal, dar clic en el botón y salir del módulo unidades de medidas.
+                                Para salir del módulo es a través del botón salir que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <br>Finalmente dar clic en el botón Sí. Y se finaliza el proceso de Unidades de medidas.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/unidades2.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                <span><img src="imagenes/unidades2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
