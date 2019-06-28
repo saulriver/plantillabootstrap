@@ -145,3 +145,4 @@ function cargar_pagina() { alert("Bienvenidos!"); }
         });
     }, 50);
 });
+//buscador de palabras en el html
