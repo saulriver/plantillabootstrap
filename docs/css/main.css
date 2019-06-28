@@ -2852,16 +2852,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-info {
-    color: #FFF;
-    background-color: #17a2b8;
-    border-color: #17a2b8;
-    border-radius: 18px;
+    color: rgba(253, 253, 253, 0.842);
+    background-color: #1380be;
+    border-color: #177db8;
+    border-radius: 23px;
+    height: 46px;
 }
 
 .btn-info:hover {
-    color: #FFF;
-    background-color: #138496;
-    border-color: #117a8b;
+    color: red;
+    background-color: #007bff;
 }
 
 .btn-info:focus,

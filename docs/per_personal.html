@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="agregar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -300,7 +300,7 @@
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
                         Eliminar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#buscar" onclick="myFunction()">
-                        Buscar</a></li>&nbsp;
+                        Consultar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -329,24 +329,29 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Personal</h3>
                             <div class="bs-component">
-                                Este módulo es donde se registran todas las personas que van hacer movimientos en el almacén. Es importante tener en cuenta el usuario que se debe haber creado el departamento, para así poder entregar el material de las bodegas del departamento que le
-                                asigne a ese técnico.
-                                <br> Si el técnico, el usuario lo traslada para otra zona debe situarse a este módulo y modificarlo y ponerle el departamento de la otra zona.
+                                Este módulo permite al usuario registrar todas las personas que van hacer movimientos en el almacén.
+                                <br>Es importante tener en cuenta que se debe haber creado el departamento, para así poder entregar el material de las bodegas del departamento que le asigne a ese técnico. Si el técnico; el usuario lo traslada para otra
+                                zona debe situarse a este módulo y actualizarlo ponerle el departamento de la otra zona.
+                                <br>El usuario debe dar clic en el módulo <strong><i>Personal</i></strong>, y se visualizará una ventana que solicita información. Seguidamente dar clic en el comando <strong><i>Nuevo</i></strong> que se encuentra ubicado
+                                en la barra vertical superior lado izquierdo, para que se puedan habilitar los demás botones y poder ingresar los campos requeridos u obligatorios (Cédula) que solicita el módulo Personal.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/personal.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
 
                     <!--agregar-->
-                    <div class="col-md-12">
+                    <div id="agregar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Agregar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical lado izquierdo, dar clic en el botón y agregar un nuevo registro personal solicitando unos campos requeridos u obligatorios.
+                                Está funcionalidad se encuentra ubicada en la barra vertical superior lado izquierdo, es posible registrar una nueva persona en el sistema. Se debe ingresar la información solicitada u obligatoria del departamento y con esto queda adicionado el nuevo
+                                registro. Seguidamente de llenar los campos con datos de la persona se debe dar clic en el botón <strong><i>Agregar</i></strong> y se haga el registro.
+                                <br>El sistema mostrará un mensaje de información que el Personal registrado correctamente, dar clic en el icono <strong><i>Aceptar</i></strong> para efectuar la creación.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/agregar personal.png" style="width:70%;" class="w3-animate-zoom rounded">
-                          </span>
+                                <span><img src="imagenes/agregar personal.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -357,12 +362,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar foto</h3>
                             <div class="bs-component">
-                                Permite al usuario por dato personal cualquier información para su identificación, en este caso en el sistema SISCOS, se puede buscar la foto que desea poner en su perfil como dato personal.
+                                Esta opción se encuentra ubicada an la barra horizontal inferior lado derecho, se debe dar clic en el comando <strong><i>Buscar foto</i></strong> y permite al usuario por dato personal cualquier información para su identificación,
+                                en este caso en el sistema SISCOS se puede buscar la foto que desea poner en su perfil como dato personal.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                    <img src="imagenes/buscar foto.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                <span><img src="imagenes/buscar foto.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -373,12 +377,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Eliminar foto</h3>
                             <div class="bs-component">
-                                Hacemos clic en el botón eliminar foto y automáticamente se elimina la imagen que se le había asignado a la persona.
+                                Esta opción se encuentra ubicada en la barra horizontal inferior lado derecho, se debe dar clic en el comando <strong><i>Eliminar foto</i></strong> y automáticamente se elimina la imagen que se le había asignado a la persona.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/eliminar foto.png" style="width:70%" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/eliminar foto.png" style="width:70%" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -389,13 +391,32 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Modificar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite hacer cambios en registros existentes, para poder utilizar este botón debemos dar clic en el botón nuevo para que se habilite el modificar damos clic sobre él ingresamos el campo
-                                cédula de la persona y nos presentara una ventana con toda la información registrada y luego seleccionamos que campo se desea modificar.
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado izquierdo, permite hacer actualizaciones en registros existentes, para poder utilizar este botón debemos dar clic en el botón <strong><i>Modificar</i></strong>
+                                <br>y luego ingresar la cédula de la persona. Seguidamente se debe dar en la tecla enter para que arroje toda la información acerca de esa cédula y seleccionar que campo se desea modificar.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                        <img src="imagenes/modificar personal.png" style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
+                                <span><img src="imagenes/modificar personal.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Asimismo dar clic en el la opción <strong><i>Agregar</i></strong>, para que se apliquen los cambios al registro seleccionado en el sistema y se actualice la información en la base de datos.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar personal2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Otra forma de poder modificar una persona es dar clic en la opción <strong><i>Modificar</i></strong>, luego en la opción <strong><i>Consultar</i></strong> y realizar la búsqueda de las personas registradas en el sistema.
+                                Por medio del comodín (<strong>%</strong>) establecidos como se puede observar a continuación.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar personal3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Finalmente cuando ya se tiene el registro, el usuario se ubica en el campo <strong><i>Cédula</i></strong> y le da clic en la tecla enter y automáticamente se traslada la información a la ventana principal del personal.
+                                Analizamos que campo se le van aplicar los cambios, seguidamente se debe dar clic en la opción <strong><i>Agregar</i></strong>.
+                                <br>El sistema mostrará un mensaje de información el cual se debe dar clic en el icono <strong><i>Aceptar</i></strong> para que efectué el proceso de actualizar el registro en el sistema.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/modificar personal4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -406,18 +427,32 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Eliminar</h3>
                             <div class="bs-component">
-                                En el sistema de información SISCOS no se puede eliminar personal debido a que el personal va asociado con un Departamento y cargo; El personal presenta movimientos y está Activo existen registros por lo tanto no se puede eliminar porque si se quiere
-                                hacer nos saldría un mensaje de error.
-                                <br>Observación: que el personal que deseen eliminar o que no realice movimientos esta la opción de activo / inactivo, activo para que realice e inactivo que no.
+                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, para poder eliminar del listado del personal un registro, es que no esté asociado a otros registros en el sistema de lo contrario mostrará mensaje de error. Para eliminar
+                                una persona primeramente se debe dar clic en la opción <strong><i>Modificar</i></strong>, luego en la opción <strong><i>Consultar</i></strong> y realizar la búsqueda de las personas registradas
+                                en el sistema. Por medio del comodín (<strong>%</strong>), seguidamente el usuario ubicarse en el campo <strong><i>Cédula</i></strong> de la persona y dar clic en la tecla Enter y automáticamente se arroja la información
+                                correspondiente a la pantalla principal.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/eliminar per.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                El usuario escoge el campo que va a modificar finalmente debe dar clic en la opción Eliminar para que el registro realice el proceso. El sistema presentará un mensaje de información que si está seguro de eliminar el registro de personal, se debe dar clic
+                                en el icono <strong><i>Sí</i></strong> para que se efectué la eliminación si a ese registro no le existen asociaciones.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/eliminar per2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                En este caso se presentará mensaje de error porque el registro le existen movimientos.
+                                <br>
                                 <div class="bs-component">
-                                    <div class="nota">Nota: en el sistema de información SISCOS no se puede eliminar personal debido a que el personal va asociado con un departamento y cargo; El personal presenta movimientos y está activo existen registros por lo tanto
-                                        no se puede eliminar porque si se quiere hacer nos saldría un mensaje de error.</div>
+                                    <div class="nota">
+                                        Nota: que el personal que deseen eliminar o que no le existan asociaciones está la opción de activo/inactivo, Activo para que realice e Inactivo que no.
+                                    </div>
                                 </div>
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/eliminar per.png" style="width:70%;" class="w3-animate-zoom rounded">
-                          </span>
+                                <span><img src="imagenes/eliminar per3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -426,14 +461,18 @@
                     <!--buscar-->
                     <div id="buscar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title"> Buscar</h3>
+                            <h3 class="tile-title">Consultar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior, dar clic en el botón y realizar una búsqueda por el parámetro ( % )criterio de busqueda que muestra todo el personal registrado en el sistema SISCOS.
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Consultar</i></strong> permite al usuario realizar una búsqueda por el parámetro de <strong><i>Cédula</i></strong>                                ingresando el comodín, seguidamente dar clic en la tecla Enter y se visualizaran todos los proveedores registrados en el sistema.
+                                <br>Comodines:
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%-1</strong>) Los que terminan.</li>
+                                    <li>(<strong>-1%</strong>) Los que comiencen</li>
+                                </ul>
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/buscar personal.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/buscar personal.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -444,12 +483,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del módulo personal.
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <br>El usuario debe dar clic en el icono <strong><i>Sí</i></strong>, y finalizamos el proceso del módulo Personal.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir per.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/salir per.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
@@ -458,8 +496,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="875" height="405" src="https://www.youtube.com/embed/YTHbGVy0g0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                      </iframe>
+                        <iframe class="embed-responsive-item" width="875" height="405" src="https://www.youtube.com/embed/YTHbGVy0g0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

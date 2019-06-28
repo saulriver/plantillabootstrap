@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="agregar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -330,22 +330,26 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Proveedores</h3>
                             <div class="bs-component">
-                                Son requeridos para realizar entradas EECC, para que el usuario pueda hacer una entrega EECC debe haber creado proveedores, en CT no se pide el proveedor no varía con este.
+                                Este módulo es requerido para realizar entradas EECC, para que pueda hacer una entrega EECC debe haber creado proveedores, en CT no se pide el proveedor no varía con este. Se debe dar clic en el módulo <strong><i>Proveedores</i></strong>
+                                <br>y se visualizará una ventana que solicita información, seguidamente dar clic en la opción <strong><i>Nuevo</i></strong> que se encuentra ubicada en la barra vertical superior lado izquierdo. Para que se puedan habilitar
+                                los demás botones y poder ingresar los campos requeridos u obligatorios ( Código del proveedor ).
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/proveedores.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
 
                     <!--agregar proveedor-->
-                    <div class="col-md-12">
+                    <div id="agregar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario poder agregar un nuevo registro proveedor en SISCOS. El usuario debe dar clic en el botón Agregar y le mostrará un mensaje de información proveedor registrado correctamente.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, para guardar un nuevo registro se debe dar clic en la opción <strong><i>Agregar</i></strong> cuando ya se tiene la información correspondiente.
+                                El usuario al dar clic sobre el botón; el sistema mostrará un mensaje de información proveedor registrado correctamente. Luego dar clic en el icono <strong><i>Aceptar</i></strong> para que se pueda efectuar la creación.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/registro proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/registro proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -356,14 +360,19 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite hacer cambios en registros existentes, para poder utilizar este botón debemos dar clic sobre él Modificar y luego ingresar el código del proveedor para que nos arroje toda la información
-                                acerca de ese código y que campo se desea modificar, otra opción seria dar doble clic sobre el campo codigo del proveedor que va hacer modificado. Seguidamente clic en el botoón guardar para que se haga la atualizacion
-                                en el sistema.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite hacer cambios en registros existentes; se debe dar clic en el botón <strong><i>Modificar</i></strong>, seguidamente el usuario debe
+                                ubicarse el <strong><i>Código NIT</i></strong> y dar doble clic para que automáticamente arroje la información y escoger el campo que se va a modificar.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                        <img src="imagenes/actualizar proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                        </span>
+                                <span><img src="imagenes/actualizar proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                En este caso se escogió el campo Código para modificar que es 208 y se va a modificar con el número 20. Finalmente se debe dar clic en la opción <strong><i>Agregar</i></strong> para que se guarde el registro y actualice
+                                la información en la base de datos del sistema SISCOS.
+                                <br>El sistema presentará un mensaje de información que el proveedor actualizado correctamente, dar clic en el icono <strong><i>Aceptar</i></strong> para que se efectué la actualización.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/actualizar proveedor2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -374,150 +383,156 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicada en la barra horizontal superior lado izquierdo, esta función en SISCOS no se puede hacer siempre y cuando tenga movimientos de entregas EECC mostrará mensaje de información error, de lo contrario si permite. A continuación se hará
-                                un ejemplo de eliminar un registro de proveedores que no le existen movimientos de entregas y si se puede eliminar en SISCOS.
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal inferior lado izquierdo, para poder eliminar del listado de proveedores un registro, es que no esté asociado a otros registros en el sistema de lo contrario mostrará mensaje de error. Primeramente
+                                para que esta función se encuentre habilitada el usuario debe ubicarse en el campo <strong><i>NIT</i></strong> del proveedor, dar doble clic y automáticamente arroje la información del registro.
+                                A continuación se hará un ejemplo de eliminar un registro de proveedores que no le existen movimientos y si se puede eliminar en SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eli proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 <div class="bs-component">
-                                    <div class="nota">Nota: no se puede Eliminar un Proveedor si existen movimientos de lo contrario si es exitosa la función eliminar.</div>
+                                    El sistema presentará un mensaje de información que si está seguro de eliminar el proveedor, dar clic en el icono Sí.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eli proveedor2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <div class="bs-component">
+                                    El usuario debe dar clic en el icono Aceptar para efectuar la eliminación del registro.
+                                    <br>Asimismo cuando no se puede <strong><i>Eliminar Proveedor</i></strong> que le existen movimientos muestra mensaje de información de error como se puede analizar a continuación.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eli proveedor3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/eli proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-
                         </div>
-                    </div>
-                    <!--fin eliminar proveedor-->
+                        <!--fin eliminar proveedor-->
 
-                    <!--buscar proveedor-->
-                    <div id="consultar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Consultar</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior Le damos clic en el botón Buscar éste permite al usuario realizar una búsqueda por los parámetros de Razón Social y ( % ).
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/buscar proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                        <!--buscar proveedor-->
+                        <div id="consultar" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                <h3 class="tile-title">Consultar</h3>
+                                <div class="bs-component">
+                                    Esta funcionalidad se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Consultar</i></strong> permite al usuario realizar una búsqueda por el parámetro de <strong><i>Razón social</i></strong>                                    ingresando el comodín, seguidamente dar clic en la tecla Enter y se visualizaran todos los proveedores registrados en el sistema.
+                                    <br>Comodines:
+                                    <ul>
+                                        <li>(<strong>%</strong>) Todos.</li>
+                                        <li>(<strong>%ALMACEN</strong>) Los que terminan.</li>
+                                        <li>(<strong>ALMACEN%</strong>) Los que comiencen.</li>
+                                    </ul>
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--fin buscar proveedor-->
+                        <!--fin buscar proveedor-->
 
-                    <!--documentos proveedor-->
-                    <div id="documentos" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Documentos</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario poder agregar Herramientas Documentos, Imágenes para que se le haga al usuario más fácil tener información en tiempo real dentro de esa ventana de archivos se encuentran las funciones
-                                como Eliminar, Abrir y Cancelar el archivo.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/documentos proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                        <!--documentos proveedor-->
+                        <div id="documentos" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                <h3 class="tile-title">Documentos</h3>
+                                <div class="bs-component">
+                                    Esta funcionalidad se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Documentos</i></strong> que permite al usuario poder agregar Herramientas, Documentos, Imágenes etc.
+                                    Para que se le haga al usuario más fácil tener información en tiempo real, dentro de esa ventana de archivos se encuentran las funciones como Eliminar, Abrir y Cancelar el archivo.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/documentos proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--fin documentos proveedor-->
+                        <!--fin documentos proveedor-->
 
-                    <!--exportar listado proveedor-->
-                    <div id="exportar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Exportar listado de materiales</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior,Exportar permite al usuario poder generar un archivo en Excel de todos los proveedores registrados en el sistema de información SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/exportar proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin exportar listado proveedor-->
-
-                    <!--salir proveedor-->
-                    <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Salir</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del módulo proveedores.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/sali proveedor.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                        <!--exportar listado proveedor-->
+                        <div id="exportar" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                <h3 class="tile-title">Exportar listado de materiales</h3>
+                                <div class="bs-component">
+                                    Esta funcionalidad se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Exportar</i></strong> que permite al usuario poder generar un archivo en Excel de todos los proveedores
+                                    registrados en el sistema de información SISCOS.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/exportar proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
-                        <hr>
-                    </div>
-                    <!--fin salir proveedor-->
+                        <!--fin exportar listado proveedor-->
 
-                    <!--video-->
-                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                       </iframe>
-                    </div>
-                    <!--fin video-->
+                        <!--salir proveedor-->
+                        <div id="salir" class="col-md-12">
+                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                <h3 class="tile-title">Salir</h3>
+                                <div class="bs-component">
+                                    Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                    <br>Finalmente dar clic en el icono <strong><i>Sí</i></strong>, para que el usuario finalice el proceso en el módulo Proveedores.
+                                </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/sali proveedor.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <!--fin salir proveedor-->
 
-                </div>
-                <!--fin row-->
+                        <!--video-->
+                        <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                            <iframe class="embed-responsive-item" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!--fin video-->
+
+                    </div>
+                    <!--fin row-->
             </main>
+            </div>
+            <!--fin row flex-->
         </div>
-        <!--fin row flex-->
-    </div>
-    <!--fin container fluid-->
-    <a href="inv_mercancia.html#76" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_entrada_ct.html#52" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+        <!--fin container fluid-->
+        <a href="inv_mercancia.html#76" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+        <a href="inv_entrada_ct.html#52" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
-    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
-    </script>
-    <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+        <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+        </script>
+        <!--iconos version fontawesome 5.8.1-->
+        <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
 
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script type="text/javascript" src="js/plugins/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script>
-        $('.bs-component [data-toggle="popover"]').popover();
-        $('.bs-component [data-toggle="tooltip"]').tooltip();
-    </script>
-    <!--scrooll efecto smooth para el id-->
-    <script>
-        function myFunction() {
-            document.documentElement.style.scrollBehavior = "smooth";
-        }
-    </script>
-    <!--impedir que copien el codigo de la pagina-->
-    <script language="Javascript">
-        function disableselect(e) {
-            return false
-        }
+        <!-- Essential javascripts for application to work-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- The javascript plugin to display page loading on top-->
+        <script src="js/plugins/pace.min.js"></script>
+        <!-- Page specific javascripts-->
+        <script type="text/javascript" src="js/plugins/chart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Page specific javascripts-->
+        <script>
+            $('.bs-component [data-toggle="popover"]').popover();
+            $('.bs-component [data-toggle="tooltip"]').tooltip();
+        </script>
+        <!--scrooll efecto smooth para el id-->
+        <script>
+            function myFunction() {
+                document.documentElement.style.scrollBehavior = "smooth";
+            }
+        </script>
+        <!--impedir que copien el codigo de la pagina-->
+        <script language="Javascript">
+            function disableselect(e) {
+                return false
+            }
 
-        function reEnable() {
-            return true
-        }
-        document.onselectstart = new Function("return false")
-        if (window.sidebar) {
-            document.onmousedown = disableselect
-            document.onclick = reEnable
-        }
-        // End -->
-    </script>
+            function reEnable() {
+                return true
+            }
+            document.onselectstart = new Function("return false")
+            if (window.sidebar) {
+                document.onmousedown = disableselect
+                document.onclick = reEnable
+            }
+            // End -->
+        </script>
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->
 <script language=JavaScript>
