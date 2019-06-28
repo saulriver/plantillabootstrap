@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="Nueva" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -323,25 +323,35 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Bodegas</h3>
                             <div class="bs-component">
-                                Este módulo permite el espacio de almacenamiento y movimientos de materiales, hasta el punto de consumo por un cliente. Para realizar una transacción debe existir una bodega y materiales, bodegas depende departamento y localidades geográficamente esa
-                                bodega.
-                                <br> Cuando le damos clic en bodega nos muestra una ventana que de su lado derecho aparecen varios departamentos con sus localidades escogemos el que vamos a utilizar le damos clic al departamento, y creamos una nueva bodega.<br>                                Se analiza que hay tres opciones para ingresar información como Datos Generales, Solicitud Material y Parámetros.
-
+                                Este módulo permite al usuario que para hacer una transacción debe existir una Bodega y Materiales, bodegas depende departamento y localidades geográficamente.
+                                <br>El usuario debe dar clic en el módulo <strong><i>Bodegas</i></strong> Y se visualizará una ventana que de su lado derecho aparecen varios departamentos con sus localidades, escogemos el que vamos a utilizar dar clic
+                                al departamento y creamos una nueva bodega.
+                                <br>Se analiza que hay tres opciones para ingresar información como <strong><i>Datos Generales</i></strong>, <strong><i>Solicitud Material</i></strong> y <strong><i>Parámetros</i></strong> etc.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/bodega.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
 
                     <!--Nueva bodega-->
-                    <div class="col-md-12">
+                    <div id="Nueva" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Nueva bodega</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior lado izquierdo, para que se puedan habilitar los demás botones y poder crear una bodega seguidamente le damos clic en Nueva bodega.
+                                Esta función se encuentra ubicada en la barra horizontal inferior lado izquierdo, se debe dar clic en la opción <strong><i>Nueva bodega</i></strong>. Para que se puedan habilitar los demás botones y poder crear una bodega.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/nueva bodega.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/nueva bodega.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            <div class="bs-component">
+                                Seguidamente ingresamos y seleccionamos los campos solicitados u obligatorios ( Código ) de las ventanas <strong><i>Datos Generales</i></strong>, <strong><i>Solicitud material</i></strong> y <strong><i>Parámetros</i></strong>                                etc.
+                                <br><strong>Datos generales:</strong> implica toda aquella información necesaria para crear una nueva bodega.
+                                <br><strong>Solicitud Material:</strong> seleccionar las opciones plasmadas como las que requiera el usuario para su configuración y como deban llegar los mensajes a los destinos seleccionados en SISCOS.
+                                <br><strong>Parámetros:</strong> el usuario debe seleccionar las opciones necesarias para su configuración.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/nueva bodega2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -352,12 +362,12 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Aplicar cambios</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior lado izquierdo, permite al usuario agregar una nueva bodega al sistema SISCOS dar clic en el botón cuando ya se tiene la información necasaria para el registro.
+                                Esta función se encuentra ubicada en la barra horizontal inferior lado izquierdo, se debe dar clic en la opción <strong><i>Aplicar cambios</i></strong> cuando ya se tiene toda la información configurada correctamente en
+                                las respectivas ventanas mencionadas anteriormente y se agregue una nueva bodega al sistema.
+                                <br>El sistema presentará un mensaje de información cambios aplicados correctamente, al cual dará clic en el icono <strong><i>Aceptar</i></strong>, para efectuar y aplicar los cambios.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/cambios aplicados bodega.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/cambios aplicados bodega.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -368,19 +378,26 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, ésta función permite al usuario poder eliminar una bodega siempre y cuando no le existan movimientos de lo contrario mostrará mensaje de error en el sistema.
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal inferior lado derecho, para poder eliminar del listado de Bodegas un registro, es que no esté asociado a otros registros en el sistema de lo contrario mostrará mensaje de error.
+                                <br>El usuario debe seleccionar la bodega y luego dar clic en la opción <strong><i>Eliminar</i></strong> y es eliminada correctamente del sistema si no le existen asociaciones de lo contrario no se realiza la función.
+                                <br>El sistema mostrará el siguiente mensaje al usuario, al cual dará clic en Sí, para efectuar la eliminación.
+                                <!--fin mensaje de alerta-->
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar bodega.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 <div class="bs-component">
-                                    <div class="nota">Nota: no se puede eliminar si ese registro ( Bodega ) tiene movimientos y está activa, para que no lo debas utilizar debes ponerlo inactivo y cuando lo necesites lo activas. Pero no se Elimina, si intenta el usuario
-                                        hacerlo le mostrará un mensaje de información que no se puede o que hay un error.</div>
+                                    Al dar clic en el icono <strong><i>No</i></strong>, es porque se va a cancelar la función de eliminar la bodega.
+                                    <br>
+                                    <div class="bs-component">
+                                        <div class="nota">
+                                            Nota: en el sistema de información SISCOS no se debe eliminar una bodega debido a que una bodega va asociado a otros módulos.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!--fin mensaje de alerta-->
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/eliminar bodega.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/eliminar bodega2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
-
                         </div>
                     </div>
                     <!--fin eliminar deptos-->
