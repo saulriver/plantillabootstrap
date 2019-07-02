@@ -387,8 +387,8 @@
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
                                 Esta opción se encuentra ubicada en la barra horizontal superior, esta función permite al usuario poder agregar material a una de las entradas registradas en el sistema SISCOS.
-                                <br> El usuario debe dar clic en el botón <strong><i>Agregar</i></strong>, y se presentará una ventana que requiere de una información para poder agregar material, si al usuario se le olvido el código puede realizar una
-                                búsqueda dando clic en el botón <strong><i>Buscar</i></strong>.
+                                <br><br> El usuario debe dar clic en el botón <strong><i>Agregar</i></strong>, y se presentará una ventana que requiere de una información para poder agregar material, si al usuario se le olvido el código puede realizar
+                                una búsqueda dando clic en el botón <strong><i>Buscar</i></strong>.
                             </div>
                             <div class="w3-container w3-center">
                                 <span><img src="imagenes/agregar ct mate.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
@@ -410,7 +410,7 @@
                             </div>
                             <div class="bs-component">
                                 Seguidamente al ingresar materiales se debe visualizar en la lista de material que pertenecen a la entrada asignada. El usuario debe confirmar la información y terminar de llenar los campos en el listado de materiales registrados; como <strong><i>Cantidad</i></strong>                                cuando está ingresando la cantidad depende de la clasificación de los materiales si es <strong><i>Cable, Serial</i></strong> y <strong><i>Otros</i></strong>.
-                                <br><strong>Clasificado como cable:</strong>
+                                <br><br><strong>Clasificado como cable:</strong>
                                 <br>Si es un material <strong><i>Cable</i></strong> al momento de dar clic se visualizará otra ventana donde pide los tramos de ese cable para que se haga el registro.
                             </div>
                             <div class="w3-container w3-center">
@@ -426,7 +426,7 @@
                             </div>
                             <div class="bs-component">
                                 El sistema presentará un mensaje de información el cual se debe dar clic en el icono <strong><i>Sí</i></strong>, y la cantidad ha sido registrada correctamente. Ver en la lista de materiales.
-                                <br><strong>Clasificados como serial:</strong>
+                                <br><br><strong>Clasificados como serial:</strong>
                                 <br>Si el usuario al ingresar la cantidad y se encuentra que el material es clasificado como serial se mostrará la siguiente tabla.
                             </div>
                             <div class="w3-container w3-center">
@@ -434,12 +434,12 @@
                             </div>
                             <div class="bs-component">
                                 El cual se debe configurar para realizar la entrada exitosamente.
-                                <br><strong>Cargar archivo ingreso seriales:</strong> esta ventana permite al usuario ubicarse y comenzar a <strong><i>Pistolear cada serial</i></strong> para ir agregando uno a uno, no es muy recomendable por problemas
+                                <br><br><strong>Cargar archivo ingreso seriales:</strong> esta ventana permite al usuario ubicarse y comenzar a <strong><i>Pistolear cada serial</i></strong> para ir agregando uno a uno, no es muy recomendable por problemas
                                 de energía porque si se va la luz se llevaba pistoleado 200 seriales se pueden perder y hay que hacer nuevamente el proceso, se pistolea en <strong><i>Excel</i></strong> y se guarda el archivo para luego cargarlo en la
                                 opción de <strong><i>Cargar archivo</i></strong> en la ventana que se visualiza de Ingreso de seriales.
-                                <br>El usuario debe tener presente que el campo <strong><i>Ubicación</i></strong> del producto es obligación ingresarlo y <strong><i>Fecha de vencimiento</i></strong> si tiene y si no también puede ser la fecha de la garantía,
-                                para cuando el usuario saque el informe de existencia le diga que el material serial está próximo a que se le vence la garantía, la ventaja de este proceso es tener un control en los materiales. Antes de hacer el registro
-                                de la entrada todos los campos requeridos tiene que estar completos, si no se mostrará un mensaje de información que debe ingresar el campo.
+                                <br><br>El usuario debe tener presente que el campo <strong><i>Ubicación</i></strong> del producto es obligación ingresarlo y <strong><i>Fecha de vencimiento</i></strong> si tiene y si no también puede ser la fecha de la
+                                garantía, para cuando el usuario saque el informe de existencia le diga que el material serial está próximo a que se le vence la garantía, la ventaja de este proceso es tener un control en los materiales. Antes de hacer
+                                el registro de la entrada todos los campos requeridos tiene que estar completos, si no se mostrará un mensaje de información que debe ingresar el campo.
                             </div>
                         </div>
                     </div>
@@ -457,13 +457,13 @@
                                 Para cargar archivos planos se debe guardar el archivo <strong><i>formato de texto delimitado por tabulaciones</i></strong> y se crean las respectivas columnas necesarias. Se carga N seriales, valida Si existe o No, si
                                 no es a través de los archivos se puede agregar con el botón &nbsp;<button class="btn btn-info fa fa-plus fa-lg"></button> .
                                 <br><br><strong>Estructura de Archivo de Carga Entrada:</strong>
-                                <br><strong>Archivo 1:</strong> este archivo es para <strong><i>Serial</i></strong>, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar,
+                                <br><br><strong>Archivo 1:</strong> este archivo es para <strong><i>Serial</i></strong>, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar,
                                 solo que cuando se va a validar la información no va encontrase ningún resultado.
                                 <br>Se pueden subir materiales que no son serializados o los materiales que están clasificados como
-                                <srong><i>Otros</i></srong>. Al momento de hacer inventario inicial lo necesario es que la planilla venga clasificados como otros.
+                                <strong><i>Otros</i></strong>. Al momento de hacer inventario inicial lo necesario es que la planilla venga clasificados como otros.
                                 <br>Ejemplo: código estado siempre debería ir 02 bueno, 03 malo en sí que se tenga una tabla de codificación.
-                                <br><strong>Archivo 2:</strong> se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.
-                                <br><strong>Archivo 3:</strong> es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia.
+                                <br><br><strong>Archivo 2:</strong> se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.
+                                <br><br><strong>Archivo 3:</strong> es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia.
                                 <br>Con cualquiera de estos archivos sirve para el inventario inicial para que salga lo más rápido posible y no estar buscando código por código.
                                 <br>El usuario sabrá visualizar que archivo va escoger, es decir el que mejor le sea útil para su proceso.
                                 <br>Se deben armar 3 archivos:
@@ -528,7 +528,7 @@
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
                                 Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
-                                <br>El usuario debe dar clic en el icono <strong><i>Sí</i></strong>, y finalizamos el proceso del módulo Entrada CT.
+                                <br><br>El usuario debe dar clic en el icono <strong><i>Sí</i></strong>, y finalizamos el proceso del módulo Entrada CT.
                             </div>
                             <div class="w3-container w3-center">
                                 <span><img src="imagenes/salir ct 2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>

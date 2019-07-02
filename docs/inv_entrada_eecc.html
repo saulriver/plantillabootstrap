@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="nuevaentradaeecc" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -329,38 +329,40 @@
                             <h3 class="tile-title">Entrada EECC</h3>
                             <div class="bs-component">
                                 Este módulo de transacciones de entradas EECC son todos los tipos de movimientos de inventario que pueden ser realizados en el sistema. Los requisitos previos que debe tener un entrada EECC es una bodega, proveedor, centro de costos (propiedad) y periodo
-                                activo si ya hay un periodo activo se hace una sola vez ya las transacciones lo toma.<br> Transacciones entradas: son transacciones que incrementan las existencias de los materiales en el
-                                inventario.
-
+                                activo si ya hay un periodo activo se hace una sola vez ya las transacciones lo toman.
+                                <br><br><strong>Transacciones entradas:</strong> son transacciones que incrementan las existencias de los materiales en el inventario.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Entrada EECC</i></strong>, y se visualizará una ventana el cual se debe ingresar la información solicitada u obligatoria para hacer un nuevo registro al sistema SISCOS.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/nueva entrada eecc.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
 
                     <!--Registro entrada CT-->
-                    <div class="col-md-12">
+                    <div id="nuevaentradaeecc" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Nueva entrada EECC</h3>
                             <div class="bs-component">
-                                Al momento de estar ingresando la información para registrar una entrada EECC en el campo Periodo nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los registros existente de este, debido a que el usuario se le olvido el proveedor
-                                que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla ( % ) que le presentará todos los proveedores registrados; para salir de esta ventana usamos la tecla esc. Centro de costo
-                                y propiedad es lo mismo.<br><br>
-                                <ul>
-                                    <li>Proveedor: se debe tener creado un proveedor para poder registrar entradas EECC.</li>
-                                    <li>Remisión/orden: si esta entrega es amarrada a una orden de trabajo por ejemplo: material va esta orden de trabajo como tal única y exclusivamente. Cuando se generen los informes y el listado de existencia entonces dirá
-                                        este material que queda aquí es de esta orden de trabajo.</li>
-                                    <li>Orden de compra: el material a que orden de trabajo pertenece Posteriormente de haber ingresado toda la información requerida para el registro de una entrada le damos clic en el botón Nuevo para que la guarde y se puedan
-                                        agregar material a esta entrada y se puedan habilitar los demás botones y poder realizar el proceso.</li>
-                                </ul>
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el usuario debe tener en cuenta que antes de hacer el registro de la entrada todo los campos requeridos estén llenos si no les mostrará un mensaje de información que debe ingresar el campo.</div>
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, el usuario debe dar clic en la opción <strong><i>Nueva entrada</i></strong>, cuando ya tenga toda la información lista en los campos solicitados.
+                                Para que la guarde y se puedan agregar material a esta entrada y se puedan habilitar los demás botones y poder realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/nueva entrada.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
+                                Al momento de estar ingresando la información para registrar una Entrada EECC en el campo Proveedor se visualiza un botón <strong><i>Prov</i></strong>, el cual permite hacer una búsqueda de todos los registros existente
+                                de este, debido a que el usuario se le olvido el proveedor que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente con el comodín (<strong>%</strong>) que le presentará todos los proveedores registrados.
+                                <br>Para salir de esta ventana usamos la tecla <strong><i>Esc</i></strong>.
+                                <br><strong><i>Centro de costo y propiedad</i></strong> es lo mismo.
+                                <br><br>
+                                <ul>
+                                    <li><strong>Proveedor:</strong> se debe tener creado un proveedor para poder registrar entradas EECC.</li>
+                                    <br>
+                                    <li><strong>Remisión/orden:</strong> si esta entrega es amarrada a una orden de trabajo por ejemplo: material va esta orden de trabajo como tal única y exclusivamente. Cuando se generen los informes y el listado de existencia
+                                        entonces dirá este material que queda aquí es de esta orden de trabajo.</li>
+                                    <br>
+                                    <li><strong>Orden de compra:</strong> el material a que orden de trabajo pertenece.</li>
+                                </ul>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/nueva entrada eecc.png" style="width:80%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin registro entrada ct-->
@@ -370,29 +372,51 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder agregar material a una de las entradas registradas en el sistema SISCOS, ya es diferente en este módulo que en CT la propiedad era para toda la entrada y en EECC
-                                puede tener varios costos para diferentes materiales y una misma entrada pueden haber varios centros de costos, el estado también. El usuario debe dar clic en el botón agregar, y nos presentará una ventana que requiere
-                                de una información para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón. Al dar clic en el botón mencionado visualizaremos otra ventana para agregar el material,
-                                se pueden hacer búsquedas por los criterios seleccionando las opciones como Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material; a su lado podemos ingresar la tecla ( % ) para que me muestre todos los registros que pertenecen
-                                a el criterio seleccionado para salir de esta ventana usamos la tecla esc. Criterios de busquedas:<br><br>
-                                <ul>
-                                    <li>( %CABLE% ) </li>
-                                    <li>( % )</li>
-                                    <li>CABLE%</li>
-                                    <li>Clasificado como cable: si es un material Cable al momento de dar clic te muestra otra ventana donde pide los tramos de ese cable para que se haga el registro.</li>
-                                    <li>Clasificado como serial: si el usuario al ingresar la cantidad y se encuentra que el material es clasificado como serial le mostrará una ventana donde requiere de información para su configuración.</li>
-                                    <li>Clasificado como otros: su configuración es periviamente sencilla debido a que el usuario debe tener claro asignar cantidad y ubicación al material que es obligatorio para realizar la entrada.</li>
-                                </ul>
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el usuario debe tener claro la clasifacion de los materiales debido a que su configuracion es diferente ya sea como serial, cable y otros.</div>
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario poder agregar material a entradas registradas en el sistema SISCOS, ya es diferente en este módulo que en CT la propiedad era para toda la entrada y en EECC puede tener
+                                varios costos para diferentes materiales y una misma entrada pueden haber varios centros de costos, el estado también.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar eecc.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
+                                El usuario debe dar clic en el botón agregar, y se presentará una ventana que requiere de una información para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón.
+                                <br><br>Al dar clic en el botón mencionado visualizaremos otra ventana para agregar el material, se pueden hacer búsquedas por los criterios seleccionando las opciones como: <strong><i>Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material</i></strong>;
+                                a su lado podemos ingresar el comodín (<strong>%</strong>) para que se visualicen todos los registros que pertenecen a el criterio seleccionado.
+                                <br>Comodines:
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                Para salir de esta ventana usamos la tecla <strong>Esc</strong>.
+                                <br>Seguidamente al ingresar materiales se debe visualizar en la lista de material que pertenecen a la Entrada asignada. El usuario debe confirmar la información y terminar de llenar los campos en el listado de materiales
+                                registrados; como <strong><i>Cantidad</i></strong> cuando está ingresando la cantidad depende de la clasificación de los materiales si es Cable, Serial y otros.
+                                <br><br><strong>Clasificación como cable:</strong>
+                                <br>Si es un material <strong><i>Cable</i></strong> al momento de dar clic se visualizará otra ventana donde pide los tramos de ese cable para que se haga el registro como se puede observar a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar eecc2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en la opción <strong><i>Agregar&nbsp;</i></strong><button class="btn btn-info fa fa-plus fa-lg"></button> que se encuentra ubicada en el ingreso de tramos en la barra vertical superior, luego en
+                                el botón <strong><i>Guardar</i></strong> y le presentará un mensaje de información que si está seguro de asignar tramos al cable para que haga el registro correctamente.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar eecc3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong>, y la cantidad y costo ha sido registrada correctamente, ver en la lista de materiales.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar eecc4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <strong>Clasificado como serial:</strong>
+                                <br>Si el usuario al ingresar la cantidad y se encuentra que el material es clasificado como <strong><i>Serial</i></strong> le mostrará la siguiente tabla.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar eecc5.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Esta ventana permite al usuario ubicarse y comenzar a <strong><i>Pistolear cada serial</i></strong> para ir agregando uno a uno, no es muy recomendable por problemas de energía porque si se va la luz se llevaba pistoleado
+                                N seriales se pierden y hay que hacer nuevamente el proceso, se pistolea en <strong><i>Excel</i></strong> y se guarda el archivo para luego cargarlo en el botón de <strong><i>cargar archivo</i></strong> en la ventana que
+                                se visualiza de Ingreso de seriales.
+                                <br><br>El usuario debe tener presente que el campo <strong><i>Ubicación</i></strong> del producto es obligación ingresarlo y <strong><i>Fecha de vencimiento</i></strong> si tiene y si no también puede ser la fecha de la
+                                garantía, para cuando el usuario saque el informe de existencia le diga que el material serial está próximo a que se le vence la garantía la ventaja de este proceso es tener un control en los materiales.
+                                <br><br>El usuario debe tener en cuenta que antes de hacer el registro de la entrada todo los campos requeridos estén llenos si no mostrará un mensaje de información que debe ingresar el campo.
+                                <br>En las <strong>observaciones</strong> es muy importante de colocarlas para cuando se generen los listados aparezcan.
+                                <br><strong>En Recibido por:</strong> la cédula de la persona que este registrando, y que este registrado en el sistema Módulo Personal SISCOS.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/agregar eecc.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin agregar material-->
@@ -400,36 +424,33 @@
                     <!--Carga archivos-->
                     <div id="cargaarchivos" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Carga archivos</h3>
+                            <h3 class="tile-title">Carga archivo</h3>
                             <div class="bs-component">
-                                Para cargar archivos planos se debe guardar el archivo formato de texto delimitado por tabulaciones y se crean las respectivas columnas necesarias. Se carga N seriales, valida Si existe o No si No es a través de los archivos, se puede agregar con el botón
-                                <button class="btn btn-info">+</button>.<br><br>
-                                <h5>Estructura de Archivo de Carga Entrada:</h5>
-                                <ul>
-                                    <li>Archivo 1: este archivo es para serial, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar solo que cuando se va a validar la información
-                                        no va encontrase nada. Se pueden subir materiales que no son serializados o los materiales que están clasificados como otros. Al momento de hacer inventario inicial lo necesario es que la planilla venga clasificados
-                                        como otros.</li>
-                                    <li>Ejemplo: código estado siempre debería ir 02 bueno, 03 malo en sí que se tenga una tabla de codificación.</li>
-                                    <li>Archivo 2: se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.</li>
-                                    <li>Archivo 3: es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia, Con cualquiera de estos archivos sirve para el inventario inicial para
-                                        que salga lo más rápido posible y no estar buscando código por código.</li>
-                                </ul><br>
-                                <h5>Se deben armar 3 archivos:</h5>
+                                Hay 3 maneras de hacerlo a continuación se presentaran.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/cargar ar.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Para cargar archivos planos se debe guardar el archivo <strong><i>formato de texto delimitado por tabulaciones</i></strong>, y se crean las respectivas columnas necesarias. Se carga N seriales, valida si existe o No, si
+                                no es a través de los archivos se puede agregar con el botón&nbsp;&nbsp;<button class="btn btn-info fa fa-plus fa-lg"></button>.
+                                <br><br><strong>Estructura de Archivo de Carga Entrada:</strong>
+                                <br><strong>Archivo 1:</strong> este archivo es para <strong><i>Serial</i></strong>, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar,
+                                solo que cuando se va a validar la información no va encontrase nada.
+
+                                <br><br>Se pueden subir materiales que no son serializados o los materiales que están clasificados como <strong><i>Otros</i></strong>. Al momento de hacer inventario inicial lo necesario es que la planilla venga clasificados
+                                como otros.
+                                <br><strong>Ejemplo:</strong> código estado siempre debería ir un código y el estado 02 bueno, 03 malo en sí que se tenga una tabla de codificación.
+
+                                <br><br><strong>Archivo 2:</strong> se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.
+                                <br><br><strong>Archivo 3:</strong> es para <strong><i>Cable</i></strong> un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia.
+                                <br>Con cualquiera de estos archivos sirve para el inventario inicial para que salga lo más rápido posible y no estar buscando código por código.
+                                <br>El usuario sabrá visualizar que archivo va escoger, es decir el que mejor se le sea útil para su proceso.
+                                <br>Se deben armar 3 archivos:
                                 <ul>
                                     <li>Una planilla para materiales otros.</li>
                                     <li>Una planilla para materiales serializados.</li>
                                     <li>Una planilla para materiales cable.</li>
                                 </ul>
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el usuario cuenta con 3 opciones de carga ya sea para seriales, cable y otros en el sistema SISCOS.</div>
-                                </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/cargar ar.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin carga archivo-->
@@ -439,27 +460,41 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, esta funcionalidad permite al usuario poder eliminar materiales que no crea útil para cargarlos en entrada EECC.
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clc en la opción <strong><i>Eliminar</i></strong> y permite al usuario poder eliminar materiales que no se crean necesarios para la carga de
+                                materiales en entradas EECC.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/eliminar eecc 2.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                <span><img src="imagenes/eliminar eecc 2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
                     <!--fin eliminar-->
+
                     <!--Registrar-->
                     <div id="registrar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información correspondiente en los campos solicitados u obligatorios dar clic sobre el botón.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/registrar eecc3.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información correspondiente en los campos solicitados u obligatorios se debe dar clic en la opción <strong><i>Registrar</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar eecc3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema presentará un mensaje de información se debe dar clic en el icono <strong><i>Sí</i></strong> para que se efectué el registró correctamente.
+                                <br>Seguidamente el sistema confirma por medio de un mensaje de información el número de la entrada y si desea imprimir el reporte de entrada <strong><i>Sí o No</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar eecc4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Si el usuario le da clic al icono <strong><i>Sí</i></strong> le imprime el reporte de la entrada.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar eecc5.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Si el usuario da clic en el icono <strong>No</strong> le saldrá un mensaje de información que si desea habilitar la reserva.
+
+                                <br><br>Un material que está en física y en terreno, debe hacer dos inventarios uno de inventario de bodega física y otro de inventario de bodega terreno lo sumo y eso primero entra a la bodega física y en minutos se hacen
+                                las entregas y hay si pasa a entrar a terreno.
+                                <br><br><strong>Recomendación:</strong> cojan el material en terreno ingrésenlo a sistema y sáquelo de una vez, para que al generar el informe de existencia y si sale en cero en la bodega física ya todo está listo.
+                                <br><br>Antes de hacer entregas validen la información, el usuario hace la primera entrega y ya se subió la información correspondiente y si se equivocó en la entrada se van a tener problemas, entonces toca anular todas
+                                las entregas para poder anular una entrada.
                             </div>
                         </div>
                     </div>
@@ -470,12 +505,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del Módulo entrada EECC.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir eecc 2.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir eecc 2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente le damos clic en el botón Sí, para finalizar el proceso en la entrada EECC.
                             </div>
                         </div>
                         <hr>
@@ -484,8 +518,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="662" src="https://www.youtube.com/embed/Xj9Tt5Aac8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="662" src="https://www.youtube.com/embed/Xj9Tt5Aac8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

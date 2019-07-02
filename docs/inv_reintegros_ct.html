@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="agregarmaterial" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -289,7 +289,9 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#agregarmaterial" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#nuevaentrada" onclick="myFunction()">
+                        Nueva entrada</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
                         Agregar material</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
                         Eliminar</a></li>&nbsp;
@@ -324,26 +326,82 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Reintegros CT</h3>
                             <div class="bs-component">
-                                Los Reintegros siempre son de CT son reintegros propios el material apenas los instalan es de la organización, lo importante en los reintegros es el estado.<br> Los requisitos previos que debe tener una entrada de reintegros.<br>Bodega,
-                                área de operación, centro de costos ( propiedad ).
+                                Los Reintegros siempre son de CT son reintegros propios el material apenas los instalan es de la organización, lo importante en los reintegros es el estado.
+                                <br><br>Los requisitos previos que debe tener una entrada de Reintegros. Bodega, área de operación, centro de costos (propiedad).
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Reintegros CT</i></strong> para que visualice la siguiente ventana que requiere de unos campos, ingresar la información solicitada u obligatoria.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/reintegro.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!--nueva -->
+                    <div id="nuevaentrada" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Nueva entrada</h3>
+                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, se debe dar clic en la opción <strong><i>Nueva entrada</i></strong> para que se habiliten los demás botones y hacer las funcionalidades correspondiente
+                                y guarde la información registrada, el usuario debe tener en cuenta que el campo <strong><i>entregado por</i></strong>. No está habilitado por que no se ha agregado ningún material al momento de ingresar materiales él se
+                                habilita para que la persona que está haciendo los reintegros registre sus datos.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/nueva entrada2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin nueva-->
+
                     <!--agregar material-->
-                    <div class="col-md-12">
+                    <div id="agregarmaterial" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                El usuario debe dar clic en Reintegros CT para que visualice la ventana que requiere de unos campos, ingresar la información solicitada u obligatoria. Al ingresar la información, nos ubicamos en el botón nuevo para que se habiliten los demás botones y
-                                hacer las funcionalidades correspondiente y el usuario debe tener en cuenta que el campo entregado por. No está habilitado por que no se ha agregado ningún material al momento de ingresar materiales él se habilita para
-                                que la persona que está haciendo los reintegros registre sus datos.damos clic en el botón Nuevo que se encuentra ubicado en la barra de menú vertical ( lado izquierdo ), para que guarde la información registrada y habilite
-                                los demás botones y poder hacer el proceso. El boton Agregar material se encuentra ubicado en la barra horizontal superior, esta función permite al usuario poder agregar material a la entrada Reintegros.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                        <img src="imagenes/agregar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded">
-                        </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Agregar</i></strong> para poder agregar material a la entrada Reintegros.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                A continuación se observa una ventana que requiere de una información para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón.
+                                <br><br>Al dar clic en el botón mencionado visualizaremos otra ventana para agregar el material, se pueden hacer búsquedas por los criterios seleccionando las opciones como <strong><i>Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material</i></strong>;
+                                a su lado podemos ingresar el comodín (<strong>%</strong>) para que muestre todos los registros que pertenecen a el criterio seleccionado.
+                                <br><br>Para agregar ese material es seleccionado y se debe dar <strong><i>Doble clic</i></strong> en el campo <strong><i>Código</i></strong> y mostrará otra ventana el cual se debe asignar el estado y agregarlo correctamente.
+                                Para salir de esta ventana usamos la tecla <strong><i>Esc</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar reintegro2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <strong>Los comodines de búsquedas son:</strong>
+                                <br>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                Seguidamente al ingresar materiales se debe visualizar en la lista de material que pertenecen a la entrada asignada. El usuario debe confirmar la información y terminar de llenar los campos en el listado de materiales registrados; como <strong><i>Cantidad</i></strong>                                cuando está ingresando la cantidad depende de la clasificación de los materiales si es <strong><i>Cable, Serial y Otros</i></strong>.
+                                <br><br><strong>Clasificación como cable:</strong>
+                                <br>Si es un material <strong><i>Cable</i></strong> al momento de dar clic te muestra otra ventana donde pide los tramos de ese cable para que se haga el registro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar reintegro3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el botón <strong><i>Agregar&nbsp;</i></strong><button class="btn btn-info fa fa-plus fa-lg"></button> que se encuentra ubicado en el ingreso de tramos en la barra vertical superior. Luego en
+                                el botón <strong><i>Guardar</i></strong> y le presentará un mensaje de información que si está seguro de asignar tramos al cable, clic en el icono <strong><i>Sí</i></strong>, y la cantidad ha sido registrada correctamente.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar reintegro4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe trasladarse en listado de materiales y visualizar el registro.
+                                <br><br><strong>Clasificación como serial:</strong>
+                                <br>Al ingresar la cantidad de un material serial, mostrará la siguiente ventana para que ingrese la información solicitada.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar reintegro5.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Esta ventana permite al usuario ubicarse y comenzar a pistolear cada serial para ir agregando uno a uno, no es muy recomendable por problemas de energía porque si se va la luz y se llevaba pistoleado N seriales se pierden hay que hacer nuevamente el proceso,
+                                se pistolea en <strong><i>Excel</i></strong> y se guarda el archivo para luego cargarlo en la opción de <strong><i>Cargar archivo</i></strong> en la ventana que nos aparece de Ingreso de
+                                seriales.
+                                <br><br>El usuario debe tener presente que el campo <strong><i>Ubicación</i></strong> del producto es obligación ingresarlo y <strong><i>Fecha de vencimiento</i></strong> si tiene y si no también puede ser la fecha de la
+                                garantía, para cuando el usuario saque el informe de existencia le diga que el material serial está próximo a que se le vence la garantía la ventaja de este proceso es tener un control en los materiales.
+                                <br><br>El usuario antes de hacer el registro de la entrada todos los campos requeridos debe estar llenos si no les mostrará un mensaje de información, ingresar el campo.
+                                <br>En las <strong>observaciones</strong> es muy importante de colocarlas para cuando se generen los listados aparezcan.
+                                <br><strong>Entregado por:</strong> la persona tiene que estar registrada en el sistema el que este reintegrando.
+                                <br><strong>En Recibido por:</strong> es la cédula de la persona que este registrando, y que este registrado en el sistema Módulo Personal SISCOS.
                             </div>
                         </div>
                     </div>
@@ -354,12 +412,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario poder eliminar material que no crea necesario para el cargue de la entrada Reintegro.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/eliminar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Eliminar</i></strong> y elimina material que no crea necesario para el cargue de la entrada Reintegro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -370,13 +426,23 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya se tiene toda la información necesaria en los campos solicitados dar clic en el botón Guardar y le mostrará un mensaje de información que si está seguro de
-                                registrar el reintegro. Dar clic en el botón Sí para que nos presente un mensaje de información que se registró correctamente y el número de la entrada y si desea imprimir el reporte de entrada Sí o No.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/registrar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya se tiene toda la información necesaria en los campos solicitados dar clic en el botón <strong><i>Registrar</i></strong>                                y el sistema mostrará un mensaje de información que si está seguro de registrar el Reintegro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong> para que se confirme el registro. El sistema presentará un mensaje de información que se registró correctamente y el número de la entrada y si desea imprimir
+                                el reporte de entrada <strong><i>Sí o No</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar reintegro2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Si el usuario da en el icono <strong><i>Sí</i></strong>, se imprime el reporte.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar reintegro3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Si el usuario da clic en el botón <strong><i>No</i></strong>, le saldrá un mensaje de información que si desea habilitar la reserva. Dar clic en el icono sí.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar reintegro4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -387,12 +453,11 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del módulo entrada reintegro.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir reintegro.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir reintegro.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente le damos clic en el botón <strong><i>Sí</i></strong>, para finalizar el proceso en la entrada Reintegro.
                             </div>
                         </div>
                         <hr>
@@ -401,8 +466,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="622" src="https://www.youtube.com/embed/agUXSStJEVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="622" src="https://www.youtube.com/embed/agUXSStJEVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 
