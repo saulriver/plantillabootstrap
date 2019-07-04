@@ -278,7 +278,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -289,6 +289,8 @@
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#buscar" onclick="myFunction()">
                         Buscar archivo</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
                         Ver video</a></li>
                 </ul>
@@ -301,7 +303,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Inventario</li>
                         <li class="breadcrumb-item"><a href="confi_stock_personal.html">Stock Personal</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -311,48 +313,59 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                            <h3 class="tile-title">Configuración stock pedidos</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Configuración stock pedidos</h1>
-
-                                </div>
-
                                 Este módulo permite configurar el stock máximo y mínimo de los materiales, que el usuario debe tener presente que una cosa es el stock máximo de control y otro es el stock de abastecimiento.
+                                <br><br>El usuario debe dar clic en el módulo Configuración stock pedido y se visualizará la siguiente ventana que requiere de información para el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/stockpedidos.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
-
                         </div>
                     </div>
+
                     <!--Buscar archivo-->
-                    <div class="col-md-12">
+                    <div id="buscar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar archivo</h3>
                             <div class="bs-component">
-                                Se puede subir el archivo de abastecimiento de los técnicos que se quiera que se genere automáticamente el ticket que puede ser igual al control del stock como no pueden ser iguales. Formato de texto delimitado por tabulaciones cumpliendo con los campos
-                                solicitados u obligatorios el archivo cuando se va a cargar a SISCOS. Cuando ya se carga el usuario se ubica en el módulo anteriormente mencionado “Informe pedidos pendientes de Entregar", entonces él genera informe de
-                                los stocks actuales que tiene el técnico, que le hace falta dependiendo de estos 2 valores Mínimo y Máximo. Para que todo esto funcione de manera como quiere el usuario se deben generar los consumos para que se puedan generar
-                                este tipo de informes sobre stock.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: El usuario debe tener presente que una cosa es los stock máximos de control y otro es los stock de abastecimiento.</div>
+                                Esta opción se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Buscar archivo</i></strong> donde se puede subir el archivo de abastecimiento de los técnicos que quiera que se
+                                genere automáticamente.
+                                <br>El archivo debe ser en <strong><i>Formato de texto delimitado por tabulaciones</i></strong> cumpliendo con los campos solicitados u obligatorios cuando se va a cargar a SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/configuracion stock.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
+                                Posteriormente cuando ya se carga el archivo, el usuario se ubica en el módulo anteriormente mencionado <strong>“</strong>pedidos pendientes de Entregar<strong>”</strong>, entonces él genera informe de los stocks actuales
+                                que tiene el técnico, y que le hace falta dependiendo de estos 2 valores Mínimo y Máximo.
+                                <br><br>Para que todo esto funcione de manera como quiere el usuario se deben generar los consumos para que se puedan generar este tipo de informes sobre stock.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/configuracion stock.png" style="width:70%;" class="w3-animate-zoom rounded">
-                          </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin buscar archivo-->
 
-                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="581" src="https://www.youtube.com/embed/RCHipehoPbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
+                    <!--salir-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Para salir del módulo es a través del botón <strong><i>Cerrar ventana</i></strong> que se encuentra ubicado en la barra vertical superior lado derecho, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir stock pedidos.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--fin salir-->
+
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="581" src="https://www.youtube.com/embed/RCHipehoPbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->

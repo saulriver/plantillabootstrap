@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="consultarpedidospend" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -321,28 +321,29 @@
 
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Pedidos pend entregar</h3>
+                            <h3 class="tile-title">Pedidos pendientes entregar</h3>
                             <div class="bs-component">
-                                Este módulo lo tiene almacén donde mira los pedidos pendientes, escoge la fecha que fue ingresada en el módulo pedido.<br>
-                                <strong>Personal:</strong> muestra los pedidos pendientes.<br>
-                                <strong>Buscar:</strong> muestra numero en específico.<br> El cuadro de arriba hace referencia listado de pedidos y el cuadro de abajo materiales que tiene el pedido.
+                                Este módulo lo tiene almacén donde mira los pedidos pendientes, escoge la fecha que fue ingresada en el módulo pedido.
+                                <br><br>El usuario debe dar clic en el módulo Pedidos pendiente entregar y se visualiza la siguiente ventana.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/pend entregar.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--consultar pedidos pend-->
-                    <div class="col-md-12">
+                    <div id="consultarpedidospend" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Consultar pedidos pend</h3>
                             <div class="bs-component">
-
-                                Se encuentra ubicado en la barra horizontal superior, permite realizar consultas de pedidos pendientes a entregar que se encuentren registros en el sistema, clic en el botón consultar y arroja la informacion correspondiente con la bodega seleccionada
-                                y departaemnto con fechas de registros.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/con pend.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta opción se encuentra ubicada en la barra horizontal, permite realizar consultas de pedidos pendientes a entregar que se encuentren registros en el sistema. Se debe dar clic en la opción <strong><i>Consultar</i></strong>                                y arrojará la información correspondiente con la bodega seleccionada.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/con pend.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <strong>Personal:</strong> muestra los pedidos pendientes.
+                                <br><br><strong>Buscar:</strong> muestra numero en específico.
+                                <br><br>El cuadro de arriba hace referencia listado de pedidos y el cuadro de abajo materiales que tiene el pedido.
                             </div>
                         </div>
                     </div>
@@ -353,12 +354,17 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar ticket</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal, permite al usuario en el Campo buscar ticket ingresar el número del ticket y luego clic sobre el botón buscar y arrojará automáticamente la información de los materiales de ese pedido.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/con ticket.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta opción se encuentra ubicada en la barra horizontal lado derecho, permite al usuario en la celda buscar ticket ingresar el número del ticket y luego se debe dar clic en la opción
+                                <strong><i>Buscar</i></strong> y arrojará automáticamente la información de los materiales de ese pedido.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/con ticket.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <strong>Filtrar por personal:</strong> se ingresa la persona y mostrará el pedido que tiene esa persona o un número específico.
+                                <br><br><strong>Módulo para entregar ejemplo:</strong> el técnico me da el ticket, se busca y muestra el pedido y si se da doble clic en el campo pedido que se ve reflejado del técnico que se buscó y que tiene asignado
+                                un número, al dar doble clic sobre el automáticamente nos abre otra ventana del módulo de entregas continua como se puede analizar a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/con ticket2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -369,13 +375,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Existen 2 maneras de salir de este módulo, la primera se encuentra ubicado en la barra horizontal superior y la segunda se encuentra en la barra vertical superior lado derecho, permitiendo al usuario dar clic sobre una de estas dos opciones y salir del
-                                módulo pedidos pend entregar para finalizar el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir pend.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir pend.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -384,8 +387,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="648" src="https://www.youtube.com/embed/R-wzhFqUO1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="648" src="https://www.youtube.com/embed/R-wzhFqUO1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

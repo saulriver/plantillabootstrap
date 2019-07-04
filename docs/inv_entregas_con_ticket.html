@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="1formaentrega" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -291,16 +291,14 @@
                     </li>&nbsp;
                     <li class="treeview">
                         <a class="nav-link app-menu__item active" href="#1formaentrega" onclick="myFunction()">
-                            1-Forma entrega con ticket </a></li>&nbsp;
+                        1-Forma entregas con ticket </a></li>&nbsp;
                     <li class="treeview">
                         <a class="nav-link app-menu__item" href="#2formaentrega" onclick="myFunction()">
-                            2-Forma entrega con ticket </a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
-                        Cargar archivo</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#registrarentrega" onclick="myFunction()">
-                        Registrar entrega</a></li>&nbsp;
+                        2-Forma entregas con ticket </a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#stockpersonal" onclick="myFunction()">
                         Stock personal</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#registrarentrega" onclick="myFunction()">
+                        Registrar entrega</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -330,25 +328,25 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Entregas con ticket</h3>
                             <div class="bs-component">
-                                Este módulo permite que se haga el pedido un ticket es el resguardo que contiene datos que acreditan ciertos derechos en la mayoría de los casos obtenidos. Los requisitos previos en el sistema SISCOS son: bodegas, áreas, personal, número de ticket y periodo
-                                activo etc. Ya se hizo el pedido ahora se va a entrega.<br>Existen 2 formas para hacer entregas con ticket.
+                                Este módulo permite que se haga el pedido, un ticket es el resguardo que contiene datos que acreditan ciertos derechos en la mayoría de los casos obtenidos. Los requisitos previos en el sistema SISCOS son: Bodegas, Áreas, Personal, Número de ticket y
+                                Periodo activo etc. Ya se hizo el pedido ahora se va a entregar.
+                                <br><br><strong>Existen 2 formas para hacer entregas con ticket.</strong>
                             </div>
                         </div>
                     </div>
 
                     <!--1 Forma entrega-->
-                    <div class="col-md-12">
+                    <div id="1formaentrega" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">1 Forma entrega con ticket</h3>
+                            <h3 class="tile-title">1 Forma entregas con ticket</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la ruta de acceso. Inventario/Pedido Material/Pedidos Pend.Entregar.<br> El usuario da doble clic al pedido y se visualizará el módulo de entrega. En el botón ticket es donde se presenta el técnico
-                                con el pedido N.1, ingresamos el número 1 el usuario escoge la bodega y le da clic en buscar y arroja la información correspondiente de ese pedido.<br> Los consecutivos de pedidos son por bodegas cada bodega tiene su consecutivo
-                                de ahí el usuario se traslada a confirmar cantidades.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/1 forma.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta opción se encuentra ubicada en la ruta de acceso. <strong><i>Inventario/Pedido Material/Pedidos Pend.Entregar</i></strong>. El usuario debe dar doble clic al pedido y de una le sale el Módulo de Entrega como se puede
+                                visualizar a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/1 forma.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                En el botón <strong><i>Ticket</i></strong> es donde se presenta el técnico con el pedido N.1, ingresamos el número 1 el usuario escoge la bodega y le da clic en <strong><i>Buscar</i></strong> y arrojará la información correspondiente
+                                de ese pedido. Los consecutivos de pedidos son por bodegas cada bodega tiene su consecutivo de ahí el usuario se traslada a confirmar cantidades.
                             </div>
                         </div>
                     </div>
@@ -357,91 +355,89 @@
                     <!--2 forma entrega-->
                     <div id="2formaentrega" class="col-md-12">
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">2 Forma entrega con ticket</h3>
+                            <h3 class="tile-title">2 Forma entregas con ticket</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la ruta acceso Inventario/Salidas Almacén/Entregas con Ticket.<br> El usuario puede utilizar una de las 2 formas que se le haga fácil para el proceso de entregas con ticket. En esta opción hay que
-                                ingresar el número del ticket para que se activen los demás botones, los consecutivos de pedidos son por bogadas y luego se confirman cantidades.
-                                <br> Si ese pedido incluye seriales al dar clic en cantidad nos mostrará otra ventana solicitando información acerca del serial y todo lo que está en esa reserva el usuario escoge cuales desea pasar y si son más esta la
-                                opción de seleccionar archivo con la cantidad necesaria que desee el usuario para su cargue de seriales.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/2 forma ticket.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
+                                En la ruta acceso <strong><i>Inventario/Salidas Almacén/Entregas con Ticket</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/2 forma ticket.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario puede utilizar una de las 2 formas que se le haga fácil para el proceso de entregas con ticket. En esta opción hay que ingresar el <strong><i>Número del ticket</i></strong> para que se activen los demás botones,
+                                los consecutivos de pedidos son por bogadas y luego se confirman cantidades.
+                                <br><br>Si ese pedido incluye seriales al dar clic en <strong><i>Cantidad</i></strong> se visualizará otra ventana solicitando información acerca del serial y todo lo que está en esa reserva el usuario escoge cuales desea
+                                pasar y si son más, está la opción de <strong>Cargar archivo</strong> con la cantidad necesaria que desee el usuario para su cargue de seriales.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/2 forma ticket2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin 2 forma-->
-
-                    <!--cargar archivo-->
-                    <div id="cargararchivo" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Cargar archivo</h3>
-                            <div class="bs-component">
-                                Hacemos clic sobre el botón que se encuentra ubicado en la barra vertical superior lado izquierdo, Esta la opción de cargar el archivo automáticamente se adiciona sin necesidad de buscarlo en seleccionar seriales.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el usuario debe tener en cuenta que está funcionalidad es solo cuando el material sea clasifacidao como serial y da la opcion de cargar el archivo.</div>
-                                </div>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/cargar archivo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--fin cargar archivo-->
-
-                    <!--Registrar entrega-->
-                    <div id="registrarentrega" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Registrar entrega</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, cuando ya el usuario confirme todas las cantidades de los materiales le da en el botón guardar.
-                                <ul>
-                                    <li>Genera la Entrega.</li>
-                                    <li>Imprimir con seriales SI o NO.</li>
-                                    <li>Detecta si la persona tienen correo electrónico, imprime una sola vez y la otra copia se envía al correo del técnico.</li>
-                                </ul>
-                                El usuario ya después de hacer todo este proceso el sistema SISCOS arroja el informe de salida almacén que es donde va la relación de todo.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/registrar entrega con ticket.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin registrar entrega-->
 
                     <!--stock personal-->
                     <div id="stockpersonal" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Stock personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, consulta los Stock cargados actualmente del técnico y se genera un archivpo en Excel.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/stock personal con ticket.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta opción se encuentra ubicada en la barra vertical lado izquierdo, consulta los Stock cargados actualmente del técnico y se genera en Excel.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/stock personal con ticket.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin stock personal-->
+
+                    <!--Registrar entrega-->
+                    <div id="registrarentrega" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Registrar entrega</h3>
+                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, Cuando ya el usuario confirme todas las cantidades de los materiales se debe dar clic en el botón <strong><i>Registrar Entrega</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar entrega con ticket.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario en la celda <strong><i>Cantidad</i></strong> al ingresar la información si es serial arrojará otra ventana como se puede analizar a continuación donde requiere de hacer búsquedas de seriales que estén registrados
+                                en el sistema para ser seleccionados.
+                                <br><br>Con los parámetros de búsquedas tales como: <strong><i>El serial comience por, El serial termine por, y El serial contenga</i></strong> etc.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar entrega con ticket2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Seguidamente se debe dar clic en la opción <strong><i>Buscar</i></strong> y arroja los seriales que contengan <strong><i>1</i></strong> en este caso solo un registro de serial lo contiene. Luego se debe dar clic en la celda
+                                <strong><i>Serial</i></strong> y se traslada a la pantalla Seleccionar seriales posteriormente se debe dar clic en la opción <strong><i>Aceptar</i></strong>.
+                                <br><br>El sistema presentará un mensaje de información que el serial ha sido seleccionado, se debe dar clic en el icono <strong><i>Aceptar</i></strong> para que se pueda efectuar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar entrega con ticket3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Cabe señalar que cuando ya se tiene toda configuración de los materiales dar clic en el botón <strong><i>Registrar</i></strong> y Genera:
+                                <ul>
+                                    <li>Genera la Entrega.</li>
+                                    <li>Imprimir con seriales SI o NO.</li>
+                                    <li>Detecta si la persona tienen correo electrónico, imprime una sola vez y la otra copia se envía al correo del técnico.</li>
+                                </ul>
+                                <br>El usuario ya después de hacer todo este proceso el sistema SISCOS arrojará el informe de salida almacén que es donde va la relación de todo.
+                                <br>Este informe de entrega tiene 2 formatos.
+                                <br>Se puede imprimir de esta manera o se va <strong><i>Inventarios/Registros/Bodegas</i></strong> y se configura la bodega, se escoge la bodega y posteriormente se debe dar clic en <strong><i>Parámetros</i></strong> para
+                                que imprima costos de entrega.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar entrega con ticket4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Se selecciona para que se ponga el chulito y listo de ahí se imprime el mismo formato, la diferencia es que aparecerá el costo total de tanto, que es lo que se le cobra al técnico por si vota lo que se le entrego en el módulo entregas con ticket. Llevará
+                                la firma digitalmente del técnico si se utilizan los módulos de huella y firma.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin registrar entrega-->
 
                     <!--salir-->
                     <div id="salir" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón salir del módulo entrega con ticket para finalizar el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir stock 3.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir stock 3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente se debe dar clic en el icono <strong><i>Sí</i></strong>, para finalizar el proceso de Entregas con ticket.
                             </div>
                         </div>
                         <hr>

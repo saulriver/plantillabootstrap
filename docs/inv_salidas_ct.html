@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="nuevasalida" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -293,10 +293,10 @@
                             Nueva salida</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#eliminarmaterial" onclick="myFunction()">
-                            Eliminar material</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#cargararchivo" onclick="myFunction()">
                             Cargar archivo</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#eliminarmaterial" onclick="myFunction()">
+                            Eliminar material</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#registrarsalida" onclick="myFunction()">
                             Registrar salida</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
@@ -306,6 +306,7 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
@@ -327,33 +328,42 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salidas CT</h3>
                             <div class="bs-component">
-                                Son transacciones que disminuyen las existencias de los materiales en el inventario. Los requisitos previos que debe tener una salida CT es que depende de una entrada ( reserva ), proveedor ( tercero ), centro de costo ( propiedad ) áreas de operación
-                                y periodo activo.<br> Crear las bodegas a la que se le va enviar el material el tercero va hacer la bodega en este caso.
+                                Este módulo permite al usuario hacer transacciones de <strong><i>Salida CT</i></strong>, que son transacciones que disminuyen las existencias de los materiales en el inventario. Los requisitos previos que debe tener una
+                                salida CT es que depende de una entrada (reserva), proveedor (tercero), centro de costo (propiedad) áreas de operación y periodo activo.
+                                <br>El usuario debe dar clic en el módulo de <strong><i>Salida CT</i></strong>, y se visualizará una ventana el cual se debe ingresar la información solicitada u obligatoria para hacer un nuevo registro al sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salidact.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Al momento de estar ingresando la información para registrar una salida CT en el campo periodo nos aparece un botón <strong><i>Prov</i></strong>, el cual nos permite hacer una búsqueda de todos los registros existente de
+                                <strong><i>Bodegas</i></strong> que en este caso son las <strong><i>Bodegas</i></strong>, debido a que el usuario se le olvido la bodega que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente
+                                con los comodines en este caso el comodín (<strong>%</strong>) que le presentará todas las bodegas registradas, para salir de esta ventana usamos la tecla <strong><i>Esc</i></strong>.
+                                <br>Comodines:
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <strong>Centro de costo y propiedad es lo mismo.</strong>
+                                <br><strong>Área:</strong> el área con la que el usuario necesita para hacer el proceso.
+                                <br><strong>Tercero:</strong> la bodega que se necesita para hacer la salida.
+                                <br>El usuario debe dar clic en el botón PROV, para hacer la búsqueda de la bodega por el criterio (<strong>%</strong>).
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salidact2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Escogemos la bodega a utilizar ingresamos el código para poder hacer el registró en el sistema.
                             </div>
                         </div>
                     </div>
 
                     <!--Nueva salida-->
-                    <div class="col-md-12">
+                    <div id="nuevasalida" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Nueva salida</h3>
                             <div class="bs-component">
-                                Al momento de estar ingresando la información para registrar una salida CT en el campo periodo nos aparece un botón Prov, el cual nos permite hacer una búsqueda de todos los registros existente de tercero que en este caso son las bodegas, debido a que
-                                el usuario se le olvido la bodega que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente con la tecla % que le presentará todas las bodegas registradas, para salir de esta ventana usamos la tecla
-                                esc.
-                                <ul>
-                                    <li>Centro de costo y propiedad es lo mismo.</li>
-                                    <li>El área con la que el usuario necesita para hacer el proceso.</li>
-                                    <li>Tercero: la bodega que se necesita para hacer la salida.</li>
-                                    <li>El usuario debe dar clic en el botón PROV, para hacer la búsqueda de la bodega por el criterio ( % ).</li>
-                                </ul>
-                                Nueva salida: este botón se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida Para el registro de una salida CT le damos clic en el botón nueva salida para que la guarde y
-                                se pueda agregar material a esta salida y se puedan habilitar los demás botones y poder realizar el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                      <img src="imagenes/nueva salida 2.png " style="width:70%;" class="w3-animate-zoom rounded">
-                      </span>
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida para el registro de una salida CT, dar clic en la opción <strong><i>Nueva salida</i></strong>                                para que la guarde y se pueda agregar material a esta salida y se puedan habilitar los demás botones y poder realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/nueva salida 2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -364,69 +374,91 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario poder agregar material a una de las salidas registradas en el sistema SISCOS. El usuario debe dar clic en el botón agregar, y nos presentará una ventana que requiere de una información
-                                para poder agregar material, si al usuario se le olvido el código puede realizar una búsqueda dando clic en el botón buscar que es la lupa. Al seleccionar el código se verá reflejado en la tablita existencia para poder
-                                guardarlo en la salida, cunado los materiales en la tabla existencia aparecen sombreado es por qué si pertenecen a esa área y propiedad. El usuario debe asignar la cantidad por que después no se puede registrar la salida,
-                                ingresar toda la información solicitada por que si no el sistema muestra mensaje que hace falta información por ingresar.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/agregar material salida.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario poder agregar material a una de las salidas registradas en el sistema SISCOS.
+                                <br><br>El usuario debe dar clic en el botón <strong><i>Agregar</i></strong>, y se presentará una ventana que requiere de información para poder agregar material, si al usuario se le olvido el código puede realizar una
+                                búsqueda dando clic en el botón <strong><i>Buscar</i></strong> que es la lupa.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario al dar clic en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere de uno de los parámetros de búsquedas tales como: <strong><i>Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material</i></strong>                                etc. Comodines, luego poder escoger el registro necesario.
+                                <br><strong>Los comodines de búsquedas son:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material salida2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en la tecla <strong><i>Enter</i></strong> sobre la celda del <strong><i>Código</i></strong> y se verá reflejado en la tablita existencia para poder guardarlo en la salida. Cuando los materiales
+                                en la tabla existencia aparecen sombreado es por qué si pertenecen a esa <strong><i>Área y Propiedad</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material salida3.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Seguidamente nos ubicamos en el código del material y le damos clic a la tecla <strong><i>Enter</i></strong> y automáticamente se traslada la información del material para la tabla salida de mercancía.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material salida4.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe asignar la <strong><i>Cantidad</i></strong> por que después no se puede registrar la salida, ingresar toda la información solicitada por que si no el sistema presentará mensaje que hace falta información
+                                por ingresar.
                             </div>
                         </div>
                     </div>
                     <!--fin agregar material-->
-
-                    <!--Eliminar material-->
-                    <div id="eliminarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Eliminar material</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario eliminar material que no se crea necesario para la carga de salida CT en el sistema SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/eliminar material salida.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin eliminar material-->
 
                     <!--cargar arvhivo-->
                     <div id="cargararchivo" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Cargar archivo</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, este archivo solo se utiliza si el material es clasificado como Otros. Cuando se quiere buscar seriales hay una opción de acceso rápido que es el botón Buscar serial, esta función válida que los seriales
-                                esté disponible el usuario le da clic en el botón y comienza a pistolear cada serial.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/cargar archivo salida.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, este archivo solo se utiliza si el material es clasificado como <strong><i>Otros</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/cargar archivo salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Cuando se quiere <strong><i>Buscar seriales</i></strong> hay una opción de acceso rápido que es el botón <strong><i>Buscar serial</i></strong>, esta función válida que los seriales estén disponibles, el usuario le da clic
+                                en el botón y comienza a pistolear cada serial.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/cargar archivo salida2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin-->
+
+                    <!--Eliminar material-->
+                    <div id="eliminarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar material</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Eliminar</i></strong> y permite al usuario eliminar material que no se crea necesario para la carga de salida CT.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar material salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar material-->
 
                     <!--registrar salida-->
                     <div id="registrarsalida" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Registrar salida</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información necesaria y los campos solicitados u obligatorios completos dar clic sobre el botón y hacer un nuevo registro de salida en el sistema.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el usuario debe tener claro que cuando vaya a realizar el registro de la salida CT se encuentre la fecha en un periodo activo, por que de lo contrario mostrará mensaje de error.</div>
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información necesaria y los campos solicitados u obligatorios completos dar clic en la opción <strong><i>Registrar salida</i></strong>                                y hacer un nuevo registro de salida en el sistema.
+                                <br>
+                                <div class="nota">
+                                    Nota: el usuario debe tener claro que cuando vaya a realizar el registro de la salida se encuentre la <i class="icon fa fa-hand-o-right">&nbsp;Fecha</i> en un periodo activo, por que de lo contrario mostrará mensaje
+                                    de error.
                                 </div>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar salida.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema pregunta si está seguro de registrar la salida de material, el usuario debe dar clic en el icono <strong><i>Sí</i></strong> para que se efectué el registro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar salida2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Se genera el número de la salida satisfactoriamente y le pregunta si desea imprimir el recibo de salida, el usuario tiene 2 opciones de escoger la conveniente para el proceso que está realizando.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/registrar salida.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin registrar salida-->
@@ -436,12 +468,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del módulo salida CT.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/salir salida.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente se debe dar clic en el icono <strong><i>Sí</i></strong>, para finalizar el proceso de la Salida CT.
                             </div>
                         </div>
                         <hr>
@@ -452,6 +483,7 @@
                         <iframe class="embed-responsive-item" width="1280" height="640" src="https://www.youtube.com/embed/viES78S-mSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
+                    <!--fin row-->
                 </div>
             </main>
         </div>

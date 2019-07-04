@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscarpersonal" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -289,7 +289,9 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscarpersonal" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#nuevaentrega" onclick="myFunction()">
+                        Nueva entrega</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscarpersonal" onclick="myFunction()">
                         Buscar personal</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#stockpersonal" onclick="myFunction()">
                         Stock personal</a></li>&nbsp;
@@ -328,24 +330,52 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Pedidos</h3>
                             <div class="bs-component">
-                                En el módulo pedido se agrega material de movistar o material propio, no se tienen que hacer pedido para CT o EECC.<br> En el mismo pedido se puede combinar todo, el pedido va amarrado al área, las áreas si no se pueden
+                                Este módulo no es una transacción de SISCOS, es un preámbulo a la entrega pedidos no mueve inventarios. Requisitos <strong><i>Bodega, Área, Personal y Periodo activo</i></strong> etc. Para trabajar este módulo se debe haber
+                                configurado el stock máximo del técnico para que se pueda ejercer el control es decir el stock personal.
+                                <br><br>Para este caso se agrega material de movistar o material propio, no se tienen que hacer pedido para CT o EECC. En el mismo pedido se puede combinar todo, el pedido va amarrado al área, las áreas si no se pueden
                                 combinar.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Pedidos</i></strong> y se visualizará la siguiente ventana que requiere de información para realizar el registro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/personal pedido.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Se escoge el departamento y la bodega con que se va a trabajar para realizar el pedido.
+                                <br><br><strong>Fecha entrega:</strong> es muy importante para cuando va ir el técnico a la bodega a reclamar el pedido.
+                                <br><br><strong>Entrega a:</strong> técnico que se le va a entregar ese material.
                             </div>
                         </div>
                     </div>
 
+                    <!--eliminar material-->
+                    <div id="nuevaentrega" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Nueva entrega</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra vertical lado izquierdo, se debe dar clic en la opción <strong><i>Registrar entrega</i></strong> cuando ya se ingresa toda la información solicitada u obligatoria para que se
+                                activen los demás botones y se realice el proceso de hacer el pedido.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/nueva entrega.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin eliminar material-->
+
                     <!--Buscar personal-->
-                    <div class="col-md-12">
+                    <div id="buscarpersonal" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario poder hacer la búsqueda con el criterio (%) para que se visualice todo el personal registrado en el sistema SISCOS y seleccionar el necesario para el campo entrega
-                                a ese pedido que se le va a realizar.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/buscar personal pedido.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, permite al usuario poder hacer la búsqueda con comodines, para que se visualice todo el personal registrado en el sistema SISCOS y seleccionar el necesario para el campo
+                                entrega a ese pedido que se le va a realizar.
+                                <br><strong><i>Comodines</i></strong> de búsquedas tales como.
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar personal pedido.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -356,14 +386,12 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Stock personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, este botón permite al usuario ver que tiene el técnico cargado actualmente cuál es su stock actual, dar clic en el botón y arrojará toda la información de este técnico, en este caso se puede analizar
-                                está vacío porque el técnico no tiene stock cargados. El usuario también visualizará una pestaña de materiales y seriales que se pueden mandar a Excel en el botón Generar informe en Excel que se encuentra ubicado en la
-                                barra horizontal inferior.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/stock personal.png" style="width:80%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Stock personal</i></strong> y este permite al usuario ver que tiene el técnico cargado actualmente cuál es su stock
+                                actual, arrojará toda la información de este técnico.
+                                <br><br>El usuario también visualizará una pestaña de materiales y seriales que se pueden mandar a Excel en el botón generar informe en <strong><i>Excel</i></strong> que se encuentra ubicado en la barra horizontal inferior.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/stock personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -374,17 +402,33 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permte al usuario, agregar material que se le va a entregar al técnico le damos clic al botón y nos muestra todas las reservas que están habilitadas.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el usuario debe tener claro que materiales va agregar que pertenezcan a la misma área que fue seleccionada anteriormente de agregar material porque de lo contrario mostrara mensaje de error al querer agregar.</div>
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Agregar material</i></strong> que es lo que se le va a entregar al técnico.
+                                <br><br>Si el usuario no tiene la información de los materiales que quiere agregar al pedido para esto tiene la opción Buscar que al dar clic sobre él se visualizará otra ventana donde se requiere de <strong><i>comodines</i></strong>                                de búsquedas tales como.
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen. </li>
+                                </ul>
+                                Seguidamente se analizan todos los materiales registrados en el sistema como se puede ver a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar pedido.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente el usuario se ubica en la celda <strong><i>Código</i></strong> y dar clic, automáticamente se traslada la información a la pantalla de <strong><i>Stock disponibles materiales</i></strong>. Si el material
+                                le existe la reserva se hace posible el traslado de lo contrario mostrará mensaje de error al usuario que el producto no tiene existencia.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar pedido2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Luego de la pantalla mencionada anteriormente stock disponibles materiales, el usuario se ubica en la celda <strong><i>Reserva</i></strong> y da clic en la tecla <strong><i>Enter</i></strong> y la información automáticamente
+                                se traslada a la pantalla principal de pedidos y los materiales han sido agregados correctamente.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar pedido3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Aquí no se escogen seriales el que los determina es <strong><i>Almacén</i></strong>, cuando ya se tengan todos los materiales se les pone la cantidad en <strong><i>Existencia</i></strong> actualmente.
+                                <div class="nota">
+                                    Nota: el usuario debe tener claro que materiales va agregar que pertenezcan a la misma área que fue seleccionada anteriormente de agregar material, porque de lo contrario presentará mensaje de error al querer agregar y debe ingresar la celda obligatoria
+                                    <i class="icon fa fa-hand-o-right">&nbsp;Cantidad</i> para poder realizar el registro.
                                 </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/agregar pedido.png" style="width:80%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin agregar material-->
@@ -394,12 +438,10 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, epermite al usuario eliminar un material que se haya registrado en el listado de pedidos clic en el botón.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                    <img src="imagenes/eliminar material pedido.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario eliminar un material que se haya registrado en el listado de pedidos y que no crea conveniente para este proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar material pedido.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -410,13 +452,15 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar entrega</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permitiendo al usuario cuando ya tiene toda la información solicitada u obligatoria dar clic sobre el botón para guardarla y registrar la entrega, posteriormente el sistema mostrará que
-                                se generó el ticket del pedido registrado.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/registrar pedido.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permitiendo al usuario cuando ya tiene toda la información solicitada u obligatoria dar clic sobre en la opción <strong><i>Registrar entrega</i></strong>                                para guardarla en el sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar pedido.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema mostrará un mensaje de información el cual se le debe dar clic en el icono <strong><i>Sí</i></strong> para que se efectué el registro de pedido.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/registrar pedido2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Con este ticket es que va el técnico a la bodega, el pedido no imprime ningún formato.
                             </div>
                         </div>
                     </div>
@@ -427,12 +471,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del módulo pedido para finalizar el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/salir pedido.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir pedidos.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente se debe dar clic en el icono <strong><i>Sí</i></strong>, para finalizar el proceso de Pedidos.
                             </div>
                         </div>
                         <hr>
@@ -441,8 +484,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="626" src="https://www.youtube.com/embed/MLLhUQ8WNkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                           </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="626" src="https://www.youtube.com/embed/MLLhUQ8WNkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 
