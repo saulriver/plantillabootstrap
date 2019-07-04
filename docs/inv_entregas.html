@@ -46,8 +46,8 @@
         <!-- Navbar Right Menu-->
         <ul class="app-nav2">
             <li class="app-search">
-                <input class="app-search__input" type="search" placeholder="Search">
-                <button class="app-search__button"><i class="fa fa-search"></i></button>
+                <input name="t1" class="app-search__input" type="search" placeholder="Search">
+                <button class="app-search__button" onclick="busca(document.all.t1.value)"><i class="fa fa-search"></i></button>
             </li>
         </ul>
     </header>
@@ -84,6 +84,7 @@
                             <div class="dropdown-divider"></div>
                         </ul>
                     </li>
+
                     <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; Gestión Ordenes</span></a>
                         <ul class="treeview-menu">
                             <li><a class="app-menu__item" href="confi_tipo_reparacion.html#22"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Tipo Reparación</a></li>
@@ -109,7 +110,7 @@
                             <li><a class="app-menu__item" href="confi_configuracion_bodegas.html#5"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Bodegas</a></li>
                             <li><a class="app-menu__item" href="confi_configuracion_departamentos.html#6"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Configuración Departamentos</a></li>
                             <li><a class="app-menu__item" href="confi_periodos.html#13"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Periodos</a></li>
-                            <li><a class="app-menu__item" href="confi_pep.html#12"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; PEP</a></li>
+                            <li name="li"><a class="app-menu__item" href="confi_pep.html#12" onclick="busca(document.all.li.value)"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; PEP</a></li>
                             <div class="dropdown-divider"></div>
                         </ul>
                     </li>
@@ -328,6 +329,7 @@
 
             <!--main-->
             <main class="app-content" role="main">
+
                 <div class="app-title">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
