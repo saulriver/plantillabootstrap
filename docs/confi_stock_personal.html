@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="agregarpersonal" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -292,7 +292,7 @@
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#agregarpersonal" onclick="myFunction()">
                             Agregar personal</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#archivo" onclick="myFunction()">
-                            Archivo</a></li>&nbsp;
+                            Importar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#agregar" onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
@@ -310,7 +310,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Inventario</li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Inventario</li>
                         <li class="breadcrumb-item"><a href="confi_alerta_stock.html">Alerta Stock</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -320,31 +320,43 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Stock personal</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Stock personal</h1>
+                                Este módulo permite al usuario configurar el stock del técnico, y la configuración de stock se realiza es por la cedula. Que es la cantidad de materiales que dispone un técnico en un determinado momento, para el cumplimento de ciertos objetivos de la
+                                organización.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Stock personal</i></strong> y se visualizará la siguiente ventana que requiere de configurar la información de los materiales.
+                                <br><br>Primeramente se escoge el departamento y la bodega para que se habiliten los demás opciones para dicha configuración de stock personal.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/stock personal.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-
-                                Este módulo permite al usuario configurar el stock del técnico, y la configuración de stock se realiza es por la cedula. Es la cantidad de materiales que dispone un técnico en un determinado momento, para el cumplimento de ciertos objetivos de la organización.
                             </div>
-
                         </div>
                     </div>
 
                     <!--agregar personal-->
-                    <div class="col-md-12">
+                    <div id="agregarpersonal" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 40px">
                             <h3 class="tile-title">Agregar personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario agregar el personal uno a uno. Dar doble clic en la persona y visualizará otra ventana para ingresar la información solicitada.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/personal agregar.png" style="width:80%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario agregar el personal uno a uno. Se debe dar clic en la opción <strong><i>Agregar Personal</i></strong> y se visualizará otra
+                                ventana para realizar la consulta de los registros existentes en el sistema.
+                                <br><br>Seguidamente el usuario para realizar la búsqueda es con los respectivos comodines como:
+                                <br>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/personal agregar.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario se ubica en la celda <strong><i>Cédula</i></strong> de la persona y debe dar clic en la tecla <strong><i>Enter</i></strong>, para que se traslade automáticamente la información a la pantalla principal <strong><i>Control stock material personal</i></strong>                                como se puede observar a continuación
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/personal agregar2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -353,26 +365,39 @@
                     <!--archivo-->
                     <div id="archivo" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Archivo</h3>
+                            <h3 class="tile-title">Importar</h3>
                             <div class="bs-component">
-                                Subir archivo con stock y no estar configurando uno a uno, stock se suben por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock se puede subir el stock técnico en una bodega, pero si pide de otra bodega no se le aplica. El stock
-                                es por bodega si se le aplica a una se le aplica a la otra. <br> Si el usuario va a tener bodega herramienta se deben contar stock máximo de la bodega herramienta y por otro lado es consumible
-                                stock máximo consumible de esa bodega donde normalmente pide. <br>El usuario debe tener en cuenta que si un técnico se traslada de una ciudad a otra hay que mover el stock porque ya no le aplica el stock que tienen en otra
-                                parte.
-                                <br> <strong>LOG-> </strong> No es necesario subir esta columna porque esta columna informa si se subió o no el archivo repuesta del módulo. Con este archivo se puede subir el stock máximo de todos los técnicos en la bodega
-                                la cual el usuario quiera aplicar ese stock, el archivo plano debe subirse formato texto delimitado por tabulaciones, no se lleva encabezado solo la información necesaria de las columnas. Luego de haber subido el archivo
-                                plano se procede hacer los pedidos se ubica en la bodega luego se busca el personal se agrega y se visualiza en el listado.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los stock y este configurado la bodega para que tome los stock en pedidos o entregas, porque se puede
-                                        subir los stock pero si en departamento no está chuleado no se aplica los stock.</div>
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Importar</i></strong> que permite subir un archivo con stock y no estar configurando uno a uno, los stock se suben
+                                por cada bodega que el usuario desea utilizar donde se quiera ejercer el stock.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/archi stock per.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
+                                <div class="nota">
+                                    Nota: se puede subir el stock del técnico en una bodega, pero si pide de otra bodega no se le aplica, el stock es por bodega si se le aplica a una se le aplica a la otra.
+                                </div>
+                                <br><br>Si el usuario va a tener <strong><i>Bodega Herramienta</i></strong> se deben contar stock máximo de la bodega herramienta, y por otro lado si es <strong><i>Consumible</i></strong> stock máximo consumible de esa
+                                bodega donde normalmente pide.
+                                <br><br>El usuario debe tener en cuenta que si un <strong><i>Técnico</i></strong> se traslada de una ciudad a otra hay que mover el stock porque ya no le aplica el stock que tienen en otro lugar. Posteriormente se debe
+                                dar clic en archivo que requiere de una información solicitada u obligatoria para el cargue del archivo de stock como:
+                                <br>
+                                <ul>
+                                    <li>Bodega.</li>
+                                    <li>Personal.</li>
+                                    <li>Máximo.</li>
+                                    <li>Mínimo.</li>
+                                </ul>
+                                <br><strong>LOG-></strong> es necesario subir esta columna porque esta columna informa si se subió o no el archivo repuesta del módulo.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/archi stock per2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Con este archivo se puede subir el stock máximo de todos los técnicos en la bodega la cual el usuario quiera aplicar ese stock.
+                                <br><br>El archivo plano debe subirse <strong><i>formato texto delimitado por tabulaciones</i></strong>, no se lleva encabezado solo la información necesaria de las columnas.
+                                <div class="nota">
+                                    Nota: recordar que así se suba este archivo se tiene que validar que este configurado el departamento para que tome los stock y este configurado la bodega para que tome los stock en pedidos o entregas , porque se puede subir los stock pero si en departamento
+                                    no está chuleado no se aplica los stock.
+                                </div>
+                                <br><br>Luego de haber subido el archivo plano se procede hacer los pedidos, se ubica en la <strong><i>Bodega</i></strong> luego se busca el personal se agrega y se visualiza en el listado.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/archi stock per.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin archivo-->
@@ -382,14 +407,14 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar Material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón agregar control material y nos muestra una ventana solicitando la información de un código, descripción, máximo y mínimo. Stock máximo de esa persona, y se empiezan
-                                agregar materiales esto se aplica para pedidos y entrega.
-                            </div>
-
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/agregar material.png" style="width:80%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en el botón <strong><i>Agregar control material</i></strong> y se visualizará una ventana solicitando la información de un código, descripción,
+                                máximo y mínimo. El stock máximo de esa persona, y se empiezan agregar materiales esto se aplica para pedidos y entrega.
+                                <br><br>El usuario debe ingresar la información y luego dar clic en la opción <strong><i>Agregar</i></strong> para que se puedan cargar los materiales con el stock configurado,
+                                <br><br><strong>Limpieza:</strong> esta opción permite al usuario cuando ingresa la información del material quitarla automáticamente de los campos solicitados.
+                                <br><br><strong>Eliminar:</strong> esta opción permite al usuario eliminar un material que no crea conveniente para la configuración de stock.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -400,13 +425,15 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Eliminar personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario eliminar un personal de la lista de control de material. Al momento de dar clic en la persona que se desea eliminar mostrará un mensaje de información que si desea
-                                eliminar a la persona seleccionada como se puede observar a continuación.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/eliminar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, permite al usuario eliminar un personal de la lista de control de material.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Al momento de dar clic en la <strong><i>Persona</i></strong> que se desea eliminar, el sistema mostrará un mensaje de información que si desea eliminar a la persona seleccionada como se puede observar a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar stock personal2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe escoger una de las dos opciones mostradas en pantalla ya sea clic en el icono <strong><i>Sí</i></strong> para efectuar la función de eliminar y el icono <strong><i>No</i></strong> para cancelar el proceso.
                             </div>
                         </div>
                     </div>
@@ -417,12 +444,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Exit</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic y salir del Módulo control stock material personal.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir stock.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Exit</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir stock.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -431,10 +456,10 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="613" src="https://www.youtube.com/embed/Bst-CDnFlOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>      
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="613" src="https://www.youtube.com/embed/Bst-CDnFlOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
+
                 </div>
                 <!--fin row-->
             </main>

@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="consultarconsecutivo" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -299,13 +299,14 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
                         <li class="breadcrumb-item"><a href="inv_devolucion.html">Devolución</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -315,34 +316,31 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Actualizar entrada</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Actualizar entrada</h1>
-                                </div>
-
-                                Este módulo permite al usuario poder actualizar entradas registradas en el sistema SISCOS ya sea CT o EECC, ingresando nueva información pero las columnas requeridas u obligatorias en este caso son costo y fecha de vencimiento porque si no le muestra
-                                un mensaje de información que hacen faltas campos para la actualización del registro, como también se pueden modificar ciertos campos que se encuentran habilitados para realizar cambios en la entrada seleccionada.<br>                                El usuario debe ubicarse en el campo donde requiere de ingresar el consecutivo de la entrada que desea actualizar seguidamente clic en el botón buscar y arroja automáticamente la información del registro entrada y escoger
-                                los campos a editar.
-
-
+                                Este módulo permite al usuario poder actualizar entradas registradas en el sistema SISCOS ya sea CT o EECC, ingresando nueva información las columnas requeridas u obligatorias en este caso son <strong><i>Costo y Fecha de vencimiento</i></strong>.
+                                Si no se visualizará un mensaje de información que hacen faltas campos para la actualización del registro, como también se pueden modificar ciertos campos que se encuentran habilitados para realizar cambios en la entrada
+                                seleccionada.
                             </div>
-
                         </div>
                     </div>
+
                     <!--consultar consecutivo-->
-                    <div class="col-md-12">
+                    <div id="consultarconsecutivo" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Consultar consecutivo</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, clic sobre el botón y realiza la búsqueda con el consecutivo ingresado que se encuentre registrado en el sistema SISCOS
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/consultar actualizacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior, El usuario debe ubicarse en el campo donde requiere ingresar el <strong><i>Consecutivo</i></strong> de la entrada que desea actualizar seguidamente, se debe
+                                dar clic en el botón <strong><i>Buscar</i></strong> y arroja automáticamente la información del registro entrada y escoger los campos a editar.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/actualizarentrada.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <strong>Materiales</strong> no se pueden modificar solo información necesaria de esos materiales como costo, total, ubicación y fecha vencimiento etc.
+                                <br><br>El usuario ingresa la nueva información analiza que los campos estén completos para realizar el proceso de actualizar la información del registro entrada.
+
                             </div>
                         </div>
                     </div>
@@ -353,12 +351,19 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Actualizar costo</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, cuando ya tiene toda la información lista del registro entrada dar clic sobre el botón y actualizar el registro en el sistema SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/actualizar costo 3.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, cuando ya tiene toda la información lista del registro entrada dar clic sobre el botón <strong><i>Actualizar costo</i></strong> y actualiza
+                                el registro en el sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/actualizar costo 3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong> y se finaliza el registro actualizado y pregunta al usuario si desea imprimir la entrada con la nueva actualización.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/actualizar costo4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema presentará un mensaje de información al cual se le debe dar clic en el icono <strong><i>Sí</i></strong> y arroja la información del registro entrada.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/actualizar costo5.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -369,12 +374,10 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón y salir del módulo Actualizar Entrada.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/salir actualizar.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir actualizar.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -383,10 +386,10 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/RJTuH3hKkrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                       </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/RJTuH3hKkrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
+
                 </div>
                 <!--fin row-->
             </main>

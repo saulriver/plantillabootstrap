@@ -171,8 +171,6 @@ dfn {
     font-style: italic;
 }
 
-b {}
-
 small {
     font-size: 80%;
 }
@@ -14150,9 +14148,10 @@ be a descendant of the grid when it is being dragged.
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
-    align-self: center;
-    margin-right: 15px;
-    padding: 10px 0;
+    align-self: auto;
+    margin-right: 0px;
+    padding: 11px 87px;
+    margin-left: -393px;
 }
 
 @media (max-width: 480px) {
@@ -14189,7 +14188,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-search__button {
-    position: absolute;
+    position: initial;
     right: 0;
     top: 10px;
     bottom: 10px;
@@ -14199,6 +14198,46 @@ be a descendant of the grid when it is being dragged.
     background: none;
     cursor: pointer;
 }
+
+
+/*===============================================app-nav==============================================================*/
+
+.app-nav2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .app-nav2 {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
+
+.app-nav2__item {
+    display: block;
+    padding: 15px;
+    line-height: 20px;
+    color: #fff;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.app-nav2__item:hover,
+.app-nav2__item:focus {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
+}
+
+
+/*============================================================================================================================*/
 
 .app-notification {
     min-width: 270px;
