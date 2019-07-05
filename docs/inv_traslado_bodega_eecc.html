@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="nueva" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -304,6 +304,7 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
@@ -325,23 +326,27 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Traslado bodega EECC</h3>
                             <div class="bs-component">
-                                Este módulo permite al usuario mover de una bodega a otra materiales, para que se pueda realizar el traslado satisfactoriamente.<br> El usuario debe escoger de la bodega origen que es donde se encuentra los materiales registrados,
-                                escoger el departamento y la bodega y posteriormente escoger de la bodega destino que es a quien se le va a hacer el traslado el departamento y bodega.
+                                Este módulo permite al usuario mover de una bodega a otra materiales, Para que se pueda realizar el traslado satisfactoriamente.
+                                <br><br>El usuario debe escoger de la <strong><i>Bodega origen</i></strong> que es donde se encuentra los materiales registrados, escoger el <strong><i>Departamento</i></strong> y la <strong><i>Bodega</i></strong> y posteriormente
+                                escoger de la <strong><i>Bodega destino</i></strong> que es a quien se le va a hacer el traslado el <strong><i>Departamento</i></strong> y <strong><i>Bodega</i></strong>.
+                                <br><br>El usuario debe dar clic en el módulo Traslado entre Bodega EECC y se visualizará la siguiente ventana que requiere de información.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado bodega eecc.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--comienzo-->
-                    <div class="col-md-12">
+                    <div id="nueva" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Nueva salida</h3>
                             <div class="bs-component ">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, dar clic sobre el botón nuevo damos clic en el botón Nuevo para que se activen los demás botones y se pueda seguir realizando el proceso de traslado de bodegas EECC.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/traslado eecc1.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, se debe dar clic en la opción <strong><i>Nueva</i></strong> para que se activen los demás botones y se pueda seguir realizando el proceso de
+                                Traslado de Bodega EECC.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -352,17 +357,30 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal superior, damos clic en el botón Agregar permite al usuario poder agregar los materiales que se les va hacer el traslado a otra bodega. Hacemos clic en el botón agregar y nos mostrará otra ventana el cual requiere
-                                de unos botones como nuevos, buscar, salir etc.
-                            </div>
-                            <div class="col-sm-12 w3-container w3-center">
-                                <span>
-                              <img src="imagenes/traslado eecc2.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-                            <div class="bs-component ">
-                                Cuando el usuario ya haga la búsqueda del material que va agregar automáticamente se pasa para la pantalla principal de los materiales agregados para el traslado bodega EECC. Seguidamente cuando ya está agregada se ubica en el campo cantidad e ingresar
-                                la cantidad necesaria.
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario poder agregar material a uno de los Traslados EECC registrados en el sistema SISCOS.
+                                <br><br>El usuario debe dar clic en el botón <strong><i>Agregar</i></strong>, y se presentará una ventana que requiere de información para poder agregar material, si al usuario se le olvido el código puede realizar una
+                                búsqueda dando clic en el botón <strong><i>Buscar</i></strong> que es la lupa.
+                                <div class="col-sm-12 w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario al dar clic en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere de uno de los parámetros de búsquedas tales como: Código, <strong><i>Descripción, Cod.SAP, Desc.SAP y Tipo Material</i></strong>                                etc. Comodines, luego poder escoger el registro necesario.
+                                <br><br><strong>Los comodines de búsquedas son:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                El usuario debe dar clic en la tecla <strong><i>Enter</i></strong> sobre la celda del <strong><i>Código</i></strong> y se verá reflejado en la tablita <strong><i>Existencia</i></strong> para poder guardarlo en el Traslado.
+                                <div class="col-sm-12 w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc2.1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Seguidamente el usuario se ubica en la celda <strong><i>Existencia</i></strong> luego se debe dar clic en la tecla <strong><i>Enter</i></strong> y automáticamente los traslada a la pantalla principal de Traslado entre Bodega
+                                EECC y solo es asignar la <strong><i>Cantidad</i></strong>.
+                                <br><br>Asimismo al ingresar la <strong><i>Cantidad</i></strong> del material y si está clasificado como <strong><i>Serial</i></strong> se abre otra ventana para ingresar información, si es <strong><i>Cable</i></strong>                                mostrará otra ventana para ingresar los tramos, luego se guarda y eso automáticamente entra al stock.
+                                <div class="col-sm-12 w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc2.2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Posteriormente se ingresa la información solicitada u obligatoria como por la persona que va hacer entrega del traslado.
                             </div>
                         </div>
                     </div>
@@ -372,17 +390,20 @@
                     <div id="registrar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Registrar salida</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, damos clic en el botón Agregar permite al usuario cuando ya tiene la información necesaria y los campos obligatorios listos dar clic sobre el botón y hacer el registro de salida en el
-                                sistema
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/traslado eecc3.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-                            <div class="bs-component ">
-                                Clic en el botón Si, y se registra la nueva salida en el sistema. El usuario Si desea imprimir el recibo de salida le da al botón Si, si no el botón No para salir del proceso traslado bodegas EECC.
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene la información necesaria y los campos obligatorios listos dar clic en la opción
+                                <strong><i>Registrar salida</i></strong> y hacer el registro de salida en el sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong>, para efectuar el registro correctamente en el sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc3.1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema presentará un mensaje de información si desea imprimir el recibo de traslado se debe dar clic en el icono <strong><i>Sí</i></strong>, para que se imprima el recibo de traslado que se realizó en ambas bodegas.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc3.2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -393,12 +414,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title"> Eliminar</h3>
                             <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal lado izquierdo, damos clic en el botón Eliminar Permite al usuario poder eliminar un material que no crea necesario para su traslado.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/traslado eecc4.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, para eliminar un registro se debe seleccionar y luego dar clic en la opción <strong><i>Eliminar</i></strong> y permite eliminar materiales de la lista que
+                                han sido agregados, que el usuario no crea conveniente para su Traslado entre bodegas EECC.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -409,12 +429,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón y salir del módulo traslado bodega EECC.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/traslado eecc5.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado eecc5.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -422,8 +440,7 @@
                     <!--fin salir localidades-->
 
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="852" height="426" src="https://www.youtube.com/embed/WyZkF2UbgEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="852" height="426" src="https://www.youtube.com/embed/WyZkF2UbgEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

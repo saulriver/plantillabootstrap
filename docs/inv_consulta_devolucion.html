@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscardevolucion" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -299,6 +299,7 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
@@ -306,7 +307,7 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Entradas almacén</li>
-                        <li class="breadcrumb-item"><a href="inv_anular_devolucion.html">Anular Devolución</a></li>
+                        <li class="breadcrumb-item"><a href="inv_anular_devolucion.html">Anular devolución</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -320,30 +321,27 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Consulta devolución</h3>
                             <div class="bs-component">
-
-                                Este módulo permite al usuario escoger el departamento y la bodega, e ingresar el número de la devolución y dar clic en el botón buscar para que automáticamente muestre la información de la devolución ingresada que el sistema valide y arroje los resultados
-                                correspondiente de la búsqueda.
+                                Este módulo permite al usuario escoger el <strong><i>Departamento</i></strong> y la <strong><i>Bodega</i></strong>, e ingresar el número de la devolución y realizar la consulta a dicha devolución.
                             </div>
                         </div>
                     </div>
 
                     <!--Buscar Devolucion-->
-                    <div class="col-md-12">
+                    <div id="buscardevolucion" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Buscar devolución</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y se realiza la búsqueda con el consecutivo perteneciente a un registro devolución.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: tener en cuenta el número de la devolución que el botón buscar, es para buscar el número que se ingresa no es buscar los números de devoluciones registradas y escoger por criterios de búsquedas como se hace anteriormente
-                                        en otros módulos para realizar consultas.</div>
+                                Esta opción se encuentra ubicada en la barra horizontal superior, se debe dar clic en el opción <strong><i>Buscar</i></strong> para que automáticamente muestre la información de la devolución ingresada que el sistema valide
+                                y arroje los resultados correspondiente de la búsqueda.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar devolucion.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Seguidamente se visualiza todo el contenido de esa devolución información necesaria para el usuario en su consulta.
+                                <div class="nota">
+                                    Nota: tener en cuenta el número de la devolución que el botón buscar, es para buscar el número que se ingresa no es buscar los números de devoluciones registradas y escoger por criterios de búsquedas como se hace anteriormente en otros módulos para realizar
+                                    consultas.
                                 </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/buscar devolucion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin buscar devolución-->
@@ -353,12 +351,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Imprimir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, dar clic en el botón e imprimir todos los materiales que pertenecen a la devolución.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                      <img src="imagenes/consulta devolucion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                      </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario dar clic en el botón e imprimir todos los materiales que pertenecen a la devolución.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/consulta devolucion.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -369,12 +365,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón y salir del módulo consultar devolución.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                    <img src="imagenes/salir devolucion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir devolucion.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>

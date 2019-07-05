@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="registrar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -293,8 +293,8 @@
                               Registrar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                               Salir</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                              Ver video</a></li>
+                    <!--<li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
+                              Ver video</a></li>-->
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -306,7 +306,7 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Traslados</li>
-                        <li class="breadcrumb-item"><a href="inv_ingreso_traslado_eecc.html">Ingreso Trslado EECC</a></li>
+                        <li class="breadcrumb-item"><a href="inv_ingreso_traslado_eecc.html">Ingreso traslado EECC</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -320,28 +320,28 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Ingreso traslado CT</h3>
                             <div class="bs-component">
-                                Este módulo permite al usuario hacer registros de ingreso traslado CT, el cual han sido registrado en el módulo traslado CT, seguidamente selecciona el departamento y bodega e ingresa el consecutivo del traslado en el campo buscar y luego clic sobre él
-                                y arrojará la información correspondiente del traslado registrado en el sistema.<br> El usuario debe tener en cuenta que la fecha que seleccione debe estar en un periodo activo y el campo
-                                recibido por.<br> Tampoco puede estar en blanco porque si no le mostrará mensaje de error al querer hacer el registro.<br> Se debe ingresar la cantidad ingreso y la cantidad recibido para que el proceso de registrar funcione
-                                correctamente.
+                                Este módulo permite al usuario hacer registros de <strong><i>Ingreso Traslado CT</i></strong>, el cual han sido registrados en el módulo <strong><i>Traslado CT</i></strong>.
+                                <br><br>El usuario debe dar clic en el módulo Ingreso Traslado CT y se presentará la siguiente ventana que requiere de información en celdas solicitas para realizar un nuevo registro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/ingreso traslado ct.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Seguidamente el usuario selecciona el <strong><i>Departamento</i></strong> y <strong><i>Bodega</i></strong> e ingresa el <strong><i>Consecutivo</i></strong> del traslado en la celda <strong><i>Buscar</i></strong> y luego
+                                se debe dar clic sobre él y arrojará la información correspondiente del traslado registrado en el sistema.
+                                <br><br>El usuario debe tener en cuenta que la <strong><i>Fecha</i></strong> que seleccione debe estar en un periodo activo y el campo <strong><i>Recibido por</i></strong>, no puede estar en blanco porque si no le mostrará
+                                mensaje de error al querer hacer el registro.
+                                <br><br>Se debe ingresar la <strong><i>Cantidad ingreso</i></strong> y la <strong><i>Cantidad recibido</i></strong> para que el proceso de registrar funcione correctamente.
                             </div>
                         </div>
                     </div>
 
                     <!--comienzo-->
-                    <div class="col-md-12">
+                    <div id="registrar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Registrar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo permitiendo al usuario cuando ya se tiene toda la información seleccionada e ingresada dar clic sobre el botón y hacer el nuevo registro de traslado CT en el sistema.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/.png" style="width:100%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>
-                            <div class="bs-component">
-                                Posteriormente se visualizará una ventana emergente el consecutivo del traslado y si desea imprimir la información del nuevo registro en el sistema.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, cuando ya se tiene toda la información seleccionada e ingresada se debe dar clic en la opción <strong><i>Registrar</i></strong> y se realice
+                                el nuevo registro de traslado CT en el sistema.
+                                <br><br>Posteriormente se visualizará una ventana emergente el consecutivo del traslado y si desea imprimir la información del nuevo registro en el sistema.
                             </div>
                         </div>
                     </div>
@@ -352,22 +352,19 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic sobre el botón y salir del módulo ingreso traslado CT.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/.png" style="width:100%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/ingreso traslado ct salir.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong> para finalizar el proceso en el módulo.
                             </div>
                         </div>
                         <hr>
                     </div>
                     <!--fin salir localidades-->
 
-                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="825" height="426" src="https://www.youtube.com/embed/kAGakUzQ7To" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
-                    </div>
+                    <!--aqui va el video-->
+
                     <!--fin video-->
 
                 </div>
