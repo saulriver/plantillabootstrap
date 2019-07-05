@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="stockpersonal" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -290,13 +290,13 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#stockpersonal" onclick="myFunction()">
-                    Stock personal</a></li>&nbsp;
+                        Stock personal</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#registrarentrega" onclick="myFunction()">
-                    Registrar entrega</a></li>&nbsp;
+                        Registrar entrega</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                    Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                    Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -328,38 +328,34 @@
                     </div>
 
                     <!--stock personal -->
-                    <div class="col-md-12">
+                    <div id="stockpersonal" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Stock personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario Consultar los Stock cargados actualmente del técnico y se genera en Excel.
-                            </div>
-                            <!--fin mensaje-->
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/.png" style="width:100%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario <strong><i>Consultar</i></strong> los Stock cargados actualmente del técnico y se genera un archivo en Excel.
+                                <!--fin mensaje-->
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin stock personal-->
 
                     <!--Registrar entrega-->
-                    <div class="col-md-12">
+                    <div id="registrarentrega" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar entrega</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado derecho, permite al usuario poder hacer el registro cuando ya tenga todo listo el sistema SISCOS empieza a validar o preguntar cuando se quiera guardar la entrega.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado derecho, permite al usuario poder hacer el registro cuando ya tenga todo listo el sistema SISCOS empieza a validar o preguntar cuando se quiera guardar la entrega.
                                 <ul>
                                     <li>El sistema pregunta se guarda la entrega.</li>
                                     <li>Imprimir con seriales SI o NO.</li>
                                     <li>Genera formato de entrega.</li>
                                 </ul>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/.png" style="width:100%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -370,12 +366,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                se encuentra ubicado en la barra horizontal superior, dar clic sobre el botón y salir del módulo Entregas Pedidos Autom para finalizar el proceso en el sistema SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/.png" style="width:100%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -387,6 +381,7 @@
                         <iframe class="embed-responsive-item"></iframe>
                     </div>
                     <!--fin video-->
+
                 </div>
                 <!--fin row-->
             </main>

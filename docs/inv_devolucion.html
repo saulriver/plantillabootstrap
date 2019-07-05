@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscarpersonal" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -289,14 +289,14 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscarpersonal" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#nuevadevolucion" onclick="myFunction()">
+                            Nueva devolución</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscarpersonal" onclick="myFunction()">
                             Buscar personal</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#buscarserial" onclick="myFunction()">
                             Buscar serial</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#agregarmaterial" onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscarmaterial" onclick="myFunction()">
-                            Buscar material</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
                             Eliminar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#devolver" onclick="myFunction()">
@@ -304,7 +304,7 @@
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                             Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                          Ver video</a></li>
+                            Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -330,30 +330,54 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Devolución</h3>
                             <div class="bs-component">
-                                Este módulo es un proceso que sustenta en un derecho o posesión de una determinada persona con respecto a un material, con algún objetivo específico. Consiste en la entrega de material que lo había concebido con el objetivo de obtener un interés, sin
-                                embargo para la devolución de mercancías defectuosas o no deseadas, o por la corrección de errores cometidos durante la introducción de los módulos mencionados anteriormente es posible crear una devolución. La devolución
-                                en el sistema SISCOS siempre va asociado a una entrega requisitos necesarios personal y entrega, también va asociado a un técnico.
+                                Este módulo es un proceso que sustenta en un derecho o posesión de una determinada persona con respecto a un material con algún objetivo de obtener un interés, sin embargo para la devolución de mercancías defectuosas o no deseadas, o por la corrección
+                                de errores cometidos durante la introducción de los módulos mencionados anteriormente es posible crear una devolución. La <strong><i>Devolución</i></strong> en el sistema SISCOS siempre va
+                                asociado a una <strong><i>Entrega</i></strong> requisitos necesarios
+                                <strong><i>Personal, Entrega Y Técnico</i></strong> etc.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Devolución</i></strong> y se visualizará la siguiente ventana que requiere de información para realizar el registro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/devo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="nuevadevolucion" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Nueva devolución</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida para el registro de una <strong><i>Devolución</i></strong>, dar clic en la
+                                opción <strong><i>Nueva devolución</i></strong> para que la guarde y se pueda agregar material y se puedan habilitar los demás botones y poder realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/nuevadevo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Se debe dar clic en el icono <strong><i>Sí</i></strong> para efectuar la nueva devolución y se realice la configuración de materiales y si habiliten las demás opciones como se puede analizar a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/nuevadevo2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                La devolución se puede hacer tipo <strong><i>Retal, Garantía, Terreno</i></strong>, etc. Ya el usuario decide cómo lleva su proceso de devolución.
                             </div>
                         </div>
                     </div>
 
                     <!--Buscar personal-->
-                    <div class="col-md-12">
+                    <div id="buscarpersonal" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Buscar personal</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, permite al usuario hacer búsquedas del personal registrado en el sistema para asignar en el campo entregado por cual es la persona responsable de la devolución que se va a registrar y
-                                configurar sus respectivos materiales.
-                                <div class="bs-component">
-                                    <div class="nota">Nota: el personal que se busca es solo para agregar en el campo Entregado por:</div>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario hacer búsquedas del personal registrado en el sistema, para asignar en el campo <strong><i>entregado por:</i></strong> cuál
+                                es la persona responsable de la devolución que se va registrar y configurar sus respectivos materiales.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <br>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar devo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/buscar devo.png" style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin buscar personal-->
@@ -363,14 +387,12 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar serial</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal lado derecho, permite al usuario si el técnico tiene el serial indicado con solo pistolear se va asignando en SISCOS, si no ubicarse en Inventario/Consultas/Estado serial pistolear y aparece a quien pertenece
-                                el técnico. Se le hace la devolución a la persona correspondiente. A los seriales en SISCOS si se le pueden hacer seguimientos, no se duplica la existencia se le descarga a quien tenga el serial correspondido al técnico.
-                                La devolución se puede hacer tipo Retal, Garantía, Terreno, etc. Ya el usuario decide cómo leva su proceso de devolución.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/buscar serial devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta opción se encuentra ubicada en la barra horizontal, si el técnico tiene el serial indicado con solo pistolear se va asignando en SISCOS, si no ubicarse en
+                                <strong><i>Inventario/Consultas/Estado serial</i></strong> pistolear y aparece a quien pertenece el técnico. Se le hace la devolución a la persona correspondiente.
+                                <br><br>Los seriales en SISCOS si se le pueden hacer seguimientos no se duplican, la existencia se le descarga a quien tenga el serial conforme al técnico.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar serial devo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -381,147 +403,150 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
-                                El usuario agrega material dar clic en la lupa que es para buscar, se selecciona el material y muestra toda la información correspondiente abajo muestra el stock que actualmente tiene el técnico, clic en él y automáticamente se pasa para la pantalla principal.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/agregar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario poder agregar material a una de las devoluciones registradas en el sistema SISCOS.
+                                <br><br>El usuario debe dar clic en el botón <strong><i>Agregar</i></strong>, y se presentará una ventana que requiere de información para poder agregar material, si al usuario se le olvido el código puede realizar una
+                                búsqueda dando clic en el botón <strong><i>Buscar</i></strong> que es la lupa.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material devo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario al dar clic en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere de uno de los parámetros de búsquedas tales como: <strong><i>Código, Descripción, Cod.SAP, Desc.SAP y Tipo Material</i></strong>                                etc. Comodines, luego poder escoger el registro necesario.
+                                <br><br><strong>Los comodines de búsquedas son:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <br>El usuario debe dar clic en la tecla <strong><i>Enter</i></strong> sobre la celda del <strong><i>Código</i></strong> y se verá reflejado en la tablita <strong><i>Agregar material</i></strong> para poder guardarlo en
+                                la Devolución.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar material devo2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario se ubica en la celda <strong><i>Material</i></strong> luego se debe dar clic en la tecla <strong><i>Enter</i></strong> y automáticamente los traslada a la pantalla principal de Devolución y solo es asignar <strong><i>Cantidad a devolver y Estado devolución</i></strong>.
+                                <br><br>La devolución es la única que permite cambiar el estado de material. Listados de estados que se chulearon en estado de material a la letra D.
+                                <br><br>El usuario al ingresar la <strong><i>Cantidad a devolver</i></strong> del material y si está clasificado como <strong><i>Serial</i></strong> se abre otra ventana para ingresar información, si es
+                                <strong><i>Cable</i></strong> mostrará otra ventana para ingresar los tramos, luego se guarda y eso automáticamente entra al stock.
                             </div>
                         </div>
                     </div>
                     <!--fin agregar material-->
-
-                    <!--Buscar material-->
-                    <div id="buscarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Buscar material</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en el botón agregar material, cuando se da clic muestra la ventana visualizada y aparece el respectivo botón buscar material para seleccionar los que van hacer agregados para el registro devolución. Buscar por medio de la lupa que
-                                es el botón buscar el material con criterios de búsquedas asignados se copia y pega el código o el criterio que seleccione y se asigna automáticamente. Si no aparece nada en la tabla de la parte de abajo es porque ese material
-                                no tiene registro cargado en el stock. Si aparece es porque si existen registro cargado en el stock y posteriormente se da clic y automáticamente se pasa para la pantalla principal de devolución.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/buscar mate.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin buscar material-->
 
                     <!--Eliminar-->
                     <div id="eliminar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal lado izquierdo, permite al usuario poder eliminar un material que no crea necesario para su devolución.
+                                Esta función se encuentra ubicada en la barra horizontal superior, para eliminar un registro se debe seleccionar y luego dar clic en la opción <strong><i>Eliminar</i></strong> y permite eliminar materiales de la lista que
+                                han sido agregados, que el usuario no crea conveniente para su Devolución.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar material devo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema presentará un mensaje de información que si está seguro de eliminar el material al cual el usuario debe dar clic en el icono <strong><i>Sí</i></strong> para efectuar la eliminación.
+                                <div>
+                                </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/eliminar material devo.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                            <!--fin eliminar-->
+
+                            <!--Devolver-->
+                            <div id="devolver" class="col-md-12">
+                                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                    <h3 class="tile-title">Devolver</h3>
+                                    <div class="bs-component">
+                                        Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario dar clic sobre la opción <strong><i>Devolver</i></strong>, cuando ya se tiene previamente toda la información completa para hacer
+                                        el registro de devolución.
+                                        <div class="w3-container w3-center">
+                                            <span><img src="imagenes/devo devolver.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                        </div>
+                                        El sistema presentará un mensaje de información que si está seguro de registrar la devolución se debe dar clic en el icono <strong><i>Sí</i></strong> para efectuar el registro al sistema.
+                                        <div class="w3-container w3-center">
+                                            <span><img src="imagenes/devo devolver2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                        </div>
+                                        El usuario debe dar clic en el icono <strong><i>Sí</i></strong> y se genere el reporte de la devolución realizada, este informe de devolución es con el que se queda el técnico como constancia efectivamente que hizo
+                                        la devolución.
+                                        <div class="w3-container w3-center">
+                                            <span><img src="imagenes/devo devolver3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!--fin devolver-->
+
+                            <!--salir-->
+                            <div id="salir" class="col-md-12">
+                                <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                                    <h3 class="tile-title">Salir</h3>
+                                    <div class="bs-component">
+                                        Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                        <div class="w3-container w3-center">
+                                            <span><img src="imagenes/salir devo 4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <!--fin salir marcas-->
+
+                            <!--video-->
+                            <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                                <iframe class="embed-responsive-item" width="1280" height="597" src="https://www.youtube.com/embed/hTM6vYKmGfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <!--fin video-->
+
                         </div>
-                    </div>
-                    <!--fin eliminar-->
-
-                    <!--Devolver-->
-                    <div id="devolver" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Devolver</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic sobre el botón cuando ya se tiene previamente toda la información completa para hacer el registro de devolución.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/devo devolver.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin devolver-->
-
-                    <!--salir-->
-                    <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Salir</h3>
-                            <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic sobre el botón salir del módulo pedido para finalizar el proceso de devolución.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir devo 4.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                    <!--fin salir marcas-->
-
-                    <!--video-->
-                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="597" src="https://www.youtube.com/embed/hTM6vYKmGfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                         </iframe>
-                    </div>
-                    <!--fin video-->
-
-                </div>
-                <!--fin row-->
+                        <!--fin row-->
             </main>
-        </div>
-        <!--fin row flex-->
-    </div>
-    <!--fin container fluid-->
-    <a href="inv_actualizar_entrada.html#25" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_consulta_devolucion.html#40" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+            </div>
+            <!--fin row flex-->
+            </div>
+            <!--fin container fluid-->
+            <a href="inv_actualizar_entrada.html#25" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+            <a href="inv_consulta_devolucion.html#40" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
-    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
-    </script>
-    <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script type="text/javascript" src="js/plugins/chart.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Page specific javascripts-->
-    <script>
-        $('.bs-component [data-toggle="popover"]').popover();
-        $('.bs-component [data-toggle="tooltip"]').tooltip();
-    </script>
+            <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script>
+                window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+            </script>
+            <!--iconos version fontawesome 5.8.1-->
+            <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+            <!-- Essential javascripts for application to work-->
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+            <!-- The javascript plugin to display page loading on top-->
+            <script src="js/plugins/pace.min.js"></script>
+            <!-- Page specific javascripts-->
+            <script type="text/javascript" src="js/plugins/chart.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- Page specific javascripts-->
+            <script>
+                $('.bs-component [data-toggle="popover"]').popover();
+                $('.bs-component [data-toggle="tooltip"]').tooltip();
+            </script>
 
-    <!--scrooll efecto smooth para el id-->
-    <script>
-        function myFunction() {
-            document.documentElement.style.scrollBehavior = "smooth";
-        }
-    </script>
+            <!--scrooll efecto smooth para el id-->
+            <script>
+                function myFunction() {
+                    document.documentElement.style.scrollBehavior = "smooth";
+                }
+            </script>
 
-    <!--impedir que copien el codigo de la pagina-->
-    <script language="Javascript">
-        function disableselect(e) {
-            return false
-        }
+            <!--impedir que copien el codigo de la pagina-->
+            <script language="Javascript">
+                function disableselect(e) {
+                    return false
+                }
 
-        function reEnable() {
-            return true
-        }
-        document.onselectstart = new Function("return false")
-        if (window.sidebar) {
-            document.onmousedown = disableselect
-            document.onclick = reEnable
-        }
-        // End -->
-    </script>
+                function reEnable() {
+                    return true
+                }
+                document.onselectstart = new Function("return false")
+                if (window.sidebar) {
+                    document.onmousedown = disableselect
+                    document.onclick = reEnable
+                }
+                // End -->
+            </script>
 
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->

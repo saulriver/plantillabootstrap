@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscarentrega" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -289,8 +289,6 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscarentrega" onclick="myFunction()">
-                            Buscar entrega</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#anular" onclick="myFunction()">
                             Anular</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#imprimir" onclick="myFunction()">
@@ -318,43 +316,36 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Anular entrega</h3>
                             <div class="bs-component">
-                                Este módulo permite al usuario poder anular una entrega en el sistema SISCOS, escogiendo el departamento y la bodega e ingresando el número de la entrega. <br> Para poder anular entregas en SISCOS, la entrega debe encontrarse
-                                en un periodo activo de lo contrario al querer anularla le mostrará un mensaje de error que no se encuentra en un periodo activo.
+                                Este módulo permite al usuario poder anular una entrega en el sistema SISCOS, escogiendo el <strong><i>Departamento</i></strong> y la <strong><i>Bodega</i></strong> e ingresando el número de la entrega.
+                                <br><br>El usuario al ingresar el número de la entrega que va anular le arrojará toda la información que está registrada de esa entrega como se puede visualizar en esta imagen.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/anular entrega1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--buscar entrega-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Buscar Entrega</h3>
-                            <div class="bs-component">
-
-                                Se encuentra ubicado en la barra horizontal superior, El usuario al ingresar el número de la entrega que va anular le arroja toda la información que está registrada de esa entrega como se visualizará en la siguiente imagen.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/buscar entrega.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin buscar entrega-->
 
                     <!--anular-->
                     <div id="anular" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Anular</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, dar clic sobre el botón y anular la entrega validando la información registrada. Mostrará un mensaje SISCOS que si está seguro de anular la entrega.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/anular entrega.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esa opción se encuentra ubicada en la barra vertical superior lado izquierdo, se debe dar clic sobre la opción y anular la entrega validando la información registrada.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/anular entrega.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema mostrará un mensaje de anular la entrega. El usuario debe dar clic en el icono <strong><i>Sí</i></strong> y se anula correctamente la entrega de numero 31149.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/anular entrega2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <div class="nota">
+                                    Nota: para poder anular entregas en SISCOS, la entrega debe encontrarse en un periodo activo de lo contrario al querer anularla le mostrará un mensaje de error que no se encuentra en un periodo activo.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -365,12 +356,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Imprimir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic sobre el botón e imprimir en un archivo la entrega que tiene materiales registrados y que se va anular.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/imprimir anular entrega.png " style="width:100%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, se debe dar clic en la opción <strong><i>Imprimir</i></strong> e imprime en un archivo la entrega que tiene materiales registrados y que se
+                                va anular.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/imprimir anular entrega.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -381,12 +371,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón salir del módulo anular entrega para finalizar el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/salir anular entrega.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir anular entrega.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -394,11 +382,11 @@
                     <!--fin salir-->
 
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="2134" height="1200" src="https://www.youtube.com/embed/f2yt96Zdt38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="2134" height="1200" src="https://www.youtube.com/embed/f2yt96Zdt38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->

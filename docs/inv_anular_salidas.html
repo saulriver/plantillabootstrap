@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="anularsalidas" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -295,7 +295,7 @@
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                               Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                            Ver video</a></li>
+                              Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -320,21 +320,25 @@
                             <h3 class="tile-title">Anular salidas</h3>
                             <div class="bs-component">
                                 Este módulo permite al usuario anular salida ya sea salida CT o salida EECC, ingresando el número consecutivo de la salida que se desea anular en el sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/anular salidas.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe escoger el <strong><i>Departamento</i></strong> y la <strong><i>Bodega</i></strong>, ingresar el consecutivo correspondiente a la salida que se va anular, arroja toda la información acerca de esa salida
+                                de los materiales registrados.
                             </div>
                         </div>
                     </div>
 
                     <!--anular salidas-->
-                    <div class="col-md-12">
+                    <div id="anularsalidas" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Anular salidas</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, hacemos clic sobre él botón y se presentará un mensaje de seguridad que si esta seguro de anular la salida, clic en Sí para que se realice el proceso en el sistema SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/anular salida.png " style="width:80%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, para anular se debe dar clic en la opción <strong><i>Anular salida</i></strong> y se presentará un mensaje de seguridad.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/anular salida.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong> y la salida será anulada correctamente del sistema SISCOS clic en el icono <strong><i>Aceptar</i></strong> para terminar el proceso.
                             </div>
                         </div>
                     </div>
@@ -345,12 +349,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Imprimir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón e imprimir en un archivo la salida que tiene materiales registrados y que se va anular.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/imprimir salida a.png " style="width:80%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, se debe dar clic en la opción <strong><i>Imprimir</i></strong> e imprime un archivo la salida que tiene materiales registrados y que se va
+                                anular.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/imprimir salida a.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -361,12 +364,10 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, dar clic en el botón y salir del Módulo anular salidas.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/salir anular salida.png " style="width:80%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir anular salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -378,6 +379,7 @@
                     </div>
 
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->

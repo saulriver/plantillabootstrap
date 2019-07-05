@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="consultar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -289,7 +289,9 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#consultar" onclick="myFunction()">
-                        Consultar</a></li>&nbsp;
+                        Consultar consecutivo</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#imprimir" onclick="myFunction()">
+                        Imprimir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                         Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -319,38 +321,47 @@
                         <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
                             <h3 class="tile-title">Consultar reintegro</h3>
                             <div class="bs-component">
-                                Este módulo permite al usuario poder hacer consultas de entradas de reintegro seleccionando el departamento, bodega e ingresando el consecutivo correspondiente a las entradas registradas en el sistema SISCOS, Como se puede analizar a continuación.
+                                Este módulo permite al usuario poder hacer consultas de entradas de reintegro seleccionando el <strong><i>Departamento, Bodega</i></strong> e ingresando el <strong><i>Consecutivo</i></strong> correspondiente a las entradas
+                                registradas en el sistema SISCOS.
                             </div>
                         </div>
                     </div>
 
                     <!--Consultar-->
-                    <div class="col-md-12">
+                    <div id="consultar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Consultar</h3>
+                            <h3 class="tile-title">Consultar consecutivo</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, el usuario al ingresar el consecutivo para realizar la consulta, automáticamente le arroja toda la información perteneciente a esta entrada en el sistema SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/consultar reintegro.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior, el usuario debe ingresar el consecutivo para realizar la consulta, dar clic y automaticamente le arroja toda la información perteneciente a esta <strong><i>Entrada</i></strong>                                en el sistema
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/consultarreintegro.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin agregar material-->
+
+                    <div id="imprimir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
+                            <h3 class="tile-title">Imprimir</h3>
+                            <div class="bs-component">
+                                Se encuentra ubicado en la barra horizontal superior, se debe dar clic en la opción y poder imprimir todos los materiales que estén cargados a la entrada reintegro que se está consultando.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/imprimir consulta reintegro.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!--salir-->
                     <div id="salir" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic en el botón y salir del módulo consultar reintegro.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir consulta reintegro.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir consulta reintegro.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -359,8 +370,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="608" src="https://www.youtube.com/embed/K_MWQaZ9MZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="608" src="https://www.youtube.com/embed/K_MWQaZ9MZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

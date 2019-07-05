@@ -280,40 +280,40 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscar1 " class="container-fluid ">
+    <div class="container-fluid">
         <!--row flex-->
-        <div class="row flex-lg-nowrap ">
+        <div class="row flex-lg-nowrap">
             <!--menu derecho-->
-            <div class="d-none d-lg-block col-sm-2 bd-toc ">
-                <ul class="navbar-nav ">
-                    <li class="breadcrumb-item active ">
+            <div class="d-none d-lg-block col-sm-2 bd-toc">
+                <ul class="navbar-nav">
+                    <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item active " href="#buscar1 " onclick="myFunction() ">
-                            Buscar origen</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#buscar2 " onclick="myFunction() ">
-                            Buscar destino</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#nueva " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#nueva" onclick="myFunction()">
                             Nueva devolución</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#buscar3 " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscar1" onclick="myFunction()">
+                            Buscar origen</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscar2" onclick="myFunction()">
+                            Buscar destino</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscar3" onclick="myFunction()">
                             Buscar serial</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#agregar " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#agregar " onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#eliminar " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
                             Eliminar material</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#devolver " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#devolver" onclick="myFunction()">
                             Devolver</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item " href="#salir " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                             Salir</a></li>&nbsp;
-                    <li class="treeview "><a class="nav-link app-menu__item alert alert-dark " href="#video " onclick="myFunction() ">
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
                             Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
             <!--main-->
-            <main class="app-content " role="main ">
-                <div class="app-title ">
-                    <ol class="breadcrumb ">
+            <main class="app-content" role="main">
+                <div class="app-title">
+                    <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Traslados</li>
@@ -325,117 +325,136 @@
                     </ol>
                 </div>
 
-                <div class="row ">
+                <div class="row">
 
-                    <div class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Traslado entre personal</h3>
-                            <div class="bs-component ">
-                                Este módulo permite al usuario mover un técnico a otro técnico, y va asociado a una O/T el usuario debe dar clic traslado entre personal y el sistema le mostrará un ventana acerca de este módulo solicitando información requerida u obligatoria para poder
-                                hacerse el proceso.
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Traslado entre personal</h3>
+                            <div class="bs-component">
+                                Este módulo permite al usuario mover un técnico a otro técnico, va asociado a una O/T el usuario debe dar clic en el módulo <strong><i>Traslado entre personal</i></strong> y el sistema le mostrará un ventana acerca de este
+                                módulo solicitando información requerida u obligatoria para poder hacerse el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado entre personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--comienzo-->
-                    <div class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Buscar origen</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, le damos clic en el botón buscar permite al usuario hacer búsquedas de todo el personal registrado en el sistema para asignar al campo origen, que es quien tiene en su poder los materiales
-                                y desea trasladarle a otro técnico.
-                            </div>
-                            <div class="bs-component ">
-                                Seguidamente se escoge el departamento y la bodega al dar clic en el primer botón de búsqueda que es para origen nos muestra otra ventana para hacer la búsqueda por el criterio ( % ) que muestra todo el personal registrado en el sistema SISCOS, seleccionamos
-                                el que necesitamos copiamos y pegamos en origen automáticamente no muestra la información de la persona.<br> Origen: quien lo tiene.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                            <img src="imagenes/traslado1.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin-->
-
-                    <!--comienzo-->
-                    <div id="buscar2 " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Buscar destino</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, le damos clic en el botón Buscar permite al usuario hacer búsquedas de todo el personal registrado en el sistema para asignar al campo destino, que es a quien se le entrega. El mismo proceso
-                                para buscar personal destino se busca la persona indicada con el criterio ( % ) copiamos y pegamos.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                                <img src="imagenes/traslado2.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                                </span>
+                    <div id="nueva" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Nueva devolución</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida para el registro de un <strong><i>Traslado</i></strong>, dar clic en la opción
+                                <strong><i>Nueva devolución</i></strong> para que la guarde y se pueda agregar material y se puedan habilitar los demás botones y poder realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado3.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema presentará un mensaje de información que se debe dar clic en el icono <strong><i>Sí</i></strong> para efectuar el traslado.
                             </div>
                         </div>
                     </div>
                     <!--fin-->
 
                     <!--comienzo-->
-                    <div id="nueva " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Nueva devolución</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, dar clic sobre este botón permite al usuario cuando ya tiene la información seleccionada de donde sale el traslado y para quien dar clic en el botón nuevo para hacer una nueva devolución
-                                el sistema pregunta si está seguro de hacer el traslado y también para que se habiliten los demás botones. El usuario debe dar clic sobre el botón Sí y se habilitan los demás botones para el ingreso de materiales.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                                <img src="imagenes/traslado3.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                                </span>
+                    <div id="buscar1" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Buscar origen</h3>
+                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario hacer búsquedas de todo el personal registrado en el sistema para asignar al campo <strong><i>Origen</i></strong>, que es
+                                quien tiene en su poder los materiales y desea trasladarle a otro técnico.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario se ubica en la celda <strong><i>Cédula</i></strong> la selecciona y se debe dar clic en la tecla Enter y se traslada automáticamente en el campo la información de la persona.
                             </div>
                         </div>
                     </div>
                     <!--fin-->
 
                     <!--comienzo-->
-                    <div id="buscar3 " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
+                    <div id="buscar2" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Buscar destino</h3>
+                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario hacer búsquedas de todo el personal registrado en el sistema para asignar al campo <strong><i>Destino</i></strong>, que es
+                                a quien se le entrega los materiales.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--comienzo-->
+                    <div id="buscar3" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title ">Buscar serial</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal lado derecho, dar clic sobre el botón Buscar Serial permite al usuario si son seriales que se van a pasar se busca el serial pistolea y si es de esa persona SISCOS lo deja pasar.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                              <img src="imagenes/traslado4.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                              </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin-->
-
-                    <!--comienzo-->
-                    <div id="agregar " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Agregar material</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, permite al usuario agregar materiales que tengan registros para que se puedan pasar a la pantalla principal de traslado.El usuario al dar clic sobre este botón le abre otra ventana donde
-                                le muestra botón para hacer búsqueda del material y agregarlo,criterio ( % ) si no existen registro en el material mostrará un mensaje que el material no tiene registro es decir esta vacío.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                                <img src="imagenes/traslado5.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                                </span>
+                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra horizontal lado derecho, permite al usuario si son seriales que se van a pasar se debe dar clic en la opción <strong><i>Buscar serial</i></strong> se pistolea y si es de esa
+                                persona SISCOS lo deja pasar.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin-->
 
                     <!--comienzo-->
-                    <div id="eliminar " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Eliminar material</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal lado izquierdo, permite al usuario poder eliminar un material que no crea necesario para su traslado.
+                    <div id="agregar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Agregar material</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario poder agregar material a uno de los traslados registrados en el sistema SISCOS.
+                                <br><br>El usuario debe dar clic en el botón <strong><i>Agregar</i></strong>, y se presentará una ventana que requiere de información para poder agregar material, si al usuario se le olvido el código puede realizar una
+                                búsqueda dando clic en el botón <strong><i>Buscar</i></strong> que es la lupa.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado5.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario al dar clic en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere de los comodines de búsquedas tales como:
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                El usuario debe dar clic en la tecla <strong><i>Enter</i></strong> sobre la celda del <strong><i>Código</i></strong> y se verá reflejado en la tablita <strong><i>Agregar material</i></strong> para poder guardarlo en el
+                                traslado.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado5.1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario se ubica en la celda <strong><i>Material</i></strong> luego se debe dar clic en la tecla <strong><i>Enter</i></strong> y automáticamente los traslada a la pantalla principal de Traslado y solo es asignar <strong><i>Cantidad a devolver</i></strong>.
+                                <br><br>El usuario al ingresar la <strong><i>Cantidad a devolver</i></strong> del material y si está clasificado como <strong><i>Serial</i></strong> se abre otra ventana para ingresar información, si es
+                                <strong><i>Cable</i></strong> mostrará otra ventana para ingresar los tramos, luego se guarda y eso automáticamente entra al stock.
                             </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                                <img src="imagenes/traslado6.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                                </span>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                    <!--comienzo-->
+                    <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Eliminar material</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra horizontal superior, para eliminar un registro se debe seleccionar y luego dar clic en la opción <strong><i>Eliminar</i></strong> y permite eliminar materiales de la lista que
+                                han sido agregados, que el usuario no crea conveniente para su <strong><i>Traslado</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado6.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema presentará un mensaje de información que si está seguro de eliminar el material al cual el usuario debe dar clic en el icono <strong><i>Sí</i></strong> para efectuar la eliminación.
                             </div>
                         </div>
                     </div>
@@ -443,44 +462,46 @@
 
 
                     <!--comienzo-->
-                    <div id="devolver " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
+                    <div id="devolver" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title ">Devolver</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario cuando ya tenga materiales agregados y todo el proceso completo dar clic sobre el botón devolver y mostrará un mensaje traslado correctamente y genera un reporte. Cuando ya estén
-                                en el módulo traslado se debe ingresar la cantidad que se va devolver, que es la misma que se va a entregar. Muestra mensaje de información si está seguro de registrar el traslado del material, clic en el botón Sí. Cuando
-                                ya se ha registrado la devolución se mueve el inventario terreno-física, física terreno. El traslado sea realizado correctamente le damos clic en el botón y nos mostrará un mensaje de información que si desea imprimir clic
-                                en Sí.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                                <img src="imagenes/traslado7.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                                </span>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario dar clic sobre la opción <strong><i>Devolver</i></strong>, cuando ya se tiene previamente toda la información completa para hacer el
+                                registro de Traslado.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado7.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El sistema mostrará mensaje de información si está seguro de registrar el traslado del material, se debe dar clic en el icono <strong><i>Sí</i></strong> para efectuar el traslado. Cuando ya se ha registrado la devolución
+                                se mueve el inventario terreno-física, física terreno.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado7.1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El traslado sea realizado correctamente se debe dar clic en el icono <strong><i>Aceptar</i></strong> y se visualizará un mensaje de información que si desea imprimir clic en <strong><i>Sí</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado7.2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--fin-->
 
                     <!--comienzo-->
-                    <div id="salir " class="col-md-12 ">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px ">
-                            <h3 class="tile-title ">Salir</h3>
-                            <div class="bs-component ">
-                                Se encuentra ubicado en la barra horizontal superior lado izquierdo, dar clic sobre el botón y Salir del módulo para finalizar el proceso de traslado.
-                            </div>
-                            <div class="w3-container w3-center ">
-                                <span>
-                                <img src="imagenes/traslado8.png " style="width:70%; " class="w3-animate-zoom rounded ">
-                                </span>
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado8.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
                     </div>
                     <!--fin-->
 
-                    <div id="video " class="embed-responsive embed-responsive-16by9 rounded ">
-                        <iframe class="embed-responsive-item " width="866 " height="426 " src="https://www.youtube.com/embed/5xal581o7XE " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen>
-                          </iframe>
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="866" height="426" src="https://www.youtube.com/embed/5xal581o7XE " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                 </div>
