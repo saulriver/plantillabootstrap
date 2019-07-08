@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="consultar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -290,11 +290,11 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#consultar" onclick="myFunction()">
-                    Consultar</a></li>&nbsp;
+                        Consultar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                    Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                  Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -306,7 +306,7 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Consultas</li>
-                        <li class="breadcrumb-item"><a href="inv_estado_entregas_seriales.html">Estado Entregas Seriales</a></li>
+                        <li class="breadcrumb-item"><a href="inv_estado_entregas_seriales.html">Estado entregas seriales</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -317,40 +317,44 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Estado serial</h3>
                             <div class="bs-component">
-                                Este módulo permite poder consultar el estado de serial, la búsqueda se puede realizar por serial o Cas-ID su tipo tienen varias opciones como:
-                                <ul>
-                                    <li>Comience por.</li>
-                                    <li>Termine por.</li>
-                                    <li>Contenga.</li>
-                                </ul>
+                                Este módulo permite poder consultar el estado de serial, es un método que permite acceder a los datos de una base de datos y realizar diversas acciones, son la forma de buscar y recopilar información.
+                                <br><br>El usuario debe dar clic en el módulo Estado serial y se visualizará la siguiente ventana que requiere de información para realizar la consulta en el sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/estado serial1.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--consultar-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                    <div id="consultar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 30px">
                             <h3 class="tile-title">Consultar</h3>
                             <div class="bs-component">
-                                En el campo criterio es el criterio de búsqueda que se va a ingresar, en este caso se ingresará la letra S y el tipo que comience por esta letra y automáticamente arroja toda la información de todos los seriales registrados en SISCOS que empiezan con
-                                la letra S.<br>Hacemos clic en el botón buscar o filtrar para que realice la búsqueda correspondiente.<br> Se visualizará los seriales encontrados,con ciertas ventanas de información de los
-                                seriales.
-                                <div class="bs-component">
-                                    <ul>
-                                        <li>Información Serial: toda la información de cada uno de los seriales registrados en el sistema SISCOS.</li>
-                                        <li>Historial: información detallada y ordenada que se hace durante el desarrollo del serial.</li>
-                                        <li>Información Ingreso: cantidades de ingreso de los seriales registrados en el sistema.</li>
-                                        <li>Información Entrega: es un conjunto organizado es la información acerca del serial que fue entregado.</li>
-                                    </ul>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado derecho, el usuario al dar clic en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere
+                                <strong><i>Consulta por: Serial y CAS-ID</i></strong> etc. Tipo <strong><i>Comience por, Termine por, Contenga</i></strong> etc.
+                                <br><br><strong>Los comodines de búsquedas son:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%S</strong>) Los que terminan.</li>
+                                    <li>(<strong>S%</strong>) Los que comiencen.</li>
+                                </ul>
+                                El usuario debe dar clic en la opción <strong><i>Buscar</i></strong> o <strong><i>Filtrar</i></strong> para que realice la búsqueda correspondiente como se puede analizar a continuación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/estado serial.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/estado serial.png " style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <ul>
+                                    <li><strong>Información Serial:</strong> toda la información de cada uno de los seriales registrados en el sistema SISCOS.</li>
+                                    <li><strong>Historial:</strong> información detallada y ordenada que se hace durante el desarrollo del serial.</li>
+                                    <li><strong>Información Ingreso:</strong> cantidades de ingreso de los seriales registrados en el sistema.</li>
+                                    <li><strong>Información Entrega:</strong> es un conjunto organizado es la información acerca del serial que fue entregado.</li>
+                                </ul>
+                                <div class="nota">
+                                    Nota: si al seleccionar el serial todos los campos de la ventana de información no están habilitados, es porque no requiere de esos campos, como puede haber seriales que su información si requiere de todos los campos plasmados en la consulta.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,17 +362,13 @@
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Existen 2 opciones para salir del módulo, la primera se encuentra ubicada en la barra vertical derecho y la segunda en la barra vertical superior lado derecho una de estas dos el usuario púede dar clic sobre el botón para salir del módulo consulta estado
-                                serial.
-                            </div>
-
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir estado serial.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir estado serial.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>

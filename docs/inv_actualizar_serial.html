@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscarserial" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -314,34 +314,42 @@
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
                     </ol>
                 </div>
+
                 <div class="row">
+
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Actualizar serial</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Actualizar serial</h1>
+                                Este módulo es el proceso y resultado de actualizar y lograr que un registro se vuelva actual. Este permite hacer una búsqueda del serial que va hacer actualizado.
+                                <br><br>El usuario debe dar clic en el módulo Actualizar serial y le presentará la siguiente ventana para realizar el proceso de actualización.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/actual serial.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-
-                                Este módulo permite hacer una búsqueda del serial que va hacer actualizado, le damos clic en el botón buscar y nos mostrará otra ventana para ingresar el criterio de búsqueda que es el ( % ). Que sirve para mostrar todos los seriales registrados en el
-                                sistema y escoger el que se va a utilizar para la actualización.
-
                             </div>
-
                         </div>
                     </div>
 
                     <!--buscar serial-->
-                    <div class="col-md-12">
+                    <div id="buscarserial" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar serial</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal superior, permite al usuario poder hacer una búsqueda de los seriales registrados en SISCOS y seleccionar el que se le va a realizar la actualización de la información ingresada en los campos predeterminados.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/buscar seri.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra vertical superior lado derecho, se debe dar clic en la función <strong><i>Buscar</i></strong> para que realice la búsqueda de todos los seriales registrados en el sistema para
+                                asignar al campo <strong><i>Serial</i></strong>.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%00</strong>) Los que terminan.</li>
+                                    <li>(<strong>00%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar seri.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe ubicarse en la celda <strong><i>Sericodi</i>, dar clic en la tecla <strong><i>Enter</i></strong> y automáticamente se visualizará la información del serial seleccionado.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar seri2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -352,12 +360,12 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Actualizar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, permite al usuario que solo se actualicen los campos Nuevo serial y Nuevo Cas-ID, ingresamos la nueva información y clic en el botón actualizar.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/act serial.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal inferior, permite al usuario que solo se actualicen los campos <strong><i>Nuevo serial</i></strong> y <strong><i>Nuevo Cas-ID</i></strong>, se debe ingresar la nueva
+                                información y dar clic en el botón <strong><i>Actualizar</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/act serial.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El serial ha sido actualizado correctamente ya no aparecerá como serial 0002_CJ si no como serial 987 y con CAS_ID 12.
                             </div>
                         </div>
                     </div>
@@ -365,15 +373,13 @@
 
                     <!--salir-->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, dar clic en el botón y salir del módulo actualizar serial.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/serial salir.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/serial salir.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -382,8 +388,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/sAaNhQ64sYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                         </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/sAaNhQ64sYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

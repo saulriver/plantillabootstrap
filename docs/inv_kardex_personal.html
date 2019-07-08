@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="generar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -289,12 +289,16 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#generar" onclick="myFunction()">
-                  Generar</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#buscar" onclick="myFunction()">
+                        Buscar personal</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#buscarmaterial" onclick="myFunction()">
+                        Buscar material</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#generar" onclick="myFunction()">
+                        Generar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                  Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -306,7 +310,7 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Consultas</li>
-                        <li class="breadcrumb-item"><a href="inv_stock_material.html">Stock Material</a></li>
+                        <li class="breadcrumb-item"><a href="inv_stock_material.html">Stock material</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -317,27 +321,79 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Kardex personal</h3>
                             <div class="bs-component">
-                                En este módulo se puede consultar el movimiento material personal, se escoge el departamento y la bodega. El personal se puede ingresar o se puede hacer una búsqueda en el botón buscar por medio del criterio ( % ), para que muestre todas las personas
-                                registradas en SISCOS y se selecciona el personal indicado. Luego se traslada automáticamente en el campo personal y arroja la demás información.
+                                En este módulo se puede consultar el movimiento material personal, se escoge el <strong><i>Departamento</i></strong> y la <strong><i>Bodega</i></strong>.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Kardex personal</i></strong> y se visualizará una ventana que requiere de información para realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/kardex personal1.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="buscar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Buscar personal</h3>
+                            <div class="bs-component">
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado derecho, se debe dar clic en la función <strong><i>Buscar personal</i></strong> para que realice la búsqueda de todo el personal registrado en
+                                el sistema para asignar al campo <strong><i>Personal</i></strong>.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/kardex buscar per.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe ubicarse en la celda <strong><i>Código</i></strong> y dar clic en la tecla automáticamente se traslada en el campo personal y arroja la información del cargo.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/kardex buscar per2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="buscarmaterial" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Buscar material</h3>
+                            <div class="bs-component">
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal lado derecho, se debe dar clic en la función <strong><i>Buscar material</i></strong> para que realice la búsqueda de todos los materiales registrados en el
+                                sistema para asignar al campo <strong><i>Código material</i></strong>.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/kardex buscar mate.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe ubicarse en el <strong><i>Código</i></strong> del material, dar clic en la tecla <strong><i>Enter</i></strong> y se traslada automáticamente a la celda <strong><i>Código material</i></strong>. Seleccionar
+                                el material indicado que este asociado con el personal que ya está utilizando para el proceso consulta.
+                                <br><br><strong>El suministro:</strong> debe ser correspondiente al material y personal seleccionado.
+                                <br><strong>Propiedad:</strong> es con la que está asociado ese material.
+                                <br><strong>Criterio de fecha:</strong> desde que se refiere a fecha inicial y hasta que es fecha final.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/kardex buscar mate2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--generar-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                    <div id="generar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, seguidamente damos clic en el botón Generar, para que se genere el informe movimiento material personal ( Kardex ) en Excel.<br> Si no se genera es porque ese personal
-                                material no le existe movimientos en el sistema.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                    <img src="imagenes/kardex per.png " style="width:100%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal inferior, se debe dar clic sobre el botón <strong><i>Generar</i></strong> y se genera el informe de movimiento Kardex del personal ingresado o seleccionado
+                                en el sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/kardex per.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Si no se genera es porque ese personal material no le existe movimientos en el sistema.
                             </div>
                         </div>
                     </div>
@@ -345,16 +401,13 @@
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Existen 2 opciones para salir del módulo, la primera se encuentra ubicada en la barra vertical inferior derecho y la segunda en la barra vertical superior lado derecho una de estas dos el usuario púede dar clic sobre el botón para salir del módulo consulta
-                                kardex personal.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/salir kardex personal.png " style="width:60%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir kardex personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -374,8 +427,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_kardex_material.html#69" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_stock_material.html#88" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_kardex_material.html#69" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_stock_material.html#88" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -383,7 +436,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>

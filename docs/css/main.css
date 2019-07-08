@@ -14197,6 +14197,7 @@ be a descendant of the grid when it is being dragged.
     color: rgba(0, 0, 0, 0.8);
     background: none;
     cursor: pointer;
+    margin-left: -40px;
 }
 
 

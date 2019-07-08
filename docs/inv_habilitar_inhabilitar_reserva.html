@@ -279,7 +279,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscarmaterial" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
 
@@ -322,26 +322,34 @@
 
                     <div class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Habilitar /deshabilitar reserva</h3>
+                            <h3 class="tile-title">Habilitar/deshabilitar reserva</h3>
                             <div class="bs-component">
-                                Este módulo permite seleccionar el departamento y bodega con el cual se va a trabajar para asignar el consecutivo de reserva, indicado a ese departamento para que se pueda arrojar la información correspondiente y seleccionar unas de las 2 opciones plasmadas
-                                como habilitar la reserva o deshabilitarla.
+                                Este módulo permite seleccionar el <strong><i>Departamento</i></strong> y <strong><i>Bodega</i></strong> con el cual se va a trabajar para asignar el <strong><i>consecutivo</i></strong> de reserva, indicado a ese departamento
+                                para que se pueda arrojar la información correspondiente y seleccionar unas de las 2 opciones plasmadas como <strong><i>Habilitar</i></strong> la reserva o <strong><i>Deshabilitarla</i></strong>.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Habilitar/Inhabilitar Reserva</i></strong> y se presentará la siguiente ventana que requiere de información para realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/habilitar-deshabilitar reserva.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--buscar material-->
-                    <div class="col-md-12">
+                    <div id="buscarmaterial" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar material</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal permitiendo al usuario hacer búsqueda de los materiales que pertenecen a esa reserva y asignarlo, clic en el botón y se visualizar otra ventana donde requiere de criterios de búsquedas en este caso ingresamos
-                                el criterio ( % ) que muestra todos los materiales registrados en SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/buscar material habi.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta funcionalidad se encuentra ubicada en la barra vertical superior lado derecho, se debe dar clic en la función <strong><i>Buscar</i></strong> para que realice la búsqueda de todos los materiales registrados en el sistema
+                                para asignar al campo <strong><i>Material</i></strong>.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CABLE</strong>) Los que terminan.</li>
+                                    <li>(<strong>CABLE%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar material habi.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -350,15 +358,19 @@
                     <!--buscar pep-->
                     <div id="buscarpep" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Buscar pep</h3>
+                            <h3 class="tile-title">Buscar PEP</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal, dar clic en el botón y hacer una búsqueda seleccionando uno de los pep registrados en el sistema y escoger el que se necesita para realizar la consulta que sea perteneciente de la reserva ingresada y la información
-                                arrojada sea la correspondiente. Utilizando el criterio de búsqueda ( % ) para que muestre todos los pep registrados en el sistema y seleccionar con el que se necesita para el proceso de consulta.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/buscar pep habi.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal, se debe dar clic en el la opción PEP y hacer una búsqueda seleccionando uno de los pep registrados en el sistema y escoger el que se necesita para realizar la consulta que sea perteneciente
+                                de la reserva ingresada y la información arrojada sea la correspondiente.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%23</strong>) Los que terminan.</li>
+                                    <li>(<strong>23%</strong>) Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar pep habi.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,15 +379,13 @@
                     <!--consultar reserva-->
                     <div id="consultarreserva" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                            <h3 class="tile-title">Consultar Reserva</h3>
+                            <h3 class="tile-title">Consultar reserva</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal, permite al usuario cuando ya tiene la información seleccionada e ingresada también seleccionar el tipo si habilitada o deshabilitada posteriormente dar clic en el botón consultar para tener información de los
-                                materiales que pertenecen a la reserva registrada en SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/consultar reserva.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta función se encuentra ubicada en la barra horizontal, permite al usuario cuando ya tiene la información seleccionada e ingresada también seleccionar el Tipo si <strong><i>Habilitada</i></strong> o <strong><i>Deshabilitada</i></strong>.
+                                <br><br>Posteriormente se debe dar clic en la función <strong><i>Consultar</i></strong> para tener información de los materiales que pertenecen a la reserva registrada en SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/consultar reserva.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -386,12 +396,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal, dar clic sobre el botón y salir del módulo habilitar/deshabilitar reservas.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/salir habilitar.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir habilitar.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en el icono <strong><i>Sí</i></strong> y ha finalizado el proceso de Habilitar/Inhabilitar Reserva.
                             </div>
                         </div>
                         <hr>
@@ -400,8 +409,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/9qiULvlOurU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                         </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/9qiULvlOurU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 
@@ -412,8 +420,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_actualizar_peticion_serial.html#26" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_cambio_ubicacion_serial.html#37" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_actualizar_peticion_serial.html#26" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_cambio_ubicacion_serial.html#37" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -421,7 +429,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
