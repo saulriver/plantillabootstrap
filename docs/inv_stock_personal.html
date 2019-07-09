@@ -320,7 +320,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Stock personal</h3>
                             <div class="bs-component">
                                 Este módulo permite consultar existencia actual de material en la <strong><i>Bodega</i></strong> o poder del técnico, es decir cantidad de materiales que dispone la persona en un determinado momento para el cumplimiento
@@ -335,13 +335,25 @@
 
                     <!--buscar personal-->
                     <div id="buscarpersonal" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Buscar personal</h3>
                             <div class="bs-component">
-
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado izquierdo, se debe dar clic en la función <strong><i>Buscar personal</i></strong> para que realice la búsqueda de todo el personal registrado
+                                en el sistema para asignar al campo <strong><i>Personal</i></strong>.
+                                <br><br><strong>Comodines de búsquedas:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ADRIAN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ADRIAN%</strong>) Los que comiencen.</li>
+                                </ul>
                                 <div class="w3-container w3-center">
                                     <span><img src="imagenes/buscar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
+                                El usuario debe ubicarse en la celda <strong><i>Cédula</i></strong> y dar clic en la tecla automáticamente se traslada en el campo cédula, arroja la información de la persona y se activan los demás botones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar stock personal2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Se escoge el <strong><i>Centro, Bodega y Prov</i></strong> ya cuando se tenga listo toda la información solicitada se le da clic al botón consultar.
                             </div>
                         </div>
                     </div>
@@ -349,15 +361,14 @@
 
                     <!--consultar-->
                     <div id="consultar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Consultar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra vertical superior lado izquierdo, dar clic al botón consultar y arroja toda la información esperada de las persona registrada en el sistema que se desea consultar cuanto tiene esa persona.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/consultar stock personal.png " style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, se debe dar clic en la opción <strong><i>Consultar</i></strong> y arrojará toda la información esperada de la persona registrada en el sistema.
+                                Que se desea consultar cuanto tiene el stock.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/consultar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -365,18 +376,14 @@
 
                     <!--exportar -->
                     <div id="exportar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Exportar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicada en la barra horizontal superior, dar clic en el botón y exporta todo el registro a Microsoft Excel.
-                                <div class="btn btn-trans">
-                                    <span><img src="imagenes/exportar stock per.png" class="w3-animate-zoom rounded"></span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Exportar</i></strong> y exporta todo el registro a Microsoft Excel.
+                                <button class="btn btn-trans"><span><img src="imagenes/exportar stock per.png" class="w3-animate-zoom rounded"></span></button>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/exportar stock personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/exportar stock personal.png " style="width:90%;" class="w3-animate-zoom rounded">
-                                  </span>
                             </div>
                         </div>
                     </div>
@@ -384,15 +391,13 @@
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Existen 2 opciones para salir del módulo, la primera se encuentra ubicada en la barra horizontal superior y la segunda en la barra vertical superior lado derecho una de estas dos el usuario púede dar clic sobre el botón para salir del módulo stock personal.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/salir stock personal.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir stock personal.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -412,8 +417,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_stock_material.html#88" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_existencia_almacen.html#61" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_stock_material.html#88" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_existencia_almacen.html#61" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -421,7 +426,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>

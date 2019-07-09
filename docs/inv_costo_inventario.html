@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="generar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -290,11 +290,11 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#generar" onclick="myFunction()">
-                    Generar</a></li>&nbsp;
+                        Generar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                    Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                  Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -306,7 +306,7 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Reportes</li>
-                        <li class="breadcrumb-item"><a href="inv_costo_entradas.html">Costo Entradas</a></li>
+                        <li class="breadcrumb-item"><a href="inv_costo_entradas.html">Costo entradas</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -317,26 +317,27 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Costo inventario</h3>
                             <div class="bs-component">
-                                Este módulo permite generar reporte del análisis de costo inventarios EECC, costo de inventario relacionado con el almacenamiento y mantenimiento del inventario durante un determinado periodo. El usuario debe saber seleccionar la información que se está
-                                solicitando para que se pueda generar el reporte como lo desea.
+                                Este módulo permite generar reporte del análisis de costo inventarios EECC, el usuario debe saber seleccionar la información que se está solicitando para que se pueda generar el reporte como lo desea.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Costo inventario</i></strong> y se visualizará una ventana que requiere de información para realizar el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/costo inventario.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--generar-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                    <div id="generar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, escoger el departamento, bodega, fecha inicial y fecha final luego hacemos clic en el botón Generar.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/generar costo.png " style="width:100%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta función se encuentra ubicada en la barra horizontal inferior, se debe escoger el Departamento, Bodega, Fecha inicial y Fecha final luego dar clic en el botón <strong><i>Generar</i></strong> y se genere el archivo <strong><i>Excel</i></strong>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/generar costo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,15 +345,13 @@
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, dar clic en el botón y salir del módulo costo inventario.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/salir costo.png " style="width:50%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir costo.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -364,13 +363,14 @@
                     </div>
 
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_existencia_por_periodo.html#62" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_costo_entradas.html#48" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_existencia_por_periodo.html#62" class=" navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_costo_entradas.html#48" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -378,7 +378,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>

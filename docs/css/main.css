@@ -16483,12 +16483,11 @@ i .fa-spin {
     font-weight: bolder;
     font-style: italic;
     font-family: 'Montserrat';
-    background-color: #f2f2f2;
     border-radius: 4px;
-    border-left: 6px solid gray;
-    background-color: #e9ecef;
+    border-left: 6px solid rgb(27, 65, 124);
+    background-color: #eff0f152;
     margin-block: 12px;
-    border-right: 22px solid #e9ecef;
+    border-right: 22px solid #eff0f152;
 }
 
 
