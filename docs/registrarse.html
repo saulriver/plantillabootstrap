@@ -289,10 +289,10 @@
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#login" onclick="myFunction()">
                             Login</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#crecor" onclick="myFunction()">
-                            Ingreso credenciales correctas</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#creinco" onclick="myFunction()">
                             Ingreso credenciales incorrectas</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#crecor" onclick="myFunction()">
+                            Ingreso credenciales correctas</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#inicio" onclick="myFunction()">
                             Inicio sesión</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -329,8 +329,8 @@
                         <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 30px">
                             <h3 class="tile-title">Login</h3>
                             <div class="bs-component">
-                                Para poder ingresar al sistema de información SISCOS se requiere que el usuario se identifique con su nombre de usuario y la clave correspondiente, al ingresar el usuario y la contraseña le damos clic en aceptar para poder ingresar al sistema y si queremos
-                                cancelar el proceso se escoge la opción cancelar.
+                                Para poder ingresar al sistema de información SISCOS se requiere que el usuario se identifique con su nombre de usuario y la clave correspondiente, al ingresar el usuario la contraseña le damos clic en <strong><i>Aceptar</i></strong> para poder ingresar al sistema y si queremos
+                                cancelar el proceso se escoge la opción <strong><i>Cancelar</i></strong>.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
@@ -342,15 +342,15 @@
                     <!--fin login-->
 
                     <!--Credenciales correctas-->
-                    <div id="crecor" class="col-md-12">
+                    <div id="creinco" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Ingreso credenciales correctas</h3>
+                            <h3 class="tile-title">Ingreso credenciales incorrectas</h3>
                             <div class="bs-component">
-                                El usuario debe ingresar  las credenciales asignadas damos clic en aceptar validará la información y permitirá el ingreso al sistema.
+                                Si al ingresar las credenciales no estén asignadas ya sea un usuario que no existe o una contraseña, nos mostrará un mensaje de información de usuario o clave errada.  
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
-                              <img src="imagenes/credenciales.png" style="width:40%;" class="w3-animate-zoom rounded">
+                              <img src="imagenes/credenciales incorrecta.png" style="width:40%;" class="w3-animate-zoom rounded">
                             </span>
                             </div>
                         </div>
@@ -358,17 +358,21 @@
                     <!--fin credenciales correctas-->
 
                     <!--credenciales incorrectas-->
-                    <div id="creinco" class="col-md-12">
+                    <div id="crecor" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Ingreso credenciales incorrectas</h3>
+                            <h3 class="tile-title">Ingreso credenciales correctas</h3>
                             <div class="bs-component">
-                                Si al ingresar las credenciales no estén asignadas ya sea un usuario que no existe o una contraseña, nos mostrará un mensaje de información de usuario o clave errada.
+                                
+                                El usuario debe ingresar  las credenciales asignadas se debe dar clic en <strong><i>Aceptar</i></strong> validará la información y permitirá el ingreso al sistema.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
-                                <img src="imagenes/credenciales incorrecta.png" style="width:40%;" class="w3-animate-zoom rounded">
+                                <img src="imagenes/credenciales.png" style="width:40%;" class="w3-animate-zoom rounded">
                                 </span>
-                            </div>
+                            </div>  
+                            <div class="bs-component">
+                                Posteriormente a la autenticación exitosa, el sistema automáticamente dirige al usuario a la pantalla inicial del sistema de información SISCOS.   
+                              
                         </div>
                     </div>
                     <!--fin credenciales incorrectas-->

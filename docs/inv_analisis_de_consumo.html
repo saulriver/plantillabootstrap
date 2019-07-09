@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="generar" class="container-fluid">
+    <div id="informematerial" class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -289,15 +289,14 @@
                     <li class="breadcrumb-item active">
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item active" href="#generar" onclick="myFunction()">
-                    Generar</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#informematerial" onclick="myFunction()">
+                    <li class="treeview"><a class="nav-link app-menu__item active" href="#informematerial" onclick="myFunction()">
                     Informe material</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#informepersonal" onclick="myFunction()">
                     Informe personal</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                     Salir</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" hef="#video" onclick="myFunction()">
+                   
+                    <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
                   Ver video</a></li>
                 </ul>
             </div>
@@ -324,44 +323,57 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Análisis de consumo</h3>
                             <div class="bs-component">
-                                Este módulo permite generar 2 informes uno para material y otro para personal, el análisis consiste de las necesidades de consumos y comportamiento de la organización.
+                                Este módulo permite generar 2 informes uno para <strong><i>Material</i></strong> y otro para <strong><i>Personal,</i></strong> el análisis consiste de las necesidades de consumos y comportamiento de la organización.
                                 <ul>
                                     <li>Informe análisis de consumo material.</li>
                                     <li>Informe análisis de consumo personal.</li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-
-                    <!--generar-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, Hacemos clic en el botón Generar y se genera el informe en Excel con todos los materiales registrados en el sistema.
-                            </div>
+                                El usuario debe dar clic en el módulo, se presentará una ventana que requiere de información para escoger Departamento, Bodega, Suministro y Propiedad etc. 
+                            </div> 
                             <div class="w3-container w3-center">
                                 <span>
-                              <img src="imagenes/generar analisis.png " style="width:60%;" class="w3-animate-zoom rounded">
+                              <img src="imagenes/analisis consumo 1.png " style="width:60%;" class="w3-animate-zoom rounded">
                               </span>
-                            </div>
+                            </div> 
                         </div>
                     </div>
-                    <!--fin generar-->
 
                     <!--informe material -->
-                    <div id="informematerial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Informe material</h3>
                             <div class="bs-component">
-                                Visualizamos que existen 2 columnas una material y la otra personal, se comienza por la que el usuario desee, en este caso por Material para que me genere el informe material. Seleccionamos el listado general en el cuadro, seguidamente hacemos una búsqueda
-                                con el criterio ( % ) para que me muestre todos los materiales registrados y seleccionar el que se necesita para este proceso de generar el informe. Cuando finaliza ya la búsqueda seleccionamos el código de material y automáticamente
-                                se traslada para el campo y arroja la demás información y escogemos la fecha inicial y final. Hacemos clic sobre el botón Generar que se encuentra ubicado en la barra vertical inferior lado derecho y se genera el informe
-                                en Excel con todos los materiales registrados en el sistema.
+                                Esta opción se encuentra ubicada en la barra horizontal inferior lado izquierdo, se visualizarán 2 columnas una Material y la otra Personal, se comienza por la que el usuario desee, en este caso por Material para que se genere el informe material.<br><br>
+                                <strong>Buscar material:</strong> se debe seleccionar  el listado general en el cuadro, dar clic en la función <strong><i>Buscar material</i></strong> para que realice la búsqueda de todos los materiales registrados en el sistema para asignar al campo Código material. <br><br>
+                                <strong>Comodines de búsquedas:</strong><br>
+                                <ul><li><strong>(%)</strong>Todos</li>
+                                    <li><strong>(%ADRIAN)</strong> Los que terminan</li>
+                                    <li><strong>(ADRIAN%)</strong>Los que comiencen</li> 
+
+                                </ul>
+                                <br>
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
-                        <img src="imagenes/analisis de consumo material.png " style="width:100%;" class="w3-animate-zoom rounded">
+                        <img src="imagenes/analisis de consumo material.png " style="width:50%;" class="w3-animate-zoom rounded">
+                        </span>
+                            </div>
+                            <div class="bs-component">
+                                Cuando se finaliza  la búsqueda se selecciona la celda <strong><i>Código</i></strong> del materia clic en la tecla <strong><i>Enter</i></strong> y automáticamente se traslada para el <strong><i>Campo Material</i></strong> arrojará la demás información y escogemos la fecha inicial y final.
+                            </div>  
+                            <div class="w3-container w3-center">
+                                <span>
+                        <img src="imagenes/analisis 1.png " style="width:60%;" class="w3-animate-zoom rounded">
+                        </span>
+                            </div>
+                            <div class="bs-component">
+                                <strong>Generar:</strong> esta opción se encuentra ubicada en la barra vertical inferior lado derecho, se debe dar clic en la opción <strong><i>Generar,</i></strong> se genere el reporte de consumo de los materiales que pertenecen al Departamento Y Bodega seleccionado.
+                            </div> 
+                            <div class="w3-container w3-center">
+                                <span>
+                        <img src="imagenes/analisis 2.png " style="width:50%;" class="w3-animate-zoom rounded">
                         </span>
                             </div>
                         </div>
@@ -373,14 +385,38 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Informe Personal</h3>
                             <div class="bs-component">
-                                Cumple con la misma temática de material, solo que acá se busca es la persona se selecciona y automáticamente se traslada al campo y arroja la demás información. Visualizamos como se arroja la información al seleccionar la persona luego se selecciona
-                                la fecha inicial y final. Seguidamente hacemos clic sobre el botón Generar y se genera el informe consumo personal en Excel.
+                                Esta opción se encuentra ubicada en la barra horizontal inferior lado izquierdo, se visualizarán 2 columnas una Material y la otra Personal, se comienza por la que el usuario desee, en este caso <strong><i>Personal</i></strong> para que se genere el informe Personal.<br><br>
+                                <strong><i>Buscar personal:</i></strong> se debe seleccionar  el listado general en el cuadro, dar clic en la función <strong><i>Buscar personal</i></strong> para que realice la búsqueda de todas las personas registradas en el sistema para asignar al campo <strong><i>Código personal.</i></strong> <br>
+                                <strong>Comodines de búsquedas:</strong><br>
+                                <ul><li><strong>(%)</strong>Todos</li>
+                                    <li><strong>(%ADRIAN)</strong> Los que terminan</li>
+                                    <li><strong>(ADRIAN%) </strong>Los que comiencen</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bs-component">
+                            Cumple con la misma temática de material, solo que acá se busca es la persona se selecciona y automáticamente se traslada al campo y arrojará la demás información.
+                        </div> 
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/analisis 3.png " style="width:50%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                            <div class="bs-component">
+                                Cundo se finaliza  la búsqueda se selecciona la celda <strong><i>Cédula</i></strong> de la persona clic en la tecla <strong><i>Enter</i></strong> y automáticamente se traslada para el <strong><i>Código personal</i></strong> arrojará la demás información y escogemos la fecha inicial y final.
+                            </div> 
+                            <div class="w3-container w3-center">
+                                <span>
+                                <img src="imagenes/analisis 4.png " style="width:60%;" class="w3-animate-zoom rounded">
+                                </span>
+                            </div>
+                            <div class="bs-component">
+                                <strong>Generar:</strong> esta opción se encuentra ubicada en la barra vertical inferior lado derecho, se debe dar clic en la opción <strong><i>Generar</i></strong>, se genera el informe consumo personal en Excel.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
-                                <img src="imagenes/informe personal.png " style="width:105%;" class="w3-animate-zoom rounded">
+                                <img src="imagenes/analisis 5.png " style="width:60%;" class="w3-animate-zoom rounded">
                                 </span>
-                            </div>
                         </div>
                     </div>
                     <!--fin informe personal-->
@@ -390,11 +426,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Se encuentra ubicado en la barra horizontal inferior, permite dar clic en el botón y salir del módulo análisis de consumo.
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
                             </div>
                             <div class="w3-container w3-center">
                                 <span>
-                              <img src="imagenes/salir anali.png " style="width:60%;" class="w3-animate-zoom rounded">
+                              <img src="imagenes/analisis 6.png " style="width:60%;" class="w3-animate-zoom rounded">
                               </span>
                             </div>
                         </div>
