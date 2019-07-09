@@ -280,7 +280,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="cargarods" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -290,13 +290,13 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#cargarods" onclick="myFunction()">
-                    Cargar ODS</a></li>&nbsp;
+                        Cargar ODS</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#atenderods" onclick="myFunction()">
-                    Atender ODS</a></li>&nbsp;
+                        Atender ODS</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                    Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                  Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -308,7 +308,7 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-clipboard fa-fw"></i>ODS</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>ODS VPI</li>
-                        <li class="breadcrumb-item"><a href="ods_actualizar_carga_ods.html">Actualizar Carga ODS</a></li>
+                        <li class="breadcrumb-item"><a href="ods_actualizar_carga_ods.html">Actualizar carga ODS</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
@@ -319,102 +319,80 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Atender ODS manual</h3>
                             <div class="bs-component">
-                                Este módulo permite al usuario cargar <strong>Órdenes de Servicio Manual,</strong> estas órdenes que son registradas son las que aparecen en el módulo Atender ODS para su configuración.
-                                Siendo por el lado del usuario es importante que una O/S tenga la información básica para entender a quién va a ejecutarla. Como algunas de esas informaciones solicitadas u obligatorias en este módulo siempre se repetirán a lo largo de las órdenes de servicio.<br><br>
-                                El usuario al dar clic en el módulo se le presentará una ventana donde requiere de información para hacer el registro de ODS manual. Es importante tener todos estos campos  con la información correcta ya que a la hora de comenzar hacer órdenes de servicio esa información es necesaria para generar reportes.
+                                Este módulo permite al usuario cargar <strong>Órdenes de Servicio Manual,</strong> estas órdenes que son registradas son las que aparecen en el módulo Atender ODS para su configuración. Siendo por el lado del usuario es
+                                importante que una O/S tenga la información básica para entender a quién va a ejecutarla. Como algunas de esas informaciones solicitadas u obligatorias en este módulo siempre se repetirán a lo largo de las órdenes de servicio.<br><br>                                El usuario al dar clic en el módulo se le presentará una ventana donde requiere de información para hacer el registro de ODS manual. Es importante tener todos estos campos con la información correcta ya que a la hora de
+                                comenzar hacer órdenes de servicio esa información es necesaria para generar reportes.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/manual1.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Este módulo visualizado requiere de mucha información para realizar la carga satisfactoriamente una de ellas la información del cliente es muy importante, las peticiones que puede ser asignada por el usuario o se puede seleccionar en el cuadro que se
+                                encuentra ubicado en la barra vertical superior lado derecho que es para generar las peticiones automáticamente.<br> En el campo <strong>ID SISCOS</strong> este aparece inhabilitado ya que
+                                el mismo sistema genera este código.<br>
+                                <strong>Tipo de vivienda:</strong> aparece inhabilitado debido a que se selecciona el tipo de vivienda es en la configuración es decir en el módulo Atender ODS.<br> En la parte de abajo se ingresa la información solo de
+                                la <strong><i>familia  PC</i></strong> los demás botones se encuentra inhabilitados.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/manual2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Para la carga de órdenes de servicio antes de dar clic al botón el usuario debe tener en cuenta, que en la parte de abajo donde se requiere de información obligatoria para poder hacer el registro unos de los campos más importantes es el del PS, porque
+                                si no mostrará mensaje de información que al menos cree 1 PS para realizar la carga exitosamente. Previamente seleccionando en el campo de la parte de arriba <strong>familia PC TV</strong>.
+                                <br> Cada tipo de <strong><i> familia PC</i></strong> tiene su configuración distinta y campos obligatorios para la carga de las órdenes de servicio.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/manual1.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>  
-                            <div class="bs-component">
-                                Este módulo visualizado requiere de mucha información para realizar la carga satisfactoriamente una de ellas  la información del cliente es muy importante, las peticiones que puede ser asignada por el usuario o se puede seleccionar en el cuadro que se encuentra ubicado en la barra vertical superior lado derecho que es para generar  las peticiones automáticamente.<br>
-                                En el campo <strong>ID SISCOS</strong> este aparece inhabilitado ya que el mismo sistema genera este código.<br>
-                                <strong>Tipo de vivienda:</strong> aparece inhabilitado debido a que se selecciona el tipo de vivienda es en la configuración es decir en el módulo Atender ODS.<br>
-                                En la parte de abajo se ingresa la información solo de la <strong><i>familia  PC</i></strong>  los demás botones se encuentra inhabilitados.
-
-                            </div>  
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/manual2.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>  
-                            <div class="bs-component">
-                                <div class="bs-component">
-                                    Para la carga de órdenes de servicio antes de dar clic al botón el usuario debe tener en cuenta, que en la parte de abajo donde se requiere de información obligatoria para poder hacer el registro unos de los campos más importantes es el del PS, porque si no mostrará mensaje de información que al menos cree 1 PS para realizar la carga exitosamente. Previamente seleccionando en el campo de la parte de arriba <strong>familia PC TV</strong>. <br>
-                                    Cada tipo de <strong><i> familia PC</i></strong>  tiene su configuración distinta y campos obligatorios para la carga de las órdenes de servicio.
-                                </div>  
-
-                            </div>    
                         </div>
                     </div>
 
                     <!--CARGAR ODS-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                    <div id="cargarods" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Cargar ODS</h3>
                             <div class="bs-component">
-                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, dar clic en la opción <strong><i>Cargar ODS</i></strong> cuando ya se tiene toda la información necesaria para el registro de las órdenes de servicio y se guarde correctamente.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/manual4.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>
-                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, dar clic en la opción <strong><i>Cargar ODS</i></strong> cuando ya se tiene toda la información necesaria para el registro de las órdenes de
+                                servicio y se guarde correctamente.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/manual4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 El sistema mostrará mensaje de información ODS Atendida Cargada correctamente, se debe dar clic en el icono <strong><i>Aceptar</i></strong> para efectuar el registro.
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <!--CARGAR ODS-->
 
                     <!--atender ods-->
                     <div id="atenderods" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Atender ODS</h3>
                             <div class="bs-component">
-                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, se encuentra habilitado cuando ya se ha cargado una orden de servicio de lo contrario estará inhabilitado, permite poder configurar la orden de servicio que ya ha sido registrada o cargada al sistema en esta configuración como ya se había dicho anteriormente el campo obligatorio es el <strong><i>Tipo de vivienda</i></strong> que debe seleccionar antes de dar clic en la opción <strong><i>Atender ODS</i></strong>.<br><br>
-                                Cambiar la <strong><i>fecha de ejecución</i></strong> que debe ser mayor a la fecha del registro porque si no mostrará mensaje de información que verifique la fecha, el usuario se traslada al campo de fecha ejecución ingresa una fecha posterior a la del registro cuando se desea ejecutar esa orden de servicio.<br><br>
-                                
-                                 Cuando la carga de orden de servicio es de <strong>Familia PC TV </strong>requiere de campos obligatorios que a un no se hayan ingresado al momento de su carga para poder hacer el registro de atender esta orden.
-
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, se encuentra habilitado cuando ya se ha cargado una orden de servicio de lo contrario estará inhabilitado, permite poder configurar la orden de servicio que ya ha sido registrada
+                                o cargada al sistema en esta configuración como ya se había dicho anteriormente el campo obligatorio es el <strong><i>Tipo de vivienda</i></strong> que debe seleccionar antes de dar clic
+                                en la opción <strong><i>Atender ODS</i></strong>.<br><br> Cambiar la <strong><i>fecha de ejecución</i></strong> que debe ser mayor a la fecha del registro porque si no mostrará mensaje de información que verifique la fecha,
+                                el usuario se traslada al campo de fecha ejecución ingresa una fecha posterior a la del registro cuando se desea ejecutar esa orden de servicio.<br><br> Cuando la carga de orden de servicio es de <strong>Familia PC TV </strong>requiere
+                                de campos obligatorios que a un no se hayan ingresado al momento de su carga para poder hacer el registro de atender esta orden.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/manual5.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                En el campo <strong>Atender TV</strong> si es instalada o de quiebre el usuario debe ingresar la información solicitada correctamente. <br><br>
+                                <strong> Nota:</strong> el usuario debe tener en cuenta que esta funcionalidad es lo mismo que en el módulo Atender ODS que se debe configurar todos los campos necesarios de la parte de abajo como mano de obra, actividades,
+                                materiales etc.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/manual6.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Cuando ya se tienen los campos configurados los necesarios para Atender la ODS se da clic en la opción y la ODS es atendida satisfactoriamente en el sistema, se debe dar clic en el icono <strong><i>Aceptar</i></strong>                                para efectuar el proceso.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/manual5.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>
-                            <div class="bs-component">
-                                En el campo <strong>Atender TV</strong> si es instalada o de quiebre el usuario debe ingresar la información solicitada correctamente.  <br><br>
-                               <strong> Nota:</strong> el usuario debe tener en cuenta que esta funcionalidad es lo mismo que en el módulo Atender ODS que se debe configurar todos los campos necesarios de la parte de abajo como mano de obra, actividades, materiales etc. 
-                            </div>  
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/manual6.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>
-                            <div class="bs-component">
-                                Cuando ya se tienen los campos configurados los necesarios para Atender la ODS se da clic en la opción y la ODS es atendida satisfactoriamente en el sistema, se debe dar clic en el icono <strong><i>Aceptar</i></strong> para efectuar el proceso.
-                            </div>  
                         </div>
                     </div>
                     <!--fin atender ods-->
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
                                 Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong>se debe dar clic en una de las opciones.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/salir atender manual.png " style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir atender manual.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -434,8 +412,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="ods_atender_ods.html#98" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="ods_actualizar_carga_ods.html#95" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="ods_atender_ods.html#98" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="ods_actualizar_carga_ods.html#95" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -443,7 +421,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>

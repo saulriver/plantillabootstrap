@@ -259,6 +259,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -297,6 +310,7 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
@@ -304,8 +318,9 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Inventario</li>
-                        <li class="breadcrumb-item"><a href="confi_configuracion_departamentos.html">Configuración departamentos</a></li>
+                        <li class="breadcrumb-item"><a href="confi_configuracion_departamentos.html#6">Configuración departamentos</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -315,73 +330,69 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Configuración bodegas</h3>
                             <div class="bs-component">
                                 Este módulo permite al usuario a partir que se crea una bodega se recomienda como va a ir configurados los consecutivos, aquí se selecciona si se valida el Stock personal pedidos, si se valida el Stock personal entregas. No pasa nada con el Stock máximo
                                 porque ya lo tiene asignado en la configuración departamento.
-                                <div class="bs-component">
-                                    <div class="nota">
-                                        Nota: No se recomienda entrar a este módulo y hacer modificaciones si se están haciendo transacciones en esa bodega, porque pueden estar cambiando los consecutivos y nos generaría resultados diferentes a los esperados o analizados.
-                                    </div>
+                                <div class="nota">
+                                    Nota: No se recomienda entrar a este módulo y hacer modificaciones si se están haciendo transacciones en esa bodega, porque pueden estar cambiando los consecutivos y nos generaría resultados diferentes a los esperados o analizados.
                                 </div>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/configuracionbodegas.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/configuracionbodegas.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--aplicar confi bodegas-->
                     <div id="aplicar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Aplicar cambios</h3>
                             <div class="bs-component">
                                 Esta funcionalidad se encuentra ubicado en la barra horizontal inferior lado derecho, se debe dar clic en la función <strong><i>Aplicar cambios</i></strong> para guardar los registros hechos en el módulo para garantizar
                                 su configuración.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/aplicar confi bodegas.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
-                            </div>
-                            <div class="bs-component">
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/aplicar confi bodegas.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 Seguidamente se debe dar clic en el icono <strong><i>Sí</i></strong>, para que el sistema SISCOS realice los cambios correctamente.
                                 <br>El usuario debe dar clic en el icono <strong><i>Aceptar</i></strong> y cambios realizados correctamente.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/aplicar confi bodegas2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/aplicar confi bodegas2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                     <!--fin aplicar confi bodegas-->
+
                     <!--salir mercancia-->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
                                 Para salir del módulo es a través de cerrar ventana que se encuentra ubicado en la barra vertical superior lado derecho, dar clic.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/salir confi bodega.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir confi bodega.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
                     </div>
-
                     <!--fin salir marcas-->
+
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="874" height="426" src="https://www.youtube.com/embed/FTts34AYarc" frameborder="0" allow="accelerometer; autoplay; 
-                              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" width="874" height="426" src="https://www.youtube.com/embed/FTts34AYarc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="confi_alerta_stock.html#2" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-    <a href="confi_configuracion_departamentos.html#6" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    <a href="confi_alerta_stock.html#2" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_configuracion_departamentos.html#6" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -389,7 +400,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
