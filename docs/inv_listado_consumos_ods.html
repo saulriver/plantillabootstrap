@@ -260,6 +260,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -280,7 +293,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="generar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -306,8 +319,9 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Reportes</li>
-                        <li class="breadcrumb-item"><a href="inv_stock_cables.html">Stock Cables</a></li>
+                        <li class="breadcrumb-item"><a href="inv_stock_cables.html#87">Stock cables</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -317,50 +331,45 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Listado consumos ODS</h3>
                             <div class="bs-component">
-                                Este módulo permite seleccionar el Departamento y Bodega que se quiere generar el informe de listado de consumo material órdenes de servicio.<br>
-                                El usuario debe escoger el Suministro necesario para el Tipo de orden, el tipo de orden se puede clasificar una sola de las opciones solicitadas o todas las órdenes  de servicio que estén registradas  en el Departamento y Bodega seleccionada.
+                                Este módulo permite seleccionar el Departamento y Bodega que se quiere generar el informe de listado de consumo material órdenes de servicio.<br> El usuario debe escoger el Suministro necesario para el Tipo de orden, el
+                                tipo de orden se puede clasificar una sola de las opciones solicitadas o todas las órdenes de servicio que estén registradas en el Departamento y Bodega seleccionada.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/consumo 1.png " style="width:60%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/consumo 1.png " style="width:60%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
 
                     <!--generar-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                    <div id="generar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Generar</h3>
                             <div class="bs-component">
-                                Esta opción se encuentra ubicada en la barra horizontal inferior, se debe dar clic en la opción <strong><i>Generar</i></strong> y se genera el informe de los resultados esperados de las órdenes de servicios de la bodega Cali.
+                                Esta opción se encuentra ubicada en la barra horizontal inferior, se debe dar clic en la opción <strong><i>Generar</i></strong> y se genera el informe de los resultados esperados de las órdenes de servicios de la bodega
+                                Cali.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/ordenes de servicio.png " style="width:100%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/ordenes de servicio.png " style="width:100%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
                                 El usuario visualizará el listado de todas las órdenes de servicios que pertenecen a esta Bodega y que se encuentran registradas en el sistema.
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <!--fin generar-->
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.  
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/salir ordenes.png " style="width:50%;" class="w3-animate-zoom rounded">
-                                </span>
+                                <span><img src="imagenes/salir ordenes.png " style="width:50%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
@@ -372,13 +381,14 @@
                     </div>
 
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_analisis_de_consumo.html#28" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_stock_cables.html#87" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_analisis_de_consumo.html#28" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left "></i></a>
+    <a href="inv_stock_cables.html#87" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

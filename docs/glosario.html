@@ -58,7 +58,7 @@
 
         <ul class="app-menu">
             <!--menu glosario-->
-            <li id="24"><a class="app-menu__item active" href="glosario.html#24"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
+            <li><a class="app-menu__item active" href="glosario.html#24"><i class="app-menu__icon fa fa-file-text fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Glosario</span></a></li>
             <!--menu registrarse-->
             <li><a class="app-menu__item" href="registrarse.html#111"><i class="app-menu__icon fa fa-user fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Registrarse</span></a></li>
             <!--menu opciones-->
@@ -260,6 +260,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -322,11 +335,10 @@
 
                     <!--comienzo-->
                     <div id="confi" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Lo que se debe tener en cuenta antes de configurar SISCOS</h3>
-                            <!--mensaje-->
                             <div class="bs-component">
-                                Donde se encuentran ubicadas mis bodegas: es decir en que departamentos la voy a ubicar y cuantas bodegas necesito administrar y controlar.</p>
+                                <br><strong>Donde se encuentran ubicadas mis bodegas:</strong> es decir en que departamentos la voy a ubicar y cuantas bodegas necesito administrar y controlar.
                             </div>
                         </div>
                     </div>
@@ -334,7 +346,7 @@
 
                     <!--comienzo-->
                     <div id="insta" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Pasos para la instalación del sistema de información SISCOS</h3>
                             <div class="bs-component">
                                 <ul>
@@ -343,26 +355,25 @@
                                     <li>Enviar acceso directo del archivo siscos.exe al escritorio.</li>
                                     <li>Ingresar usuario y contraseña asignada por el administrador.</li>
                                 </ul>
+                                <br><br><br>
+                                <!--video-->
+                                <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                                    <iframe class="embed-responsive-item" width="1349" height="480" src="https://www.youtube.com/embed/Nqjv8sKzvRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <!--fin video-->
                             </div>
-                            <br><br><br>
-                            <!--video-->
-                            <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                                <iframe class="embed-responsive-item" width="1349" height="480" src="https://www.youtube.com/embed/Nqjv8sKzvRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <!--fin video-->
                         </div>
                     </div>
                     <!--fin-->
 
                     <!--comienzo-->
                     <div id="conten" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Contenido De Siscos</h3>
                             <div class="bs-component">
-                                <p class="text">
-                                    El contenido es todo lo que se tiene que configurar inicialmente para que SISCOS comience arrancar para generar las transacciones solicitadas, porque si no se hacen estas configuraciones seguro no se podrán generar las transacciones.
-                                </p>
+                                El contenido es todo lo que se tiene que configurar inicialmente para que SISCOS comience arrancar para generar las transacciones solicitadas, porque si no se hacen estas configuraciones seguro no se podrán generar las transacciones.
                             </div>
+                            <br>
                             <p class="text"><strong>Configuraciones:</strong></p>
                             <div class="bs-component">
                                 <ul>
@@ -370,7 +381,7 @@
                                     <li>Tipos de Material.</li>
                                     <li>Estados de Material.</li>
                                     <li>Marcas y Modelos.</li>
-                                    <li>Materiales ( Productos, Mercancías, Herramientas ).</li>
+                                    <li>Materiales (Productos, Mercancías, Herramientas).</li>
                                     <li>Centros de Costos.</li>
                                     <li>Bodegas.</li>
                                     <li>Parámetros de Departamentos.</li>
@@ -381,7 +392,7 @@
                                     <li>Personal.</li>
                                 </ul>
                             </div>
-
+                            <br>
                             <p class="text"><strong>Entradas:</strong></p>
                             <div class="bs-component">
                                 <ul>
@@ -393,8 +404,7 @@
                                     <li>Anular Reintegro.</li>
                                 </ul>
                             </div>
-
-
+                            <br>
                             <p class="text"><strong>Salidas:</strong></p>
                             <div class="bs-component">
                                 <ul>
@@ -414,38 +424,30 @@
 
                     <!--comienzo-->
                     <div id="abrev" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Abreviaciones</h3>
                             <div class="bs-component">
-                                <p class="text"><strong>Bodega:</strong> es el espacio fisico en donde se ejecuta la transacción, almacenamiento y movimiento de materiales etc.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>Almacén:</strong> agrupación de bodegas reunión de esas bodegas.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>Stock:</strong> existencia actualmente de un material en la bodega o en poder del técnico, es decir cuánto tiene actualmente ese técnico o cuanto hay en bodega.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>CT:</strong> sigla para representar el suministro de materiales del cliente todo lo que compra el cliente va en marcado con CT, inventario en custodia.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>EECC:</strong> sigla para representar el suministro de materiales de la empresa contratista, el material que compra la empresa el material propio.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>PEP:</strong> presupuesto en el que se encuentra asignado un material.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>Área de Operación:</strong> análisis en el que se encuentra asignado un material por ejemplo: datos, fibra óptica, planta externa, masivos etc. Es como los clasifica el cliente.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>Consumo:</strong> material que ha gastado técnicos (cuadrillas, brigadas) van asociado a O/T Y O/S.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>Bodega terreno:</strong> ente virtual que mantienen el stock actual de un técnico, llevar el control de material del técnico que es lo que tiene entregado que no se ha gastado.</p>
-                            </div>
-                            <div class="bs-component">
-                                <p class="text"><strong>SISCOS:</strong> sistema de información (Software) para el control de inventarios y gestión de órdenes de servicios.<br> Es un software adaptable para la gestión de los inventarios para contratos de Movistar, los
-                                    módulos de inventarios aplican a Telecomunicaciones.</p>
+                                <br>
+                                <strong>Bodega:</strong> es el espacio fisico en donde se ejecuta la transacción, almacenamiento y movimiento de materiales etc.
+                                <br><br>
+                                <strong>Almacén:</strong> agrupación de bodegas reunión de esas bodegas.
+                                <br><br>
+                                <strong>Stock:</strong> existencia actualmente de un material en la bodega o en poder del técnico, es decir cuánto tiene actualmente ese técnico o cuanto hay en bodega.
+                                <br><br>
+                                <strong>CT:</strong> sigla para representar el suministro de materiales del cliente todo lo que compra el cliente va en marcado con CT, inventario en custodia.
+                                <br><br>
+                                <strong>EECC:</strong> sigla para representar el suministro de materiales de la empresa contratista, el material que compra la empresa el material propio.
+                                <br><br>
+                                <strong>PEP:</strong> presupuesto en el que se encuentra asignado un material.
+                                <br><br>
+                                <strong>Área de Operación:</strong> análisis en el que se encuentra asignado un material por ejemplo: datos, fibra óptica, planta externa, masivos etc. Es como los clasifica el cliente.
+                                <br><br>
+                                <strong>Consumo:</strong> material que ha gastado técnicos (cuadrillas, brigadas) van asociado a O/T Y O/S.
+                                <br><br>
+                                <strong>Bodega terreno:</strong> ente virtual que mantienen el stock actual de un técnico, llevar el control de material del técnico que es lo que tiene entregado que no se ha gastado.
+                                <br><br>
+                                <strong>SISCOS:</strong> sistema de información (Software) para el control de inventarios y gestión de órdenes de servicios.
+                                <br> Es un software adaptable para la gestión de los inventarios para contratos de Movistar, los módulos de inventarios aplican a Telecomunicaciones.
                             </div>
                         </div>
                         <hr>

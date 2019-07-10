@@ -259,8 +259,20 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
-            <!--fin menú ods-->
 
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menú ods-->
             &nbsp;
             <!--menu admom-->
             <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-unlock-alt  fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-chevron-down"></i></a>
@@ -289,15 +301,15 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#aplicar" onclick="myFunction()">
-                            Aplicar</a></li>&nbsp;
+                        Aplicar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
-                            Eliminar</a></li>&nbsp;
+                        Eliminar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#buscar" onclick="myFunction()">
-                            Buscar</a></li>&nbsp;
+                        Buscar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                            Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                            Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -309,8 +321,9 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Registro</li>
-                        <li class="breadcrumb-item"><a href="inv_unidades_medida.html">Unidades medida</a></li>
+                        <li class="breadcrumb-item"><a href="inv_unidades_medida.html#94">Unidades medida</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -326,24 +339,24 @@
                                 Este módulo permite al usuario clasificar cada vez que se haga una entrada a que centro de costo va, los centros de costos van clasificados de acuerdo al suministro ya sea CT o EECC.
                                 <br>Se debe dar clic en el módulo material y se visualizará ventana de campos solicitados u obligatorios. Seguidamente dar clic en el botón <strong><i>Nuevo</i></strong>, que se encuentra ubicado en la barra horizontal,
                                 para que se puedan habilitar los demás botones.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!--aplicar centros-->
                     <div id="aplicar" class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Aplicar</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra horizontal, dar clic en el botón y aplica un nuevo registro en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.Esta función se encuentra ubicada en la barra horizontal, dar
                                 clic en el botón y aplica un nuevo registro en el sistema SISCOS luego de haber ingresado la información solicitada u obligatoria.
-                                <br>Dar clic en el botón Sí, para confirmar y agregue el registro al sistema.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/apli centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <br>Dar clic en el botón <strong><i>Sí</i></strong>, para confirmar y agregue el registro al sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/apli centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -356,21 +369,17 @@
                             <div class="bs-component">
                                 Esta opción se encuentra ubicada en la barra horizontal lado izquierdo, para poder eliminar del listado de centros un registro, es que no esté asociado a otros registros en el sistema de lo contrario mostrará mensaje de error. El usuario debe ubicarse
                                 en el campo <strong><i>Buscar</i></strong>, seleccionando el parámetro de búsqueda e ingresando el comodín para realizar la consulta y se arroje la información correctamente.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/eliminar centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
-                            </div>
-                            <div class="bs-component">
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 Posteriormente se debe dar clic sobre el registro y se habilitan las demás funcionalidades, dar clic en la opción <strong><i>Eliminar</i></strong> el Sistema mostrará el siguiente mensaje al usuario, al cual dará clic en
                                 el icono Sí para efectuar la eliminación o No para cancelarla.
-                                <div class="bs-component">
-                                    <div class="nota">
-                                        Nota: en el sistema de información SISCOS no se debe eliminar un centro debido a que un centro va asociado a otros módulos.
-                                    </div>
+                                <div class="nota">
+                                    Nota: en el sistema de información SISCOS no se debe eliminar un centro debido a que un centro va asociado a otros módulos.
                                 </div>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/eliminar centros2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar centros2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -381,16 +390,17 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar</h3>
                             <div class="bs-component">
-                                Para realizar una consulta de todos los centros registrados en el sistema, el usuario deberá seleccionar el tipo de parámetro de búsqueda como: Código y Descripción. Ingresando en el campo <strong><i>Buscar</i></strong>                                el comodín que desea para realizar la consulta y le arroje la información correspondiente.
-                                <br>Comodines:
+                                Para realizar una consulta de todos los centros registrados en el sistema, el usuario deberá seleccionar el tipo de parámetro de búsqueda como: Código y Descripción. Ingresando en el campo
+                                <strong><i>Buscar</i></strong> el comodín que desea para realizar la consulta y le arroje la información correspondiente.
+                                <br><br><strong>Comodines:</strong>
                                 <ul>
-                                    <li>( <strong>%</strong> ) Todos.</li>
-                                    <li>( <strong>%ALMACEN</strong> ) Los que terminan.</li>
-                                    <li>( <strong>ALMACEN%</strong> ) Los que comiencen.</li>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%ALMACEN</strong>) Los que terminan.</li>
+                                    <li>(<strong>ALMACEN%</strong>) Los que comiencen.</li>
                                 </ul>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/buscar centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -401,11 +411,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Para salir del módulo existen 2 opciones, a través de cerrar ventana y la del botón salir se debe dar ccli en una de las opciones.
-                                <br>Finalmente dar clic en el botón Sí. Y se finaliza el proceso de Centros.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/salir centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>cerrar ventana</i></strong> y la del botón <strong><i>salir</i></strong> se debe dar clic en una de las opciones.
+                                <br>Finalmente dar clic en el botón <strong><i>Sí</i></strong>. Y se finaliza el proceso de Centros.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir centros.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -425,8 +435,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_bodegas.html#36" class=" navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_unidades_medida.html#94" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_bodegas.html#36" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="inv_unidades_medida.html#94" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -434,7 +444,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -260,8 +260,20 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
-            <!--fin menú ods-->
 
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menú ods-->
             &nbsp;
             <!--menu admom-->
             <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-unlock-alt  fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-chevron-down"></i></a>
@@ -280,7 +292,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="buscarpeticiones" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -290,13 +302,13 @@
                         <h2>Funcionalidades</h2>
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#buscarpeticiones" onclick="myFunction()">
-                  Buscar peticiones</a></li>&nbsp;
+                        Buscar peticiones</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#busquedaavanzada" onclick="myFunction()">
-                  Búsqueda Avanzada</a></li>&nbsp;
+                        Búsqueda Avanzada</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
-                  Salir</a></li>&nbsp;
+                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
-                Ver video</a></li>
+                        Ver video</a></li>
                 </ul>
             </div>
             <!--fin menu derecho-->
@@ -308,8 +320,9 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-clipboard fa-fw"></i>ODS</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>ODS VPI</li>
-                        <li class="breadcrumb-item"><a href="ods_listado_consumo_material.html">Listado Consumo Material</a></li>
+                        <li class="breadcrumb-item"><a href="ods_listado_consumo_material.html#100">Listado consumo material</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -319,10 +332,11 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Consultar ODS</h3>
                             <div class="bs-component">
-                                    Este módulo permite al usuario hacer consultas básicas del módulo Atender ODS, o el módulo Atender ODS  manual, lo que ha sido registrado previamente en estos módulos se pueden realizar en SISCOS consultas  a través de esta ventana donde solicita que ingrese los criterios de búsquedas códigos de:
+                                Este módulo permite al usuario hacer consultas básicas del módulo Atender ODS, o el módulo Atender ODS manual, lo que ha sido registrado previamente en estos módulos se pueden realizar en SISCOS consultas a través de esta ventana donde solicita que ingrese
+                                los criterios de búsquedas códigos de:
                                 <ul>
                                     <li>ID SISCOS.</li>
                                     <li>Pet ATIS.</li>
@@ -333,19 +347,17 @@
                     </div>
 
                     <!--Buscar peticiones-->
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;margin-top: 40px">
+                    <div id="buscarpeticiones" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Buscar peticiones</h3>
                             <div class="bs-component">
-                                    Esta funcionalidad se encuentra ubicada en la barra vertical superior lado derecho, para realizar la consulta se debe ingresar estos campos solicitados u obligatorios se debe dar clic en la función <strong><i> Buscar</i></strong> el primer botón de búsqueda al dar clic sobre el botón arrojará la información correspondiente a los datos ingresados. 
+                                Esta funcionalidad se encuentra ubicada en la barra vertical superior lado derecho, para realizar la consulta se debe ingresar estos campos solicitados u obligatorios se debe dar clic en la función <strong><i> Buscar</i></strong>                                el primer botón de búsqueda al dar clic sobre el botón arrojará la información correspondiente a los datos ingresados.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/buscar peticiones cons.png " style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <span><img src="imagenes/buscar peticiones cons.png " style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
-                                    Como se puede observar presenta toda la información de los datos ingresados para tener acceso a esta información es dar clic en las celdas  de la parte de arriba. En la parte de abajo como <strong>LB, BA, TV, PS, Mano de Obra, Materiales, Actividades, Otros, Hist Quiebre, Hist Agenda </strong> etc.  Todos los campos se encuentran inhabilitados ya que solo este módulo es para consultar.
+                                Como se puede observar presenta toda la información de los datos ingresados para tener acceso a esta información es dar clic en las celdas de la parte de arriba. En la parte de abajo como <strong>LB, BA, TV, PS, Mano de Obra, Materiales, Actividades, Otros, Hist Quiebre, Hist Agenda </strong>                                etc. Todos los campos se encuentran inhabilitados ya que solo este módulo es para consultar.
                             </div>
                         </div>
                     </div>
@@ -353,22 +365,19 @@
 
                     <!--busqueda avanzada-->
                     <div id="busquedaavanzada" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
-                            <h3 class="tile-title">Búsqueda Avanzada</h3>
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Búsqueda avanzada</h3>
                             <div class="bs-component">
-                                    Esta funcionalidad se encuentra ubicada en la barra vertical superior lado derecho, Si el usuario no se sabe los códigos para ingresar y realizar la consulta, se traslada al siguiente botón de búsqueda para realizar la consulta se debe dar clic en la opción <strong><i>Búsqueda avanzada,</i></strong> mostrará  todas las órdenes de servicios registradas en SISCOS. 
+                                Esta funcionalidad se encuentra ubicada en la barra vertical superior lado derecho, Si el usuario no se sabe los códigos para ingresar y realizar la consulta, se traslada al siguiente botón de búsqueda para realizar la consulta se debe dar clic en la
+                                opción <strong><i>Búsqueda avanzada,</i></strong> mostrará todas las órdenes de servicios registradas en SISCOS.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/busqueda avanzada cons.png " style="width:90%;" class="w3-animate-zoom rounded">
-                            </span>
+                                <span><img src="imagenes/busqueda avanzada cons.png" style="width:90%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
-                                    Asimismo al dar clic en la funcionalidad  se presentará otra ventana, el cual se debe dar clic en la opción <strong><i>Buscar</i></strong> para mostrar todas las ordenes registradas en el sistema.<br>
-                                    Luego el usuario se ubica en la celda <strong><i>Consecutivos SISCOS</i></strong> y da clic en la tecla Enter y la información se traslada automáticamente a la pantalla principal Actualizar ODS en sus celdas respectivas. <br><br>
-                                    Con la tecla <strong>Esc</strong> para salir del proceso o haciendo clic en el botón salir .
-                                   Posteriormente se analiza la información consultada el registro seleccionado.
-
+                                Asimismo al dar clic en la funcionalidad se presentará otra ventana, el cual se debe dar clic en la opción <strong><i>Buscar</i></strong> para mostrar todas las ordenes registradas en el sistema.<br> Luego el usuario se
+                                ubica en la celda <strong><i>Consecutivos SISCOS</i></strong> y da clic en la tecla Enter y la información se traslada automáticamente a la pantalla principal Actualizar ODS en sus celdas respectivas. <br><br> Con la tecla
+                                <strong>Esc</strong> para salir del proceso o haciendo clic en el botón salir . Posteriormente se analiza la información consultada el registro seleccionado.
                             </div>
                         </div>
                     </div>
@@ -376,15 +385,13 @@
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                    Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
                             </div>
                             <div class="w3-container w3-center">
-                                <span>
-                          <img src="imagenes/salir cons.png " style="width:70%;" class="w3-animate-zoom rounded">
-                          </span>
+                                <span><img src="imagenes/salir cons.png " style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                         <hr>
@@ -404,8 +411,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="ods_actualizar_ods.html#96" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="ods_listado_consumo_material.html#100" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="ods_actualizar_ods.html#96" class="navigation navigation-prev" aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="ods_listado_consumo_material.html#100" class="navigation navigation-next" aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

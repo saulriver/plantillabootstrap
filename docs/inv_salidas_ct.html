@@ -260,6 +260,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -313,9 +326,10 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
-                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Salidas Almacén</li>
-                        <li class="breadcrumb-item"><a href="inv_salidas_eecc.html">Salidas EECC</a></li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Salidas almacén</li>
+                        <li class="breadcrumb-item"><a href="inv_salidas_eecc.html#85">Salidas EECC</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -337,7 +351,7 @@
                                 Al momento de estar ingresando la información para registrar una salida CT en el campo periodo nos aparece un botón <strong><i>Prov</i></strong>, el cual nos permite hacer una búsqueda de todos los registros existente de
                                 <strong><i>Bodegas</i></strong> que en este caso son las <strong><i>Bodegas</i></strong>, debido a que el usuario se le olvido la bodega que necesita entonces trasladarse a este botón y hacer su búsqueda correspondiente
                                 con los comodines en este caso el comodín (<strong>%</strong>) que le presentará todas las bodegas registradas, para salir de esta ventana usamos la tecla <strong><i>Esc</i></strong>.
-                                <br>Comodines:
+                                <br><strong>Comodines:</strong>
                                 <ul>
                                     <li>(<strong>%</strong>) Todos.</li>
                                     <li>(<strong>%CABLE</strong>) Los que terminan.</li>
@@ -348,7 +362,7 @@
                                 <br><strong>Tercero:</strong> la bodega que se necesita para hacer la salida.
                                 <br>El usuario debe dar clic en el botón PROV, para hacer la búsqueda de la bodega por el criterio (<strong>%</strong>).
                                 <div class="w3-container w3-center">
-                                    <span><img src="imagenes/salidact2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                    <span><img src="imagenes/salidact2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                                 Escogemos la bodega a utilizar ingresamos el código para poder hacer el registró en el sistema.
                             </div>
@@ -357,12 +371,12 @@
 
                     <!--Nueva salida-->
                     <div id="nuevasalida" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Nueva salida</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tenga toda la información requerida para el registro de una salida CT, dar clic en la opción <strong><i>Nueva salida</i></strong>                                para que la guarde y se pueda agregar material a esta salida y se puedan habilitar los demás botones y poder realizar el proceso.
                                 <div class="w3-container w3-center">
-                                    <span><img src="imagenes/nueva salida 2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                    <span><img src="imagenes/nueva salida 2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +385,7 @@
 
                     <!--Agregar material-->
                     <div id="agregarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario poder agregar material a una de las salidas registradas en el sistema SISCOS.
@@ -408,17 +422,17 @@
 
                     <!--cargar arvhivo-->
                     <div id="cargararchivo" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Cargar archivo</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra horizontal superior, este archivo solo se utiliza si el material es clasificado como <strong><i>Otros</i></strong>.
                                 <div class="w3-container w3-center">
-                                    <span><img src="imagenes/cargar archivo salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                    <span><img src="imagenes/cargar archivo salida.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                                 Cuando se quiere <strong><i>Buscar seriales</i></strong> hay una opción de acceso rápido que es el botón <strong><i>Buscar serial</i></strong>, esta función válida que los seriales estén disponibles, el usuario le da clic
                                 en el botón y comienza a pistolear cada serial.
                                 <div class="w3-container w3-center">
-                                    <span><img src="imagenes/cargar archivo salida2.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                    <span><img src="imagenes/cargar archivo salida2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                             </div>
                         </div>
@@ -427,12 +441,12 @@
 
                     <!--Eliminar material-->
                     <div id="eliminarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Eliminar material</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Eliminar</i></strong> y permite al usuario eliminar material que no se crea necesario para la carga de salida CT.
                                 <div class="w3-container w3-center">
-                                    <span><img src="imagenes/eliminar material salida.png " style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                    <span><img src="imagenes/eliminar material salida.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                             </div>
                         </div>
@@ -441,7 +455,7 @@
 
                     <!--registrar salida-->
                     <div id="registrarsalida" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Registrar salida</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene toda la información necesaria y los campos solicitados u obligatorios completos dar clic en la opción <strong><i>Registrar salida</i></strong>                                y hacer un nuevo registro de salida en el sistema.
@@ -465,7 +479,7 @@
 
                     <!--salir -->
                     <div id="salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
                                 Para salir del módulo es a través del botón <strong><i>Salir</i></strong> que se encuentra ubicado en la barra horizontal superior, dar clic.
@@ -483,15 +497,15 @@
                         <iframe class="embed-responsive-item" width="1280" height="640" src="https://www.youtube.com/embed/viES78S-mSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
-                    <!--fin row-->
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="inv_anular_entrega.html#31" class="navigation navigation-prev " aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
-    <a href="inv_salidas_eecc.html#85" class="navigation navigation-next " aria-label="Next page "><i class="fa fa-angle-right "></i></a>
+    <a href="inv_anular_entrega.html#31" class="navigation navigation-prev" aria-label="Previous page "><i class="fa fa-angle-left "></i></a>
+    <a href="inv_salidas_eecc.html#85" class="navigation navigation-next" aria-label="Next page "><i class="fa fa-angle-right "></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>

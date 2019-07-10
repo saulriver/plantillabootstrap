@@ -259,8 +259,20 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
-            <!--fin menú ods-->
 
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
+            <!--fin menú ods-->
             &nbsp;
             <!--menu admom-->
             <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-unlock-alt  fa-lg fa-fw"></i><span class="app-menu__label">&nbsp; Admon</span><i class="treeview-indicator fa fa-chevron-down"></i></a>
@@ -282,7 +294,6 @@
     <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
-
             <!--menu derecho-->
             <div class="d-none d-lg-block col-sm-2 bd-toc">
                 <ul class="navbar-nav">
@@ -315,9 +326,10 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cubes fa-fw"></i>Inventario</li>
-                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Pedidos Material</li>
-                        <li class="breadcrumb-item"><a href="inv_consulta_pedido.html">Consulta pedido</a></li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Pedidos material</li>
+                        <li class="breadcrumb-item"><a href="inv_consulta_pedido.html#43">Consulta pedido</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -327,7 +339,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Pedidos</h3>
                             <div class="bs-component">
                                 Este módulo no es una transacción de SISCOS, es un preámbulo a la entrega pedidos no mueve inventarios. Requisitos <strong><i>Bodega, Área, Personal y Periodo activo</i></strong> etc. Para trabajar este módulo se debe haber
@@ -347,7 +359,7 @@
 
                     <!--eliminar material-->
                     <div id="nuevaentrega" class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Nueva entrega</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra vertical lado izquierdo, se debe dar clic en la opción <strong><i>Registrar entrega</i></strong> cuando ya se ingresa toda la información solicitada u obligatoria para que se
@@ -399,7 +411,7 @@
 
                     <!--Agregar material-->
                     <div id="agregarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top: 40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Agregar material</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra horizontal superior, se debe dar clic en la opción <strong><i>Agregar material</i></strong> que es lo que se le va a entregar al técnico.
@@ -435,7 +447,7 @@
 
                     <!--eliminar material-->
                     <div id="eliminarmaterial" class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar material</h3>
                             <div class="bs-component">
                                 Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario eliminar un material que se haya registrado en el listado de pedidos y que no crea conveniente para este proceso.
@@ -452,7 +464,8 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Registrar entrega</h3>
                             <div class="bs-component">
-                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permitiendo al usuario cuando ya tiene toda la información solicitada u obligatoria dar clic sobre en la opción <strong><i>Registrar entrega</i></strong>                                para guardarla en el sistema.
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, permitiendo al usuario cuando ya tiene toda la información solicitada u obligatoria dar clic sobre en la opción
+                                <strong><i>Registrar entrega</i></strong> para guardarla en el sistema.
                                 <div class="w3-container w3-center">
                                     <span><img src="imagenes/registrar pedido.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
