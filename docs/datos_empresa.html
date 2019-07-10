@@ -260,6 +260,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -302,14 +315,16 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="fa fa-unlock-alt fa-fw"></i>&nbsp;Admon</li>
-                        <li class="breadcrumb-item"><a href="opciones_correo_web.html">Opciones Correo y Web</a></li>
+                        <li class="breadcrumb-item"><a href="opciones_correo_web.html#102">Opciones Correo y Web</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -323,9 +338,9 @@
                             <h3 class="tile-title">Datos empresa</h3>
                             <div class="bs-component">
                                 es la información solicitada con ciertas funcionalidades al momento de registrar la empresa que va a utilizar el sistema SISCOS primeramente dar clic sobre el botón Nuevo para que se habiliten los campos.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/datosempresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/datosempresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -335,10 +350,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar</h3>
                             <div class="bs-component">
-                                Esta funcionalidad se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene todos los campos requeridos u obligatorios completos, se debe dar clic sobre el botón <strong><i>Agregar</i></strong>                                y se realice el nuevo registro de la empresa al sistema.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/agregar empresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                Esta funcionalidad se encuentra ubicada en la barra vertical superior lado izquierdo, permite al usuario cuando ya tiene todos los campos requeridos u obligatorios completos, se debe dar clic sobre el botón
+                                <strong><i>Agregar</i></strong> y se realice el nuevo registro de la empresa al sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar empresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -351,16 +367,14 @@
                             <div class="bs-component">
                                 Esta funcionalidad se encuentra ubicada en la barra horizontal superior, permite al usuario dar clic sobre el botón <strong><i>Modificar</i></strong> seguidamente dar clic en el botón <strong><i>Buscar</i></strong> para
                                 realizar la búsqueda de empresa que se le van actualizar los datos correspondientes.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/modificar empresa 1.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
-                            </div>
-                            <div class="bs-component">
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/modificar empresa 1.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 Posteriormente dar clic sobre el NIT de la empresa y se traslada a la pantalla principal se realizan los cambios y finalmente clic sobre el botón <strong><i>Agregar</i></strong> y se actualiza automáticamente en la base
                                 de datos del sistema.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/modificarempresa2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/modificarempresa2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -368,15 +382,15 @@
 
                     <!--eliminar-->
                     <div id="Eliminar" class="col-md-12">
-                        <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
                                 Esta funcionalidad se encuentra ubicada en la barra horizontal superior, permite al usuario eliminar una empresa en el sistema SISCOS, primero haciendo clic sobre el botón <strong><i>Modificar</i></strong>. Seguidamente
                                 clic en el botón <strong><i>Buscar</i></strong> Y se presentará todas las empresas registradas y se selecciona la que va hacer eliminada y luego clic sobre el botón <strong><i>Eliminar</i></strong>.
                                 <br>El usuario debe dar clic en Sí para efectuar la eliminación.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/eliminar empresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar empresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -384,13 +398,13 @@
 
                     <!--salir-->
                     <div id="Salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
                                 Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> dar clic, para salir del módulo Empresas y finalizar el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/salir empresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir empresa.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -402,13 +416,14 @@
                     </div>
 
                 </div>
+                <!--fin row-->
             </main>
         </div>
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="usuarios.html#112" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-    <a href="opciones_correo_web.html#102" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    <a href="usuarios.html#112" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="opciones_correo_web.html#102" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -416,7 +431,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>

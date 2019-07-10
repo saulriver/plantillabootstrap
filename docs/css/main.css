@@ -2857,6 +2857,14 @@ fieldset:disabled a.btn {
     height: 46px;
 }
 
+.btn-info1 {
+    color: rgba(253, 253, 253, 0.842);
+    background-color: #1380be;
+    border-color: #177db8;
+    border-radius: 2px;
+    height: 46px;
+}
+
 .btn-info:hover {
     color: red;
     background-color: #007bff;

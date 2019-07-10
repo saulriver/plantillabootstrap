@@ -259,6 +259,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -307,8 +320,9 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Inventario</li>
-                        <li class="breadcrumb-item"><a href="confi_pep.html">PEP</a></li>
+                        <li class="breadcrumb-item"><a href="confi_pep.html#12">PEP</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -318,15 +332,15 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
                             <h3 class="tile-title">Periodo</h3>
                             <div class="bs-component">
                                 Este módulo permite al usuario aplicar periodos para las bodegas que estén asociadas al departamento, este lo debe tener como máximo una persona por departamento. Los periodos en SISCOS son mensuales, se abren y cierran a petición del usuario. Los periodos
                                 son por departamentos no por bodegas, un departamento puede tener varias bodegas.
                                 <br>Se debe dar clic en el módulo <strong><i>Periodos</i></strong> y se visualizará la siguiente ventana, que se debe seleccionar la información requerida u obligatoria.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/crearperiodo.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/crearperiodo.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -336,17 +350,16 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Crear periodo</h3>
                             <div class="bs-component">
-                                Esta opción se encuentra ubicada en la barra vertical superior lado derecho, En la parte de arriba se crea el periodo y la parte de abajo se cierra el periodo. Seguidamente de seleccionar la información correspondiente se debe dar clic en la opción <strong><i>Crear periodo</i></strong>                                para que se realice el proceso.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/periodo crear.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
-                            </div>
-                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra vertical superior lado derecho, En la parte de arriba se crea el periodo y la parte de abajo se cierra el periodo. Seguidamente de seleccionar la información correspondiente se debe dar clic en la opción
+                                <strong><i>Crear periodo</i></strong> para que se realice el proceso.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/periodo crear.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 El sistema mostrará el siguiente mensaje al usuario, al cual dará clic en el icono <strong><i>Aceptar</i></strong>, para efectuar la creación y se verá reflejado en la ventana principal que el departamento ya se encuentra
                                 en un periodo abierto con el mes asignado.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span><img src="imagenes/periodo crear2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/periodo crear2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -361,88 +374,87 @@
                                 <div class="w3-container w3-center">
                                     <span><img src="imagenes/periodo cerrar.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-                                <div class="bs-component">
-                                    El sistema mostrará el siguiente mensaje al usuario, al cual dará clic en el icono <strong><i>Sí</i></strong>, para efectuar cerrar el periodo y se verá reflejado en la ventana principal que el departamento ya se encuentra
-                                    en un periodo cerrado con el mes asignado.
-                                </div>
+                                El sistema mostrará el siguiente mensaje al usuario, al cual dará clic en el icono <strong><i>Sí</i></strong>, para efectuar cerrar el periodo y se verá reflejado en la ventana principal que el departamento ya se encuentra
+                                en un periodo cerrado con el mes asignado.
                             </div>
                         </div>
-                        <!--fin cerrar periodo-->
+                    </div>
+                    <!--fin cerrar periodo-->
 
-                        <!--salir pep-->
-                        <div id="salir" class="col-md-12">
-                            <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
-                                <h3 class="tile-title">Salir</h3>
-                                <div class="bs-component">
-                                    Para salir del módulo es a través de <strong><i>Cerrar ventana</i></strong> que se encuentra ubicado en la barra vertical superior lado derecho, dar clic.
-                                </div>
+                    <!--salir pep-->
+                    <div id="salir" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Salir</h3>
+                            <div class="bs-component">
+                                Para salir del módulo es a través de <strong><i>Cerrar ventana</i></strong> que se encuentra ubicado en la barra vertical superior lado derecho, dar clic.
                                 <div class="w3-container w3-center">
                                     <span><img src="imagenes/periodo salir 2.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                             </div>
                         </div>
-                        <!--fin salir pep-->
-
-                        <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                            <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/ODaFx0FDUa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-
                     </div>
-                    <!--fin row-->
+                    <!--fin salir pep-->
+
+                    <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
+                        <iframe class="embed-responsive-item" width="1280" height="624" src="https://www.youtube.com/embed/ODaFx0FDUa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <!--fin row-->
             </main>
-            </div>
-            <!--fin row flex-->
         </div>
-        <!--fin container fluid-->
-        <a href="confi_configuracion_departamentos.html#6" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-        <a href="confi_pep.html#12" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+        <!--fin row flex-->
+    </div>
+    <!--fin container fluid-->
+    <a href="confi_configuracion_departamentos.html#6" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_pep.html#12" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
-        <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>
-            window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
-        </script>
-        <!--iconos version fontawesome 5.8.1-->
-        <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
-        <!-- Essential javascripts for application to work-->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <!-- The javascript plugin to display page loading on top-->
-        <script src="js/plugins/pace.min.js"></script>
-        <!-- Page specific javascripts-->
-        <script type="text/javascript" src="js/plugins/chart.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- Page specific javascripts-->
-        <script>
-            $('.bs-component [data-toggle="popover"]').popover();
-            $('.bs-component [data-toggle="tooltip"]').tooltip();
-        </script>
+    <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+    </script>
+    <!--iconos version fontawesome 5.8.1-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page specific javascripts-->
+    <script>
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+    </script>
 
-        <!--scrooll efecto smooth para el id-->
-        <script>
-            function myFunction() {
-                document.documentElement.style.scrollBehavior = "smooth";
-            }
-        </script>
+    <!--scrooll efecto smooth para el id-->
+    <script>
+        function myFunction() {
+            document.documentElement.style.scrollBehavior = "smooth";
+        }
+    </script>
 
-        <!--impedir que copien el codigo de la pagina-->
-        <script language="Javascript">
-            function disableselect(e) {
-                return false
-            }
+    <!--impedir que copien el codigo de la pagina-->
+    <script language="Javascript">
+        function disableselect(e) {
+            return false
+        }
 
-            function reEnable() {
-                return true
-            }
-            document.onselectstart = new Function("return false")
-            if (window.sidebar) {
-                document.onmousedown = disableselect
-                document.onclick = reEnable
-            }
-            // End -->
-        </script>
+        function reEnable() {
+            return true
+        }
+        document.onselectstart = new Function("return false")
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+        // End -->
+    </script>
 
 </body>
 <!--para inhabilitar el boton derecho en la pagina-->

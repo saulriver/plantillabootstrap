@@ -259,6 +259,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -279,7 +292,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="Guardar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -308,6 +321,7 @@
                 </ul>
             </div>
             <!--fin menu derecho-->
+
             <!--main-->
             <main class="app-content" role="main">
                 <div class="app-title">
@@ -315,48 +329,41 @@
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
                         <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
-                        <li class="breadcrumb-item"><a href="confi_tipo_peticion.html">Tipo Petición</a></li>
+                        <li class="breadcrumb-item"><a href="confi_tipo_peticion.html#21">Tipo Petición</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
                     </ol>
                 </div>
+
                 <div class="row">
+
                     <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
-
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Tipo Reparación</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Tipo Reparación</h1>
-                                </div>
-
                                 Este módulo permite al usuario poder gestionar órdenes para el tipo de reparación de los materiales que no funcionan correctamente o que fueron mal hechos.
-                       <br><br>El usuario debe dar clic en el módulo <strong><i>Tipo Reparación</i></strong> y se visualizará la siguiente  ventana que requiere de información para realizar el registro en el sistema.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Tipo Reparación</i></strong> y se visualizará la siguiente ventana que requiere de información para realizar el registro en el sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo1.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Seguidamente se debe dar clic en la opción <strong><i>Nuevo</i></strong> para que se activen los campos que son solicitados para ingresar el Código, Descripción, Actividad etc. Reparación para el material cuando se da clic
+                                automáticamente se activan los campos y en la parte de abajo se visualizan unos cuadros que aparecen chuleados para hacer el registro correctamente del tipo reparación en el sistema.
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo1.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-                            <div class="bs-component">
-                            Seguidamente se debe  dar clic en la opción <strong><i>Nuevo</i></strong> para que se activen los campos que son solicitados para ingresar el Código, Descripción, Actividad etc. Reparación para el material cuando se da clic automáticamente se activan los campos y en la parte de abajo se visualizan unos cuadros que aparecen chuleados para hacer el registro correctamente del tipo reparación en el sistema.<br><br>
-                            
                         </div>
-                        </div>
-                        
                     </div>
+
                     <!--Guardar-->
-                    <div class="col-md-12">
+                    <div id="Guardar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title"> Guardar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra vertical superior lado derecho, se debe  dar clic en la opción <strong><i>Guardar</i></strong> para que guarde la   información ingresada como un nuevo registro en el sistema.  
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo3.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta función se encuentra ubicada en la barra vertical superior lado derecho, se debe dar clic en la opción <strong><i>Guardar</i></strong> para que guarde la información ingresada como un nuevo registro en el sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,12 +374,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Para modificar un registro el usuario primeramente debe hacer una búsqueda con la opción <strong><i>Buscar</i></strong> al seleccionar el registro, el usuario  escoge el campo que desea editar e ingresa la nueva información y luego se debe dar clic en la opción<strong><i>Guardar</i></strong>  y automáticamente se actualiza la información en la base de datos del sistema SISCOS.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                            <img src="imagenes/tercera reparacion.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Para modificar un registro el usuario primeramente debe hacer una búsqueda con la opción <strong><i>Buscar</i></strong> al seleccionar el registro, el usuario escoge el campo que desea editar e ingresa la nueva información
+                                y luego se debe dar clic en la opción<strong><i>Guardar</i></strong> y automáticamente se actualiza la información en la base de datos del sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tercera reparacion.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -383,21 +389,16 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario eliminar tipo de reparación del listado de materiales a reparar que el usuario no crea conveniente o que no le existan asociaciones  porque de lo contrario no permite eliminar un tipo de reparación.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo4.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
-                            </div>
-                            <div class="bs-component">
-                                Para que esta función se encuentre activa primero hay que hacer una búsqueda y seleccionar el material que se va a eliminar.<br>
-                                A continuación se presentará un registro el cual le existen asociaciones con otros módulos y no permite su eliminación.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo 5.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior, permite al usuario eliminar tipo de reparación del listado de materiales a reparar que el usuario no crea conveniente o que no le existan asociaciones porque de lo contrario no permite
+                                eliminar un tipo de reparación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Para que esta función se encuentre activa primero hay que hacer una búsqueda y seleccionar el material que se va a eliminar.<br> A continuación se presentará un registro el cual le existen asociaciones con otros módulos
+                                y no permite su eliminación.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo 5.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -405,50 +406,39 @@
 
                     <!--Importar archivo-->
                     <div id="Importar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Importar</h3>
                             <div class="bs-component">
-                                
-                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, permite al usuario hacer el proceso más rápido de importar un archivo con las columnas requeridas y en <strong><i>Formato de texto delimitado por tabulaciones </i></strong>al sistema y no estar ingresando de uno a uno los materiales a reparar.
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado izquierdo, permite al usuario hacer el proceso más rápido de importar un archivo con las columnas requeridas y en <strong><i>Formato de texto delimitado por tabulaciones </i></strong>al
+                                sistema y no estar ingresando de uno a uno los materiales a reparar.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo6.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en la opción <strong><i>Importar archivo</i></strong> y debe seleccionar el archivo donde se encuentre guardado en el pc, automáticamente será visualizado luego dar clic en el botón
+                                <strong><i>Importar</i></strong> que se encuentra en la parte de abajo para que se importe correctamente y se presentaran los resultados de los registros cargados y las demás opciones plasmadas.<br>
+                                <strong><i>ESC:</i></strong> tecla para salir del proceso importar.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo7.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/tipo6.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-                            <div class="bs-component">
-                                El usuario debe dar clic en la opción  <strong><i>Importar archivo</i></strong> y debe seleccionar el archivo donde se encuentre guardado en el pc,  automáticamente será visualizado luego dar clic en el  botón <strong><i>Importar</i></strong> que se encuentra en la parte de abajo para que se importe correctamente y se presentaran  los resultados de los registros cargados y las demás opciones plasmadas.<br>
-                                <strong><i>ESC:</i></strong>  tecla para salir del proceso importar.
-                            </div> 
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/tipo7.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-                             
                         </div>
                     </div>
                     <!--fin Importar archivo-->
 
                     <!--Activar desactivar masivo-->
                     <div id="Acde" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Activar Desactivar masivo</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior lado derecho,  se debe dar clic en la opción que permite al usuario cargar un archivo para Activar o Desactivar masivos. 
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/tipo8.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                </span>
-                            </div>
-                            <div class="bs-component">
-                                Luego dar clic en la opción  <strong><i>Procesar archivo</i></strong> que se encuentra en la parte de abajo dar clic y se visualizará los resultados de registros cargados y las demás opciones requeridas durante el proceso de carga.
-                            </div> 
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/tipo9.png" style="width:60%;" class="w3-animate-zoom rounded">
-                                </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior lado derecho, se debe dar clic en la opción que permite al usuario cargar un archivo para Activar o Desactivar masivos.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo8.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                Luego dar clic en la opción <strong><i>Procesar archivo</i></strong> que se encuentra en la parte de abajo dar clic y se visualizará los resultados de registros cargados y las demás opciones requeridas durante el proceso
+                                de carga.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo9.png" style="width:60%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -456,28 +446,25 @@
 
                     <!--Buscar-->
                     <div id="Buscar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, primeramente se debe dar clic  en la opción <strong><i>Nuevo </i></strong> para que esta función  se encuentre activo, El usuario al dar clic en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere de uno de los  parámetros de búsquedas tales como: Código, Descripción etc. Y Comodines,  luego poder escoger el registro necesario.<br>
-                                <strong>Los comodines de búsquedas son:</strong>
-                               <ul><li><strong>(%) </strong> Todos</li>
-                               <li><strong>(%CABLE)</strong> Los que terminan</li>
-                               <li><strong>(CABLE%)</strong> Los que comiencen </li>	
-                               </ul>
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo10.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-                            <div class="bs-component">
-                                El usuario debe dar clic en la tecla <strong>Enter<i></i></strong> sobre la celda del <strong><i>Código</i></strong> y se verá reflejado en la pantalla principal  Registro tipo reparación para poder guardar los cambios al registro seleccionado.
-                            </div>  
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo11.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, primeramente se debe dar clic en la opción <strong><i>Nuevo </i></strong> para que esta función se encuentre activo, El usuario al dar clic
+                                en el botón <strong><i>Buscar</i></strong> se visualizará una ventana el cual requiere de uno de los parámetros de búsquedas tales como: Código, Descripción etc. Y Comodines, luego poder escoger el registro necesario.
+                                <br><strong>Los comodines de búsquedas son:</strong>
+                                <ul>
+                                    <li><strong>(%)</strong> Todos.</li>
+                                    <li><strong>(%CABLE)</strong> Los que terminan.</li>
+                                    <li><strong>(CABLE%)</strong> Los que comiencen.</li>
+                                </ul>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo10.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario debe dar clic en la tecla <strong>Enter<i></i></strong> sobre la celda del <strong><i>Código</i></strong> y se verá reflejado en la pantalla principal Registro tipo reparación para poder guardar los cambios al
+                                registro seleccionado.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo11.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -485,15 +472,13 @@
 
                     <!--salir-->
                     <div id="Salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
                                 Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana </i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/tipo12.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/tipo12.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -502,10 +487,10 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/FK3iHEa8cj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                          </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/FK3iHEa8cj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
+
                 </div>
                 <!--fin row -->
             </main>
@@ -513,8 +498,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="confi_gene_localidades.html#10" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-    <a href="confi_tipo_peticion.html#21" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    <a href="confi_gene_localidades.html#10" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_tipo_peticion.html#21" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -529,7 +514,7 @@
     <!-- The javascript plugin to display page loading on top-->
     <script src="js/plugins/pace.min.js"></script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

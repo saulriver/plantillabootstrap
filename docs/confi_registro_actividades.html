@@ -259,6 +259,19 @@
                     <div class="dropdown-divider"></div>
                 </ul>
             </li>
+
+            <li><a class="app-menu__item" href="#"><i class="icon fa fa-folder-open"></i><span class="app-menu__label">&nbsp; ODS SOL TEC</span></a>
+                <ul class="treeview-menu">
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods.html#114"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_atender_ods_manual.html#115"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Atender ODS Manual</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_carga_ods.html#116"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar Carga ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_actualizar_ods.html#117"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Actualizar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_consultar_ods.html#118"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Consultar ODS</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_consumo_material.html#119"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Consumo Material</a></li>
+                    <li><a class="app-menu__item" href="sol_tec_listado_retiros_material.html#120"><i class="icon fa fa-chevron-circle-right"></i>&nbsp; Listado Retiros Material</a></li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+            </li>
             <!--fin menú ods-->
 
             &nbsp;
@@ -279,7 +292,7 @@
     </aside>
 
     <!--container fluid-->
-    <div id="Agregar" class="container-fluid">
+    <div class="container-fluid">
         <!--row flex-->
         <div class="row flex-lg-nowrap">
             <!--menu derecho-->
@@ -316,9 +329,10 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon fa fa-home fa-lg" style="color:black"></i></a></li>
                         <li class="breadcrumb-item activa"><i class="app-menu__icon fa fa-cogs fa-fw"></i>Configuración</li>
-                        <li class="breadcrumb-item active"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
-                        <li class="breadcrumb-item"><a href="confi_registro_produccion.html">Registro producción</a></li>
+                        <li class="breadcrumb-item activa"><i class="icon fa fa-folder-open"></i>Gestión Ordenes</li>
+                        <li class="breadcrumb-item"><a href="confi_registro_produccion.html#17">Registro producción</a></li>
                         <li class="breadcrumb-item"><a aria-label="PDF" href="pdf/MANUAL-DE-USUARIO-SISCOS.pdf" target="_blank"><i class="icon fa fa-file-pdf-o fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
+                        <li><a href="#" onclick="window.print()"><i class="icon fa fa-print fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="aumentarFont"><i class="icon fa fa-search-plus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="disminuirFont"><i class="icon fa fa-search-minus fa-lg fa-fw"></i></a></li>&nbsp;&nbsp;&nbsp;
                         <li><a href="#" class="resetearFont"><strong>Normal</strong></a></li>
@@ -326,34 +340,31 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:70px;margin-top:40px">
 
+                    <div class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Registro actividades</h3>
                             <div class="bs-component">
-                                <div class="tile-title">
-                                    <h1>Registro actividades</h1>
+                                Este módulo permite al usuario gestionar una orden e ingresar la información para que el contratista cobre a movistar la cantidad de materiales, clase de obra realizada y otros requisitos solicitados, con el fin que la persona tenga que cumplir unos objetivos
+                                sea más autónomo en el manejo de su tiempo y en la planeación de su trabajo.<br> El usuario debe dar clic en el módulo <strong><i>Registro actividades</i></strong> y se visualizará la siguiente
+                                ventana que requiere de información para realizar el registro en el sistema.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/actividades1.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-                                Este módulo permite al usuario gestionar una orden e ingresar la información para que el contratista cobre a movistar la cantidad de materiales, clase de obra realizada y otros requisitos solicitados, con el fin que la persona tenga que cumplir unos objetivos sea más autónomo en el manejo de su tiempo y en la planeación de su trabajo.<br>
-                                El usuario debe dar clic en el módulo <strong><i>Registro actividades</i></strong>  y se visualizará la siguiente  ventana que requiere de información para realizar el registro en el sistema.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/actividades1.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
                             </div>
                         </div>
                     </div>
+
                     <!--Agregar-->
-                    <div class="col-md-12">
+                    <div id="Agregar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Agregar</h3>
                             <div class="bs-component">
-                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado izquierdo, el  usuario debe dar clic en la opción <strong><i>Agregar</i></strong>  y habilita los demás botones incluso los de la parte de abajo para ingresar la información solicitada u obligatoria para el nuevo registro.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                              <img src="imagenes/agregar actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
-                            </span>
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado izquierdo, el usuario debe dar clic en la opción <strong><i>Agregar</i></strong> y habilita los demás botones incluso los de la parte de abajo
+                                para ingresar la información solicitada u obligatoria para el nuevo registro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/agregar actividades.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -364,16 +375,13 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Guardar cambios</h3>
                             <div class="bs-component">
-                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado derecho, cuando ya se tiene toda la información ingresada en los cuadritos de la parte de abajo. El usuario debe dar  clic en la opción <strong><i>Guardar cambios</i></strong> y permite hacer un nuevo registro al sistema, automáticamente aparece en el listado de materiales agregados en el registro de actividades del contratista para presentar su cobro.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/guardar actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
-                            </div>
-                            <div class="bs-component">
+                                Esta funcionalidad se encuentra ubicada en la barra horizontal superior lado derecho, cuando ya se tiene toda la información ingresada en los cuadritos de la parte de abajo. El usuario debe dar clic en la opción
+                                <strong><i>Guardar cambios</i></strong> y permite hacer un nuevo registro al sistema, automáticamente aparece en el listado de materiales agregados en el registro de actividades del contratista para presentar su cobro.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/guardar actividades.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                                 El sistema presentará un mensaje de información y se debe dar clic en el icono <strong><i>Aceptar</i></strong> para efectuar el nuevo registro.
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <!--fin Modificar-->
@@ -383,29 +391,26 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior, para que esta función  se encuentre activa se debe haber hecho doble clic  sobre el código del registro, se debe dar clic en la opción <strong><i>Eliminar</i></strong>  y elimina la actividad  del listado de actividades registradas en el sistema que el usuario no crea conveniente o que no le existan asociaciones de lo contrario mostrará mensaje de error.
+                                Esta función se encuentra ubicada en la barra horizontal superior, para que esta función se encuentre activa se debe haber hecho doble clic sobre el código del registro, se debe dar clic en la opción
+                                <strong><i>Eliminar</i></strong> y elimina la actividad del listado de actividades registradas en el sistema que el usuario no crea conveniente o que no le existan asociaciones de lo contrario mostrará mensaje de error.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/eliminar actividad.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                <img src="imagenes/eliminar actividad.png" style="width:70%;" class="w3-animate-zoom rounded">
-                              </span>
-                            </div>
-
                         </div>
                     </div>
                     <!--fin eliminar -->
 
                     <!--Modificar-->
                     <div id="Modificar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Modificar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, el usuario se ubica en el código del material luego dar clic en la opción Modificar y mostrará la información de ese registro de actividad para que escoja el campo que desea editar seguidamente dar clic en la opción <strong><i>Guardar cambios</i></strong> y se actualice en la base de datos los cambios realizados.
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/modificar actividad.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior lado izquierdo, el usuario se ubica en el código del material luego dar clic en la opción Modificar y mostrará la información de ese registro de actividad para que escoja el campo que desea
+                                editar seguidamente dar clic en la opción <strong><i>Guardar cambios</i></strong> y se actualice en la base de datos los cambios realizados.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/modificar actividad.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -413,15 +418,14 @@
 
                     <!--Buscar-->
                     <div id="Buscar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Buscar</h3>
                             <div class="bs-component">
-                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, se debe dar clic en la opción <strong><i>Buscar</i></strong>  para realizar la  búsqueda de materiales del listado que aparecen en el registro actividades con el criterio de búsqueda Código y mostrará el material correspondiente al código ingresado..
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                    <img src="imagenes/buscar actividad.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                Esta opción se encuentra ubicada en la barra vertical superior lado izquierdo, se debe dar clic en la opción <strong><i>Buscar</i></strong> para realizar la búsqueda de materiales del listado que aparecen en el registro
+                                actividades con el criterio de búsqueda Código y mostrará el material correspondiente al código ingresado..
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/buscar actividad.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,15 +433,13 @@
 
                     <!--Exportar-->
                     <div id="Exportar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Exportar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior lado derecho, se debe dar clic en la opción <strong><i>Exportar</i></strong>  y descarga un archivo en Excel de registros de actividades en el  sistema SISCOS. 
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/exportar registro actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta función se encuentra ubicada en la barra horizontal superior lado derecho, se debe dar clic en la opción <strong><i>Exportar</i></strong> y descarga un archivo en Excel de registros de actividades en el sistema SISCOS.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/exportar registro actividades.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -445,15 +447,16 @@
 
                     <!--Importar-->
                     <div id="Importar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Importar archivo</h3>
                             <div class="bs-component">
-                                Esta opción  se encuentra ubicada en la barra horizontal superior lado derecho, se debe dar clic en la opción <strong><i>Importar</i></strong> y seleccionar el archivo donde se tenga guardado en el pc, el archivo debe llevar la estructura de las 7 columnas establecidas. Este módulo agiliza el proceso para que no esté el usuario registrando uno a uno materiales si no importar el archivo con todos los materiales necesarios.<br><br>
-                                Cuando ya se tiene el archivo seleccionado automáticamente se visualizaran todos los materiales registrados, posteriormente se da clic en la opción de la parte de abajo <strong><i>Procesar Archivo</i></strong> para visualizar los archivos el <strong>Total,</strong> <strong>Descartados</strong> y <strong>Cargados</strong> etc.
-                            <div class="w3-container w3-center">
-                                <span>
-                                  <img src="imagenes/importar actividad.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                  </span>
+                                Esta opción se encuentra ubicada en la barra horizontal superior lado derecho, se debe dar clic en la opción <strong><i>Importar</i></strong> y seleccionar el archivo donde se tenga guardado en el pc, el archivo debe llevar
+                                la estructura de las 7 columnas establecidas. Este módulo agiliza el proceso para que no esté el usuario registrando uno a uno materiales si no importar el archivo con todos los materiales necesarios.
+                                <br><br> Cuando ya se tiene el archivo seleccionado automáticamente se visualizaran todos los materiales registrados, posteriormente se da clic en la opción de la parte de abajo
+                                <strong><i>Procesar Archivo</i></strong> para visualizar los archivos el <strong>Total,</strong> <strong>Descartados</strong> y <strong>Cargados</strong> etc.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/importar actividad.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -461,15 +464,13 @@
 
                     <!--salir-->
                     <div id="Salir" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:40px">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir </i></strong>se debe dar clic en una de las opciones.   
-                            </div>
-                            <div class="w3-container w3-center">
-                                <span>
-                                    <img src="imagenes/salir actividades.png" style="width:70%;" class="w3-animate-zoom rounded">
-                                    </span>
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir </i></strong> se debe dar clic en una de las opciones.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/salir actividades.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -478,10 +479,10 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/Zr66r0xUtyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                        <iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/Zr66r0xUtyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
+
                 </div>
                 <!--fin row-->
             </main>
@@ -489,8 +490,8 @@
         <!--fin row flex-->
     </div>
     <!--fin container fluid-->
-    <a href="confi_clases_mano_obra.html#4" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-    <a href="confi_registro_produccion.html#17" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    <a href="confi_clases_mano_obra.html#4" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+    <a href="confi_registro_produccion.html#17" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
 
     <!-- JavaScript Colocado al final del documento para que las páginas se carguen más rápido -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -498,7 +499,7 @@
         window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
     </script>
     <!--iconos version fontawesome 5.8.1-->
-    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css " integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
