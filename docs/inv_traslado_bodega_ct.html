@@ -307,12 +307,12 @@
                             Nueva salida</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#agregar" onclick="myFunction()">
                             Agregar material</a></li>&nbsp;
-                    <li class="treeview"><a class="nav-link app-menu__item" href="#registrar" onclick="myFunction()">
-                            Registrar salida</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#eliminar" onclick="myFunction()">
                             Eliminar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#cargar" onclick="myFunction()">
                             Cargar archivo</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#registrar" onclick="myFunction()">
+                            Registrar salida</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                             Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -349,7 +349,7 @@
                                 Este módulo permite al usuario mover de una bodega a otra materiales, va asociado a Propiedad, Área, PEP etc. Para que se pueda realizar el traslado satisfactoriamente.
                                 <br><br>El usuario debe escoger de la <strong><i>Bodega origen</i></strong> que es donde se encuentra los materiales registrados, escoger el <strong><i>Departamento</i></strong> y la <strong><i>Bodega</i></strong> y posteriormente
                                 escoger de la <strong><i>Bodega destino</i></strong> que es a quien se le va a hacer el traslado el <strong><i>Departamento y Bodega</i></strong>.
-                                <br><br>El usuario debe dar clic en el módulo Traslado bodega CT y se visualizará la siguiente ventana.
+                                <br><br>El usuario debe dar clic en el módulo <strong><i>Traslado Bodega CT</i></strong> se visualizará la siguiente ventana.
                                 <div class="w3-container w3-center">
                                     <span><img src="imagenes/traslado bodega ct.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
@@ -409,6 +409,38 @@
                     </div>
                     <!--fin-->
 
+                     <!--comienzo-->
+                     <div id="eliminar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Eliminar</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra horizontal superior, para eliminar un registro se debe seleccionar y luego dar clic en la opción <strong><i>Eliminar</i></strong> y permite eliminar materiales de la lista que
+                                han sido agregados, que el usuario no crea conveniente para su Traslado entre bodegas CT.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado ct4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                El usuario escoge una de las 2 opciones Sí desea eliminarlo o No en el proceso de traslado.
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                     <!--comienzo-->
+                     <div id="cargar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
+                            <h3 class="tile-title">Cargar archivo</h3>
+                            <div class="bs-component">
+                                Esta función se encuentra ubicada en la barra horizontal superior, se puede hacer traslado con un <strong><i>Archivo</i></strong> en <strong><i>TXT</i></strong> con todos los seriales que se le van hacer traslado a la otra
+                                bodega. Seguidamente se validan las cantidades y clic en el botón
+                                <button class="btn btn-info"><i class="fa fa-hand-pointer-o"></i>Ok</button>.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/traslado ct5.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+                    
                     <!--comienzo-->
                     <div id="registrar" class="col-md-12">
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
@@ -427,38 +459,6 @@
                                     <span><img src="imagenes/traslado ct3.2.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
                                 </div>
                                 Si el usuario le da clic en el icono <strong><i>No</i></strong>, no pasa nada solo que ya se termina el proceso de traslado.
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin-->
-
-                    <!--comienzo-->
-                    <div id="eliminar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
-                            <h3 class="tile-title">Eliminar</h3>
-                            <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior, para eliminar un registro se debe seleccionar y luego dar clic en la opción <strong><i>Eliminar</i></strong> y permite eliminar materiales de la lista que
-                                han sido agregados, que el usuario no crea conveniente para su Traslado entre bodegas CT.
-                                <div class="w3-container w3-center">
-                                    <span><img src="imagenes/traslado ct4.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
-                                </div>
-                                El usuario escoge una de las 2 opciones Sí desea eliminarlo o No en el proceso de traslado.
-                            </div>
-                        </div>
-                    </div>
-                    <!--fin-->
-
-                    <!--comienzo-->
-                    <div id="cargar" class="col-md-12">
-                        <div class="container-fluid bg-trans" style="padding-top:80px;margin-top:30px">
-                            <h3 class="tile-title">Cargar archivo</h3>
-                            <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior, se puede hacer traslado con un <strong><i>Archivo</i></strong> en <strong><i>TXT</i></strong> con todos los seriales que se le van hacer traslado a la otra
-                                bodega. Seguidamente se validan las cantidades y clic en el botón
-                                <button class="btn btn-info"><i class="fa fa-hand-pointer-o"></i>Ok</button>.
-                                <div class="w3-container w3-center">
-                                    <span><img src="imagenes/traslado ct5.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
-                                </div>
                             </div>
                         </div>
                     </div>
