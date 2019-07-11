@@ -14033,8 +14033,9 @@ be a descendant of the grid when it is being dragged.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: rgb(27, 65, 124);
-    z-index: 1030;
+    background-color: rgb(27, 66, 124) !important;
+    color: rgb(27, 65, 124);
+    z-index: 2;
     padding-right: 15px;
     min-height: 4rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -14042,7 +14043,7 @@ be a descendant of the grid when it is being dragged.
 
 @media (min-width: 768px) {
     .app-header {
-        padding-right: 30px;
+        padding-right: 37px;
     }
 }
 
@@ -14085,7 +14086,6 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle {
     padding: 0 15px;
     font-family: fontAwesome;
-    color: #fff;
     line-height: 2.4;
     -webkit-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
@@ -14312,7 +14312,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar {
     position: fixed;
-    top: 60px;
+    top: 61px;
     bottom: 0;
     left: -19px;
     padding-top: 0;
@@ -16575,4 +16575,103 @@ section.normal {
 }
 
 
-/*=============================css nuuevo========================================================================*/
+/*=============================buscador interno de texto========================================================================*/
+
+
+/*=============================buscador interno de texto========================================================================*/
+
+.wrap {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.wrap p {
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.header-top {
+    margin-left: -325px;
+    margin-right: 47px;
+}
+
+.navegacion {
+    width: 90%;
+    max-width: 1000px;
+    padding: 12px;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 16px;
+    border-radius: 37px;
+}
+
+input[type="search"] {
+    padding: 10px;
+    padding-right: 98px;
+    border: none;
+    border-radius: 21px;
+}
+
+.search1 {
+    width: 100%;
+    max-width: 1000px;
+    margin-right: -29px;
+    padding: 10px;
+    padding-bottom: 0;
+    max-height: 42%;
+    overflow-x: hidden;
+    display: none;
+    margin-left: -442px;
+    background-color: #ffffff;
+    margin-top: 57px;
+    border-radius: 15px;
+}
+
+.search1-table {
+    width: 100%;
+}
+
+tbody tr td {
+    width: 100%;
+}
+
+tbody tr td a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(27, 66, 124, 0.411);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    padding-left: 20px;
+    border: 2px;
+}
+
+tbody tr td a:hover {
+    border: 1px solid rgb(27, 65, 124);
+    border-radius: 43px;
+}
+
+.search1::-webkit-scrollbar {
+    background: rgba(27, 66, 124, 0.39);
+}
+
+.search1::-webkit-scrollbar-button {
+    background: rgba(27, 66, 124, 0.288);
+}
+
+.search1::-webkit-scrollbar-thumb {
+    background: rgba(27, 66, 124, 0.459);
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+    display: none;
+}
