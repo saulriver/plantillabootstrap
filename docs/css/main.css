@@ -16610,6 +16610,78 @@ header {
     border-radius: 37px;
 }
 
+@media (max-width:1920px) {
+    .navegacion {
+        width: 90%;
+        max-width: 1000px;
+        padding: 12px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 16px;
+        border-radius: 37px;
+    }
+}
+
+@media (max-width:1550px) {
+    .navegacion {
+        width: 90%;
+        max-width: 1000px;
+        padding: 12px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 16px;
+        border-radius: 37px;
+    }
+}
+
+@media (max-width:1366px) {
+    .navegacion {
+        width: 90%;
+        max-width: 1000px;
+        padding: 12px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 16px;
+        border-radius: 37px;
+    }
+}
+
+@media (max-width:1280px) {
+    .navegacion {
+        width: 90%;
+        max-width: 1000px;
+        padding: 12px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 16px;
+        border-radius: 37px;
+    }
+}
+
+@media (max-width:768px) {
+    .navegacion {
+        width: 90%;
+        max-width: 1000px;
+        padding: 12px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 16px;
+        border-radius: 37px;
+    }
+}
+
+@media (max-width:360px) {
+    .navegacion {
+        width: 90%;
+        max-width: 1000px;
+        padding: 12px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 16px;
+        border-radius: 37px;
+    }
+}
+
 input[type="search"] {
     padding: 10px;
     padding-right: 98px;
