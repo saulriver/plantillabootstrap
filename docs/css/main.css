@@ -16612,25 +16612,29 @@ header {
 
 @media (max-width:1920px) {
     .navegacion {
-        width: 90%;
-        max-width: 1000px;
-        padding: 12px;
-        margin: auto;
-        margin-right: 20px;
-        margin-left: 16px;
-        border-radius: 37px;
+        width: 35%;
+max-width: 1000px;
+padding: 12px;
+margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+margin-right: 20px;
+margin-left: 436px;
+border-radius: 37px;
     }
 }
 
 @media (max-width:1550px) {
     .navegacion {
-        width: 90%;
-        max-width: 1000px;
-        padding: 12px;
-        margin: auto;
-        margin-right: 20px;
-        margin-left: 16px;
-        border-radius: 37px;
+        width: 62%;
+max-width: 1000px;
+padding: 12px;
+margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+margin-right: 20px;
+margin-left: 166px;
+border-radius: 37px;
     }
 }
 
@@ -16648,24 +16652,28 @@ header {
 
 @media (max-width:1280px) {
     .navegacion {
-        width: 90%;
+        width: 119%;
         max-width: 1000px;
         padding: 12px;
         margin: auto;
-        margin-right: 20px;
-        margin-left: 16px;
+            margin-right: auto;
+            margin-left: auto;
+        margin-right: 13px;
+        margin-left: -61px;
         border-radius: 37px;
     }
 }
 
 @media (max-width:768px) {
     .navegacion {
-        width: 90%;
+        width: 100%;
         max-width: 1000px;
         padding: 12px;
         margin: auto;
-        margin-right: 20px;
-        margin-left: 16px;
+            margin-right: auto;
+            margin-left: auto;
+        margin-right: 0;
+        margin-left: -566px;
         border-radius: 37px;
     }
 }
@@ -16681,6 +16689,16 @@ header {
         border-radius: 37px;
     }
 }
+@media (max-width:360px) {
+    .header-top {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: -99px;
+        border-radius: 37px;
+    }
+}
 
 input[type="search"] {
     padding: 10px;
@@ -16692,13 +16710,13 @@ input[type="search"] {
 .search1 {
     width: 100%;
     max-width: 1000px;
-    margin-right: -29px;
+    margin-right: -17px;
     padding: 10px;
     padding-bottom: 0;
-    max-height: 42%;
+    max-height: 94%;
     overflow-x: hidden;
     display: none;
-    margin-left: -442px;
+    margin-left: -602px;
     background-color: #ffffff;
     margin-top: 57px;
     border-radius: 15px;
