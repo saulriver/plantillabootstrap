@@ -682,6 +682,8 @@
                     </li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item active" href="#buscar" onclick="myFunction()">
                        Buscar</a></li>&nbsp;
+                    <li class="treeview"><a class="nav-link app-menu__item" href="#cambiar" onclick="myFunction()">
+                       Cambiar</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item" href="#salir" onclick="myFunction()">
                        Salir</a></li>&nbsp;
                     <li class="treeview"><a class="nav-link app-menu__item alert alert-dark" href="#video" onclick="myFunction()">
@@ -712,7 +714,11 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Actualizar petición serial</h3>
                             <div class="bs-component">
-                                Este módulo permite ingresar la información solicitada u obligatoria para consultar Seriales que se encuentran registrados en el sistema SISCOS por medio del código <strong><i>Serial</i></strong> o <strong><i>CAS-ID</i></strong>.
+                                Este módulo permite ingresar la información solicitada u obligatoria para consultar Seriales que se encuentran registrados en el sistema SISCOS por medio del código <strong><i>Serial</i></strong> o <strong><i>CAS-ID</i></strong>.<br><br>
+                                El usuario debe dar clic en el módulo  <strong><i>Actualizar petición serial</i></strong>  se visualizará la siguiente ventana, que requiere de escoger una de las opciones plasmadas para realizar la búsqueda del serial para el proceso de actualización.
+                            </div>
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/peticion serial 1.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                         </div>
                     </div>
@@ -723,14 +729,40 @@
                             <h3 class="tile-title">Buscar</h3>
                             <div class="bs-component">
                                 Esta funcionalidad se encuentra ubicada en la barra vertical superior, permite al usuario realizar búsquedas por los criterios predeterminados como <strong><i>Serial</i></strong> o <strong><i>CAS-ID</i></strong> de los
-                                seriales registrados en el sistema, para analizar su información para dicho proceso.
+                                seriales registrados en el sistema, para analizar su información para dicho proceso.<br><br>
+                                El usuario debe dar clic en la opción <strong><i>Buscar</i></strong> para realizar el proceso de consulta del serial.
                                 <div class="w3-container w3-center">
-                                    <span><img src="imagenes/.png" style="width:80%;" class="w3-animate-zoom rounded"></span>
+                                    <span><img src="imagenes/peticion serial 2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                                 </div>
+                                <div class="bs-component">
+                                    Seguidamente el usuario se ubica en la celda <strong><i>Departamento</i></strong>, dar clic en la tecla <strong><i>Enter</i></strong> y automáticamente se visualizará la información correspondiente del serial en los campos  de la parte de abajo. 
                             </div>
+
                         </div>
                     </div>
                     <!--fin buscar serial-->
+                     <!--cambiar-->
+                     <div id="cambiar" class="col-md-12">
+                        <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
+                            <h3 class="tile-title">Cambiar</h3>
+                            <div class="bs-component">
+                                Esta opción se encuentra ubicada en la barra horizontal inferior, se debe dar clic en el botón <strong><i>Cambiar </i></strong> para que realice el cambio en el registro seleccionado.
+                                <div class="w3-container w3-center">
+                                    <span><img src="imagenes/peticion serial 3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                                </div>
+                                <div class="bs-component">
+                                    Para actualizar una petición de serial, es que el registro se encuentre en un estado que se le puedan hacer cambios a la petición  como <strong><i>Mal estado,</i></strong> si se encuentra en estado <strong><i>Bueno</i></strong> garantiza que el producto serial ha sido entregado y no permite realizar la consulta para actualizar el registro.
+                            </div>
+                            
+                            <div class="w3-container w3-center">
+                                <span><img src="imagenes/peticion serial 4.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
+                            </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <!--fin salir-->
+                   
 
                     <!--salir-->
                     <div id="salir" class="col-md-12">
@@ -749,7 +781,7 @@
 
                     <!--video-->
                     <div id="video" class="embed-responsive embed-responsive-16by9 rounded">
-                        <iframe class="embed-responsive-item" width="1280" height="635" src="https://www.youtube.com/embed/sAaNhQ64sYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="1280" height="661" src="https://www.youtube.com/embed/V6FfAQGb9Yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!--fin video-->
 

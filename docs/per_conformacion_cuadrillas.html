@@ -714,32 +714,38 @@
                         <div class="container-fluid bg-trans" style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Conformación cuadrillas</h3>
                             <div class="bs-component">
-                                Este módulo permite conformar las cuadrillas en el sistema SISCOS, organizando todos los tipos de cuadrillas que a este componen los tipos de cuadrillas están conformados por ciertos cargos y personal registrados. La conformación está vinculada a como
-                                se ordenan o se distribuyen los diferentes tipos de cuadrillas de un conjunto. El usuario escoge el <strong><i>Departamento</i></strong> y el <strong><i>Tipo de cuadrilla</i></strong> que
-                                aparece inhabilitado, para que se habilite se debe primero seleccionar el departamento y luego dar clic en el botón Nuevo e ingresar la demás información solicitada u obligatoria.
+                                Este módulo permite conformar las cuadrillas en el sistema SISCOS, organizando todos los tipos de cuadrillas que a este componen. Los tipos de cuadrillas están conformados por ciertos cargos y personal  registrados.<br>
+                                La conformación está vinculada a como se ordenan o se distribuyen los diferentes tipos de cuadrillas de un conjunto.<br><br>
+                                El usuario escoge el <strong><i>Departamento</i></strong> que es el campo que se encuentra habilitado, el <strong><i>Tipo de cuadrilla</i></strong> está inhabilitado. Para poder habilitar este campo es seleccionando el departamento y luego dar clic en la opción <strong><i>Nuevo</i></strong> y también activa las demás funciones, como se puede analizar a continuación.
                             </div>
                             <div class="w3-container w3-center">
                                 <span><img src="imagenes/conformacion.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
-                                Seguidamente el usuario escoge el tipo de cuadrilla y automáticamente arroja la información, y se visualizan los botones activados del sistema.
+                                Seguidamente se selecciona el <strong><i>Tipo de cuadrilla</i></strong> y automáticamente arrojará la información de los cargos relacionados.
                             </div>
                             <div class="w3-container w3-center">
                                 <span><img src="imagenes/conformacion2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
-                                El botón <strong><i>Buscar Personal</i></strong> que se encuentra ubicado en la barra horizontal lado izquierdo, permite al usuario dar clic sobre el botón y hacer búsqueda personal relacionada con los cargos registrados
+                                la opción <strong><i>Buscar Personal</i></strong> que se encuentra ubicado en la barra horizontal lado izquierdo, permite al usuario dar clic sobre el botón y hacer búsqueda personal relacionada con los cargos registrados
                                 en la cuadrilla.
-                                <br>El usuario debe dar clic en la opción <strong><i>Buscar personal</i></strong> y se visualizará una ventana donde requiere de un criterio de búsqueda que es (<strong>%</strong>) para que muestre todo el personal registrado
+                                <br>El usuario debe dar clic en la opción <strong><i>Buscar personal</i></strong> y se visualizará una ventana donde requiere de comodines de búsqueda  para que muestre  personal registrado
                                 en el sistema SISCOS.
+                                <br><strong>Los comodines de búsquedas son:</strong>
+                                <ul>
+                                    <li>(<strong>%</strong>) Todos.</li>
+                                    <li>(<strong>%CONTRATISTA</strong>) Los que terminan.</li>
+                                    <li>(<strong>CONTRATISTA%</strong>) Los que comiencen.</li>
+                                </ul>
                             </div>
                             <div class="w3-container w3-center">
                                 <span><img src="imagenes/conformacion3.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
-                                El usuario se ubica en el código de la persona y le debe dar clic a la tecla <strong><i>Enter</i></strong> y automáticamente se traslada al campo <strong><i>Cédula</i></strong> de la información del cargo. Para salir de
-                                la ventana buscar personal es con la tecla <strong><i>Esc</i></strong>.
-                                <br><strong>Código Cuadrilla:</strong> se ingresa el código que va a identificar a la cuadrilla con toda la información registrada.
+                                El usuario se ubica en el <strong><i>Código</i></strong> de la persona y le debe dar clic a la tecla <strong><i>Enter</i></strong> y automáticamente se traslada al campo <strong><i>Cédula</i></strong> de la información del cargo.<br>
+                                <strong>Código Cuadrilla:</strong> Se ingresa el código que va a identificar a la cuadrilla con toda la información registrada.<br><br>
+                                Para salir de la ventana buscar personal es con la tecla <strong><i>Esc</i></strong>.
                             </div>
                         </div>
                     </div>
@@ -772,8 +778,8 @@
                                 <span><img src="imagenes/buscar conformación.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                             </div>
                             <div class="bs-component">
-                                Permite al usuario hacer la búsqueda con el criterio (<strong>%</strong>) muestra todas las cuadrillas registradas en SISCOS, se puede observar cual es la que se necesita para el proceso de conformación.
-                                <br>El usuario se ubica en el <strong><i>Código</i></strong> de la cuadrilla y se debe da clic a la tecla Enter y automáticamente se ve reflejada toda la información acerca de esta cuadrilla.
+                                Permite al usuario realizar la búsqueda con el criterio (<strong>%</strong>) muestra todas las cuadrillas registradas en SISCOS, se puede observar cual es la que se necesita para el proceso de conformación.
+                                <br>El usuario se ubica en el <strong><i>Código</i></strong> de la cuadrilla y se debe dar clic a la tecla <strong><i>Enter</i></strong> y automáticamente se ve reflejada toda la información acerca de esta cuadrilla.
                             </div>
                             <div class="w3-container w3-center">
                                 <span><img src="imagenes/buscar conformación2.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
@@ -806,12 +812,11 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:30px">
                             <h3 class="tile-title">Eliminar</h3>
                             <div class="bs-component">
-                                Esta función se encuentra ubicada en la barra horizontal superior, esta funcionalidad no se dice que se debe hacer pero si tener en cuenta que una cuadrilla va asociado a otros módulos. El usuario debe dar clic en la opción <strong><i>Eliminar</i></strong>
-                                <br> le mostrará mensaje de error y no lo dejará eliminar la cuadrilla.
+                                Esta función se encuentra ubicada en la barra horizontal superior,  no se dice que se deba hacer pero si tener en cuenta que una cuadrilla va asociado a otros módulos. El usuario debe dar clic en la opción <strong><i>Eliminar</i></strong>.
                                 <div class="w3-container w3-center">
                                     <span><img src="imagenes/eliminar conformación.png" style="width:70%;" class="w3-animate-zoom rounded"></span>
                                 </div>
-                                El sistema presentará un mensaje de información, al cual se debe dar clic en el icono <strong><i>Sí</i></strong> para que se pueda efectuar la eliminación del registro.
+                                Seguidamente el sistema presentará un mensaje de información, al cual se debe dar clic en el icono <strong><i>Sí</i></strong> para que se pueda efectuar la eliminación del registro. <br><br>
                                 <div class="nota">
                                     <i class="fa fa-sticky-note fa-lg fa-fw" aria-hidden="true"></i>Nota: En el sistema de información SISCOS no se debe eliminar un registro de conformación cuadrilla debido a que va asociado a otros módulos.
                                 </div>
@@ -828,7 +833,7 @@
                         <div class="container-fluid bg-trans " style="padding-top:80px;padding-bottom:40px">
                             <h3 class="tile-title">Salir</h3>
                             <div class="bs-component">
-                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong> se debe dar clic en una de las opciones.
+                                Para salir del módulo existen 2 opciones, a través de <strong><i>Cerrar ventana</i></strong> y la del botón <strong><i>Salir</i></strong>, se debe dar clic en una de las opciones.
                                 <br>El usuario debe dar clic en el icono <strong><i>Sí</i></strong>, y finalizamos el proceso del módulo Conformación de cuadrillas.
                             </div>
                             <div class="w3-container w3-center">

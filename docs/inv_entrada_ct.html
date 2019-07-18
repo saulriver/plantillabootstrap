@@ -719,7 +719,7 @@
                             <h3 class="tile-title">Entrada CT</h3>
                             <div class="bs-component">
                                 Este módulo permite hacer transacciones de entradas CT que son todos los tipos de movimientos de inventario que pueden ser realizados en el sistema. Los requisitos previos que debe tener una entrada CT es una bodega y un proveedor.
-                                <br><br><strong>Transacciones entradas:</strong> son transacciones que incrementan las existencias de los materiales en el inventario.
+                                <br><br><strong>Transacciones entradas:</strong> Son transacciones que incrementan las existencias de los materiales en el inventario.
                                 <br><br>El usuario debe dar clic en el módulo <strong><i>Entrada CT</i></strong>, y se visualizará una ventana el cual se debe ingresar la información solicitada u obligatoria para hacer un nuevo registro al sistema SISCOS.
                             </div>
                             <div class="w3-container w3-center">
@@ -745,10 +745,10 @@
                             </div>
                             <div class="bs-component">
                                 <ul>
-                                    <li><strong>PEP:</strong> se debe tener creado un PEP para poder registrar entradas CT.</li>
-                                    <li><strong>Áreas de Operación:</strong> ya estás áreas están creadas.</li>
-                                    <li><strong>Periodo de Activación:</strong> ninguna transacción en SISCOS se hace sin que este el periodo activo.</li>
-                                    <li><strong>Remisión/orden:</strong> si esta entrega es amarrada a una orden de trabajo por ejemplo: material va a esta orden de trabajo como tal única y exclusivamente. Cuando se generen los informes y el listado de existencia
+                                    <li><strong>PEP:</strong> Se debe tener creado un PEP para poder registrar entradas CT.</li>
+                                    <li><strong>Áreas de Operación:</strong> Ya estás áreas están creadas.</li>
+                                    <li><strong>Periodo de Activación:</strong> Ninguna transacción en SISCOS se hace sin que este el periodo activo.</li>
+                                    <li><strong>Remisión/orden:</strong> Si esta entrega es amarrada a una orden de trabajo por ejemplo: Material va a esta orden de trabajo como tal única y exclusivamente. Cuando se generen los informes y el listado de existencia
                                         entonces dirá este material que queda aquí es de esta orden de trabajo.</li>
                                     <br>Asimismo esta opción es para el proveedor el mismo proceso anteriormente mencionado si no que ahora es el campo <strong><i>Proveedor</i></strong>.
                                 </ul>
@@ -765,7 +765,7 @@
                             </div>
                             <div class="bs-component">
                                 En las <strong><i>observaciones</i></strong> es muy importante de colocarlas para cuando se generen los listados aparezcan.
-                                <br><strong>En Recibido por:</strong> es la cédula de la persona que este registrando, y que debe estar registrado en el módulo <strong><i>Personal</i></strong>. Aquí queda registrado quien realizo el movimiento en el sistema
+                                <br><strong>En Recibido por:</strong> Es la cédula de la persona que este registrando, y que debe estar registrado en el módulo <strong><i>Personal</i></strong>. Aquí queda registrado quien realizo el movimiento en el sistema
                                 SISCOS.
                             </div>
                         </div>
@@ -825,7 +825,7 @@
                             </div>
                             <div class="bs-component">
                                 El cual se debe configurar para realizar la entrada exitosamente.
-                                <br><br><strong>Cargar archivo ingreso seriales:</strong> esta ventana permite al usuario ubicarse y comenzar a <strong><i>Pistolear cada serial</i></strong> para ir agregando uno a uno, no es muy recomendable por problemas
+                                <br><br><strong>Cargar archivo ingreso seriales:</strong> Esta ventana permite al usuario ubicarse y comenzar a <strong><i>Pistolear cada serial</i></strong> para ir agregando uno a uno, no es muy recomendable por problemas
                                 de energía porque si se va la luz se llevaba pistoleado 200 seriales se pueden perder y hay que hacer nuevamente el proceso, se pistolea en <strong><i>Excel</i></strong> y se guarda el archivo para luego cargarlo en la
                                 opción de <strong><i>Cargar archivo</i></strong> en la ventana que se visualiza de Ingreso de seriales.
                                 <br><br>El usuario debe tener presente que el campo <strong><i>Ubicación</i></strong> del producto es obligación ingresarlo y <strong><i>Fecha de vencimiento</i></strong> si tiene y si no también puede ser la fecha de la
@@ -848,13 +848,13 @@
                                 Para cargar archivos planos se debe guardar el archivo <strong><i>formato de texto delimitado por tabulaciones</i></strong> y se crean las respectivas columnas necesarias. Se carga N seriales, valida Si existe o No, si
                                 no es a través de los archivos se puede agregar con el botón &nbsp;<button class="btn btn-info fa fa-plus fa-lg"></button> .
                                 <br><br><strong>Estructura de Archivo de Carga Entrada:</strong>
-                                <br><br><strong>Archivo 1:</strong> este archivo es para <strong><i>Serial</i></strong>, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar,
+                                <br><br><strong>Archivo 1:</strong> Este archivo es para <strong><i>Serial</i></strong>, se crean 4 columnas las cuales una es obligatoria como el serial y las demás si no se ingresan las pone en blanco al momento de cargar,
                                 solo que cuando se va a validar la información no va encontrase ningún resultado.
                                 <br>Se pueden subir materiales que no son serializados o los materiales que están clasificados como
                                 <strong><i>Otros</i></strong>. Al momento de hacer inventario inicial lo necesario es que la planilla venga clasificados como otros.
-                                <br>Ejemplo: código estado siempre debería ir 02 bueno, 03 malo en sí que se tenga una tabla de codificación.
-                                <br><br><strong>Archivo 2:</strong> se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.
-                                <br><br><strong>Archivo 3:</strong> es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia.
+                                <br>Ejemplo: Código estado siempre debería ir 02 bueno, 03 malo en sí que se tenga una tabla de codificación.
+                                <br><br><strong>Archivo 2:</strong> Se requiere armar un archivo con todos los seriales pero especificando, estos son seriales de este código estos son seriales de un solo archivo, para guardar la entrada.
+                                <br><br><strong>Archivo 3:</strong> Es para cable un archivo para poder armar las bobinas al inventario inicial, se arma un solo archivo de texto y no por cada referencia.
                                 <br>Con cualquiera de estos archivos sirve para el inventario inicial para que salga lo más rápido posible y no estar buscando código por código.
                                 <br>El usuario sabrá visualizar que archivo va escoger, es decir el que mejor le sea útil para su proceso.
                                 <br>Se deben armar 3 archivos:
