@@ -16181,6 +16181,21 @@ i .fa-spin {
     }
 }
 
+@media (max-width:1210px) {
+    .navigation.navigation-next {
+        position: fixed;
+        top: 386px;
+        display: inline-block;
+        margin: auto;
+        padding: 86px;
+        padding-right: 27px;
+        padding-left: 16px;
+        height: 352px;
+        right: -530px;
+        max-width: 500px;
+    }
+}
+
 @media (max-width:768px) {
     .navigation.navigation-next {
         position: fixed;
@@ -16258,7 +16273,7 @@ i .fa-spin {
 
 @media (max-width:1280px) {
     .sidebar-mini.sidenav-toggled .navigation.navigation-prev {
-        margin-left: 34px;
+        margin-left: 51px;
         margin-right: 58px;
         top: 200px;
     }
@@ -16343,15 +16358,31 @@ i .fa-spin {
 @media (max-width:1280px) {
     .navigation.navigation-prev {
         position: fixed;
-        left: 224px;
+        left: 297px;
         z-index: 1;
         top: 200px;
         margin: auto;
-        margin-left: 27px;
-        margin-right: 44px;
+        margin-left: 0px;
+        margin-right: 0px;
         max-width: 50%;
-        padding-right: 0px;
-        padding-left: 3px;
+        padding-right: 58px;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:1210px) {
+    .navigation.navigation-prev {
+        position: fixed;
+        top: auto;
+        max-width: 50%;
+        width: 50%;
+        display: inline-block;
+        left: -301px;
+        padding-right: 344px;
+        padding-left: 4px;
+        height: 300px;
+        margin-right: -24px;
+        margin-left: 12px;
     }
 }
 
