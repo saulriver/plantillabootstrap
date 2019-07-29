@@ -7166,6 +7166,8 @@ button.bg-dark:focus {
     width: 100%;
     padding: 0;
     overflow: hidden;
+    margin-left: 26px;
+    margin-right: 26px;
 }
 
 .embed-responsive::before {
